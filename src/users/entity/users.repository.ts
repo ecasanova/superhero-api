@@ -33,7 +33,7 @@ export class UsersRepository {
     return this.usersRepository.findOne(id);
   }
 
-  deleteUser(id: string): Promise<DeleteResult> {
+  async deleteUser(id: string): Promise<DeleteResult> {
     return this.usersRepository.delete(id);
   }
 

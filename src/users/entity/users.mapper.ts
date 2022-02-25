@@ -10,7 +10,7 @@ export class UserMapper {
 
   entityToDto(userEntity: UserEntity): UserDTO {
     let user = userEntity;
-    delete user.password;
+    if (user && user.password) delete user.password;
     return user;
   }
 }

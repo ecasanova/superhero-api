@@ -18,7 +18,7 @@ export class UsersService {
 
   async getUserById(id: string): Promise<UserDTO> {
     const user: UserEntity = await this.usersRepository.getUserById(id);
-    delete user.password;
+    if (user && user.password) delete user.password;
     return this.mapper.entityToDto(user);
   }
 
