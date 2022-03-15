@@ -2,7 +2,7 @@ import * as bcrypt from "bcrypt";
 import { BeforeInsert, Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity("users")
-export class UserEntity {
+export class SuperheroeEntity {
   @PrimaryGeneratedColumn("uuid")
   readonly id: string;
 
