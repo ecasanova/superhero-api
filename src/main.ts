@@ -7,8 +7,8 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.useGlobalFilters(new TypeORMExceptionFilter());
   const options = new DocumentBuilder()
-    .setTitle("ADK Nest Kit")
-    .setDescription("ADK Nest Kit")
+    .setTitle("ADK/p202 Superhero API")
+    .setDescription("ADK/p202 Superhero API")
     .setVersion("1.0")
     .addBearerAuth()
     .build();
