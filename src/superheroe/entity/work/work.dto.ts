@@ -1,6 +1,6 @@
 import { ApiProperty } from "@nestjs/swagger";
 
-export class WorkDto {
+export class WorkEntityDto {
   @ApiProperty()
   occupation: string;
 

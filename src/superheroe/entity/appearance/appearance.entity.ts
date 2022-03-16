@@ -9,15 +9,13 @@ import {
   PrimaryGeneratedColumn,
 } from "typeorm";
 import { SuperheroeEntity } from "../superheroe/superheroe.entity";
-import { Height } from "./height.entity";
-import { Weight } from "./weight.entity";
+import { HeightEntity } from "./height.entity";
+import { WeightEntity } from "./weight.entity";
 
-@Index("superheroe_appearance_pkey", ["id"], { unique: true })
 @Entity("superheroe_appearance", { schema: "public" })
-export class Appearance {
-  @PrimaryGeneratedColumn()
-  @Column("integer", { primary: true, name: "id", select: false })
-  id: number;
+export class AppearanceEntity {
+  @PrimaryGeneratedColumn("uuid")
+  id: string;
 
   @Column("text", { name: "gender", nullable: true })
   gender: string | null;
@@ -37,9 +35,15 @@ export class Appearance {
   @JoinColumn([{ name: "superheroe_id", referencedColumnName: "id" }])
   superheroe: SuperheroeEntity;
 
-  @OneToMany(() => Height, (Height) => Height.appearance)
-  height: Height[];
+  @OneToMany(() => HeightEntity, (HeightEntity) => HeightEntity.appearance, {
+    cascade: true,
+    onDelete: "CASCADE",
+  })
+  height: any;
 
-  @OneToMany(() => Weight, (Weight) => Weight.appearance)
-  weight: Weight[];
+  @OneToMany(() => WeightEntity, (WeightEntity) => WeightEntity.appearance, {
+    cascade: true,
+    onDelete: "CASCADE",
+  })
+  weight: any;
 }

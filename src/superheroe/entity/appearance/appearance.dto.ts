@@ -1,6 +1,6 @@
 import { ApiProperty } from "@nestjs/swagger";
 
-export class AppearanceDto {
+export class AppearanceEntityDto {
   @ApiProperty()
   gender: string;
 

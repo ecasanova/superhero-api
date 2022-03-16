@@ -1,52 +1,80 @@
 import { Injectable } from "@nestjs/common";
-import { Connection } from "typeorm";
-import { Aliases } from "./entity/aliases/aliases.entity";
-import { Appearance } from "./entity/appearance/appearance.entity";
-import { Biography } from "./entity/biography/biography.entity";
-import { Connections } from "./entity/connections/connections.entity";
-import { Height } from "./entity/appearance/height.entity";
-import { Image } from "./entity/image/image.entity";
-import { Powerstats } from "./entity/powerstats/powerstats.entity";
-import { Weight } from "./entity/appearance/weight.entity";
-import { Work } from "./entity/work/work.entity";
+import { Connection, DeleteResult, Repository } from "typeorm";
+import { AliasesEntity } from "./entity/aliases/aliases.entity";
+import { AppearanceEntity } from "./entity/appearance/appearance.entity";
+import { BiographyEntity } from "./entity/biography/biography.entity";
+import { ConnectionsEntity } from "./entity/connections/connections.entity";
+import { HeightEntity } from "./entity/appearance/height.entity";
+import { ImageEntity } from "./entity/image/image.entity";
+import { PowerstatsEntity } from "./entity/powerstats/powerstats.entity";
+import { WeightEntity } from "./entity/appearance/weight.entity";
+import { WorkEntity } from "./entity/work/work.entity";
 import { SuperheroeEntity } from "./entity/superheroe/superheroe.entity";
-import { SuperheroeRepository } from "./entity/superheroe.repository";
 import { SuperheroeDto } from "./entity/superheroe/superheroe.dto";
-import { resolve } from "path";
-import { combineLatestInit } from "rxjs/internal/observable/combineLatest";
-
+import { InjectRepository } from "@nestjs/typeorm";
 @Injectable()
 export class SuperheroeService {
   constructor(
-    private superheroesRepo: SuperheroeRepository,
-    private connection: Connection
+    private connection: Connection,
+
+    @InjectRepository(SuperheroeEntity)
+    private readonly superheroesRepo: Repository<SuperheroeEntity>,
+
+    @InjectRepository(BiographyEntity)
+    private readonly biographyRepo: Repository<BiographyEntity>,
+
+    @InjectRepository(AppearanceEntity)
+    private readonly appearanceRepo: Repository<AppearanceEntity>,
+
+    @InjectRepository(ConnectionsEntity)
+    private readonly connectionsRepo: Repository<ConnectionsEntity>,
+
+    @InjectRepository(HeightEntity)
+    private readonly heightRepo: Repository<HeightEntity>,
+
+    @InjectRepository(ImageEntity)
+    private readonly imageRepo: Repository<ImageEntity>,
+
+    @InjectRepository(PowerstatsEntity)
+    private readonly powerstatsRepo: Repository<PowerstatsEntity>,
+
+    @InjectRepository(WeightEntity)
+    private readonly weightRepo: Repository<WeightEntity>,
+
+    @InjectRepository(WorkEntity)
+    private readonly workRepo: Repository<WorkEntity>,
+
+    @InjectRepository(AliasesEntity)
+    private readonly AliasesEntityRepo: Repository<AliasesEntity>
   ) {}
 
   async getAll(): Promise<any[]> {
-    const superheroes: SuperheroeEntity[] = await this.superheroesRepo.getAll();
+    const superheroes: SuperheroeEntity[] = await this.superheroesRepo.find({
+      relations: ["powerstats", "images"],
+    });
     superheroes.forEach((superheroe) => {
       if (superheroe.biography) delete superheroe.biography.id;
       if (superheroe.appearance) {
         delete superheroe.appearance.id;
         if (superheroe.appearance.height) {
+          let newValues = [];
           superheroe.appearance.height.forEach((h) => {
             delete h.id;
+            newValues.push(h.value);
           });
-          superheroe.appearance.height = Object.values(
-            superheroe.appearance.height
-          );
+          superheroe.appearance.height = newValues;
         }
         if (superheroe.appearance.weight) {
+          let newValues = [];
           superheroe.appearance.weight.forEach((w) => {
             delete w.id;
+            newValues.push(w.value);
           });
-          superheroe.appearance.weight = Object.values(
-            superheroe.appearance.weight
-          );
+          superheroe.appearance.weight = newValues;
         }
       }
       if (superheroe.connections) delete superheroe.connections.id;
-      if (superheroe.image) delete superheroe.image.id;
+      if (superheroe.images) delete superheroe.images.id;
       if (superheroe.powerstats) delete superheroe.powerstats.id;
       if (superheroe.work) delete superheroe.work.id;
     });
@@ -54,12 +82,41 @@ export class SuperheroeService {
   }
 
   async getById(id: string): Promise<any> {
-    const superheroe: SuperheroeEntity = await this.superheroesRepo.getById(id);
+    const superheroe: SuperheroeEntity = await this.superheroesRepo.findOne(
+      { id },
+      {
+        relations: [
+          "powerstats",
+          "biography",
+          "appearance",
+          "appearance.weight",
+          "appearance.height",
+          "work",
+          "connections",
+          "image",
+        ],
+      }
+    );
     return superheroe;
   }
 
   async getByName(name: string): Promise<SuperheroeEntity> {
-    return await this.superheroesRepo.getByName(name);
+    const superheroe: SuperheroeEntity = await this.superheroesRepo.findOne(
+      { name },
+      {
+        relations: [
+          "powerstats",
+          "biography",
+          "appearance",
+          "appearance.weight",
+          "appearance.height",
+          "work",
+          "connections",
+          "image",
+        ],
+      }
+    );
+    return superheroe;
   }
 
   async createBulk(superheroes: SuperheroeDto[]): Promise<any> {
@@ -73,103 +130,121 @@ export class SuperheroeService {
   }
 
   async createSuperhero(superheroe: SuperheroeDto): Promise<any> {
-    const queryRunner = this.connection.createQueryRunner();
     try {
-      await queryRunner.connect();
-      await queryRunner.startTransaction();
-      let { appearance, biography, connections, image, powerstats, work } =
+      let { appearance, biography, connections, images, powerstats, work } =
         superheroe;
 
       //CREATE SUPERHEROE
       const superheroeEntity = new SuperheroeEntity();
       superheroeEntity.name = superheroe.name;
-      await queryRunner.manager.save(superheroeEntity);
+      await this.superheroesRepo.insert(superheroeEntity);
 
       //CREATE BIOGRAPHY
-      let newBiography = new Biography();
-      newBiography.fullName = biography.fullName;
-      newBiography.alterEgos = biography.alterEgos;
-      newBiography.placeOffBirth = biography.placeOffBirth;
-      newBiography.publisher = biography.publisher;
-      newBiography.alignment = biography.alignment;
-      newBiography.alterEgos = biography.alterEgos;
-      newBiography.firstAppearance = biography.firstAppearance;
-      newBiography.superheroe = superheroeEntity;
-      await queryRunner.manager.save(newBiography);
+      if (biography) {
+        let newBiographyEntity = new BiographyEntity();
+        newBiographyEntity.fullName = biography.fullName;
+        newBiographyEntity.alterEgos = biography.alterEgos;
+        newBiographyEntity.placeOfBirth = biography.placeOfBirth;
+        newBiographyEntity.publisher = biography.publisher;
+        newBiographyEntity.alignment = biography.alignment;
+        newBiographyEntity.alterEgos = biography.alterEgos;
+        newBiographyEntity.firstAppearanceEntity =
+          biography.firstAppearanceEntity;
+        newBiographyEntity.superheroe = superheroeEntity;
+        await this.biographyRepo.insert(newBiographyEntity);
 
-      //CREATE ALLIASES
-      let aliases = biography.aliases;
-      aliases?.forEach(async (alias) => {
-        let newAliases = new Aliases();
-        newAliases.value = alias.value;
-        newAliases.biography = newBiography;
-        await queryRunner.manager.save(newAliases);
-      });
+        //CREATE ALLIASES
+        let aliases = biography.aliases;
+        aliases?.forEach(async (alias) => {
+          let newAliasesEntity = new AliasesEntity();
+          newAliasesEntity.value = alias;
+          newAliasesEntity.biography = newBiographyEntity;
+          await this.AliasesEntityRepo.insert(newAliasesEntity);
+        });
+      }
 
-      //CREATE APPEARANCE
-      let newAppearance = new Appearance();
-      newAppearance.gender = appearance.gender;
-      newAppearance.race = appearance.race;
-      newAppearance.eyeColor = appearance.eyeColor;
-      newAppearance.hairColor = appearance.hairColor;
-      newAppearance.superheroe = superheroeEntity;
-      await queryRunner.manager.save(newAppearance);
+      if (appearance) {
+        //CREATE APPEARANCE
+        let newAppearanceEntity = new AppearanceEntity();
+        newAppearanceEntity.gender = appearance.gender;
+        newAppearanceEntity.race = appearance.race;
+        newAppearanceEntity.eyeColor = appearance.eyeColor;
+        newAppearanceEntity.hairColor = appearance.hairColor;
+        newAppearanceEntity.superheroe = superheroeEntity;
+        await this.appearanceRepo.insert(newAppearanceEntity);
 
-      //CREATE HEIGHT
-      let heights = appearance.height;
-      heights.forEach(async (height) => {
-        let newHeight = new Height();
-        newHeight.value = height;
-        newHeight.appearance = newAppearance;
-        await queryRunner.manager.save(newHeight);
-      });
-      console.log(heights);
+        //CREATE HEIGHT
+        let heights = appearance.height;
+        heights.forEach(async (height) => {
+          let newHeightEntity = new HeightEntity();
+          newHeightEntity.value = height;
+          newHeightEntity.appearance = newAppearanceEntity;
+          await this.heightRepo.insert(newHeightEntity);
+        });
 
-      //CREATE WEIGHT
-      let weights = appearance.weight;
-      weights.forEach(async (weight) => {
-        let newWeight = new Weight();
-        newWeight.value = weight;
-        newWeight.appearance = newAppearance;
-        await queryRunner.manager.save(newWeight);
-      });
+        //CREATE WEIGHT
+        let weights = appearance.weight;
+        weights.forEach(async (weight) => {
+          let newWeightEntity = new WeightEntity();
+          newWeightEntity.value = weight;
+          newWeightEntity.appearance = newAppearanceEntity;
+          await this.weightRepo.insert(newWeightEntity);
+        });
+      }
 
-      //CREATE POWERSTATS
-      let newPowerstats = new Powerstats();
-      newPowerstats.intelligence = powerstats.intelligence;
-      newPowerstats.strength = powerstats.strength;
-      newPowerstats.combat = powerstats.combat;
-      newPowerstats.durability = powerstats.durability;
-      newPowerstats.speed = powerstats.speed;
-      newPowerstats.power = powerstats.power;
-      newPowerstats.strength = powerstats.strength;
-      newPowerstats.superheroe = superheroeEntity;
-      await queryRunner.manager.save(newPowerstats);
+      if (powerstats) {
+        //CREATE POWERSTATS
+        let newPowerstatsEntity = new PowerstatsEntity();
+        newPowerstatsEntity.intelligence = powerstats.intelligence;
+        newPowerstatsEntity.strength = powerstats.strength;
+        newPowerstatsEntity.combat = powerstats.combat;
+        newPowerstatsEntity.durability = powerstats.durability;
+        newPowerstatsEntity.speed = powerstats.speed;
+        newPowerstatsEntity.power = powerstats.power;
+        newPowerstatsEntity.strength = powerstats.strength;
+        newPowerstatsEntity.superheroe = superheroeEntity;
+        await this.powerstatsRepo.insert(newPowerstatsEntity);
+      }
 
       //CREATE CONNECTIONS
-      let newConnections = new Connections();
-      newConnections.groupaffiliation = connections.groupAffiliation;
-      newConnections.relatives = connections.relatives;
-      newConnections.superheroe = superheroeEntity;
-      await queryRunner.manager.save(newConnections);
+      if (connections) {
+        let newConnectionsEntity = new ConnectionsEntity();
+        newConnectionsEntity.groupaffiliation = connections.groupAffiliation;
+        newConnectionsEntity.relatives = connections.relatives;
+        newConnectionsEntity.superheroe = superheroeEntity;
+        await this.connectionsRepo.insert(newConnectionsEntity);
+      }
 
       //CREATE IMAGE
-      let newImage = new Image();
-      newImage.url = image.url;
-      newImage.superheroe = superheroeEntity;
-      await queryRunner.manager.save(newImage);
+      if (images) {
+        let newImageEntity = new ImageEntity();
+        newImageEntity.xs = images.xs;
+        newImageEntity.sm = images.sm;
+        newImageEntity.md = images.md;
+        newImageEntity.lg = images.lg;
+        newImageEntity.superheroe = superheroeEntity;
+        await this.imageRepo.insert(newImageEntity);
+      }
 
       //CREATE WORK
-      let newWork = new Work();
-      newWork.occupation = work.occupation;
-      newWork.base = work.base;
-      newWork.superheroe = superheroeEntity;
-      await queryRunner.manager.save(newWork);
+      if (work) {
+        let newWorkEntity = new WorkEntity();
+        newWorkEntity.occupation = work.occupation;
+        newWorkEntity.base = work.base;
+        newWorkEntity.superheroe = superheroeEntity;
+        await this.workRepo.insert(newWorkEntity);
+      }
 
-      await queryRunner.commitTransaction();
-    } catch (e) {
-      console.log(e);
-      await queryRunner.rollbackTransaction();
+      console.log("Saving: ", superheroe.name);
+      return { superheroe };
+    } catch (err) {
+      return { err };
     }
+  }
+
+  async remove(id: string): Promise<any> {
+    console.log("Removing: ", id);
+    let response = await this.superheroesRepo.delete({ id: id });
+    return response;
   }
 }

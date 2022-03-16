@@ -8,17 +8,24 @@ import {
 } from "typeorm";
 import { SuperheroeEntity } from "../superheroe/superheroe.entity";
 
-@Index("superheroe_image_pkey", ["id"], { unique: true })
 @Entity("superheroe_image", { schema: "public" })
-export class Image {
-  @PrimaryGeneratedColumn()
-  @Column("integer", { primary: true, name: "id" })
-  id: number;
+export class ImageEntity {
+  @PrimaryGeneratedColumn("uuid")
+  id: string;
 
-  @Column("text", { name: "url", nullable: true })
-  url: string | null;
+  @Column("text", { name: "xs", nullable: true })
+  xs: string | null;
 
-  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.image, {
+  @Column("text", { name: "sm", nullable: true })
+  sm: string | null;
+
+  @Column("text", { name: "md", nullable: true })
+  md: string | null;
+
+  @Column("text", { name: "lg", nullable: true })
+  lg: string | null;
+
+  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.images, {
     onDelete: "CASCADE",
   })
   @JoinColumn([{ name: "superheroe_id", referencedColumnName: "id" }])

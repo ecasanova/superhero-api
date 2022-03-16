@@ -1,6 +1,6 @@
 import { ApiProperty } from "@nestjs/swagger";
 
-export class PowerstatsDto {
+export class PowerstatsEntityDto {
   @ApiProperty()
   intelligence: string;
 

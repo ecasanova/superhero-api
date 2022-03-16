@@ -8,12 +8,10 @@ import {
 } from "typeorm";
 import { SuperheroeEntity } from "../superheroe/superheroe.entity";
 
-@Index("superheroe_powerstats_pkey", ["id"], { unique: true })
 @Entity("superheroe_powerstats", { schema: "public" })
-export class Powerstats {
-  @PrimaryGeneratedColumn()
-  @Column("integer", { primary: true, name: "id" })
-  id: number;
+export class PowerstatsEntity {
+  @PrimaryGeneratedColumn("uuid")
+  id: string;
 
   @Column("text", { name: "intelligence", nullable: true })
   intelligence: string | null;

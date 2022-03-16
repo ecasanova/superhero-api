@@ -6,23 +6,23 @@ import {
   ManyToOne,
   PrimaryGeneratedColumn,
 } from "typeorm";
-import { Appearance } from "./appearance.entity";
+import { AppearanceEntity } from "./appearance.entity";
 
-@Index("superheroe_appearance_weight_pkey", ["id"], { unique: true })
 @Entity("superheroe_appearance_weight", { schema: "public" })
-export class Weight {
-  @PrimaryGeneratedColumn()
-  @Column("integer", { primary: true, name: "id" })
-  id: number;
+export class WeightEntity {
+  @PrimaryGeneratedColumn("uuid")
+  id: string;
 
   @Column("text", { name: "value", nullable: true })
   value: string | null;
 
-  @ManyToOne(() => Appearance, (Appearance) => Appearance.weight, {
-    onDelete: "CASCADE",
-  })
+  @ManyToOne(
+    () => AppearanceEntity,
+    (AppearanceEntity) => AppearanceEntity.weight,
+    { onDelete: "CASCADE" }
+  )
   @JoinColumn([
     { name: "superheroe_appearance_id", referencedColumnName: "id" },
   ])
-  appearance: Appearance;
+  appearance: AppearanceEntity;
 }

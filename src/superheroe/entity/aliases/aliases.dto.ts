@@ -1,7 +1,6 @@
 import { ApiProperty } from "@nestjs/swagger";
-import { IsNotEmpty } from "class-validator";
 
-export class AliasesDto {
+export class AliasesEntityDto {
   @ApiProperty()
   value: string;
 }

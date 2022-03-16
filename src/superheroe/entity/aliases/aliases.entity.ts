@@ -4,24 +4,25 @@ import {
   Index,
   JoinColumn,
   ManyToOne,
+  OneToMany,
   OneToOne,
   PrimaryGeneratedColumn,
 } from "typeorm";
-import { Biography } from "../biography/biography.entity";
+import { BiographyEntity } from "../biography/biography.entity";
 
-@Index("superheroe_biography_aliases_pkey", ["id"], { unique: true })
 @Entity("superheroe_biography_aliases", { schema: "public" })
-export class Aliases {
-  @PrimaryGeneratedColumn()
-  @Column("integer", { primary: true, name: "id" })
-  id: number;
+export class AliasesEntity {
+  @PrimaryGeneratedColumn("uuid")
+  id: string;
 
   @Column("text", { name: "value", nullable: true })
   value: string | null;
 
-  @OneToOne(() => Biography, (Biography) => Biography.aliases, {
-    onDelete: "CASCADE",
-  })
+  @OneToMany(
+    () => BiographyEntity,
+    (BiographyEntity) => BiographyEntity.aliases,
+    { onDelete: "CASCADE" }
+  )
   @JoinColumn([{ name: "superheroe_biography_id", referencedColumnName: "id" }])
-  biography: Biography;
+  biography: BiographyEntity;
 }

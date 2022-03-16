@@ -2,35 +2,34 @@ import { Module } from "@nestjs/common";
 import { SuperheroeController } from "./superheroe.controller";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { SuperheroeEntity } from "./entity/superheroe/superheroe.entity";
-import { SuperheroeRepository } from "./entity/superheroe.repository";
 import { SuperheroeService } from "./superheroe.service";
-import { Aliases } from "./entity/aliases/aliases.entity";
-import { Appearance } from "./entity/appearance/appearance.entity";
-import { Biography } from "./entity/biography/biography.entity";
-import { Connections } from "./entity/connections/connections.entity";
-import { Height } from "./entity/appearance/height.entity";
-import { Weight } from "./entity/appearance/weight.entity";
-import { Image } from "./entity/image/image.entity";
-import { Powerstats } from "./entity/powerstats/powerstats.entity";
-import { Work } from "./entity/work/work.entity";
+import { AliasesEntity } from "./entity/aliases/aliases.entity";
+import { AppearanceEntity } from "./entity/appearance/appearance.entity";
+import { BiographyEntity } from "./entity/biography/biography.entity";
+import { ConnectionsEntity } from "./entity/connections/connections.entity";
+import { HeightEntity } from "./entity/appearance/height.entity";
+import { WeightEntity } from "./entity/appearance/weight.entity";
+import { ImageEntity } from "./entity/image/image.entity";
+import { PowerstatsEntity } from "./entity/powerstats/powerstats.entity";
+import { WorkEntity } from "./entity/work/work.entity";
 
 @Module({
   imports: [
     TypeOrmModule.forFeature([
       SuperheroeEntity,
-      Aliases,
-      Appearance,
-      Biography,
-      Connections,
-      Height,
-      Weight,
-      Image,
-      Powerstats,
-      Work,
+      AliasesEntity,
+      AppearanceEntity,
+      BiographyEntity,
+      ConnectionsEntity,
+      HeightEntity,
+      WeightEntity,
+      ImageEntity,
+      PowerstatsEntity,
+      WorkEntity,
     ]),
   ],
   controllers: [SuperheroeController],
-  providers: [SuperheroeRepository, SuperheroeService],
-  exports: [SuperheroeRepository, SuperheroeService],
+  providers: [SuperheroeService],
+  exports: [SuperheroeService, TypeOrmModule],
 })
 export class SuperheroeModule {}

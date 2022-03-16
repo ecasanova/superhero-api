@@ -16,7 +16,7 @@ import { SuperheroeService } from "./superheroe/superheroe.service";
       password: process.env.DB_PASS,
       database: process.env.DB_NAME,
       autoLoadEntities: true,
-      synchronize: !!process.env.DB_SYNC,
+      synchronize: true,
     }),
     SuperheroeModule,
   ],

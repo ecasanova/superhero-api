@@ -6,23 +6,23 @@ import {
   ManyToOne,
   PrimaryGeneratedColumn,
 } from "typeorm";
-import { Appearance } from "./appearance.entity";
+import { AppearanceEntity } from "./appearance.entity";
 
-@Index("superheroe_appearance_height_pkey", ["id"], { unique: true })
 @Entity("superheroe_appearance_height", { schema: "public" })
-export class Height {
-  @PrimaryGeneratedColumn()
-  @Column("integer", { primary: true, name: "id" })
-  id: number;
+export class HeightEntity {
+  @PrimaryGeneratedColumn("uuid")
+  id: string;
 
   @Column("text", { name: "value", nullable: true })
   value: string | null;
 
-  @ManyToOne(() => Appearance, (Appearance) => Appearance.height, {
-    onDelete: "CASCADE",
-  })
+  @ManyToOne(
+    () => AppearanceEntity,
+    (AppearanceEntity) => AppearanceEntity.height,
+    { onDelete: "CASCADE" }
+  )
   @JoinColumn([
     { name: "superheroe_appearance_id", referencedColumnName: "id" },
   ])
-  appearance: Appearance;
+  appearance: AppearanceEntity;
 }

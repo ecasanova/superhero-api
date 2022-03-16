@@ -1,6 +1,15 @@
 import { ApiProperty } from "@nestjs/swagger";
 
-export class ImageDto {
+export class ImageEntityDto {
   @ApiProperty()
-  url: string;
+  xs: string;
+
+  @ApiProperty()
+  sm: string;
+
+  @ApiProperty()
+  md: string;
+
+  @ApiProperty()
+  lg: string;
 }

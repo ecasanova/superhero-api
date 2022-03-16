@@ -1,7 +1,7 @@
 import { ApiProperty } from "@nestjs/swagger";
-import { AliasesDto } from "../aliases/aliases.dto";
+import { AliasesEntityDto } from "../aliases/aliases.dto";
 
-export class BiographyDto {
+export class BiographyEntityDto {
   @ApiProperty()
   fullName: string;
 
@@ -9,13 +9,13 @@ export class BiographyDto {
   alterEgos: string;
 
   @ApiProperty()
-  aliases?: AliasesDto[];
+  aliases: any;
 
   @ApiProperty()
-  placeOffBirth: string;
+  placeOfBirth: string;
 
   @ApiProperty()
-  firstAppearance: string;
+  firstAppearanceEntity: string;
 
   @ApiProperty()
   publisher: string;

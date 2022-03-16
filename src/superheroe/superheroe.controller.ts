@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Param, Post } from "@nestjs/common";
+import { Body, Controller, Delete, Get, Param, Post } from "@nestjs/common";
 import { ApiTags } from "@nestjs/swagger";
 import { SuperheroeDto } from "./entity/superheroe/superheroe.dto";
 import { SuperheroeService } from "./superheroe.service";
@@ -25,5 +25,10 @@ export class SuperheroeController {
   @Post("createBulk")
   async createBulk(@Body() superheroes: SuperheroeDto[]): Promise<any> {
     return await this.superheroeService.createBulk(superheroes);
+  }
+
+  @Delete("delete/:id")
+  async delete(@Param("id") id: string): Promise<any> {
+    return await this.superheroeService.remove(id);
   }
 }

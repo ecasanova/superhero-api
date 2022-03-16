@@ -6,46 +6,70 @@ import {
   OneToOne,
   PrimaryGeneratedColumn,
 } from "typeorm";
-import { Appearance } from "../appearance/appearance.entity";
-import { Biography } from "../biography/biography.entity";
-import { Connections } from "../connections/connections.entity";
-import { Image } from "../image/image.entity";
-import { Powerstats } from "../powerstats/powerstats.entity";
-import { Work } from "../work/work.entity";
+import { AppearanceEntity } from "../appearance/appearance.entity";
+import { BiographyEntity } from "../biography/biography.entity";
+import { ConnectionsEntity } from "../connections/connections.entity";
+import { ImageEntity } from "../image/image.entity";
+import { PowerstatsEntity } from "../powerstats/powerstats.entity";
+import { WorkEntity } from "../work/work.entity";
 
-@Index("superheroe_pkey", ["id"], { unique: true })
 @Entity("superheroe", { schema: "public" })
 export class SuperheroeEntity {
-  @PrimaryGeneratedColumn()
-  @Column("integer", { primary: true, name: "id" })
-  id: number;
+  @PrimaryGeneratedColumn("uuid")
+  id: string;
 
   @Column("text", { name: "name", nullable: true })
   name: string | null;
 
-  @OneToOne(() => Appearance, (Appearance) => Appearance.superheroe, {
+  @OneToOne(
+    () => AppearanceEntity,
+    (AppearanceEntity) => AppearanceEntity.superheroe,
+    {
+      cascade: true,
+      onDelete: "CASCADE",
+    }
+  )
+  appearance: AppearanceEntity;
+
+  @OneToOne(
+    () => BiographyEntity,
+    (BiographyEntity) => BiographyEntity.superheroe,
+    {
+      cascade: true,
+      onDelete: "CASCADE",
+    }
+  )
+  biography: BiographyEntity;
+
+  @OneToOne(
+    () => ConnectionsEntity,
+    (ConnectionsEntity) => ConnectionsEntity.superheroe,
+    {
+      cascade: true,
+      onDelete: "CASCADE",
+    }
+  )
+  connections: ConnectionsEntity;
+
+  @OneToOne(() => ImageEntity, (ImageEntity) => ImageEntity.superheroe, {
+    cascade: true,
     onDelete: "CASCADE",
   })
-  appearance: Appearance;
+  images: ImageEntity;
 
-  @OneToOne(() => Biography, (Biography) => Biography.superheroe, {
+  @OneToOne(
+    () => PowerstatsEntity,
+    (PowerstatsEntity) => PowerstatsEntity.superheroe,
+    {
+      cascade: true,
+      onDelete: "CASCADE",
+    }
+  )
+  powerstats: PowerstatsEntity;
+
+  @OneToOne(() => WorkEntity, (WorkEntity) => WorkEntity.superheroe, {
+    cascade: true,
     onDelete: "CASCADE",
   })
-  biography: Biography;
-
-  @OneToOne(() => Connections, (Connections) => Connections.superheroe, {
-    onDelete: "CASCADE",
-  })
-  connections: Connections;
-
-  @OneToOne(() => Image, (Image) => Image.superheroe, { onDelete: "CASCADE" })
-  image: Image;
-
-  @OneToOne(() => Powerstats, (Powerstats) => Powerstats.superheroe, {
-    onDelete: "CASCADE",
-  })
-  powerstats: Powerstats;
-
-  @OneToOne(() => Work, (Work) => Work.superheroe, { onDelete: "CASCADE" })
-  work: Work;
+  work: WorkEntity;
 }
