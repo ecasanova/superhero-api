@@ -21,7 +21,9 @@ export class Connections {
   @Column("text", { name: "relatives", nullable: true })
   relatives: string | null;
 
-  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.connections)
+  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.connections, {
+    onDelete: "CASCADE",
+  })
   @JoinColumn([{ name: "superheroe_id", referencedColumnName: "id" }])
   superheroe: SuperheroeEntity;
 }

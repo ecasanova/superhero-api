@@ -31,13 +31,15 @@ export class Appearance {
   @Column("text", { name: "hairColor", nullable: true })
   hairColor: string | null;
 
-  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.appearance)
+  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.appearance, {
+    onDelete: "CASCADE",
+  })
   @JoinColumn([{ name: "superheroe_id", referencedColumnName: "id" }])
   superheroe: SuperheroeEntity;
 
-  @OneToOne(() => Height, (Height) => Height.appearance)
-  heights: Height[];
+  @OneToMany(() => Height, (Height) => Height.appearance)
+  height: Height[];
 
-  @OneToOne(() => Weight, (Weight) => Weight.appearance)
-  weights: Weight[];
+  @OneToMany(() => Weight, (Weight) => Weight.appearance)
+  weight: Weight[];
 }

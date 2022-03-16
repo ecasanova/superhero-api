@@ -18,7 +18,12 @@ export class SuperheroeController {
   }
 
   @Post("create")
-  async create(@Body() superheroes: SuperheroeDto[]): Promise<any> {
-    return await this.superheroeService.create(superheroes);
+  async create(@Body() superheroe: SuperheroeDto): Promise<any> {
+    return await this.superheroeService.create(superheroe);
+  }
+
+  @Post("createBulk")
+  async createBulk(@Body() superheroes: SuperheroeDto[]): Promise<any> {
+    return await this.superheroeService.createBulk(superheroes);
   }
 }

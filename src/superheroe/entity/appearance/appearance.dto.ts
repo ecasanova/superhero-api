@@ -1,6 +1,4 @@
 import { ApiProperty } from "@nestjs/swagger";
-import { Height } from "./height.entity";
-import { Weight } from "./weight.entity";
 
 export class AppearanceDto {
   @ApiProperty()
@@ -10,10 +8,10 @@ export class AppearanceDto {
   race: string;
 
   @ApiProperty()
-  height?: Height[] | null;
+  height: string[] | null;
 
   @ApiProperty()
-  weight?: Weight[] | null;
+  weight: string[] | null;
 
   @ApiProperty()
   eyeColor: string;

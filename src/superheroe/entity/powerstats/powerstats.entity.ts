@@ -33,7 +33,9 @@ export class Powerstats {
   @Column("text", { name: "combat", nullable: true })
   combat: string | null;
 
-  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.powerstats)
+  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.powerstats, {
+    onDelete: "CASCADE",
+  })
   @JoinColumn([{ name: "superheroe_id", referencedColumnName: "id" }])
   superheroe: SuperheroeEntity;
 }

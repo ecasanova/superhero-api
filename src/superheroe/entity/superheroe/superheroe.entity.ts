@@ -23,19 +23,27 @@ export class SuperheroeEntity {
   @Column("text", { name: "name", nullable: true })
   name: string | null;
 
-  @OneToOne(() => Appearance, (Appearance) => Appearance.superheroe)
+  @OneToOne(() => Appearance, (Appearance) => Appearance.superheroe, {
+    onDelete: "CASCADE",
+  })
   appearance: Appearance;
 
-  @OneToOne(() => Biography, (Biography) => Biography.superheroe)
+  @OneToOne(() => Biography, (Biography) => Biography.superheroe, {
+    onDelete: "CASCADE",
+  })
   biography: Biography;
 
-  @OneToOne(() => Connections, (Connections) => Connections.superheroe)
+  @OneToOne(() => Connections, (Connections) => Connections.superheroe, {
+    onDelete: "CASCADE",
+  })
   connections: Connections;
 
   @OneToOne(() => Image, (Image) => Image.superheroe, { onDelete: "CASCADE" })
   image: Image;
 
-  @OneToOne(() => Powerstats, (Powerstats) => Powerstats.superheroe)
+  @OneToOne(() => Powerstats, (Powerstats) => Powerstats.superheroe, {
+    onDelete: "CASCADE",
+  })
   powerstats: Powerstats;
 
   @OneToOne(() => Work, (Work) => Work.superheroe, { onDelete: "CASCADE" })

@@ -19,7 +19,9 @@ export class Aliases {
   @Column("text", { name: "value", nullable: true })
   value: string | null;
 
-  @OneToOne(() => Biography, (Biography) => Biography.aliases)
+  @OneToOne(() => Biography, (Biography) => Biography.aliases, {
+    onDelete: "CASCADE",
+  })
   @JoinColumn([{ name: "superheroe_biography_id", referencedColumnName: "id" }])
   biography: Biography;
 }

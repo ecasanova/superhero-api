@@ -18,7 +18,9 @@ export class Weight {
   @Column("text", { name: "value", nullable: true })
   value: string | null;
 
-  @ManyToOne(() => Appearance, (Appearance) => Appearance.weights)
+  @ManyToOne(() => Appearance, (Appearance) => Appearance.weight, {
+    onDelete: "CASCADE",
+  })
   @JoinColumn([
     { name: "superheroe_appearance_id", referencedColumnName: "id" },
   ])

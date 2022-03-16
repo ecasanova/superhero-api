@@ -39,7 +39,9 @@ export class Biography {
   @Column("text", { name: "alignment", nullable: true })
   alignment: string | null;
 
-  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.biography)
+  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.biography, {
+    onDelete: "CASCADE",
+  })
   @JoinColumn([{ name: "superheroe_id", referencedColumnName: "id" }])
   superheroe: SuperheroeEntity;
 
