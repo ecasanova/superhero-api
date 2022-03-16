@@ -1,27 +1,25 @@
 import { Controller, Injectable } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Repository } from "typeorm";
-import { SuperheroeEntity } from "./superheroe.entity";
-import { SuperheroeMapper } from "./superheroe.mapper";
+import { SuperheroeEntity } from "./superheroe/superheroe.entity";
 
 @Injectable()
 @Controller("Superheroe")
 export class SuperheroeRepository {
   constructor(
     @InjectRepository(SuperheroeEntity)
-    private superheroeRepository: Repository<SuperheroeEntity>,
-    private mapper: SuperheroeMapper
+    private superheroesRepo: Repository<SuperheroeEntity>
   ) {}
 
-  getAll(): Promise<SuperheroeEntity[]> {
-    return this.superheroeRepository.find();
+  getAll(): Promise<any> {
+    return this.superheroesRepo.find();
   }
 
-  getById(id: string): Promise<SuperheroeEntity> {
-    return this.superheroeRepository.findOne(id);
+  getById(id: string): Promise<any> {
+    return this.superheroesRepo.findOne(id);
   }
 
-  getByName(email: string): Promise<SuperheroeEntity> {
-    return this.superheroeRepository.findOne({ email });
+  getByName(name: string): Promise<any> {
+    return this.superheroesRepo.findOne({ name });
   }
 }

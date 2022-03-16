@@ -10,7 +10,6 @@ async function bootstrap() {
     .setTitle("ADK/p202 Superhero API")
     .setDescription("ADK/p202 Superhero API")
     .setVersion("1.0")
-    .addBearerAuth()
     .build();
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup("api", app, document);

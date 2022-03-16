@@ -19,7 +19,6 @@ import { SuperheroeService } from "./superheroe/superheroe.service";
       synchronize: !!process.env.DB_SYNC,
     }),
     SuperheroeModule,
-    SuperheroeService,
   ],
   controllers: [AppController],
   providers: [AppService, SuperheroeService],
