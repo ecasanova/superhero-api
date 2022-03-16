@@ -21,7 +21,9 @@ export class Work {
   @Column("text", { name: "base", nullable: true })
   base: string | null;
 
-  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.work)
+  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.work, {
+    onDelete: "CASCADE",
+  })
   @JoinColumn([{ name: "superheroe_id", referencedColumnName: "id" }])
   superheroe: SuperheroeEntity;
 }
