@@ -2,10 +2,9 @@ import { Module } from "@nestjs/common";
 import { AppController } from "./app.controller";
 import { AppService } from "./app.service";
 import { TypeOrmModule } from "@nestjs/typeorm";
-import { UsersModule } from "./users/users.module";
+import { SuperheroeModule } from "./superheroe/superheroe.module";
 import { ConfigModule } from "@nestjs/config";
-import { AuthModule } from "./auth/auth.module";
-import { UsersService } from "./users/users.service";
+import { SuperheroeService } from "./superheroe/superheroe.service";
 @Module({
   imports: [
     ConfigModule.forRoot(),
@@ -19,10 +18,10 @@ import { UsersService } from "./users/users.service";
       autoLoadEntities: true,
       synchronize: !!process.env.DB_SYNC,
     }),
-    AuthModule,
-    UsersModule,
+    SuperheroeModule,
+    SuperheroeService,
   ],
   controllers: [AppController],
-  providers: [AppService, UsersService],
+  providers: [AppService, SuperheroeService],
 })
 export class AppModule {}
