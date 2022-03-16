@@ -12,7 +12,6 @@ import { WeightEntity } from "./entity/appearance/weight.entity";
 import { ImageEntity } from "./entity/image/image.entity";
 import { PowerstatsEntity } from "./entity/powerstats/powerstats.entity";
 import { WorkEntity } from "./entity/work/work.entity";
-
 @Module({
   imports: [
     TypeOrmModule.forFeature([

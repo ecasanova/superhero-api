@@ -12,6 +12,11 @@ import { WorkEntity } from "./entity/work/work.entity";
 import { SuperheroeEntity } from "./entity/superheroe/superheroe.entity";
 import { SuperheroeDto } from "./entity/superheroe/superheroe.dto";
 import { InjectRepository } from "@nestjs/typeorm";
+import {
+  paginate,
+  Pagination,
+  IPaginationOptions,
+} from "nestjs-typeorm-paginate";
 @Injectable()
 export class SuperheroeService {
   constructor(
@@ -48,37 +53,23 @@ export class SuperheroeService {
     private readonly AliasesEntityRepo: Repository<AliasesEntity>
   ) {}
 
-  async getAll(): Promise<any[]> {
-    const superheroes: SuperheroeEntity[] = await this.superheroesRepo.find({
-      relations: ["powerstats", "images"],
-    });
-    superheroes.forEach((superheroe) => {
-      if (superheroe.biography) delete superheroe.biography.id;
-      if (superheroe.appearance) {
-        delete superheroe.appearance.id;
-        if (superheroe.appearance.height) {
-          let newValues = [];
-          superheroe.appearance.height.forEach((h) => {
-            delete h.id;
-            newValues.push(h.value);
-          });
-          superheroe.appearance.height = newValues;
-        }
-        if (superheroe.appearance.weight) {
-          let newValues = [];
-          superheroe.appearance.weight.forEach((w) => {
-            delete w.id;
-            newValues.push(w.value);
-          });
-          superheroe.appearance.weight = newValues;
-        }
-      }
-      if (superheroe.connections) delete superheroe.connections.id;
-      if (superheroe.images) delete superheroe.images.id;
-      if (superheroe.powerstats) delete superheroe.powerstats.id;
-      if (superheroe.work) delete superheroe.work.id;
-    });
-    return superheroes;
+  async getAll(page, limit): Promise<any> {
+    const queryBuilder = await this.superheroesRepo
+      .createQueryBuilder("superheroe")
+      .leftJoinAndSelect("superheroe.powerstats", "powerstats")
+      .leftJoinAndSelect("superheroe.images", "images")
+      .skip(page)
+      .take(limit);
+
+    const itemCount = await queryBuilder.getCount();
+    const { entities } = await queryBuilder.getRawAndEntities();
+
+    return {
+      data: entities,
+      totalItems: itemCount,
+      currentPage: page,
+      pageCount: Math.ceil(itemCount / limit),
+    };
   }
 
   async getById(id: string): Promise<any> {
