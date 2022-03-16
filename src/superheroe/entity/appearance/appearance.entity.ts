@@ -5,6 +5,7 @@ import {
   JoinColumn,
   ManyToOne,
   OneToMany,
+  OneToOne,
   PrimaryGeneratedColumn,
 } from "typeorm";
 import { SuperheroeEntity } from "../superheroe/superheroe.entity";
@@ -15,7 +16,7 @@ import { Weight } from "./weight.entity";
 @Entity("superheroe_appearance", { schema: "public" })
 export class Appearance {
   @PrimaryGeneratedColumn()
-  @Column("integer", { primary: true, name: "id" })
+  @Column("integer", { primary: true, name: "id", select: false })
   id: number;
 
   @Column("text", { name: "gender", nullable: true })
@@ -24,19 +25,19 @@ export class Appearance {
   @Column("text", { name: "race", nullable: true })
   race: string | null;
 
-  @Column("text", { name: "eyecolor", nullable: true })
-  eyecolor: string | null;
+  @Column("text", { name: "eyeColor", nullable: true })
+  eyeColor: string | null;
 
-  @Column("text", { name: "haircolor", nullable: true })
-  haircolor: string | null;
+  @Column("text", { name: "hairColor", nullable: true })
+  hairColor: string | null;
 
-  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.appearances)
+  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.appearance)
   @JoinColumn([{ name: "superheroe_id", referencedColumnName: "id" }])
   superheroe: SuperheroeEntity;
 
-  @OneToMany(() => Height, (Height) => Height.Appearance)
-  Heights: Height[];
+  @OneToOne(() => Height, (Height) => Height.appearance)
+  heights: Height[];
 
-  @OneToMany(() => Weight, (Weight) => Weight.Appearance)
-  Weights: Weight[];
+  @OneToOne(() => Weight, (Weight) => Weight.appearance)
+  weights: Weight[];
 }

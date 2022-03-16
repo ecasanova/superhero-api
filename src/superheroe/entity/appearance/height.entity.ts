@@ -18,9 +18,9 @@ export class Height {
   @Column("text", { name: "value", nullable: true })
   value: string | null;
 
-  @ManyToOne(() => Appearance, (Appearance) => Appearance.Heights)
+  @ManyToOne(() => Appearance, (Appearance) => Appearance.heights)
   @JoinColumn([
     { name: "superheroe_appearance_id", referencedColumnName: "id" },
   ])
-  Appearance: Appearance;
+  appearance: Appearance;
 }

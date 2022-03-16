@@ -4,6 +4,7 @@ import {
   Index,
   JoinColumn,
   ManyToOne,
+  OneToOne,
   PrimaryGeneratedColumn,
 } from "typeorm";
 import { Biography } from "../biography/biography.entity";
@@ -18,7 +19,7 @@ export class Aliases {
   @Column("text", { name: "value", nullable: true })
   value: string | null;
 
-  @ManyToOne(() => Biography, (Biography) => Biography.Aliases)
+  @OneToOne(() => Biography, (Biography) => Biography.aliases)
   @JoinColumn([{ name: "superheroe_biography_id", referencedColumnName: "id" }])
-  Biography: Biography;
+  biography: Biography;
 }

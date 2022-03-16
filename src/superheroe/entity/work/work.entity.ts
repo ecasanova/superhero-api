@@ -21,7 +21,7 @@ export class Work {
   @Column("text", { name: "base", nullable: true })
   base: string | null;
 
-  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.works)
+  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.work)
   @JoinColumn([{ name: "superheroe_id", referencedColumnName: "id" }])
   superheroe: SuperheroeEntity;
 }

@@ -9,6 +9,7 @@ import {
 } from "typeorm";
 import { SuperheroeEntity } from "../superheroe/superheroe.entity";
 import { Aliases } from "../aliases/aliases.entity";
+import { Exclude } from "class-transformer";
 
 @Index("superheroe_biography_pkey", ["id"], { unique: true })
 @Entity("superheroe_biography", { schema: "public" })
@@ -17,20 +18,20 @@ export class Biography {
   @Column("integer", { primary: true, name: "id" })
   id: number;
 
-  @Column("text", { name: "fullname", nullable: true })
-  fullname: string | null;
+  @Column("text", { name: "fullName", nullable: true })
+  fullName: string | null;
 
-  @Column("text", { name: "alteregos", nullable: true })
-  alteregos: string | null;
+  @Column("text", { name: "alterEgos", nullable: true })
+  alterEgos: string | null;
 
-  @Column("text", { name: "placeoffbirth", nullable: true })
-  placeoffbirth: string | null;
+  @Column("text", { name: "placeOffBirth", nullable: true })
+  placeOffBirth: string | null;
 
-  @Column("timestamp without time zone", {
-    name: "firstappearance",
+  @Column("text", {
+    name: "firstAppearance",
     nullable: true,
   })
-  firstappearance: Date | null;
+  firstAppearance: string | null;
 
   @Column("text", { name: "publisher", nullable: true })
   publisher: string | null;
@@ -38,13 +39,10 @@ export class Biography {
   @Column("text", { name: "alignment", nullable: true })
   alignment: string | null;
 
-  @Column("integer", { name: "superheroe_id", nullable: false })
-  superheroe_id: number;
-
-  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.biographies)
+  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.biography)
   @JoinColumn([{ name: "superheroe_id", referencedColumnName: "id" }])
   superheroe: SuperheroeEntity;
 
-  @OneToMany(() => Aliases, (Aliases) => Aliases.Biography)
-  Aliases: Aliases[];
+  @OneToMany(() => Aliases, (Aliases) => Aliases.biography)
+  aliases: Aliases[];
 }

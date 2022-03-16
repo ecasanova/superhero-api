@@ -12,14 +12,44 @@ export class SuperheroeRepository {
   ) {}
 
   getAll(): Promise<any> {
-    return this.superheroesRepo.find();
+    return this.superheroesRepo.find({
+      relations: [
+        "powerstats",
+        "biography",
+        "appearance",
+        "work",
+        "connections",
+        "image",
+      ],
+    });
   }
 
   getById(id: string): Promise<any> {
-    return this.superheroesRepo.findOne(id);
+    return this.superheroesRepo.findOne(id, {
+      relations: [
+        "powerstats",
+        "biography",
+        "appearance",
+        "work",
+        "connections",
+        "image",
+      ],
+    });
   }
 
   getByName(name: string): Promise<any> {
-    return this.superheroesRepo.findOne({ name });
+    return this.superheroesRepo.findOne(
+      { name },
+      {
+        relations: [
+          "powerstats",
+          "biography",
+          "appearance",
+          "work",
+          "connections",
+          "image",
+        ],
+      }
+    );
   }
 }

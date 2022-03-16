@@ -18,7 +18,7 @@ export class Image {
   @Column("text", { name: "url", nullable: true })
   url: string | null;
 
-  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.images)
+  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.image)
   @JoinColumn([{ name: "superheroe_id", referencedColumnName: "id" }])
   superheroe: SuperheroeEntity;
 }

@@ -3,6 +3,7 @@ import {
   Entity,
   Index,
   OneToMany,
+  OneToOne,
   PrimaryGeneratedColumn,
 } from "typeorm";
 import { Appearance } from "../appearance/appearance.entity";
@@ -22,21 +23,21 @@ export class SuperheroeEntity {
   @Column("text", { name: "name", nullable: true })
   name: string | null;
 
-  @OneToMany(() => Appearance, (Appearance) => Appearance.superheroe)
-  appearances: Appearance[];
+  @OneToOne(() => Appearance, (Appearance) => Appearance.superheroe)
+  appearance: Appearance;
 
-  @OneToMany(() => Biography, (Biography) => Biography.superheroe)
-  biographies: Biography[];
+  @OneToOne(() => Biography, (Biography) => Biography.superheroe)
+  biography: Biography;
 
-  @OneToMany(() => Connections, (Connections) => Connections.superheroe)
-  connections: Connections[];
+  @OneToOne(() => Connections, (Connections) => Connections.superheroe)
+  connections: Connections;
 
-  @OneToMany(() => Image, (Image) => Image.superheroe)
-  images: Image[];
+  @OneToOne(() => Image, (Image) => Image.superheroe, { onDelete: "CASCADE" })
+  image: Image;
 
-  @OneToMany(() => Powerstats, (Powerstats) => Powerstats.superheroe)
-  powerstats: Powerstats[];
+  @OneToOne(() => Powerstats, (Powerstats) => Powerstats.superheroe)
+  powerstats: Powerstats;
 
-  @OneToMany(() => Work, (Work) => Work.superheroe)
-  works: Work[];
+  @OneToOne(() => Work, (Work) => Work.superheroe, { onDelete: "CASCADE" })
+  work: Work;
 }
