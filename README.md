@@ -1,12 +1,19 @@
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[TypeORM](https://typeorm.io/#/) ORM
+[Docker](https://www.docker.com)
 
 ## Installation
 
 ```bash
 $ npm install
+
+#Docker composer
 $ docker-compose up -d
+
+#env files
+cp .env.sample .env
 ```
 
 ## Running the app
@@ -35,16 +42,34 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Migrations
+
+```bash
+# create migration
+$ npm run typeorm migration:run
+
+# migration run
+$ npm run typeorm:run
+```
+
+# Usage
+
+You can see public API contract in http://localhost:3000/api
+
+# Enviroment variables
+
+```
+PORT=
+POSTGRES_PORT_EXTERNAL=
+DB_USER=
+DB_PASS=
+DB_NAME=
+DB_HOST=
+DB_PORT=
+DB_SYNC=
+JWT_SECRET=
+```
+
 ## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil My�liwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+Enrique Casanova - [enrique.casanova@projekt202.com](mailto:enrique.casanova@projekt202.com)
