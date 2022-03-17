@@ -71,12 +71,12 @@ export class SuperheroeService {
 
   async cleanData(superheroes: any[]) {
     superheroes.forEach((superheroe) => {
-      delete superheroe.powerstats.id;
-      delete superheroe.images.id;
-      delete superheroe.biography.id;
-      delete superheroe.appearance.id;
-      delete superheroe.work.id;
-      delete superheroe.connections.id;
+      if (superheroe.powerstats) delete superheroe.powerstats.id;
+      if (superheroe.images) delete superheroe.images.id;
+      if (superheroe.biography) delete superheroe.biography.id;
+      if (superheroe.appearance) delete superheroe.appearance.id;
+      if (superheroe.work) delete superheroe.work.id;
+      if (superheroe.connections) delete superheroe.connections.id;
     });
     return superheroes;
   }
@@ -98,7 +98,6 @@ export class SuperheroeService {
       .leftJoinAndSelect("superheroe.work", "work")
       .leftJoinAndSelect("superheroe.connections", "connections")
       .leftJoinAndSelect("superheroe.images", "images")
-      .leftJoinAndSelect("appearance", "appearance")
       .orderBy("superheroe.name", "ASC");
 
     if (params.id) {
