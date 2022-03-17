@@ -18,7 +18,7 @@ export class AliasesEntity {
   @Column("text", { name: "value", nullable: true })
   value: string | null;
 
-  @OneToMany(
+  @ManyToOne(
     () => BiographyEntity,
     (BiographyEntity) => BiographyEntity.aliases,
     { onDelete: "CASCADE" }

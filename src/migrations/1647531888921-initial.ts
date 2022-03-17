@@ -3717,7 +3717,8 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('8d198930-5a9d-4b40-b964-6866f189f94a','0 kg','1a682658-b17e-4529-9ab8-583e4ea2d601'),
 	 ('deddbf4a-f844-437d-8b37-1661c414fa2a','79 kg','9decd3ce-a4d3-4397-ae82-7e0fe8011a4c'),
 	 ('5587d33a-f40e-4a89-b636-89dac2d822c3','51 kg','6de5235f-12cf-4444-a0ca-1dc56ccd853c'),
-	 ('849a0ceb-cf49-4c7c-9ad4-d8f08986033e','81 kg','af099ca7-67d5-41ef-bd43-ba5ac8a38275');INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+	 ('849a0ceb-cf49-4c7c-9ad4-d8f08986033e','81 kg','af099ca7-67d5-41ef-bd43-ba5ac8a38275');`);
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('7caac514-3ca5-420a-8f33-b75727bfa1ce','Carl Creel','No alter egos found.','New York City, New York',NULL,'Marvel Comics','bad','aed570fb-4fdf-4721-88db-f8c106ae8d5b'),
 	 ('4739a1be-1b3f-4b64-b581-3379637700c8','Gabriel Lan','No alter egos found.','Xandar, a planet in the Tranta system, Andromeda galaxy',NULL,'Marvel Comics','bad','e5dc311f-be94-447f-9b49-8ed8e7e07e6d'),
 	 ('fa517598-ae44-431e-b04f-85a7e6331d95','Abraham Sapien','No alter egos found.','-',NULL,'Dark Horse Comics','good','79b9ef1b-2eb4-4fa7-8eeb-9d178159b24d'),

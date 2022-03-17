@@ -149,7 +149,20 @@ export class SuperheroeService {
   }
 
   async getById(id: string): Promise<any> {
-    return await this.getSuperHero({ id: id });
+    let superheroes = this.superheroesRepo.findOne(id, {
+      relations: [
+        "powerstats",
+        "biography",
+        "biography.aliases",
+        "appearance",
+        "appearance.height",
+        "appearance.weight",
+        "work",
+        "connections",
+        "images",
+      ],
+    });
+    return superheroes;
   }
 
   async getByName(name: string): Promise<any> {
