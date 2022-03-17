@@ -9,11 +9,12 @@
 ```bash
 $ npm install
 
+#env files
+cp .env.sample .env
+
 #Docker composer
 $ docker-compose up -d
 
-#env files
-cp .env.sample .env
 ```
 
 ## Running the app
@@ -60,7 +61,6 @@ You can see public API contract in http://localhost:3000/api
 
 ```
 PORT=
-POSTGRES_PORT_EXTERNAL=
 DB_USER=
 DB_PASS=
 DB_NAME=

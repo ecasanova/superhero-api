@@ -4,7 +4,7 @@ services:
   psql-db:
     image: postgres:12.1-alpine
     ports:
-      - ${POSTGRES_PORT_EXTERNAL}:5432
+      - ${DB_PORT}:${DB_PORT}
     environment:
       - POSTGRES_USER=${DB_USER}
       - POSTGRES_PASSWORD=${DB_PASS}
