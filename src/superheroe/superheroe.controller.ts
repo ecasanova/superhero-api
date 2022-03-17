@@ -12,18 +12,19 @@ import {
 import { ApiTags } from "@nestjs/swagger";
 import { SuperheroeDto } from "./entity/superheroe/superheroe.dto";
 import { SuperheroeService } from "./superheroe.service";
-import { SuperheroeEntity } from "./entity/superheroe/superheroe.entity";
+import { SuperheroeSearchDto } from "./entity/superheroe/search.dto";
 @ApiTags("superheroes")
 @Controller("superheroes")
 export class SuperheroeController {
   constructor(private superheroeService: SuperheroeService) {}
 
-  @Get("getAll")
+  @Post("getAll")
   async getAll(
     @Query("page", new DefaultValuePipe(1), ParseIntPipe) page: number = 1,
-    @Query("limit", new DefaultValuePipe(10), ParseIntPipe) limit: number = 10
+    @Query("limit", new DefaultValuePipe(10), ParseIntPipe) limit: number = 10,
+    @Body() search: SuperheroeSearchDto
   ): Promise<any[]> {
-    return await this.superheroeService.getAll(page, limit);
+    return await this.superheroeService.getAll(page, limit, search);
   }
 
   @Get("get/:id")
@@ -34,6 +35,11 @@ export class SuperheroeController {
   @Post("create")
   async create(@Body() superheroe: SuperheroeDto): Promise<any> {
     return await this.superheroeService.create(superheroe);
+  }
+
+  @Post("create-bulk")
+  async createBulk(@Body() superheroes: SuperheroeDto[]): Promise<any> {
+    return await this.superheroeService.createBulk(superheroes);
   }
 
   @Delete("delete/:id")

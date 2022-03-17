@@ -49,14 +49,81 @@ export class SuperheroeService {
     private readonly AliasesEntityRepo: Repository<AliasesEntity>
   ) {}
 
-  async getAll(page, limit): Promise<any> {
+  async getAll(page, limit, search): Promise<any> {
     const queryBuilder = await this.superheroesRepo
       .createQueryBuilder("superheroe")
       .leftJoinAndSelect("superheroe.powerstats", "powerstats")
+      .leftJoinAndSelect("superheroe.biography", "biography")
       .leftJoinAndSelect("superheroe.images", "images")
-      .orderBy("superheroe.name", "ASC")
-      .skip(page)
-      .take(limit);
+      .orderBy("superheroe.name", "ASC");
+
+    if (search.keyword) {
+      queryBuilder.where("superheroe.name like :name", {
+        name: `%${search.keyword}%`,
+      });
+    }
+
+    if (search.intelligence) {
+      queryBuilder.andWhere("powerstats.intelligence >= :intelligence", {
+        intelligence: `${search.intelligence.min}`,
+      });
+      queryBuilder.andWhere("powerstats.intelligence <= :intelligence", {
+        intelligence: `${search.intelligence.max}`,
+      });
+    }
+    if (search.strength) {
+      queryBuilder.andWhere("powerstats.strength >= :strength", {
+        strength: `${search.strength.min}`,
+      });
+      queryBuilder.andWhere("powerstats.strength <= :strength", {
+        strength: `${search.strength.max}`,
+      });
+    }
+    if (search.speed) {
+      queryBuilder.andWhere("powerstats.speed >= :speed", {
+        speed: `${search.speed.min}`,
+      });
+      queryBuilder.andWhere("powerstats.speed <= :speed", {
+        speed: `${search.speed.max}`,
+      });
+    }
+    if (search.durability) {
+      queryBuilder.andWhere("powerstats.durability >= :durability", {
+        durability: `${search.durability.min}`,
+      });
+      queryBuilder.andWhere("powerstats.durability <= :durability", {
+        durability: `${search.durability.max}`,
+      });
+    }
+    if (search.power) {
+      queryBuilder.andWhere("powerstats.power >= :power", {
+        power: `${search.power.min}`,
+      });
+      queryBuilder.andWhere("powerstats.power <= :power", {
+        power: `${search.power.max}`,
+      });
+    }
+    if (search.combat) {
+      queryBuilder.andWhere("powerstats.combat >= :combat", {
+        combat: `${search.combat.min}`,
+      });
+      queryBuilder.andWhere("powerstats.combat <= :combat", {
+        combat: `${search.combat.max}`,
+      });
+    }
+
+    if (search.gender) {
+      queryBuilder.where("appearance.gender = :gender", {
+        gender: `${search.gender}`,
+      });
+    }
+    if (search.alignment) {
+      queryBuilder.where("biography.alignment = :alignment", {
+        alignment: `${search.alignment}`,
+      });
+    }
+
+    queryBuilder.skip(page).take(limit);
 
     const itemCount = await queryBuilder.getCount();
     const { entities } = await queryBuilder.getRawAndEntities();

@@ -5,4 +5,5 @@ module.exports = {
   username: procces.env.DB_USER,
   password: procces.env.DB_PASS,
   database: procces.env.B_NAME,
+  logging: true,
 };
