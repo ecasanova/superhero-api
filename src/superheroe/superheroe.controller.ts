@@ -26,24 +26,14 @@ export class SuperheroeController {
     return await this.superheroeService.getAll(page, limit);
   }
 
-  @Get("getById")
+  @Get("get/:id")
   async getById(@Param("id") id: string): Promise<any> {
     return await this.superheroeService.getById(id);
-  }
-
-  @Get("getByName")
-  async getByName(@Param("name") name: string): Promise<any> {
-    return await this.superheroeService.getByName(name);
   }
 
   @Post("create")
   async create(@Body() superheroe: SuperheroeDto): Promise<any> {
     return await this.superheroeService.create(superheroe);
-  }
-
-  @Post("createBulk")
-  async createBulk(@Body() superheroes: SuperheroeDto[]): Promise<any> {
-    return await this.superheroeService.createBulk(superheroes);
   }
 
   @Delete("delete/:id")

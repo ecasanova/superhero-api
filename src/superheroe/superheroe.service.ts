@@ -12,11 +12,7 @@ import { WorkEntity } from "./entity/work/work.entity";
 import { SuperheroeEntity } from "./entity/superheroe/superheroe.entity";
 import { SuperheroeDto } from "./entity/superheroe/superheroe.dto";
 import { InjectRepository } from "@nestjs/typeorm";
-import {
-  paginate,
-  Pagination,
-  IPaginationOptions,
-} from "nestjs-typeorm-paginate";
+
 @Injectable()
 export class SuperheroeService {
   constructor(
@@ -58,6 +54,7 @@ export class SuperheroeService {
       .createQueryBuilder("superheroe")
       .leftJoinAndSelect("superheroe.powerstats", "powerstats")
       .leftJoinAndSelect("superheroe.images", "images")
+      .orderBy("superheroe.name", "ASC")
       .skip(page)
       .take(limit);
 
@@ -65,49 +62,54 @@ export class SuperheroeService {
     const { entities } = await queryBuilder.getRawAndEntities();
 
     return {
-      data: entities,
+      data: await this.cleanData(entities),
       totalItems: itemCount,
       currentPage: page,
-      pageCount: Math.ceil(itemCount / limit),
+      totalPages: Math.ceil(itemCount / limit),
     };
   }
 
-  async getById(id: string): Promise<any> {
-    const superheroe: SuperheroeEntity = await this.superheroesRepo.findOne(
-      { id },
-      {
-        relations: [
-          "powerstats",
-          "biography",
-          "appearance",
-          "appearance.weight",
-          "appearance.height",
-          "work",
-          "connections",
-          "image",
-        ],
-      }
-    );
-    return superheroe;
+  async cleanData(superheroes: any[]) {
+    superheroes.forEach((superheroe) => {
+      delete superheroe.powerstats.id;
+      delete superheroe.images.id;
+      delete superheroe.biography.id;
+      delete superheroe.appearance.id;
+      delete superheroe.work.id;
+      delete superheroe.connections.id;
+    });
+    return superheroes;
   }
 
-  async getByName(name: string): Promise<SuperheroeEntity> {
-    const superheroe: SuperheroeEntity = await this.superheroesRepo.findOne(
-      { name },
-      {
-        relations: [
-          "powerstats",
-          "biography",
-          "appearance",
-          "appearance.weight",
-          "appearance.height",
-          "work",
-          "connections",
-          "image",
-        ],
-      }
-    );
-    return superheroe;
+  async getById(id: string): Promise<any> {
+    return await this.getSuperHero({ id: id });
+  }
+
+  async getByName(name: string): Promise<any> {
+    return await this.getSuperHero({ name: name });
+  }
+
+  async getSuperHero(params: any) {
+    const queryBuilder = await this.superheroesRepo
+      .createQueryBuilder("superheroe")
+      .leftJoinAndSelect("superheroe.powerstats", "powerstats")
+      .leftJoinAndSelect("superheroe.biography", "biography")
+      .leftJoinAndSelect("superheroe.appearance", "appearance")
+      .leftJoinAndSelect("superheroe.work", "work")
+      .leftJoinAndSelect("superheroe.connections", "connections")
+      .leftJoinAndSelect("superheroe.images", "images")
+      .leftJoinAndSelect("appearance", "appearance")
+      .orderBy("superheroe.name", "ASC");
+
+    if (params.id) {
+      queryBuilder.where("superheroe.id = :id", { id: params.id }).getOne();
+    }
+
+    if (params.name) {
+      queryBuilder.where("superheroe.name = :name", { name: params.name });
+    }
+    const { entities } = await queryBuilder.getRawAndEntities();
+    return await this.cleanData(entities);
   }
 
   async createBulk(superheroes: SuperheroeDto[]): Promise<any> {
