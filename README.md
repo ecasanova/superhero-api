@@ -49,8 +49,9 @@ $ npm run test:cov
 # create migration
 $ npm run typeorm migration:run
 
-# migration run
-$ npm run typeorm:run
+# migration run (load initial data)
+$ npm run typeorm migration:run
+
 ```
 
 # Usage
