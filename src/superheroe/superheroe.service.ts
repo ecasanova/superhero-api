@@ -55,10 +55,17 @@ export class SuperheroeService {
       .leftJoinAndSelect("superheroe.powerstats", "powerstats")
       .leftJoinAndSelect("superheroe.biography", "biography")
       .leftJoinAndSelect("superheroe.images", "images")
+      .leftJoinAndSelect("superheroe.work", "work")
       .orderBy("superheroe.name", "ASC");
 
     if (search.keyword) {
       queryBuilder.where("superheroe.name like :name", {
+        name: `%${search.keyword}%`,
+      });
+      queryBuilder.orWhere("biography.fullName like :name", {
+        name: `%${search.keyword}%`,
+      });
+      queryBuilder.orWhere("work.occupation like :name", {
         name: `%${search.keyword}%`,
       });
     }
