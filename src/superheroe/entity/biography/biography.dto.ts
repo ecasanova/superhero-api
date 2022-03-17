@@ -15,7 +15,7 @@ export class BiographyEntityDto {
   placeOfBirth: string;
 
   @ApiProperty()
-  firstAppearanceEntity: string;
+  firstAppearance: string;
 
   @ApiProperty()
   publisher: string;

@@ -3717,7 +3717,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('8d198930-5a9d-4b40-b964-6866f189f94a','0 kg','1a682658-b17e-4529-9ab8-583e4ea2d601'),
 	 ('deddbf4a-f844-437d-8b37-1661c414fa2a','79 kg','9decd3ce-a4d3-4397-ae82-7e0fe8011a4c'),
 	 ('5587d33a-f40e-4a89-b636-89dac2d822c3','51 kg','6de5235f-12cf-4444-a0ca-1dc56ccd853c'),
-	 ('849a0ceb-cf49-4c7c-9ad4-d8f08986033e','81 kg','af099ca7-67d5-41ef-bd43-ba5ac8a38275');INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+	 ('849a0ceb-cf49-4c7c-9ad4-d8f08986033e','81 kg','af099ca7-67d5-41ef-bd43-ba5ac8a38275');INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('7caac514-3ca5-420a-8f33-b75727bfa1ce','Carl Creel','No alter egos found.','New York City, New York',NULL,'Marvel Comics','bad','aed570fb-4fdf-4721-88db-f8c106ae8d5b'),
 	 ('4739a1be-1b3f-4b64-b581-3379637700c8','Gabriel Lan','No alter egos found.','Xandar, a planet in the Tranta system, Andromeda galaxy',NULL,'Marvel Comics','bad','e5dc311f-be94-447f-9b49-8ed8e7e07e6d'),
 	 ('fa517598-ae44-431e-b04f-85a7e6331d95','Abraham Sapien','No alter egos found.','-',NULL,'Dark Horse Comics','good','79b9ef1b-2eb4-4fa7-8eeb-9d178159b24d'),
@@ -3728,7 +3728,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('9ca82efd-ada6-49c3-82ab-c8a2fb625fbd','Francis','No alter egos found.','-',NULL,'Marvel Comics','bad','910988a0-ce09-44b5-b598-db49822603b9'),
 	 ('ed50b9e8-b1c2-480b-b03e-6a36d019aa20','Adam Strange','No alter egos found.','Chicago, Illinois',NULL,'DC Comics','good','e16cea68-da94-45e4-b95d-8fee5a86a38e'),
 	 ('a11b7556-5183-49af-bec8-70bce99630c0','Abraxas','No alter egos found.','Within Eternity',NULL,'Marvel Comics','bad','8e78cd02-91e3-46a5-8bf0-8a77b188fc51');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('be11c99d-c76b-456e-bf50-cb8271394c0b','Alexander J. Mercer','No alter egos found.','-',NULL,'Wildstorm','bad','d12f29e8-eeb4-48c3-8f87-7463a31b2517'),
 	 ('ba9bf6a6-0a2e-4a11-aaa5-ca6b9ccc78dd','','No alter egos found.','-',NULL,'NBC - Heroes','good','6e390de3-5689-48f6-8ca3-cc4abefd2d39'),
 	 ('1de09b24-8c1a-44af-b8bc-2d9054fb7f44','Emil Blonsky','No alter egos found.','Zagreb, Yugoslavia',NULL,'Marvel Comics','bad','d775beb2-a447-413c-9d8e-5cd7a0df4b52'),
@@ -3739,7 +3739,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('d7c276e8-cc58-4c89-90a4-71d5ba82dc88','Christina','No alter egos found.','-',NULL,'Marvel Comics','good','778cec3e-1b40-48d3-827d-0ae89a1f2b0a'),
 	 ('a7894af1-c651-49d5-8a1d-26313b48e0b0','Warren Kenneth Worthington III','Archangel','Centerport, Long Island, New York',NULL,'Archangel','good','66ff80a5-83fb-4911-977a-4e85b875aca4'),
 	 ('3dc55d82-3985-4c47-ad15-e54442a495d0','Bernhard Baker','No alter egos found.','-',NULL,'DC Comics','good','8e42732b-d807-438e-afef-d29981523cba');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('9ed2ed72-4201-4d4f-a8c7-1adce7a6061f','Christoph Nord','No alter egos found.','Unrevealed location in former East Germany',NULL,'Marvel Comics','good','549708ba-4841-4990-b8bf-0d9807a9293f'),
 	 ('b8f103c7-38d4-47ad-b266-b849d69d3279','Hank Pym','Giant-Man, Goliath, Wasp II, Yellowjacket','Elmsford, New York',NULL,'Giant-Man','good','40edc442-fda7-401e-b236-cb02957f3fe7'),
 	 ('ddf998f9-f299-42bb-b15f-c62ce2e8d399','Alfred Thaddeus Crane Pennyworth','No alter egos found.','-',NULL,'DC Comics','good','a1fc5be7-5249-4c01-918b-3691ad336c7f'),
@@ -3750,7 +3750,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('f567632c-213b-4e3f-8ebe-12a2b8aa7206','Orin','No alter egos found.','Atlantis',NULL,'DC Comics','good','a9d70331-a531-4fae-a47b-b0bbd5a317a2'),
 	 ('b8373709-92a9-441d-bb01-70f8d8a79b95','Garth','No alter egos found.','Poseidonis, Atlantis',NULL,'DC Comics','good','3182f168-a9ce-471f-a0a7-e410537d098a'),
 	 ('14f64fc1-be6a-4336-903c-006f9658901e','Annihilus','No alter egos found.','Planet of Arthros, Sector 17A, Negative Zone',NULL,'Marvel Comics','bad','ad421851-90ef-4ecd-963a-ee839a142bdd');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('6491b201-9a35-43be-aa31-4968e761f04b','Arthur Curry, Jr.','No alter egos found.','-',NULL,'DC Comics','good','dd89d636-c26f-43e9-b5d7-fa168ae39d92'),
 	 ('251aa64c-24c1-4f45-9d70-91b9190842bf','Warren Kenneth Worthington III','Angel','Centerport, Long Island, New York',NULL,'Angel','good','dfa2a18d-b9fb-4e55-9622-60fc90a0e451'),
 	 ('a9427c13-a32a-47f7-b5e6-9451f327f0ef','Philippa Sontag','No alter egos found.','Vietnam',NULL,'Marvel Comics','bad','30e1c472-f73e-42d1-a897-cf9b7fb3afb2'),
@@ -3761,7 +3761,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('9e4d201c-e39a-407b-9a82-806f8057a3c3','Hisako Ichiki','No alter egos found.','-',NULL,'Marvel Comics','good','185844fd-f51d-419f-90b9-3043d9ad975d'),
 	 ('b98d162a-bd48-4760-bf59-eb37712fcd51','','No alter egos found.','Crystal Mountain',NULL,'DC Comics','bad','5d649c1a-16ae-4eb1-9764-a64547e05766'),
 	 ('58717f74-159b-4a09-bcd3-01d331a47b4e','Ray Palmer','No alter egos found.','-',NULL,'DC Comics','good','1790812a-7e4a-491b-acd8-286c34cbf715');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('ace82fe4-34fb-487c-9212-b89b354e2d3d','Jeanne-Marie Beaubier','No alter egos found.','Montreal, Quebec, Canada',NULL,'Marvel Comics','good','654996fb-fe61-4b99-8221-b0305bba001b'),
 	 ('779c523a-e1c2-49c6-baae-bc632a981b49','','No alter egos found.','Isla des Demonas, Caribbean Sea',NULL,'Marvel Comics','bad','992eb976-cf44-4f18-90a4-cef3fb16ee97'),
 	 ('b8ee2fbe-1ed9-4c6f-9068-1a1339fdcf73','Michael Washington Lane','No alter egos found.','Gotham City',NULL,'DC Comics','good','69db890c-5ef0-458a-a100-90942e341567'),
@@ -3772,7 +3772,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('a0e47096-9d68-4595-b7e9-508c08b02f35','Stephanie Brown','Spoiler','-',NULL,'Spoiler','good','344909eb-dbee-4ba4-8127-cdc2c2df8b05'),
 	 ('7454d58b-3d20-4108-8d04-1681068b027b','Terry McGinnis','No alter egos found.','Gotham City, 25th Century',NULL,'DC Comics','good','df1b43d7-1842-4a44-bbcb-4afa4db796b7'),
 	 ('ca722f18-4532-479f-969f-d5d37ec61fe5','Bruce Wayne','No alter egos found.','Crest Hill, Bristol Township; Gotham County',NULL,'DC Comics','good','eb73c622-1860-4517-911d-6d886c5b5dde');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('e011a162-25f8-4789-be38-aa6d11fe4abf','Sean Cassidy','No alter egos found.','Cassidy Keep, Ireland',NULL,'Marvel Comics','good','98119f18-84ac-42ff-80cd-8d9ceb3d2378'),
 	 ('9cad1dbd-0295-416a-a073-c0434e787488','Roberto Velasquez','No alter egos found.','-',NULL,'Marvel Comics','good','c58f5cb5-5e65-44a0-85df-390f3207639c'),
 	 ('c758ec1a-cc44-40ad-9897-3ec15b4dbb1f','Barbara Gordon','Oracle','-',NULL,'Oracle','good','d840cbfd-cb1b-48de-abbf-6a81c9cbcaa2'),
@@ -3783,7 +3783,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('5897d69b-d5e4-4d98-97df-00b6c442ed10','Dinah Drake Lance','No alter egos found.','-',NULL,'DC Comics','good','cf3595d5-8190-4838-85fe-b4cec5572600'),
 	 ('aa2e5797-35b5-4324-b4dd-1e8ea5c01384','Tanya Sealy','No alter egos found.','Chicago, Illinois',NULL,'Marvel Comics','bad','88a921c3-6ced-4a65-9eaa-7b8997750cfd'),
 	 ('6b6afbbc-dbd3-4ce1-ad0a-de796bfc19a3','Donald Gill','No alter egos found.','Newark, Delaware',NULL,'Marvel Comics','bad','5da06e31-cdb0-4a0c-90c5-fbdc60a964eb');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('b50b9862-5f63-4133-a354-089635427e5e','Tabitha Smith','Meltdown','-',NULL,'Meltdown','good','2727634d-6384-41cc-9076-2d1969aa4c2d'),
 	 ('cb0d6b99-8e6d-4233-be73-167f2d4d12a5','Nathaniel Adam','No alter egos found.','-',NULL,'DC Comics','good','1611eb99-dced-42ad-be84-6c6f4494bd33'),
 	 ('46547cf1-068a-45dc-b9da-c89271ec10ea','','No alter egos found.','-',NULL,'SyFy','good','4c544d27-860c-4aa7-b1c5-523bf2a825c1'),
@@ -3794,7 +3794,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('785714f9-cb9a-412d-9d01-031c72cb472d','Floyd Lawton','No alter egos found.','-',NULL,'DC Comics','bad','2a3d569b-dfaa-465f-999c-536a0e4f26a9'),
 	 ('bd45113d-514c-4f6b-a87d-48b909cef40e','Leonard Samson','No alter egos found.','Tulsa, Oklahoma',NULL,'Marvel Comics','good','c4b4451e-492e-4486-a45b-401b2c4c79ef'),
 	 ('38b94921-2e34-4158-811a-8741b9d40840','Elektra Natchios','No alter egos found.','-',NULL,'Marvel Comics','good','f936ac21-1173-439e-8fdd-39e23771b7bd');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('70190e76-871e-47d1-8b78-cd2bc1e8a9ca','Jason Blood','No alter egos found.','Hell',NULL,'DC Comics','neutral','103d6478-f7fd-46d8-944b-28ef4076e753'),
 	 ('bad755e4-2828-4588-be1a-d243233d0a61','','No alter egos found.','-',NULL,'Marvel Comics','good','5d078a55-5387-427e-bf6e-ce0e229bacfc'),
 	 ('460d133b-b184-431d-830b-1633509ea711','Wally West','Speed Demon','Blue Valley, Nebraska',NULL,'Speed Demon','good','d9b2c3ae-afbd-498f-8a94-299b44f446a0'),
@@ -3805,7 +3805,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('e5761b90-429a-4a07-8862-7ed68caf172f','','No alter egos found.','-',NULL,'Marvel Comics','bad','62ec512c-a2f2-4ccc-be49-311eeb40ee9a'),
 	 ('45aac1de-7310-4a75-9f38-ba0bed0c2856','Bartholomew Allen II','Flash IV, Kid Flash II','-',NULL,'Flash IV','good','1200be15-e506-4d2f-9b85-ee5e7d8259be'),
 	 ('1e7fa9bb-6d92-453a-bcf9-d1b4544196e1','Jonathan Hart','No alter egos found.','New Haven, Connecticut',NULL,'Marvel Comics','good','d829171e-70d6-44e8-9311-7f4c675c0d50');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('bf0cab1e-b8ac-46b2-a7ce-de29a7c63d70','Jessica Campbell Jones Cage','Power Woman','Forrest Hills, New York City',NULL,'Power Woman','good','198fc428-c7c1-4305-bea0-71e3ad6243ba'),
 	 ('49721be2-0422-41a9-9fd5-da3493c1206a','Kathryn Janeway','No alter egos found.','Bloomington, Indiana, Earth',NULL,'Star Trek','good','d0aa89f8-2a26-4ace-a490-7a1ce9fbf002'),
 	 ('9ced6016-67a4-4193-a6a6-b1efc3a74302','Dave Lizewski','No alter egos found.','New York City',NULL,'Icon Comics','good','473e9375-aa4c-4c26-8873-6e3749b91062'),
@@ -3816,7 +3816,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('85a4b84f-89a6-4cb8-a580-4bdf587c6027','','No alter egos found.','Vietnam',NULL,'Marvel Comics','good','cec5fb98-4c97-4032-9911-d3b48db479af'),
 	 ('7948f80d-5659-4656-b4e1-2db3e8d8f03a','Maya Herrera','No alter egos found.','Dominican Republic',NULL,'NBC - Heroes','good','bafc994c-eeb7-42ad-b2de-84caa83dfdfe'),
 	 ('ca3850c2-a959-47d7-a8f5-06d9ac080857','Metron','No alter egos found.','-',NULL,'DC Comics','good','7159f6a9-be96-4d21-85f4-f876477a11e8');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('64bbe333-442a-46a4-b5ac-9e3ca77faa46','Marc Spector','No alter egos found.','Chicago, Illinois',NULL,'Marvel Comics','good','33d21a61-e8bb-46c7-870e-bd45e2384238'),
 	 ('d4e2730b-119f-4adf-854b-131dd5f1760e','Namor McKenzie','No alter egos found.','Atlantis',NULL,'Marvel Comics','good','d32697f5-e588-45a7-9a50-24f87c2dad8e'),
 	 ('dc53f7e5-f889-4bf1-9444-537bd836bf0b','Dick Grayson','Batman II, Robin','Gotham City',NULL,'Batman II','good','a96114e1-fb22-4d0b-b3e4-33898da83258'),
@@ -3827,7 +3827,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('0b26671b-3267-4620-8a7c-5259cf497ba4','John Smith','No alter egos found.','-',NULL,'DC Comics','good','8dbbeae4-7a90-4e47-b51e-ccd441c9e3d2'),
 	 ('fd7a299d-2013-4198-aad7-4d648564790f','Jason Todd','Red Hood','-',NULL,'Red Hood','good','771bc048-313d-4e88-95cf-d4aae1ff7ce9'),
 	 ('821c75eb-0f5c-4568-b2e7-e44f1276766e','Sauron','No alter egos found.','-',NULL,'J. R. R. Tolkien','bad','2669c0ad-8fed-41c4-bcd3-d5ab3bdbc51e');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('0e8f2217-64c4-4568-85a6-b040f860c2ef','Elaine Coll','No alter egos found.','-',NULL,'Marvel Comics','bad','9e558bbb-ec63-41e2-9644-f40390d74308'),
 	 ('6e40fec0-1b21-452a-a63b-ce72a7b58e3a','Gaveedra Seven','No alter egos found.','Mojoworld',NULL,'Marvel Comics','good','17de7481-e438-4058-bad0-6635133508f4'),
 	 ('3efbc031-e20b-4c0f-802f-3d88791cd1af','Kitty Pryde','No alter egos found.','Deerfield, Illinois',NULL,'Marvel Comics','good','8725fb62-cbb2-4fc7-8ac0-21e22e103b35'),
@@ -3838,7 +3838,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('787a655b-02ea-4d7c-b517-1d34bc8bdcf2','Tony Masters','No alter egos found.','-',NULL,'Marvel Comics','bad','dc4e556d-d546-41d6-a721-ff23ac08ddcf'),
 	 ('d2d7b072-47ac-4377-a763-6dec773483e4','Eric Kevin Masterson','No alter egos found.','-',NULL,'Marvel Comics','good','f1984d7a-d442-4fdf-a29a-dcc0c9c52ddc'),
 	 ('1a7d9b06-930b-427d-91c7-74fada3bd754','','No alter egos found.','Jotunheim',NULL,'Marvel Comics','bad','25053bab-c97d-43fc-afe8-a6b2e3102fae');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('7f75e018-4c8c-4688-b785-54ae37757d2e','','No alter egos found.','-',NULL,'DC Comics','bad','98011747-b1fb-4c8c-8e31-3d66f6293eb8'),
 	 ('4ee953d1-ba93-402a-8560-5bab8873b0d1','Yoda','No alter egos found.','-',NULL,'George Lucas','good','37b03a16-f172-4a40-b5c8-fd7a0d6e855a'),
 	 ('8f5520ff-c3e5-451c-9215-c4cbd958a8d1','Beta Ray Bill (translation of his Korbinite name)','No alter egos found.','Burning Galaxy',NULL,'Marvel Comics','good','347a891a-a621-4f6c-b532-9796ad31acbe'),
@@ -3849,7 +3849,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('9de7a814-fd34-462c-aff4-b6c8deeb44f8','Jaime Reyes','No alter egos found.','Presumed to be El Paso',NULL,'DC Comics','good','8348a306-6081-450c-8a04-09047bcc86c1'),
 	 ('ebd6158c-a07b-4a8f-b5b0-fb99aeb63e9c','Steve Rogers','No alter egos found.','Manhattan, New York City, New York',NULL,'Marvel Comics','good','389605f7-7d79-4371-9be2-34e2382bc66d'),
 	 ('c4effd07-00f5-461e-9b6c-2a4ef00a1eff','Samuel Zachery Guthrie','No alter egos found.','Cumberland County, Kentucky',NULL,'Marvel Comics','good','e3127e94-c36b-43cd-ac83-395e5d2f574d');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('f2515f06-48b1-4d87-8495-be50590a01ef','Kevin Sidney','No alter egos found.','-',NULL,'Marvel Comics','bad','bc5e6a70-e9f4-4eb1-8b06-20af13d964a2'),
 	 ('e6e92a0a-1c2f-4ea3-8b26-b164416aee58','Vanessa Carlysle','No alter egos found.','-',NULL,'Marvel Comics','neutral','abd26957-0384-40ca-8d0a-d09987443fe5'),
 	 ('add96fc1-fa0c-40d1-b99b-f5becd6094ff','Dashiell Robert Parr','No alter egos found.','-',NULL,'Dark Horse Comics','good','f6ae11e3-bcd6-4890-a2d6-386e3ea891a8'),
@@ -3860,7 +3860,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('be0d7a4a-5e17-4077-a4b7-07c4baf8de13','Ronald Raymond','No alter egos found.','-',NULL,'DC Comics','good','66b2ad64-3070-4759-8b2a-0de1efc0e913'),
 	 ('793809e8-97c7-43cb-a6d5-44ee3a98e32c','Jay Garrick','No alter egos found.','Hibbardsville, Kansas',NULL,'DC Comics','good','ebd8c1fa-54ce-4316-a42d-d0768f291e46'),
 	 ('147ced25-033e-44cf-ace1-be7cb6a4e53f','Remy Etienne LeBeau','No alter egos found.','New Orleans, Louisiana',NULL,'Marvel Comics','good','89704ef5-74a8-427e-9f44-5749f4f0906e');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('5d5df231-058e-43c5-a2d5-e47a0103dffd','Madelyne Jennifer Pryor','No alter egos found.','Created in Sinister''s Labs, Nebraska',NULL,'Marvel Comics','bad','6dc30709-0c13-4d26-a92f-b86582c456e0'),
 	 ('a597f28f-bb7a-426a-a5ef-fa0f4b9b511d','Greg Willis','No alter egos found.','Sheboygan, Wisconsin',NULL,'Marvel Comics','good','d73f4daa-af56-4d0e-a616-1c3200922772'),
 	 ('e59cb301-3eab-4cc8-9fc7-ccf5c2d29f99','Harley Quinn','No alter egos found.','-',NULL,'DC Comics','bad','2b6d9586-9065-4759-a091-6a07a4a4ecb0'),
@@ -3871,7 +3871,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('2e77ed00-cecc-4a67-a71f-dfd0e768b808','Jean-Luc Picard','No alter egos found.','La Barre, France, Earth',NULL,'Star Trek','good','15e867c4-2fc4-441c-9ece-e918b1504dc9'),
 	 ('b467244f-1078-425d-8e52-36c5794c0873','Jack Napier','No alter egos found.','-',NULL,'DC Comics','bad','3805d868-46b4-4c05-95cf-3f71da28a081'),
 	 ('f086a1b6-6057-45e1-8180-8be219b68548','','No alter egos found.','Bolovax Vik',NULL,'DC Comics','good','07fde23b-2162-42ef-a260-32a8ea90d2f3');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('bfb45d16-e3dc-4cbb-8cba-bb21cf218b7d','Wallace Rudolph West','No alter egos found.','Blue Valley, Nebraska',NULL,'DC Comics','good','3950d175-2854-41a4-bdb4-1db1297f29bd'),
 	 ('7f1aecfe-9d28-4b29-a2b5-fa72eb83333f','Ayla Ranzz','No alter egos found.','-',NULL,'DC Comics','good','de30b3bc-0be0-4e17-8c0e-708a3436f6a8'),
 	 ('02f33c68-bb40-489d-b088-81881344c948','Lobo','No alter egos found.','-',NULL,'DC Comics','neutral','9fcdff62-3cec-4eac-9510-bc92bfe7edf2'),
@@ -3882,7 +3882,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('c1d65f06-15cb-4a1b-933d-fdeb7b0a6ee9','Craig Hollis','No alter egos found.','-',NULL,'Marvel Comics','good','d7a64c69-e544-40f6-82fe-9d30b4d1ef15'),
 	 ('0cbd7d9f-037a-4eef-bd31-b49aa76151e3','Jean-Paul Beaubier','No alter egos found.','Montreal, Qu?bec, Canada',NULL,'Marvel Comics','good','834db0ad-e4c2-4d02-aee3-f9254f522542'),
 	 ('20e43c51-22c3-40b0-b3e4-003e9e2dfddc','Paul Blart','No alter egos found.','-',NULL,'Sony Pictures','good','2ffa3bf5-fa15-49d8-b042-5f4f80bd42db');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('c9cbe10b-75df-420a-a422-b34a48832117','Kara Zor-L','No alter egos found.','-',NULL,'DC Comics','good','dadec996-cc9e-4855-82b5-d1a43eb29afc'),
 	 ('bed6d11a-d824-48e1-bad1-bde4129e7f12','Elizabeth Braddock','No alter egos found.','Braddock Manor, England',NULL,'Marvel Comics','good','872b8aa6-280c-40ad-a2f4-15c580446784'),
 	 ('9ef5f148-a4aa-4b8b-b6c2-6a34c5d0d081','Q','No alter egos found.','-',NULL,'Star Trek','-','72cd685b-290d-41eb-b142-62b06c874502'),
@@ -3893,7 +3893,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('640bcfe5-599a-4c14-ad16-50fb576273fe','Evan Daniels','No alter egos found.','-',NULL,'Marvel Comics','good','998e8b1f-0cc0-4d59-9199-db304889be3b'),
 	 ('c8897e9d-92db-493c-819a-a410e692716d','','No alter egos found.','-',NULL,'George Lucas','bad','b2070274-f3bf-46c8-8753-641c1fa3f44a'),
 	 ('80d964b3-250a-4288-8c40-8155da3293a7','Thanos','No alter egos found.','Titan',NULL,'Marvel Comics','bad','e99670f8-2fef-47de-a6c0-fbed55cacd94');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('ba54da21-5a1c-4a5a-9649-b066d8559ae6','Angel Salvadore Bohusk','Angel Salvadore','-',NULL,'Angel Salvadore','good','7e926360-c107-4b1e-9262-4e2fe09541e5'),
 	 ('c867a2be-f3da-4d8f-82a1-2e73e6763533','Ultron','No alter egos found.','Created in Cresskill, New Jersey',NULL,'Marvel Comics','bad','cfeec08c-cd1f-4b61-908c-ffeb5071bc2c'),
 	 ('f1d2f286-d853-46a5-ba4e-fb01df3def22','Uatu','No alter egos found.','-',NULL,'Marvel Comics','good','dd0a0144-40f8-4c9e-9b83-10185427a234'),
@@ -3904,7 +3904,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('383f8bd2-c50c-4ded-b186-89bdbaa69e9e','Nathan Summers','No alter egos found.','Unrevealed location in the 20th Century United States',NULL,'Marvel Comics','good','c93e32ae-c858-482f-908d-a69b3a470493'),
 	 ('aec34137-bb04-4675-ba63-6fe751dc39b8','Callisto','No alter egos found.','-',NULL,'Marvel Comics','bad','cca25551-9262-4425-9999-233f0af7e4d1'),
 	 ('657a44c0-9e06-4bf9-98e9-a6b8a4b1d20c','Piotr Nikolaievitch Rasputin','No alter egos found.','Ust-Ordynski Collective, near Lake Baikal, Siberia, Russia',NULL,'Marvel Comics','good','d8469422-7c35-4199-9153-1d3031a935f5');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('ec99169b-b1c1-47f5-978d-4482828640c6','Alison Blaire','No alter egos found.','Gardendale, Long Island, New York',NULL,'Marvel Comics','good','13a8be48-4b66-49de-88a6-b6561c0211d5'),
 	 ('cb631ce9-7425-4eb4-8a98-c07235faa18c','','No alter egos found.','-',NULL,'Marvel Comics','bad','2f360567-9e71-4586-ab25-5c9ef12b4f05'),
 	 ('265563d2-8e1c-41fd-be23-89c161c4c701','Ego','No alter egos found.','The Black Galaxy',NULL,'Marvel Comics','bad','220651fd-7837-431b-8ce2-cc3ac6f92350'),
@@ -3915,7 +3915,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('cf48697b-7d0a-4882-9922-4e28d3f88923','Mick Rory','No alter egos found.','-',NULL,'DC Comics','bad','469ffca2-cef4-4e7e-a9cb-3ec4f9020420'),
 	 ('3fb08e96-bd2f-4aad-9cee-e9165bf2e316','Hope Summers','No alter egos found.','-',NULL,'Marvel Comics','good','978fb18a-b652-46a3-80b2-a47750b83667'),
 	 ('9a4b0c99-84df-410d-a204-239505c4131d','Jar Jar Binks','No alter egos found.','Naboo',NULL,'George Lucas','good','c55c55cf-f451-44ab-a4af-402c3b937b0d');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('a6a4ea61-2f61-4eaf-8fbb-056b9f93d661','Jim Powell','No alter egos found.','-',NULL,'ABC Studios','good','74591c11-9320-4fa5-8c13-3a0a3ebd13a7'),
 	 ('77a583f5-2063-489f-a18a-990ba07064b3','Kevin Ethan Levin','No alter egos found.','-',NULL,'DC Comics','good','8d09b061-ff11-487a-9952-ca4e92722ecf'),
 	 ('bed08a18-fcb4-4e9c-8093-d1637faa4a84','Krypto the Superdog','No alter egos found.','-',NULL,'DC Comics','good','ed8cdbe9-f393-4788-b618-dda5c382d1dd'),
@@ -3926,7 +3926,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('ac2b6f40-9366-44e7-af58-895da5aa0b75','Victor Zsasz','No alter egos found.','-',NULL,'DC Comics','bad','4f6376bc-590c-4899-be33-45285ede8119'),
 	 ('32d7d996-f803-43ad-af70-07b99ccbea78','Mark Raxton','No alter egos found.','-',NULL,'Marvel Comics','bad','b752c531-08cd-4e74-8109-d6b893adc44e'),
 	 ('2af1bf66-2dd4-470b-874d-ed1f4c136fc1','','No alter egos found.','-',NULL,'Marvel Comics','bad','37bcfcaa-4892-4820-931d-ef853ce64fea');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('8af6104c-ebbe-48a0-aca5-a8fa73f49e7c','Richard Rider','No alter egos found.','Queens, NY',NULL,'Marvel Comics','good','f63a82bb-48dc-4c2e-a76a-15f3ee342db0'),
 	 ('fa3b645d-162b-4a9a-adc4-013a56339311','Adrian Veidt','No alter egos found.','-',NULL,'DC Comics','bad','e094feae-58e1-4f65-b647-60ceecb89326'),
 	 ('33c5f171-cde0-4088-a28f-8636c2584e7c','Lorna Dane','No alter egos found.','Presumably northern California - not confirmed',NULL,'Marvel Comics','good','d123cf28-3c80-4997-a487-9e0f88e7f8d7'),
@@ -3937,7 +3937,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('526d4196-6cf9-418f-8534-3d9bd8ca9d0e','Walter Langkowski','No alter egos found.','Edmonton, Alberta, Canada',NULL,'Marvel Comics','good','c54c96b6-0a16-446e-a084-c03c2a6ff966'),
 	 ('cc38e752-42a0-426a-91e0-4ebfeaeecece','Tessa','No alter egos found.','Place of birth unknown',NULL,'Marvel Comics','good','5202d992-b050-44dc-8571-9980afd0fdd1'),
 	 ('c1930df4-2cad-4852-ba3b-29e632e5c7a2','Wanda Maximoff','No alter egos found.','Wundagore Mountain, Transia',NULL,'Marvel Comics','bad','88c1b20c-dc6f-4502-af9b-aaddd5bd858c');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('31360caf-2202-4a63-bcd5-e94906447e7c','Cindy Moon','No alter egos found.','-',NULL,'Marvel Comics','good','18abb439-d692-4f66-9ab9-41eceae17aa3'),
 	 ('989b8c36-6f74-49d1-a4aa-b635cd412b6d','Thaal Sinestro','No alter egos found.','Korugar City, Korugar',NULL,'DC Comics','neutral','21a9ca6d-f588-4325-95f7-ec24408cde52'),
 	 ('20bc5925-a190-4ede-a71e-a3ba5d2e10ab','','No alter egos found.','Sakaar',NULL,'Marvel Comics','good','306ae82a-14c0-46a8-a5be-9e9bdf52b0a7'),
@@ -3948,7 +3948,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('5ea0da7e-4dc4-4b3d-89fe-3aca83f5362e','','No alter egos found.','Boston, Massachusetts',NULL,'Marvel Comics','bad','5559cacf-fa14-4d49-bf92-81c5508a099a'),
 	 ('093c3842-29d9-419d-99a4-a863955c3893','MacDonald Gargan','Scorpion','-',NULL,'Scorpion','bad','18cef378-c297-4a37-b49a-480aa876b31c'),
 	 ('bdea3778-fd85-493e-8150-571a3b6d64e1','Vision','Anti-Vision, Vision II','-',NULL,'Anti-Vision','good','d53fc879-9f39-404f-b395-964306a40fe7');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('52c79d17-a6d9-401a-b7f2-bb4db5032298','Emil LaSalle','No alter egos found.','-',NULL,'DC Comics','bad','f82690ef-03d8-4dfd-b710-74fdd5935073'),
 	 ('d554c17a-84b1-46da-8bb6-e35e54ee4ac6','Laura Kinney','No alter egos found.','The Facility, location unrevealed',NULL,'Marvel Comics','good','8cafd5bb-716c-48c9-9a41-51ae263b61f6'),
 	 ('17bb1109-ad77-4a86-84d6-ea55d51200ee','Garfield Mark Logan','No alter egos found.','-',NULL,'DC Comics','good','023ea0eb-e79e-45c2-a401-92f684629a8f'),
@@ -3959,7 +3959,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('166074a7-faaa-496d-b069-fce1b70b4644','Carol Danvers','Binary, Warbird','Boston, Massachusetts',NULL,'Binary','good','c5e1334b-834e-4890-bc95-8124488def69'),
 	 ('a670e51a-6949-44e5-aca6-95454575ac84','','No alter egos found.','-',NULL,'Marvel Comics','good','718da1dd-21a9-4f43-9bcc-a45999026845'),
 	 ('b17baeb2-f137-4e93-b44d-aafca098b04c','Burchell Clemens','No alter egos found.','-',NULL,'Marvel Comics','bad','ada0f2ed-ec32-420a-9a25-95d61d67521f');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('41025aa5-6ac6-4492-8f71-b00018d1f5e9','Boston Brand','No alter egos found.','-',NULL,'DC Comics','good','924e6b0d-cff1-4663-a26b-4bbb9d64cedd'),
 	 ('25903fb9-31f5-4c1c-9bf4-30ce1cd3d56f','','No alter egos found.','-',NULL,'IDW Publishing','good','35b50736-ddc7-43e0-bfc1-30535a7d85d2'),
 	 ('4347092d-844b-43ab-afa0-74b56d53f5fa','Wade Wilson','Deadpool, Venompool','-',NULL,'Deadpool','bad','b1ca94a0-eabd-401e-b906-696e0a6b4a9a'),
@@ -3970,7 +3970,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('5b898e82-021e-4c1f-841e-5660b1e3ea37','Tony Stark','No alter egos found.','Long Island, New York',NULL,'Marvel Comics','good','c413c941-3b83-4a84-825b-d7bf96e0c4c1'),
 	 ('93460bca-cb13-43ff-8d32-53cc25e8f86c','Jennifer Kale','No alter egos found.','Citrusville, Florida',NULL,'Marvel Comics','good','14508004-7608-48d2-a61b-4e85b6899fff'),
 	 ('a8099710-4692-47b5-a20d-c5dcc6b1f357','Helen Takahama','No alter egos found.','Ojai, California',NULL,'Marvel Comics','good','7f25de56-3075-4327-97d0-c294b9763164');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('4af07b3c-39dd-4793-b1ac-682628141fab','King Kong','No alter egos found.','Skull Island',NULL,'','good','c7d219b5-7739-41d9-819d-65e339a17042'),
 	 ('2a9d1fac-0258-42f2-9c02-03b4a5797256','','No alter egos found.','-',NULL,'Marvel Comics','good','a89f9dc6-1491-4963-9162-c824c6dcc840'),
 	 ('885ceeb9-9235-4927-bf7c-2ff88ea4633b','Curtis Connors','No alter egos found.','Coral Gables, Florida',NULL,'Marvel Comics','bad','f002e7d8-9bb9-41cb-a1f0-315bff639442'),
@@ -3981,7 +3981,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('5db7efd5-a876-4abe-81a4-e22ae7e4a250','Victor Fries','No alter egos found.','-',NULL,'DC Comics','bad','d21b0ce9-6002-497b-88ce-0479d84bfe7e'),
 	 ('cefe8169-a333-431a-82da-6e4ef45f408f','Sharon Ventura','She-Thing','Pullman, Washington',NULL,'She-Thing','good','662b063b-6116-4323-8d34-8db263d733c1'),
 	 ('bc6b1d11-1d5a-4ac3-983e-a3dd619106bd','Ellie Phimister','No alter egos found.','-',NULL,'Marvel Comics','good','f431e367-a606-490b-bb7d-363abd2a95c8');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('c8c6aa33-9745-4d8a-997c-15fadb8e7a9b','Luke O''Brian','No alter egos found.','-',NULL,'DC Comics','good','305ccaae-05fa-4453-9981-757cd6820dcc'),
 	 ('c082f474-84b2-4452-a6a1-f414b20904c1','Bette Sans Souci','No alter egos found.','-',NULL,'DC Comics','bad','8033d328-8700-469e-a139-4a9961bdf583'),
 	 ('174c479c-f643-431e-afed-45a157ae7ddb','John Rambo','No alter egos found.','Bowie, Arizona',NULL,NULL,'good','a76c7b67-3282-462b-bcc7-b01a502dae08'),
@@ -3992,7 +3992,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('ac2c9d62-ad1c-4f2c-a672-98e8c822b043','Al Simmons','No alter egos found.','Detroit, Michigan (8th level of Hell after rebirth)',NULL,'Image Comics','good','10ec1a5b-5aec-4130-acb7-2796f98a2e3f'),
 	 ('ad4859fe-ad43-4591-b5cb-84e838bf5fa6','Gwen Stacy','No alter egos found.','-',NULL,'Marvel Comics','good','2398140d-0d66-4a80-ab62-1ef21c3c4c26'),
 	 ('b4f31365-da97-449b-8627-19c1e1180d97','Kal-El','No alter egos found.','Krypton (Earth-Prime)',NULL,'DC Comics','bad','8b9c1df5-12fb-49b3-a69d-2f590a993b74');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('41a97a31-e12a-4fc3-b9a9-ba40c892f362','Vince Faraday','No alter egos found.','-',NULL,NULL,'good','6e6f224b-ad2f-4d14-bf8d-89af670f0cfe'),
 	 ('9a8361b2-5012-4b61-bfdd-8c274b1531ae','Ben Grimm','No alter egos found.','New York City, New York',NULL,'Marvel Comics','good','14905eb2-6d5a-4e4f-abed-4ec2068b6f89'),
 	 ('fe763b13-6524-4544-9f2f-4f036094b9d9','Patrick Mulligan','No alter egos found.','New York City',NULL,'Marvel Comics','good','3cdbe6d2-e75c-4511-bc1c-220d1b875082'),
@@ -4003,7 +4003,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('fea3e7b5-f9ee-4046-868c-29aeee518100','Zatanna Zatara','No alter egos found.','-',NULL,'DC Comics','good','0134e400-81b2-4a41-ac82-33040d5ab74f'),
 	 ('7cac1300-9500-48ba-b16e-d38bca6ec8ab','Katherine Rebecca Kane','No alter egos found.','-',NULL,'DC Comics','good','2cdda23a-f42b-4b2f-99e1-a396adecf0dc'),
 	 ('bcf12240-e8dc-42e9-9cfd-d09e43a6c751','Frederick Foswell','No alter egos found.','-',NULL,'Marvel Comics','bad','f740f4c3-75b7-41a7-b927-2702b0124ab5');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('5caca00a-34f5-4044-8758-3109645aa2e9','Lucian','No alter egos found.','Armechadon',NULL,'Marvel Comics','-','246815d8-b16a-4a3a-9a02-27b2217b3dbe'),
 	 ('8dcef5f4-3f15-416e-9a52-6ab65cdd7823','Ryuko Orsono','No alter egos found.','-',NULL,'DC Comics','good','10ad8f04-2269-44d2-8f2f-19d63a1a8416'),
 	 ('fc376b7a-34dd-4b68-87ce-c585757eaabf','Billy Batson','No alter egos found.','Fawcett City, United States',NULL,'DC Comics','good','b0292229-7b0a-4518-9c55-be2b4151e4e8'),
@@ -4014,7 +4014,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('9161cc3e-9737-4787-80fa-6647da741b12','Helen Parr','No alter egos found.','-',NULL,'Dark Horse Comics','good','41240277-51c1-47ef-958d-cf99b2fe99bc'),
 	 ('9eb5777c-a7ee-48d1-b459-6439f3173906','Dargin Bokk','No alter egos found.','-',NULL,'Marvel Comics','bad','20fb3274-d1ec-40fa-b942-550cb7cfa3c4'),
 	 ('fd71341d-5344-446e-85e1-cdab6b29d006','Jason Rusch','No alter egos found.','-',NULL,'DC Comics','good','d24e2f39-b5e7-4fc8-a10d-e96f7d96b228');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('ccefbb66-a106-4291-b775-c6147331d3b4','Doris Zuel','No alter egos found.','-',NULL,'DC Comics','bad','438c34b4-230d-45d8-a70d-12fe541ad67f'),
 	 ('2d10e7da-eb77-4a5a-9ab1-b33f434623cd','Harry James Potter','No alter egos found.','-',NULL,'J. K. Rowling','good','37a18ece-3912-4ed6-9073-645c4dd2d59b'),
 	 ('b061f3a3-a0d0-435c-befe-4e4bdda464ac','Paige Elisabeth Guthrie','No alter egos found.','Cumberland, Kentucky',NULL,'Marvel Comics','good','17e71aec-8f26-4e33-b8a6-b6978fad51ec'),
@@ -4025,7 +4025,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('f78754b1-b35e-484f-96b9-215c46854d4a','Yuriko Oyama','No alter egos found.','Osaka, Japan',NULL,'Marvel Comics','bad','ffa3cba3-e9e5-4426-94fe-9a396691883c'),
 	 ('7d8e3475-4901-4d04-93c1-23f984f86f8c','','No alter egos found.','-',NULL,'Marvel Comics','neutral','8c75caab-9d9e-4ad3-9b80-34228e8ea359'),
 	 ('bf1a5d4e-5004-4716-9c9f-32ca0264148b','John Jameson','No alter egos found.','New York, New York',NULL,'Marvel Comics','good','4abcf319-ea58-4f7a-abd1-023650551139');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('147fbb42-710d-4100-8770-99b9e51de029','Rachel Anne Summers','No alter egos found.','-',NULL,'Marvel Comics','good','ba8ee752-0619-49fa-a607-94a56f8208a0'),
 	 ('ae46f084-acef-409c-a46b-7bcecc135117','Nathaniel Essex','No alter egos found.','London, England',NULL,'Marvel Comics','bad','dce3db7e-47f6-4857-9721-2eb8a1a7e105'),
 	 ('1cc0b350-6fbc-45bd-992e-3e3d1b45ba5a','Barbara Morse','No alter egos found.','San Diego, California',NULL,'Marvel Comics','good','89f6e4c7-17d6-4ab4-90e2-2530354dc4dc'),
@@ -4036,7 +4036,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('86f21fc0-a5bd-4c74-9665-2da3449eae3e','','No alter egos found.','-',NULL,'SyFy','good','0a8037c3-599e-47d9-a24a-c2662f7311c3'),
 	 ('2e8d2da5-8cfc-4dc2-a681-e8f3f26e597a','Johann Shmidt','No alter egos found.','An unidentified village in Germany',NULL,'Marvel Comics','bad','c8f35d7c-aa7d-4022-bf70-4a07e544583e'),
 	 ('d769d25b-6113-4189-9972-ab20488a1780','Damian Wayne','No alter egos found.','-',NULL,'DC Comics','good','7fa79b2f-ea55-4ed7-b57b-264417a2ede3');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('d83f78bb-d11d-4431-8ffb-a529cfe80883','Jonathan Crane','No alter egos found.','-',NULL,'DC Comics','bad','9c4e5851-15f9-422f-9f40-84dd9360433e'),
 	 ('777a7f89-cca4-49fc-a236-db7d4bf6b9e7','Herman Schultz','No alter egos found.','-',NULL,'Marvel Comics','bad','fec2bfd6-55f5-489b-aa99-5b6eff02304f'),
 	 ('74f13653-5c20-44ec-8f21-305dd8366686','May ''Mayday'' Parker','No alter egos found.','New York City, New York',NULL,'Marvel Comics','good','86b7a807-5eea-42df-ba89-dda271cacfee'),
@@ -4047,7 +4047,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('3fc4b01f-ca64-4a78-a9f3-843b59a57669','Phineas Mason','No alter egos found.','-',NULL,'Marvel Comics','bad','5712ced5-62f9-48c5-8822-5df721d2c911'),
 	 ('2a0e895f-f04b-4b95-9d96-bf28dda814d6','Triton','No alter egos found.','Island of Attilan, Atlantic Ocean',NULL,'Marvel Comics','good','63ecf8c5-2514-4be3-8b13-ae3c41d0cb5b'),
 	 ('07ee18a7-33a8-4831-b4c4-52f0833b7edd','Angelo Fortunato','No alter egos found.','-',NULL,'Marvel Comics','bad','72267a5a-e515-426d-8fb2-2d02d20b0e9c');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('96d98868-33c6-447b-b97f-922dc0492286','Logan','No alter egos found.','Alberta, Canada',NULL,'Marvel Comics','good','289719b9-d022-4cb3-bfb1-9967a9c24699'),
 	 ('ea591eb4-ccf5-42ce-a2cf-4dfbf85e83de','','No alter egos found.','Created in the Beyond',NULL,'Marvel Comics','good','7c4a5ba6-222a-4e42-b307-331df9886bdc'),
 	 ('e39c5707-3962-4bb1-9de9-7ba129ddd076','','No alter egos found.','-',NULL,'DC Comics','neutral','43a842d1-43fd-456c-9af3-b3337dee612a'),
@@ -4058,7 +4058,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('9047eecb-55a8-4940-b1d2-65177b49d89e','Frederick Christopher Freeman','No alter egos found.','-',NULL,'DC Comics','good','dfea910d-9c07-4a29-a363-c80389344c4d'),
 	 ('b1455e50-e505-422d-9cc1-b24372b83d12','Carlos Ray Norris','No alter egos found.','Ryan, Oklahoma, United States',NULL,NULL,'good','25c4e6f9-05df-4731-9fd9-bcdebbf102ff'),
 	 ('e86e1c6a-4594-45e4-ad00-05e9bff062c3','Victor Stone','No alter egos found.','New York City, New York',NULL,'DC Comics','good','27ef1eec-0b0c-4d3b-9757-d3d207168b94');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('a7c5ced9-7b02-4c77-b8f8-2325f6f5ee9f','Christopher Powell','No alter egos found.','Queens, New York',NULL,'Marvel Comics','good','b5ac5904-3177-4875-b961-ddb991ea13a6'),
 	 ('f77be07d-dc03-42c4-b3fc-e7efb3af712f','Uxas','No alter egos found.','-',NULL,'DC Comics','bad','4117bc56-7504-495e-9148-963d6ee2ea69'),
 	 ('8b1d73a6-7aac-49a5-95a5-14de25f6b8f7','Victor von Doom','No alter egos found.','Haasenstadt, Latveria',NULL,'Marvel Comics','bad','38986c91-2228-40ff-a177-b9949f05b48e'),
@@ -4069,7 +4069,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('bd828f9b-4264-4630-ad02-c671a267b216','Gamora Zen Whoberi Ben Titan','No alter egos found.','Planet Zen Whoberi, Silican System, Milky Way',NULL,'Marvel Comics','good','26aa2013-a18c-4f81-9dd9-9c12a2e2399f'),
 	 ('1b7f2e8f-2192-4897-8e58-c7b65e1ad36f','Grodd','No alter egos found.','-',NULL,'DC Comics','bad','7ef3794b-e335-4560-8aae-f24a064cbbb7'),
 	 ('a7be05ed-10f3-4860-b33d-0ef46fb19ac3','John Hancock','No alter egos found.','-',NULL,'Sony Pictures','good','50bd9b4b-ed47-4ec1-a3c3-124c3fa40919');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('dc41f93a-9ab4-40a0-a731-254d86b82436','Katherine Elizabeth Bishop','No alter egos found.','New York City, New York',NULL,'Marvel Comics','good','f876baeb-9794-4055-942d-be60f4814c8b'),
 	 ('9fdcaec5-41c8-497c-8062-f78f3bf0fad2','Bruce Banner','No alter egos found.','Dayton, Ohio',NULL,'Marvel Comics','good','bb5884e8-aa29-479e-97e6-dd79662e0086'),
 	 ('4dab8522-4f2f-4d09-88e0-61520a7348b8','Iroque','No alter egos found.','-',NULL,'DC Comics','neutral','86a19b95-9f14-4369-b281-f3b851881e32'),
@@ -4080,7 +4080,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('9ff3ab90-7382-4bcd-828f-179872e6d2a7','Wilson Grant Fisk','No alter egos found.','New York City area',NULL,'Marvel Comics','bad','1dc0187b-4e41-48cb-b4d2-024716772dc2'),
 	 ('b136f586-6d87-486f-8cfd-238ed50c116b','Kyle Rayner','No alter egos found.','North Hollywood, Los Angeles, California',NULL,'DC Comics','good','25970fd4-940c-4a07-bf77-4e175c04def8'),
 	 ('ff4baca7-c456-4c9a-a11b-84bd527a52e2','X-51, Aaron Stack','No alter egos found.','Central City, California',NULL,'Marvel Comics','good','f0617aec-e515-4379-9783-3a5fb222c186');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('b1bbcc3c-81f8-4326-a180-b3f2110a0a8a','Dr. Theodore Sallis','No alter egos found.','-',NULL,'Marvel Comics','good','c957b952-244f-48cc-8fbc-e7afe3d6badf'),
 	 ('9d6e049e-0c74-46a4-8d38-2c7efe2d8abc','John Corben','No alter egos found.','-',NULL,'DC Comics','bad','2de5ed22-b2f5-485d-9dd0-f71dddc06982'),
 	 ('74021299-23ed-4d19-aa2d-25618af80892','Tabitha Smith','Boom-Boom','Roanoke, Virginia',NULL,'Boom-Boom','good','1c68948a-4711-4dfc-8947-a79e8bc15bbb'),
@@ -4091,7 +4091,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('6af7970c-35c3-4972-8257-6c35af0fa57b','Jean Grey','Jean Grey, White Phoenix of The Crown','-',NULL,'Jean Grey','good','3282189a-0104-4ce9-9ed0-44bfc17a1a0c'),
 	 ('b4e7d351-5708-4295-8174-a3b4837d57ae','Eobard Thawne','No alter egos found.','-',NULL,'DC Comics','bad','3195dc5e-2848-48dd-a25a-9b6658248d21'),
 	 ('c89fe49f-b550-4a6f-bf0f-33a9db019821','Charles Victor Szasz','No alter egos found.','-',NULL,'DC Comics','good','6faec42c-1c4e-4153-b534-8b4e63492e83');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('124d121c-7437-4cd3-ab26-6197d0141b4f','','No alter egos found.','Jakku',NULL,'George Lucas','good','bce3781d-409b-483b-9fd5-eb0c72d3e9e9'),
 	 ('b64a3e8f-038c-4510-802f-3751b4d34845','Clint Barton','Goliath, Hawkeye','Waverly, Iowa',NULL,'Goliath','good','a2e73868-7ab0-488d-968f-01fe3f727edc'),
 	 ('2078ba28-fdfa-4181-8fc8-5c3c88c90e7c','Kurr','No alter egos found.','-',NULL,'Image Comics','good','08089e1d-9842-48d3-bdb8-c8a7ece33353'),
@@ -4102,7 +4102,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('77b0fcdf-7a9c-40d8-907e-c0dc38669eb9','S''chn T''gai Spock','No alter egos found.','-',NULL,'Star Trek','good','6d68175f-c413-40a8-9e85-7f3e94ccfd73'),
 	 ('44c6a68d-4b08-4d83-a735-80304e643084','','No alter egos found.','-',NULL,'DC Comics','bad','80176753-c130-44bd-8cb6-cb8f7df72392'),
 	 ('3c75001a-3ac1-41c9-a5d4-cd0e8202ea9b','Cyberdyne Systems Series 800 Terminator Model 101','No alter egos found.','-',NULL,'Dark Horse Comics','bad','47f128f1-2a32-4e12-92a0-e270a0a0b672');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('9781f31e-9025-46a2-b426-0726a3b757db','Tarene','No alter egos found.','-',NULL,'Marvel Comics','good','a4d4f9e4-4d19-472c-91f9-5ed0dc3138b1'),
 	 ('e7c25795-1fd7-491d-a004-614f47d4a68c','Todd Arliss','No alter egos found.','Pasadena, California',NULL,'Marvel Comics','bad','e3bb19e0-e6c0-4f0c-8fc5-997b15bd5886'),
 	 ('e6793e56-aef5-472e-9913-7f6dde339771','Tsu-Zana','No alter egos found.','-',NULL,'Marvel Comics','good','9801cb65-6b71-470c-8a62-bd8ed759dbd7'),
@@ -4113,7 +4113,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('62107c8b-5e21-496e-86e7-e97880885543','Vril Dox','No alter egos found.','-',NULL,'DC Comics','bad','6511929f-15ee-4edd-a9ab-45ab8e5eee76'),
 	 ('6bc1cd69-522f-4ef4-ad60-1d1f445e72be','Seth Brundle','No alter egos found.','-',NULL,'','-','150e0963-eef2-431d-8549-13c500dfd536'),
 	 ('5dab6c99-9dfc-4223-938e-75f99f29509f','Jack Brolin','No alter egos found.','-',NULL,'South Park','good','19e09b04-0fdb-4a21-8453-587554a0bcd1');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('7ac65ce0-f886-4584-a068-391f1c416360','Cletus Kasady','No alter egos found.','-',NULL,'Marvel Comics','bad','0000b86b-38b8-4091-9158-d978cf9d4c8f'),
 	 ('27167c72-aadb-45af-bfe9-26cbb25845f8','Claire Bennet','No alter egos found.','-',NULL,'NBC - Heroes','good','b0896c10-38f9-4949-bb58-ba691e5a6ce5'),
 	 ('c6929db0-33e5-455f-b97e-0f54a152edad','Tandy Bowen','No alter egos found.','Shaker Heights, Ohio',NULL,'Marvel Comics','good','f547c332-a7d8-4785-bdee-0e0e63af81e9'),
@@ -4124,7 +4124,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('4f63505b-1718-427c-ad89-f8e51efd91b0','June Moone','No alter egos found.','-',NULL,'DC Comics','good','c9d78e6f-4c5d-4a0b-867b-1d4df4d50a6d'),
 	 ('9fe68615-1c7b-4525-b442-686d76989df3','Bonita Juarez','No alter egos found.','Buena Vista, New Mexico',NULL,'Marvel Comics','good','549347ca-27b1-47a8-ba25-b0adf3db599f'),
 	 ('429fde3d-8e56-4640-a68d-a008dd473d8a','Barry Allen','Black Racer','Fallville, Iowa',NULL,'Black Racer','good','40a7699e-3d65-469e-87a8-0b3f76202cbf');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('b7c1a4e1-861d-4c21-81b2-ad025b8669a3','Johnny Blaze','No alter egos found.','Waukegan, Illinois',NULL,'Marvel Comics','good','c18aa720-2c31-4362-99bc-cfa33542459d'),
 	 ('c55f79f6-db8e-40f6-8ab0-22e2952bc6e3','','No alter egos found.','-',NULL,'DC Comics','bad','af48bde9-9920-487b-9195-f249246c5382'),
 	 ('6331eeef-d99d-4519-be98-0321b72d7b56','Hal Jordan','No alter egos found.','Coast City, California',NULL,'DC Comics','good','afa14da3-b341-41d2-b7eb-3a9d42f91969'),
@@ -4135,7 +4135,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('6405e69f-a3ae-41b3-b57c-455ff0a549a1','Jessica Cruz','No alter egos found.','-',NULL,'DC Comics','good','4037c3b3-3820-4ae8-a0aa-d4623ab62d46'),
 	 ('9fcb6a5e-e489-476c-b08c-3e30b92b78c5','Vance Astrovik','No alter egos found.','-',NULL,'Marvel Comics','good','75211ed4-56da-49ac-91b6-fb1afc9462cb'),
 	 ('eb47e161-f876-4c3a-ad8c-4e797b9dc7dc','Waylon Jones','No alter egos found.','-',NULL,'DC Comics','bad','979b660f-2046-4142-8a2b-56e3af659b6b');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('05b6ac57-8fe2-4a4c-9d36-742181addb00','Alyosha Kravinoff','No alter egos found.','-',NULL,'Marvel Comics','bad','ed864d6e-7e4d-4f75-adcd-ef37790e1150'),
 	 ('9a21e915-06ed-42b0-a6f5-455215f52f81','Leonardo','No alter egos found.','-',NULL,'IDW Publishing','good','0e76b05c-7fde-4fc9-97a4-bd34da58e424'),
 	 ('50f93311-8ceb-4cdc-93e0-e12650132a3b','Luke Skywalker','No alter egos found.','Tatooine',NULL,'George Lucas','good','610bd0d5-60e0-4703-8d9e-b5ed1721f5c3'),
@@ -4146,7 +4146,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('8dd996c1-1527-4103-9a54-44280ee5a674','Namorita Prentiss','No alter egos found.','Atlantis Outskirts',NULL,'Marvel Comics','good','289776ac-3dd0-48f6-bba5-2ea7d3a691c0'),
 	 ('c9f9b1ce-ecf7-419d-a8dd-8d6584119f28','','No alter egos found.','-',NULL,'Marvel Comics','neutral','973318ff-9fb1-48c9-a592-c0669ed70355'),
 	 ('265668fa-d782-403b-b8df-af1a83ff8d62','','No alter egos found.','Apokalips',NULL,'DC Comics','bad','587b292f-2563-4303-9ff5-b18538c551ff');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('fdb7ef75-9f73-42fb-9830-a1c37a1822e1','Ra''s Al Ghul','No alter egos found.','Egypt',NULL,'DC Comics','bad','a726d828-dcdd-4cef-8738-9fd6f62117fb'),
 	 ('81523fae-2ba0-4dae-9785-46d597ff80cb','Tim Drake','Robin III','Gotham City',NULL,'Robin III','good','035a52ea-7bf7-4318-a4aa-668b8ab1559c'),
 	 ('2fbc6700-6f70-4f6a-8d07-3d76797670fe','Dick Grayson','Batman II, Nightwing','-',NULL,'Batman II','good','47733215-8abd-4faf-b276-bd346b6bb246'),
@@ -4157,7 +4157,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('1b260f04-29ce-4771-841d-84919955dc6b','Peter Jason Quill','No alter egos found.','-',NULL,'Marvel Comics','good','8dc9bc02-a77d-41da-a41e-0df77da59138'),
 	 ('c21077ce-09ab-49bc-a16b-8651e1e63171','','No alter egos found.','-',NULL,'Marvel Comics','good','4a37062e-5aff-406a-98c1-fb2da0d0ed46'),
 	 ('961910f8-7d04-486b-a6bf-73892ecdcfda','Alec Holland','No alter egos found.','-',NULL,'DC Comics','bad','05c5a5f9-3041-4c31-a217-65ede03e0392');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('03258d7f-3272-4c2b-b74f-4678909c9a24','Cyberdyne Systems Series 850 Terminator','No alter egos found.','-',NULL,'Dark Horse Comics','bad','bca8ee91-6c72-4c33-ad19-e96c2270fcb8'),
 	 ('c9493cdc-6a68-4978-bfb1-55ab473dd787','Mortimer Toynbee','No alter egos found.','York, England',NULL,'Marvel Comics','neutral','a73e5275-4b84-40c2-bfc9-971f93342eb7'),
 	 ('5d5b89c5-e952-4fab-9e48-2fdcaca7d0da','Harvey Dent','No alter egos found.','-',NULL,'DC Comics','bad','04b8efad-25a5-4fd4-8106-6c1363aecf14'),
@@ -4168,7 +4168,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('0e0d7fdc-4540-41a8-b48c-c44693ab8b85','Damon Macready','No alter egos found.','-',NULL,'Icon Comics','good','e5f6e6e0-adbc-4ec0-af4e-bbb3e8092fdc'),
 	 ('88bf8d27-2918-4a74-bf28-980689ce21a9','Joseph Manfredi','No alter egos found.','Professional Criminal',NULL,'Marvel Comics','bad','4630cde4-e987-4827-8d56-6d3472d69112'),
 	 ('2f1e6d7f-2dba-4140-b9f1-fdd88daa3572','','No alter egos found.','Kamino',NULL,'George Lucas','bad','240656a2-2de2-40c3-8eb8-bfa4219c0c0f');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('4d6117a9-ae95-4be0-9ee7-077f4fc3900e','Lester','No alter egos found.','-',NULL,'Marvel Comics','bad','729de82a-d316-4c8c-bfec-08a7b5f0ca0e'),
 	 ('2893af04-e558-4020-8381-538bdb87d166','Jonothon Evan Starsmore','No alter egos found.','United Kingdom',NULL,'Marvel Comics','good','4778d115-7ac4-4bfe-bc52-14d467561e3a'),
 	 ('16ce5fc4-610b-464a-b02d-4a4dd6f0d2bc','William Tockman','No alter egos found.','-',NULL,'DC Comics','bad','6f261ba2-f1fb-4990-aac9-4650bc6487d5'),
@@ -4179,7 +4179,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('388955cf-8d8f-4ff6-88b6-f782166b3652','Maria Callasantos','No alter egos found.','Place of birth unknown',NULL,'Marvel Comics','good','969fc160-52bb-4709-bd20-f24581c8ea88'),
 	 ('93152455-910e-459c-9800-968f792878f1','Galan','No alter egos found.','(Galan) Taa; (Galactus) the Cosmic Egg',NULL,'Marvel Comics','neutral','3e4c5dba-b34a-4e67-a818-498c7a85d671'),
 	 ('4da7d0b7-21fc-4681-8ece-fbb754b87489','Greedo','No alter egos found.','Rodia',NULL,'George Lucas','bad','d2c11092-3c10-46c7-954e-7b8c77021885');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('b1b9d611-6735-43da-b44d-1cee4dcd67a0','Patricia Walker','No alter egos found.','Centerville, CA USA',NULL,'Marvel Comics','good','626fff90-f90f-4d69-ba4f-d5529fbe9857'),
 	 ('ab0a0e4e-604d-4318-a5a9-905e8d4ee76d','Scott Washington','No alter egos found.','Bedford-Stuyvesant, Brooklyn, New York City',NULL,'Marvel Comics','good','7e86fdba-3111-4221-9ded-897ad4712248'),
 	 ('7504bc5b-39d8-4f4a-948f-b61dfe96f7ce','Eric Gitter','No alter egos found.','-',NULL,'Marvel Comics','good','0eb8eda6-ff06-435e-974c-65d9c8d4da1f'),
@@ -4190,7 +4190,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('9e3b1a32-a2e6-4606-aa15-6c6b2059ffec','Garth Ranzz','No alter egos found.','-',NULL,'DC Comics','good','eb02881f-70dd-4db0-bc7f-e8607d596e23'),
 	 ('f479dd38-8611-4eda-91af-914eedbf03f5','Luke Cage','Power Man','Harlem, New York City',NULL,'Power Man','good','25765bea-cf36-4949-ae21-e7184f8287f7'),
 	 ('4c83fec0-d8e6-4bf6-8f19-7d1d94684241','','No alter egos found.','-',NULL,'Image Comics','-','79722f27-b333-4208-9ac9-7d4ec606620b');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('e14bc9b6-3e68-446e-928f-f359903a09ab','Mera','No alter egos found.','-',NULL,'DC Comics','good','f0600a13-35b2-4b19-8879-81312c226301'),
 	 ('74aebb5f-d0b9-4997-9b8b-a50613463a9a','','No alter egos found.','-',NULL,'IDW Publishing','good','175dfab6-da5c-4f10-a01a-ed8ea510e05d'),
 	 ('061c43f3-fd7e-4ec5-914c-2826da85bc0d','Reed Richards','No alter egos found.','Central City, California',NULL,'Marvel Comics','good','8eed520a-6ce3-4251-9124-8893851f3ae8'),
@@ -4201,7 +4201,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('ac1c4560-69b8-4cea-aa5f-6d2c8667ac9d','Patrick O''Brian','No alter egos found.','-',NULL,'DC Comics','good','7ce198c6-d15c-4e48-80e1-5431573f8fc9'),
 	 ('6b20d45c-c70c-44ae-ae41-51b82988e55c','Pietro Django Maximoff','No alter egos found.','Wundagore Mountain, Transia (in Eastern Europe)',NULL,'Marvel Comics','good','61d9d18f-7a1d-4db3-a866-069c9fb77502'),
 	 ('bb3763e0-4805-4d3e-830a-6b447c2e0f53','Ray Terrill','No alter egos found.','-',NULL,'DC Comics','good','6a7c12d6-b640-41ac-85b3-c23ba3ae5312');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('67bfdd97-c38e-4251-9f92-380c35938d12','Richard Hunter','No alter egos found.','-',NULL,'DC Comics','good','a46494f2-e021-4481-addf-d0c7d02f9dc7'),
 	 ('67af3c97-ed0d-481a-8aa1-94b9f8c95450','Sebastian Hiram Shaw','No alter egos found.','-',NULL,'Marvel Comics','bad','bf171b70-49ca-4f81-8db5-2285a2d5b383'),
 	 ('3126abfc-92e1-4161-9167-da8d26a3ac13','Sharon Ventura','Ms Marvel II','-',NULL,'Ms Marvel II','good','e7dc630d-e84b-4aa6-ae25-7c468c566180'),
@@ -4212,7 +4212,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('b54e8623-5a44-4ba4-a067-0a9ae4365ca6','Edward Morgen Blake','No alter egos found.','-',NULL,'DC Comics','neutral','ea37802f-9614-49b6-80ac-1a285425e10b'),
 	 ('c6dd16f9-62d9-4a60-8319-e3ad9fb26f86','Thundra','No alter egos found.','-',NULL,'Marvel Comics','good','709829b4-843d-4a78-a5b5-50e14443bbe6'),
 	 ('6947e39d-a4cc-48c3-b688-95558e6ed311','Eddie Brock','Anti-Venom, Venom','San Francisco, California',NULL,'Anti-Venom','good','4a9a28ee-2e87-418d-8cbd-32cc1e4fd7ba');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('63e97283-52d3-4d4e-9c44-447e1f7eb826','Wade Wilson','Deadpool, Evil Deadpool','-',NULL,'Deadpool','-','9b9a7c87-f2a3-4394-9f48-7c40dd569c5c'),
 	 ('ba693b38-ca66-4087-88b4-ac21a7e229c4','Mari McCabe','No alter egos found.','Zambesi',NULL,'DC Comics','good','d0669fe9-a703-4233-b93f-72e4be2f5cc7'),
 	 ('e9dd8a93-db72-49e8-ab13-97fd74f9a451','James Proudstar','Thunderbird II','Camp Verde, Arizona',NULL,'Thunderbird II','good','693ae9f5-1acd-4120-9c17-c627815798cc'),
@@ -4223,7 +4223,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('74e48e97-ecad-4cdb-b3db-6422eb68feb2','Roxanne Washington','No alter egos found.','-',NULL,'Marvel Comics','good','02381c33-fdc9-444d-af77-3918a6da399d'),
 	 ('6fcef613-cac9-4877-a847-8559774e8ba4','Buffy Anne Summers','No alter egos found.','-',NULL,'Dark Horse Comics','good','11801f07-c27b-4b32-804b-25b9510f370c'),
 	 ('d6ed2fc6-78c4-482e-aa8a-a75840b1f6cf','Dmitri Anatoly Smerdyakov Kravinoff','No alter egos found.','Russia',NULL,'DC Comics','bad','11a9d6ea-0fae-4d5a-9d45-58201b1fd4e9');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('118ad7c7-7507-4b4b-827c-017b4e468878','Crystallia Amaquelin','No alter egos found.','Attilan',NULL,'Marvel Comics','good','57726c29-6598-47fc-9c71-95ff7aafc748'),
 	 ('4ca6f878-001e-4ccc-b190-627f63691e79','Peyton Westlake','No alter egos found.','-',NULL,'Universal Studios','good','b437fbbc-6898-4f38-857e-98225ec4f6b5'),
 	 ('bcbc3dd7-b217-4150-a07c-86251af99817','Slade Joseph Wilson','No alter egos found.','-',NULL,'DC Comics','neutral','298e9d52-38c4-47e6-a56a-679a62a32d3e'),
@@ -4234,7 +4234,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('ee4339eb-7874-4357-bcdd-34773a1916d4','Bartholomew Allen II','Impulse, Kid Flash II','-',NULL,'Impulse','good','2e3c4436-db3f-48f5-a270-f2a66374b71d'),
 	 ('d714e6b0-ecf3-41f5-a853-bba4c8e42986','','No alter egos found.','Unrevealed, presumably in the American West',NULL,'Marvel Comics','good','68aaabd3-f363-4faa-9eb4-5b36c3bb4e7a'),
 	 ('4d64989a-c541-4726-af0d-41099c363f0a','Kakarot','No alter egos found.','-',NULL,'Shueisha','good','c339ae10-1803-4e79-a452-2532d8b1fa0f');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('c3d2109f-cc66-4871-93ee-802ac8c145f8','Han Solo','No alter egos found.','Corellia',NULL,'George Lucas','good','4097e0ea-65be-4fa1-a746-7c34c6966c6d'),
 	 ('410f2f07-1269-4341-8a5f-b6a0000a74dd','Clint Barton','Goliath, Ronin','Waverly, Iowa',NULL,'Goliath','good','f6b3a6de-5b50-48ac-83cc-92d82beaa935'),
 	 ('c7c59907-3ae3-404a-ac5c-1c4e74a53c6d','Mindy McCready','No alter egos found.','-',NULL,'Icon Comics','good','b3104a9a-3546-4654-9abd-3dd0509662f6'),
@@ -4245,7 +4245,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('5fe2bae7-1e71-44b2-8814-35f6a0c2dc4b','Ulysses Klaw','No alter egos found.','Vlaardingen, Netherlands',NULL,'Marvel Comics','bad','e96ff017-ffa3-44ca-bb51-44bd42d1e607'),
 	 ('2a3eb5ee-c8d7-4d8f-afdb-df1de5631fcc','Samuel Sterns','No alter egos found.','Boise, Idaho',NULL,'Marvel Comics','bad','4e2a39e4-4491-4035-9b22-31a38478e1e8'),
 	 ('f540639e-be32-414d-b9e6-c7366b368b8a','Mekt Ranzz','No alter egos found.','-',NULL,'DC Comics','bad','d9ccbc19-3099-46b8-8aa8-23b1b86ffea1');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('f31feb10-1db4-49a7-ac4e-c26814dc11e3','Robert Kirkland Langstrom','No alter egos found.','Chicago, Illinois',NULL,'DC Comics','neutral','0d05fc9a-184a-45b8-aacd-fa89fc27a7a5'),
 	 ('a6c9426b-fd51-4708-acba-6b3dcd14f377','Kent Connor','No alter egos found.','-',NULL,'DC Comics','bad','b6a96e9a-042c-4109-9270-3fe51c9e6a8c'),
 	 ('915d952c-e8d4-4fd6-b63a-ac3883fcd665','Christopher Bradley','No alter egos found.','-',NULL,'Marvel Comics','good','f3cd8072-5886-4d98-8a00-14388135f07f'),
@@ -4256,7 +4256,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('f1b15c55-23f0-457b-bbf6-09ef1e701745','Barbara Gordon','Batgirl','-',NULL,'Batgirl','good','262c1080-224a-4015-812e-1908d74269e4'),
 	 ('b177adfd-e114-4d42-a7e5-155efab107b3','Samuel Smithers','No alter egos found.','London, England',NULL,'Marvel Comics','bad','1011d5c2-d29d-4214-8e84-8ddcdf4e8068'),
 	 ('a1062dc3-e9b9-4b27-886e-c472684c4dc6','Charles Francis Xavier','No alter egos found.','New York, New York',NULL,'Marvel Comics','good','db33415b-099e-4f73-884f-06027654708c');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('572fcb85-072f-49b6-a71b-4d13f6a2e0d2','Rachel Roth','No alter egos found.','Azarath',NULL,'DC Comics','neutral','21010a09-dc44-4050-8424-66ebeaef93cc'),
 	 ('4f74edfb-0e40-41a0-a2ec-cc75e4cc72d8','Roy Harper','No alter egos found.','-',NULL,'DC Comics','good','ef344b19-b4bb-4d6f-a073-ff2a42d97e48'),
 	 ('22704258-cf64-4b8d-9dc7-1500a49f6af8','Chris Genovese','No alter egos found.','-',NULL,'Icon Comics','bad','a323fd41-bd50-449b-919c-36c5dabbc8a2'),
@@ -4267,7 +4267,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('6187733d-61ea-4f69-ae9e-41e82d47e81b','Norrin Radd','No alter egos found.','Zenn-La',NULL,'Marvel Comics','good','c450fd90-50e3-4350-baca-997878c1edb1'),
 	 ('b6f62de4-ed37-4928-90c6-a5a9b7971347','Thaddeus Bach','No alter egos found.','-',NULL,'DC Comics','good','19ef49b2-f2ec-4f05-87d2-6eb49b636319'),
 	 ('5ee26f4b-8fbf-40ce-9ba8-01f705ba9aa5','Aztar','Aztar','-',NULL,'Aztar','good','345afc43-2dcd-4b48-801d-4744c8f2269f');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('3322ffa4-d6f4-44af-a565-ffd23d6dbec1','Roberto DaCosta','No alter egos found.','Rio de Janeiro, Brazil',NULL,'Marvel Comics','good','e3f0d016-5f7a-4e75-b707-1f9397087e68'),
 	 ('95c696bb-6cc5-4068-bbfa-6fd330e23e86','Gabriel Gray','No alter egos found.','-',NULL,'NBC - Heroes','bad','0ccb7882-5015-4e85-b9e7-086b7441cf9f'),
 	 ('8d859720-824c-437f-9e15-59e7847e51af','Thor Odinson','Rune King Thor','Asgard',NULL,'Rune King Thor','good','f9d7ab69-b608-43f4-a68f-32de525837d7'),
@@ -4278,7 +4278,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('c9698f58-0706-4df4-988a-77e28206c200','Nate Grey','No alter egos found.','American Northeast of Earth-295',NULL,'Marvel Comics','good','8b9579b8-8122-48fb-8853-f2b554d5c189'),
 	 ('98fac6c9-d54b-4c5e-bb64-5130abe99cf1','Henry Philip McCoy','No alter egos found.','Dunfee, Illinois',NULL,'Marvel Comics','good','21bbe2c9-1df1-48d6-898a-03f87099e401'),
 	 ('8492d863-b332-46dd-a581-c3cbbfe1909e','','No alter egos found.','-',NULL,'Marvel Comics','good','76b7a8f3-eceb-45e4-946c-641d38422e4b');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('23ba0289-50cf-48c9-9df8-945b7eb428de','Felicia Hardy','No alter egos found.','Queens, New York',NULL,'Marvel Comics','good','9e845c11-fb85-4cdf-9be4-ce9a278e7cbf'),
 	 ('3b124c6c-8b4e-479a-8dc3-e6359a1d8492','Natasha Romanoff','No alter egos found.','-',NULL,'Marvel Comics','good','9626988b-29bf-428f-abb4-18632703e917'),
 	 ('5d1d888e-d7e0-4dab-bdd2-f45a24ceb48d','Jackie Lukus','No alter egos found.','-',NULL,'Marvel Comics','bad','c4ef2656-3366-419b-a40b-f417aef12ad8'),
@@ -4289,7 +4289,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('c56d657f-a7cd-44c2-a980-eb2e31cd09b2','Henry Henshaw','No alter egos found.','-',NULL,'DC Comics','bad','242564fa-c1cb-4a31-8139-376e15e79bd9'),
 	 ('90c24742-10e0-4ba9-82d4-6535eb9a7eed','Matt Murdock','No alter egos found.','New York City, New York',NULL,'Marvel Comics','good','b34a25fd-2646-4271-8415-2e7debf7c5be'),
 	 ('c73093e2-0905-437a-9de6-6b301fdcc3f1','','No alter egos found.','Dathomir',NULL,'George Lucas','bad','61250f52-9c9e-448c-93fc-cfb300c73c9a');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('af988daa-9398-4546-9b38-109356a80c11','Kent Nelson','No alter egos found.','-',NULL,'DC Comics','good','3ae71552-55d4-492a-9abd-fab83323825c'),
 	 ('5b003dc9-732a-4c99-83fa-c833aaba0e86','','No alter egos found.','The Dimension of Manifestations',NULL,'Marvel Comics','bad','7ef6e99d-8b99-46b6-86c1-ead409ede73c'),
 	 ('d52b89f0-f392-4c87-95b5-8217542db45c','Emma Frost','No alter egos found.','Boston, Massachusetts',NULL,'Marvel Comics','good','9887778f-ef57-4df3-9cf8-535fe875fb90'),
@@ -4300,7 +4300,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('e17ddd04-970e-406b-94ac-40b829792670','Groot','No alter egos found.','-',NULL,'Marvel Comics','good','438eecd8-cbdb-4c8a-9c8a-f31a08181c64'),
 	 ('a5fd5d2d-1236-471c-add4-e005598d30dd','Kendra Saunders','No alter egos found.','-',NULL,'DC Comics','good','42e9be53-06a7-48fe-95a0-c2b348c51eca'),
 	 ('bdbd4ea7-8710-4cf8-938b-480312a46ae5','Helena Rosa Bertinelli','Batgirl III','-',NULL,'Batgirl III','good','3153372c-c655-483e-a370-2fccdc1975b4');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('6879f9ed-c48e-414e-a6eb-7ec44deb0b9f','Susan Storm Richards','No alter egos found.','Glenville, Long Island, New York',NULL,'Marvel Comics','good','04db6c60-7d60-47e4-8dda-9ab2cebde9e5'),
 	 ('54ed000e-65f1-4855-9e9f-117781aabfda','Jean Grey','Phoenix, White Phoenix of The Crown','-',NULL,'Phoenix','good','8fcc13a9-e42e-41be-ad96-cde9280ebbba'),
 	 ('2e5700dc-8d44-4959-bd04-631fd3b7aa69','Cain Marko','No alter egos found.','Berkeley, California',NULL,'Marvel Comics','neutral','a9d84775-3989-47e7-927b-7952f8998d21'),
@@ -4311,7 +4311,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('7fb76c86-7e60-4e79-a3ca-3d32d1ff435e','','No alter egos found.','Kvch (Technarchy?s home planet)',NULL,'Marvel Comics','bad','ad5056ed-a37f-47b6-bd39-5d42ccaa5eac'),
 	 ('fd27be4d-187c-4c86-9724-c0e6307d4c8d','J''onn J''onzz','No alter egos found.','-',NULL,'DC Comics','good','adc96381-b2c8-41c4-ab6b-8a875b3b4628'),
 	 ('739eae54-7015-463f-9ad6-57c5e48878cd','Micah Sanders','No alter egos found.','-',NULL,'NBC - Heroes','good','3b6b3be2-2c0b-4089-87f4-b53a59476ca6');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('8db78b8e-09b9-44d3-b465-debcdb0a9820','Karla Sofen','No alter egos found.','Van Nuys, California',NULL,'Marvel Comics','bad','9294064e-9cc4-4407-abed-84a61a6716da'),
 	 ('f31d386c-c3aa-4f70-bafc-afec6a6ebe5b','Quentin Beck','No alter egos found.','New York, New York',NULL,'Marvel Comics','bad','5751c73f-c037-40fb-84eb-81f4c4694b60'),
 	 ('ac554a3c-8918-4f9b-94d2-82fa2ef0911e','Kurt Wagner','No alter egos found.','Somewhere in the Bavarian Alps',NULL,'Marvel Comics','good','fb6149d5-9a23-41e7-b567-0473c3bdea14'),
@@ -4322,7 +4322,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('f9ae6c07-c4e7-4af4-9b5e-5001a02d59bb','Thaddeus E. Ross','No alter egos found.','-',NULL,'Marvel Comics','neutral','43255699-8124-4191-84d1-80b2fb261b89'),
 	 ('dec8159e-a383-4bd1-9043-b63166d81399','Richard Rogers Flag','No alter egos found.','-',NULL,'DC Comics','bad','6b7ac6df-102c-4d4d-be83-f992eca7f7a7'),
 	 ('9e62dc1c-f4cd-4be1-8739-b8b660db8990','Tim Drake','Red Robin','-',NULL,'Red Robin','good','cf80c826-def6-4df6-8c35-35b6f605022a');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('5f0e8342-d958-4695-b093-04c8fe4e803f','Benjamin Reilly','Spider-Carnage','Place of birth unknown',NULL,'Spider-Carnage','good','3e3fd1c4-8efa-410a-9c46-771755ee97be'),
 	 ('03fc79ef-ff9c-4ffd-bca1-6edfef7ec9da','Frances Louise Barrison','No alter egos found.','-',NULL,'Marvel Comics','good','99db20dc-c004-4858-ba01-937addaa174f'),
 	 ('3410c781-bceb-4978-bfcf-0b1239c2c844','Peter Parker','No alter egos found.','New York, New York',NULL,'Marvel Comics','good','4b121f7e-7247-46f7-9dbc-57c3856ffb06'),
@@ -4333,7 +4333,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('91a013a5-1bef-41e8-a704-e809f582635c','Greer Grant Nelson','No alter egos found.','Presumably Chicago Illinois USA',NULL,'Marvel Comics','good','aac47dd7-4a8b-49e7-8ab8-b87a830a7895'),
 	 ('026ff3a1-41d3-434a-8122-4561bdf70045','Luornu Durgo','No alter egos found.','-',NULL,'DC Comics','good','6c4ee7b7-2466-4442-ab19-38c9799777ac'),
 	 ('4fb4f855-313d-4c3e-861c-83098c66be3f','Heather Hudson','Vindicator II','Calgary, Alberta, Canada',NULL,'Vindicator II','good','245c7547-70f3-4266-b21e-dbda0fe6f496');`);
-    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearanceEntity",publisher,alignment,superheroe_id) VALUES
+    await queryRunner.query(`INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
 	 ('6e0597a7-4657-4f6c-9a46-5539fb688e59','Adam Warlock','No alter egos found.','The Beehive, Shard Island, Atlantic Ocean',NULL,'Marvel Comics','good','f4f9c453-29df-4736-9d91-7b52b6202f56'),
 	 ('300545a7-6360-4b20-97e8-34e36551155b','Diana Prince','No alter egos found.','Themyscira',NULL,'DC Comics','good','58a0dc06-b59c-4bd3-9aa2-9335ed312370'),
 	 ('10e244df-d2a0-4043-b680-4486fd71e5de','Hank Pym','Ant-Man, Giant-Man, Goliath, Wasp II','Elmsford, New York',NULL,'Ant-Man','good','e21e9564-7a12-4efb-9a82-c4685f25d1b3');INSERT INTO public.superheroe_biography_aliases (id,value) VALUES

@@ -25,10 +25,10 @@ export class BiographyEntity {
   placeOfBirth: string | null;
 
   @Column("text", {
-    name: "firstAppearanceEntity",
+    name: "firstAppearance",
     nullable: true,
   })
-  firstAppearanceEntity: string | null;
+  firstAppearance: string | null;
 
   @Column("text", { name: "publisher", nullable: true })
   publisher: string | null;

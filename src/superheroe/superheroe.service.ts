@@ -207,8 +207,7 @@ export class SuperheroeService {
         newBiographyEntity.publisher = biography.publisher;
         newBiographyEntity.alignment = biography.alignment;
         newBiographyEntity.alterEgos = biography.alterEgos;
-        newBiographyEntity.firstAppearanceEntity =
-          biography.firstAppearanceEntity;
+        newBiographyEntity.firstAppearance = biography.firstAppearance;
         newBiographyEntity.superheroe = superheroeEntity;
         await this.biographyRepo.insert(newBiographyEntity);
 
