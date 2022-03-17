@@ -12,7 +12,7 @@ const config: any = {
   synchronize: true,
   migrationsRun: true,
   autoLoadEntities: true,
-  logging: true,
+  logging: false,
   migrations: [__dirname + "/migrations/**/*.ts"],
   cli: {
     migrationsDir: "./src/migrations",
