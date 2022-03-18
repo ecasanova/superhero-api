@@ -7,7 +7,7 @@ import { ConnectionsDto } from "../connections/connections.dto";
 import { ImageEntityDto } from "../image/image.dto";
 import { WorkEntityDto } from "../work/work.dto";
 
-export class SuperheroeDto {
+export class SuperheroDto {
   id: number;
 
   @ApiProperty()

@@ -8,11 +8,11 @@ import {
   OneToOne,
   PrimaryGeneratedColumn,
 } from "typeorm";
-import { SuperheroeEntity } from "../superheroe/superheroe.entity";
+import { SuperheroEntity } from "../superhero/superhero.entity";
 import { HeightEntity } from "./height.entity";
 import { WeightEntity } from "./weight.entity";
 
-@Entity("superheroe_appearance", { schema: "public" })
+@Entity("superhero_appearance", { schema: "public" })
 export class AppearanceEntity {
   @PrimaryGeneratedColumn("uuid")
   id: string;
@@ -29,11 +29,11 @@ export class AppearanceEntity {
   @Column("text", { name: "hairColor", nullable: true })
   hairColor: string | null;
 
-  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.appearance, {
+  @ManyToOne(() => SuperheroEntity, (superhero) => superhero.appearance, {
     onDelete: "CASCADE",
   })
-  @JoinColumn([{ name: "superheroe_id", referencedColumnName: "id" }])
-  superheroe: SuperheroeEntity;
+  @JoinColumn([{ name: "superhero_id", referencedColumnName: "id" }])
+  superhero: SuperheroEntity;
 
   @OneToMany(() => HeightEntity, (HeightEntity) => HeightEntity.appearance, {
     cascade: true,

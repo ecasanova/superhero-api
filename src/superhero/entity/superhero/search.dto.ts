@@ -6,7 +6,7 @@ enum Gender {
   MALE = "Male",
   FEMALE = "Female",
 }
-export class SuperheroeSearchDto {
+export class SuperheroSearchDto {
   @ApiProperty()
   keyword: string;
 

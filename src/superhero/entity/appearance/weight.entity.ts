@@ -8,7 +8,7 @@ import {
 } from "typeorm";
 import { AppearanceEntity } from "./appearance.entity";
 
-@Entity("superheroe_appearance_weight", { schema: "public" })
+@Entity("superhero_appearance_weight", { schema: "public" })
 export class WeightEntity {
   @PrimaryGeneratedColumn("uuid")
   id: string;
@@ -21,8 +21,6 @@ export class WeightEntity {
     (AppearanceEntity) => AppearanceEntity.weight,
     { onDelete: "CASCADE" }
   )
-  @JoinColumn([
-    { name: "superheroe_appearance_id", referencedColumnName: "id" },
-  ])
+  @JoinColumn([{ name: "superhero_appearance_id", referencedColumnName: "id" }])
   appearance: AppearanceEntity;
 }

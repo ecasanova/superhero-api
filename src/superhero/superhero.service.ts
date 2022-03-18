@@ -9,17 +9,17 @@ import { ImageEntity } from "./entity/image/image.entity";
 import { PowerstatsEntity } from "./entity/powerstats/powerstats.entity";
 import { WeightEntity } from "./entity/appearance/weight.entity";
 import { WorkEntity } from "./entity/work/work.entity";
-import { SuperheroeEntity } from "./entity/superheroe/superheroe.entity";
-import { SuperheroeDto } from "./entity/superheroe/superheroe.dto";
+import { SuperheroEntity } from "./entity/superhero/superhero.entity";
+import { SuperheroDto } from "./entity/superhero/superhero.dto";
 import { InjectRepository } from "@nestjs/typeorm";
 
 @Injectable()
-export class SuperheroeService {
+export class SuperheroService {
   constructor(
     private connection: Connection,
 
-    @InjectRepository(SuperheroeEntity)
-    private readonly superheroesRepo: Repository<SuperheroeEntity>,
+    @InjectRepository(SuperheroEntity)
+    private readonly superherosRepo: Repository<SuperheroEntity>,
 
     @InjectRepository(BiographyEntity)
     private readonly biographyRepo: Repository<BiographyEntity>,
@@ -50,16 +50,16 @@ export class SuperheroeService {
   ) {}
 
   async getAll(page, limit, search): Promise<any> {
-    const queryBuilder = await this.superheroesRepo
-      .createQueryBuilder("superheroe")
-      .leftJoinAndSelect("superheroe.powerstats", "powerstats")
-      .leftJoinAndSelect("superheroe.biography", "biography")
-      .leftJoinAndSelect("superheroe.images", "images")
-      .leftJoinAndSelect("superheroe.work", "work")
-      .orderBy("superheroe.name", "ASC");
+    const queryBuilder = await this.superherosRepo
+      .createQueryBuilder("superhero")
+      .leftJoinAndSelect("superhero.powerstats", "powerstats")
+      .leftJoinAndSelect("superhero.biography", "biography")
+      .leftJoinAndSelect("superhero.images", "images")
+      .leftJoinAndSelect("superhero.work", "work")
+      .orderBy("superhero.name", "ASC");
 
     if (search.keyword) {
-      queryBuilder.where("superheroe.name like :name", {
+      queryBuilder.where("superhero.name like :name", {
         name: `%${search.keyword}%`,
       });
       queryBuilder.orWhere("biography.fullName like :name", {
@@ -143,20 +143,20 @@ export class SuperheroeService {
     };
   }
 
-  async cleanData(superheroes: any[]) {
-    superheroes.forEach((superheroe) => {
-      if (superheroe.powerstats) delete superheroe.powerstats.id;
-      if (superheroe.images) delete superheroe.images.id;
-      if (superheroe.biography) delete superheroe.biography.id;
-      if (superheroe.appearance) delete superheroe.appearance.id;
-      if (superheroe.work) delete superheroe.work.id;
-      if (superheroe.connections) delete superheroe.connections.id;
+  async cleanData(superheros: any[]) {
+    superheros.forEach((superhero) => {
+      if (superhero.powerstats) delete superhero.powerstats.id;
+      if (superhero.images) delete superhero.images.id;
+      if (superhero.biography) delete superhero.biography.id;
+      if (superhero.appearance) delete superhero.appearance.id;
+      if (superhero.work) delete superhero.work.id;
+      if (superhero.connections) delete superhero.connections.id;
     });
-    return superheroes;
+    return superheros;
   }
 
   async getById(id: string): Promise<any> {
-    let superheroes = this.superheroesRepo.findOne(id, {
+    let superheros = this.superherosRepo.findOne(id, {
       relations: [
         "powerstats",
         "biography",
@@ -169,7 +169,7 @@ export class SuperheroeService {
         "images",
       ],
     });
-    return superheroes;
+    return superheros;
   }
 
   async getByName(name: string): Promise<any> {
@@ -177,46 +177,46 @@ export class SuperheroeService {
   }
 
   async getSuperHero(params: any) {
-    const queryBuilder = await this.superheroesRepo
-      .createQueryBuilder("superheroe")
-      .leftJoinAndSelect("superheroe.powerstats", "powerstats")
-      .leftJoinAndSelect("superheroe.biography", "biography")
-      .leftJoinAndSelect("superheroe.appearance", "appearance")
-      .leftJoinAndSelect("superheroe.work", "work")
-      .leftJoinAndSelect("superheroe.connections", "connections")
-      .leftJoinAndSelect("superheroe.images", "images")
-      .orderBy("superheroe.name", "ASC");
+    const queryBuilder = await this.superherosRepo
+      .createQueryBuilder("superhero")
+      .leftJoinAndSelect("superhero.powerstats", "powerstats")
+      .leftJoinAndSelect("superhero.biography", "biography")
+      .leftJoinAndSelect("superhero.appearance", "appearance")
+      .leftJoinAndSelect("superhero.work", "work")
+      .leftJoinAndSelect("superhero.connections", "connections")
+      .leftJoinAndSelect("superhero.images", "images")
+      .orderBy("superhero.name", "ASC");
 
     if (params.id) {
-      queryBuilder.where("superheroe.id = :id", { id: params.id }).getOne();
+      queryBuilder.where("superhero.id = :id", { id: params.id }).getOne();
     }
 
     if (params.name) {
-      queryBuilder.where("superheroe.name = :name", { name: params.name });
+      queryBuilder.where("superhero.name = :name", { name: params.name });
     }
     const { entities } = await queryBuilder.getRawAndEntities();
     return await this.cleanData(entities);
   }
 
-  async createBulk(superheroes: SuperheroeDto[]): Promise<any> {
-    superheroes.forEach((superheroe) => {
-      this.createSuperhero(superheroe);
+  async createBulk(superheros: SuperheroDto[]): Promise<any> {
+    superheros.forEach((superhero) => {
+      this.createSuperhero(superhero);
     });
   }
 
-  async create(superheroe: SuperheroeDto): Promise<any> {
-    this.createSuperhero(superheroe);
+  async create(superhero: SuperheroDto): Promise<any> {
+    this.createSuperhero(superhero);
   }
 
-  async createSuperhero(superheroe: SuperheroeDto): Promise<any> {
+  async createSuperhero(superhero: SuperheroDto): Promise<any> {
     try {
       let { appearance, biography, connections, images, powerstats, work } =
-        superheroe;
+        superhero;
 
       //CREATE SUPERHEROE
-      const superheroeEntity = new SuperheroeEntity();
-      superheroeEntity.name = superheroe.name;
-      await this.superheroesRepo.insert(superheroeEntity);
+      const superheroEntity = new SuperheroEntity();
+      superheroEntity.name = superhero.name;
+      await this.superherosRepo.insert(superheroEntity);
 
       //CREATE BIOGRAPHY
       if (biography) {
@@ -228,7 +228,7 @@ export class SuperheroeService {
         newBiographyEntity.alignment = biography.alignment;
         newBiographyEntity.alterEgos = biography.alterEgos;
         newBiographyEntity.firstAppearance = biography.firstAppearance;
-        newBiographyEntity.superheroe = superheroeEntity;
+        newBiographyEntity.superhero = superheroEntity;
         await this.biographyRepo.insert(newBiographyEntity);
 
         //CREATE ALLIASES
@@ -248,7 +248,7 @@ export class SuperheroeService {
         newAppearanceEntity.race = appearance.race;
         newAppearanceEntity.eyeColor = appearance.eyeColor;
         newAppearanceEntity.hairColor = appearance.hairColor;
-        newAppearanceEntity.superheroe = superheroeEntity;
+        newAppearanceEntity.superhero = superheroEntity;
         await this.appearanceRepo.insert(newAppearanceEntity);
 
         //CREATE HEIGHT
@@ -280,7 +280,7 @@ export class SuperheroeService {
         newPowerstatsEntity.speed = powerstats.speed;
         newPowerstatsEntity.power = powerstats.power;
         newPowerstatsEntity.strength = powerstats.strength;
-        newPowerstatsEntity.superheroe = superheroeEntity;
+        newPowerstatsEntity.superhero = superheroEntity;
         await this.powerstatsRepo.insert(newPowerstatsEntity);
       }
 
@@ -289,7 +289,7 @@ export class SuperheroeService {
         let newConnectionsEntity = new ConnectionsEntity();
         newConnectionsEntity.groupaffiliation = connections.groupAffiliation;
         newConnectionsEntity.relatives = connections.relatives;
-        newConnectionsEntity.superheroe = superheroeEntity;
+        newConnectionsEntity.superhero = superheroEntity;
         await this.connectionsRepo.insert(newConnectionsEntity);
       }
 
@@ -300,7 +300,7 @@ export class SuperheroeService {
         newImageEntity.sm = images.sm;
         newImageEntity.md = images.md;
         newImageEntity.lg = images.lg;
-        newImageEntity.superheroe = superheroeEntity;
+        newImageEntity.superhero = superheroEntity;
         await this.imageRepo.insert(newImageEntity);
       }
 
@@ -309,12 +309,12 @@ export class SuperheroeService {
         let newWorkEntity = new WorkEntity();
         newWorkEntity.occupation = work.occupation;
         newWorkEntity.base = work.base;
-        newWorkEntity.superheroe = superheroeEntity;
+        newWorkEntity.superhero = superheroEntity;
         await this.workRepo.insert(newWorkEntity);
       }
 
-      console.log("Saving: ", superheroe.name);
-      return { superheroe };
+      console.log("Saving: ", superhero.name);
+      return { superhero };
     } catch (err) {
       return { err };
     }
@@ -322,7 +322,7 @@ export class SuperheroeService {
 
   async remove(id: string): Promise<any> {
     console.log("Removing: ", id);
-    let response = await this.superheroesRepo.delete({ id: id });
+    let response = await this.superherosRepo.delete({ id: id });
     return response;
   }
 }

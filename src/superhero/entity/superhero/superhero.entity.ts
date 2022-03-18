@@ -13,8 +13,8 @@ import { ImageEntity } from "../image/image.entity";
 import { PowerstatsEntity } from "../powerstats/powerstats.entity";
 import { WorkEntity } from "../work/work.entity";
 
-@Entity("superheroe", { schema: "public" })
-export class SuperheroeEntity {
+@Entity("superhero", { schema: "public" })
+export class SuperheroEntity {
   @PrimaryGeneratedColumn("uuid")
   id: string;
 
@@ -23,7 +23,7 @@ export class SuperheroeEntity {
 
   @OneToOne(
     () => AppearanceEntity,
-    (AppearanceEntity) => AppearanceEntity.superheroe,
+    (AppearanceEntity) => AppearanceEntity.superhero,
     {
       cascade: true,
       onDelete: "CASCADE",
@@ -33,7 +33,7 @@ export class SuperheroeEntity {
 
   @OneToOne(
     () => BiographyEntity,
-    (BiographyEntity) => BiographyEntity.superheroe,
+    (BiographyEntity) => BiographyEntity.superhero,
     {
       cascade: true,
       onDelete: "CASCADE",
@@ -43,7 +43,7 @@ export class SuperheroeEntity {
 
   @OneToOne(
     () => ConnectionsEntity,
-    (ConnectionsEntity) => ConnectionsEntity.superheroe,
+    (ConnectionsEntity) => ConnectionsEntity.superhero,
     {
       cascade: true,
       onDelete: "CASCADE",
@@ -51,7 +51,7 @@ export class SuperheroeEntity {
   )
   connections: ConnectionsEntity;
 
-  @OneToOne(() => ImageEntity, (ImageEntity) => ImageEntity.superheroe, {
+  @OneToOne(() => ImageEntity, (ImageEntity) => ImageEntity.superhero, {
     cascade: true,
     onDelete: "CASCADE",
   })
@@ -59,7 +59,7 @@ export class SuperheroeEntity {
 
   @OneToOne(
     () => PowerstatsEntity,
-    (PowerstatsEntity) => PowerstatsEntity.superheroe,
+    (PowerstatsEntity) => PowerstatsEntity.superhero,
     {
       cascade: true,
       onDelete: "CASCADE",
@@ -67,7 +67,7 @@ export class SuperheroeEntity {
   )
   powerstats: PowerstatsEntity;
 
-  @OneToOne(() => WorkEntity, (WorkEntity) => WorkEntity.superheroe, {
+  @OneToOne(() => WorkEntity, (WorkEntity) => WorkEntity.superhero, {
     cascade: true,
     onDelete: "CASCADE",
   })

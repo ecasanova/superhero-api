@@ -2,9 +2,9 @@ import { MiddlewareConsumer, Module } from "@nestjs/common";
 import { AppController } from "./app.controller";
 import { AppService } from "./app.service";
 import { TypeOrmModule } from "@nestjs/typeorm";
-import { SuperheroeModule } from "./superheroe/superheroe.module";
+import { SuperheroModule } from "./superhero/superhero.module";
 import { ConfigModule } from "@nestjs/config";
-import { SuperheroeService } from "./superheroe/superheroe.service";
+import { SuperheroService } from "./superhero/superhero.service";
 import { AuthModule } from "./auth/auth.module";
 import * as ormconfig from "./ormconfig";
 import { AuthMiddleware } from "./middleware/auth.middleware";
@@ -16,11 +16,11 @@ import { AuthMiddleware } from "./middleware/auth.middleware";
       ...ormconfig,
       keepConnectionAlive: true,
     }),
-    SuperheroeModule,
+    SuperheroModule,
     AuthModule,
   ],
   controllers: [AppController],
-  providers: [AppService, SuperheroeService],
+  providers: [AppService, SuperheroService],
 })
 export class AppModule {
   configure(consumer: MiddlewareConsumer) {

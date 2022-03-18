@@ -6,9 +6,9 @@ import {
   ManyToOne,
   PrimaryGeneratedColumn,
 } from "typeorm";
-import { SuperheroeEntity } from "../superheroe/superheroe.entity";
+import { SuperheroEntity } from "../superhero/superhero.entity";
 
-@Entity("superheroe_powerstats", { schema: "public" })
+@Entity("superhero_powerstats", { schema: "public" })
 export class PowerstatsEntity {
   @PrimaryGeneratedColumn("uuid")
   id: string;
@@ -31,9 +31,9 @@ export class PowerstatsEntity {
   @Column("text", { name: "combat", nullable: true })
   combat: string | null;
 
-  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.powerstats, {
+  @ManyToOne(() => SuperheroEntity, (superhero) => superhero.powerstats, {
     onDelete: "CASCADE",
   })
-  @JoinColumn([{ name: "superheroe_id", referencedColumnName: "id" }])
-  superheroe: SuperheroeEntity;
+  @JoinColumn([{ name: "superhero_id", referencedColumnName: "id" }])
+  superhero: SuperheroEntity;
 }

@@ -7,10 +7,10 @@ import {
   OneToMany,
   PrimaryGeneratedColumn,
 } from "typeorm";
-import { SuperheroeEntity } from "../superheroe/superheroe.entity";
+import { SuperheroEntity } from "../superhero/superhero.entity";
 import { AliasesEntity } from "../aliases/aliases.entity";
 
-@Entity("superheroe_biography", { schema: "public" })
+@Entity("superhero_biography", { schema: "public" })
 export class BiographyEntity {
   @PrimaryGeneratedColumn("uuid")
   id: string;
@@ -36,11 +36,11 @@ export class BiographyEntity {
   @Column("text", { name: "alignment", nullable: true })
   alignment: string | null;
 
-  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.biography, {
+  @ManyToOne(() => SuperheroEntity, (superhero) => superhero.biography, {
     onDelete: "CASCADE",
   })
-  @JoinColumn([{ name: "superheroe_id", referencedColumnName: "id" }])
-  superheroe: SuperheroeEntity;
+  @JoinColumn([{ name: "superhero_id", referencedColumnName: "id" }])
+  superhero: SuperheroEntity;
 
   @OneToMany(() => AliasesEntity, (AliasesEntity) => AliasesEntity.biography, {
     onDelete: "CASCADE",

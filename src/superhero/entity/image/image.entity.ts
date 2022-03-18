@@ -6,9 +6,9 @@ import {
   ManyToOne,
   PrimaryGeneratedColumn,
 } from "typeorm";
-import { SuperheroeEntity } from "../superheroe/superheroe.entity";
+import { SuperheroEntity } from "../superhero/superhero.entity";
 
-@Entity("superheroe_image", { schema: "public" })
+@Entity("superhero_image", { schema: "public" })
 export class ImageEntity {
   @PrimaryGeneratedColumn("uuid")
   id: string;
@@ -25,9 +25,9 @@ export class ImageEntity {
   @Column("text", { name: "lg", nullable: true })
   lg: string | null;
 
-  @ManyToOne(() => SuperheroeEntity, (superheroe) => superheroe.images, {
+  @ManyToOne(() => SuperheroEntity, (superhero) => superhero.images, {
     onDelete: "CASCADE",
   })
-  @JoinColumn([{ name: "superheroe_id", referencedColumnName: "id" }])
-  superheroe: SuperheroeEntity;
+  @JoinColumn([{ name: "superhero_id", referencedColumnName: "id" }])
+  superhero: SuperheroEntity;
 }

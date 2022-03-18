@@ -3,7 +3,7 @@ import { MigrationInterface, QueryRunner } from "typeorm";
 export class initial1647531888921 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
     await this.cleanData(queryRunner);
-    await queryRunner.query(`INSERT INTO public.superheroe (id,name) VALUES
+    await queryRunner.query(`INSERT INTO public.superhero (id,name) VALUES
 	 ('0d65cc24-366e-417a-9dbb-069ec704f90e','Abe Sapien'),
 	 ('141fdfaa-3ab1-49e4-9d89-6ff65c8f8461','Abin Sur'),
 	 ('84507000-0beb-4a66-8288-0a9c578176a1','Agent Bob'),
@@ -14,7 +14,7 @@ export class initial1647531888921 implements MigrationInterface {
 	 ('2fabe5e1-deca-4744-a657-d32f841deabc','Abraxas'),
 	 ('d47f8c30-1862-45b8-9bb3-62fb833478a7','Adam Monroe'),
 	 ('1ec71757-352c-47a1-aaa1-1fd356b71bb3','Absorbing Man');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('e0ff7776-a8a8-45e6-867d-81f1019ab07c','Air-Walker'),
 	 ('c49ccf99-f649-4ad2-bf90-f53efd5efbe4','Ajax'),
 	 ('8a9d5fbf-373e-4b8c-811c-d83823ace434','Alan Scott'),
@@ -25,7 +25,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('49443739-1caa-4cc5-ac3f-b9305867f1e2','Angel'),
 	 ('8ff6bd04-e801-4a20-87d5-b7e48f5b02a2','Angel'),
 	 ('0f8853b7-0404-4f13-8b36-477016193e4f','Angel Dust');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('dbd53964-eb31-4aac-968e-237c1ce7d39c','Angel Salvadore'),
 	 ('ee2465ec-7916-4abc-9c9b-076c7ae1520f','Animal Man'),
 	 ('fdd048c1-c4ee-4571-b074-7eb503253338','Annihilus'),
@@ -36,7 +36,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('5b38b987-bb4d-4d56-8b7c-e4a45cfaa6d4','Apocalypse'),
 	 ('51b8cd4f-54f3-48f6-9d87-f4de680c23ab','Aquababy'),
 	 ('b8b981ef-8d52-4e30-a48c-a0609a42eb96','Aqualad');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('32c307b4-9a26-43a5-b223-bb512c0d1c01','Aquaman'),
 	 ('102b2074-192a-4041-b772-71ac702b34b1','Arachne'),
 	 ('3738a8c5-8a66-4f8e-ace1-3860be5c3cf0','Archangel'),
@@ -47,7 +47,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('7f4f4065-ceb1-4cdf-a138-cf39ae2b4e63','Armor'),
 	 ('bafbb32e-3511-4634-9870-628e01faa597','Atlas'),
 	 ('f3733b9a-59f4-4099-a135-c5539f348421','Atlas');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('0df52ce4-2b47-488f-ad5b-c90b433a5faa','Atom Girl'),
 	 ('58efc664-83c7-4250-a790-aaf1a6f36701','Atom II'),
 	 ('124fa936-b34c-40cd-bd12-255cfa5f8062','Aurora'),
@@ -58,7 +58,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('c9ccbf68-e039-4b4f-9e2e-f88cacf56348','Bantam'),
 	 ('802d1b2c-9a0d-45dc-804e-ba42cd5b20c0','Batgirl'),
 	 ('afacb2b9-2a66-41db-8f15-51fcf3f10a38','Batgirl IV');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('c84b11ee-178b-4c4a-999c-8f499524ed75','Batgirl VI'),
 	 ('a4fe4246-581b-4adb-95a2-aaeb3bacbc09','Batman'),
 	 ('d32ee045-d969-405b-baf4-4ec44d112bfb','Batman'),
@@ -69,7 +69,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('8cf3466d-3f63-442e-991b-4323676bf006','Beast Boy'),
 	 ('414e8aba-904e-4ccb-9f24-387f4088185f','Ben 10'),
 	 ('8d09f72a-0897-4598-ba1d-9ba580e257ae','Beta Ray Bill');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('1b0907cc-3daa-4a27-bde3-9f416afb562e','Beyonder'),
 	 ('e7ab3e29-f614-4a74-a7bd-cf31c36db45f','Big Barda'),
 	 ('592fce45-d665-456d-b4c3-7aa9c22c697a','Big Daddy'),
@@ -80,7 +80,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('35a5b93f-c8a0-481a-919c-1bac5829eb36','Bishop'),
 	 ('c117e88e-48de-4722-8aca-cf0a6f388663','Bizarro'),
 	 ('430d54f9-e698-40da-a0ae-c845cd6b847b','Black Adam');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('d81acf3c-3f98-4a4d-b52d-984e322adde5','Black Bolt'),
 	 ('ac2da8f1-26ea-4c64-8373-dca1e3ff183d','Black Canary'),
 	 ('06c0e2f7-8803-462e-8995-7ed9a36bb22f','Black Canary'),
@@ -91,7 +91,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('f34d69e6-4138-43dc-bf68-612f829c6873','Black Mamba'),
 	 ('e131c731-e8db-4974-a189-39cdc7464fba','Black Manta'),
 	 ('46253f6c-6da4-4f94-b8da-6c1f1f4e14b1','Black Panther');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('540a3d4f-3517-4148-bdf8-4ca07400587a','Black Widow'),
 	 ('7a8b6610-a3d8-4391-bcfc-023b5405ff97','Blackout'),
 	 ('a0eafd15-d598-45db-a4c9-2cffec18cd2c','Blackwing'),
@@ -102,7 +102,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('55ee3fe5-b74e-4ea4-b1ee-76b6841208e1','Blizzard II'),
 	 ('3e462fdd-dea1-4f94-a468-371f4de8170f','Blob'),
 	 ('efe4d46b-9537-48c8-ba5c-35ff7527570b','Bloodaxe');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('9763e385-84b4-4fcf-8125-26763a716ffe','Bloodhawk'),
 	 ('459b400b-b436-4aa4-bd3c-2e09c63490cc','Blue Beetle III'),
 	 ('74601be3-6d6d-4d30-bbf3-d22758971560','Boba Fett'),
@@ -113,7 +113,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('8aa4e1db-3420-4a0f-867f-616dbd54ca33','Brundlefly'),
 	 ('c04cd106-2c8f-40ef-b5f2-5f6eb3a9d600','Buffy'),
 	 ('c68ef461-d188-4881-91a7-ee1868b63b4d','Bullseye');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('2f4935ae-250b-4945-aa45-6cc55659b6e8','Bumblebee'),
 	 ('5b16c264-a63b-48ba-8bdb-6dcb19fcfbe2','Bushido'),
 	 ('ab4a41ef-bdbd-4000-a549-e40f2fdd2e65','Cable'),
@@ -124,7 +124,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('cb841bea-4431-4fb8-b41a-d0ca7023f488','Captain Atom'),
 	 ('461dc26d-bd4f-4358-b61a-4265c0d6fa47','Captain Britain'),
 	 ('2f25d77d-537d-4575-be9b-a41fce5e2c26','Captain Cold');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('7541e5ef-2a15-4653-8e57-7b8fd64bcb6f','Captain Hindsight'),
 	 ('72a18003-59d8-4603-9f8e-f8815d7b685a','Captain Marvel'),
 	 ('1aaae037-4c84-4894-95e5-c071ed36b1ab','Captain Marvel'),
@@ -135,7 +135,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('f0ab2845-ed45-4637-b9dc-b8384b035ca4','Century'),
 	 ('64e9b508-5361-4de2-a26e-bbec5518277e','Chamber'),
 	 ('8b3ad528-dfac-423f-bb44-58df6392ea66','Chameleon');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('df4bc245-ff93-4b17-84d9-2d613fd410ef','Changeling'),
 	 ('42d88eaa-325f-4aef-8907-019619c2958a','Cheetah'),
 	 ('470c7c5e-75ce-49ef-9e9c-b6fa2c206133','Cheetah III'),
@@ -146,7 +146,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('35deb868-d25a-4a20-ab7b-2fe99d7d6998','Clock King'),
 	 ('99883334-8cf8-4e65-9b42-5d298d6f8219','Colossus'),
 	 ('e5e75a6f-51f3-4419-bb50-f57f5b58a3b4','Copycat');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('43268fde-5b57-48fa-b15b-207bc4470acd','Cottonmouth'),
 	 ('8ff18539-bf3b-44c5-a24e-ed2f6f9fa7b0','Crystal'),
 	 ('681a91b0-c7e1-486a-a204-e92bd7a245cd','Cyborg'),
@@ -157,7 +157,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('306932c5-a097-479b-b97e-9c447b438af2','Darkman'),
 	 ('42806a8a-eff2-45f3-a35e-5a9faf0d6302','Darkhawk'),
 	 ('3ddc294d-1c15-472b-8a9b-aa787f7a1d21','Daredevil');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('3def392f-bafb-4d50-80a5-9f572da8e5dd','Darkseid'),
 	 ('942cc87d-abc1-4aa6-ae68-c46fa19ecde0','Darkstar'),
 	 ('ba0016c9-175a-4b32-b4fd-cc5783e08b15','Demogoblin'),
@@ -168,7 +168,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('671a8408-7465-45e1-be7a-a11e99f56d81','Flash IV'),
 	 ('a09255bb-a7e1-4c4e-8a8d-9e963ff89639','General Zod'),
 	 ('6e9d2c2e-7a20-4ca7-bbcf-46c4d6b168f2','Gorilla Grodd');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('6a17daa8-0d8a-4b7f-9840-564ed7fa00af','Hancock'),
 	 ('c7000fb1-2b4c-438e-b7da-42641e2c9c4d','Hela'),
 	 ('de8bde19-2f2c-4c8d-92b0-a8da7db89789','Human Torch'),
@@ -179,7 +179,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('96ff3e36-0872-40cf-8824-48a917ae4db1','Kevin 11'),
 	 ('0a6e6974-6562-430f-b89d-400190d2c4ce','King Shark'),
 	 ('9b383727-a76c-4079-ac39-7c12acf1ccae','Kylo Ren');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('709552c7-1895-4407-82e3-b5d48c5bb7af','Lightning Lad'),
 	 ('527611ec-cf7f-4385-a87a-03574d6afa08','Longshot'),
 	 ('6b36118d-ef9b-491f-a92d-760ec89e468e','Magus'),
@@ -190,7 +190,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('38745960-34d5-4387-affc-f0ef35b3565b','Namor'),
 	 ('1d26f21d-b1e0-4c90-ab8f-86a71f337d2a','Niki Sanders'),
 	 ('6d832a9a-3ae8-4e0a-8f22-d60c88e265a4','Penguin');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('17fe634d-8aa4-4876-924e-5e2ad880eb51','Predator'),
 	 ('810e3b0f-173d-4396-b1f1-29a3b0e275c4','Quicksilver'),
 	 ('5f07c8f3-88ff-43fc-9f72-33bba3300161','Red Arrow'),
@@ -201,7 +201,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('01069aa4-c07a-4646-8230-ced649f95f45','She-Thing'),
 	 ('a32751af-e30d-4610-b02e-4c2c2216c416','Siren'),
 	 ('19f0a950-17c7-4969-b884-d22ac07fb5c9','Space Ghost');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('1d4bd48e-dec3-47bd-b21b-455972f7ab30','Spock'),
 	 ('b999ee34-dc8e-4095-a71b-06e26703b0f4','Sunspot'),
 	 ('739aa498-46d9-449b-ba25-9b949935dc0f','T-1000'),
@@ -212,7 +212,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('f7598083-34c3-49af-a6f0-4a8d34728e7b','War Machine'),
 	 ('fe41fce0-ae26-4c51-9b41-072e6cdf88df','Wolfsbane'),
 	 ('6b516f90-8278-4085-8eb1-5635e0186848','Yellowjacket II');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('f96a58bc-aa89-47f8-bae3-9af99b0720f2','Darth Vader'),
 	 ('44f2f45f-8a11-4a08-bce5-c0d6158dbab4','Deathstroke'),
 	 ('571edff4-38c0-40d5-9a06-7371bbc8c8e2','Doctor Fate'),
@@ -223,7 +223,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('1b583b1f-aff4-4dd7-b1b7-908df45256de','Hawkeye'),
 	 ('bb72fcde-11b2-4f17-b1fb-181089ea8403','Hyperion'),
 	 ('f0432fff-8cdc-4a4c-9744-1452fc857050','Jean-Luc Picard');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('ea7f94b6-938b-4c35-b8a6-7c412618eb49','Justice'),
 	 ('6bff7936-3da8-461d-8c1d-555fede1fe78','Kool-Aid Man'),
 	 ('0c26da2b-9196-450c-8405-e0d361b10b21','Living Brain'),
@@ -234,7 +234,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('71d864cd-4428-44ea-890f-9b8771163552','Monica Dawson'),
 	 ('2bc92306-083a-473b-b3a2-1c6df200ea2a','Mysterio'),
 	 ('c4684e1d-b10c-4ec9-8681-365e6ceba88d','Nightcrawler');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('96afb5cc-1876-4b54-873a-8639bd3001d3','Offspring'),
 	 ('ba9633e7-a0c6-4a99-acd6-cda15c12c963','Osiris'),
 	 ('8f800a2e-6a03-4865-9540-a43d27c9c8ae','Plastique'),
@@ -245,7 +245,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('a732553b-7923-4dce-9264-e3002207e7ee','Sandman'),
 	 ('3154f4b3-5b63-4389-bc64-3d0da22e7eb8','Scarlet Witch'),
 	 ('3600936d-f09e-46c7-91df-82abeec79fcb','She-Hulk');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('f05d118a-adef-4cd3-8172-f08b09d05d12','Sinestro'),
 	 ('a1e68c64-32fa-4ed7-bddf-2a3e4310e2b0','Songbird'),
 	 ('ad766187-b760-4be8-abbd-563755437084','Spider-Woman III'),
@@ -256,7 +256,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('58361c42-cd29-4a4c-8995-2f0eb9e677b0','Thunderstrike'),
 	 ('eedb7615-3f66-4530-ab6d-f028225dca07','Triplicate Girl'),
 	 ('5d05c92f-1a27-4a27-b4bd-6b29a970b9d0','Venom II');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('97a3ed8c-db26-44f9-9cbd-9e0caef50729','Walrus'),
 	 ('b87bdbe7-0196-4779-b36f-eb19ea2c2c63','Winter Soldier'),
 	 ('e1dae9c2-31ac-4347-862c-0f29845419bc','Yellowjacket'),
@@ -267,7 +267,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('5f850bac-eda0-4fe6-b9bf-ea9a03d7e8e6','Evil Deadpool'),
 	 ('94e3cd23-0c1d-437e-bfeb-96a9613566e2','Feral'),
 	 ('a120e788-c40c-49a5-8ff2-02c3067e28de','Flash');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('d0134ae3-c2bf-4cc5-8f9c-1c7462c3f3b7','Gambit'),
 	 ('099fa565-6cb6-4803-85b5-b62106fb8751','Godzilla'),
 	 ('8d5325e8-662d-451f-92b1-fbcc428fae57','Guy Gardner'),
@@ -278,7 +278,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('06eff019-53ed-4065-9556-75ae06354e3f','Jennifer Kale'),
 	 ('a89f8384-b595-4dfb-a2bd-6bef8f16f4e4','Joker'),
 	 ('19d15d5e-38b6-4db3-8a51-0b886ba02471','Kang');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('7f70bf5c-9a50-4572-8024-ece8027c58d2','Killer Frost'),
 	 ('0954b39f-979b-48c8-a6d1-1bc87a5f103d','Kraven the Hunter'),
 	 ('a4e0b300-0cf2-4aba-8dfc-e6737e2bb805','Leonardo'),
@@ -289,7 +289,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('0fb043be-00f6-428f-af17-493abbf082a2','Mimic'),
 	 ('7590d6d4-c3bf-4787-aa2c-25253aee6b5b','MODOK'),
 	 ('c08f939c-cf35-4051-98c6-73f5ebea38f4','Ms Marvel II');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('a9e2b077-1967-41fa-a17e-2b71b266d986','Negasonic Teenage Warhead'),
 	 ('bff437dd-4ff4-49e7-8df1-4638c92d3897','Plantman'),
 	 ('3c258ffd-76f8-4640-929b-8a9c7bbdc0ef','Ra''s Al Ghul'),
@@ -300,7 +300,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('5aef7271-94cc-47cf-adf6-d57c9ab80998','Static'),
 	 ('bc763ade-3713-4536-bed5-51b54c9d594c','Swamp Thing'),
 	 ('4af9dbd0-064d-4744-b52b-1ec9a4861209','Thor');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('25186775-7bd5-4036-a835-30a3fe2ed5f7','Vanisher'),
 	 ('9bebc6ce-977c-4596-a4aa-831d3a264a72','Vision'),
 	 ('9cebbb38-f76b-42e6-8ae8-8d8d566bc020','Watcher'),
@@ -311,7 +311,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('bb2d0935-0ec9-4240-8197-9556bcaded68','Faora'),
 	 ('33ce1dbf-8054-4d44-9191-4ddeeed459da','Firestar'),
 	 ('6f9741d4-13ce-421e-88e8-2f31e1be0d0e','Forge');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('5a282b0d-3750-429c-a581-c37605a01da9','Ghost Rider'),
 	 ('4a28f289-413d-44ff-baf5-b92c1aea3314','Gravity'),
 	 ('5df97173-44b1-4126-a3e9-8e562079ae27','Harley Quinn'),
@@ -322,7 +322,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('5d721ab1-d88b-4bb4-ad19-88f6acb17b86','JJ Powell'),
 	 ('5d01b633-c67c-4e81-aa52-e3281cf0ba91','Kick-Ass'),
 	 ('74abc310-b972-4df3-9f8e-03edecfd6903','Kingpin');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('cbee3a56-9f2c-4c9c-bef8-2e7795247f7c','Lady Deathstrike'),
 	 ('1e0c40b1-359b-45b9-9e96-077cde49ba0d','Lightning Lord'),
 	 ('5f0f8238-39c9-439a-babd-f57ee89078fc','Luke Cage'),
@@ -333,7 +333,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('7f1b9607-7520-414a-b5f9-3be58e0488ab','Moon Knight'),
 	 ('25c186a5-8670-48c5-8f3d-4d47de681665','Mystique'),
 	 ('5336966b-8b64-47c1-8066-023a0f7c207f','Nightwing');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('f854ffd9-a76f-4648-a388-51ba43114821','One-Above-All'),
 	 ('12f8caed-7596-4fc5-a536-83cd6663efc2','Parademon'),
 	 ('ace4377c-9a4f-4718-866e-a5df326c3f01','Polaris'),
@@ -344,7 +344,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('c5a8e0db-ccf1-4456-b634-c516290f559d','Sauron'),
 	 ('e00f3d47-14a3-4580-b033-c27b9886a99a','Scorpion'),
 	 ('0a08f6e9-5004-4adf-834c-c861f661a674','Shriek');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('0ae9271c-431d-433a-94d9-c5660c606d69','Skaar'),
 	 ('a87a3fd1-592e-45b4-80f5-7b940ee187b3','Spectre'),
 	 ('3935cd56-5e03-4245-8a26-dde46b48a5c1','Star-Lord'),
@@ -355,7 +355,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('bf60c205-6cc9-4966-84dc-b36b2cad5830','Vibe'),
 	 ('6bf2704a-932d-41bd-a7a0-1d0f36ecd428','Warp'),
 	 ('2e05cbd8-469d-4629-94d8-347eab4f9ea5','Wonder Girl');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('0b9097fa-3c1e-4c53-9efa-d2a62762847e','Yoda'),
 	 ('b6cca01a-69b1-4245-8b23-639c468cffd5','Data'),
 	 ('08a6ac59-07bb-455e-980b-4df338a8c29a','DL Hawkins'),
@@ -366,7 +366,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('ed608fff-11d1-4225-ad79-5dbf96d9dda1','Franklin Richards'),
 	 ('b5f8857d-db58-4601-9fad-6a7468f0a1d2','Giganta'),
 	 ('743c7365-a6a7-41ca-a0aa-92a0d7922216','Greedo');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('7cbf3002-ab87-4a54-b418-a561ef4023bc','Harry Potter'),
 	 ('85f800ef-1703-4ddc-8327-92cc09e0f44e','Hellcat'),
 	 ('3a428afc-64e4-4462-b991-9c5a6bf6ccc8','Husk'),
@@ -377,7 +377,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('b34306be-b9f3-47c7-9be3-2832a06a8575','Leech'),
 	 ('eada5243-be14-466e-9ebb-ff70881e45cb','Luna'),
 	 ('a6c62dcf-b747-412e-b2f4-dac1cb9f3521','Man-Thing');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('7291fe36-8a86-40df-98ca-52f2d4c81bf3','Maverick'),
 	 ('a49fce98-7c81-4a81-a8fb-b66bfc1cce63','Micah Sanders'),
 	 ('e9225bae-3805-4bb7-83f2-9a3acae20801','Mister Mxyzptlk'),
@@ -388,7 +388,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('1260706b-e5e3-445d-bd2f-3161ec71fb07','Red Mist'),
 	 ('73d3a43e-22ff-410d-9f85-a18b8c4973f0','Sabretooth'),
 	 ('472d5013-bf08-47b7-bb22-45cc705dec76','Sentry');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('9616c842-adfe-458f-bf33-1f4e8fa29360','Sif'),
 	 ('7fba7029-7bee-4695-a4d0-dc13379675e4','Snowbird'),
 	 ('3bb5f8c7-0990-47f9-8420-45c85a387575','Speedy'),
@@ -399,7 +399,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('999461b8-69a4-4b48-a42d-cce87bb62e54','Ultron'),
 	 ('138a171b-bed0-4484-98ba-f3c57408752e','Vindicator'),
 	 ('9616e8e3-8588-436b-a889-301ff8ff3fc9','Warpath');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('4f24dbde-50c7-42ed-829a-239a9bfe4695','Wonder Man'),
 	 ('0ffe7766-d695-4878-b5c7-dfc396e331df','Zatanna'),
 	 ('54a5925a-550e-473e-a627-a518fb15bf26','Dazzler'),
@@ -410,7 +410,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('e900794f-5f09-4b3a-89db-05c999a829ef','Flash II'),
 	 ('be738bb5-9bc2-4e6b-b06b-af3fd7ebcd6a','Gamora'),
 	 ('3cdb0763-cb87-4524-9366-f300bf7583f8','Gog');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('58f972a3-37a8-44dd-a71b-6fea54a0d88f','Hal Jordan'),
 	 ('5bf914c8-2c8b-45bc-b55e-1d70ed1ee99d','Hawkgirl'),
 	 ('72f1f9ee-d473-4e4c-9730-364c4b3b8acd','Hope Summers'),
@@ -421,7 +421,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('d45890ea-b410-413c-8113-8021f548863c','Kathryn Janeway'),
 	 ('02229ff1-e10e-44b9-8b2c-8fe6c15cfc5d','Kilowog'),
 	 ('007a18a1-79e2-46aa-8200-14f6a113bda9','Krypto');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('27924f5f-f6f2-4cda-bc66-4a250a676ec3','Lex Luthor'),
 	 ('78c2818a-ccbd-4809-86e5-4d9171d69375','Lobo'),
 	 ('5dfbacd7-64df-4338-acb8-8362cb460449','Magneto'),
@@ -432,7 +432,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('bf5f0d98-f4b8-4eaa-8c6d-f1db2bd91289','Multiple Man'),
 	 ('b9d4eadb-a25b-47c2-bcb1-5ebd5ae58c58','Nick Fury'),
 	 ('fa3bdb1f-05d9-4241-9bdc-0d9cf24cb592','Odin');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('e9a5d2e4-73ba-427a-a246-49b2a3ee78b7','Oracle'),
 	 ('98cb7eca-2124-42d5-92e9-2963560c18ce','Plastic Man'),
 	 ('ef079eaa-7be3-4019-9f7e-22dde9305ef9','Punisher'),
@@ -443,7 +443,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('087f3911-9e9c-4457-b93f-f9d124387153','Scarlet Spider II'),
 	 ('cc2f7937-6688-4f46-805c-55626d435a26','Shatterstar'),
 	 ('9f3fc482-5268-4ce1-9b79-ad27bd86d533','Simon Baz');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('712be8ef-08d0-4395-8bd3-357029be8023','Solomon Grundy'),
 	 ('5b43d0aa-857c-4ed3-ac50-232fddab0ad6','Spider-Woman'),
 	 ('df3329cc-ad89-4222-8a00-1a4e7199e06e','Steel'),
@@ -454,7 +454,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('13042421-f7b4-48d9-a9e3-811973c5f36b','Toxin'),
 	 ('6eb6cc8e-c6fc-4629-ba64-2b2603d141d6','Venom'),
 	 ('d09dce18-bbba-4a60-bfed-95194c344611','Vulture');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('91adabb4-935f-4d0e-b592-1b2f63072e2c','Wildfire'),
 	 ('88679560-aab6-4721-bd1b-eba04a829257','X-Man'),
 	 ('ef591d97-a3c6-4574-8cdd-fa0f34db5648','Deadman'),
@@ -465,7 +465,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('5f826be6-47e9-4f26-9093-478690bcaa49','Groot'),
 	 ('56091064-485a-4141-9ac9-931d79eb932b','Hercules'),
 	 ('cc38d1d5-e0a7-4e97-99c0-0549be2ad82e','Iron Monger');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('1d509af7-ded0-4b26-8084-718bd51c6992','John Wraith'),
 	 ('1feeef29-3500-4dd8-bbf3-c8d7673081f3','Killer Croc'),
 	 ('5b0f9806-d5a0-4d11-aaaa-e4621dbfa8f5','Legion'),
@@ -476,7 +476,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('fdf25ad5-0d77-458e-9021-87c7c46c1ce0','Naruto Uzumaki'),
 	 ('0ef639f4-88aa-4a4f-90ed-2b6915057248','Nova'),
 	 ('99dcb6ad-5788-4030-bb83-9c5849841616','Phantom Girl');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('0c7179b2-de44-41b6-af43-f425555e1b09','Professor X'),
 	 ('59230578-4b0a-4817-ac8a-82a9dc4af814','Quill'),
 	 ('e5af3625-f657-4263-9dbe-c943de31e2a5','Red Hood'),
@@ -487,7 +487,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('9eb5abc5-683e-40c6-9d96-3c3cc23f9d91','Siryn'),
 	 ('ab1cde89-ea9d-4a04-9143-482fe22f4700','Spawn'),
 	 ('7d717e8f-767c-415e-87fa-2aaeabf4c468','Spyke');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('822b5b52-328f-46d4-9198-2098f499e739','Superboy'),
 	 ('694d23ad-1c66-4e18-a4aa-4653accd3290','T-800'),
 	 ('619b798e-80ff-4813-a0b2-cf4078d5126c','Thanos'),
@@ -498,7 +498,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('6d998e7b-078b-43d8-af80-7f76981877d2','Wolverine'),
 	 ('db4ef6ac-0f3f-4dd0-b13e-5be71fcbc837','Ymir'),
 	 ('473f7f79-fa6b-465e-91a5-b9c7b099307e','Deadpool');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('8087eb32-acc8-4c72-9707-28c365337a3f','Donatello'),
 	 ('c3c5fad5-7550-4585-b713-f571a465021f','Elektra'),
 	 ('0fdd56e8-5a68-428c-abcd-5f1145967335','Exodus'),
@@ -509,7 +509,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('91a1bb47-7f80-43e1-a3b5-cfa170c8704a','Hydro-Man'),
 	 ('56d7f6d4-ceea-4d81-bc5e-8fbcaa967625','Iron Man'),
 	 ('f3d9f6c2-590f-4b0c-ad75-d1b7857df5ca','Jean Grey');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('af0ccea6-0ad4-44fd-b235-0b3b84143805','Junkpile'),
 	 ('c817363c-4831-496d-8353-59d2eb5fba83','Kraven II'),
 	 ('f4f40720-7b08-405b-8732-b02f158b1dcd','Living Tribunal'),
@@ -520,7 +520,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('7bb64ef5-1826-4faf-b12c-bdf689783235','One Punch Man'),
 	 ('7909566f-36b9-41a9-806f-a1ca604a9dda','Ozymandias'),
 	 ('23a54df5-0206-41ff-bf6b-f06ef69d1749','Poison Ivy');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('7209a485-8421-4809-a778-e05aa00589d7','Pyro'),
 	 ('3c4b1cd2-4be9-450b-a5c2-e21ef0aba35d','Raphael'),
 	 ('e1b5c917-b296-4936-8266-9cda153d8c43','Red Tornado'),
@@ -531,7 +531,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('45f938a0-0f09-45e3-8372-0352e6dbcf03','Spider-Girl'),
 	 ('3a531400-5c86-497d-b613-5858d40d0c10','Starfire'),
 	 ('ecd1b1f6-d27e-4c80-a76e-ab1e3b1a33be','Superman');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('7f1be57c-44e9-44ee-bc70-81e00262306f','Thing'),
 	 ('ae5169b5-6773-4afe-9ca3-cf21fca79136','Toad'),
 	 ('d748c9a3-6726-45db-b72d-b935e975ee93','Utgard-Loki'),
@@ -542,7 +542,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('bc627d54-e9cc-49c7-8b0c-b6466530590a','Deadshot'),
 	 ('b73a926e-9c05-486f-803b-9627cb43b188','Doomsday'),
 	 ('b678bf4e-ff30-485a-9e52-ab848a681372','Falcon');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('702ded2f-f1ad-4722-8faf-774ebfb45100','Firebird'),
 	 ('21ac97b0-8f11-4a5c-8d63-41130e2a05ef','Flash III'),
 	 ('b0652c04-b1ad-419e-b75e-2ee32c6e2297','Gary Bell'),
@@ -553,7 +553,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('e4c8f22b-b2b3-40c5-93c7-f36c9504619d','Indiana Jones'),
 	 ('ee26d33d-b915-42dd-9eca-4557080718cf','Jack-Jack'),
 	 ('a52084a6-e774-4a8c-8780-180e0614cdfc','Jessica Jones');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('bf881468-c1de-4cd9-a812-fc76f2459635','Jubilee'),
 	 ('ca9d905d-6946-4471-92b6-7e0e6c9b2dc5','Katniss Everdeen'),
 	 ('1258aa31-6a27-4bd1-abfe-a2d161537607','King Kong'),
@@ -564,7 +564,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('9a5fa168-9654-4504-8057-3b7227b89a71','Marvel Girl'),
 	 ('74cb3a12-e500-43d2-a272-687987f2d301','Mephisto'),
 	 ('0ad6e7db-b646-4009-a70b-c73a4ce5cabc','Miss Martian');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('5534a18a-586a-42f4-894a-c67fb9ebdbaa','Morlun'),
 	 ('4d01042c-09df-4732-b54f-3936995ba10d','Namora'),
 	 ('8851c440-c975-40b2-ab3a-b07e97b34c17','Nova'),
@@ -575,7 +575,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('34eefb6a-f84c-41de-bfed-dab9951234c0','Rorschach'),
 	 ('07b6d189-5531-4d42-a414-f7457293f485','Shadow Lass'),
 	 ('8f8d1e6f-221a-4aa2-8f5b-3eae0ee0e772','Silverclaw');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('aad0818f-6369-4632-9051-5a6b9c05114d','Spider-Man'),
 	 ('ec1b72bc-b57f-4d24-9158-4e0ed4881589','Steppenwolf'),
 	 ('88b5469f-4d1a-4251-a58c-150ab77edae9','T-850'),
@@ -586,7 +586,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('a8a02b49-4c62-4205-bafa-2fe7b7d65339','Doctor Doom'),
 	 ('860736bd-7d96-43a5-9daf-0d26c142eebb','Dr Manhattan'),
 	 ('2c93a095-5c6f-4ac1-b4fa-dbfeae307f1e','Enchantress');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('37469feb-66e1-44d9-9682-96ca9a3dd3fa','Firestorm'),
 	 ('2b2ef640-cfdc-4401-8059-7e4a752ae412','Goblin Queen'),
 	 ('6eb3c80a-582f-4f70-a465-f3d16a95d1a8','Green Goblin'),
@@ -597,7 +597,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('26bb2cfc-f951-4877-b03a-5e4c59f2dfff','Juggernaut'),
 	 ('80ba4c0a-cd75-4ba7-bf57-8caa65b29fb2','Klaw'),
 	 ('045f81b9-ffd6-44a6-b15c-2450508d7c70','Leader');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('3afb8f12-7461-4b63-86d3-a609e44ec844','Luke Skywalker'),
 	 ('05534447-4dc3-4691-9c6d-e404d05f8af2','Man-Bat'),
 	 ('c6129672-0c95-4f0d-8910-a37ee7a9f7dc','Matt Parkman'),
@@ -608,7 +608,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('752a79c4-e29e-4bc9-9a65-bda05d8341cb','Northstar'),
 	 ('e93b8653-9fd3-4ef8-9209-9c24e026c66a','Paul Blart'),
 	 ('f1a190a9-90ca-43eb-97d5-9a891afae92c','Power Girl');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('57b6b1af-97d6-4cda-9de0-6646281dc319','Question'),
 	 ('f6fb32e1-f8ec-451e-9aa4-e1c2929ef1e3','Ray'),
 	 ('9e9138af-e538-4e1f-a5d6-56bbaad31be6','Rhino'),
@@ -619,10 +619,10 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('011353d6-a4b0-407f-b4a5-8ada9954d4e3','Spider-Gwen'),
 	 ('0ee6f9a1-5f45-45d5-be33-7b9143dcaca1','Stargirl'),
 	 ('8d160fb8-a492-4e67-aa1c-fd29ef541cd3','Swarm');
-INSERT INTO public.superheroe (id,name) VALUES
+INSERT INTO public.superhero (id,name) VALUES
 	 ('66b6bf14-d18d-4fce-8507-faa8a16b6956','Thor Girl'),
 	 ('7ad8b5e7-5b79-462e-a84b-f5c75953bb16','Vegeta'),
-	 ('1c35da68-8e6f-4034-b5e5-6df6a800b43c','White Canary');INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+	 ('1c35da68-8e6f-4034-b5e5-6df6a800b43c','White Canary');INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('25a65cd7-bf40-4c34-91f6-f4a0c4456aae','Male','Ungaran','Blue','No Hair','141fdfaa-3ab1-49e4-9d89-6ff65c8f8461'),
 	 ('55db489c-8613-44ca-bac6-8ce190df2f5c','Male','Human','Brown','Brown','84507000-0beb-4a66-8288-0a9c578176a1'),
 	 ('7ef5e483-931a-4c27-be56-56b3259a305f','Male','Human / Radiation','Green','No Hair','a653e8c6-1ab5-4c6b-8c4a-c8ac6e567e1d'),
@@ -633,7 +633,7 @@ INSERT INTO public.superheroe (id,name) VALUES
 	 ('0c16b24a-c150-417d-baae-9448153674b4','Male','Human','-','-','8b68f616-1e8b-439c-92dd-2889fdd0c11c'),
 	 ('81427c35-a185-47e7-bd22-fdb573d405f9','Male','Human','Blue','Black','35032fd4-c930-4397-b715-62a1bad2f0e2'),
 	 ('3918202f-a9fc-45af-a0ea-b81e4fc82ffa','Male','Xenomorph XX121','-','No Hair','28a75986-b424-405c-8584-a99cca4f9952');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('2d97dcf3-6388-4e21-8d10-4eb678e03378','Male','Human','Blue','Blond','a2767983-de29-40bd-9587-04e8bf72374f'),
 	 ('f282f825-c2f3-4460-b7e6-89279d74a820','Male','Human','Blue','No Hair','1ec71757-352c-47a1-aaa1-1fd356b71bb3'),
 	 ('339eb2b2-9b22-43a6-84dc-57a2efc5ea50','Male','Cosmic Entity','Blue','Black','2fabe5e1-deca-4744-a657-d32f841deabc'),
@@ -644,7 +644,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('967a343a-2a61-417e-83b9-c9d63201d5d8','Female',NULL,'Brown','Black','dbd53964-eb31-4aac-968e-237c1ce7d39c'),
 	 ('61a2cabe-5080-4c45-af85-c498415a8699','Male','Human','Blue','Blond','ee2465ec-7916-4abc-9c9b-076c7ae1520f'),
 	 ('4c6975f8-2e94-419b-971f-787f392b6f17','Male',NULL,'Green','No Hair','fdd048c1-c4ee-4571-b074-7eb503253338');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('3e8f0128-b206-44d8-9f8b-8874578a4643','Male','Human','Blue','Blond','708564eb-ea20-4e0e-bb08-ac4ea51938e9'),
 	 ('6de5e9f0-3677-488e-b4af-de3477a4a3b7','Male','Android','Red','-','cf35bf22-4339-4060-a47d-41ca23fd7149'),
 	 ('7df654d4-0940-4009-b48c-ccc0fe33c8e6','Male','Vampire','-','-','49443739-1caa-4cc5-ac3f-b9305867f1e2'),
@@ -655,7 +655,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('1bb92c6e-fd8b-47b0-9236-954f816fbfbe','Male','Atlantean','Blue','Black','b8b981ef-8d52-4e30-a48c-a0609a42eb96'),
 	 ('3c1054c6-6070-430c-a915-4ed492bc7f35','Male','Atlantean','Blue','Blond','32c307b4-9a26-43a5-b223-bb512c0d1c01'),
 	 ('a65a6de7-0e83-47bf-9464-4037a1becf94','Female','Human','Blue','Blond','102b2074-192a-4041-b772-71ac702b34b1');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('776830f4-a494-437b-abd0-3632b26b5f2d','Male','Mutant','Blue','Blond','3738a8c5-8a66-4f8e-ace1-3860be5c3cf0'),
 	 ('14c27265-4f6c-45e4-8321-826a1315bc46','Male','Human','Blue','Blond','f2dd49b9-31ab-40a5-aeeb-b6cf522139fc'),
 	 ('843b64b7-ffe2-44f3-992c-4387d84ab614','Female','Alien','White','Orange','2e87248b-32d6-433c-9cdd-030e10a36ac1'),
@@ -666,7 +666,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('a8fd2024-9e8f-4461-9ac8-91bb669fd88c','Female',NULL,'Violet','Purple','888bad52-d7b6-4cfa-9eb5-c22c8df120b5'),
 	 ('92affc7b-4c3f-4344-901e-a003b5fa9d53','Male','Mutant','Brown','Red','bafbb32e-3511-4634-9870-628e01faa597'),
 	 ('efe66a94-4d5a-46ae-b820-63dc8263d025','Male','Human','Brown','Auburn','58efc664-83c7-4250-a790-aaf1a6f36701');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('b24f2645-d86e-448b-88f4-909c5b91591e','Female',NULL,'Black','Black','0df52ce4-2b47-488f-ad5b-c90b433a5faa'),
 	 ('f94b3c25-91d3-4841-95d6-bbbe45f5498e','Female','Mutant','Blue','Black','124fa936-b34c-40cd-bd12-255cfa5f8062'),
 	 ('57423216-ee47-4f66-9f7c-012cff1edc5c','Male','Neyaphem','Yellow','Black','622ffef9-d7c7-404c-825c-c2c9dfe5f514'),
@@ -677,7 +677,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('80a6fd74-bed5-445a-b207-0a4ddb9d7f97','Male','Human','Blue','Black','a4fe4246-581b-4adb-95a2-aaeb3bacbc09'),
 	 ('e382813d-449c-45a0-bfe0-ddc5fa42d9bf','Male','Human','blue','black','d32ee045-d969-405b-baf4-4ec44d112bfb'),
 	 ('0bf25079-e9ec-42a7-83db-5042d1dcfda8','Male','Human','Green','Strawberry Blond','58fb023f-9686-4c62-b357-d948d77f235d');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('5ae8aaa3-4401-4806-b245-d96939e2d335','Male','Human','-','-','819bfcb7-efd1-4c68-a6ed-1e0d5e142bb2'),
 	 ('acd4989f-5354-4bb4-96fc-02101de7f5f1','Male',NULL,'Brown','Black','c9ccbf68-e039-4b4f-9e2e-f88cacf56348'),
 	 ('fe820f3b-cb95-4d25-bc2d-508db4270da4','Female','Human','Green','Red','802d1b2c-9a0d-45dc-804e-ba42cd5b20c0'),
@@ -688,7 +688,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('c26633c1-d151-4a9f-837d-224a89c6653a','Male','God / Eternal','-','-','1b0907cc-3daa-4a27-bde3-9f416afb562e'),
 	 ('3aa9a8b0-2a25-44e7-b004-d402e8e81158','Female','New God','Blue','Black','e7ab3e29-f614-4a74-a7bd-cf31c36db45f'),
 	 ('2ba308d3-3a9c-4c72-bab7-556bc8ed6290','Male',NULL,'-','-','592fce45-d665-456d-b4c3-7aa9c22c697a');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('fd2eb082-c9bd-4520-976a-10729225578b','Male','Human','Blue','Black','dcfb5d5e-e08e-468b-af2e-7bebb7a1d6ec'),
 	 ('bc9939f8-0dc5-4a91-9ca6-26d4150d722a','Male',NULL,'Brown','Black','8486d649-d7f5-4763-ac71-8ea344f9e293'),
 	 ('520eb8ae-6564-43d8-83f9-315858a4e52b','Male','Alpha','-','-','98ba25ec-ae87-49e2-b5ef-1c20f250b4e4'),
@@ -699,7 +699,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('e1361736-cc34-4b6a-a809-e1f944c75c28','Male','Bizarro','Black','Black','c117e88e-48de-4722-8aca-cf0a6f388663'),
 	 ('8d7f0184-756d-4170-af9a-5ecc09f258a9','Male',NULL,'Brown','Black','430d54f9-e698-40da-a0ae-c845cd6b847b'),
 	 ('7a005841-2bf3-444c-bc54-7e1ae4f50a56','Male','Inhuman','Blue','Black','d81acf3c-3f98-4a4d-b52d-984e322adde5');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('e04d779a-cbaf-4199-9349-ee202c63942d','Male',NULL,'Blue','Brown','1df5a34e-2d2a-4358-aad4-dda497c22bf6'),
 	 ('df6b90f8-0576-4be1-91f7-19348996472d','Female','Human','Blue','Blond','06c0e2f7-8803-462e-8995-7ed9a36bb22f'),
 	 ('bb8db384-4a82-43fe-8de2-0869f3c8b17a','Female','Human','Green','Blond','1e0dd279-d940-478a-80bf-16403c89ef83'),
@@ -710,7 +710,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('dc7715a2-ba7c-4b2d-ae8a-e47003b6d087','Male','Human','Black','No Hair','e131c731-e8db-4974-a189-39cdc7464fba'),
 	 ('5d2014c9-e574-4f9c-aa20-6df357afabd9','Male','Human','Brown','Black','46253f6c-6da4-4f94-b8da-6c1f1f4e14b1'),
 	 ('80272e07-45cb-428c-8f73-3b666d9ed2e2','Female','Metahuman','Blue','Blond','ac2da8f1-26ea-4c64-8373-dca1e3ff183d');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('9ce307b3-3953-460b-98a6-df55ef25b037','Male','Demon','Red','White','7a8b6610-a3d8-4391-bcfc-023b5405ff97'),
 	 ('7eddc224-268f-4224-a296-8b76b3b0e03d','Male',NULL,'Blue','Black','a0eafd15-d598-45db-a4c9-2cffec18cd2c'),
 	 ('697ca07d-4e44-4484-89c4-3502d9d8d3e9','Male','Alien','Red','White','cb647510-6038-435a-b51c-c0f7b0ee611d'),
@@ -721,7 +721,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('7c36ded2-5795-4864-9703-5566be89188a','Female','Human','Blue','Brown','efe4d46b-9537-48c8-ba5c-35ff7527570b'),
 	 ('40986fb4-203d-4152-81b0-b4f9faccdb11','Female','Human','Green','Auburn','540a3d4f-3517-4148-bdf8-4ca07400587a'),
 	 ('2fae8389-2e34-4b08-9120-55921790bac3','Male','Human','Brown','Black','459b400b-b436-4aa4-bd3c-2e09c63490cc');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('a7bf0ccc-bb7c-4899-a4c4-55748c9b1957','Male','Human / Clone','Brown','Black','74601be3-6d6d-4d30-bbf3-d22758971560'),
 	 ('ca2d750c-56e4-4272-ac75-cf1ada2830df','Female','Mutant','Blue','Blond','e9ea6942-12fd-4c5d-9146-785b19f96957'),
 	 ('0297d434-aedf-4af1-822c-33cc62890805','-',NULL,'Brown','Brown / Black','c6a76eb6-7c03-4360-ac5d-3271a6d238f1'),
@@ -732,7 +732,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('d064e403-f107-485c-9e5a-dba31c2b07a5','Male','Human','Brown','Brown','2f25d77d-537d-4575-be9b-a41fce5e2c26'),
 	 ('b0fbfa92-7b27-4285-a4dd-a78aeda51629','Male','Human','Blue','Black','72a18003-59d8-4603-9f8e-f8815d7b685a'),
 	 ('53d9d46e-4d60-4ef4-b3b0-adb8b992b356','Male','Human / Radiation','Blue','Silver','cb841bea-4431-4fb8-b41a-d0ca7023f488');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('de4a424b-f52e-4b77-a00d-9e78d3e35b75','Male','Mutant','Brown','Brown','64e9b508-5361-4de2-a26e-bbec5518277e'),
 	 ('0bedfc70-3679-440f-bbdc-db26b472602a','Female','Human','Green','Blond','42d88eaa-325f-4aef-8907-019619c2958a'),
 	 ('70c44f84-695b-4b26-b839-ed259c195ed8','Male','Human','Brown','Black','43268fde-5b57-48fa-b15b-207bc4470acd'),
@@ -743,7 +743,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('cd53ca6b-90a7-4da9-bc82-383ec25a3eab','Male','Mutant','Brown','No Hair','473f7f79-fa6b-465e-91a5-b9c7b099307e'),
 	 ('093be933-4050-4d4b-8cb3-dee8719f046d','Male',NULL,'Blue','Red','962b2fe2-b998-47c5-942c-c1bb488a8a24'),
 	 ('fc447910-8c95-43d0-a81b-5187bea2bf55','Male','Kakarantharaian','Red','No Hair','7348d805-2f86-446f-b82a-25287b273030');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('4b916fb3-bea1-4a73-aa8e-c25c6e8424da','Male','Human','Brown','Brown','49d36a62-5e3d-44f1-a0bb-bac878998094'),
 	 ('ef8db482-506b-401c-8065-4ca28aabe924','Male','Kryptonian','Black','Black','a09255bb-a7e1-4c4e-8a8d-9e963ff89639'),
 	 ('e2831cbe-92ff-4d63-b0bf-4516f54531fe','Male','Human','Green','Blond','8f980fdf-927a-449f-8a42-e05005f9b82b'),
@@ -754,7 +754,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('7fad8e2d-6698-4c7f-84df-557a41393009','Female',NULL,'Blue','Blond','06eff019-53ed-4065-9556-75ae06354e3f'),
 	 ('44292fdc-0faf-4faa-b969-7a55c2c35ee8','Male','Human','-','-','bace4f82-99e8-43c7-92d7-d7b46321a818'),
 	 ('b5fc2814-db8a-40b4-b99d-0a89db326dda','Male','Human','Blue','Blond','5d01b633-c67c-4e81-aa52-e3281cf0ba91');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('f7a7f438-28f7-41df-a586-f8db9932b646','Female','Human','Blue','Blond','7f70bf5c-9a50-4572-8024-ece8027c58d2'),
 	 ('e8bd646e-a1d4-4362-95e6-613f83e55f68','Male','Human','Hazel','Brown','ea7f94b6-938b-4c35-b8a6-7c412618eb49'),
 	 ('babe77f8-2849-4d88-81b4-a36e33fb5751','Male','Mutant','Blue','No Hair','a4e0b300-0cf2-4aba-8dfc-e6737e2bb805'),
@@ -765,7 +765,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('2eab4635-3e39-4f5a-9eb7-b39161137662','Female',NULL,'-','-','71d864cd-4428-44ea-890f-9b8771163552'),
 	 ('b80cafd6-2281-4178-9d0d-ed72ba5645d6','Male','Spartoi','Blue','Brown','17a8994a-435f-482c-9db4-c811dba29737'),
 	 ('beb0b154-3c98-484e-8a02-156e0f1c43e9','Female',NULL,'Blue','Red','c08f939c-cf35-4051-98c6-73f5ebea38f4');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('ba6fdf6b-6b40-447d-b8fa-811090ff0ebd','Male','Human','Blue','Blond','a85df2dc-8316-4b34-972d-40f18febbf9f'),
 	 ('2dcf8de1-c844-4c37-9421-99bb97b86929','-',NULL,'Red','-','a35d4991-e279-4084-86d4-45b5bb3c6313'),
 	 ('c10d2076-c7b9-4353-b5f0-66a7ead96d19','Male','Alien','White','No Hair','d63f36c0-8848-447f-8f7b-00019a6d5252'),
@@ -776,7 +776,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('6c2e64ab-dc8c-44f1-8c71-715c56154b28','Male',NULL,'Brown','Black','5d05c92f-1a27-4a27-b4bd-6b29a970b9d0'),
 	 ('bc39c3b0-8f5e-404c-9b70-1a28bd9b97f2','Male','Human','Blue','Blond','e1dae9c2-31ac-4347-862c-0f29845419bc'),
 	 ('441fdf95-8205-405d-b2ce-c7449d280afd','Female','Mutant / Clone','Green','Black','d7f27efc-fe30-4e3a-b3e3-41df731450a0');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('ac8824e2-772e-48e5-9f02-e49ed42a149a','Female','Human','Green','Blond','c04cd106-2c8f-40ef-b5f2-5f6eb3a9d600'),
 	 ('2954d469-f486-4789-8f8f-6b73acb88f59','Male','Human','blue','blond','c68ef461-d188-4881-91a7-ee1868b63b4d'),
 	 ('f4234227-5c49-40a9-93ff-5fb378f1f91b','Male',NULL,'-','-','4d46e78a-9185-4582-9294-4d47bd024450'),
@@ -787,7 +787,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('bbf28b7f-c6dd-4dc5-820e-a830ff8cc95c','Male','Human','Blue','White','44f2f45f-8a11-4a08-bce5-c0d6158dbab4'),
 	 ('87e073ca-e4ad-44de-955c-68eb25b56df8','Male',NULL,'-','-','08a6ac59-07bb-455e-980b-4df338a8c29a'),
 	 ('7c76ae0e-9fc6-4345-841e-68720e71e89e','Male','Human','Brown','Black','34dfa66d-7df9-48ff-8cde-b429420e7ee8');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('c2cbb621-9b5a-4511-beb1-4e54087b4106','Female','Human','Blue','Black','c3c5fad5-7550-4585-b713-f571a465021f'),
 	 ('8e49c76b-6d98-4ee4-a3bc-bc4066c8a3dc','-',NULL,'Yellow (without irises)','Orange / White','94e3cd23-0c1d-437e-bfeb-96a9613566e2'),
 	 ('326d279a-a2f1-4e40-8aa5-22d27244e134','Male','Mutant','Blue','Black','0fdd56e8-5a68-428c-abcd-5f1145967335'),
@@ -798,7 +798,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('96010c0b-c86b-4b3c-a24e-68c21f8ccab1','Male','Human','Brown','Black','6a17daa8-0d8a-4b7f-9840-564ed7fa00af'),
 	 ('6f8cf9b6-c9e1-48ef-8ebe-76df0ea4fa10','Male',NULL,'Blue','Auburn','b202c252-7f52-48ff-9c57-611cd4878239'),
 	 ('f52b823b-fe09-4892-a198-5bcd376a4759','Male','Mutant','Blue','No Hair','840b00e3-5090-4123-a63e-3c2bd1b1ade2');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('6c533c83-893d-4d7d-b639-cec76bce742b','Male','Human','blue','Blond','075f3ad0-9695-42c8-97e4-bfcae0533426'),
 	 ('9d723e77-fead-4abb-a90c-89258a345f9a','Female',NULL,'Blue','Black','7fa50afd-b36c-4589-8623-eeadcdf28f15'),
 	 ('4a534cb8-e7a0-45cf-9260-e5a9c4805ce6','Male',NULL,'Brown','Black','1d509af7-ded0-4b26-8084-718bd51c6992'),
@@ -809,7 +809,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('69a7279a-19cd-410c-b610-ebe1aec614e2','Male',NULL,'White','Black','74cb3a12-e500-43d2-a272-687987f2d301'),
 	 ('c555b18d-ecc6-47df-b8a9-378bfc56bb40','Male',NULL,'Blue','Black','8d2171ae-8b30-4558-b7e0-9aa9b49f8314'),
 	 ('fd6d49dd-829f-4cc3-8d98-cd9489c2ac74','Male',NULL,'Grey','Brown','5a47d172-84a4-41e1-a689-74a2b9fd33cb');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('a674910b-d9ac-4fad-ba63-43fe6cff1aaf','Male','Human','Brown','Brown / White','b9d4eadb-a25b-47c2-bcb1-5ebd5ae58c58'),
 	 ('b4e0767c-b2a5-4ae6-9218-79c6d4938474','Female','Alpha','-','-','d8b682f8-9921-4e0d-845a-adcfdfac39c5'),
 	 ('c46a580b-a6a4-4879-8bfa-2e5086dd3532','Male','Human','Blue','Black','98cb7eca-2124-42d5-92e9-2963560c18ce'),
@@ -820,7 +820,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('79424fed-9ab9-444b-a373-fcf69f68c8e5','Male','Animal','Brown','Brown','b11253ad-c43e-460a-a9a8-3a0161acef3c'),
 	 ('c633ead0-a319-466d-9df1-0923c4184d2d','Male','Human','Blue','Brown','3e1f9d52-7771-4369-92d0-a573ad0f8967'),
 	 ('910505fb-75fa-44fb-a64c-459b2648e07e','Female','Human','Green','Black','5b43d0aa-857c-4ed3-ac50-232fddab0ad6');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('d5df752a-aa0c-4e90-a24f-40df4b5b75b9','Male','Human-Spartoi','Blue','Blond','3935cd56-5e03-4245-8a26-dde46b48a5c1'),
 	 ('81cf1a2f-0f13-44ec-a37c-0fabed81c6cb','Male','Human','-','-','95fd93a7-24a4-4a48-a0eb-841a878655d6'),
 	 ('77721b4b-03bc-4d05-adcf-1a34cee4b8f1','Female','Tamaranean','Green','Auburn','3a531400-5c86-497d-b613-5858d40d0c10'),
@@ -831,7 +831,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('4d29e309-cf46-427f-bdbb-19de1b9d8b5e','Male','Symbiote','Black','Blond','13042421-f7b4-48d9-a9e3-811973c5f36b'),
 	 ('6331044e-5141-491a-a95f-bfe14c901b28','Female','Human','Green','Red','138a171b-bed0-4484-98ba-f3c57408752e'),
 	 ('07d629e4-a9a3-4c19-8d15-0e02a14bca79','Male','Symbiote','Blue','Strawberry Blond','6eb6cc8e-c6fc-4629-ba64-2b2603d141d6');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('6df7c126-00d0-4508-aef8-7ed0ffc7a345','Male',NULL,'Red','Blond','d3d702e1-2fde-4060-9921-c8b05167423d'),
 	 ('da9a9f41-08cd-4a3a-a6f6-3db57c47c6fb','Male',NULL,'-','-','9cebbb38-f76b-42e6-8ae8-8d8d566bc020'),
 	 ('1bfa5037-a3eb-4261-ae42-34b23a2621b9','Female',NULL,'Green','Auburn','fe41fce0-ae26-4c51-9b41-072e6cdf88df'),
@@ -842,7 +842,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('016955aa-457c-4770-9859-d24f3b9e3079','Male',NULL,'Brown','Black','df4bc245-ff93-4b17-84d9-2d613fd410ef'),
 	 ('630fc046-bc71-4a9a-ba01-23ec2f462096','Female','Human','Brown','Brown','470c7c5e-75ce-49ef-9e9c-b6fa2c206133'),
 	 ('80badf9f-ea37-431b-9f53-4992d13d4a9c','Male',NULL,'brown','black','1d187ae6-4355-4f76-9d8c-be0cc0d1266d');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('12b2386b-4feb-48b5-a597-a8d559215a30','Male','Human','Green','Red','32cf2e45-e7b3-4cce-a1bc-d5e6011e6642'),
 	 ('2a1bb1cd-62c3-4fcd-b1bf-772dacb61302','Male','Mutant','Brown','Brown','360987f4-a69f-4b7e-b2b7-c606141a119d'),
 	 ('54310e35-12ff-42da-9905-03d1daff4c71','Male',NULL,'Yellow','No Hair','300cf565-d4ff-47ef-9f13-582c2f83a1f8'),
@@ -853,7 +853,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('edf7308d-34bf-4c6f-b30c-fc581ddf15f2','Male','Mutant','Blue','Blond','ed608fff-11d1-4225-ad79-5dbf96d9dda1'),
 	 ('d6c6ac88-30b3-4c2a-a357-e4bb01a5a6ed','Male','Alien','Red','Black','bfae60b3-6a27-4faa-ba20-661fbc49249b'),
 	 ('c1556711-5d67-4880-8966-29f699ff77ac','Female',NULL,'Brown','Black','29c4dfd4-72c0-4bd3-a81f-9c7475f5216d');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('64e0bb6a-49ca-4223-a0c3-dff045aa084c','Female','Human','Blue','Red','85f800ef-1703-4ddc-8327-92cc09e0f44e'),
 	 ('e9d85f69-20d7-438a-a4a9-557dedf232b4','Female',NULL,'Green','Red','5bf914c8-2c8b-45bc-b55e-1d70ed1ee99d'),
 	 ('8d686d5b-9dd0-4811-8317-d391a26a4577','Female','Mutant','Blue','Blond','3a428afc-64e4-4462-b991-9c5a6bf6ccc8'),
@@ -864,7 +864,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('36fdac74-caf4-4827-a6d6-b74ca7b7cb19','Female','Human','-','-','ca9d905d-6946-4471-92b6-7e0e6c9b2dc5'),
 	 ('255777a2-1cdd-46be-903b-f6156862cebc','Male','Human','Blue','Red','26bb2cfc-f951-4877-b03a-5e4c59f2dfff'),
 	 ('1c9debad-356e-4486-915e-c3d6fcdd8891','Male',NULL,'-','-','b34306be-b9f3-47c7-9be3-2832a06a8575');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('75bdb6c9-736a-4036-8aaa-040ba6e2517d','Male','Human','Blue','Blond','3afb8f12-7461-4b63-86d3-a609e44ec844'),
 	 ('ca982875-cdaa-4fe2-944c-3f16a92c9204','Male',NULL,'Black','-','6b36118d-ef9b-491f-a92d-760ec89e468e'),
 	 ('c92290c6-2e55-4c79-b4b4-d0bb9371a9af','Male','Human','Brown','Brown','05534447-4dc3-4691-9c6d-e404d05f8af2'),
@@ -875,7 +875,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('a95187b4-56eb-4fbb-bfce-195e53e93510','Male',NULL,'Brown','Brown','ba9633e7-a0c6-4a99-acd6-cda15c12c963'),
 	 ('253591c1-0739-480e-a72f-2e37700f2a3f','Female','Human','Green','Red','23a54df5-0206-41ff-bf6b-f06ef69d1749'),
 	 ('570053f6-8476-4fcc-b994-68cb9f4e6eb3','Male','Mutant','Blue','Silver','810e3b0f-173d-4396-b1f1-29a3b0e275c4');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('d61ec301-8b67-4f5f-9d56-1e3e9bd43707','Male','Mutant','-','No Hair','3c4b1cd2-4be9-450b-a5c2-e21ef0aba35d'),
 	 ('ad0f7638-8905-4725-9f92-6f12af40c00f','Male','Human','Blue','Black','e5af3625-f657-4263-9dbe-c943de31e2a5'),
 	 ('bcd58f30-ec54-4604-87de-5f66cb82b48d','Male','Human','Blue','Black','982eee85-ff8b-45c0-9632-c41c1fd8cc9c'),
@@ -886,7 +886,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('2a1b1bcd-d220-4e38-91f4-cd2ee4e86fd7','Male','Mutant','-','-','041860fc-b8b1-4472-bbcf-ef32add05291'),
 	 ('2cd247c1-a95a-4969-9c85-0f35d89f0282','Male','Human','Brown','Brown','eb86baa5-19d7-44ad-b9ef-5efdfbd36f5d'),
 	 ('af16d0cc-4f05-4120-a129-b502e58cf2d5','Female','Human','Brown','Black','69b8da47-5531-4187-ac62-4c1fde79fa3d');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('0223d00b-4927-465f-90a3-09672b5fdc16','Male',NULL,'-','-','c6f1ab4b-5d72-46cb-af09-f185f9f761cc'),
 	 ('b61cf683-237e-4e70-997b-3a2a963dcee5','Male','Mutant','Brown','Black','5aef7271-94cc-47cf-adf6-d57c9ab80998'),
 	 ('9a5c96a2-34ee-4f06-b2b7-fb2d3e4ed9da','Male','Mutant','Black','Brown','ae5169b5-6773-4afe-9ca3-cf21fca79136'),
@@ -897,7 +897,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('24452624-f610-499b-813e-303c778bcb63','Female','Human','Brown','Black','2f4935ae-250b-4945-aa45-6cc55659b6e8'),
 	 ('b71a4ac5-3616-45b3-bacd-e65913f82fa4','Male',NULL,'-','-','8b3ad528-dfac-423f-bb44-58df6392ea66'),
 	 ('a9229479-6c59-4ccb-9d6a-6d9daba290ef','Female',NULL,'Blue','Blond','0a0196bd-71e7-430b-a22c-af932b85f599');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('993cf187-66cc-4f3d-ac57-6638eaaace8e','Female','Inhuman','Green','Red','8ff18539-bf3b-44c5-a24e-ed2f6f9fa7b0'),
 	 ('3a381f2f-e3ea-44ad-8f0e-5fbc7857bb01','Male','Cyborg','Brown','Black','681a91b0-c7e1-486a-a204-e92bd7a245cd'),
 	 ('ebbc0af1-a865-44ed-8549-a5f718725996','Male','Human','Brown','Black','b678bf4e-ff30-485a-9e52-ab848a681372'),
@@ -908,7 +908,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('2077d98b-95d4-4086-b616-1f3638c96b2b','Male','Human','Blue','Brown','ee26d33d-b915-42dd-9eca-4557080718cf'),
 	 ('0dca44e8-0354-4026-a5c3-284bdcff6867','Male',NULL,'Black','No Hair','6bff7936-3da8-461d-8c1d-555fede1fe78'),
 	 ('1f24b203-bf85-45b9-998d-dbdad30ce733','Male','Metahuman','Red','No Hair','1feeef29-3500-4dd8-bbf3-c8d7673081f3');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('f4918025-bf2f-4b7a-9d6e-d3b15d45adba','Male','Czarnian','Red','Black','78c2818a-ccbd-4809-86e5-4d9171d69375'),
 	 ('b849a74d-c461-4c43-90c3-10ce52bd7730','-','God / Eternal','Blue','Silver','11018180-7ccb-4dc7-a306-f68e56d90517'),
 	 ('aed0c6d2-849b-41fc-94b4-ec92b79eba6a','Male','Mutant','Grey','White','5dfbacd7-64df-4338-acb8-8362cb460449'),
@@ -919,7 +919,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('10c1acc2-dcc8-4508-824e-b5d5969ec07d','Male',NULL,'Brown','Brown','0fb043be-00f6-428f-af17-493abbf082a2'),
 	 ('23d44ba6-9376-4db8-9cb2-db8bbfca5138','Male','Human','-','-','b6531e3a-dd3a-4ad2-987a-eb3074cddf34'),
 	 ('1ad47a32-14c9-4f38-83a2-fc202da12f4b','Male','Cyborg','White','Brownn','7590d6d4-c3bf-4787-aa2c-25253aee6b5b');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('959e7de4-f2e0-4d23-8197-7ad8f7cb4226','Female',NULL,'Blue','Blond','24aa8557-d67d-4134-aada-21eee87d5ee3'),
 	 ('a6d5cc5d-6ad1-4d3b-9d74-3466db8c897d','Male',NULL,'Blue','Brown','bf5f0d98-f4b8-4eaa-8c6d-f1db2bd91289'),
 	 ('d9987736-7b74-4360-ba29-96df9edc961a','-','Cosmic Entity','-','-','f854ffd9-a76f-4648-a388-51ba43114821'),
@@ -930,7 +930,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('6bbfad7e-9165-42f7-8f4e-aa539d932311','Male','Mutant','Red','No Hair','ca22f29d-1cbe-4f16-9e5a-0d11695f929e'),
 	 ('5af9c532-ef3a-4542-b26b-9649f626d9af','Male',NULL,'Brown','Brown','59230578-4b0a-4817-ac8a-82a9dc4af814'),
 	 ('54c3a973-54ea-4c8b-8252-2fb63cb88a7a','Male',NULL,'Blue','No Hair','4abae1f9-6f87-4632-a1e3-ee82243a50ed');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('106c7462-6b62-4986-8bb2-596bc8534ad6','Female','Human','Hazel','Brown','8abb41a8-8a3a-499b-81f7-463178dbd509'),
 	 ('a95c38ae-3ad3-4142-9366-0a6217fb71e1','Male','Human / Radiation','Yellow','Black','5fda06e4-de4e-4e18-881f-f572580a4edc'),
 	 ('48a4df97-5d8b-410f-8311-a7c00bf66ae5','Male','Human','Blue','Black','e0e84be2-b84c-4915-9ba8-5c076f708a64'),
@@ -941,7 +941,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('695463d2-23d6-4867-bb48-e93b5375f527','Female',NULL,'Yellow / Blue','Black','0a08f6e9-5004-4adf-834c-c861f661a674'),
 	 ('cea38ff8-3ecf-43cc-9157-c82edb471fd6','Male','Korugaran','Black','Black','f05d118a-adef-4cd3-8172-f08b09d05d12'),
 	 ('3d4b7084-e56e-486b-bc37-3e3c0af95da3','Male',NULL,'Green','Black','0ae9271c-431d-433a-94d9-c5660c606d69');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('e84aed91-7b18-4193-b87e-fd1ad00c9730','Female',NULL,'Green','Red / White','a1e68c64-32fa-4ed7-bddf-2a3e4310e2b0'),
 	 ('1838d806-f48f-409b-ab90-d1adc1b49307','Female',NULL,'Blue','Strawberry Blond','9eb5abc5-683e-40c6-9d96-3c3cc23f9d91'),
 	 ('1c148a7c-9c9c-409e-9a50-13cb425a1d0b','Female','Human','Blue','Brown','45f938a0-0f09-45e3-8372-0352e6dbcf03'),
@@ -952,7 +952,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('d5db0216-360c-4268-bfed-6d3e9768f65a','Male',NULL,'Brown','Black','6bf2704a-932d-41bd-a7a0-1d0f36ecd428'),
 	 ('4ae2676e-0a60-42d2-9299-02db4501d99d','Male',NULL,'-','-','91adabb4-935f-4d0e-b592-1b2f63072e2c'),
 	 ('661b6b39-3907-4414-8cd9-2dabe9148b5a','Male',NULL,'Brown','Black','119f8b5d-3af7-4fdc-8f36-55ead3470b0d');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('e101e9cd-6ba7-4b68-a97a-b7c88de473b0','Male','Human','-','-','5b16c264-a63b-48ba-8bdb-6dcb19fcfbe2'),
 	 ('4cd073ff-a33e-4b24-acd6-db0edccad435','Male','Human','blue','blond','10294658-c059-4db3-845b-5d9b72dc2219'),
 	 ('cf9a33cd-0dca-4bf0-a847-9de0257fd22a','Male','God / Eternal','Red','Green','a7742fcf-b403-485a-b88e-4f6414d658b1'),
@@ -963,7 +963,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('b2e72f09-dcde-4ddb-b834-34a6f2ea9658','Male','Human','Blue','Black','ef591d97-a3c6-4574-8cdd-fa0f34db5648'),
 	 ('ce630364-b8e7-4075-8432-e3ec5122c124','Male','Human','Brown','Brown','bc627d54-e9cc-49c7-8b0c-b6466530590a'),
 	 ('a3978ca4-e9ff-4d98-8026-3aead47326b6','Male','Mutant','White','Red','5f850bac-eda0-4fe6-b9bf-ea9a03d7e8e6');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('b7c2516e-6c02-4d3c-9ce2-d59c72b795c0','Male','Alien','Red','White','b73a926e-9c05-486f-803b-9627cb43b188'),
 	 ('8661f23d-37f0-44a3-9641-eadb426c1ce7','Female','Human','Blue','Blond','2c93a095-5c6f-4ac1-b4fa-dbfeae307f1e'),
 	 ('7a78a42b-1af7-4a2e-ae3f-87cb1bb146f8','Male','Black Racer','Blue','Blond','e900794f-5f09-4b3a-89db-05c999a829ef'),
@@ -974,7 +974,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('52455c52-4b95-4f19-b76d-f8bca56e09c5','Male','Human / Radiation','Green','Green','ec50cda0-0797-4616-9d22-abec4960c71e'),
 	 ('b6d9ca9c-d96d-4350-84f3-d5dc4eea343f','Female',NULL,'Blue','Black','4ee497c4-5873-43fe-8fc0-de4c4f405d08'),
 	 ('74e605ae-6de3-42e7-a369-49eac3d11e11','Male','Symbiote','Brown','Black','79e8a6c5-5784-42ac-94d2-6822587f1ce4');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('3eb6acdb-b2c1-410f-b6ba-a200738f09f1','Male','Human','Blue','Black','56d7f6d4-ceea-4d81-bc5e-8fbcaa967625'),
 	 ('cd7bebd0-8549-44f8-a103-08d1d192f937','Male',NULL,'-','-','5d721ab1-d88b-4bb4-ad19-88f6acb17b86'),
 	 ('3e2cdb8d-8c70-4bdb-83d0-58d615034020','Male','Human','Red','No Hair','80ba4c0a-cd75-4ba7-bf57-8caa65b29fb2'),
@@ -985,7 +985,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('d90a3831-5080-4b54-88cd-b3ad90033f5e','Female',NULL,'Green','Red','9a5fa168-9654-4504-8057-3b7227b89a71'),
 	 ('f4e5eacc-2cbb-4666-bb7f-1a65339d5e00','Female',NULL,'Blue','Blond','acef8f70-b7b5-416c-8a9e-3a4ae4515209'),
 	 ('96dff2b5-8f85-4b8b-afd3-787e536da761','Female',NULL,'Blue','Red','19648125-afc9-48d7-b7f0-9f286f1edf5b');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('ec30c319-cfb6-4fe4-a66e-6b992266457a','Male','Human / Radiation','Brown','Brown','6bee3c46-82e0-4dad-851b-5ee62988e7ed'),
 	 ('0bc495c5-1375-41c8-8d5c-330993b508e5','Male',NULL,'Gold','Gold','4e3780da-9bae-43c0-9336-9836ad799165'),
 	 ('8b646f95-bc57-49e0-914d-4f664c105e9d','Female','Mutant','Yellow (without irises)','Red / Orange','25c186a5-8670-48c5-8f3d-4d47de681665'),
@@ -996,7 +996,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('bd04f550-fbcd-4318-89f8-0eeab7445c16','Male','Human','Blue','Blond','075ea927-fd30-4e63-b147-e396d41696dd'),
 	 ('d7569b4e-319d-4d25-b20b-053b808ac1fe','Male','Mutant','Blue','Blond','472d5013-bf08-47b7-bb22-45cc705dec76'),
 	 ('0b768c1f-90a9-4c65-a256-11682a4b559b','Male','Demon','Brown','Black','ab1cde89-ea9d-4a04-9143-482fe22f4700');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('36865d41-98e6-42f0-b6bb-c4e76916bd96','Male',NULL,'-','-','8d6e6a20-f3c0-47ae-b1a3-1a7290cc5969'),
 	 ('36a046bc-72e6-480d-b2ae-b1268ad1e33d','Female','Mutant','Blue','White','855179c7-8e55-4a88-bead-6cf62c952d16'),
 	 ('449bd846-ad8f-4443-9d45-7245e69a0ab8','Male','New God','Red','Black','ec1b72bc-b57f-4d24-9158-4e0ed4881589'),
@@ -1007,7 +1007,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('a1535e97-36e9-48f5-8405-8da3bcba31b6','Female','Human','Blue','Strawberry Blond','6b516f90-8278-4085-8eb1-5635e0186848'),
 	 ('032102a7-b162-4f70-bef3-877e2ec7c839','Male','Mutant','Blue','White','ab4a41ef-bdbd-4000-a549-e40f2fdd2e65'),
 	 ('71798078-c510-4a10-8bfc-8e4ffcf1ff76','Male','Android','Green','No Hair','f9808a95-990a-4e18-a5ed-2dc729f97dfe');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('985a909b-b146-4e0f-9690-028f6f6c4351','Male','Android','Yellow','Brown','b6cca01a-69b1-4245-8b23-639c468cffd5'),
 	 ('89f02ca5-fcbb-464f-ac62-9f2306751417','Male','Human','Brown','Brown','a8a02b49-4c62-4205-bafa-2fe7b7d65339'),
 	 ('19b61f3c-d54c-4d9b-b33a-2bfd9f3072de','Male','Human','Blue','Auburn','88dbe97a-a2b9-4568-9525-bdb920bcf462'),
@@ -1018,7 +1018,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('157d57ab-6192-439f-8809-55e757acdd96','Male','Rodian','Purple','-','743c7365-a6a7-41ca-a0aa-92a0d7922216'),
 	 ('fa8a56b2-5e61-4029-9685-6d1c5df07e25','Male','Human','Green','Black','7cbf3002-ab87-4a54-b418-a561ef4023bc'),
 	 ('1d34131e-ac48-4067-a194-e7bb6c101e88','Female','Human','-','-','66bfe04a-99a0-4d8c-99d4-d97b19f8c77f');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('549c4ab7-62d0-4bdd-8672-a6ad3a88f8f4','Female',NULL,'-','-','1f46c8c0-b10a-4fd9-b57f-cb6c7b35e093'),
 	 ('dface3a2-1ce7-48d2-a55e-bd39a8e49d40','Female','Human','Brown','Brown','a52084a6-e774-4a8c-8780-180e0614cdfc'),
 	 ('723c6d8c-17f2-40bf-8852-6cb2a01feb27','Female','Human','-','-','d45890ea-b410-413c-8113-8021f548863c'),
@@ -1029,7 +1029,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('9cd097dd-1ceb-443f-aba4-b8207d606ad1','Female',NULL,'Blue','Blond','4d01042c-09df-4732-b54f-3936995ba10d'),
 	 ('24f24965-5277-42bf-8e6a-fb49849c177a','Male',NULL,'Yellow','Indigo','c4684e1d-b10c-4ec9-8681-365e6ceba88d'),
 	 ('1bf867b6-b3e5-45dd-ab0d-8243de735bcf','Male',NULL,'-','-','96afb5cc-1876-4b54-873a-8639bd3001d3');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('bd1344cc-3e0d-487c-a070-ea3d3ff0720e','Female',NULL,'Blue','Red','8f800a2e-6a03-4865-9540-a43d27c9c8ae'),
 	 ('caf3250d-926a-49ca-a90c-7cb4899a02be','Female','Mutant','Green','Green','ace4377c-9a4f-4718-866e-a5df326c3f01'),
 	 ('fbb44aac-d9c4-4b12-9cfc-f0caf8c96bad','Male','Human','Blue','Strawberry Blond','a2715487-7489-494b-a60b-5d42cd3f885c'),
@@ -1040,7 +1040,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('9e9d0c2d-3c6d-415b-b28f-0ad103cf4aa7','Female','Mutant','Hazel','Brown','ff9fa393-3dc3-4357-a52c-9eea1a523ee9'),
 	 ('15a05903-e3c0-4e7e-8d49-a2d6a68a6d8f','Male','Human','Bown','Black','9f3fc482-5268-4ce1-9b79-ad27bd86d533'),
 	 ('fc97a8f7-bdba-4b3c-b187-a7485fa9e629','Female','Human','Green','Green','3600936d-f09e-46c7-91df-82abeec79fcb');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('6ef3064e-9f3a-4993-8e71-fa31f0069f0c','Female',NULL,'White','Blond','7fba7029-7bee-4695-a4d0-dc13379675e4'),
 	 ('b02342aa-9171-4bd3-afc5-be0435866495','Female',NULL,'Brown','Black','8f8d1e6f-221a-4aa2-8f5b-3eae0ee0e772'),
 	 ('672dc255-12c3-4d35-947a-84384ac24188','Male','Mutant','Brown','Blond','7d717e8f-767c-415e-87fa-2aaeabf4c468'),
@@ -1051,7 +1051,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('41eb39b3-8b00-46b3-95e1-e4a9164f74ab','Male','Android','Gold','No Hair','9bebc6ce-977c-4596-a4aa-831d3a264a72'),
 	 ('7a0a8707-9063-401e-b9dc-bd65c9576eaa','Male','Human','Brown','Brown','b87bdbe7-0196-4779-b36f-eb19ea2c2c63'),
 	 ('f03bcce8-4c7d-4481-b6c4-6966e62e9bfe','Female','Human','Amber','Black','88932725-a523-405d-8399-5d0de591e3bb');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('b25aa1ac-ee32-4b7f-9ae8-24c3d69db971','Male',NULL,'Red','Brown','6b07d79a-2c5a-4b91-94d6-42bc67635a22'),
 	 ('83d49b66-f913-4299-ac0f-da180af8f5ea','Female',NULL,'Blue','Black','e516de06-2ee7-4c3e-aa62-c2ac967957cc'),
 	 ('0f369d5d-020a-4760-abf6-83a4b0597d59','Male','Cyborg','Blue','Black','79ab94dc-05ed-4a9d-87b1-a978012f013f'),
@@ -1062,7 +1062,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('e63abad6-e827-4c3a-a75d-acaf90848916','Female','Human','Blue','Black','4274cfb1-8817-44d2-a9b8-fc3c7a3da504'),
 	 ('0b6f778d-0e48-4308-85e4-cfbb2f5178b2','Male','Human / Cosmic','White','No Hair','860736bd-7d96-43a5-9daf-0d26c142eebb'),
 	 ('ad893c6e-0a12-48a9-a71d-63a49e4224ba','Male',NULL,'Black','Blue','9cb04dee-4eee-4be5-98f4-6a5f04cd491f');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('de55b817-706c-44b5-9674-b2bb53b3ffa5','Male',NULL,'Brown','Black','81f6f347-c519-47b6-88bb-61001aa41aa4'),
 	 ('294160d6-f5c8-42da-8d9b-3e23811420de','Male','Demon','Red','No Hair','5a282b0d-3750-429c-a581-c37605a01da9'),
 	 ('0afa0e19-8b2a-414b-a147-f8ba3f3c94e6','Male','Strontian','Blue','Blue','a688013a-6369-4e62-908e-6893f76456f5'),
@@ -1073,7 +1073,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('facfdc5b-65a3-4956-b0b6-95f02bcb9135','Male','Human','-','-','f0432fff-8cdc-4a4c-9744-1452fc857050'),
 	 ('ebbfb7e6-84ec-49ca-858a-abe4386baec8','Male','Mutant','-','-','af0ccea6-0ad4-44fd-b235-0b3b84143805'),
 	 ('8114b730-364e-461c-8558-441b8979b9e7','Male','Human','Green','Black','97163f24-856b-433d-a608-32403e1454c9');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('b0634424-6b6d-4f9a-b11e-f660c28c9635','Male','Human','Brown','Black','c817363c-4831-496d-8353-59d2eb5fba83'),
 	 ('4f45df50-f0dc-4237-80a5-a6eba831bdf5','Female',NULL,'Blue','Red','92875a64-a8bc-4d31-bfd4-0f98e8803dd3'),
 	 ('41c61246-cd3e-44c7-bdc0-c791284eed43','Male','Human','Green','No Hair','27924f5f-f6f2-4cda-bc66-4a250a676ec3'),
@@ -1084,7 +1084,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('a66e8aef-60ec-4f34-ae37-d8cf23e312e4','Male','Human','Blue','Black','6d832a9a-3ae8-4e0a-8f22-d60c88e265a4'),
 	 ('8d6566f9-85d1-4d1e-89c0-6824ace1db94','Male','Human','Green','Red','f6fb32e1-f8ec-451e-9aa4-e1c2929ef1e3'),
 	 ('d96b2112-0df3-44e1-8fbb-b11aa1dff47d','Female','Alpha','-','-','436a736f-3701-41e7-86f6-00ac89673376');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('f2d16de0-c908-4080-83ea-6aa13044a731','Male','Human','Blue','Black','b61a9dfa-a234-46b5-8d62-b6a17c18fae0'),
 	 ('107ece20-eace-4ab2-abac-18ab3debf264','Female',NULL,'Blue','Black','145980b1-6504-46f4-88e3-09dadc582082'),
 	 ('64783066-a054-4b8f-9d38-efdd0b625f62','Male','Human','Brown','Brown','e00f3d47-14a3-4580-b033-c27b9886a99a'),
@@ -1095,7 +1095,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('b4dda330-3539-4c98-be9b-d0222d0f0cd0','Male','Human-Vulcan','Brown','Black','1d4bd48e-dec3-47bd-b21b-455972f7ab30'),
 	 ('9a226cdb-9671-424b-9027-f02595dd0461','Male','Human','Hazel','Brown','aad0818f-6369-4632-9051-5a6b9c05114d'),
 	 ('727a8e89-e40b-40a0-b3ef-6774276668f3','Male','Mutant','Yellow','No Hair','8d160fb8-a492-4e67-aa1c-fd29ef541cd3');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('0b493ec4-45f0-4d26-aace-6411d563128d','Male','Eternal','Red','No Hair','619b798e-80ff-4813-a0b2-cf4078d5126c'),
 	 ('636baf64-2c15-4efe-8a80-f639f4961911','Male','Cyborg','Red','-','88b5469f-4d1a-4251-a58c-150ab77edae9'),
 	 ('681026db-dc21-475d-9d78-6b4037672ae1','Female',NULL,'Green','Auburn','58c7584a-f852-40e0-aea8-54b842853b11'),
@@ -1106,7 +1106,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('4e4a710b-74c6-4864-b59f-07f66a9c562d','Male',NULL,'Blue','Brown','88679560-aab6-4721-bd1b-eba04a829257'),
 	 ('dd5f7032-59e3-412b-a8c4-45550e698708','Female','Human','Blue','Black','0ffe7766-d695-4878-b5c7-dfc396e331df'),
 	 ('631165db-e481-4256-811d-7e7669d07c51','Male','Alpha','-','-','3585a8a0-0dd6-4c9d-9572-0abbd63deabe');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('3e3dcceb-dfbb-4791-8825-c07c1bb4eb05','Male','Human','Blue','Blond','461dc26d-bd4f-4358-b61a-4265c0d6fa47'),
 	 ('704124f8-6ee3-4a57-922b-2ef1ba07ff02','Male','Human','Blue','Blond','555f9228-13e7-443c-a2ec-37cad67d819f'),
 	 ('cdb553a0-fac0-4337-985d-21d4a3b939d3','Male','Cyborg','Brown','Grey','35ec8ba6-1c62-469f-b024-965a52f18626'),
@@ -1117,7 +1117,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('f657bd10-56dd-4408-9a40-617d1eb0c2d8','Female','Human','Blue','Black','217cd8f8-1654-4b13-a996-4fe87105f93a'),
 	 ('5d21338d-87d8-45dc-8c3e-407e7dd18c61','Male',NULL,'Red','Brown','87e7e44b-0a1d-4fde-a872-5126f5969b4c'),
 	 ('0de37ef8-c9d5-4987-912f-07b008aade2d','Male','Human','Blue','Blond','1b583b1f-aff4-4dd7-b1b7-908df45256de');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('cc28bcff-ebea-4785-94f4-dd8f3ef9a0e3','Male','Human / Radiation','Blue','Blond','de8bde19-2f2c-4c8d-92b0-a8da7db89789'),
 	 ('7c804beb-3d78-4c9f-b7fe-d9af65f9f354','Male','Human','Hazel','Brown','fe0cc29f-bc65-4b21-9136-ad15416c9432'),
 	 ('6935edfc-7e27-4e08-9c37-21e4b5957b45','Male',NULL,'Brown','Brown','19d15d5e-38b6-4db3-8a51-0b886ba02471'),
@@ -1128,7 +1128,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('22583a81-cad0-4a50-aeac-a3530c42f100','Male','Human / Altered','Brown','Brown','9cd5f168-9ef1-4d24-9284-b3e663a9594a'),
 	 ('00bdbb33-f000-47fa-abaf-45e46033d055','Female','Human-Kree','Green','Black','7dff6186-d93e-444a-a5a5-20f3545e8f0d'),
 	 ('9c13968e-5a73-4030-b329-aa2bde75907b','Male','Human','Blue','Blond','677c0fa8-eb2c-4302-b73d-38b97d5e4deb');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('32b62f19-d0b1-44a9-a3eb-675e2fbc8e88','Male','Human / Altered','Red','Black','6806cafd-69ec-4b4f-a5c5-0cc51fbc2c57'),
 	 ('f40c42b5-5401-416c-b1b8-82902112fbe6','Male',NULL,'White / Red','Black','5534a18a-586a-42f4-894a-c67fb9ebdbaa'),
 	 ('0118b447-e1eb-4848-a3d7-112149161e65','Male','Atlantean','Grey','Black','38745960-34d5-4387-affc-f0ef35b3565b'),
@@ -1139,7 +1139,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('1504770b-ba8e-4bc7-b6b8-64320a4cb475','Male','Human','Purple','Purple','2fc6908e-86aa-49d3-b638-0a06d97affaf'),
 	 ('c345d94a-5977-4624-8ebd-504ff8660a69','Male','Human','Green','Grey','3c258ffd-76f8-4640-929b-8a9c7bbdc0ef'),
 	 ('e5c8273e-3d31-494e-bc26-68ed3f15bd20','Male','Human','Brown','Brown','a732553b-7923-4dce-9264-e3002207e7ee');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('ef1f6c33-e463-4e0c-aea5-9eaba2ca7f9b','Male',NULL,'-','-','9e018089-32a2-43fd-8b6e-3b06f49b9f71'),
 	 ('37e52287-a57d-4cb8-af9e-7cb3e51a58b5','Male',NULL,'Brown','Red','cc2f7937-6688-4f46-805c-55626d435a26'),
 	 ('0c8a4f13-9032-4d92-b3dc-b50b4e01f004','Female','Asgardian','Blue','Black','9616c842-adfe-458f-bf33-1f4e8fa29360'),
@@ -1150,7 +1150,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('05d6dcd0-a4ae-49cf-97b8-66b09b1662e3','Male','Kryptonian','Blue','Black / Blue','218a8ca9-4274-43d9-b854-0223ee94e418'),
 	 ('472d6888-c134-4f9d-8372-be86f2ce8c07','Male',NULL,'Brown','Black','8037c975-b0d9-4126-852c-c7f743fee63b'),
 	 ('ebb0eb8a-e1aa-4224-ae24-5d9be2427226','Male','Human','Brown','Brown','9c0c9ef9-e56c-4289-9f4c-a6380c630da4');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('56e13d6d-caf0-453e-ab50-8d3417cfc411','Male',NULL,'Blue','Blond','58361c42-cd29-4a4c-8995-2f0eb9e677b0'),
 	 ('1b18c933-5611-439a-b9be-1520fd04bb02','Male','Symbiote','-','-','243fa616-52d9-45ec-ad8f-3e024e33985d'),
 	 ('581edfd2-bcd2-4d9a-ac2b-4388493739e2','Male','Frost Giant','White','No Hair','db4ef6ac-0f3f-4dd0-b13e-5be71fcbc837'),
@@ -1161,7 +1161,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('3d843b40-3eb1-441a-ab9f-57dd45d430c4','Male','Mutant','Silver','Black','99883334-8cf8-4e65-9b42-5d298d6f8219'),
 	 ('fae4b2ae-bcea-4c80-a466-5dadc02a2b02','Male','Mutant','Green','No Hair','8087eb32-acc8-4c72-9707-28c365337a3f'),
 	 ('79a9a171-2622-46a2-a074-70b49e502960','-',NULL,'-','-','d2818f33-4c6b-4953-96f2-82ae9f791442');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('62854c99-a709-4925-9f58-3cff95191c9f','Female',NULL,'Blue','Blond','93f7dc53-f9e3-43b1-b5ec-2eef6ec8a218'),
 	 ('df8d7bc5-beb5-4793-b40f-f6d8eb87afe0','Male','Demon','Red','No Hair','2bc7bb59-7d82-4e00-97e6-f036f1ff805d'),
 	 ('eaa5766c-d86e-4220-8f2f-4268d762da12','Male','Human','Blue','Auburn','37469feb-66e1-44d9-9682-96ca9a3dd3fa'),
@@ -1172,7 +1172,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('37927583-41c6-44e0-9b01-e03d18f234c4','Male','Demon','Gold','Black','bb93c46c-c7a4-47ee-857c-7bc3cf521b46'),
 	 ('7b0d2be1-bc07-4d98-a92a-8c0e0f967b73','Female','Human','Green','Brown','5629f7e9-1d78-4313-8067-1f51fbe12fd3'),
 	 ('8af43bcf-b96d-4838-97e8-a8c4246a6b8a','Female','Mutant','Green','Red','f3d9f6c2-590f-4b0c-ad75-d1b7857df5ca');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('6c759fdd-0956-46a1-b66b-46d742b8f855','Male','Human','Green','Green','a89f8384-b595-4dfb-a2bd-6bef8f16f4e4'),
 	 ('bdfb7a5e-fd59-42a5-8c24-8343f7f0c6c9','Male','Human','-','-','64edf372-d7a5-46ac-bc8c-906137871e2d'),
 	 ('51d6b719-a7fd-428d-a24a-1d4d9f17266b','Male','Kryptonian','Blue','White','007a18a1-79e2-46aa-8200-14f6a113bda9'),
@@ -1183,7 +1183,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('eecabf3f-02f5-47fe-94b9-41a6f9c46574','Female','Human','Blue','Blond','5bd482f1-dee5-4732-855c-0c384031e6ce'),
 	 ('f37c1a9e-3b69-435e-a5f3-8c02315eb379','Male','Human','Brown','No Hair','2bc92306-083a-473b-b3a2-1c6df200ea2a'),
 	 ('b53ecb88-30b1-4c45-8685-de1dc3a23990','Male','Human','-','-','fdf25ad5-0d77-458e-9021-87c7c46c1ce0');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('49aff108-2413-4f26-b57e-b7d5850dccdf','Female','Luphomoid','Blue','No Hair','16aea3e8-2127-48bd-b0e7-44b9d0d1099d'),
 	 ('02455166-359d-4dc8-95ed-b3f3f2830a4d','Female',NULL,'Blue','Blond','1d26f21d-b1e0-4c90-ab8f-86a71f337d2a'),
 	 ('c89df0e7-02e4-4348-a994-13818ee9cf97','Female','Mutant','Black','Black','a9e2b077-1967-41fa-a17e-2b71b266d986'),
@@ -1194,7 +1194,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('a734a783-683c-49ba-90ba-bc9890ba4159','Male',NULL,'-','-','fe555c2e-70f3-464a-a385-59dedcbe7227'),
 	 ('1a9d5de2-b4d7-4ac9-bbfa-4b42d79e0227','Male','Human','Blue','Blond','00924041-97da-4b4b-8cbc-1c3ea71e6bf6'),
 	 ('548e1071-21d3-40e5-bc19-81ca585b7b77','Female','Human','Green','Brown','3bb5f8c7-0990-47f9-8420-45c85a387575');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('7cd41930-b2da-43e1-b59a-a68b8ba9267b','Female',NULL,'Brown','Brown','ad766187-b760-4be8-abbd-563755437084'),
 	 ('d7884583-6dcf-4245-9995-13aaafd060cb','Male','Cyborg','Red','-','694d23ad-1c66-4e18-a4aa-4653accd3290'),
 	 ('3c31f1dc-bc5d-4ff0-a87c-9236efe6dd50','Female',NULL,'Green','Red','9bfc5476-4187-4fc2-b487-9a35f3f5f2ec'),
@@ -1205,7 +1205,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('48258963-9f55-45ad-a35e-c6cd53b0cc4e','Female','Human-Kree','Blue','Blond','1aaae037-4c84-4894-95e5-c071ed36b1ab'),
 	 ('32023dea-c8d5-4319-8977-fa0f72816e86','Male','Human / Altered','Red','No Hair','34637118-e5dc-47ad-b02e-1515a8d444c3'),
 	 ('13a55423-7e6c-48de-9dfc-1759909d96f8','Male','Mutant','Red','Brown','d0134ae3-c2bf-4cc5-8f9c-1c7462c3f3b7');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('f2c508fd-0d0a-4a77-b661-bc03de612326','Male','Gorilla','Yellow','Black','6e9d2c2e-7a20-4ca7-bbcf-46c4d6b168f2'),
 	 ('74a0556b-9c8f-4986-bad2-c11035aa2bac','Male','Human','Brown','Brown','4428196a-162d-4fd6-a632-534dd90eed40'),
 	 ('07b02d84-5e46-4c19-998b-bbf1d2db8230','Female','Human','Blue','Blond','5df97173-44b1-4126-a3e9-8e562079ae27'),
@@ -1216,7 +1216,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('46846f6c-de95-448a-ab03-a0571b5d4293','Male',NULL,'-','-','ca5a8a9e-a656-4f7b-9a18-d7879c92e562'),
 	 ('f1b89433-0207-405b-a8b8-17f43a2911f4','Male','Human','Blue','Blond','319df512-171c-431c-834d-040f19c49429'),
 	 ('1b32bc5b-37ee-4303-917b-8be2e12a93df','Male','Animal','Yellow','Black','1258aa31-6a27-4bd1-abfe-a2d161537607');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('b8da2fe3-40d9-4189-9436-b317e24dbaf0','Male','Human','-','-','9b383727-a76c-4079-ac39-7c12acf1ccae'),
 	 ('97877e16-b8a9-4164-93af-4bcde5f7f107','-',NULL,'Yellow','-','0c26da2b-9196-450c-8405-e0d361b10b21'),
 	 ('ad39e3f8-faf6-4622-8d93-a5da96c586d7','Male',NULL,'Red','No Hair','a6c62dcf-b747-412e-b2f4-dac1cb9f3521'),
@@ -1227,7 +1227,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('d53450aa-9270-4dae-b3c2-166630f997a6','Male','Human','Blue','Black','5336966b-8b64-47c1-8066-023a0f7c207f'),
 	 ('074d47f4-23f6-43f6-bc1b-7aa94f8a706a','Female',NULL,'Blue','Black','99dcb6ad-5788-4030-bb83-9c5849841616'),
 	 ('389f28dd-a36e-44a5-b0e3-996a7c1acdd3','Female','Human','Blue','Red','e9a5d2e4-73ba-427a-a246-49b2a3ee78b7');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('08d5497f-7651-4dde-b1ce-09f681590407','Male','Mutant','Blue','No Hair','0c7179b2-de44-41b6-af43-f425555e1b09'),
 	 ('6b426f7b-b2e4-4efa-86fe-baa2b28eb34c','Male','God / Eternal','-','-','7f044b09-5fc6-49eb-868a-dd039cd8e126'),
 	 ('d044d485-e8ff-4afe-889c-8a6719513af8','Male','Human','Blue','Red','34eefb6a-f84c-41de-bfed-dab9951234c0'),
@@ -1238,10 +1238,10 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('300e52fd-59dd-4649-b4b6-b7988056176d','Male','Kryptonian','Blue','Black','ecd1b1f6-d27e-4c80-a76e-ab1e3b1a33be'),
 	 ('0977044e-27b0-44f2-afa2-66e610981186','Male','Human','Brown','Black','78ef21b1-79de-47ed-bb6a-6ad3f368a91b'),
 	 ('563cbc20-0559-41fd-9143-2a39eebfe6d5','Male','Asgardian','Blue','Blond','4af9dbd0-064d-4744-b52b-1ec9a4861209');
-INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",superheroe_id) VALUES
+INSERT INTO public.superhero_appearance (id,gender,race,"eyeColor","hairColor",superhero_id) VALUES
 	 ('e96eaa56-ee65-44ca-8df7-d6c8ebed9ad6','Female','Asgardian','Blue','Blond','66b6bf14-d18d-4fce-8507-faa8a16b6956'),
 	 ('6ced5e5f-6762-4941-a10c-cf89ddad5793','Male','Inhuman','Green','No Hair','91e10af2-4495-4187-94a4-3255a1060cab'),
-	 ('3d2c804a-87ae-4e85-b26b-7158fc34ddb1','Male','Mutant','Blue','Black','6d998e7b-078b-43d8-af80-7f76981877d2');INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+	 ('3d2c804a-87ae-4e85-b26b-7158fc34ddb1','Male','Mutant','Blue','Black','6d998e7b-078b-43d8-af80-7f76981877d2');INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('0151cd2b-1d9c-4103-8ed8-94c105cdcfed','5''10','55db489c-8613-44ca-bac6-8ce190df2f5c'),
 	 ('82d746e6-1aa9-4dad-bea1-dde9c02df8ae','178 cm','55db489c-8613-44ca-bac6-8ce190df2f5c'),
 	 ('e77885e0-71dc-4bcb-8f5f-0e3d865e3600','6''8','7ef5e483-931a-4c27-be56-56b3259a305f'),
@@ -1252,7 +1252,7 @@ INSERT INTO public.superheroe_appearance (id,gender,race,"eyeColor","hairColor",
 	 ('f414f631-78ca-4956-bee2-260849380a20','191 cm','c782766b-fb45-40f9-8039-c9189ceacb43'),
 	 ('632fbbe7-bddd-4977-84f2-b18a44c7e422','6''8','d92543ec-195e-4bfa-9318-7db8db2a9e7c'),
 	 ('78e2340f-f61a-40ea-92b4-9e51f89edc02','203 cm','d92543ec-195e-4bfa-9318-7db8db2a9e7c');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('525d801c-6dac-4a93-bba5-e12da2512ff3','191 cm','3fbbe0ae-d6c3-49dc-8dba-e30b720dd453'),
 	 ('3882d26e-aaa5-44b9-a3e6-0aa7ead43f90','6''3','3fbbe0ae-d6c3-49dc-8dba-e30b720dd453'),
 	 ('f857ebc1-7cd4-451a-8182-ab4440f6ff83','5''11','230a887b-8da0-43e6-99f9-78d965a1a64a'),
@@ -1263,7 +1263,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('935e265b-c9ce-4529-9f87-1e19e6a1a92d','244 cm','3918202f-a9fc-45af-a0ea-b81e4fc82ffa'),
 	 ('e315dd9d-20bb-4341-99f6-1b6aafa40c5e','185 cm','2d97dcf3-6388-4e21-8d10-4eb678e03378'),
 	 ('0f46e2e1-fb71-4b81-ac3b-df28e8de49b3','6''1','2d97dcf3-6388-4e21-8d10-4eb678e03378');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('e22b9895-24ae-4007-820e-2eb44b50bff9','5''10','81427c35-a185-47e7-bd22-fdb573d405f9'),
 	 ('5a8d336e-ffec-4d70-bda9-f178a041ef2b','178 cm','81427c35-a185-47e7-bd22-fdb573d405f9'),
 	 ('f1455f76-ab12-447e-98db-68b45ef64d41','6''4','f282f825-c2f3-4460-b7e6-89279d74a820'),
@@ -1274,7 +1274,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('61f4f3fa-b33e-4cb7-8146-c2572a5eebf2','0 cm','2c548e84-432b-4d1b-9ba8-79ec45297c4d'),
 	 ('a8e6be4a-d30e-43ae-ba1a-88cee924bd61','6''0','a6d3bb02-5ff4-4936-b5d9-aaaa1a12dddf'),
 	 ('bfbcdff6-f320-42cb-903a-0e1c0e4b5930','183 cm','a6d3bb02-5ff4-4936-b5d9-aaaa1a12dddf');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('92947d54-d584-423d-aca9-843c3de67481','6''2','fb20bdbc-5dcd-48e6-b474-654a600e21e8'),
 	 ('2eb85604-02e5-43e4-875d-4a41595095f1','188 cm','fb20bdbc-5dcd-48e6-b474-654a600e21e8'),
 	 ('6bc362a7-75a1-4cdf-98ce-2f4f7af672d0','6''4','6ff41ecc-b3de-4c58-a296-049bf8b29ca1'),
@@ -1285,7 +1285,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('d808b979-3267-4da4-97ae-8eafa1b76f07','6''0','61a2cabe-5080-4c45-af85-c498415a8699'),
 	 ('8407fb0f-9a1d-4378-a545-d8a361b860a6','180 cm','4c6975f8-2e94-419b-971f-787f392b6f17'),
 	 ('cf13d519-a057-4561-816d-b719d0d6d9ea','211 cm','3e8f0128-b206-44d8-9f8b-8874578a4643');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('675505b7-70ae-40ad-8ae9-ab5ab40d4cbd','5''11','4c6975f8-2e94-419b-971f-787f392b6f17'),
 	 ('5e1bd1cb-4b1e-4db7-97f7-daac636ec6ed','6''11','3e8f0128-b206-44d8-9f8b-8874578a4643'),
 	 ('5c056ec9-bed1-46f9-be30-fb6715ee9490','-','7df654d4-0940-4009-b48c-ccc0fe33c8e6'),
@@ -1296,7 +1296,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('ab41189d-cd89-407d-9150-617e86d9474e','257 cm','6de5e9f0-3677-488e-b4af-de3477a4a3b7'),
 	 ('f7285a63-cd2f-42f9-8fb2-23941d29a13c','7''6','df9a0639-1b47-48f9-b233-518e4c036d25'),
 	 ('96981c28-24c3-4889-a532-4a0f9a733915','229 cm','df9a0639-1b47-48f9-b233-518e4c036d25');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('0edadc1e-7544-4411-a62f-4109231f8565','7''0','1af923d0-da95-4ac2-949a-164c39f14ed9'),
 	 ('011426c5-984d-4b7b-90bc-8ff54c3c41b7','5''10','1bb92c6e-fd8b-47b0-9236-954f816fbfbe'),
 	 ('2dc6fc18-08d3-40cc-8514-5cc246687f39','178 cm','1bb92c6e-fd8b-47b0-9236-954f816fbfbe'),
@@ -1307,7 +1307,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('5cd42518-4170-45db-b5f3-7d1262395ef5','185 cm','3c1054c6-6070-430c-a915-4ed492bc7f35'),
 	 ('fe3eb2ab-f593-4589-8386-26094ca93129','5''9','a65a6de7-0e83-47bf-9464-4037a1becf94'),
 	 ('74c70f40-323c-439c-aeba-73b6a313832b','175 cm','a65a6de7-0e83-47bf-9464-4037a1becf94');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('6877f501-185d-4d32-a831-f0731fa1272a','183 cm','776830f4-a494-437b-abd0-3632b26b5f2d'),
 	 ('b42edc29-c068-428a-8fdf-edbe9f0aac8d','6''0','776830f4-a494-437b-abd0-3632b26b5f2d'),
 	 ('ed2579bf-2159-4bcd-b5b8-c6e91b22ed0a','6''4','843b64b7-ffe2-44f3-992c-4387d84ab614'),
@@ -1318,7 +1318,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('b6dbee12-296f-429a-af11-0c900e226147','165 cm','06e27b45-6a42-44be-a8a6-ae4118eead9a'),
 	 ('066f0cdc-1189-4732-99b8-d16bb519d2df','163 cm','cb3b23a0-85e7-4cf9-b0a9-28431646819d'),
 	 ('94ba684f-ea4b-4945-9a32-a1a5e91836d7','5''4','cb3b23a0-85e7-4cf9-b0a9-28431646819d');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('46784891-3303-4eab-a135-c9aa92ed40a5','0 cm','5b7c23ed-946e-4d2f-a8c8-d85384b57098'),
 	 ('2fba706b-47de-4995-917f-87206a21965a','-','5b7c23ed-946e-4d2f-a8c8-d85384b57098'),
 	 ('b4fbe8f9-2453-4c67-b6f6-518444bb6c00','185 cm','29373156-b8db-4d09-a73a-d4de10599d4c'),
@@ -1329,7 +1329,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('3956966c-3528-4133-893a-b51690f8cde4','6''0','92affc7b-4c3f-4344-901e-a003b5fa9d53'),
 	 ('a467cb5c-0268-46ed-92c2-4a3ab670f1b3','6''0','efe66a94-4d5a-46ae-b820-63dc8263d025'),
 	 ('5353e165-2784-4b62-935c-031ec666cdca','183 cm','efe66a94-4d5a-46ae-b820-63dc8263d025');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('4b5bb17b-3ccc-4936-87c9-6a3ee0deba45','5''6','b24f2645-d86e-448b-88f4-909c5b91591e'),
 	 ('08b5df6c-9508-4cf8-b292-7b13de0e9a29','168 cm','b24f2645-d86e-448b-88f4-909c5b91591e'),
 	 ('e1b81578-b201-41d2-9a43-16fcfd4e3e08','180 cm','f94b3c25-91d3-4841-95d6-bbbe45f5498e'),
@@ -1340,7 +1340,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('9355405e-34ad-4063-b7c9-eba0650f7100','6''0','57423216-ee47-4f66-9f7c-012cff1edc5c'),
 	 ('43cbd316-ccb9-4c72-974b-7febee54a256','6''6','4477d114-0ca1-4d0d-a9d1-7b4ed6b4ba23'),
 	 ('0f6b1034-fe53-436b-8e02-35670ae6d2d3','198 cm','4477d114-0ca1-4d0d-a9d1-7b4ed6b4ba23');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('e6e5e202-b415-45ab-9729-ce79f638a522','5''5','4e570898-aab1-4184-8160-64b0258ad208'),
 	 ('858e5f63-c59e-4395-a908-eaaef8ba2eb7','165 cm','4e570898-aab1-4184-8160-64b0258ad208'),
 	 ('58ee865b-475d-45d0-919f-770f37cba949','168 cm','55c3065a-c9bb-43d5-ac55-b4d3bce2e8c6'),
@@ -1351,7 +1351,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('e5c5f186-d67a-4afb-afac-09e37750233a','188 cm','e382813d-449c-45a0-bfe0-ddc5fa42d9bf'),
 	 ('3e1a8a5d-9104-4816-a783-6a278cf9dda2','183 cm','0bf25079-e9ec-42a7-83db-5042d1dcfda8'),
 	 ('a884ffd6-f901-4cc0-903f-a8c74e3c3d33','6''0','0bf25079-e9ec-42a7-83db-5042d1dcfda8');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('c7ff0c8e-6436-4ecc-aa03-c3c73b97cc00','6''8','5ae8aaa3-4401-4806-b245-d96939e2d335'),
 	 ('64daca05-742b-4313-a810-4b08f2e0925b','203 cm','5ae8aaa3-4401-4806-b245-d96939e2d335'),
 	 ('6e0d5018-59fd-4a87-a3e9-21e322973876','5''5','acd4989f-5354-4bb4-96fc-02101de7f5f1'),
@@ -1362,7 +1362,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('970c895a-7130-428a-b754-5bb697cb95d9','5''7','fe820f3b-cb95-4d25-bc2d-508db4270da4'),
 	 ('f40b1e03-9fcc-4743-bfff-adc5809a73d6','-','3917b536-47ac-4474-beab-eab634c7138f'),
 	 ('87d72707-9b15-44a8-9cfb-37c9e98f1905','0 cm','3917b536-47ac-4474-beab-eab634c7138f');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('9e789aca-0df2-4a80-a327-f141addd2f21','6''7','bd74ba29-16e3-4787-bb7f-913cf682d540'),
 	 ('6d491b6d-69fb-4476-89e8-00c1819f4a9f','201 cm','bd74ba29-16e3-4787-bb7f-913cf682d540'),
 	 ('4bdf825d-b90c-43fb-bd43-b4e6e3ab042a','5''11','c25ffd40-b16f-42d9-8169-4258aab19736'),
@@ -1373,7 +1373,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('237302dc-9724-4933-afb2-09cc018c0076','0 cm','520eb8ae-6564-43d8-83f9-315858a4e52b'),
 	 ('036fcf92-c574-44aa-ac22-0774ffa57d4d','6''2','3aa9a8b0-2a25-44e7-b004-d402e8e81158'),
 	 ('d35d9267-cf8f-4cc7-b752-db99a5388458','188 cm','3aa9a8b0-2a25-44e7-b004-d402e8e81158');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('47ca7046-6aa1-4e74-9afa-9e376dca46ea','178 cm','fd2eb082-c9bd-4520-976a-10729225578b'),
 	 ('2f914a34-2855-4843-a125-ede0272cd17a','198 cm','bc9939f8-0dc5-4a91-9ca6-26d4150d722a'),
 	 ('fd35c66c-3a66-465f-8614-3465fa6a046a','-','ef9de083-cfe9-4c6e-8231-e25b19ab5177'),
@@ -1384,7 +1384,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('1f9c1f49-f7d0-4eaf-8f39-542d66540374','6''4','75c0efbd-81f6-4404-99a3-44e20d6c062d'),
 	 ('3041a5a3-4a77-4610-bb78-d1d2e720f4c0','5''7','24452624-f610-499b-813e-303c778bcb63'),
 	 ('bac8a0f6-c50a-4925-9b4a-7a753c76b2f6','183 cm','8f55396b-f52e-45d8-a19e-e96a64a51a4f');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('2cea546d-cb9d-4706-b0d3-41ec057c12eb','-','d064e403-f107-485c-9e5a-dba31c2b07a5'),
 	 ('05e0e7c8-775a-4c51-b200-eaf78b071075','6''1','a613477d-bfb1-425a-920a-7497fca1ca21'),
 	 ('41cb5135-a3b6-4a61-959a-a5292b893d4e','175 cm','d512b623-8d11-4b34-b634-1f14e72b0d70'),
@@ -1395,7 +1395,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('c87c0f0b-b9bb-4aaf-82e4-0f0b7b0e3f77','193 cm','df8d7bc5-beb5-4793-b40f-f6d8eb87afe0'),
 	 ('7a53f1b1-d21e-4c25-8bf8-058f0cc7f1c6','157 cm','ddb4de75-66d0-4304-9a1f-a9792ee972ef'),
 	 ('f0a4e95e-ad4b-40ce-914e-ab997f65d83c','4''8','edf7308d-34bf-4c6f-b30c-fc581ddf15f2');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('321ffdd2-22f4-44bb-802d-b2217a63ad85','0 cm','ef8db482-506b-401c-8065-4ca28aabe924'),
 	 ('08a71f3f-7cbf-42bc-9f7c-bdbd1834afd5','168 cm','b43cdc9d-45f3-4fea-8107-36f5bf74fb04'),
 	 ('10e0595e-5f26-4f45-8bf7-7eecb1f7cbc4','108.0 meters','cc9b3fd9-27a8-48a8-be24-4fd513408ef8'),
@@ -1406,7 +1406,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('601148ff-c24a-4f5d-bab9-6a5ad8682b31','170 cm','64dc50ad-0132-489f-9cc5-259f2b25b9c8'),
 	 ('1c7f5607-1465-43b4-9c6e-0224d6bc6248','168 cm','13212cc3-3fbd-4e15-b855-d59f0e0ca003'),
 	 ('d88ed87b-49f6-44ed-b5e7-fbcd4af6335c','0 cm','facfdc5b-65a3-4956-b0b6-95f02bcb9135');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('d58eff9c-1310-48ab-ac4d-3087e3c952e0','165 cm','2e110fbe-a787-40ab-a77a-7ffa2966e922'),
 	 ('31702f6b-8647-4b74-9827-de68070fe780','6''0','4a534cb8-e7a0-45cf-9260-e5a9c4805ce6'),
 	 ('81a990b5-6dd3-4754-b1d2-89561c0a09cc','0 cm','cd7bebd0-8549-44f8-a103-08d1d192f937'),
@@ -1417,7 +1417,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('d2bee9ad-b411-4518-a503-72c8a4021ffe','183 cm','592feb3f-485c-4537-b1b6-3a309845b2ce'),
 	 ('72cf5793-cd7b-4e43-ac05-2fe6918f1b79','0 cm','3cc7b06c-f2c6-4ff4-97c3-18bd8b2cfae7'),
 	 ('f3c24e1d-3c8e-4a5b-ab3e-6aaccb2f5683','188 cm','f6ee2183-5f3a-46e9-b359-9399a97e1b85');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('e4efcd5b-ac8d-424c-b8d1-e9c8b05a67ba','5''11','0be97615-025b-4a7f-96c9-abeac55a376f'),
 	 ('a3fe360a-46b7-4610-8d63-075e6ead9639','196 cm','0bc495c5-1375-41c8-8d5c-330993b508e5'),
 	 ('d49dd02f-408e-487e-aec3-dced40f161f9','188 cm','6b7effa5-6b93-42e6-98be-4625409c5d86'),
@@ -1428,7 +1428,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('16e1e2d2-98c2-48cd-8c3b-9f2bd4e53cfb','0 cm','d9987736-7b74-4360-ba29-96df9edc961a'),
 	 ('9a797fec-df97-4f25-ae4e-085b9af31467','-','1bf867b6-b3e5-45dd-ab0d-8243de735bcf'),
 	 ('3871fa63-bea1-45dd-b007-57c532cca77f','-','a95187b4-56eb-4fbb-bfce-195e53e93510');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('66cf02d9-649d-4c2a-9e39-4b296df2887b','5''6','7c2c3221-0c2f-471b-a3a3-89e676a2f516'),
 	 ('c9ec5998-abf3-4d27-89af-977c8214202b','-','c89df0e7-02e4-4348-a994-13818ee9cf97'),
 	 ('43a712b2-a1e1-4b7a-a48b-1675c17f9d9a','168 cm','253591c1-0739-480e-a72f-2e37700f2a3f'),
@@ -1439,7 +1439,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('070a342e-c7d8-45b6-a871-ec601587204f','5''10','8d6566f9-85d1-4d1e-89c0-6824ace1db94'),
 	 ('731fbe8c-3391-45c0-a0a1-c1cd90e1e8b4','165 cm','bcd58f30-ec54-4604-87de-5f66cb82b48d'),
 	 ('f56883ae-4b2d-4e3b-8832-20985ec7ed55','5''57','106c7462-6b62-4986-8bb2-596bc8534ad6');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('35e5777a-31bb-4218-b42f-a552eba3d2f5','193 cm','c345d94a-5977-4624-8ebd-504ff8660a69'),
 	 ('6135eded-94cd-44ac-bd15-7a73d2904ee3','5''5','48a4df97-5d8b-410f-8311-a7c00bf66ae5'),
 	 ('5229ca13-06f7-4341-844b-a3a5bf087fa3','0 cm','a734a783-683c-49ba-90ba-bc9890ba4159'),
@@ -1450,7 +1450,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('8c553eb9-2858-4ec2-b705-683777d0dbc3','-','0db5fac1-4dc4-4f88-9780-2989eb5a662d'),
 	 ('52712653-6869-4547-87e0-64f8c0be345c','173 cm','f1a6b4a5-d2e0-4c0b-99e3-e9fe6486c09d'),
 	 ('405112f5-3e31-4902-8c46-fe5b2f6b405c','5''6','9e9d0c2d-3c6d-415b-b28f-0ad103cf4aa7');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('98b1fd9d-b22b-43b1-8773-e8a7153dc582','0 cm','15a05903-e3c0-4e7e-8d49-a2d6a68a6d8f'),
 	 ('122552af-027c-4141-bd8f-cc2875653812','5''10','e94ccb3a-a458-48fd-8a4e-b9f66e536645'),
 	 ('758bec1c-2796-44b9-92de-aca9a4ac9bbc','193 cm','c10d2076-c7b9-4353-b5f0-66a7ead96d19'),
@@ -1461,7 +1461,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('a760bd8b-7529-4705-9754-46ef1220eef6','178 cm','910505fb-75fa-44fb-a64c-459b2648e07e'),
 	 ('a6754f72-dff1-441a-9437-8186df018601','-','b94a6e3a-0ab9-4cfa-ac84-046171d23a6c'),
 	 ('6d247751-4cde-4145-bdda-cc65677f73b4','188 cm','d5df752a-aa0c-4e90-a24f-40df4b5b75b9');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('932c4891-89a3-4574-a4a8-b5296170e3e4','170 cm','cde32ba7-f163-492c-96db-82c52c5bb0db'),
 	 ('5a4234af-edac-44f3-92a4-e2721d946852','5''7','b61cf683-237e-4e70-997b-3a2a963dcee5'),
 	 ('f26ef7ee-1948-481f-9f7b-830c165f64f8','-','d7884583-6dcf-4245-9995-13aaafd060cb'),
@@ -1472,7 +1472,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('6b642d5c-8a19-48f5-8c75-03a3bd9f6ff6','206 cm','51ec4a12-56fe-4b7c-8c36-12b35ab2dd3b'),
 	 ('13d87cc8-8b76-49f0-899b-5fa50bb8cbc6','6''3','07d629e4-a9a3-4c19-8d15-0e02a14bca79'),
 	 ('987f50c6-b601-4d6f-a37c-07a9fa6be17c','5''4','c768d17e-8cfc-43b7-b88d-f406581c0caa');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('812d003d-36cc-407b-ab0f-1f235b0a3f53','5''5','b70428f6-cd7e-48c3-9fd9-612e2998a4b6'),
 	 ('7fe3b422-cd85-4880-a864-20f4a5b2066a','5''7','dd5f7032-59e3-412b-a8c4-45550e698708'),
 	 ('a1fddb41-87c2-452a-b453-765ed16492ff','185 cm','b25aa1ac-ee32-4b7f-9ae8-24c3d69db971'),
@@ -1483,7 +1483,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('86aa8cac-032a-4b8b-a75f-22fd45bb0e19','6''1','8e221d70-9bd6-4fb4-aef4-41bb4a49db18'),
 	 ('8816486c-a615-417c-a062-c9d88736ca58','6''2','dc7715a2-ba7c-4b2d-ae8a-e47003b6d087'),
 	 ('10ac2453-d497-4757-8449-bf1a1176bb4d','0 cm','2fae8389-2e34-4b08-9120-55921790bac3');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('4362f59a-ea59-4220-9d5d-aac095bf4e3c','0 cm','0297d434-aedf-4af1-822c-33cc62890805'),
 	 ('56237057-cd62-4929-a41f-5d899711c45f','5''2','ac8824e2-772e-48e5-9f02-e49ed42a149a'),
 	 ('8a2f4d0d-7fcd-4f37-8fa5-d3575f0a5d18','170 cm','24452624-f610-499b-813e-303c778bcb63'),
@@ -1494,7 +1494,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('3939f09d-4d79-4573-871f-634e1d65b040','193 cm','53d9d46e-4d60-4ef4-b3b0-adb8b992b356'),
 	 ('f3008dca-e1aa-44e7-a857-c4ce5c23d90a','-','cf9a33cd-0dca-4bf0-a847-9de0257fd22a'),
 	 ('fea6ba3b-7ed0-4638-b452-c81f561835a5','-','b71a4ac5-3616-45b3-bacd-e65913f82fa4');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('d66d1612-5b14-4dfa-8b73-c725a0719fb9','175 cm','630fc046-bc71-4a9a-ba01-23ec2f462096'),
 	 ('bc9221c8-2854-499d-b023-5281ecf5fa77','5''10','f4234227-5c49-40a9-93ff-5fb378f1f91b'),
 	 ('7e481072-14a6-481f-b72b-f0847b271324','198 cm','3a381f2f-e3ea-44ad-8f0e-5fbc7857bb01'),
@@ -1505,7 +1505,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('6c3dfd5e-f423-4f45-9d76-8d69c49d9cb4','4''0','704124f8-6ee3-4a57-922b-2ef1ba07ff02'),
 	 ('1dec0ee9-4553-49d0-9e71-dee835d17744','6''2','7011e364-75ea-4f48-896a-70614e32d45b'),
 	 ('53b6fb7a-ea04-4fd0-828b-fe6c906de88f','0 cm','87e073ca-e4ad-44de-955c-68eb25b56df8');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('2ecdd779-9cb0-4196-a4e9-922444f01f91','188 cm','4ad60221-23c7-480f-9e4e-54ff380187a7'),
 	 ('63d3167a-cd6a-4864-a1c5-b82a29ee7664','185 cm','ce630364-b8e7-4075-8432-e3ec5122c124'),
 	 ('840b9c82-661f-42bd-9621-9eb37208fbc4','6''4','32023dea-c8d5-4319-8977-fa0f72816e86'),
@@ -1516,7 +1516,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('91e83c99-2f67-4aaf-855e-0be2c32a8c7e','5''6','4b916fb3-bea1-4a73-aa8e-c25c6e8424da'),
 	 ('6860cd1d-d70a-4f40-8e76-4b8b2faf4f7e','180 cm','429fbac8-6d25-46f5-a2b2-7e1c38fcf407'),
 	 ('acf72b28-c2ca-40d0-b88a-e3c9ea035b1a','6''2''','37f92101-52a8-47af-a638-4784e5679c98');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('e96e2cb6-08ae-4806-a518-38d16a41a9de','6''3','d6c6ac88-30b3-4c2a-a357-e4bb01a5a6ed'),
 	 ('9a40527d-f5ab-44c8-9cce-135329eeb2a2','188 cm','294160d6-f5c8-42da-8d9b-3e23811420de'),
 	 ('39b0b6dc-ed45-4d2a-86e6-9c2c3f27eda7','170 cm','07b02d84-5e46-4c19-998b-bbf1d2db8230'),
@@ -1527,7 +1527,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('31f50179-e866-466d-833a-0b38cc82e879','-','706a2f12-5042-4781-a597-7fcf638fbb5e'),
 	 ('39fbf58b-ef28-4bfc-9bf2-bce663def420','-','7b0d2be1-bc07-4d98-a92a-8c0e0f967b73'),
 	 ('645906a8-f93d-4d09-b900-82bc336b5a2a','0 cm','46846f6c-de95-448a-ab03-a0571b5d4293');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('b46db9af-ce85-477e-8f72-285a6247a350','168 cm','8af43bcf-b96d-4838-97e8-a8c4246a6b8a'),
 	 ('56566288-9c49-4c20-936f-22f92668de98','5''9','e11c4987-965c-4946-bf21-2ccfc0fda014'),
 	 ('2bd0b5ab-9a02-4fc8-bd45-38f6dff371ee','165 cm','4f45df50-f0dc-4237-80a5-a6eba831bdf5'),
@@ -1538,7 +1538,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('382aa0f5-b0b2-4dba-ba8e-85a05e0f51b6','6''0','ca982875-cdaa-4fe2-944c-3f16a92c9204'),
 	 ('a173bf1e-fe89-49fc-b8cd-44821b4a81fa','-','b849a74d-c461-4c43-90c3-10ce52bd7730'),
 	 ('5e081cf6-5f3f-47a4-b6af-82c62d2338bf','198 cm','69a7279a-19cd-410c-b610-ebe1aec614e2');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('e348f703-4ffc-4f3a-9f8b-efdd05ed4534','-','a157b492-8781-4206-b20b-356521d841dc'),
 	 ('7d52f82a-41ce-4db2-86cc-9b60db281286','6''2','9060cebd-56ef-4762-89d9-8b476a9984ea'),
 	 ('3c93e080-3231-4994-9fe5-e47380f1d6e4','6''2','10c1acc2-dcc8-4508-824e-b5d5969ec07d'),
@@ -1549,7 +1549,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('a6da4f1d-eb4c-4d65-8e85-831da0124fed','175 cm','eecabf3f-02f5-47fe-94b9-41a6f9c46574'),
 	 ('227252db-2ab1-4d17-a414-15459af45f45','5''6','b53ecb88-30b1-4c45-8685-de1dc3a23990'),
 	 ('fc280728-3876-4fa8-9ac2-02b5c98caa41','5''6','38a1dee8-5b25-434b-a13b-27f86856d603');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('23b6ec09-8ba4-41c8-8e81-3419314250a7','0 cm','02455166-359d-4dc8-95ed-b3f3f2830a4d'),
 	 ('60318589-2b8f-4c87-99c4-fe11c2cb2ee1','6''9','efddb33c-12fb-473c-8116-5c94cda01be4'),
 	 ('d2234d98-6413-465b-9eff-67a957b9ed27','5''7','7719f3bd-4779-4e75-94c8-2d2fb03a0ec9'),
@@ -1560,7 +1560,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('67babfed-5d64-498b-9abb-604fe0ba2eb2','6''2','c59b4fca-7b3a-4be2-9166-b9a6110e295a'),
 	 ('f66e0238-0128-403b-9099-8f2810aef7b1','185 cm','64ee5a4e-c979-4520-951f-46ab652970c3'),
 	 ('812b1eaf-9e69-4bd6-b880-1e2e01af63ad','168 cm','d044d485-e8ff-4afe-889c-8a6719513af8');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('f19d2e6c-d4d5-4a9a-9043-c0f7dfcb90dd','5''10''','ba6fdf6b-6b40-447d-b8fa-811090ff0ebd'),
 	 ('de1d9cc5-dfcb-4036-8ab9-4c1954450e35','-','ef1f6c33-e463-4e0c-aea5-9eaba2ca7f9b'),
 	 ('673a77d5-d455-4dd4-bed5-e3f76c49bcb3','6''3','37e52287-a57d-4cb8-af9e-7cb3e51a58b5'),
@@ -1571,7 +1571,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('2cfea2f1-8ebf-48f5-a65d-93e6cc872842','5''7','1c148a7c-9c9c-409e-9a50-13cb425a1d0b'),
 	 ('e3a85b67-e9fd-4bda-a7ef-9a76ceea34b9','170 cm','b61cf683-237e-4e70-997b-3a2a963dcee5'),
 	 ('24f5e877-6457-4dfc-b1d1-543959d8facd','5''4','e8335617-e0b5-4bbb-9cf7-8ec0506a8c8a');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('3ef964e5-25c8-4974-9cb2-5a16320ef08e','6''0','02fc414c-9676-492e-bd51-f26848dbd94a'),
 	 ('9222625e-0da8-4ff7-9440-3daebbef5955','6''2','ebb0eb8a-e1aa-4224-ae24-5d9be2427226'),
 	 ('63a2d431-214d-41dd-aa5f-eacb8c288ba0','-','aed101ed-28b3-4539-80a1-d20a3227acd8'),
@@ -1582,7 +1582,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('090e58ad-8650-4010-929a-ef09ed230995','6''0','7d562dcc-6180-491f-a3f9-3e9980cb01d3'),
 	 ('a32a2abb-8a29-4287-b77d-15d9f8dd45b2','226 cm','1b18c933-5611-439a-b9be-1520fd04bb02'),
 	 ('2ae871e7-0104-4d9f-a135-3a34bf69c982','229 cm','d5f374c2-b6cb-4189-87d3-ab84673e8b40');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('b4e06be5-613e-4f23-9142-556a624fdaf0','188 cm','f3e7cd96-3470-4272-a2fd-56d3a50a7963'),
 	 ('a06f4ec9-8337-48ff-9ac5-029b9880ad82','218 cm','f345257e-f050-45ab-89f3-ecc0146a5a84'),
 	 ('6a75167d-af4a-4e27-a9d9-2182ed1850a5','168 cm','3ecd8afb-3bd0-461f-8960-78f4687f05bb'),
@@ -1593,7 +1593,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('0e2f07ac-6bd5-4765-9fd6-7842e26fbe39','198 cm','5d0ebaa5-6e3d-43b4-a198-c5e379bd8aae'),
 	 ('9bb8c596-4116-4e61-a5f5-6f40a677df09','6''3','8d7f0184-756d-4170-af9a-5ecc09f258a9'),
 	 ('5c986a47-7f24-4e56-82cc-7bfea048ffe1','5''7','408ce62b-4375-495d-9545-d209ad0a047b');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('31c4bcd8-58d9-4ef3-a810-dadc37c15898','191 cm','9ce307b3-3953-460b-98a6-df55ef25b037'),
 	 ('cbefab32-56f1-40ad-9e50-8a3680794f0f','178 cm','309d5459-0bbd-45f1-b067-bf3511c50120'),
 	 ('dbabb368-cce6-44e4-93c3-e712e7546ef6','170 cm','5d268e7e-9d7f-4ed7-9d74-76f6fe1a6594'),
@@ -1604,7 +1604,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('794a9d41-7f41-40b1-962b-8ad32fead190','180 cm','48258963-9f55-45ad-a35e-c6cd53b0cc4e'),
 	 ('089f6513-512e-4959-b9bb-8bc74d72f442','175 cm','5daf5f34-1697-4fd1-8080-7814e70e6e45'),
 	 ('ea4a78ad-8380-4819-b275-ef062820f3df','6''7','86dcc78f-ac30-4bc9-ba07-cac71420f6b1');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('bedcec51-c77b-4372-818a-3d7e0a125ccd','5''9','de4a424b-f52e-4b77-a00d-9e78d3e35b75'),
 	 ('d089e14e-4618-4517-a9ab-325814cde930','5''11','016955aa-457c-4770-9859-d24f3b9e3079'),
 	 ('20399f15-aef4-4dc9-8501-b861fb0b2ad2','163 cm','0bedfc70-3679-440f-bbdc-db26b472602a'),
@@ -1615,7 +1615,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('22afe493-4837-4c97-8397-ef3c24127781','267 cm','11450b94-e51d-44bd-a467-c6b094a0d854'),
 	 ('2a438790-dd90-4e13-9990-ea975cf4a12c','198 cm','79280d85-d970-451c-800d-32030085836a'),
 	 ('a232677d-5af7-4050-8dd3-9f9f2a32a6e4','0 cm','985a909b-b146-4e0f-9690-028f6f6c4351');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('5a1dbbf2-def3-4601-a6e8-4bfe2fc08e39','6''4','cdb553a0-fac0-4337-985d-21d4a3b939d3'),
 	 ('c051f6eb-3171-42ef-839c-a53801121962','173 cm','e63abad6-e827-4c3a-a75d-acaf90848916'),
 	 ('2ec6d141-5bdc-4e2c-b678-18927fb2271d','196 cm','5a76b619-c664-4289-92a7-c934a88bf81e'),
@@ -1626,7 +1626,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('2cb988ae-fe4f-4b35-897f-beb76d245df0','5''9','8e49c76b-6d98-4ee4-a3bc-bc4066c8a3dc'),
 	 ('ea99e4d7-d8ad-4b8a-9794-d60a4b1c8ef3','183 cm','64584b35-7904-4409-9a9c-1387847389ba'),
 	 ('a28a6866-fcde-4775-92c0-2ce485c79079','198 cm','0afa0e19-8b2a-414b-a147-f8ba3f3c94e6');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('b90ad53a-510e-4210-b245-39c2a018c412','5''9','906016f6-6d1a-485f-9472-859ecdb00a30'),
 	 ('dff967e3-10c3-4044-84f7-7d5fa6c83b7f','5''11','a2801d4b-8ec2-451f-acad-81ff7e0c6d95'),
 	 ('839c46fd-7eb3-480c-ac5e-c0564c74bd1c','6''','dba6665c-89db-41f1-9848-c871412435c1'),
@@ -1637,7 +1637,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('e0c49b12-428a-4cc5-bc33-4cbb9a1d9840','5''6','1c63c180-2a74-40a7-a15f-5fbb38890b3b'),
 	 ('7f25aea9-31a2-44d9-98ef-1a84cbb34dcd','5''1','b8319c2f-3305-4f0b-ba84-d29f1a615e8a'),
 	 ('0a7705e5-80b3-45bf-8600-d0d2bc08c0eb','183 cm','4a534cb8-e7a0-45cf-9260-e5a9c4805ce6');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('6cf1b72a-7749-41c5-aa03-45d3540f004b','-','c1a941d5-6b2c-40ec-aec3-edbe87a6481c'),
 	 ('473f069c-8c55-4106-adaa-a5f4c488410d','0 cm','b5fc2814-db8a-40b4-b99d-0a89db326dda'),
 	 ('1a330b33-31ac-4c9c-a631-a4c1efb937a6','234 cm','82287729-dd92-480f-b225-1d783347ff6f'),
@@ -1648,7 +1648,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('c08643d2-c633-4b75-833d-0935793ddd5b','168 cm','75bdb6c9-736a-4036-8aaa-040ba6e2517d'),
 	 ('6f8fd457-fe53-45b3-ab91-dcd4fb0fc24e','183 cm','ca982875-cdaa-4fe2-944c-3f16a92c9204'),
 	 ('e10f233e-ac28-4551-95db-99b39c9032d3','6''2''','f6ee2183-5f3a-46e9-b359-9399a97e1b85');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('eee8e90a-a354-43e5-8e12-6bc473432ef1','-','134678d1-d5a3-4c50-9f81-3fd8e3b091de'),
 	 ('84e77d4c-2515-4ec2-8f69-236cb55b5d2d','168 cm','00bdbb33-f000-47fa-abaf-45e46033d055'),
 	 ('aeadd2e0-9d25-4f11-b9d4-d8dc5755da69','5''9','ef45562c-ee79-45b6-b342-87bacb648834'),
@@ -1659,7 +1659,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('2b023291-58c3-41ff-aca8-58c236b09789','6''2','f40c42b5-5401-416c-b1b8-82902112fbe6'),
 	 ('8f9e7135-2b03-4d45-9a1d-27a67d30c440','180 cm','a6d5cc5d-6ad1-4d3b-9d74-3466db8c897d'),
 	 ('deb129e9-75e4-4db5-9877-7c60edaa0d79','6''7','ecbf8137-9a8c-45c8-bd74-d3b803526e27');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('541469bf-d299-4f19-a149-853df47b523f','180 cm','9cd097dd-1ceb-443f-aba4-b8207d606ad1'),
 	 ('ffb23cc5-7dae-4670-aec5-988bd6187c7a','185 cm','49aff108-2413-4f26-b57e-b7d5850dccdf'),
 	 ('763cec1b-f8cb-407e-b705-4beca36a0b5f','-','b4e0767c-b2a5-4ae6-9218-79c6d4938474'),
@@ -1670,7 +1670,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('5ff66725-ab40-4387-a935-44b6ddc7588b','-','6b426f7b-b2e4-4efa-86fe-baa2b28eb34c'),
 	 ('0f29246c-3ffa-4f54-b711-e25ca15db4cf','178 cm','af1e925d-9abc-4c14-b1a6-237ad98035b6'),
 	 ('099e4fe6-7a13-4bff-9a0f-e5a1f0c4a639','5''11','fbb44aac-d9c4-4b12-9cfc-f0caf8c96bad');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('f807bd3f-a658-4b42-be07-8ba8cc125f1c','5''10','f5faed34-a987-49a5-8b31-f9c1bb0ef185'),
 	 ('38204aba-1de1-4208-998c-7ac535cd98a3','165 cm','e1ba5e59-d47a-4ec7-b7b7-3c8825cd4ae9'),
 	 ('31557f67-0a73-45e3-a243-44e0226b003a','-','d61ec301-8b67-4f5f-9d56-1e3e9bd43707'),
@@ -1681,7 +1681,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('8d2119cb-06cc-4fa3-9957-dbb635f13d65','0 cm','71618c19-ce0f-4bb1-9d89-e42db0383fc3'),
 	 ('be2acace-62b3-4bae-b8b8-6ab1ac5e661f','4''6','f2d16de0-c908-4080-83ea-6aa13044a731'),
 	 ('f0449701-0457-44e3-8376-0b66a46d4f52','6''1','e5c8273e-3d31-494e-bc26-68ed3f15bd20');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('656e1a53-9416-4f58-9bb3-b360238a1ec6','4''0','79424fed-9ab9-444b-a373-fcf69f68c8e5'),
 	 ('d335a9f2-407d-4a06-8017-4baf99a36a76','6''2','d7569b4e-319d-4d25-b20b-053b808ac1fe'),
 	 ('298c3c86-b7a5-4c76-b2af-5d7f487f4bab','0 cm','0db5fac1-4dc4-4f88-9780-2989eb5a662d'),
@@ -1692,7 +1692,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('66b95f82-358b-4c24-9b39-acd3bc535578','279 cm','8f5a08e9-7218-43f3-9f62-a2c900bc6e0c'),
 	 ('2258da72-993d-49f8-ae35-5e213881eeff','168 cm','1838d806-f48f-409b-ab90-d1adc1b49307'),
 	 ('2d8ac426-b999-4380-9312-e7ce7fd13226','5''10','910505fb-75fa-44fb-a64c-459b2648e07e');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('a2d8e2d4-81cf-43c7-847a-9d1ad0410ca6','6''2','d5df752a-aa0c-4e90-a24f-40df4b5b75b9'),
 	 ('a2f554d7-c65a-4489-afff-48c130d6d694','165 cm','bb191e19-ac60-4cfb-b8d6-3217690d88f7'),
 	 ('73b5fbdc-7ac7-45d3-9ea5-f42877926262','-','0223d00b-4927-465f-90a3-09672b5fdc16'),
@@ -1703,7 +1703,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('a74d3fbd-7251-4256-8146-3fdcce5ae967','-','45d17d9a-7f9b-43a8-bb75-5e53f203a967'),
 	 ('e1239672-4a40-42f3-a23f-ed8ec875e4e7','0 cm','2b553a17-5960-4fe8-b0ae-098f4648954b'),
 	 ('93963cbc-5b08-4083-8849-e9c1cea22d62','6''1','8da7700e-28eb-4f56-9ed2-2eac64b44f92');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('9cfc5094-0395-4b18-8755-565a63840fda','6''9','51ec4a12-56fe-4b7c-8c36-12b35ab2dd3b'),
 	 ('e10256a3-4017-4cb3-9858-bf724bee0c94','15.2 meters','76873d08-6b9a-4903-bdce-1f09e02bb342'),
 	 ('c9927783-6836-48c2-9ec8-b2480be0f6d1','175 cm','f03bcce8-4c7d-4481-b6c4-6966e62e9bfe'),
@@ -1714,7 +1714,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('60584d25-14ca-443c-aaa2-9c2fa60aebec','0 cm','1bd8df3b-eda4-49c6-aa0a-82420ed10993'),
 	 ('d856c600-ddba-4aaf-a01c-ba2cf4f54220','173 cm','bb9237f0-f296-414b-800a-bc3243caa756'),
 	 ('47e48e62-881c-4ef5-81db-0509d3e4c5f5','0 cm','5e324659-59f4-45e8-be83-4164d6b50dfe');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('8508b275-7681-49fe-a7d4-2b110d1d3d67','6''0','d65ba406-ebfd-4944-b92a-2b1e92bb581a'),
 	 ('814a5633-6ff9-49d6-9f4e-98736f634b9a','170 cm','408ce62b-4375-495d-9545-d209ad0a047b'),
 	 ('d31e0c98-1643-4f2b-9820-1a6e510bebc4','183 cm','5d2014c9-e574-4f9c-aa20-6df357afabd9'),
@@ -1725,7 +1725,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('00c3a47d-08b2-46c4-a815-907661f555b0','165 cm','cb63c364-7063-420b-8e10-811d36234965'),
 	 ('b82bea51-4963-4ed4-ac42-f5bf41207dc7','-','88b0baa0-9122-458b-a5c9-e1844fb03c4f'),
 	 ('12d85aa3-13e4-43c9-ba4d-8b02c1d80f55','6''0','8f55396b-f52e-45d8-a19e-e96a64a51a4f');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('593a3cd4-f2b1-469e-a23f-a86e9f2e1fab','5''9','630fc046-bc71-4a9a-ba01-23ec2f462096'),
 	 ('59b29d0a-d43b-45d0-a457-38fd310a08b0','5''9','d512b623-8d11-4b34-b634-1f14e72b0d70'),
 	 ('06bc0b87-4a81-43cc-8101-c3f8d3cc7009','5''10','e409fb0d-d5ba-4460-8914-5f40313a3f7f'),
@@ -1736,7 +1736,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('231a0e19-b089-49e8-9dbe-735163b4fd79','188 cm','a3978ca4-e9ff-4d98-8026-3aead47326b6'),
 	 ('f62a5cd5-8b2e-4566-8b6c-0b7ffd8189cf','0 cm','2553bb14-b31b-4052-805c-891c54ff5087'),
 	 ('320fdf69-ad17-4847-a75b-39ee1d456ba7','173 cm','702e44bf-44bd-4106-8fe1-2e69abb74b76');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('dfae9b2a-7122-467e-9e3a-90f560e0207e','183 cm','7a78a42b-1af7-4a2e-ae3f-87cb1bb146f8'),
 	 ('29ad8eb1-c2c7-4bcb-8f11-22ad9cca1495','178 cm','6f8cf9b6-c9e1-48ef-8ebe-76df0ea4fa10'),
 	 ('7cde7512-1537-4070-9f29-b87c70894122','5''5','f657bd10-56dd-4408-9a40-617d1eb0c2d8'),
@@ -1747,7 +1747,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('c2fc19d7-9450-4414-a442-f2ec61c56263','5''11','f52b823b-fe09-4892-a198-5bcd376a4759'),
 	 ('e63433f2-481b-4dff-95ee-fb382cadb77c','6''0','7a096bb0-044d-483a-a753-cacc5a46f90d'),
 	 ('0cf3058c-0b5a-4d94-83ad-e6fdf5cc4d99','183 cm','f1b89433-0207-405b-a8b8-17f43a2911f4');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('1c18c18f-759e-4070-be69-2fe5591f753b','6''3','6935edfc-7e27-4e08-9c37-21e4b5957b45'),
 	 ('5aad169e-1ef8-4fd4-b129-2a7d1713612c','-','ebbfb7e6-84ec-49ca-858a-abe4386baec8'),
 	 ('15b52a93-c30f-4203-9dec-5337c4baf083','-','f7a7f438-28f7-41df-a586-f8db9932b646'),
@@ -1758,7 +1758,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('02aead3b-d488-487d-91eb-7820e094f3fe','5''5','4f45df50-f0dc-4237-80a5-a6eba831bdf5'),
 	 ('a1bafbc2-a448-4ae2-9399-f06d2f7df005','175 cm','cc35f9c8-801e-4206-a0e9-17ba73600997'),
 	 ('dbc6c311-4afe-4919-aa08-2ef503290ae4','5''6','75bdb6c9-736a-4036-8aaa-040ba6e2517d');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('ca7e80db-5d05-4a07-9f3f-39010b13f203','-','3cc7b06c-f2c6-4ff4-97c3-18bd8b2cfae7'),
 	 ('dd055ca2-8e41-4310-97ed-f614fe47d5fa','6''4','13a55bbe-153d-461e-b7c7-9454e57f2158'),
 	 ('986fe071-a0bc-4026-8171-23b79a88c4b4','188 cm','10c1acc2-dcc8-4508-824e-b5d5969ec07d'),
@@ -1769,7 +1769,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('2ae8f817-c6ec-4633-ba35-a0e612503689','6''2','6b7effa5-6b93-42e6-98be-4625409c5d86'),
 	 ('56d013bb-e01b-468b-8546-ccde9ac31c57','173 cm','beb0b154-3c98-484e-8a02-156e0f1c43e9'),
 	 ('97a98807-b005-4f61-8670-4047c4562ad6','188 cm','0118b447-e1eb-4848-a3d7-112149161e65');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('2595b81d-6c62-41a0-9821-9c856e8331cf','175 cm','24f24965-5277-42bf-8e6a-fb49849c177a'),
 	 ('085ca6a4-636d-4049-b26a-18a8e2eeb6d1','5''10','d53450aa-9270-4dae-b3c2-166630f997a6'),
 	 ('94fff420-1564-4586-bbbb-9d5a145a52bc','168 cm','38a1dee8-5b25-434b-a13b-27f86856d603'),
@@ -1780,7 +1780,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('2b039e50-4b18-4454-8945-f50c71359204','-','d3fba9db-afc1-4c06-b976-90835bf123e3'),
 	 ('bff2b604-aaff-4c64-9def-b9381f39ddda','170 cm','caf3250d-926a-49ca-a90c-7cb4899a02be'),
 	 ('08ded92a-3987-4b84-a64f-a2014b39d540','5''11','1504770b-ba8e-4bc7-b6b8-64320a4cb475');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('1889705a-8016-4246-afb6-12b694ef4033','183 cm','751c2cca-e452-4e43-8265-d13961577341'),
 	 ('9e22c951-d4eb-43fd-98c9-2442e5259258','5''5','e1ba5e59-d47a-4ec7-b7b7-3c8825cd4ae9'),
 	 ('05eae420-701e-4fa0-bcb8-b1d1dbafa018','188 cm','54c3a973-54ea-4c8b-8252-2fb63cb88a7a'),
@@ -1791,7 +1791,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('354ce523-2951-492e-8801-f2055a333398','6''4','bc3bf6b6-1315-4d15-a339-fd6d8079a145'),
 	 ('5c3e6101-5e3d-43d9-bf3f-af0e0ab5ed18','6''7','fc97a8f7-bdba-4b3c-b187-a7485fa9e629'),
 	 ('69f56751-067b-4e34-ae59-51b0b28d124b','5''10''','6ef3064e-9f3a-4993-8e71-fa31f0069f0c');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('e93583a2-a102-4d44-b193-9d0c303dfb4e','-','af16d0cc-4f05-4120-a129-b502e58cf2d5'),
 	 ('a7b50694-981d-40f8-876c-426d72475fb5','5''9','8c723ff1-8c40-41ff-8914-38b32657482f'),
 	 ('48d0658a-05fb-46c0-973b-5876a2c7b9d3','170 cm','1c148a7c-9c9c-409e-9a50-13cb425a1d0b'),
@@ -1802,7 +1802,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('b8742669-a943-4457-881f-03c3da489ddb','0 cm','36865d41-98e6-42f0-b6bb-c4e76916bd96'),
 	 ('e586570c-7a9b-4af3-9752-498ca945551f','5''10','9a226cdb-9671-424b-9027-f02595dd0461'),
 	 ('fd72da50-37b3-495a-b90a-fbb0594fd367','180 cm','36a046bc-72e6-480d-b2ae-b1268ad1e33d');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('8988c092-3fbd-4242-9269-f9f75c8865ee','5''11','05d6dcd0-a4ae-49cf-97b8-66b09b1662e3'),
 	 ('ef384306-3add-449c-9ee9-b4dc06fce360','0 cm','636baf64-2c15-4efe-8a80-f639f4961911'),
 	 ('a183de9e-741b-4a3e-b9fa-0091ef59f02f','0 cm','aed101ed-28b3-4539-80a1-d20a3227acd8'),
@@ -1813,7 +1813,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('3a159414-ec6c-4750-8745-172ae9316bc7','183 cm','7d562dcc-6180-491f-a3f9-3e9980cb01d3'),
 	 ('c87e0597-33c6-4e61-9c0e-d754169d4a0d','191 cm','4d29e309-cf46-427f-bdbb-19de1b9d8b5e'),
 	 ('c8b5aff8-ac9f-4f67-86c1-0b05851fb5e9','-','da9a9f41-08cd-4a3a-a6f6-3db57c47c6fb');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('21d472d7-225d-4bd1-811d-9d1628d5c190','183 cm','bc39c3b0-8f5e-404c-9b70-1a28bd9b97f2'),
 	 ('2a49c3a8-4745-446d-9302-f1f123927f1b','304.8 meters','581edfd2-bcd2-4d9a-ac2b-4388493739e2'),
 	 ('8ad09366-f4ea-4ea3-9412-6508e46e0b8d','6''6','bc9939f8-0dc5-4a91-9ca6-26d4150d722a'),
@@ -1824,7 +1824,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('779c69ee-3b36-4b52-9f00-aa55f4e2db16','165 cm','ca2d750c-56e4-4272-ac75-cf1ada2830df'),
 	 ('75947f8e-5892-4f20-9588-65a33099a168','-','631165db-e481-4256-811d-7e7669d07c51'),
 	 ('5872bfea-272d-4a4f-bf4a-44dd28c9ebc0','6''6','71798078-c510-4a10-8bfc-8e4ffcf1ff76');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('d322b138-4386-40cc-bab9-c59938695d57','6''4','53d9d46e-4d60-4ef4-b3b0-adb8b992b356'),
 	 ('87aa1de9-7d3e-4322-9d5f-02f1aafea6f8','7''5','80badf9f-ea37-431b-9f53-4992d13d4a9c'),
 	 ('80434400-8b4d-4264-a7bf-7e4dd49dfd24','226 cm','3d843b40-3eb1-441a-ab9f-57dd45d430c4'),
@@ -1835,7 +1835,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('c852869b-cc9b-4076-8274-f269f1fec834','6''4','bbf28b7f-c6dd-4dc5-820e-a830ff8cc95c'),
 	 ('a6cb8a2b-c824-48cb-a6b0-14a36ad758c9','-','87e073ca-e4ad-44de-955c-68eb25b56df8'),
 	 ('f89e7a00-3bab-4778-8ce0-706d5209ff85','6''2','4ad60221-23c7-480f-9e4e-54ff380187a7');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('c29b1922-1b4c-46ff-94be-22262b7f15cb','188 cm','cd53ca6b-90a7-4da9-bc82-383ec25a3eab'),
 	 ('fe54ee2d-43b1-437c-98ba-91bfb1070706','6''5','5a76b619-c664-4289-92a7-c934a88bf81e'),
 	 ('bb3fa53c-c058-4bd5-917a-2855746fdb1a','6''1','54310e35-12ff-42da-9905-03d1daff4c71'),
@@ -1846,7 +1846,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('7e85a480-a97e-4c11-a7f6-7776f7b57a8c','5''11','429fbac8-6d25-46f5-a2b2-7e1c38fcf407'),
 	 ('9ddf3e1f-f3cf-42ac-80d4-3d41731021db','183 cm','001cc4f4-fe3d-48c2-bbdd-6c2116761e92'),
 	 ('83925714-4e81-4c99-9d75-09a0f01e57ad','6''2','eaa5766c-d86e-4220-8f2f-4268d762da12');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('ce646118-beff-412f-9b37-599984ed251e','-','3ca3ce44-ce2c-46cd-a867-81a8f5c39e3a'),
 	 ('4c6e895c-57e1-4814-9e52-16163e0682c4','183 cm','5d86c5b9-94a7-4442-be50-f0383f12d709'),
 	 ('d476d7a4-90c6-4858-8ef6-9c35743db663','5''7','157d57ab-6192-439f-8809-55e757acdd96'),
@@ -1857,7 +1857,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('7f2a8a8b-4836-4a7d-9143-9c7f25ba9052','8''0','52455c52-4b95-4f19-b76d-f8bca56e09c5'),
 	 ('b5d87db2-21b5-42e8-aa45-75ecedcf7356','5''7','8d686d5b-9dd0-4811-8317-d391a26a4577'),
 	 ('22e54eb6-e78a-400f-8e2a-eb9fc2c0f808','5''9','74e605ae-6de3-42e7-a369-49eac3d11e11');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('fc14d504-13e9-4f3b-90a5-78ea15436f29','155 cm','b8319c2f-3305-4f0b-ba84-d29f1a615e8a'),
 	 ('77b958c0-7c15-4a79-93e1-6390b8ce7c89','-','549c4ab7-62d0-4bdd-8672-a6ad3a88f8f4'),
 	 ('b7648837-a0c0-4da1-907b-3d760a8cae2c','6''5','6c759fdd-0956-46a1-b66b-46d742b8f855'),
@@ -1868,7 +1868,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('f0ef8196-3552-4a5f-ae25-13438844ed7e','6''0','8aad064a-75bb-4402-9567-0934d7c16721'),
 	 ('a30d6892-800e-4b9b-bbfc-644c5d19b10b','180 cm','8114b730-364e-461c-8558-441b8979b9e7'),
 	 ('67cb4c63-9569-4cf6-8890-3b5dc95edf1a','244 cm','1f24b203-bf85-45b9-998d-dbdad30ce733');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('372ddeb1-44b1-4430-85f5-f071f4277be1','155 cm','4d94a979-a551-4ae8-86ce-7d8bbebc8bd2'),
 	 ('1aa06df3-5066-4872-bd2c-70ba92806eff','229 cm','f4918025-bf2f-4b7a-9d6e-d3b15d45adba'),
 	 ('1c4481ed-dc05-4793-a808-fea5d7c94c76','193 cm','13a55bbe-153d-461e-b7c7-9454e57f2158'),
@@ -1879,7 +1879,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('9a4f4e1d-b754-4983-b710-e5e7f665fc38','0 cm','96dff2b5-8f85-4b8b-afd3-787e536da761'),
 	 ('b4f9358b-71f6-4d55-ba8d-b27a8f1b2892','185 cm','ec30c319-cfb6-4fe4-a66e-6b992266457a'),
 	 ('36d92101-ad9f-4004-b08d-115cd16d702f','196 cm','32b62f19-d0b1-44a9-a3eb-675e2fbc8e88');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('22be7f06-1f36-4d8f-8073-e0110c9b041d','6''5','0bc495c5-1375-41c8-8d5c-330993b508e5'),
 	 ('28947259-6a53-4441-86eb-1e7a20f4e7f5','188 cm','f40c42b5-5401-416c-b1b8-82902112fbe6'),
 	 ('b476f52f-5fcc-409c-8b8a-eba094c12787','6''1','49aff108-2413-4f26-b57e-b7d5850dccdf'),
@@ -1890,7 +1890,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('3254d196-b2e0-43d6-b04d-3014abc3b479','5''6','bd1344cc-3e0d-487c-a070-ea3d3ff0720e'),
 	 ('30f1cf27-13f9-4af3-8fee-7bd626076a75','180 cm','c4d7b2e9-d004-40b8-a802-ffac6ff7f153'),
 	 ('900f5603-e211-41dd-9b58-d071f1286cc9','5''4','5af9c532-ef3a-4542-b26b-9649f626d9af');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('0f50f544-51a3-43f0-8c36-878687449db6','5''11','f89f984e-8cb5-4773-bbba-2192e4ac24fe'),
 	 ('c12d5b5d-5774-41fc-9d7d-9f806ff52b93','183 cm','ad0f7638-8905-4725-9f92-6f12af40c00f'),
 	 ('ea596dca-5eab-4ccd-9ef3-18369de10b0a','0 cm','d96b2112-0df3-44e1-8fbb-b11aa1dff47d'),
@@ -1901,7 +1901,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('90d7f0e8-c69c-4740-85ef-bd94594dd9be','10''','3f46b7e7-0150-42de-84cb-d34ac615bc7d'),
 	 ('c6cb69cf-5a5e-4923-97e1-d476d4319581','5''8','ba0e1289-c7f0-4cfb-a729-edf05cc67aa2'),
 	 ('37b609e0-8192-43d8-9968-b04d90549ccf','183 cm','c633ead0-a319-466d-9df1-0923c4184d2d');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('c7a0fbb3-4931-4d8f-8ef9-9a0a7de220fd','178 cm','1e183c84-7128-4323-90f8-ade2dd622303'),
 	 ('7e5a1aa8-6659-40d8-8b57-9dfd919c933d','191 cm','bd04f550-fbcd-4318-89f8-0eeab7445c16'),
 	 ('628e509d-1080-42d4-8cc6-0f436711cf42','5''8','f1a6b4a5-d2e0-4c0b-99e3-e9fe6486c09d'),
@@ -1912,7 +1912,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('cb4d9111-3f2f-46b7-91d6-d4fb7c306344','183 cm','81cf1a2f-0f13-44ec-a37c-0fabed81c6cb'),
 	 ('e3438d32-ff9e-42a6-879b-bb9e286f4681','183 cm','80909e77-7e20-4311-981f-9f5c58ec7021'),
 	 ('116a7d2f-3262-4f9c-87c7-eb7a100c00d6','196 cm','727a8e89-e40b-40a0-b3ef-6774276668f3');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('a14fcfc1-14f1-45d9-946c-97a693679195','180 cm','472d6888-c134-4f9d-8372-be86f2ce8c07'),
 	 ('5572086b-e446-4d53-94ef-718f7a3357eb','-','2b553a17-5960-4fe8-b0ae-098f4648954b'),
 	 ('a9460886-58c1-4dd3-b282-39c4a235e4f8','-','636baf64-2c15-4efe-8a80-f639f4961911'),
@@ -1923,7 +1923,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('192184f6-6307-4cdf-98d6-8ad32af98c94','6''2''','6df7c126-00d0-4508-aef8-7ed0ffc7a345'),
 	 ('d30da106-782f-4a2e-a017-7e6adcdf4383','0 cm','da9a9f41-08cd-4a3a-a6f6-3db57c47c6fb'),
 	 ('e0d06977-ef7a-446b-b0bf-eae13248eeaf','160 cm','3d2c804a-87ae-4e85-b26b-7158fc34ddb1');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('e004c36b-e375-45df-b482-1d56491850b7','183 cm','4a3e1550-29bd-4387-a1a8-184d45d8555f'),
 	 ('78c9af8f-750f-4de4-ab23-5ca2175ee1f5','6''','bc39c3b0-8f5e-404c-9b70-1a28bd9b97f2'),
 	 ('889ef58e-ed79-4dd5-8b32-6eb14354320b','6''1','b25aa1ac-ee32-4b7f-9ae8-24c3d69db971'),
@@ -1934,7 +1934,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('cb99283e-971a-480f-a24a-35d12bac036b','6''3','9ce307b3-3953-460b-98a6-df55ef25b037'),
 	 ('a6b5afda-9289-47ac-87d6-debe105e8146','188 cm','7bb7c723-785c-4f5a-a332-1d2b3830db07'),
 	 ('019b4c86-e280-46fa-99e0-0aff752d36fd','-','2fae8389-2e34-4b08-9120-55921790bac3');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('f66f7e08-4812-4d8b-a968-02e73f663686','-','0297d434-aedf-4af1-822c-33cc62890805'),
 	 ('a11964cc-b1b1-45bc-995d-71842a9f88ae','0 cm','631165db-e481-4256-811d-7e7669d07c51'),
 	 ('9c762dce-1d02-4c3a-a299-8fa1c5893377','198 cm','71798078-c510-4a10-8bfc-8e4ffcf1ff76'),
@@ -1945,7 +1945,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('e26f02ea-f4c1-4608-8593-9016906533b3','183 cm','70c44f84-695b-4b26-b839-ed259c195ed8'),
 	 ('00cd8817-08c4-45a8-b4da-d5045449cb7d','6''0','12b2386b-4feb-48b5-a597-a8d559215a30'),
 	 ('e67188ef-ebee-4ab0-b61a-2631368bcfb1','6''3','2a1bb1cd-62c3-4fcd-b1bf-772dacb61302');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('5defc513-20ca-4be4-b7d6-468efc26ebc7','122 cm','704124f8-6ee3-4a57-922b-2ef1ba07ff02'),
 	 ('a358caed-c7c8-414c-94d1-480ec80d74b9','193 cm','cdb553a0-fac0-4337-985d-21d4a3b939d3'),
 	 ('c3aee886-3710-44c9-a686-d2058fdaf318','185 cm','3169fa58-8c12-49d7-bb37-c7d67068d01c'),
@@ -1956,7 +1956,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('a462321c-a80d-4f50-9503-2d07111bfd44','0 cm','ad893c6e-0a12-48a9-a71d-63a49e4224ba'),
 	 ('fa7f89e2-3b2e-43ca-ade7-ddb815252c8a','193 cm','2f3ac360-4ef8-47bf-b153-f103b9d0fd7e'),
 	 ('497ffc8f-9d02-4d18-95df-a6d32e64de86','168 cm','8661f23d-37f0-44a3-9641-eadb426c1ce7');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('69cfb567-94d5-482b-ba88-7b0eab3ecfb5','188 cm','eaa5766c-d86e-4220-8f2f-4268d762da12'),
 	 ('1dc2d78c-25f9-4158-ac29-d1f42909119d','0 cm','3ca3ce44-ce2c-46cd-a867-81a8f5c39e3a'),
 	 ('7ad802a1-9bee-4be2-ba85-36e43a80821d','6''6','0afa0e19-8b2a-414b-a147-f8ba3f3c94e6'),
@@ -1967,7 +1967,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('51762ff8-409a-4b1d-9641-786aa6744a2c','6''2','96010c0b-c86b-4b3c-a24e-68c21f8ccab1'),
 	 ('0cbee4d6-99bf-4549-92c6-3f689f68a8b6','6''2','8a7dc1e3-1af0-4185-bdad-72f1ff53db33'),
 	 ('6800525f-5ca5-40f9-8861-ce80a26f6770','23''0','220fda3d-b729-43bf-8ce3-9f6e1b4b6175');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('4e254ef8-ec65-4cd8-9a6a-20dbd9d9815f','5''11','6e9e0d1e-c60a-42eb-9e1e-8199f0a1db25'),
 	 ('169357da-1d4d-4823-9cc2-ea71e2d40157','259 cm','37927583-41c6-44e0-9b01-e03d18f234c4'),
 	 ('22b339ba-8a33-4f79-80ed-b10d482f41af','185 cm','5d21338d-87d8-45dc-8c3e-407e7dd18c61'),
@@ -1978,7 +1978,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('86d975f9-a915-4a79-977c-cbea3a6044c4','183 cm','7a096bb0-044d-483a-a753-cacc5a46f90d'),
 	 ('418be5fa-fd62-45ff-9ed5-6374c9b13418','6''0','6c533c83-893d-4d7d-b639-cec76bce742b'),
 	 ('fa4247f8-ff14-4973-8478-c0d9c795c114','178 cm','7c804beb-3d78-4c9f-b7fe-d9af65f9f354');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('da9f3d42-3860-4f26-b048-e424c10dccae','0 cm','706a2f12-5042-4781-a597-7fcf638fbb5e'),
 	 ('a1579e25-3fc0-4506-9680-159531ef097b','0 cm','7b0d2be1-bc07-4d98-a92a-8c0e0f967b73'),
 	 ('0cd0e5dd-085e-41b5-8d77-8c46fb9277b3','-','46846f6c-de95-448a-ab03-a0571b5d4293'),
@@ -1989,7 +1989,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('b328f9a6-e16e-4ea6-a06f-fd1d55448bf4','100''0','1b32bc5b-37ee-4303-917b-8be2e12a93df'),
 	 ('32c3b580-c165-44d8-ad40-3bc38684aa15','183 cm','8aad064a-75bb-4402-9567-0934d7c16721'),
 	 ('c886dc7d-7e00-45b6-b20f-bf2a2ebe60d3','0 cm','0dca44e8-0354-4026-a5c3-284bdcff6867');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('3df94706-c51c-43e8-b16a-580b2b96c2df','6''3','fc1ba992-fa82-4ad0-ab7b-778521270f9d'),
 	 ('128849e9-b572-4c07-876a-f5b80c057550','178 cm','a3b17398-2eb8-4367-b71c-6f18659d29a1'),
 	 ('36407afb-996b-4031-bd35-1589fc2fde4b','0 cm','1c9debad-356e-4486-915e-c3d6fcdd8891'),
@@ -2000,7 +2000,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('07bee0e1-16ae-42e4-916f-ecdf15b96dde','213 cm','22583a81-cad0-4a50-aeac-a3530c42f100'),
 	 ('2534a9d2-3a01-45e1-9c48-81afde9fa88f','201 cm','d4295a36-3f7c-4e59-a0b4-a0693b114ecb'),
 	 ('0196909f-9f15-4856-a312-eb199c14c568','6''6','69a7279a-19cd-410c-b610-ebe1aec614e2');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('3b9a351b-47ee-42ab-b160-8b0382136826','5''11','965625ca-217f-4dc1-917d-3833ca94f638'),
 	 ('960c3938-9523-46c1-9511-2ce4c32edeef','6''','fd6d49dd-829f-4cc3-8d98-cd9489c2ac74'),
 	 ('bf841da7-9863-4c93-be72-3ccd8723aabd','0 cm','a89cbd7e-b0a6-4496-9021-09f11a1e83f8'),
@@ -2011,7 +2011,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('87b61a93-bb4c-40ef-bf31-a02fa371b455','5''11','f37c1a9e-3b69-435e-a5f3-8c02315eb379'),
 	 ('899c39b6-46a2-47e0-ac20-78e794e0c3fb','5''10','8b646f95-bc57-49e0-914d-4f664c105e9d'),
 	 ('bbb711f0-1b69-4775-a1f5-2dac11c15a8f','5''11','1cc37b4a-bb5b-4139-9db1-83f0fa800b8c');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('90e2820d-ac85-41ad-9bfa-26473bcbdfa6','5''4','951bb1f6-7cfd-47b3-bad7-d6a79569c83f'),
 	 ('197ce8fb-19e9-45ab-aadf-c6a7d6696e78','213 cm','74ca49e3-2cb1-4d32-8c9a-bc024de8674e'),
 	 ('517dbbce-7f00-4629-9d0e-1d38cda18ff9','183 cm','08d5497f-7651-4dde-b1ce-09f681590407'),
@@ -2022,7 +2022,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('16b58263-19f0-43f4-a92c-8c8742a4d4be','196 cm','4522830b-c7cb-45bc-a257-178376d37d09'),
 	 ('3739a9cc-4c9d-4299-b4cc-6aab071d7d5d','6''0','faa5b47a-a4de-4fef-9bc8-e3c09c3c40c1'),
 	 ('34dc2b92-dd14-489a-a66b-173dccb58e47','-','71618c19-ce0f-4bb1-9d89-e42db0383fc3');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('1629c760-d94b-4809-94ae-59feea32c79d','279 cm','142557fe-427d-480e-a82e-05c13a9eb91b'),
 	 ('e78c017f-bd07-4acb-967d-1350b97355bc','6''0','c633ead0-a319-466d-9df1-0923c4184d2d'),
 	 ('b5b6b3f2-00c3-4068-b5b5-dcfb4a6aae11','5''10','1e183c84-7128-4323-90f8-ade2dd622303'),
@@ -2033,7 +2033,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('62dd1438-7a3c-4357-b369-61394041e29a','5''5','e84aed91-7b18-4193-b87e-fd1ad00c9730'),
 	 ('070de904-456c-47bc-93b7-2aa4957acba6','-','091168b3-9b43-46f0-afcf-5881d211242f'),
 	 ('08ba71cf-aea7-47f5-b93e-1dce40406eb4','188 cm','c0b89a46-5c44-41d8-b40c-e5cc3ae3a38b');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('57c5bf80-15ea-4034-ac8d-85a1a57009f1','0 cm','b94a6e3a-0ab9-4cfa-ac84-046171d23a6c'),
 	 ('3305273f-88d2-4021-bc1d-b9e80e5ec540','5''8','7cd41930-b2da-43e1-b59a-a68b8ba9267b'),
 	 ('49357b89-ce65-4af5-ba46-3dddc0504950','5''5','bb191e19-ac60-4cfb-b8d6-3217690d88f7'),
@@ -2044,7 +2044,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('a4f2c00e-4b3b-4cf9-87c7-bb636072e7b8','50''0','76873d08-6b9a-4903-bdce-1f09e02bb342'),
 	 ('b150eaac-4457-4a75-9e25-b58f8f10b180','5''9','6c2e64ab-dc8c-44f1-8c71-715c56154b28'),
 	 ('4d863bf5-55a3-4c38-bd52-8a64ae4592b9','5''5','6331044e-5141-491a-a95f-bfe14c901b28');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('2eafff59-89c6-4aca-afe1-d22651345c53','5''11','48b5cba1-1f8d-448c-976e-a2c810a04d27'),
 	 ('3b3470a6-d6ec-4676-942e-d34d417e62ff','6''3','41eb39b3-8b00-46b3-95e1-e4a9164f74ab'),
 	 ('a7bd5a66-0f0a-4255-9015-2838be68b7d3','183 cm','cab95b0a-eb04-476d-a01f-fbae1643c5dd'),
@@ -2055,7 +2055,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('1d9c3847-08e6-4c86-af43-528ba31e3621','-','d6e21efc-17fa-4d05-a264-dede11fe4c33'),
 	 ('7e344498-2247-440f-bb83-c9e9b6a0c58d','5''9','f03bcce8-4c7d-4481-b6c4-6966e62e9bfe'),
 	 ('35bb8667-c99f-45a9-b169-21e0d2110743','191 cm','8d7f0184-756d-4170-af9a-5ecc09f258a9');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('55455584-0f7a-4fa1-94ea-86d157afc953','188 cm','4cd073ff-a33e-4b24-acd6-db0edccad435'),
 	 ('1cc111f7-9b45-4cfb-a536-c457be9cf7db','198 cm','3e3dcceb-dfbb-4791-8825-c07c1bb4eb05'),
 	 ('310ebcea-fb31-450d-9316-e0e13ab7f837','5''9','5daf5f34-1697-4fd1-8080-7814e70e6e45'),
@@ -2066,7 +2066,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('990e8985-e501-4e4b-9bc6-525a6034d40f','0 cm','0f369d5d-020a-4760-abf6-83a4b0597d59'),
 	 ('5c8187e9-0d42-449a-9046-4e0c3e4ad6e3','170 cm','83b361f5-b804-452e-aeb9-96e17ee0ab84'),
 	 ('4e17b671-930a-495d-b77e-83e23851c16e','0 cm','f68b69ed-703a-47f4-82ff-8c87c87693d6');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('6aa04a9d-5f11-4217-a2f3-ecb993b6f1b4','173 cm','a0671fe4-fa82-4b0a-9bf6-43713828a21b'),
 	 ('f1025148-5a0a-4375-ad08-45891c5d866f','193 cm','bbf28b7f-c6dd-4dc5-820e-a830ff8cc95c'),
 	 ('b00b832f-ad2e-4eee-9df4-c88b6c5926d9','5''9','63ac085a-cf29-4ca0-8da1-76763334c834'),
@@ -2077,7 +2077,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('dfe6b61d-c0a1-47e6-a65a-3c7d60851aef','-','2553bb14-b31b-4052-805c-891c54ff5087'),
 	 ('f223ede1-c922-484f-8ddb-14553758c101','6''2','ebbc0af1-a865-44ed-8549-a5f718725996'),
 	 ('1b095ef5-3207-4f80-a705-896321c477fc','6''4''','2f3ac360-4ef8-47bf-b153-f103b9d0fd7e');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('1844fc4a-e097-4a94-8e3f-92bc72b3ff9a','5''6','8661f23d-37f0-44a3-9641-eadb426c1ce7'),
 	 ('f30941f9-9004-486d-b7c3-b214fb491a75','6''0','001cc4f4-fe3d-48c2-bbdd-6c2116761e92'),
 	 ('5a2ed65d-2ae8-419d-815b-d88888b0d274','142 cm','edf7308d-34bf-4c6f-b30c-fc581ddf15f2'),
@@ -2088,7 +2088,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('e534c2ce-1d0c-46a6-80e6-650cc08ff918','8''6','37927583-41c6-44e0-9b01-e03d18f234c4'),
 	 ('b80a72d6-d8ff-4ee7-85c2-6893c9a7557d','6''1','5d21338d-87d8-45dc-8c3e-407e7dd18c61'),
 	 ('5a772415-71b0-4732-b6ef-419a39265e5f','244 cm','52455c52-4b95-4f19-b76d-f8bca56e09c5');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('5ebb78af-8ecf-4d4f-9eff-b841c8a8898b','6''5','0cea3e26-d172-4693-8b99-95fdc76ad113'),
 	 ('8ff2f21c-fb8c-4b09-8a77-de6dbe58ad30','0 cm','d72189d6-e14f-4a45-88b2-b6a7212de396'),
 	 ('b4e2b250-7de6-4a5c-8f9e-51d7c9b1e8e6','168 cm','1c63c180-2a74-40a7-a15f-5fbb38890b3b'),
@@ -2099,7 +2099,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('f537337b-df5e-40ca-b2b4-b1f387c1ffab','6''4','2526f535-f7d7-4ce6-a08a-aeccecf80831'),
 	 ('65fa80ff-52e6-42fa-83ec-720a6736a753','0 cm','44292fdc-0faf-4faa-b969-7a55c2c35ee8'),
 	 ('c1a0c7ce-09f4-4087-9fc0-11c15e9d1cb3','-','facfdc5b-65a3-4956-b0b6-95f02bcb9135');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('56ef96e9-16f4-41e4-bf0d-0c73fd16ca8a','165 cm','9d723e77-fead-4abb-a90c-89258a345f9a'),
 	 ('2c32e54a-f4df-41d6-92db-8a8057764867','170 cm','dface3a2-1ce7-48d2-a55e-bd39a8e49d40'),
 	 ('6e303c3d-b99d-45fc-958d-c2e7e452c636','0 cm','723c6d8c-17f2-40bf-8852-6cb2a01feb27'),
@@ -2110,7 +2110,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('e2fbccca-e67b-464c-9ba1-19a5c4eccebb','188 cm','3e2cdb8d-8c70-4bdb-83d0-58d615034020'),
 	 ('a24bcb93-ac04-4117-8edf-1f537af42868','8''0','1f24b203-bf85-45b9-998d-dbdad30ce733'),
 	 ('a4b98faa-e694-4df7-88ed-c8a2734d35e9','191 cm','fc1ba992-fa82-4ad0-ab7b-778521270f9d');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('6cbe9a11-5ee2-4a94-b670-d8189078e21a','0 cm','8a6b3759-fb54-4071-92aa-85c0fcda2073'),
 	 ('98e70059-ae1c-47f1-bea3-dbb7026ff22e','6''2','aed0c6d2-849b-41fc-94b4-ec92b79eba6a'),
 	 ('6cec49ac-5746-406f-ab80-dddf8e425670','5''7''','d90a3831-5080-4b54-88cd-b3ad90033f5e'),
@@ -2121,7 +2121,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('288b1933-894e-424a-af76-a19b418967c5','0 cm','de19503f-0a2b-4951-b956-94f286756fd0'),
 	 ('74219cdb-d085-4c8f-af1e-282e080016dd','366 cm','1ad47a32-14c9-4f38-83a2-fc202da12f4b'),
 	 ('f5f02d74-e880-45e7-9082-dd7fac081aa1','5''11''','a6d5cc5d-6ad1-4d3b-9d74-3466db8c897d');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('3bf4a1e2-da27-44c6-910c-d6e8a4a18c38','175 cm','9a46a8b8-8ba6-4337-ba82-93b255c6adbd'),
 	 ('91afceac-6748-4314-b2e3-c1be2d9609b8','168 cm','b53ecb88-30b1-4c45-8685-de1dc3a23990'),
 	 ('3619bf1c-43c4-4205-91aa-ed6c6f1ad65c','0 cm','1bf867b6-b3e5-45dd-ab0d-8243de735bcf'),
@@ -2132,7 +2132,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('ac9565d3-6a34-4230-82e2-6051d3bf11df','10''0','6bbfad7e-9165-42f7-8f4e-aa539d932311'),
 	 ('2a1f6a81-68c7-4add-9f71-28767928ec7f','180 cm','1504770b-ba8e-4bc7-b6b8-64320a4cb475'),
 	 ('3e7262a8-9924-4881-b25c-f1853f8e7f62','6''0','570053f6-8476-4fcc-b994-68cb9f4e6eb3');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('93e6bcc5-49ab-4375-986f-080ed8704ef0','-','10bbe3c6-ac51-424b-a6d8-813c224ebec6'),
 	 ('da2959d9-987d-486c-80b7-b45ae13cf33d','165 cm','48a4df97-5d8b-410f-8311-a7c00bf66ae5'),
 	 ('d91ae9d1-60e5-4ee7-8008-2acf1b654c00','9''2','142557fe-427d-480e-a82e-05c13a9eb91b'),
@@ -2143,7 +2143,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('da4792a0-84d1-4124-b793-657b1afc037a','5''8','695463d2-23d6-4867-bb48-e93b5375f527'),
 	 ('2789ff26-18c0-4c91-be24-127b13e2f459','6''4','c10d2076-c7b9-4353-b5f0-66a7ead96d19'),
 	 ('e8a8460b-99ab-4d2c-9034-804a1551b358','0 cm','af16d0cc-4f05-4120-a129-b502e58cf2d5');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('2fa51cfe-f0b2-47c6-b706-73ee3063c4e5','175 cm','8c723ff1-8c40-41ff-8914-38b32657482f'),
 	 ('eeb11398-43e6-46ca-832b-59733f6b2223','157 cm','b02342aa-9171-4bd3-afc5-be0435866495'),
 	 ('f1520caa-c396-4fda-a304-eb55e3ff816b','165 cm','67e449ee-6839-460a-8e84-942f3df7561c'),
@@ -2154,7 +2154,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('d4e61bbb-bf0b-410e-9b9c-260d727169a1','165 cm','9efc7770-079f-42fc-b9df-1c00505ab4d4'),
 	 ('3abd1ddf-fef9-4e1a-a7f5-0612acb81dbf','5''10','681026db-dc21-475d-9d78-6b4037672ae1'),
 	 ('780e0bba-f488-4288-9d89-3eda1b263201','198 cm','563cbc20-0559-41fd-9143-2a39eebfe6d5');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('0f2cd06c-89a8-476f-9cdd-285ff0cbdff4','175 cm','e96eaa56-ee65-44ca-8df7-d6c8ebed9ad6'),
 	 ('3ac1561c-2349-4359-a22d-e1cc932ba91d','168 cm','53c141da-5581-4ec8-ad84-dd26d05ff002'),
 	 ('41d2c36e-3163-462d-a8b3-b763b3c62fa6','6''3','4d29e309-cf46-427f-bdbb-19de1b9d8b5e'),
@@ -2165,7 +2165,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('d488a44e-949a-4152-901f-0e37a3525bdc','5''8','d5db0216-360c-4268-bfed-6d3e9768f65a'),
 	 ('cde025df-ca09-4efe-bc18-52c40c07eaa3','163 cm','c768d17e-8cfc-43b7-b88d-f406581c0caa'),
 	 ('a6d02c29-a390-42d8-bae0-967a2bcb53b9','2''2','5ac36ad4-2e8e-441a-9835-d089569ff061');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('46f1a4ab-5d64-4244-bec9-0375eea0055d','6''2','7a005841-2bf3-444c-bc54-7e1ae4f50a56'),
 	 ('ff4821e2-1ce1-409c-a9e8-26458aedf976','-','5e324659-59f4-45e8-be83-4164d6b50dfe'),
 	 ('632a7d25-ed21-409f-868c-fb50b90607d9','6''0','5d2014c9-e574-4f9c-aa20-6df357afabd9'),
@@ -2176,7 +2176,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('2d017974-2233-400e-b83c-059accdaa455','193 cm','75c0efbd-81f6-4404-99a3-44e20d6c062d'),
 	 ('79da2a8b-9250-4045-9bb3-c197fbc600fa','5''5','cb63c364-7063-420b-8e10-811d36234965'),
 	 ('6da6e264-5077-4ff2-86d2-e2eccfe8957f','6''0','2954d469-f486-4789-8f8f-6b73acb88f59');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('39350014-142c-4098-9bbe-e504438b4940','0 cm','cf9a33cd-0dca-4bf0-a847-9de0257fd22a'),
 	 ('38e5e28d-bdda-46c3-b116-a7fce2c3bbe5','183 cm','12b2386b-4feb-48b5-a597-a8d559215a30'),
 	 ('11cfe637-2abf-47fe-9834-9899c7ea2ec5','191 cm','2a1bb1cd-62c3-4fcd-b1bf-772dacb61302'),
@@ -2187,7 +2187,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('ad98edc3-c833-4106-8fa8-9663efa97855','183 cm','b2e72f09-dcde-4ddb-b834-34a6f2ea9658'),
 	 ('3aae7d5f-10ce-439a-89f0-e1251c282ea0','6''7','89f02ca5-fcbb-464f-ac62-9f2306751417'),
 	 ('ca499ab2-c857-44be-8f3c-b9cd5a3c28f2','175 cm','63ac085a-cf29-4ca0-8da1-76763334c834');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('a84ef62e-a432-4c83-ab63-35240c821a3c','-','79a9a171-2622-46a2-a074-70b49e502960'),
 	 ('63d75203-b045-4e0c-b73b-daa9d9f93d45','180 cm','19b61f3c-d54c-4d9b-b33a-2bfd9f3072de'),
 	 ('90845d28-522b-42f0-ac2a-aafb644ac21a','178 cm','62854c99-a709-4925-9f58-3cff95191c9f'),
@@ -2198,7 +2198,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('75f9f17c-425c-4a43-a809-cbaf83179387','-','ef8db482-506b-401c-8065-4ca28aabe924'),
 	 ('470f83c9-c57f-469f-b658-f18641021309','62.5 meters','fd463857-d61c-42ca-97a3-1f6ee60560c3'),
 	 ('891d9bf6-b8ec-4764-b6bd-55b610f58d60','5''6','b43cdc9d-45f3-4fea-8107-36f5bf74fb04');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('741a1da0-13c2-4062-9986-4d942b3c7b7b','211 cm','c1556711-5d67-4880-8966-29f699ff77ac'),
 	 ('74c5c6fd-37ee-4f9b-aa33-78a0907c5c25','354''4','cc9b3fd9-27a8-48a8-be24-4fd513408ef8'),
 	 ('44afd625-e7d0-47d7-8915-2508396742be','0 cm','b31bafbe-3127-4dcd-9d72-a96de15cb8af'),
@@ -2209,7 +2209,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('d053aee0-4e07-4ca1-a252-3025977745f8','175 cm','74e605ae-6de3-42e7-a369-49eac3d11e11'),
 	 ('29fca4c5-547d-48a7-a1d6-374e60fa1dac','5''7','64dc50ad-0132-489f-9cc5-259f2b25b9c8'),
 	 ('b8915e44-5933-478a-8c00-f1afb7add9e9','5''6','13212cc3-3fbd-4e15-b855-d59f0e0ca003');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('44282d8c-a36e-4384-becd-b4144d924b93','198 cm','3eb6acdb-b2c1-410f-b6ba-a200738f09f1'),
 	 ('dd379a09-9de7-44bf-b187-b99090552312','183 cm','6c533c83-893d-4d7d-b639-cec76bce742b'),
 	 ('0fc8ebce-3813-4780-8146-b03877b1b6e1','2''4','2077d98b-95d4-4086-b616-1f3638c96b2b'),
@@ -2220,7 +2220,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('623a6f03-79a0-473b-a07b-242650744f3c','5''5','2e110fbe-a787-40ab-a77a-7ffa2966e922'),
 	 ('d33eb257-c583-4a67-81a7-b3d8e88991d6','191 cm','6935edfc-7e27-4e08-9c37-21e4b5957b45'),
 	 ('ed1577ca-5796-46a1-ba6e-e0476fcf85e6','-','b5fc2814-db8a-40b4-b99d-0a89db326dda');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('855e34f8-5f79-4c4b-b4cd-6b88f30c96df','0 cm','f7a7f438-28f7-41df-a586-f8db9932b646'),
 	 ('5351a91c-91d6-439b-bc8e-cc6a3992f990','0 cm','22e2addd-ee11-4032-bea1-49254e924ccf'),
 	 ('17478d93-226e-4abe-9055-7f4f46e669fd','6''7','c6842a55-c7c7-4d2f-9fda-46159fb0c6e3'),
@@ -2231,7 +2231,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('644ffbe1-70f4-4f9b-af9c-861de78742c9','203 cm','df062350-42a9-47b7-a539-027202189c07'),
 	 ('f623e119-dcf3-4b9f-acb2-68c127cbdf12','6''2','38a9cb86-0fc4-4314-ab31-50ddc14a8970'),
 	 ('51ee8dd0-a241-408b-8381-b6b982ff605d','7''6','f4918025-bf2f-4b7a-9d6e-d3b15d45adba');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('eead975c-4c3c-4930-bb5f-7b090f188e34','213 cm','ad39e3f8-faf6-4622-8d93-a5da96c586d7'),
 	 ('1d21ef03-bf3d-4553-a369-017a74624369','180 cm','6a9102bc-ca75-49a3-8e80-3ec6e893d5c3'),
 	 ('2dbc095a-e869-41cf-a90c-a9df3d2b4394','5''5','f4e5eacc-2cbb-4666-bb7f-1a65339d5e00'),
@@ -2242,7 +2242,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('0b55130e-7b77-4dda-89bc-f9b3bdff4fc0','5''8','beb0b154-3c98-484e-8a02-156e0f1c43e9'),
 	 ('a8ecdce7-aa46-4642-be92-be0358868c8c','5''9''','24f24965-5277-42bf-8e6a-fb49849c177a'),
 	 ('23951a4a-e349-4011-bf78-6049e5676df1','178 cm','d53450aa-9270-4dae-b3c2-166630f997a6');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('fb5e1266-5f25-4bf3-8463-bbab87d56c1a','-','d9987736-7b74-4360-ba29-96df9edc961a'),
 	 ('9c544b58-b3d3-4226-aab0-8a75e4b4b54b','0 cm','d3fba9db-afc1-4c06-b976-90835bf123e3'),
 	 ('a6edb98a-fa0e-40cb-ad5c-a7b1483c564e','168 cm','074d47f4-23f6-43f6-bc1b-7aa94f8a706a'),
@@ -2253,7 +2253,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('ca715b3b-cf91-44ed-9d95-cd3d01ac51e3','7''0','a95c38ae-3ad3-4142-9366-0a6217fb71e1'),
 	 ('fe6a8cf9-c1be-4b85-b1b9-f6cb93cf5a6a','6''4','c345d94a-5977-4624-8ebd-504ff8660a69'),
 	 ('6ef61daf-4567-49ef-81ae-2903a8dcd1d7','-','a734a783-683c-49ba-90ba-bc9890ba4159');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('dbb6282c-afc6-413f-8e40-5126795be607','122 cm','79424fed-9ab9-444b-a373-fcf69f68c8e5'),
 	 ('8c582572-5007-4617-b0c2-06e155d9d6e6','5''6','d044d485-e8ff-4afe-889c-8a6719513af8'),
 	 ('af1cdaf7-4215-4a85-867e-dd860e2ff4b4','178 cm','ba6fdf6b-6b40-447d-b8fa-811090ff0ebd'),
@@ -2264,7 +2264,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('41331d64-f225-4b34-ad84-c519ebe04806','170 cm','1d1a38f6-4fec-44e4-a395-b6351f2f70a3'),
 	 ('979fa068-c982-4e10-aa85-786aeae937c4','6''1','2dcf8de1-c844-4c37-9421-99bb97b86929'),
 	 ('edc55fbf-dfa0-46ea-b9a1-baf9678d7d09','6''6','3d4b7084-e56e-486b-bc37-3e3c0af95da3');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('d142578d-f9a0-4ec4-89d6-bdea5a2857f0','178 cm','6ef3064e-9f3a-4993-8e71-fa31f0069f0c'),
 	 ('458c609f-caec-4e1e-aa2f-8984c0360b40','-','192123cc-0d57-45a9-9732-1fbcc421b0b8'),
 	 ('5e878b89-77aa-40f5-8834-ce3aa44a209b','0 cm','548e1071-21d3-40e5-bc19-81ca585b7b77'),
@@ -2275,7 +2275,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('e645e8a5-a5f0-4766-9e93-716fa5461b37','0 cm','d7884583-6dcf-4245-9995-13aaafd060cb'),
 	 ('893c0576-1fb7-4b64-82f3-6a045c6758a6','188 cm','0977044e-27b0-44f2-afa2-66e610981186'),
 	 ('1b1bcca7-c8b7-44ba-9460-7b8b367693c8','7''2','3c31f1dc-bc5d-4ff0-a87c-9236efe6dd50');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('8167f5c9-725d-46fc-94d3-9a1254b4a846','185 cm','ce32b40f-d65e-42cf-a1ba-33c1db63a136'),
 	 ('75a36f58-a9c4-49d0-b698-3f3082fef069','5''6','53c141da-5581-4ec8-ad84-dd26d05ff002'),
 	 ('a37e5593-6388-4557-b307-b4157b3073c7','188 cm','6ced5e5f-6762-4941-a10c-cf89ddad5793'),
@@ -2286,7 +2286,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('5615bfab-f040-4f66-8e48-3c62b77153d3','173 cm','d5db0216-360c-4268-bfed-6d3e9768f65a'),
 	 ('280321ce-84e8-47a3-82ac-9d67733efc6c','0 cm','4ae2676e-0a60-42d2-9299-02db4501d99d'),
 	 ('44812c93-4649-4e1c-a9d1-4ff9d606001a','366 cm','1bfa5037-a3eb-4261-ae42-34b23a2621b9');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('5baf17fe-e488-45f0-b063-c1bba393de3a','5''3','3d2c804a-87ae-4e85-b26b-7158fc34ddb1'),
 	 ('ce58ecfc-efe8-414c-882f-63752ab5f1ce','6''0','4a3e1550-29bd-4387-a1a8-184d45d8555f'),
 	 ('347a5be9-509c-448f-a432-c0ec51d0db7a','175 cm','4e4a710b-74c6-4864-b59f-07f66a9c562d'),
@@ -2297,7 +2297,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('088056d0-9027-4468-a0c4-1a98ac42ce0d','185 cm','8e221d70-9bd6-4fb4-aef4-41bb4a49db18'),
 	 ('cee734ea-7d2e-4e74-babc-3c6b2d4f67b1','188 cm','dc7715a2-ba7c-4b2d-ae8a-e47003b6d087'),
 	 ('5fdfca71-ddfe-47b2-8ce6-8e09a9313c63','6''2','697ca07d-4e44-4484-89c4-3502d9d8d3e9');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('f451f051-92ba-4938-a8a8-636b03c25f9f','5''9','2a42db74-fc3a-499f-9d5b-ff3bdb52e820'),
 	 ('545f8790-b32f-4437-8569-90207d131de9','5''5','ca2d750c-56e4-4272-ac75-cf1ada2830df'),
 	 ('4a036513-9df6-4897-bc34-012e7d2c2fe0','157 cm','ac8824e2-772e-48e5-9f02-e49ed42a149a'),
@@ -2308,7 +2308,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('69262ed3-b596-402c-8bb5-d3c5c1323c5b','168 cm','f7fa99ee-25fa-4850-b1eb-05db71e046af'),
 	 ('1fd22ccb-5e42-4a31-9a0a-2eb486355f74','5''8','a0671fe4-fa82-4b0a-9bf6-43713828a21b'),
 	 ('510a25dd-e6d5-4a39-b33a-57e5ed8c37af','188 cm','7011e364-75ea-4f48-896a-70614e32d45b');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('f0b0851b-064e-408e-8f03-fc8318b22c81','6''0','b2e72f09-dcde-4ddb-b834-34a6f2ea9658'),
 	 ('32c3186c-408f-4185-9050-afc149416a2c','201 cm','89f02ca5-fcbb-464f-ac62-9f2306751417'),
 	 ('95e1447f-57fa-4d04-ad5d-35f1a15774ee','0 cm','fae4b2ae-bcea-4c80-a466-5dadc02a2b02'),
@@ -2319,7 +2319,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('334d6cc5-2116-4417-b9b3-2b5dd3770286','6''2','a3978ca4-e9ff-4d98-8026-3aead47326b6'),
 	 ('c1f93dcf-f7ce-4f2f-8003-6cefb3898063','-','ad893c6e-0a12-48a9-a71d-63a49e4224ba'),
 	 ('271805cf-7fac-46f2-8d68-0d7f2f62b2a3','175 cm','8e49c76b-6d98-4ee4-a3bc-bc4066c8a3dc');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('3960aa2c-8075-49d0-b339-5a23642db6d0','5''8','702e44bf-44bd-4106-8fe1-2e69abb74b76'),
 	 ('63858a38-fe29-4b19-9c16-2821f9013326','6''0','7a78a42b-1af7-4a2e-ae3f-87cb1bb146f8'),
 	 ('c5279830-a123-4256-a6c3-230c622624ad','6''','64584b35-7904-4409-9a9c-1387847389ba'),
@@ -2330,7 +2330,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('3ad722fd-b2ef-453e-8fff-673237c3498c','188 cm','8a7dc1e3-1af0-4185-bdad-72f1ff53db33'),
 	 ('f59124ef-f954-4efe-a2c4-1260a44659d7','701 cm','220fda3d-b729-43bf-8ce3-9f6e1b4b6175'),
 	 ('d7087da1-377e-4b70-a2b0-b500103b865a','180 cm','6e9e0d1e-c60a-42eb-9e1e-8199f0a1db25');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('680b2add-0b82-4071-a382-4e86a91e021a','5''9','e9d85f69-20d7-438a-a4a9-557dedf232b4'),
 	 ('eaeab012-5b6b-461a-a82f-405f9d281582','5''10','cc28bcff-ebea-4785-94f4-dd8f3ef9a0e3'),
 	 ('054e4ff7-6d98-42c7-a4e5-d5c22e87571a','5''11','b6d9ca9c-d96d-4350-84f3-d5dc4eea343f'),
@@ -2341,7 +2341,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('5a622965-37de-49fc-8114-ac26239650be','6''2''','41c61246-cd3e-44c7-bdc0-c791284eed43'),
 	 ('b21f6aba-b9fc-4bcf-a623-dbc7dc815a73','6''6','9310f6ce-f3de-44cf-bcd0-77d88bc2bbc5'),
 	 ('f99f9c68-4aba-4074-abd7-0b7a0dd6a07e','6''6','97877e16-b8a9-4164-93af-4bcde5f7f107');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('da7b0b13-935b-4354-ae04-814218114e41','-','8a6b3759-fb54-4071-92aa-85c0fcda2073'),
 	 ('28459b77-a374-4449-9d01-d2c6434f7abe','6''4','2d415f81-aea0-4aa4-8c8f-4b21466960e8'),
 	 ('7cc04483-d1a0-48ee-9106-76e77d87656f','-','c92290c6-2e55-4c79-b4b4-d0bb9371a9af'),
@@ -2352,7 +2352,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('2c3c27a7-4b7e-4c1c-a4d0-ab32001987e2','6''5','32b62f19-d0b1-44a9-a3eb-675e2fbc8e88'),
 	 ('ad265578-5e28-4c19-b13f-4df667d52dd3','188 cm','f15c5615-2b04-4a5e-b035-7453ba9e4b8a'),
 	 ('0efa6d0a-77df-471f-a07d-d03035065747','5''9','eecabf3f-02f5-47fe-94b9-41a6f9c46574');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('b8013e12-4902-434d-85bc-f99a732b4af2','5''9','9a46a8b8-8ba6-4337-ba82-93b255c6adbd'),
 	 ('a58b7251-4116-424e-afec-eacdee212565','6''1','a674910b-d9ac-4fad-ba63-43fe6cff1aaf'),
 	 ('ba406fe3-0c81-451e-9b35-86859b5c293a','175 cm','d1890acc-8b80-40df-977a-df9b23a90a91'),
@@ -2363,7 +2363,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('b12506e2-48dd-4bd1-aeb5-f0382f4eb6aa','183 cm','faa5b47a-a4de-4fef-9bc8-e3c09c3c40c1'),
 	 ('16011bdc-ac3a-4ebc-abe5-a23826b6213f','0 cm','1a9d5de2-b4d7-4ac9-bbfa-4b42d79e0227'),
 	 ('408063e0-7cda-4126-b3c9-e59cb413f831','5''7','1d1a38f6-4fec-44e4-a395-b6351f2f70a3');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('ffc21657-9050-4a80-9a3a-7798adfc38ae','5''2','b02342aa-9171-4bd3-afc5-be0435866495'),
 	 ('0d0b94a7-2a3d-4f21-b5af-2b505a4bdd3d','6''11','0b768c1f-90a9-4c65-a256-11682a4b559b'),
 	 ('abfb0d01-76d2-4b06-9f3c-df46b7efd5d8','6''4','77721b4b-03bc-4d05-adcf-1a34cee4b8f1'),
@@ -2374,7 +2374,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('8119608a-b1ed-4beb-adf0-153e5f380572','4''6','fb1fd730-f6b8-47d4-bb75-f005fa63487c'),
 	 ('15509dd9-04f3-4023-b0f9-5eb4113748ec','6''2','f3e7cd96-3470-4272-a2fd-56d3a50a7963'),
 	 ('4c42ceec-10fb-419e-8b75-d42d5b2748b1','6''1','5baf98d9-eff9-432c-b449-6ad8e5139ece');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('5760d127-9bbd-4ee5-8cc2-9a8f5d5e768a','191 cm','41eb39b3-8b00-46b3-95e1-e4a9164f74ab'),
 	 ('a76413f0-ccf5-4e88-8b8b-164f3835ad30','7''2','f345257e-f050-45ab-89f3-ecc0146a5a84'),
 	 ('f5e88f54-eef7-4db2-aaf1-625772ceceb1','-','4ae2676e-0a60-42d2-9299-02db4501d99d'),
@@ -2385,7 +2385,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('7899a1fa-70ff-4b9b-98a5-9cc8142146b8','196 cm','661b6b39-3907-4414-8cd9-2dabe9148b5a'),
 	 ('cea32bfb-0ec7-45f2-8be7-3b8981aabb1e','5''7','80272e07-45cb-428c-8f73-3b666d9ed2e2'),
 	 ('d7d4c629-94ab-474a-a980-cd7947205a20','188 cm','697ca07d-4e44-4484-89c4-3502d9d8d3e9');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('429a72c7-0ee2-402b-9092-683da0241973','5''10','309d5459-0bbd-45f1-b067-bf3511c50120'),
 	 ('58703dd6-5521-4b2d-aea0-a1f053b30d79','218 cm','7c36ded2-5795-4864-9703-5566be89188a'),
 	 ('bae6d685-0fec-4b8f-843c-bfcd73d12441','183 cm','a7bf0ccc-bb7c-4899-a4c4-55748c9b1957'),
@@ -2396,7 +2396,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('30a885de-76a5-4ff5-90ec-04ee0e171695','183 cm','2954d469-f486-4789-8f8f-6b73acb88f59'),
 	 ('8829ead6-d793-4474-a3ec-bcdcecc0b0a3','0 cm','d064e403-f107-485c-9e5a-dba31c2b07a5'),
 	 ('68a28a00-8bbf-4e1a-84ca-f886173fbd54','185 cm','a613477d-bfb1-425a-920a-7497fca1ca21');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('db7e7d0b-1733-45f7-997d-b59e52494022','5''11','48258963-9f55-45ad-a35e-c6cd53b0cc4e'),
 	 ('b3e34aea-73d0-4f14-9295-4795e90d7b0a','5''4','0bedfc70-3679-440f-bbdc-db26b472602a'),
 	 ('0e805286-63cf-4cbf-b83f-f25948a40c71','6''6','3a381f2f-e3ea-44ad-8f0e-5fbc7857bb01'),
@@ -2407,7 +2407,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('78fe347a-855c-4a82-867e-b4f40ddb8be2','5''10''','62854c99-a709-4925-9f58-3cff95191c9f'),
 	 ('3c323d41-b611-4c99-b8be-f9b12fb93a7e','6''0','326d279a-a2f1-4e40-8aa5-22d27244e134'),
 	 ('fac5fff6-a46f-44fa-af4a-8c7cc470f318','-','de55b817-706c-44b5-9674-b2bb53b3ffa5');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('4a06e4c3-49e2-45b7-981c-6d108c136e49','188 cm','37f92101-52a8-47af-a638-4784e5679c98'),
 	 ('58c2cd96-b690-49a8-9ab0-c68d233b5edd','191 cm','d6c6ac88-30b3-4c2a-a357-e4bb01a5a6ed'),
 	 ('c5e1c1fc-6382-47f5-ac75-6231e207a2a6','205','fd463857-d61c-42ca-97a3-1f6ee60560c3'),
@@ -2418,7 +2418,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('2c877df9-c599-4315-b78c-b75a9e42b435','183 cm','74a0556b-9c8f-4986-bad2-c11035aa2bac'),
 	 ('2912bab6-5020-4e3b-85e7-bc07cecd1643','5''7','07b02d84-5e46-4c19-998b-bbf1d2db8230'),
 	 ('f826d225-93f1-43b5-a3a4-e794689146e6','6''3','0de37ef8-c9d5-4987-912f-07b008aade2d');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('3a1f26cf-22be-46cd-8ef8-47b6484f3053','6''2','ee73a4aa-90e9-4cf9-a25c-6fa68117cf90'),
 	 ('001fd42e-0fcc-474a-b46e-a3a5e94a1294','-','1d34131e-ac48-4067-a194-e7bb6c101e88'),
 	 ('fca92257-c822-4207-9864-893340bce900','5''8','7de1c66b-93fe-4643-86e3-96b3280787ec'),
@@ -2429,7 +2429,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('318e31fd-5e22-4275-a015-01bcec723581','-','077a6766-e265-4d8a-8594-a37981a3e118'),
 	 ('cb7bbfb9-9914-4549-bd1a-14cf50e7fa94','5''10','e8bd646e-a1d4-4362-95e6-613f83e55f68'),
 	 ('df43572e-67e2-4866-b104-0997ae166eda','-','0dca44e8-0354-4026-a5c3-284bdcff6867');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('b6ee6634-2482-4024-b43e-c1bc14574650','-','babe77f8-2849-4d88-81b4-a36e33fb5751'),
 	 ('fc494e8d-e020-4f89-a150-4ea25dbe0a33','5''9','cc35f9c8-801e-4206-a0e9-17ba73600997'),
 	 ('f53076e0-f56f-4380-89f7-ddcd02dc663b','0 cm','7c2cb38d-ad18-400f-a4b2-4593f558ded0'),
@@ -2440,7 +2440,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('78883a1f-fca0-45f6-a80b-2654576ab14f','-','f55a2df5-5ea4-4ea9-9a76-8c9bf23dad70'),
 	 ('09bc30ec-326e-4cbe-b7c1-136f2be00756','165 cm','f4e5eacc-2cbb-4666-bb7f-1a65339d5e00'),
 	 ('e5b0bb7e-5eec-4205-9b77-6285550a0d66','175 cm','ef45562c-ee79-45b6-b342-87bacb648834');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('a55ad567-28f2-4c65-88b3-9d4b6c39c32a','196 cm','57904af5-77f3-46fd-a0e2-3f7505647fa8'),
 	 ('b323aa5b-60e4-4627-93f2-c0b1c18b4e78','-','a89cbd7e-b0a6-4496-9021-09f11a1e83f8'),
 	 ('848e0eb4-17ac-44ee-a2f5-9cb96e3ec379','178 cm','64910d1b-58e1-41cd-bb84-b93359d7b30d'),
@@ -2451,7 +2451,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('09644953-ca7e-40de-80a1-0400713ccd9a','170 cm','7719f3bd-4779-4e75-94c8-2d2fb03a0ec9'),
 	 ('919573d1-9301-4b39-b47a-6479bc2ce221','157 cm','a66e8aef-60ec-4f34-ae37-d8cf23e312e4'),
 	 ('fa52c9b1-0238-455a-804e-52f9d9882621','185 cm','c46a580b-a6a4-4879-8bfa-2e5086dd3532');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('470f3f24-7e62-4631-8b2c-c7c2640ec81d','5''11','c4d7b2e9-d004-40b8-a802-ffac6ff7f153'),
 	 ('4599a9b9-ad47-4fa2-8622-5ebac7a02a81','6''0','ad0f7638-8905-4725-9f92-6f12af40c00f'),
 	 ('08bdfffd-0f13-4908-b6f4-6010a10f7752','5''5','bcd58f30-ec54-4604-87de-5f66cb82b48d'),
@@ -2462,7 +2462,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('a3c91004-75cf-4bec-9efa-4253e19ee147','168 cm','9e9d0c2d-3c6d-415b-b28f-0ad103cf4aa7'),
 	 ('8839ceae-5f64-496f-9189-a5913de9dca6','6''0','6588c08e-e84c-42a0-8de5-eae8424b44f7'),
 	 ('fe62da55-f7fc-400f-8fdc-11e3b06f7fed','178 cm','e94ccb3a-a458-48fd-8a4e-b9f66e536645');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('74164f17-8134-4353-b6d3-747477f6a8b7','0 cm','091168b3-9b43-46f0-afcf-5881d211242f'),
 	 ('3260782f-3dcc-490a-81b2-db84096bf00d','173 cm','7cd41930-b2da-43e1-b59a-a68b8ba9267b'),
 	 ('adec6cb3-29c3-4ba1-9765-646ca5f3cc0c','6''0','81cf1a2f-0f13-44ec-a37c-0fabed81c6cb'),
@@ -2473,12 +2473,12 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('e4e16338-66ce-4051-96bb-4383ce5ad4d0','6''7','0b493ec4-45f0-4d26-aace-6411d563128d'),
 	 ('b6621c1d-3cfd-4def-a5c6-3eed236ef268','183 cm','02fc414c-9676-492e-bd51-f26848dbd94a'),
 	 ('bc3bd4df-0eee-41af-9d99-964bca4cdf21','168 cm','31a9590b-ac14-473d-84f5-7ca6149bc6c1');
-INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_height (id,value,superhero_appearance_id) VALUES
 	 ('76c5adc4-d19e-4220-899f-2fc82b9d9df1','175 cm','6c2e64ab-dc8c-44f1-8c71-715c56154b28'),
 	 ('e181d949-1fb9-455a-8266-2babcdd9a489','5''10','257c899e-53e1-458a-b152-2d2c11664284'),
 	 ('5d87e8a9-f38b-4ac8-ae5c-8dee13537c6e','6''0','cab95b0a-eb04-476d-a01f-fbae1643c5dd'),
 	 ('dcd00053-db59-4409-9ac1-45072f1a9799','5''9','4e4a710b-74c6-4864-b59f-07f66a9c562d'),
-	 ('0f2342f4-5927-4750-bf3f-9f613c488d4b','155 cm','441fdf95-8205-405d-b2ce-c7449d280afd');INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+	 ('0f2342f4-5927-4750-bf3f-9f613c488d4b','155 cm','441fdf95-8205-405d-b2ce-c7449d280afd');INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('2a9f47af-b8aa-43fe-aab8-39f76d1fec24','181 lb','55db489c-8613-44ca-bac6-8ce190df2f5c'),
 	 ('fa9a219a-153b-451e-990d-11e8302ddd63','81 kg','55db489c-8613-44ca-bac6-8ce190df2f5c'),
 	 ('0c54e85e-080a-43ec-aae0-b1286aa1eb46','980 lb','7ef5e483-931a-4c27-be56-56b3259a305f'),
@@ -2489,7 +2489,7 @@ INSERT INTO public.superheroe_appearance_height (id,value,superheroe_appearance_
 	 ('94c1eacf-acb0-4403-afb5-59258d3e98db','104 kg','c782766b-fb45-40f9-8039-c9189ceacb43'),
 	 ('b3000956-ed80-437a-bea5-a06fe8b42477','980 lb','d92543ec-195e-4bfa-9318-7db8db2a9e7c'),
 	 ('7774412f-add7-4470-96b3-7d0026aa7414','441 kg','d92543ec-195e-4bfa-9318-7db8db2a9e7c');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('c2d33586-c999-4374-89fb-84424f53f02f','145 lb','3fbbe0ae-d6c3-49dc-8dba-e30b720dd453'),
 	 ('f7a00e88-0677-42c0-a350-3d2c0ebab80e','65 kg','3fbbe0ae-d6c3-49dc-8dba-e30b720dd453'),
 	 ('d0716cc6-f7e9-491c-a0a5-0711938db10a','201 lb','230a887b-8da0-43e6-99f9-78d965a1a64a'),
@@ -2500,7 +2500,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('4bc76e0a-1816-4904-bab7-d341a2cf2a12','169 kg','3918202f-a9fc-45af-a0ea-b81e4fc82ffa'),
 	 ('ab0dc756-85e6-40ef-a287-5b2f7c7e6c82','195 lb','2d97dcf3-6388-4e21-8d10-4eb678e03378'),
 	 ('11ce5bbf-3a5e-40c5-919e-cc6d8620d971','88 kg','2d97dcf3-6388-4e21-8d10-4eb678e03378');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('34ac7b9c-3584-4027-8735-10fb62ae7f57','160 lb','81427c35-a185-47e7-bd22-fdb573d405f9'),
 	 ('e94a4000-0134-421b-b815-a4096de472c0','72 kg','81427c35-a185-47e7-bd22-fdb573d405f9'),
 	 ('2f9b9e9c-0690-4bdc-9ba4-14ce7cc5c4fd','270 lb','f282f825-c2f3-4460-b7e6-89279d74a820'),
@@ -2511,7 +2511,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('1b6695ab-dbe4-4604-8962-6e58169d8532','0 kg','2c548e84-432b-4d1b-9ba8-79ec45297c4d'),
 	 ('e650acdb-ee5b-4c0d-b977-b807925a3e8e','150 lb','a6d3bb02-5ff4-4936-b5d9-aaaa1a12dddf'),
 	 ('a40c8910-5fa5-40ee-a2ed-b3b89ed9d336','68 kg','a6d3bb02-5ff4-4936-b5d9-aaaa1a12dddf');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('ad751ab2-03e8-4e67-8bd0-a0c7803323cb','240 lb','fb20bdbc-5dcd-48e6-b474-654a600e21e8'),
 	 ('f467fc29-2a52-469d-805f-089ff27bc62b','108 kg','fb20bdbc-5dcd-48e6-b474-654a600e21e8'),
 	 ('5795bc21-b05d-4d5e-a02f-38967d95d4ed','200 lb','6ff41ecc-b3de-4c58-a296-049bf8b29ca1'),
@@ -2522,7 +2522,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('ebeb7f15-619a-493c-bd28-87e6c1f030f4','185 lb','61a2cabe-5080-4c45-af85-c498415a8699'),
 	 ('f3eda1d4-3f9d-475f-a723-3b2d524ef4e8','200 lb','4c6975f8-2e94-419b-971f-787f392b6f17'),
 	 ('290a4230-4ed0-4109-8b11-7dfed3e6c521','270 lb','3e8f0128-b206-44d8-9f8b-8874578a4643');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('712e717e-a048-449a-a55b-a436351832d6','90 kg','4c6975f8-2e94-419b-971f-787f392b6f17'),
 	 ('ba4a750a-6a56-497f-8af2-07eb3f8c726a','122 kg','3e8f0128-b206-44d8-9f8b-8874578a4643'),
 	 ('3f9435c1-1f94-46c7-99bc-77cf5cf21029','- lb','7df654d4-0940-4009-b48c-ccc0fe33c8e6'),
@@ -2533,7 +2533,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('01c7a1e4-a990-491d-9167-7a39b7ed0666','173 kg','6de5e9f0-3677-488e-b4af-de3477a4a3b7'),
 	 ('949be4f6-4c2e-4f52-801e-dda4e6799b92','795 lb','df9a0639-1b47-48f9-b233-518e4c036d25'),
 	 ('8ef1dc70-8744-4cf6-ac4b-0f1de8eaf491','358 kg','df9a0639-1b47-48f9-b233-518e4c036d25');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('b757cc3c-2456-4416-b284-969c975b344f','135 kg','1af923d0-da95-4ac2-949a-164c39f14ed9'),
 	 ('e3bc7dd2-3ec5-4aea-960b-9d7c89ca6c2f','300 lb','1af923d0-da95-4ac2-949a-164c39f14ed9'),
 	 ('d58157f0-a8ae-4a95-93c3-0f827aaeaf66','235 lb','1bb92c6e-fd8b-47b0-9236-954f816fbfbe'),
@@ -2544,7 +2544,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('65d963da-aac7-447a-b8cd-0b5c0126cb74','146 kg','3c1054c6-6070-430c-a915-4ed492bc7f35'),
 	 ('626af3ec-6166-4e09-a9ca-7f2e48ac2afe','140 lb','a65a6de7-0e83-47bf-9464-4037a1becf94'),
 	 ('0ed930da-664c-40eb-a53b-f0dc168a92b2','63 kg','a65a6de7-0e83-47bf-9464-4037a1becf94');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('2454a671-29f4-4aac-9919-d94bcdad5a98','150 lb','776830f4-a494-437b-abd0-3632b26b5f2d'),
 	 ('2117ea17-3d7c-45d2-b879-7304020116ad','68 kg','776830f4-a494-437b-abd0-3632b26b5f2d'),
 	 ('44f4569d-b4f8-4007-992f-ff98713c1853','218 lb','843b64b7-ffe2-44f3-992c-4387d84ab614'),
@@ -2555,7 +2555,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('863fbd90-bfd1-4347-baa2-eed80b2775cf','59 kg','06e27b45-6a42-44be-a8a6-ae4118eead9a'),
 	 ('a986eef8-7f5c-4a75-8e77-ee57ec53c00f','112 lb','cb3b23a0-85e7-4cf9-b0a9-28431646819d'),
 	 ('484dd261-54f9-426d-b967-cf62364c5c48','50 kg','cb3b23a0-85e7-4cf9-b0a9-28431646819d');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('85be65a8-8fe7-4931-a6e2-5ce090b81ec6','- lb','5b7c23ed-946e-4d2f-a8c8-d85384b57098'),
 	 ('6cbcd499-029a-407a-a1ea-04974cdf7365','0 kg','5b7c23ed-946e-4d2f-a8c8-d85384b57098'),
 	 ('7c39bab7-1292-4ec7-9978-36012953bad0','600 lb','29373156-b8db-4d09-a73a-d4de10599d4c'),
@@ -2566,7 +2566,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('750ae4bf-b6e2-49a2-b110-dc12f4242852','101 kg','92affc7b-4c3f-4344-901e-a003b5fa9d53'),
 	 ('c1f6a59d-c6db-4dca-9786-bd3196628307','180 lb','efe66a94-4d5a-46ae-b820-63dc8263d025'),
 	 ('062f2dc5-f372-4c96-b63f-ccfe98e8aeb4','81 kg','efe66a94-4d5a-46ae-b820-63dc8263d025');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('381a6530-4bdc-4064-9055-cc865eb1714d','54 kg','b24f2645-d86e-448b-88f4-909c5b91591e'),
 	 ('3e7ba639-8330-4c50-98b9-525623b10c4d','120 lb','b24f2645-d86e-448b-88f4-909c5b91591e'),
 	 ('66cbfa1a-fa7b-4e53-bb70-ba17cf9be71f','140 lb','f94b3c25-91d3-4841-95d6-bbbe45f5498e'),
@@ -2577,7 +2577,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('7a84eacc-8abf-468b-b236-f26a42f2e5d6','67 kg','57423216-ee47-4f66-9f7c-012cff1edc5c'),
 	 ('9421cd0f-afc1-4a8b-9801-925f92994104','126 kg','4477d114-0ca1-4d0d-a9d1-7b4ed6b4ba23'),
 	 ('e500e214-493b-4d1c-80fb-fc592cfbfaf2','280 lb','4477d114-0ca1-4d0d-a9d1-7b4ed6b4ba23');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('80480473-ca8a-4b14-89e0-d959d1886ec8','115 lb','4e570898-aab1-4184-8160-64b0258ad208'),
 	 ('9c1f11ee-bb9a-4f0f-87c8-6ab3b8f59678','52 kg','4e570898-aab1-4184-8160-64b0258ad208'),
 	 ('aec0cc45-7b2b-4e00-b67d-0606366b3111','135 lb','55c3065a-c9bb-43d5-ac55-b4d3bce2e8c6'),
@@ -2588,7 +2588,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('0157bcc4-e465-43ba-8d7c-a98c50679f72','95 kg','e382813d-449c-45a0-bfe0-ddc5fa42d9bf'),
 	 ('e63f8ccc-b6fb-4fb5-bb97-1729a51f31a4','170 lb','0bf25079-e9ec-42a7-83db-5042d1dcfda8'),
 	 ('2927c230-5d64-41c8-b130-ef2f37cb80da','77 kg','0bf25079-e9ec-42a7-83db-5042d1dcfda8');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('9ca43117-6814-44ad-8628-d13d9a202099','400 lb','5ae8aaa3-4401-4806-b245-d96939e2d335'),
 	 ('51babe8d-a336-4367-abd8-17b0b5f7957d','180 kg','5ae8aaa3-4401-4806-b245-d96939e2d335'),
 	 ('b6d32671-7d6c-4011-8123-4e55fcbefb65','119 lb','acd4989f-5354-4bb4-96fc-02101de7f5f1'),
@@ -2599,7 +2599,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('a22ba8ee-f6f9-4c3b-aaa8-fd312abaf4f3','0 kg','d3e67ea4-da67-4d5b-9b59-48ea57bd08a0'),
 	 ('7705fd75-7004-4a82-93e9-243d032a1e19','0 kg','3917b536-47ac-4474-beab-eab634c7138f'),
 	 ('0c77c52b-6346-4984-9fc5-e6796ac2420e','- lb','3917b536-47ac-4474-beab-eab634c7138f');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('0b006a14-5aa2-4f53-8106-8547ecdf65ec','480 lb','bd74ba29-16e3-4787-bb7f-913cf682d540'),
 	 ('c89c21c6-ecf2-4a3f-8761-8e43d49d5e57','216 kg','bd74ba29-16e3-4787-bb7f-913cf682d540'),
 	 ('8e46022a-40df-40db-bc35-dd28e361255d','402 lb','c25ffd40-b16f-42d9-8169-4258aab19736'),
@@ -2610,7 +2610,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('560f0f2e-be88-4ff3-be1b-9a8a6e47ca00','0 kg','520eb8ae-6564-43d8-83f9-315858a4e52b'),
 	 ('97b44b47-b71b-429d-8689-e72df9fb1835','300 lb','3aa9a8b0-2a25-44e7-b004-d402e8e81158'),
 	 ('f43e4bbd-61f9-49fb-8569-c44b8b552eee','135 kg','3aa9a8b0-2a25-44e7-b004-d402e8e81158');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('0233c49f-467c-4693-a996-c27da8f7f72e','175 lb','fd2eb082-c9bd-4520-976a-10729225578b'),
 	 ('3b7558c9-c21c-434a-bf33-95710d795b2a','0 kg','1bd8df3b-eda4-49c6-aa0a-82420ed10993'),
 	 ('21215115-0125-44ee-b33a-aeae647d1826','92 kg','dc7715a2-ba7c-4b2d-ae8a-e47003b6d087'),
@@ -2621,7 +2621,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('de92a3e6-7055-4df1-a5f8-56e305742de4','59 kg','24452624-f610-499b-813e-303c778bcb63'),
 	 ('7319c999-f31e-4933-965f-59af64e40614','- lb','e101e9cd-6ba7-4b68-a97a-b7c88de473b0'),
 	 ('dfd01584-20de-4e5f-8580-7ee437b6d95a','- lb','cf9a33cd-0dca-4bf0-a847-9de0257fd22a');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('2223dc10-6a24-4f2b-a2eb-082c89bb035e','50 kg','0bedfc70-3679-440f-bbdc-db26b472602a'),
 	 ('f66d3527-989d-4e5e-b434-4d7196ac2206','0 kg','f4234227-5c49-40a9-93ff-5fb378f1f91b'),
 	 ('c554ff82-784b-4d0c-90fa-e189c4bc5b3d','500 lb','3d843b40-3eb1-441a-ab9f-57dd45d430c4'),
@@ -2632,7 +2632,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('1d4fc474-c656-48b3-8a93-31b182dc3dd8','56 kg','f7fa99ee-25fa-4850-b1eb-05db71e046af'),
 	 ('6bb0753f-51c3-4727-a570-5554f89e8929','60 lb','704124f8-6ee3-4a57-922b-2ef1ba07ff02'),
 	 ('0f846a1b-d70a-4e4b-9def-af6b173a08f3','197 lb','4ad60221-23c7-480f-9e4e-54ff380187a7');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('cf98e6cb-22a6-4fbf-9721-c7c6f6a1b631','202 lb','ce630364-b8e7-4075-8432-e3ec5122c124'),
 	 ('c4004c8b-a17e-4316-8b40-6c7a1f03608d','680 lb','32023dea-c8d5-4319-8977-fa0f72816e86'),
 	 ('84211f9f-36be-492a-99b4-516e8fe3c288','56 kg','702e44bf-44bd-4106-8fe1-2e69abb74b76'),
@@ -2643,7 +2643,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('0720aaad-3807-4824-9e1e-1423a087b468','630 kg','fd463857-d61c-42ca-97a3-1f6ee60560c3'),
 	 ('5c703a31-053e-4bf9-87d1-7ef1fa20f5e5','110 lb','b43cdc9d-45f3-4fea-8107-36f5bf74fb04'),
 	 ('ffe46490-ac55-4822-8fb9-449cc2b15088','104 kg','c1556711-5d67-4880-8966-29f699ff77ac');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('30d0932f-82cd-4104-9b20-591af3d3dae5','200000000 lb','cc9b3fd9-27a8-48a8-be24-4fd513408ef8'),
 	 ('b577878c-a4d3-433c-9b3a-c7daa8ac3d72','0 kg','b31bafbe-3127-4dcd-9d72-a96de15cb8af'),
 	 ('94abca4c-3e70-4b51-9855-0bb7a49745ed','175 lb','a189c799-a988-4144-8010-a0eaa9ebc116'),
@@ -2654,7 +2654,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('b52a6069-c485-4737-b577-c32bd76ecb45','- lb','c1a941d5-6b2c-40ec-aec3-edbe87a6481c'),
 	 ('2974edff-e11e-4fb5-9477-17b808b262eb','81 kg','e8bd646e-a1d4-4362-95e6-613f83e55f68'),
 	 ('51d99e9a-f4de-40a1-8f7e-7dd7eb5536ff','40 lb','51d6b719-a7fd-428d-a24a-1d4d9f17266b');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('f57a9957-5be6-417e-9d5a-eb622560f5af','0 kg','b8da2fe3-40d9-4189-9436-b317e24dbaf0'),
 	 ('17995003-dc70-4928-b1da-d999224f3d7c','- lb','0dca44e8-0354-4026-a5c3-284bdcff6867'),
 	 ('ecdc27c3-ab53-40be-8bc3-b7e3ba4cb4f3','- lb','1c9debad-356e-4486-915e-c3d6fcdd8891'),
@@ -2665,7 +2665,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('9f660053-e6a9-429b-9348-36b57e36f5f9','383 kg','592feb3f-485c-4537-b1b6-3a309845b2ce'),
 	 ('4e694dd1-10f0-499c-9086-48609c66de58','0 kg','ca982875-cdaa-4fe2-944c-3f16a92c9204'),
 	 ('e5d969e5-50d7-45ae-a054-663fd5104508','- lb','134678d1-d5a3-4c50-9f81-3fd8e3b091de');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('c486eac5-c544-41d7-b915-a3f791cc9dbc','135 kg','d4295a36-3f7c-4e59-a0b4-a0693b114ecb'),
 	 ('d874d15d-e7a0-4937-aa22-e7b5a0211ba1','310 lb','69a7279a-19cd-410c-b610-ebe1aec614e2'),
 	 ('904030bc-d72a-4c69-8f67-fbc800e96301','90 kg','57904af5-77f3-46fd-a0e2-3f7505647fa8'),
@@ -2676,7 +2676,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('42f80ca4-5640-427a-8b21-803c1e74baac','61 kg','beb0b154-3c98-484e-8a02-156e0f1c43e9'),
 	 ('a6ed503c-b003-41e8-a67d-f25b4321f324','278 lb','0118b447-e1eb-4848-a3d7-112149161e65'),
 	 ('36962f0f-ec16-47b1-8ba9-090b17be5e6c','88 kg','24f24965-5277-42bf-8e6a-fb49849c177a');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('21224a44-5e73-4547-a852-21ce1d63afe0','0 kg','b4e0767c-b2a5-4ae6-9218-79c6d4938474'),
 	 ('ff23ab74-d272-4557-8925-76cc9f7fb4ff','69 kg','d1890acc-8b80-40df-977a-df9b23a90a91'),
 	 ('9b4ffb9a-4e2f-4d5a-bd81-f3d631906226','- lb','02455166-359d-4dc8-95ed-b3f3f2830a4d'),
@@ -2687,7 +2687,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('27919940-c56b-4927-a3e1-aca5279a170c','185 lb','c59b4fca-7b3a-4be2-9166-b9a6110e295a'),
 	 ('fa7867ad-3665-4c89-91dd-734996b98614','155 lb','8d6566f9-85d1-4d1e-89c0-6824ace1db94'),
 	 ('b2574e03-b3c1-446f-8551-3412d6edfd80','108 kg','54c3a973-54ea-4c8b-8252-2fb63cb88a7a');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('6c6a43ea-5a2a-44f7-84d2-2eeb5c9e2d3e','1400 lb','a95c38ae-3ad3-4142-9366-0a6217fb71e1'),
 	 ('76f815ba-daf9-471f-b303-9586c052b722','- lb','a734a783-683c-49ba-90ba-bc9890ba4159'),
 	 ('14106cff-0151-4607-8fae-807fce8a6989','- lb','1a9d5de2-b4d7-4ac9-bbfa-4b42d79e0227'),
@@ -2698,7 +2698,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('a4c1f9c7-3883-4356-9fbd-37c156275ef2','195 lb','37e52287-a57d-4cb8-af9e-7cb3e51a58b5'),
 	 ('1ecaec2f-d9f3-48a3-817d-88cae7fd5a7a','0 kg','0db5fac1-4dc4-4f88-9780-2989eb5a662d'),
 	 ('d60c22a1-138b-4f3a-b384-27a43256b8fc','132 lb','1d1a38f6-4fec-44e4-a395-b6351f2f70a3');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('40b7c7be-c009-4f8f-a57f-dd7e51e4b529','175 lb','e94ccb3a-a458-48fd-8a4e-b9f66e536645'),
 	 ('f230d586-9422-43e4-abde-d63b0ed7ecf6','315 kg','fc97a8f7-bdba-4b3c-b187-a7485fa9e629'),
 	 ('f8dc5876-bc4e-4bb2-8cff-14f0328714c0','115 lb','1838d806-f48f-409b-ab90-d1adc1b49307'),
@@ -2709,7 +2709,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('60fd790f-321f-4783-8f71-7ba8b861839f','203 lb','449bd846-ad8f-4443-9d45-7245e69a0ab8'),
 	 ('f3f01cfc-dace-4b87-a2c8-4d9b2fcf7a54','71 kg','77721b4b-03bc-4d05-adcf-1a34cee4b8f1'),
 	 ('19a24c0a-e62b-4021-a48d-327b90629331','77 kg','05d6dcd0-a4ae-49cf-97b8-66b09b1662e3');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('fe99791d-47df-405c-9c27-6e9fe474f46c','47 kg','727a8e89-e40b-40a0-b3ef-6774276668f3'),
 	 ('05100999-dc4b-4ac9-9a57-13bddf746d78','165 lb','472d6888-c134-4f9d-8372-be86f2ce8c07'),
 	 ('5338d682-e773-445c-b3eb-5f6d8ea70b8f','54 kg','e8335617-e0b5-4bbb-9cf7-8ec0506a8c8a'),
@@ -2720,7 +2720,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('c7af294a-8c37-4e0a-837b-f4d156c30711','58 tons','76873d08-6b9a-4903-bdce-1f09e02bb342'),
 	 ('0c6dce6d-7316-4938-b3cf-f8967aac94f2','95 kg','5baf98d9-eff9-432c-b449-6ad8e5139ece'),
 	 ('7010bfac-7a43-4fa0-bde9-958fdb7d20b5','360 lb','cab95b0a-eb04-476d-a01f-fbae1643c5dd');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('39b4112f-d123-4945-9201-2827828de6f1','158 kg','f345257e-f050-45ab-89f3-ecc0146a5a84'),
 	 ('f3983a29-8568-43c9-ab0b-e199d2e9b214','0 kg','4ae2676e-0a60-42d2-9299-02db4501d99d'),
 	 ('f77fd6d0-02be-463b-b70e-a90959ba93b5','1050 lb','1bfa5037-a3eb-4261-ae42-34b23a2621b9'),
@@ -2731,7 +2731,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('4aca22da-6277-4a99-abc6-95c2a57b6f57','117 kg','661b6b39-3907-4414-8cd9-2dabe9148b5a'),
 	 ('b0cda68f-7868-4765-8049-321166f3c52f','79 kg','fd2eb082-c9bd-4520-976a-10729225578b'),
 	 ('7933f476-e6c8-4a57-b36d-44a43fa0ed3f','295 lb','bc9939f8-0dc5-4a91-9ca6-26d4150d722a');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('b75ea967-4dc2-436b-84a6-66b5123d1c9c','- lb','ef9de083-cfe9-4c6e-8231-e25b19ab5177'),
 	 ('12252e30-d48c-4430-9360-0c6bc8402957','124 kg','5d0ebaa5-6e3d-43b4-a198-c5e379bd8aae'),
 	 ('680c7eea-932a-4e7a-937c-ab6b76928aa3','71 kg','e04d779a-cbaf-4199-9349-ee202c63942d'),
@@ -2742,7 +2742,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('16b5394a-bb27-42b5-9776-23c9d500979b','55 kg','ca2d750c-56e4-4272-ac75-cf1ada2830df'),
 	 ('5a7eebb1-0f58-4b81-b5e7-1e5c41e9654b','0 kg','631165db-e481-4256-811d-7e7669d07c51'),
 	 ('6b3d8769-27ce-48c9-8d63-31adf6108d8d','181 lb','8f55396b-f52e-45d8-a19e-e96a64a51a4f');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('a2633d32-cff2-465d-9e6d-125ab32e2446','108 kg','4cd073ff-a33e-4b24-acd6-db0edccad435'),
 	 ('fcc2e93c-35f6-46e9-b855-2a6b99a7e864','- lb','63f7b36d-da68-4a30-8a9f-1978c6a55d2c'),
 	 ('91528f53-c12f-41ed-818c-a4bf2418f734','225 lb','b0fbfa92-7b27-4285-a4dd-a78aeda51629'),
@@ -2753,7 +2753,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('bc455721-77a1-4cda-8576-0f2343a73106','155 lb','80badf9f-ea37-431b-9f53-4992d13d4a9c'),
 	 ('ed8b38ea-19ff-4444-b3c2-f24f3a4c4f3c','220 lb','70c44f84-695b-4b26-b839-ed259c195ed8'),
 	 ('939f8795-281b-4c05-87f6-ff4549cc9fda','0 kg','0f369d5d-020a-4760-abf6-83a4b0597d59');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('a15338f5-3dcd-4aea-b332-e04f62147871','0 kg','985a909b-b146-4e0f-9690-028f6f6c4351'),
 	 ('8d9b7e6e-5dff-49fc-86cb-092e698dd94a','395 lb','cdb553a0-fac0-4337-985d-21d4a3b939d3'),
 	 ('7084cf65-603b-456d-9a89-0aa9f3ec0bd7','- lb','fae4b2ae-bcea-4c80-a466-5dadc02a2b02'),
@@ -2764,7 +2764,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('e88a8a4e-32a3-4d6e-9bed-0de7e7000bbd','18 tons','fc447910-8c95-43d0-a81b-5187bea2bf55'),
 	 ('03926862-01a6-410e-8b2d-67d0fef1c600','56 kg','757c163e-3cd3-40d2-994a-b4cca23d522e'),
 	 ('023a5cfc-a9cb-4796-84a6-256c56a99d4a','0 kg','4b916fb3-bea1-4a73-aa8e-c25c6e8424da');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('28cf425f-cf7e-4209-b7d1-4859ace41268','81 kg','429fbac8-6d25-46f5-a2b2-7e1c38fcf407'),
 	 ('4c77a018-151d-45da-9f8f-0df498ab3d0e','205 lb','37f92101-52a8-47af-a638-4784e5679c98'),
 	 ('1e40d2a1-774e-42b7-ae7b-eea0e0a8cb85','235 lb','d6c6ac88-30b3-4c2a-a357-e4bb01a5a6ed'),
@@ -2775,7 +2775,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('96ae00b8-0660-4434-9622-a99eb62acec9','81 kg','6e9e0d1e-c60a-42eb-9e1e-8199f0a1db25'),
 	 ('2a3d6efb-502f-45c4-8749-8deac5c3583b','104 kg','0de37ef8-c9d5-4987-912f-07b008aade2d'),
 	 ('f2351266-80c3-4fdc-a762-e5e159be062b','128 lb','8d686d5b-9dd0-4811-8317-d391a26a4577');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('cd5689f2-3de9-4df8-b3c2-8c1395ee5d4e','460 lb','7a096bb0-044d-483a-a753-cacc5a46f90d'),
 	 ('f24500dc-264b-4fd6-85b9-75f81cd6c59f','122 lb','7fad8e2d-6698-4c7f-84df-557a41393009'),
 	 ('e8d58ebc-88b3-42ed-a7bd-e1eaf2c0755f','- lb','bdfb7a5e-fd59-42a5-8c24-8343f7f0c6c9'),
@@ -2786,7 +2786,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('c4443b5a-f886-490e-a147-9561f945de89','120 lb','4f45df50-f0dc-4237-80a5-a6eba831bdf5'),
 	 ('3ae631a1-83c5-4b18-8deb-90c1bb616b65','145 lb','4d94a979-a551-4ae8-86ce-7d8bbebc8bd2'),
 	 ('a52a7e43-6ec6-40d3-86a5-d6609bb8b7ca','210 lb','41c61246-cd3e-44c7-bdc0-c791284eed43');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('1a2500a0-692f-4014-8230-bb33dc73ef4b','425 lb','9310f6ce-f3de-44cf-bcd0-77d88bc2bbc5'),
 	 ('80237fa0-95c2-45ff-a2b9-ccb2283abce2','800 lb','97877e16-b8a9-4164-93af-4bcde5f7f107'),
 	 ('76232c5b-e297-4130-9172-443df6b7d2c0','0 kg','8a6b3759-fb54-4071-92aa-85c0fcda2073'),
@@ -2797,7 +2797,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('59f4b9f0-62a2-4e50-a34f-11938f8731d3','128 kg','32b62f19-d0b1-44a9-a3eb-675e2fbc8e88'),
 	 ('9d228815-aed5-4a79-9482-38899cb4e581','54 kg','8b646f95-bc57-49e0-914d-4f664c105e9d'),
 	 ('c296053f-716e-45f4-9275-21f75c534ca8','185 lb','1cc37b4a-bb5b-4139-9db1-83f0fa800b8c');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('c6081319-1c7e-485e-950b-367aa5de0bf5','59 kg','951bb1f6-7cfd-47b3-bad7-d6a79569c83f'),
 	 ('3ebd6026-0c60-437c-8baa-296da73ad70b','0 kg','a95187b4-56eb-4fbb-bfce-195e53e93510'),
 	 ('9ec2195b-3965-4824-9fff-985c8f89e239','52 kg','caf3250d-926a-49ca-a90c-7cb4899a02be'),
@@ -2808,7 +2808,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('c0098dff-f783-43a3-9014-c6da64204f79','0 kg','d61ec301-8b67-4f5f-9d56-1e3e9bd43707'),
 	 ('3037b9b6-bf5a-4c1b-a907-3a68e3beef78','70 kg','8d6566f9-85d1-4d1e-89c0-6824ace1db94'),
 	 ('972debb9-144e-443b-8be5-cab157368964','0 kg','d96b2112-0df3-44e1-8fbb-b11aa1dff47d');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('b85ec0f4-81a2-4f89-a7f7-e7bf83124730','56 kg','bcd58f30-ec54-4604-87de-5f66cb82b48d'),
 	 ('3857bb55-3ca6-46c3-8a90-ce2d0d8ded57','125 lb','48a4df97-5d8b-410f-8311-a7c00bf66ae5'),
 	 ('6fb260eb-e2cb-48b1-988d-43b53962d666','113 kg','bc3bf6b6-1315-4d15-a339-fd6d8079a145'),
@@ -2819,7 +2819,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('da4efdf9-d478-41c9-9398-b28f655d127f','- lb','af16d0cc-4f05-4120-a129-b502e58cf2d5'),
 	 ('dbfdb8e8-539c-4f7b-9aa2-95d7d279d1dd','160 lb','8c723ff1-8c40-41ff-8914-38b32657482f'),
 	 ('33c04252-f052-453d-bd07-72d1de2e5288','110 lb','b02342aa-9171-4bd3-afc5-be0435866495');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('e8fd53b6-a50f-4f75-8876-39f318612d97','56 kg','67e449ee-6839-460a-8e84-942f3df7561c'),
 	 ('1a83e7bd-3ca7-48f1-b4da-a8b3b00b58a6','83 kg','672dc255-12c3-4d35-947a-84384ac24188'),
 	 ('793113bb-7be1-4fad-be7e-b38c3703806c','0 kg','81cf1a2f-0f13-44ec-a37c-0fabed81c6cb'),
@@ -2830,7 +2830,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('117e7146-eb25-44b8-b09d-011cd778ceae','198 kg','636baf64-2c15-4efe-8a80-f639f4961911'),
 	 ('ef16b3e7-58be-4049-bdc7-01151aed1a23','149 kg','aed101ed-28b3-4539-80a1-d20a3227acd8'),
 	 ('feed1429-eeee-4b62-bcc8-1c251442c386','54 kg','21406e72-a469-476f-9ccd-d094d0c016dd');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('73043ace-b09f-4f01-b08d-e3ec7a927bc3','76 kg','9a5c96a2-34ee-4f06-b2b7-fb2d3e4ed9da'),
 	 ('eb4e4fea-4437-4c6f-818d-65580ddb5c28','233 lb','31a9590b-ac14-473d-84f5-7ca6149bc6c1'),
 	 ('1ef66a2b-e8f5-4a55-a43a-053d72104b33','110 lb','6c2e64ab-dc8c-44f1-8c71-715c56154b28'),
@@ -2841,7 +2841,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('98c881a5-67a9-4109-85e2-1945540e6b7a','181 lb','b25aa1ac-ee32-4b7f-9ae8-24c3d69db971'),
 	 ('5bf35571-9af3-4a2b-a5ef-6f5b3afbf304','- lb','2ba308d3-3a9c-4c72-bab7-556bc8ed6290'),
 	 ('2db7af88-fec3-4c53-8af5-0aa6b3f0fe07','150 lb','bb9237f0-f296-414b-800a-bc3243caa756');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('5b56fdc8-0a22-4490-b26b-1c119192e5ef','190 lb','d65ba406-ebfd-4944-b92a-2b1e92bb581a'),
 	 ('b7f792b2-824b-49ed-b047-6041df6ce96b','200 lb','8e221d70-9bd6-4fb4-aef4-41bb4a49db18'),
 	 ('1c357bb4-d67b-437d-b572-156523f25dd6','205 lb','dc7715a2-ba7c-4b2d-ae8a-e47003b6d087'),
@@ -2852,7 +2852,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('c6c9c595-ab4c-404c-9927-74883e442bb1','81 kg','8f55396b-f52e-45d8-a19e-e96a64a51a4f'),
 	 ('a689d2c6-13f4-4751-bf1c-351dfed6fc0b','120 lb','630fc046-bc71-4a9a-ba01-23ec2f462096'),
 	 ('dddb94ca-3734-48c5-93bd-3a30a74fb55c','70 kg','80badf9f-ea37-431b-9f53-4992d13d4a9c');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('4ac34ce2-fced-48d5-868e-1bb00b0324ff','99 kg','70c44f84-695b-4b26-b839-ed259c195ed8'),
 	 ('eb2ec23a-779d-49ee-88e7-de13303dd966','195 lb','2a1bb1cd-62c3-4fcd-b1bf-772dacb61302'),
 	 ('8fb43678-66d2-407d-961f-9a05667c1120','125 lb','f7fa99ee-25fa-4850-b1eb-05db71e046af'),
@@ -2863,7 +2863,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('6a9900ef-0e0d-4246-8e7e-5be7d4214609','180 lb','a04f8cc6-d345-4d25-872b-b42ea103bcd4'),
 	 ('5aae5d57-da8a-4531-9df7-e547a7818bba','230 lb','5a76b619-c664-4289-92a7-c934a88bf81e'),
 	 ('9efaaa6a-668e-48c3-80fe-08b7a2fa4ae0','0 kg','54310e35-12ff-42da-9905-03d1daff4c71');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('e1d92f82-88fb-4b81-8bc6-edc7e93f0c64','0 kg','0b6f778d-0e48-4308-85e4-cfbb2f5178b2'),
 	 ('c503dc09-29b5-46df-b77e-66fccb7dfd12','130 lb','c2cbb621-9b5a-4511-beb1-4e54087b4106'),
 	 ('fa1cfd92-d7f9-4f46-98ea-22fd8129aae2','210 lb','a3978ca4-e9ff-4d98-8026-3aead47326b6'),
@@ -2874,7 +2874,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('73a160d8-640c-4923-b3ef-db44fb56869e','- lb','4b916fb3-bea1-4a73-aa8e-c25c6e8424da'),
 	 ('3c997538-92ee-4b44-8c7b-956e344e103a','179 lb','429fbac8-6d25-46f5-a2b2-7e1c38fcf407'),
 	 ('906914b6-d871-4749-86ac-bf3a328579c9','88 kg','7a78a42b-1af7-4a2e-ae3f-87cb1bb146f8');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('5438306e-ca36-43ba-803d-f47efe4a030b','81 kg','64584b35-7904-4409-9a9c-1387847389ba'),
 	 ('115c7b38-6d9b-42f0-b3e9-b91b1d493ba8','220 lb','294160d6-f5c8-42da-8d9b-3e23811420de'),
 	 ('2db552ce-d612-4798-9b94-489b7df25029','62 kg','906016f6-6d1a-485f-9472-859ecdb00a30'),
@@ -2885,7 +2885,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('678d85dc-3559-49f9-be63-4d6adaeeed7e','175 lb','dba6665c-89db-41f1-9848-c871412435c1'),
 	 ('cddcc0cf-9d55-42fc-bbbb-e076eb69745a','1400 lb','52455c52-4b95-4f19-b76d-f8bca56e09c5'),
 	 ('d2b6d5d1-6d7c-4221-a36c-e8c8a265320f','59 kg','b6d9ca9c-d96d-4350-84f3-d5dc4eea343f');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('fb9a5896-7c1d-422a-af9e-e3f2af4d0406','77 kg','74e605ae-6de3-42e7-a369-49eac3d11e11'),
 	 ('9c360e5f-72a3-438d-bec1-068e21e69479','145 lb','64dc50ad-0132-489f-9cc5-259f2b25b9c8'),
 	 ('af316a07-6acc-4d88-83e4-373b379bfbd5','106 lb','13212cc3-3fbd-4e15-b855-d59f0e0ca003'),
@@ -2896,7 +2896,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('1d3ab243-39fc-403f-abf0-2610b2cfad2e','- lb','549c4ab7-62d0-4bdd-8672-a6ad3a88f8f4'),
 	 ('996911de-c7c9-482f-943e-1b61a902aeb7','0 kg','facfdc5b-65a3-4956-b0b6-95f02bcb9135'),
 	 ('b5f3feb6-df94-4bad-a71f-57172890c9b5','124 lb','dface3a2-1ce7-48d2-a55e-bd39a8e49d40');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('43eead33-8a12-4282-b341-7d0a1b242e36','- lb','723c6d8c-17f2-40bf-8852-6cb2a01feb27'),
 	 ('79dcd513-f6e2-4714-b7fe-764b0888704e','0 kg','b5fc2814-db8a-40b4-b99d-0a89db326dda'),
 	 ('821b97a9-5e1e-4093-a3d8-16d11671a257','- lb','ebbfb7e6-84ec-49ca-858a-abe4386baec8'),
@@ -2907,7 +2907,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('93734659-fd60-4929-9c45-37eaf59d5e7b','99 kg','b0634424-6b6d-4f9a-b11e-f660c28c9635'),
 	 ('26322746-7fb3-4e85-b07f-f779f353cced','140 lb','a3b17398-2eb8-4367-b71c-6f18659d29a1'),
 	 ('d7cfee4a-7520-40e3-b15c-b5eb10fcc243','230 kg','df062350-42a9-47b7-a539-027202189c07');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('acc5e25c-9cc1-47de-b877-c2c58a70a67b','36 kg','38a9cb86-0fc4-4314-ab31-50ddc14a8970'),
 	 ('0f0ff293-2864-4c0f-b633-c8848d2c3666','640 lb','f4918025-bf2f-4b7a-9d6e-d3b15d45adba'),
 	 ('927e795f-cd3b-4ad9-8f40-b992ff5e18e7','500 lb','ad39e3f8-faf6-4622-8d93-a5da96c586d7'),
@@ -2918,7 +2918,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('315c7e5f-408d-4690-a241-b586d05f79a9','- lb','785396d2-6192-4614-a836-7156bf83d503'),
 	 ('03ca5b71-1114-4417-bd7d-f60a452a6521','- lb','2eab4635-3e39-4f5a-9eb7-b39161137662'),
 	 ('d9c2cb6b-b93d-4c63-8f0a-6cd0715525c8','0 kg','b80cafd6-2281-4178-9d0d-ed72ba5645d6');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('cf825675-51ee-41f7-abfa-74eb2b6b4c4c','61 kg','eecabf3f-02f5-47fe-94b9-41a6f9c46574'),
 	 ('14eabce8-beb9-4c25-ba94-fce44b936d3d','175 lb','f37c1a9e-3b69-435e-a5f3-8c02315eb379'),
 	 ('e6bfb73e-9f5a-485e-a650-4e42bf0a08cc','189 lb','9cd097dd-1ceb-443f-aba4-b8207d606ad1'),
@@ -2929,7 +2929,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('ced164fe-6378-4c1e-9472-1eb67f7b4e4b','83 kg','c59b4fca-7b3a-4be2-9166-b9a6110e295a'),
 	 ('fb79f818-7b43-43f3-b018-e1e27b3d5148','56 kg','5af9c532-ef3a-4542-b26b-9649f626d9af'),
 	 ('95e7ac0a-069d-42c7-9f25-e8157011fedd','110 lb','e1ba5e59-d47a-4ec7-b7b7-3c8825cd4ae9');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('f225e7ef-01b2-4c40-a5bc-eee842ea6149','- lb','d61ec301-8b67-4f5f-9d56-1e3e9bd43707'),
 	 ('35017c8d-dab2-448c-9da5-1467837350af','101 kg','faa5b47a-a4de-4fef-9bc8-e3c09c3c40c1'),
 	 ('f5f9714e-7883-4df9-8a40-77eea18224a5','38 kg','f2d16de0-c908-4080-83ea-6aa13044a731'),
@@ -2940,7 +2940,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('516f173c-f461-4bba-a781-3c79a16bc9dc','120 lb','f1a6b4a5-d2e0-4c0b-99e3-e9fe6486c09d'),
 	 ('18773a6c-eada-4f3f-8c4f-12b8e4c2bb53','79 kg','2cd247c1-a95a-4969-9c85-0f35d89f0282'),
 	 ('168e460b-6a22-4ed2-a0c6-8f243918177f','108 lb','6ef3064e-9f3a-4993-8e71-fa31f0069f0c');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('d69efd6e-71ea-46d2-9eab-897287d2658f','971 lb','8f5a08e9-7218-43f3-9f62-a2c900bc6e0c'),
 	 ('709c1d25-ec23-4f93-b03d-0c3c21f988b4','52 kg','1838d806-f48f-409b-ab90-d1adc1b49307'),
 	 ('0f6877d4-a817-4008-bd91-ac532e34f6f4','131 kg','d60f0360-d8da-4568-b100-95561780caf5'),
@@ -2951,7 +2951,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('f5e81026-04f0-4edf-82d3-9205f91dfaf7','170 lb','05d6dcd0-a4ae-49cf-97b8-66b09b1662e3'),
 	 ('c310bd22-1983-4821-9e8d-f0a132dcb356','225 lb','0977044e-27b0-44f2-afa2-66e610981186'),
 	 ('34131c9d-77fa-498b-bb9b-3bc0ab91b80b','330 lb','aed101ed-28b3-4539-80a1-d20a3227acd8');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('ee0e71e2-6cbd-4954-92ff-cc090d2869db','120 lb','21406e72-a469-476f-9ccd-d094d0c016dd'),
 	 ('838c364e-3672-488c-bfa9-b4d59bd48c5a','169 lb','9a5c96a2-34ee-4f06-b2b7-fb2d3e4ed9da'),
 	 ('a76a993a-a21e-4edd-a770-b4ae25a6d1eb','101 kg','ce32b40f-d65e-42cf-a1ba-33c1db63a136'),
@@ -2962,7 +2962,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('580fb79d-dc18-475d-8349-e935b597ca92','- lb','4ae2676e-0a60-42d2-9299-02db4501d99d'),
 	 ('3a7065f7-c073-405e-9dca-35405fb5f574','185 lb','bc39c3b0-8f5e-404c-9b70-1a28bd9b97f2'),
 	 ('9ddaebe2-8d1b-4439-8f8b-8999a71169e4','0 kg','581edfd2-bcd2-4d9a-ac2b-4388493739e2');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('781113d2-8c00-4d17-9821-16905ea55f8c','17 kg','5ac36ad4-2e8e-441a-9835-d089569ff061'),
 	 ('f6524fd5-adb7-426c-a534-ba0737e01143','0 kg','2ba308d3-3a9c-4c72-bab7-556bc8ed6290'),
 	 ('311e490c-7de7-428f-8f6a-d519468ef4b2','- lb','1bd8df3b-eda4-49c6-aa0a-82420ed10993'),
@@ -2973,7 +2973,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('7e5e67a4-947b-465b-bace-187964dccfc1','104 kg','9ce307b3-3953-460b-98a6-df55ef25b037'),
 	 ('84e4aad5-5663-475f-9e4b-e05f387f0f52','495 kg','7c36ded2-5795-4864-9703-5566be89188a'),
 	 ('bc8f5884-d8aa-4fa5-bd3e-9de463fe8d57','- lb','0297d434-aedf-4af1-822c-33cc62890805');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('8501c708-bee2-4f95-ba5c-e8db5278cf5d','130 lb','24452624-f610-499b-813e-303c778bcb63'),
 	 ('2a21313c-4bd6-45ac-a378-baa5f448228c','158 kg','032102a7-b162-4f70-bef3-877e2ec7c839'),
 	 ('5a121fc6-0b25-4627-bdb1-6a63d06748af','165 lb','83d49b66-f913-4299-ac0f-da180af8f5ea'),
@@ -2984,7 +2984,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('6ec8ce31-8a7b-4236-b58f-be3a73d3443f','165 lb','5daf5f34-1697-4fd1-8080-7814e70e6e45'),
 	 ('ba3f3c9e-ce5b-47f2-b9ba-65b7a36d01be','180 lb','016955aa-457c-4770-9859-d24f3b9e3079'),
 	 ('f93616b8-cce0-4648-b9b0-b9b1aa09e86d','- lb','a9229479-6c59-4ccb-9d6a-6d9daba290ef');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('b78a2a44-aa2b-4d16-a34c-77d3cc06e343','135 lb','d512b623-8d11-4b34-b634-1f14e72b0d70'),
 	 ('afbf7cb7-8fe7-4dba-addb-ece599d9de3f','378 lb','12b2386b-4feb-48b5-a597-a8d559215a30'),
 	 ('1045ed9e-522e-48b6-b2cb-eb4ff9553996','0 kg','83b361f5-b804-452e-aeb9-96e17ee0ab84'),
@@ -2995,7 +2995,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('2f0babfd-52ce-46fe-8b58-2697a9d1f1c7','915 lb','b7c2516e-6c02-4d3c-9ce2-d59c72b795c0'),
 	 ('ecb27d56-c811-46f4-85e8-3effdccfda60','99 kg','2f3ac360-4ef8-47bf-b153-f103b9d0fd7e'),
 	 ('8121b533-bcf2-4693-99a7-7d18c7724044','126 lb','8661f23d-37f0-44a3-9641-eadb426c1ce7');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('8f90d3c1-7ad2-4941-bb72-2a00d3952d6d','595 lb','0afa0e19-8b2a-414b-a147-f8ba3f3c94e6'),
 	 ('a97c7165-5b14-4626-b405-3e930b9ed1b1','600 lb','f2c508fd-0d0a-4a77-b661-bc03de612326'),
 	 ('c0e55332-eccf-4a41-a491-685190db9622','79 kg','a189c799-a988-4144-8010-a0eaa9ebc116'),
@@ -3006,7 +3006,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('d23f052a-5332-4924-9774-9cd1b5adc611','325 lb','0cea3e26-d172-4693-8b99-95fdc76ad113'),
 	 ('cd0de35d-bf73-47d5-b6ee-e23bf8910eac','176 lb','c6a343a4-8be8-43c8-9b20-06ffbc71846f'),
 	 ('e9902594-dadb-4457-a76e-f3b00689e109','180 lb','f52b823b-fe09-4892-a198-5bcd376a4759');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('097a62b4-1ccb-423a-869f-b1b15e7f7602','79 kg','b8319c2f-3305-4f0b-ba84-d29f1a615e8a'),
 	 ('5c874a02-f31d-4d1e-9fed-436fdf6f332d','145 lb','7de1c66b-93fe-4643-86e3-96b3280787ec'),
 	 ('cc07f8a6-2c4b-4bc1-abc1-ee71783e869e','14 kg','2077d98b-95d4-4086-b616-1f3638c96b2b'),
@@ -3017,7 +3017,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('ff3adc19-7c40-409c-9bb5-93f71e743728','- lb','f7a7f438-28f7-41df-a586-f8db9932b646'),
 	 ('59f46739-0ef0-40fc-8c24-942d93b7b64c','- lb','22e2addd-ee11-4032-bea1-49254e924ccf'),
 	 ('d603ccda-cbea-41ba-86f4-88dc73931165','180 lb','e8bd646e-a1d4-4362-95e6-613f83e55f68');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('f5621d30-0235-4733-8bb4-2ed46f517cbf','175 lb','8114b730-364e-461c-8558-441b8979b9e7'),
 	 ('0494bd5a-0cbd-4663-9758-c80ff0db6985','0 kg','0dca44e8-0354-4026-a5c3-284bdcff6867'),
 	 ('c73a231b-7ef8-47df-bfdb-94f07256750d','790 lb','1f24b203-bf85-45b9-998d-dbdad30ce733'),
@@ -3028,7 +3028,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('55b434d5-0999-4de4-9224-96fb4d270976','- lb','a157b492-8781-4206-b20b-356521d841dc'),
 	 ('25f5ee61-fe80-4c42-b22f-1b48d148e32b','215 lb','9060cebd-56ef-4762-89d9-8b476a9984ea'),
 	 ('c6079c12-a8e4-4006-878b-3ad734ccdeb8','- lb','96dff2b5-8f85-4b8b-afd3-787e536da761');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('09c9e26a-70bc-4aa8-9f20-d60cff3b99f6','0 kg','de19503f-0a2b-4951-b956-94f286756fd0'),
 	 ('2c25a2e5-0c0e-4f27-98cd-68cf16ca0ebe','338 kg','1ad47a32-14c9-4f38-83a2-fc202da12f4b'),
 	 ('bd414a76-ae4e-43c0-a16e-c19fe7c59a33','120 lb','8b646f95-bc57-49e0-914d-4f664c105e9d'),
@@ -3039,7 +3039,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('a918d599-a64b-4513-9f9a-3017d81306e7','130 lb','951bb1f6-7cfd-47b3-bad7-d6a79569c83f'),
 	 ('86b578d9-472b-4492-a28d-8efb5dd159f7','190 lb','af0a1ce6-3d13-4c3f-8e55-f317e0075666'),
 	 ('e25c3c58-3509-48a8-9257-69c33b75a15b','- lb','a95187b4-56eb-4fbb-bfce-195e53e93510');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('ffc819ff-35b9-4211-946b-61adb742dd51','0 kg','3b3c64ab-9627-4e87-bc85-efe26d2deed9'),
 	 ('cc7061e3-101a-49cf-950d-ada74481f6bf','175 lb','a66e8aef-60ec-4f34-ae37-d8cf23e312e4'),
 	 ('d3acf212-d2f8-4071-9a75-bf4de0f9c9bf','178 lb','c46a580b-a6a4-4879-8bfa-2e5086dd3532'),
@@ -3050,7 +3050,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('ad9dfa78-1799-48bb-aa77-cc81cecfaa5e','0 kg','71618c19-ce0f-4bb1-9d89-e42db0383fc3'),
 	 ('3b71f4ae-3a36-4d98-aead-03ffa23d90ae','61 kg','107ece20-eace-4ab2-abac-18ab3debf264'),
 	 ('189b5520-c84a-419b-8d34-8f9ba4c71e53','- lb','142557fe-427d-480e-a82e-05c13a9eb91b');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('88e41841-3765-4007-a456-a5e4c40b6e63','- lb','ef1f6c33-e463-4e0c-aea5-9eaba2ca7f9b'),
 	 ('5d5c2963-2ccd-4797-82f3-73a215d701c2','689 lb','64783066-a054-4b8f-9d38-efdd0b625f62'),
 	 ('2e07f9a9-801b-4778-89f6-53f200bfcff9','0 kg','2a1b1bcd-d220-4e38-91f4-cd2ee4e86fd7'),
@@ -3061,7 +3061,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('51807b6f-ca40-4bea-a4ec-e1ffca0e9538','119 lb','1c148a7c-9c9c-409e-9a50-13cb425a1d0b'),
 	 ('1c7f1164-c46f-47ee-905f-4e97e2c24c7c','0 kg','091168b3-9b43-46f0-afcf-5881d211242f'),
 	 ('11eef4eb-45d7-44b2-a0c6-a1fc2bc908df','113 kg','c0b89a46-5c44-41d8-b40c-e5cc3ae3a38b');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('2f958dd4-641f-41f5-a5bc-4825a99c5a1e','0 kg','b94a6e3a-0ab9-4cfa-ac84-046171d23a6c'),
 	 ('6c4500a8-8ad6-49bc-a7e4-e2c55c1ac1b7','79 kg','d5df752a-aa0c-4e90-a24f-40df4b5b75b9'),
 	 ('b7dcf9f9-0e61-474f-ac4c-ffb85671ca73','- lb','36865d41-98e6-42f0-b6bb-c4e76916bd96'),
@@ -3072,7 +3072,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('791f2351-1b6a-4222-b63f-e84e36b5b8db','104 lb','727a8e89-e40b-40a0-b3ef-6774276668f3'),
 	 ('b670cb3c-c043-40fb-bc6a-a6cd0a3e0d7a','500 lb','02fc414c-9676-492e-bd51-f26848dbd94a'),
 	 ('d28809f3-0084-47c3-a8d7-27c485d477e0','220 lb','ebb0eb8a-e1aa-4224-ae24-5d9be2427226');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('1e9a0158-317e-434f-a36b-3e9d64b71cae','450 lb','8da7700e-28eb-4f56-9ed2-2eac64b44f92'),
 	 ('0637cdb5-145a-484c-bcdc-8f827aaf21db','81 kg','681026db-dc21-475d-9d78-6b4037672ae1'),
 	 ('e8679e4e-ef74-45b1-97b7-fe4c8f105e40','288 kg','563cbc20-0559-41fd-9143-2a39eebfe6d5'),
@@ -3083,7 +3083,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('0d2fd133-335b-4869-be97-570cbeac3c77','79 kg','48b5cba1-1f8d-448c-976e-a2c810a04d27'),
 	 ('ecb08423-3cf7-4e3b-8c16-ed56545129e8','240 lb','6df7c126-00d0-4508-aef8-7ed0ffc7a345'),
 	 ('405abd8f-acdc-4feb-a6a4-307089206f74','0 kg','da9a9f41-08cd-4a3a-a6f6-3db57c47c6fb');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('8ffceafc-e4bf-41cb-97ee-72ab117ecd02','63 kg','f03bcce8-4c7d-4481-b6c4-6966e62e9bfe'),
 	 ('3e29d0aa-28c7-434e-95d3-d03cb4aec895','127 lb','dd5f7032-59e3-412b-a8c4-45550e698708'),
 	 ('3b2d4676-194c-48ee-a720-cc8e0094f5e0','115 lb','a1535e97-36e9-48f5-8405-8da3bcba31b6'),
@@ -3094,7 +3094,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('011d6d20-93f8-4749-a5d6-ad6405e7248b','54 kg','bb8db384-4a82-43fe-8de2-0869f3c8b17a'),
 	 ('c7486181-de3c-4fa4-8621-916945cb5422','90 kg','5d2014c9-e574-4f9c-aa20-6df357afabd9'),
 	 ('c3b3989d-f79c-4970-94ee-c28fd28db0f8','86 kg','7eddc224-268f-4224-a296-8b76b3b0e03d');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('793a8901-6409-4a4e-b6d6-d8333deee0bd','215 lb','7bb7c723-785c-4f5a-a332-1d2b3830db07'),
 	 ('49d3a554-cd13-4194-91ec-e7a0ffe2084d','1100 lb','7c36ded2-5795-4864-9703-5566be89188a'),
 	 ('6ffa3c11-b75d-4746-a82e-d1714a559db6','- lb','a7bf0ccc-bb7c-4899-a4c4-55748c9b1957'),
@@ -3105,7 +3105,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('85eb2690-65c5-4993-9cb7-ebf6c0d8d0f4','385 lb','3a381f2f-e3ea-44ad-8f0e-5fbc7857bb01'),
 	 ('10512fdd-4053-46ad-a127-1ff01692ee53','116 lb','5827fe75-4092-4510-98bb-defb0e4f38e7'),
 	 ('62fd3328-bb87-47de-a2bf-b16e7282e1e9','88 kg','2a1bb1cd-62c3-4fcd-b1bf-772dacb61302');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('8503beb0-6b21-449c-b64a-9bb001ebdddc','210 lb','3169fa58-8c12-49d7-bb37-c7d67068d01c'),
 	 ('893d0cd2-c68e-4d07-8b17-7bd6969d3f0e','0 kg','87e073ca-e4ad-44de-955c-68eb25b56df8'),
 	 ('faea9fe2-c475-460f-93e3-d46758ac076e','210 lb','cd53ca6b-90a7-4da9-bc82-383ec25a3eab'),
@@ -3116,7 +3116,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('889ef67d-47df-403a-9de4-75e8f99d1df4','57 kg','8661f23d-37f0-44a3-9641-eadb426c1ce7'),
 	 ('355dd90c-6a6e-4a6d-981b-fd6332e9146f','195 lb','7a78a42b-1af7-4a2e-ae3f-87cb1bb146f8'),
 	 ('2caac5ea-58ed-4cfd-ba47-d1acf3759cce','202 lb','eaa5766c-d86e-4220-8f2f-4268d762da12');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('aa145cda-8a3b-418d-a4ae-2742957706e5','- lb','3ca3ce44-ce2c-46cd-a867-81a8f5c39e3a'),
 	 ('24afa521-5f12-4b72-8856-c8c70a908269','77 kg','5d86c5b9-94a7-4442-be50-f0383f12d709'),
 	 ('89f9c52e-df6f-42dd-89d9-91ea48bb8da3','179 lb','13a55423-7e6c-48de-9dfc-1759909d96f8'),
@@ -3127,7 +3127,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('b3d7425d-5640-4b02-a0cc-4eef3f3b0fe3','126 lb','f657bd10-56dd-4408-9a40-617d1eb0c2d8'),
 	 ('e185bce3-e75d-42d8-9baf-3be560a0f710','135 lb','64e0bb6a-49ca-4223-a0c3-dff045aa084c'),
 	 ('4510e0c8-7f4d-4b27-820b-2d091d9bd2b2','65 kg','64dc50ad-0132-489f-9cc5-259f2b25b9c8');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('5357565f-43e2-4869-84a8-413c5369f11d','48 kg','13212cc3-3fbd-4e15-b855-d59f0e0ca003'),
 	 ('7b119ba5-c062-430b-8940-a167bb5be785','55 kg','7fad8e2d-6698-4c7f-84df-557a41393009'),
 	 ('67a6b129-a505-4a72-a82e-a62090dbe353','- lb','44292fdc-0faf-4faa-b969-7a55c2c35ee8'),
@@ -3138,7 +3138,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('c2c981e4-7338-40e7-9b6f-0e65c0525ee5','20000000 lb','1b32bc5b-37ee-4303-917b-8be2e12a93df'),
 	 ('f273e1a1-8b9f-436d-bc7d-0cf3dcb8503c','18 kg','51d6b719-a7fd-428d-a24a-1d4d9f17266b'),
 	 ('2643ee4c-6ae1-4db4-9dcb-f28967f826ba','58 kg','e11c4987-965c-4946-bf21-2ccfc0fda014');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('75d51809-0351-42f1-b4e7-e19fb7c29c33','95 kg','fc1ba992-fa82-4ad0-ab7b-778521270f9d'),
 	 ('da9a6e01-1840-440b-8603-23ca8225b799','59 kg','cc35f9c8-801e-4206-a0e9-17ba73600997'),
 	 ('a476fd17-e08e-4ca9-884f-d42ab0d5337a','175 lb','6a9102bc-ca75-49a3-8e80-3ec6e893d5c3'),
@@ -3149,7 +3149,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('1fffd25f-5ae3-4a0a-811e-484d96925756','750 lb','1ad47a32-14c9-4f38-83a2-fc202da12f4b'),
 	 ('81d54a1c-d649-4bdf-993d-d36391047723','550 lb','0bc495c5-1375-41c8-8d5c-330993b508e5'),
 	 ('576e7323-4e39-4b61-9e4b-0ff44cfedd23','121 lb','b53ecb88-30b1-4c45-8685-de1dc3a23990');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('283b830b-760a-4e35-93c3-f154c43b8f73','83 kg','1cc37b4a-bb5b-4139-9db1-83f0fa800b8c'),
 	 ('5667d197-692d-45e8-9ab4-e8df4f8319ed','86 kg','af0a1ce6-3d13-4c3f-8e55-f317e0075666'),
 	 ('5fdeefb0-f0d8-42f7-a996-42f945d8077e','- lb','c89df0e7-02e4-4348-a994-13818ee9cf97'),
@@ -3160,7 +3160,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('6545c3b4-1f3a-48b8-9a45-a9c7706f3698','0 kg','142557fe-427d-480e-a82e-05c13a9eb91b'),
 	 ('e013f87a-c25d-4ecb-8f25-f9c7406ef095','140 lb','c633ead0-a319-466d-9df1-0923c4184d2d'),
 	 ('6426b739-89e2-424b-850b-f052a1cceea8','230 lb','bd04f550-fbcd-4318-89f8-0eeab7445c16');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('41010c13-9ee7-486a-9208-9279af3ba593','145 lb','e84aed91-7b18-4193-b87e-fd1ad00c9730'),
 	 ('f148722b-cf4c-4599-854e-bf7e86bd2a23','- lb','192123cc-0d57-45a9-9732-1fbcc421b0b8'),
 	 ('ccf6505d-5ead-4c04-ab1a-68027dba267c','150 lb','cde32ba7-f163-492c-96db-82c52c5bb0db'),
@@ -3171,7 +3171,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('559ccda6-471d-4bd2-9744-5e77fb348e5c','317 lb','e96eaa56-ee65-44ca-8df7-d6c8ebed9ad6'),
 	 ('c8129b4d-5959-4dd1-86e7-86686779b4da','130 lb','53c141da-5581-4ec8-ad84-dd26d05ff002'),
 	 ('e3bbe50f-a773-4976-aac0-d98d78482fdb','190 lb','6ced5e5f-6762-4941-a10c-cf89ddad5793');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('c855a164-b158-449d-87ef-e1dc52d0476d','79 kg','6376e084-efcb-42b9-a00c-d7df5a648fed'),
 	 ('15b78fc3-b618-43c7-9b00-9f430091931b','50 kg','6c2e64ab-dc8c-44f1-8c71-715c56154b28'),
 	 ('e0f1599b-efe3-463a-864d-8733591d841c','0 kg','1b18c933-5611-439a-b9be-1520fd04bb02'),
@@ -3182,7 +3182,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('057a27d4-7b70-4f72-8787-3720bb6f6a9d','50 kg','c768d17e-8cfc-43b7-b88d-f406581c0caa'),
 	 ('7df9e69d-96ce-4319-8a8a-cfa169615ce8','51 kg','b70428f6-cd7e-48c3-9fd9-612e2998a4b6'),
 	 ('4d9cb198-42d8-447e-a3bb-5e0f225656f7','171 kg','2aa2b51b-f2f3-4683-8060-ddad9298e5e0');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('8beb64c5-3428-440c-b055-4beab103af36','0 kg','d6e21efc-17fa-4d05-a264-dede11fe4c33'),
 	 ('39a811c0-5669-40d3-9f31-426fe1c4c276','275 lb','5d0ebaa5-6e3d-43b4-a198-c5e379bd8aae'),
 	 ('3b114237-79eb-4114-b14a-ffcc28c8f4c1','250 lb','8d7f0184-756d-4170-af9a-5ecc09f258a9'),
@@ -3193,7 +3193,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('d36cf115-08d3-4a60-973c-4349685c68cd','0 kg','2fae8389-2e34-4b08-9120-55921790bac3'),
 	 ('f2778864-f6ca-4e1e-a5d3-f6e05f42525c','122 lb','ca2d750c-56e4-4272-ac75-cf1ada2830df'),
 	 ('be9c00f4-7218-4db5-83c0-2f1fb8a2e3fd','52 kg','ac8824e2-772e-48e5-9f02-e49ed42a149a');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('81dc2b24-7dbf-42da-a11f-be55bf8e3039','- lb','631165db-e481-4256-811d-7e7669d07c51'),
 	 ('94e59930-1f2f-484a-9534-74bd53b4074f','0 kg','e101e9cd-6ba7-4b68-a97a-b7c88de473b0'),
 	 ('cb329b26-f64a-4911-a174-2f69c03dd4f5','240 lb','4cd073ff-a33e-4b24-acd6-db0edccad435'),
@@ -3204,7 +3204,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('51f4c2eb-0863-4689-aebf-3fe56ecba487','1815 lb','11450b94-e51d-44bd-a467-c6b094a0d854'),
 	 ('3c53dc91-6d27-4922-bf6e-942e8721d811','300 lb','79280d85-d970-451c-800d-32030085836a'),
 	 ('5d42f759-eefe-44b4-9285-2e941247025a','0 kg','f68b69ed-703a-47f4-82ff-8c87c87693d6');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('f3f4a73b-156a-4da2-831e-490cc0e36a09','225 lb','bbf28b7f-c6dd-4dc5-820e-a830ff8cc95c'),
 	 ('985a0493-6f52-41fd-8ef3-417b1352c7d8','95 kg','3169fa58-8c12-49d7-bb37-c7d67068d01c'),
 	 ('8251a27b-3ba6-4db4-bf47-900088b21375','- lb','87e073ca-e4ad-44de-955c-68eb25b56df8'),
@@ -3215,7 +3215,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('ad5bfd64-a250-4eff-bfdf-525698888042','- lb','54310e35-12ff-42da-9905-03d1daff4c71'),
 	 ('b23f04ca-0906-4137-a31e-4a923c999c67','- lb','0b6f778d-0e48-4308-85e4-cfbb2f5178b2'),
 	 ('2648d611-582c-4a11-a331-5d3e097476fc','- lb','ad893c6e-0a12-48a9-a71d-63a49e4224ba');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('f1688908-de50-4807-944c-7113b72cf315','50 kg','8e49c76b-6d98-4ee4-a3bc-bc4066c8a3dc'),
 	 ('4bf5ebcd-7727-4a4d-bca8-c56acfefa3a8','125 lb','702e44bf-44bd-4106-8fe1-2e69abb74b76'),
 	 ('85863bb5-12e6-463c-92db-20cda7839045','195 lb','326d279a-a2f1-4e40-8aa5-22d27244e134'),
@@ -3226,7 +3226,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('c2f50541-49b0-471d-9c4b-b0862b724e0f','230 lb','c1556711-5d67-4880-8966-29f699ff77ac'),
 	 ('e0aa4f36-510b-46d0-8016-292e4194e877','- lb','b31bafbe-3127-4dcd-9d72-a96de15cb8af'),
 	 ('54d79b58-18d7-4531-a3a3-2cb7cd131923','0 kg','157d57ab-6192-439f-8809-55e757acdd96');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('5e64be2d-a6c3-4472-8775-f430ec0a2e61','210 lb','39feedfc-1939-4940-b4ed-03571529f812'),
 	 ('1f28a758-5455-4352-b5e0-01aa09b21f2e','0 kg','96010c0b-c86b-4b3c-a24e-68c21f8ccab1'),
 	 ('aa3c54ac-f947-49a0-9b12-cb50483413ac','200 lb','8a7dc1e3-1af0-4185-bdad-72f1ff53db33'),
@@ -3237,7 +3237,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('91adcee5-90e7-4eb4-b9ef-d0f90cf10fa7','61 kg','e9d85f69-20d7-438a-a4a9-557dedf232b4'),
 	 ('7833dbe1-00af-401b-aff8-84e64150e4ae','77 kg','cc28bcff-ebea-4785-94f4-dd8f3ef9a0e3'),
 	 ('7a61f664-34ad-4531-bfca-c5324c06c253','58 kg','8d686d5b-9dd0-4811-8317-d391a26a4577');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('506daf91-8c38-4c67-b577-0f3ea1a11aa2','172 lb','74e605ae-6de3-42e7-a369-49eac3d11e11'),
 	 ('7f55ebf6-4e63-46c9-810e-822bf3145cdd','79 kg','c6a343a4-8be8-43c8-9b20-06ffbc71846f'),
 	 ('610c0d00-8ff0-4020-ae7f-801f426415cc','81 kg','f52b823b-fe09-4892-a198-5bcd376a4759'),
@@ -3248,7 +3248,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('7bda7f7f-b84b-4c67-8549-723e244e9cd3','52 kg','8af43bcf-b96d-4838-97e8-a8c4246a6b8a'),
 	 ('cb7e837e-4358-4cb2-aee9-02f4bb970689','0 kg','f1b89433-0207-405b-a8b8-17f43a2911f4'),
 	 ('69ca8d2b-24b9-4422-a432-de71fbd57fa2','230 lb','6935edfc-7e27-4e08-9c37-21e4b5957b45');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('0d4b3588-38c9-4a82-a7f7-ee0fcef6e405','1900 lb','255777a2-1cdd-46be-903b-f6156862cebc'),
 	 ('e6942f6a-79e4-4560-836a-d738f183fe63','9,000 tons','1b32bc5b-37ee-4303-917b-8be2e12a93df'),
 	 ('37fd0b27-e865-472d-8a72-aa6c80cff235','216 lb','3e2cdb8d-8c70-4bdb-83d0-58d615034020'),
@@ -3259,7 +3259,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('0ba86ced-519a-46e2-9949-4982ddb70538','170 lb','75bdb6c9-736a-4036-8aaa-040ba6e2517d'),
 	 ('64d0bc7c-a5d9-4caf-af99-46b2b0f71736','- lb','ca982875-cdaa-4fe2-944c-3f16a92c9204'),
 	 ('536f3842-20da-4e7e-9fc4-201cf7fd5e39','- lb','b849a74d-c461-4c43-90c3-10ce52bd7730');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('a7b6754f-c24c-4306-a877-31300d0e8ee4','79 kg','6a9102bc-ca75-49a3-8e80-3ec6e893d5c3'),
 	 ('5032d93d-20ca-4ec5-8c09-5942d6400fde','0 kg','22583a81-cad0-4a50-aeac-a3530c42f100'),
 	 ('3e60f922-2953-4ec0-83e2-9b9093212c36','0 kg','134678d1-d5a3-4c50-9f81-3fd8e3b091de'),
@@ -3270,7 +3270,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('60cd52e0-5ddc-4a1f-b763-97d8c492a7dc','285 lb','32b62f19-d0b1-44a9-a3eb-675e2fbc8e88'),
 	 ('e57c3dad-e368-4704-94ae-67b9d05f2a85','101 kg','f15c5615-2b04-4a5e-b035-7453ba9e4b8a'),
 	 ('2509900a-fb5f-43e1-a064-32d3cb487122','175 lb','f40c42b5-5401-416c-b1b8-82902112fbe6');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('67d87130-c705-42d8-a9ce-bb8abece0553','350 lb','ecbf8137-9a8c-45c8-bd74-d3b803526e27'),
 	 ('c0caace0-2cdf-429f-b534-3572ce4151a3','185 lb','49aff108-2413-4f26-b57e-b7d5850dccdf'),
 	 ('7298b673-e17f-4bb2-ba5f-5141cb413ff8','- lb','b4e0767c-b2a5-4ae6-9218-79c6d4938474'),
@@ -3281,7 +3281,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('c13a3e4e-3f85-475e-87df-e92f98e86ca6','520 lb','74ca49e3-2cb1-4d32-8c9a-bc024de8674e'),
 	 ('89cc4301-2367-496f-8e6f-3bcc9a19b6e5','900 lb','6bbfad7e-9165-42f7-8f4e-aa539d932311'),
 	 ('ad0c5bde-9dc8-4698-b799-b6ec312d4471','- lb','6b426f7b-b2e4-4efa-86fe-baa2b28eb34c');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('576dc100-a08c-4a15-9f55-18b2f7254952','124 lb','5af9c532-ef3a-4542-b26b-9649f626d9af'),
 	 ('904469ee-c1a2-492b-853e-7642dcb749cc','70 kg','1917ffa5-cc56-4a87-94f0-a96c466fe814'),
 	 ('01a7849e-b458-4243-9359-320e34e3cc5c','710 lb','4522830b-c7cb-45bc-a257-178376d37d09'),
@@ -3292,7 +3292,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('a85ce453-7346-4b6a-b189-68e01075f65e','79 kg','1e183c84-7128-4323-90f8-ade2dd622303'),
 	 ('a81f84e8-28e3-4914-aed9-dca137463f3e','104 kg','bd04f550-fbcd-4318-89f8-0eeab7445c16'),
 	 ('86ef8e4b-ee37-491d-ab68-55d800c480d0','52 kg','695463d2-23d6-4867-bb48-e93b5375f527');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('44db4845-7384-4112-ba3a-2a8389c06561','700 lb','fc97a8f7-bdba-4b3c-b187-a7485fa9e629'),
 	 ('33088503-bf4d-4136-a928-c592707c5214','55 kg','7cd41930-b2da-43e1-b59a-a68b8ba9267b'),
 	 ('5aedfef3-5b3f-4018-bc79-441c46ca85f7','74 kg','9a226cdb-9671-424b-9027-f02595dd0461'),
@@ -3303,7 +3303,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('017758de-0f8d-4086-bd60-d04186640d4c','260 lb','4d29e309-cf46-427f-bdbb-19de1b9d8b5e'),
 	 ('a61456f8-2a88-405e-b1da-701aff0f1727','157 lb','257c899e-53e1-458a-b152-2d2c11664284'),
 	 ('7a081323-3d57-451f-b227-642f0b46a517','135 kg','41eb39b3-8b00-46b3-95e1-e4a9164f74ab');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('8a382614-b1e6-44c9-bd0f-25250dd56a01','350 lb','f345257e-f050-45ab-89f3-ecc0146a5a84'),
 	 ('a56361cf-ece6-452c-93ec-025b3e23b1ed','163 lb','3ecd8afb-3bd0-461f-8960-78f4687f05bb'),
 	 ('9fa6f10b-52f3-4b62-949a-928bc24835a6','260 lb','7a0a8707-9063-401e-b9dc-bd65c9576eaa'),
@@ -3314,7 +3314,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('f9bfa0e1-350e-4a67-99b2-405beedf87fb','200 lb','2954d469-f486-4789-8f8f-6b73acb88f59'),
 	 ('dd781737-51f5-4c0e-a4a7-1cdd63b4dee9','0 kg','d064e403-f107-485c-9e5a-dba31c2b07a5'),
 	 ('f9ae9e25-9529-4ef0-bafc-239bec7adf55','190 lb','a613477d-bfb1-425a-920a-7497fca1ca21');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('1e35dee7-cfb0-4580-ae79-4e4f9a650c54','101 kg','b0fbfa92-7b27-4285-a4dd-a78aeda51629'),
 	 ('0bc6a769-8f20-4850-a1ee-71a42099e229','- lb','b71a4ac5-3616-45b3-bacd-e65913f82fa4'),
 	 ('d5f8943f-6651-43fb-af1d-87237bac392e','- lb','f4234227-5c49-40a9-93ff-5fb378f1f91b'),
@@ -3325,7 +3325,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('63a74d25-8a8e-410f-8fe6-ccfc2be9bfad','81 kg','a04f8cc6-d345-4d25-872b-b42ea103bcd4'),
 	 ('38a8994f-2c42-4482-aad9-a5930f983d2a','54 kg','e63abad6-e827-4c3a-a75d-acaf90848916'),
 	 ('c7f3fcc2-eb48-4ef2-a42e-b27ec66ee628','56 kg','78cad97e-8f8a-4e02-823b-379cd8bbf849');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('f6dc409c-83f0-479d-960e-de6e63f20be1','59 kg','c2cbb621-9b5a-4511-beb1-4e54087b4106'),
 	 ('6785b5b5-6933-4321-be05-33795c28ad91','178 lb','093be933-4050-4d4b-8cb3-dee8719f046d'),
 	 ('85d7be8a-2253-4ad3-b058-13cea9c6ef1a','95 kg','a3978ca4-e9ff-4d98-8026-3aead47326b6'),
@@ -3336,7 +3336,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('e6ba69ff-470c-4f7b-9189-a443996e31cb','50 kg','b43cdc9d-45f3-4fea-8107-36f5bf74fb04'),
 	 ('85abbf6c-c159-4eb3-ba97-5ea98d8721c4','90,000 tons','cc9b3fd9-27a8-48a8-be24-4fd513408ef8'),
 	 ('20978c5a-7e51-408b-8416-9fbeb6f42fca','36400 lb','da6fc63c-ad64-43f1-a320-400d93aeddc0');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('108fc21b-fb38-47c6-8356-8af43ce063e9','4 tons','220fda3d-b729-43bf-8ce3-9f6e1b4b6175'),
 	 ('e92ec51a-8156-417b-a79f-a2525309b136','79 kg','dba6665c-89db-41f1-9848-c871412435c1'),
 	 ('0df79c7a-0f37-41fc-a99c-128087ae2b1f','230 lb','0de37ef8-c9d5-4987-912f-07b008aade2d'),
@@ -3347,7 +3347,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('ffe236f4-6c44-4a39-805f-937dd5051d5b','0 kg','7b0d2be1-bc07-4d98-a92a-8c0e0f967b73'),
 	 ('bc443521-c777-4455-a8f3-7da485321b23','0 kg','46846f6c-de95-448a-ab03-a0571b5d4293'),
 	 ('c30c975a-6697-4b13-af9a-6d47b91df057','109 lb','9d723e77-fead-4abb-a90c-89258a345f9a');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('abb78c70-fc03-423c-99c0-c4fd74bf0288','52 kg','2e110fbe-a787-40ab-a77a-7ffa2966e922'),
 	 ('86a09fbb-e360-41ef-9c74-a81e5d68b8de','88 kg','4a534cb8-e7a0-45cf-9260-e5a9c4805ce6'),
 	 ('9840e41a-427c-461b-86f1-e7148133b066','- lb','cd7bebd0-8549-44f8-a103-08d1d192f937'),
@@ -3358,7 +3358,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('49dc594f-792a-44e7-ae14-25b55fc76c38','236 kg','2d415f81-aea0-4aa4-8c8f-4b21466960e8'),
 	 ('1a6a2ee2-d16e-49d2-8fea-b1adb31f0975','0 kg','c92290c6-2e55-4c79-b4b4-d0bb9371a9af'),
 	 ('2e7040bf-cb59-42fd-8947-decae72c6c40','225 kg','ad39e3f8-faf6-4622-8d93-a5da96c586d7');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('574df926-6622-4b3b-981e-22651b080e66','190 lb','aed0c6d2-849b-41fc-94b4-ec92b79eba6a'),
 	 ('7206a08b-987a-415c-8142-1ece9ada8fd0','56 kg','d90a3831-5080-4b54-88cd-b3ad90033f5e'),
 	 ('941ab344-c73a-45c6-b471-9d14f36fface','- lb','f55a2df5-5ea4-4ea9-9a76-8c9bf23dad70'),
@@ -3369,7 +3369,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('237e7984-2059-48be-a944-3ec380baa3a2','156 lb','6b7effa5-6b93-42e6-98be-4625409c5d86'),
 	 ('69c40d89-d6fd-4b4a-a5a1-ecc877d3124f','155 lb','a6d5cc5d-6ad1-4d3b-9d74-3466db8c897d'),
 	 ('a5f62a6b-d614-4de4-a614-e45d71245a98','135 lb','beb0b154-3c98-484e-8a02-156e0f1c43e9');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('8ecb26ec-d9c7-42ed-97e2-426f90b7fdcc','125 kg','0118b447-e1eb-4848-a3d7-112149161e65'),
 	 ('633d3f5e-8750-486d-a38a-ceb1329b4090','72 kg','9a46a8b8-8ba6-4337-ba82-93b255c6adbd'),
 	 ('21583782-dd7b-47de-8503-9dc959a78f72','- lb','d9987736-7b74-4360-ba29-96df9edc961a'),
@@ -3380,7 +3380,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('f9b09f8d-aa4a-4bec-ae0d-aa30b891033a','110 lb','253591c1-0739-480e-a72f-2e37700f2a3f'),
 	 ('96fec010-feb7-4020-9a80-a9d53616dd75','405 kg','6bbfad7e-9165-42f7-8f4e-aa539d932311'),
 	 ('4352d9f8-c9be-4276-bc9b-8e730b90c8f4','0 kg','6b426f7b-b2e4-4efa-86fe-baa2b28eb34c');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('bbdbb93e-287e-45a5-b7d2-f584d9d304c9','90 kg','751c2cca-e452-4e43-8265-d13961577341'),
 	 ('46451bf9-8b6a-4096-9075-37eb2f984bd9','320 kg','4522830b-c7cb-45bc-a257-178376d37d09'),
 	 ('7dbf1757-f542-44de-b166-f598098c09d9','630 kg','a95c38ae-3ad3-4142-9366-0a6217fb71e1'),
@@ -3391,7 +3391,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('51c93ac3-f181-40b1-9a53-a0ad3700071b','115 lb','695463d2-23d6-4867-bb48-e93b5375f527'),
 	 ('52c12b53-1e76-4c12-9e6f-83a552fa87b0','92 kg','cea38ff8-3ecf-43cc-9157-c82edb471fd6'),
 	 ('ac8a9f4b-1c06-48b5-ad57-098ffe85c4a5','180 kg','3d4b7084-e56e-486b-bc37-3e3c0af95da3');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('d4839ba3-001f-4def-b4df-b8e4fb898f86','225 lb','c10d2076-c7b9-4353-b5f0-66a7ead96d19'),
 	 ('072d707a-7833-46f6-ad64-b910e36ac6b4','65 kg','e84aed91-7b18-4193-b87e-fd1ad00c9730'),
 	 ('f1473a24-0f56-41e0-88fd-ef0f21d96c52','- lb','548e1071-21d3-40e5-bc19-81ca585b7b77'),
@@ -3402,7 +3402,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('5ba483ae-a029-42f2-8b30-f4fe66213850','- lb','0223d00b-4927-465f-90a3-09672b5fdc16'),
 	 ('cf7b5366-059a-4122-be30-6e3ad957fbda','120 lb','9efc7770-079f-42fc-b9df-1c00505ab4d4'),
 	 ('fe486a4f-8feb-4a1f-b5ab-669674717970','985 lb','0b493ec4-45f0-4d26-aace-6411d563128d');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('afeb2512-37bc-4256-93c9-8fe51f3a3cdc','158 kg','3c31f1dc-bc5d-4ff0-a87c-9236efe6dd50'),
 	 ('2addf965-daf9-4796-9252-7b160a8deec1','640 lb','56e13d6d-caf0-453e-ab50-8d3417cfc411'),
 	 ('09e01ee5-f001-4b20-89e5-006cc6082209','86 kg','6ced5e5f-6762-4941-a10c-cf89ddad5793'),
@@ -3413,7 +3413,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('c4946f0b-9952-4641-b91d-082310d86b72','175 lb','48b5cba1-1f8d-448c-976e-a2c810a04d27'),
 	 ('1291be23-fd43-4b98-adbd-b448e5911d30','113 kg','8d7f0184-756d-4170-af9a-5ecc09f258a9'),
 	 ('f7d6f57a-1251-4a71-aac2-e84f3d7d53b4','128 lb','df6b90f8-0576-4be1-91f7-19348996472d');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('040934a8-643a-49eb-bbb4-acf5d8dc73ac','0 kg','5e324659-59f4-45e8-be83-4164d6b50dfe'),
 	 ('d257eddb-a687-4be1-8244-3b29d88607ea','230 lb','9ce307b3-3953-460b-98a6-df55ef25b037'),
 	 ('25485d2c-a951-469e-b494-4691f864321c','152 lb','a7581dab-a1a2-45b5-91d8-fada12eaaf1d'),
@@ -3424,7 +3424,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('6cb6ff4c-24fa-4e70-a788-5e527b091fb7','148 lb','7954e1f4-0c0b-4ae6-8ff7-649440442ff0'),
 	 ('0f00d509-3f38-4925-b327-d18530003ae9','78 kg','e409fb0d-d5ba-4460-8914-5f40313a3f7f'),
 	 ('9780e0a6-03e3-4cc6-aa86-24de0ecf9b36','- lb','985a909b-b146-4e0f-9690-028f6f6c4351');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('de2c20f4-9632-426a-aeca-46d67858b4a1','178 kg','cdb553a0-fac0-4337-985d-21d4a3b939d3'),
 	 ('2f4ccbdf-4d58-4607-8cd5-f5f565850f9b','171 kg','4b6e17e8-cec8-4d9a-aea5-4a6532a1e8d2'),
 	 ('fcd686da-432a-433f-9e34-4d4e24f1d3cb','65 kg','62854c99-a709-4925-9f58-3cff95191c9f'),
@@ -3435,7 +3435,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('7a549540-6ad1-40e3-8b2b-84a1ccfd7042','195 lb','e2831cbe-92ff-4d63-b0bf-4516f54531fe'),
 	 ('20b69a1b-8792-4c20-a739-b8f3d7c54a99','176 lb','74a0556b-9c8f-4986-bad2-c11035aa2bac'),
 	 ('5dc9fc09-674a-4db2-b158-a70a17b5e2d1','500 lb','b3fc6b96-1dd7-4352-84f7-21caf4f14990');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('c5e87ad4-5ae5-48d6-8017-c748cee5aa25','350 lb','37927583-41c6-44e0-9b01-e03d18f234c4'),
 	 ('6a1553a7-ecde-41ee-b7df-71e2b109daf8','135 lb','e9d85f69-20d7-438a-a4a9-557dedf232b4'),
 	 ('5cb7d893-7220-4ef0-b623-5fc8bd0fc6c1','170 lb','cc28bcff-ebea-4785-94f4-dd8f3ef9a0e3'),
@@ -3446,7 +3446,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('b96c8392-7441-4706-b73c-239c6a512bd6','0 kg','723c6d8c-17f2-40bf-8852-6cb2a01feb27'),
 	 ('e9a71c2a-8314-4cbd-bbbe-37713fd5479d','0 kg','c1a941d5-6b2c-40ec-aec3-edbe87a6481c'),
 	 ('ef19c9c3-2924-472c-819c-66115fe3c4a0','0 kg','ebbfb7e6-84ec-49ca-858a-abe4386baec8');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('18a63bf6-5701-4fc7-9900-b782fde888ee','0 kg','f7a7f438-28f7-41df-a586-f8db9932b646'),
 	 ('686c6483-c3d4-4589-9880-fb91ee1c7b33','0 kg','22e2addd-ee11-4032-bea1-49254e924ccf'),
 	 ('5bf6e262-75a6-4cfe-990c-b9c3ef506a7f','106 kg','8aad064a-75bb-4402-9567-0934d7c16721'),
@@ -3457,7 +3457,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('4bfcfdaf-165c-437e-b8fd-558c775ccbe7','300 lb','d4295a36-3f7c-4e59-a0b4-a0693b114ecb'),
 	 ('1f81db44-c213-4364-aea3-077f0fd7b4bc','160 lb','965625ca-217f-4dc1-917d-3833ca94f638'),
 	 ('72e766eb-3e3e-4cde-83cb-c9d47bfa0909','130 lb','959e7de4-f2e0-4d23-8197-7ad8f7cb4226');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('15d39d39-4bf3-43e3-b33e-4cc24774f5bd','79 kg','f37c1a9e-3b69-435e-a5f3-8c02315eb379'),
 	 ('c0218b9d-8bfa-4988-9239-a91ddfef3b86','158 kg','ecbf8137-9a8c-45c8-bd74-d3b803526e27'),
 	 ('97a5aaf9-1d53-4471-905c-694b197d4ddc','0 kg','d9987736-7b74-4360-ba29-96df9edc961a'),
@@ -3468,7 +3468,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('8d6e5b3d-596a-45b7-8aea-761a75bdac55','190 lb','08d5497f-7651-4dde-b1ce-09f681590407'),
 	 ('7e96bbce-e474-45e5-b9db-f104ae3b21cd','193 lb','a79dd058-ecbe-4347-9ee7-ad02434f2b00'),
 	 ('1919be01-842d-41ff-ba0b-6bdea86f4b02','175 lb','570053f6-8476-4fcc-b994-68cb9f4e6eb3');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('8ba68c81-2748-480b-afa5-13b77fd52803','81 kg','fbb44aac-d9c4-4b12-9cfc-f0caf8c96bad'),
 	 ('5de844e2-eaed-4316-96ee-ab03b848d9bf','83 kg','f89f984e-8cb5-4773-bbba-2192e4ac24fe'),
 	 ('d73d52dc-aafd-4f86-abd7-1ac947b92d40','155 lb','1917ffa5-cc56-4a87-94f0-a96c466fe814'),
@@ -3479,7 +3479,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('0a019111-0604-4447-900a-1ab8c0b5c813','110 lb','9e9d0c2d-3c6d-415b-b28f-0ad103cf4aa7'),
 	 ('b7cd866a-84e9-4a17-b658-69a564b98957','175 lb','2cd247c1-a95a-4969-9c85-0f35d89f0282'),
 	 ('39f21217-a568-4035-b9cd-edbde8d08074','400 lb','3d4b7084-e56e-486b-bc37-3e3c0af95da3');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('858cdc36-fe21-4f8f-be1e-306d17d93f21','101 kg','c10d2076-c7b9-4353-b5f0-66a7ead96d19'),
 	 ('fe366ba0-2601-4aeb-b95f-b4d5484b3ea0','405 kg','0b768c1f-90a9-4c65-a256-11682a4b559b'),
 	 ('96401293-f3d3-4260-9fb6-3c508cb6824a','- lb','091168b3-9b43-46f0-afcf-5881d211242f'),
@@ -3490,7 +3490,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('5ab1e069-92ae-404e-9f48-2bdb1d02531e','0 kg','0223d00b-4927-465f-90a3-09672b5fdc16'),
 	 ('6ce8271a-250e-4a73-9380-9e0c701b82bb','390 lb','d7884583-6dcf-4245-9995-13aaafd060cb'),
 	 ('4c4afbb4-a48e-434f-9954-d01ff470093d','101 kg','300e52fd-59dd-4649-b4b6-b7988056176d');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('236644a5-4f9c-4f52-960a-7cd083c02b6a','- lb','45d17d9a-7f9b-43a8-bb75-5e53f203a967'),
 	 ('2191b5b4-be68-4f14-a638-eda31c226b6b','105 kg','31a9590b-ac14-473d-84f5-7ca6149bc6c1'),
 	 ('06ef3d8b-ad27-4063-95dc-606e039b443e','300 lb','41eb39b3-8b00-46b3-95e1-e4a9164f74ab'),
@@ -3501,7 +3501,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('09787d46-cb11-4a50-b2c6-757995ee0adf','140 lb','f03bcce8-4c7d-4481-b6c4-6966e62e9bfe'),
 	 ('702bef04-7328-4ce4-b774-5abb950dc418','260 lb','661b6b39-3907-4414-8cd9-2dabe9148b5a'),
 	 ('dfaf5992-fec2-4ecb-a519-be1836202fef','50 kg','441fdf95-8205-405d-b2ce-c7449d280afd');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('0e3db9ca-1214-4122-b2da-f3a28f636729','157 lb','e04d779a-cbaf-4199-9349-ee202c63942d'),
 	 ('26dc8b08-1ecd-44f7-a02c-e9a086d4cec3','90 kg','8e221d70-9bd6-4fb4-aef4-41bb4a49db18'),
 	 ('17ce90ba-9971-4f5c-9e0f-5a70d83d7ecf','200 lb','5d2014c9-e574-4f9c-aa20-6df357afabd9'),
@@ -3512,7 +3512,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('45a0199a-2f43-412e-8363-86cbef7bf0b8','0 kg','88b0baa0-9122-458b-a5c9-e1844fb03c4f'),
 	 ('45c6cbdb-19e5-4c6a-b2dc-2c29a1df4397','90 kg','2954d469-f486-4789-8f8f-6b73acb88f59'),
 	 ('76439bee-2d4d-44e1-89c8-01ccbb16ff0d','74 kg','48258963-9f55-45ad-a35e-c6cd53b0cc4e');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('1ccbb8bd-8237-47a1-b83d-3c4bc30d6098','74 kg','5daf5f34-1697-4fd1-8080-7814e70e6e45'),
 	 ('6914e152-f8a8-458f-b828-c5578380ea09','215 lb','86dcc78f-ac30-4bc9-ba07-cac71420f6b1'),
 	 ('de07b860-6f00-46f1-baeb-fcbddc1fa481','140 lb','de4a424b-f52e-4b77-a00d-9e78d3e35b75'),
@@ -3523,7 +3523,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('520355d9-7156-4601-8e8a-99ac2403a62c','817 kg','11450b94-e51d-44bd-a467-c6b094a0d854'),
 	 ('1ac0774a-71e9-45f7-ae8d-2546d0f2fbe1','135 kg','79280d85-d970-451c-800d-32030085836a'),
 	 ('cff1fcf5-202d-4162-af93-127b0779f61c','201 lb','b2e72f09-dcde-4ddb-b834-34a6f2ea9658');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('96cb51e4-0c0f-4001-9cdb-a8b13a8ffc2a','415 lb','89f02ca5-fcbb-464f-ac62-9f2306751417'),
 	 ('73e38669-0248-41d6-b3c1-0d08829c0375','110 kg','63ac085a-cf29-4ca0-8da1-76763334c834'),
 	 ('3f932817-d838-4bb7-9a94-38607bb1cfa6','0 kg','fae4b2ae-bcea-4c80-a466-5dadc02a2b02'),
@@ -3534,7 +3534,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('b2f07df5-358f-44cd-9a1f-0eaae6b8c12b','110 lb','8e49c76b-6d98-4ee4-a3bc-bc4066c8a3dc'),
 	 ('335e3bc8-b748-4b7b-b623-474b2f4d9c51','190 lb','001cc4f4-fe3d-48c2-bbdd-6c2116761e92'),
 	 ('6fa2033d-22f5-4667-9755-a20e345f2c65','45 kg','edf7308d-34bf-4c6f-b30c-fc581ddf15f2');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('993a25f2-5b64-446f-ade4-ec574d342c4b','170 lb','5d86c5b9-94a7-4442-be50-f0383f12d709'),
 	 ('b473f8b4-4f92-4a43-bae9-eb1032f7af25','265 lb','ee73a4aa-90e9-4cf9-a25c-6fa68117cf90'),
 	 ('0b3075cc-a2ca-4417-93c3-af69b5dec488','146 kg','0cea3e26-d172-4693-8b99-95fdc76ad113'),
@@ -3545,7 +3545,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('26439515-78ad-4f55-90d1-8a268c4d332a','- lb','b8da2fe3-40d9-4189-9436-b317e24dbaf0'),
 	 ('e5278724-3e27-4c58-8398-5fc636e9b6f2','54 kg','4f45df50-f0dc-4237-80a5-a6eba831bdf5'),
 	 ('84f30b25-a60e-49a8-b208-2d7324965e6c','65 kg','4d94a979-a551-4ae8-86ce-7d8bbebc8bd2');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('543f14f0-4af6-41cf-ba6d-5a26dfb1d13d','95 kg','41c61246-cd3e-44c7-bdc0-c791284eed43'),
 	 ('7f43cf28-c086-4863-968c-18bb84875e2b','77 kg','75bdb6c9-736a-4036-8aaa-040ba6e2517d'),
 	 ('00e12cae-098a-4c90-be47-a3fa02edd38d','0 kg','7c2cb38d-ad18-400f-a4b2-4593f558ded0'),
@@ -3556,7 +3556,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('00ea97e5-6874-4dcc-8f03-870c3a782244','0 kg','f55a2df5-5ea4-4ea9-9a76-8c9bf23dad70'),
 	 ('efa8b4af-8b7e-41b0-b940-d8cef71cfd88','200 lb','57904af5-77f3-46fd-a0e2-3f7505647fa8'),
 	 ('ae156e9c-d6e9-4f78-bf6f-034965772805','86 kg','c555b18d-ecc6-47df-b8a9-378bfc56bb40');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('1342014a-c559-4354-964b-728134e81fc2','59 kg','0be97615-025b-4a7f-96c9-abeac55a376f'),
 	 ('36ff3e01-bedb-4a8c-8210-d4801d12400f','101 kg','10c1acc2-dcc8-4508-824e-b5d5969ec07d'),
 	 ('7912bd87-2f2a-42d4-9340-c6e91aac2056','86 kg','23d44ba6-9376-4db8-9cb2-db8bbfca5138'),
@@ -3567,7 +3567,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('54e56db5-9c87-4598-a540-77e50bd47b7e','135 lb','eecabf3f-02f5-47fe-94b9-41a6f9c46574'),
 	 ('2c4e844b-3593-43c0-9af1-a841aa131d1a','99 kg','a674910b-d9ac-4fad-ba63-43fe6cff1aaf'),
 	 ('a05fa818-5727-4fd9-bca1-9fe8768a9c24','101 kg','38a1dee8-5b25-434b-a13b-27f86856d603');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('61d708b7-a607-4b16-a63e-540c2d115b37','293 kg','efddb33c-12fb-473c-8116-5c94cda01be4'),
 	 ('fcd2dcfb-fb0c-4e1d-8958-119f5234b7ab','117 kg','7719f3bd-4779-4e75-94c8-2d2fb03a0ec9'),
 	 ('cbfc2410-0902-41a9-8c61-b10082b607ff','50 kg','253591c1-0739-480e-a72f-2e37700f2a3f'),
@@ -3578,7 +3578,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('3e5a3efc-c491-4c0f-b8c1-2370f931b329','- lb','d96b2112-0df3-44e1-8fbb-b11aa1dff47d'),
 	 ('fcf2d4f2-a13d-42cd-96e7-9a471d33ef62','240 lb','54c3a973-54ea-4c8b-8252-2fb63cb88a7a'),
 	 ('e846b5c7-0b40-4509-8d5f-458bff1f819e','85 kg','64ee5a4e-c979-4520-951f-46ab652970c3');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('10014ecd-7c0c-40c2-9380-88bee02dfe2f','215 lb','c345d94a-5977-4624-8ebd-504ff8660a69'),
 	 ('bac77495-de2a-4361-8c53-90c6b017718e','0 kg','a734a783-683c-49ba-90ba-bc9890ba4159'),
 	 ('1c6a1060-62ed-4fe5-9a22-6ced60ab802b','0 kg','1a9d5de2-b4d7-4ac9-bbfa-4b42d79e0227'),
@@ -3589,7 +3589,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('bfe30132-4d38-497e-a001-9d20a220ae0a','88 kg','37e52287-a57d-4cb8-af9e-7cb3e51a58b5'),
 	 ('788d1074-1591-4afc-8826-48688e93d82f','59 kg','1d1a38f6-4fec-44e4-a395-b6351f2f70a3'),
 	 ('8db42f08-c2f9-4e74-9adc-d7e4e1434db2','330 lb','2dcf8de1-c844-4c37-9421-99bb97b86929');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('63741a8f-77d6-413f-a2f5-a179b08200d5','0 kg','15a05903-e3c0-4e7e-8d49-a2d6a68a6d8f'),
 	 ('817c46bf-5a8a-43dd-8558-e1d84988da1c','205 lb','cea38ff8-3ecf-43cc-9157-c82edb471fd6'),
 	 ('5e7a02ba-bcfd-43a5-956b-ee223fb4b996','49 kg','6ef3064e-9f3a-4993-8e71-fa31f0069f0c'),
@@ -3600,7 +3600,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('02c89639-4976-4601-8d83-a27c56443fee','175 lb','d5df752a-aa0c-4e90-a24f-40df4b5b75b9'),
 	 ('7fc6ccfb-d24e-4c89-aa14-f8cc32ef09c9','140 lb','b61cf683-237e-4e70-997b-3a2a963dcee5'),
 	 ('da163091-f1dc-474f-aeb8-fccb0ab6c408','176 kg','d7884583-6dcf-4245-9995-13aaafd060cb');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('3c0ccf4f-57b6-4479-ba6f-3412d784163c','225 kg','02fc414c-9676-492e-bd51-f26848dbd94a'),
 	 ('080cee69-f670-4b28-bf0f-c9b74f2166a1','175 lb','6376e084-efcb-42b9-a00c-d7df5a648fed'),
 	 ('aa44d4d4-32dc-4592-b472-29f57cfd4758','- lb','da9a9f41-08cd-4a3a-a6f6-3db57c47c6fb'),
@@ -3611,7 +3611,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('c06b4da9-80e7-44f0-b948-6a0003c0cd0b','77 kg','2a42db74-fc3a-499f-9d5b-ff3bdb52e820'),
 	 ('a6938f83-eff7-4401-b070-8c4c76df33ce','131 lb','40986fb4-203d-4152-81b0-b4f9faccdb11'),
 	 ('c7044333-d7b7-43d7-9c08-cd6a6225cb2c','- lb','75c0efbd-81f6-4404-99a3-44e20d6c062d');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('f7f852cd-8ad1-4978-9a2d-fe41200c34c4','135 kg','71798078-c510-4a10-8bfc-8e4ffcf1ff76'),
 	 ('9dfad241-644b-4fbe-96d1-669405becbb0','116 kg','3e3dcceb-dfbb-4791-8825-c07c1bb4eb05'),
 	 ('99c474ae-443b-4d5f-9d06-5db175f57d2d','0 kg','63f7b36d-da68-4a30-8a9f-1978c6a55d2c'),
@@ -3622,7 +3622,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('ad4b21b1-5035-419c-b468-46ab2eaa0cb1','- lb','365f3666-9ec9-40c7-9217-6c1272e6bddf'),
 	 ('eaf57191-8dc7-4f06-b7cb-5f4e127dabe6','- lb','f68b69ed-703a-47f4-82ff-8c87c87693d6'),
 	 ('d91310a5-fe20-4b70-86e4-2a0c07f10774','52 kg','a0671fe4-fa82-4b0a-9bf6-43713828a21b');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('916d91c4-b301-4078-80b9-5596e24dfdb2','383 kg','7011e364-75ea-4f48-896a-70614e32d45b'),
 	 ('0f004b9f-aebb-4f99-9114-578b93a21495','90 kg','b2e72f09-dcde-4ddb-b834-34a6f2ea9658'),
 	 ('5335f3df-4a30-45ff-8e74-278e6ccf6167','187 kg','89f02ca5-fcbb-464f-ac62-9f2306751417'),
@@ -3633,7 +3633,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('da16a1ca-d5fb-4b11-930a-3343bcf99622','180 lb','64584b35-7904-4409-9a9c-1387847389ba'),
 	 ('67ff0a62-6609-425b-9f09-d0f8de1f7bdf','91 kg','eaa5766c-d86e-4220-8f2f-4268d762da12'),
 	 ('73916fc4-c69d-4462-8254-8de14d874a60','0 kg','3ca3ce44-ce2c-46cd-a867-81a8f5c39e3a');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('fa768b47-81f1-4f76-9715-c79e1751091c','185 lb','a2801d4b-8ec2-451f-acad-81ff7e0c6d95'),
 	 ('e0679d23-6dd1-45e9-bcc4-bb2f96f6b507','95 kg','39feedfc-1939-4940-b4ed-03571529f812'),
 	 ('d4f9434e-8efc-42eb-9e4a-4deec8ebb6c1','79 kg','74a0556b-9c8f-4986-bad2-c11035aa2bac'),
@@ -3644,7 +3644,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('2a7daf79-6354-47ae-b9fa-80d502ed1f54','120 lb','1c63c180-2a74-40a7-a15f-5fbb38890b3b'),
 	 ('82b3ac26-9502-4cb4-ae08-5967c91839bf','65 kg','7de1c66b-93fe-4643-86e3-96b3280787ec'),
 	 ('dd89a807-a370-4fde-b30e-2611bdea32f0','170 lb','7c804beb-3d78-4c9f-b7fe-d9af65f9f354');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('af51377c-e748-46c2-bac9-1d8e57f177f5','4230 lb','706a2f12-5042-4781-a597-7fcf638fbb5e'),
 	 ('c7459b55-fd54-4181-9ae4-0ad97b79ce05','- lb','7b0d2be1-bc07-4d98-a92a-8c0e0f967b73'),
 	 ('778bff49-cddc-4017-b142-6e78aa427271','- lb','46846f6c-de95-448a-ab03-a0571b5d4293'),
@@ -3655,7 +3655,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('0dc561fe-6718-40df-9645-c49e74cead39','0 kg','babe77f8-2849-4d88-81b4-a36e33fb5751'),
 	 ('a1432c46-f5fb-442b-8c74-6dda65bb609e','63 kg','a3b17398-2eb8-4367-b71c-6f18659d29a1'),
 	 ('acff3553-24fb-4123-9162-5acb02ee5475','- lb','7c2cb38d-ad18-400f-a4b2-4593f558ded0');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('2d0fc5b5-fffd-4d5d-abaf-a8653cb6a8b9','850 lb','592feb3f-485c-4537-b1b6-3a309845b2ce'),
 	 ('e55b4ce3-c0fc-4a24-b963-2e86792bb3dd','0 kg','b849a74d-c461-4c43-90c3-10ce52bd7730'),
 	 ('6e80a117-b46d-428a-a008-53ca2de52de9','86 kg','aed0c6d2-849b-41fc-94b4-ec92b79eba6a'),
@@ -3666,7 +3666,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('98700b56-0235-48e0-a389-d4cb25d31170','97 kg','9060cebd-56ef-4762-89d9-8b476a9984ea'),
 	 ('92487f4d-f874-4435-8078-cee4c71d23c5','248 kg','0bc495c5-1375-41c8-8d5c-330993b508e5'),
 	 ('8d12a824-1db2-405d-8454-89b1e32ad2a9','79 kg','f40c42b5-5401-416c-b1b8-82902112fbe6');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('93d7c446-7ed4-4d26-b130-fe7725f4c5ae','70 kg','a6d5cc5d-6ad1-4d3b-9d74-3466db8c897d'),
 	 ('5ad12e39-53c6-4a4b-8ade-06ab448c6a50','159 lb','9a46a8b8-8ba6-4337-ba82-93b255c6adbd'),
 	 ('04ff5ec4-80ff-4b46-9a44-149580879d7f','54 kg','b53ecb88-30b1-4c45-8685-de1dc3a23990'),
@@ -3677,7 +3677,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('fe56b209-ffc1-4d81-b193-c52f1f8fa707','79 kg','a66e8aef-60ec-4f34-ae37-d8cf23e312e4'),
 	 ('a64fde06-35b8-49de-a0dc-2616a5568392','55 kg','bd1344cc-3e0d-487c-a070-ea3d3ff0720e'),
 	 ('aa635fd9-bb80-4a5e-b391-69900013617c','234 kg','74ca49e3-2cb1-4d32-8c9a-bc024de8674e');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('d323045d-6665-4520-8499-433987289abc','81 kg','c4d7b2e9-d004-40b8-a802-ffac6ff7f153'),
 	 ('10e34c6e-91fc-4057-bc32-ffb2c728cca0','79 kg','570053f6-8476-4fcc-b994-68cb9f4e6eb3'),
 	 ('8c9ab220-a7c9-4c1f-8d09-3cf6861008b2','185 lb','f89f984e-8cb5-4773-bbba-2192e4ac24fe'),
@@ -3688,7 +3688,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('7c033983-3efe-49a5-bde0-70a905fc3695','84 lb','f2d16de0-c908-4080-83ea-6aa13044a731'),
 	 ('6d594d4c-b18f-4d34-bd30-844b3ef77bd3','450 lb','e5c8273e-3d31-494e-bc26-68ed3f15bd20'),
 	 ('262ed552-d9ae-4ce3-a4dc-25f59d86e003','63 kg','c633ead0-a319-466d-9df1-0923c4184d2d');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('76b3c158-4054-4fb7-8ced-914f40332629','171 kg','6f8fb6a2-7dd9-4ead-bd7c-d3ceb1b086c4'),
 	 ('0c07c9b8-93ae-44a9-b3db-a8bcfdf6f750','87 kg','d7569b4e-319d-4d25-b20b-053b808ac1fe'),
 	 ('6651baa4-caa0-4770-b9f9-2d2eb588d6c3','50 kg','9e9d0c2d-3c6d-415b-b28f-0ad103cf4aa7'),
@@ -3699,7 +3699,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('96ef8fb0-98d0-436f-8ec0-75d6b9f07d7d','170 lb','5ff85613-97f8-43db-bab0-3c8d89d75e60'),
 	 ('c1c6ddf1-bed2-4247-a364-8febc8857d1e','91 kg','449bd846-ad8f-4443-9d45-7245e69a0ab8'),
 	 ('3fe64057-7fd7-45ff-8fbe-c4de1202c010','74 kg','472d6888-c134-4f9d-8372-be86f2ce8c07');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('099d1257-085c-4d2a-b93b-548517675611','443 kg','0b493ec4-45f0-4d26-aace-6411d563128d'),
 	 ('b170253a-3f8f-4b5c-a0c1-f1b729cc42b7','- lb','2b553a17-5960-4fe8-b0ae-098f4648954b'),
 	 ('96fcd65e-e481-4d8a-9fdf-159e5881e70e','99 kg','ebb0eb8a-e1aa-4224-ae24-5d9be2427226'),
@@ -3710,13 +3710,13 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('1dbfc950-3fe2-4362-87d2-6f7846f9bfd7','210 lb','5baf98d9-eff9-432c-b449-6ad8e5139ece'),
 	 ('315deaa1-33f5-46fd-959b-3c775e467ded','73 kg','3ecd8afb-3bd0-461f-8960-78f4687f05bb'),
 	 ('77c887a2-ec7d-4c7b-867d-1aa0fbff32e9','117 kg','7a0a8707-9063-401e-b9dc-bd65c9576eaa');
-INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_id) VALUES
+INSERT INTO public.superhero_appearance_weight (id,value,superhero_appearance_id) VALUES
 	 ('662d4482-1af7-4d4f-bd26-afe1e75015ab','473 kg','1bfa5037-a3eb-4261-ae42-34b23a2621b9'),
 	 ('66c06f9d-71ff-4196-a8be-d6c6390fd9b7','135 kg','3d2c804a-87ae-4e85-b26b-7158fc34ddb1'),
 	 ('fcb91701-a0c3-48ca-8e13-059bd7ac220d','165 lb','4a3e1550-29bd-4387-a1a8-184d45d8555f'),
 	 ('e80844d4-681e-452b-aae0-c953469ddea4','135 lb','4e4a710b-74c6-4864-b59f-07f66a9c562d'),
 	 ('88dfb1c1-ae2f-44bb-8d77-7c46dc68de97','38 lb','5ac36ad4-2e8e-441a-9835-d089569ff061'),
-	 ('7a9c3e13-9c32-41d9-88dd-9dba331081e4','81 kg','b25aa1ac-ee32-4b7f-9ae8-24c3d69db971');INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+	 ('7a9c3e13-9c32-41d9-88dd-9dba331081e4','81 kg','b25aa1ac-ee32-4b7f-9ae8-24c3d69db971');INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('4990361c-6df0-46c7-83bd-758fedce7526','Abraham Sapien','No alter egos found.','-','Hellboy: Seed of Destruction (1993)','Dark Horse Comics','good','0d65cc24-366e-417a-9dbb-069ec704f90e'),
 	 ('1e9004b0-d561-4b46-83f9-6adec608fc3d','','No alter egos found.','Ungara','Showcase #22 (October, 1959)','DC Comics','good','141fdfaa-3ab1-49e4-9d89-6ff65c8f8461'),
 	 ('318051a8-a8ea-4fb1-a7fe-56a8250572b2','Bob','No alter egos found.','-','Cable & Deadpool #38 (May, 2007)','Marvel Comics','good','84507000-0beb-4a66-8288-0a9c578176a1'),
@@ -3727,7 +3727,7 @@ INSERT INTO public.superheroe_appearance_weight (id,value,superheroe_appearance_
 	 ('85cffb9a-eefe-4387-9649-675088d37745','Abraxas','No alter egos found.','Within Eternity','Fantastic Four Annual #2001','Marvel Comics','bad','2fabe5e1-deca-4744-a657-d32f841deabc'),
 	 ('fcacbf62-a13e-404f-b13f-a572e85e9907','','No alter egos found.','-','Heroes S02E01 - Four Months Later...','NBC - Heroes','good','d47f8c30-1862-45b8-9bb3-62fb833478a7'),
 	 ('4cb45203-5a1c-4c91-aebd-c59b7d797762','Carl Creel','No alter egos found.','New York City, New York','Daredevil #1 (April, 1964) (As Rocky Davis)','Marvel Comics','bad','1ec71757-352c-47a1-aaa1-1fd356b71bb3');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('e6304046-62c6-4058-a09a-f4178b434eac','Alan Ladd Wellington Scott','No alter egos found.','Gotham City','All-American Comics 16 (1940)','DC Comics','good','8a9d5fbf-373e-4b8c-811c-d83823ace434'),
 	 ('8cbff583-a8e4-4a86-948d-4c533547cf8a','Alexander J. Mercer','No alter egos found.','-','-','Wildstorm','bad','8b68f616-1e8b-439c-92dd-2889fdd0c11c'),
 	 ('314bb52f-86e2-4c5a-9c2a-b7aebfe60c95','Alfred Thaddeus Crane Pennyworth','No alter egos found.','-','Batman #16 (April, 1943)','DC Comics','good','35032fd4-c930-4397-b715-62a1bad2f0e2'),
@@ -3738,7 +3738,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('68bb8dd4-dbd2-40a4-81da-cc2c021d7297','Gabriel Lan','No alter egos found.','Xandar, a planet in the Tranta system, Andromeda galaxy','Fantastic Four #120','Marvel Comics','bad','e0ff7776-a8a8-45e6-867d-81f1019ab07c'),
 	 ('0703fe99-1726-421f-bf39-c82887e3fb40','Francis','No alter egos found.','-','Deadpool #14 (March, 1998)','Marvel Comics','bad','c49ccf99-f649-4ad2-bf90-f53efd5efbe4'),
 	 ('d71b8617-0d1a-4c9b-aa18-779b96ea2f7b','Angel Salvadore Bohusk','Tempest','-','New X-Men #118 (November, 2001)','Tempest','good','dbd53964-eb31-4aac-968e-237c1ce7d39c');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('7ca74150-24d0-4a15-9cad-d75263326976','Bernhard Baker','No alter egos found.','-','Strange Adventures #180 (September, 1965)','DC Comics','good','ee2465ec-7916-4abc-9c9b-076c7ae1520f'),
 	 ('ccdfd0fc-d251-4541-a072-bac5b01d53e1','Annihilus','No alter egos found.','Planet of Arthros, Sector 17A, Negative Zone','Fantastic Four Annual #6 (1968)','Marvel Comics','bad','fdd048c1-c4ee-4571-b074-7eb503253338'),
 	 ('9fb579fd-94e2-443d-8e16-b6da78b31823','Hank Pym','Giant-Man, Goliath, Wasp II, Yellowjacket','Elmsford, New York','Tales to Astonish #27 (January, 1962) (as Hank Pym)  Tales to Astonish #35 (September, 1962) (as Ant-Man)','Giant-Man','good','708564eb-ea20-4e0e-bb08-ac4ea51938e9'),
@@ -3749,7 +3749,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('df3e8a07-cc35-419d-aafa-aebbdebd064c','Christina','No alter egos found.','-','Morlocks #1','Marvel Comics','good','0f8853b7-0404-4f13-8b36-477016193e4f'),
 	 ('c7ff2877-d441-4b99-9cdb-beb40d902c2d','Garth','No alter egos found.','Poseidonis, Atlantis','Adventure Comics #269 (February, 1960)','DC Comics','good','b8b981ef-8d52-4e30-a48c-a0609a42eb96'),
 	 ('50a9820b-8178-47bc-be28-235e41edffd6','Orin','No alter egos found.','Atlantis','More Fun Comics #73 (November, 1941)','DC Comics','good','32c307b4-9a26-43a5-b223-bb512c0d1c01');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('f372ee7d-00a9-4e12-afb3-060c849354ee','Julia Carpenter','No alter egos found.','Los Angeles, California','Marvel Super Heroes Secret Wars #6','Marvel Comics','good','102b2074-192a-4041-b772-71ac702b34b1'),
 	 ('e3cdae94-c6e7-470b-9aa4-540d3b19a5c0','Warren Kenneth Worthington III','Angel','Centerport, Long Island, New York','X-Men #1 (September, 1963)','Angel','good','3738a8c5-8a66-4f8e-ace1-3860be5c3cf0'),
 	 ('7beab636-d575-4ff8-b6f6-44c0ca6dbdb0','Philippa Sontag','No alter egos found.','Vietnam','(In shadow) Uncanny X-Men #210 (1986), (fully) X-Factor #10 (1986)','Marvel Comics','bad','888bad52-d7b6-4cfa-9eb5-c22c8df120b5'),
@@ -3760,7 +3760,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('beb6e842-ee39-4882-a50a-1d87ae5e7686','Arthur Curry, Jr.','No alter egos found.','-','Aquaman #23 (October, 1965)','DC Comics','good','51b8cd4f-54f3-48f6-9d87-f4de680c23ab'),
 	 ('89754056-7688-495b-a9ee-b54faf99f23d','Erik Josten','Goliath, Power Man, Smuggler','Milwaukee, Wisconsin','Incredible Hulk #449','Goliath','good','bafbb32e-3511-4634-9870-628e01faa597'),
 	 ('761323ec-5283-4a09-855e-dc0a2353f9b3','','No alter egos found.','Crystal Mountain','Action Comics #121','DC Comics','bad','f3733b9a-59f4-4099-a135-c5539f348421');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('f437a244-a1ed-473f-83df-944eada4613b','Salu Digby','No alter egos found.','-','Teen Titans/Legion Special #1 (2004)','DC Comics','good','0df52ce4-2b47-488f-ad5b-c90b433a5faa'),
 	 ('dae7e1cf-a8a4-4547-8e7d-f947d8a25a51','Ray Palmer','No alter egos found.','-','Showcase #34','DC Comics','good','58efc664-83c7-4250-a790-aaf1a6f36701'),
 	 ('369b60f6-ccb0-4b3c-b11f-d0563f5615af','Jeanne-Marie Beaubier','No alter egos found.','Montreal, Quebec, Canada','X-Men #121 (1979)','Marvel Comics','good','124fa936-b34c-40cd-bd12-255cfa5f8062'),
@@ -3771,7 +3771,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('ab7e1661-59f0-4082-8c3c-1570d7032748','','No alter egos found.','-','Batman: Vengeance of Bane #1 (January, 1993)','DC Comics','bad','819bfcb7-efd1-4c68-a6ed-1e0d5e142bb2'),
 	 ('5b8879e5-b91d-4853-8b7e-fbbaa889d5bd','Barbara Gordon','Oracle','-','Detective Comics #359','Oracle','good','802d1b2c-9a0d-45dc-804e-ba42cd5b20c0'),
 	 ('288495f8-5e7d-49a3-bc7d-a9411ec0c6f9','Cassandra Cain','No alter egos found.','League of Assassins (exact base is unknown)','Batman: Legends of the Dark Knight #120','DC Comics','good','afacb2b9-2a66-41db-8f15-51fcf3f10a38');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('ed2ba24a-a992-4143-8ad8-1f96b34d1506','Stephanie Brown','Spoiler','-','Detective Comics #647. As Batgirl in Batgirl (Volume 3) #1. (2009)','Spoiler','good','c84b11ee-178b-4c4a-999c-8f499524ed75'),
 	 ('59110f09-a4ff-4862-8b0f-6f707483b055','Terry McGinnis','No alter egos found.','Gotham City, 25th Century','Batman Beyond #1','DC Comics','good','a4fe4246-581b-4adb-95a2-aaeb3bacbc09'),
 	 ('5db0a345-4740-4219-ac1e-1d1967305154','Bruce Wayne','No alter egos found.','Crest Hill, Bristol Township; Gotham County','Detective Comics #27','DC Comics','good','d32ee045-d969-405b-baf4-4ec44d112bfb'),
@@ -3782,7 +3782,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('f9f2b622-ad4c-423b-b25b-4eb9aeb22480','Madison Jeffries','Gemini V','Place of birth unknown','Alpha Flight #16','Gemini V','good','c6a76eb6-7c03-4360-ac5d-3271a6d238f1'),
 	 ('91aa67ca-f812-4dd4-be7d-908296125fe8','Callisto','No alter egos found.','-','X-MEN (first series) #169','Marvel Comics','bad','e516de06-2ee7-4c3e-aa62-c2ac967957cc'),
 	 ('33fd56f6-6b23-40bb-9028-e55d1be881e8','Cletus Kasady','No alter egos found.','-','Amazing Spider-Man #344 (February, 1991)','Marvel Comics','bad','415dfa8e-d07e-433a-8eaa-e6f0b30cc27f');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('eab45fe2-52f1-4dde-889a-f5ca93c205ed','Kevin Sidney','No alter egos found.','-','Uncanny X-Men #35 (August, 1967)','Marvel Comics','bad','df4bc245-ff93-4b17-84d9-2d613fd410ef'),
 	 ('b85f95e9-6669-43d7-91e3-5838c2d052b0','William Tockman','No alter egos found.','-','World''s Finest #111 (August, 1960)','DC Comics','bad','35deb868-d25a-4a20-ab7b-2fe99d7d6998'),
 	 ('b69fceff-cd3e-4db4-a987-210c54e1da2b','Peyton Westlake','No alter egos found.','-','Darkman (August 24, 1990)','Universal Studios','good','306932c5-a097-479b-b97e-9c447b438af2'),
@@ -3793,7 +3793,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('edda848a-0e57-4d00-af30-625f0408ca82','Pyreus Kril','No alter egos found.','Xander, planet in Tranta System, Andromeda Galaxy','THOR Vol. 1 #225','Marvel Comics','good','083323bf-f92a-44a9-8ac8-80e209c701b6'),
 	 ('af49f2c4-3870-480a-86aa-de9058c27154','Bartholomew Allen II','Impulse, Kid Flash II','-','(as Impulse) Flash v.2 #91 (June 1994)* (as Kid Flash) Teen Titans v.3 #4 (December 2003)','Impulse','good','671a8408-7465-45e1-be7a-a11e99f56d81'),
 	 ('f8db591d-12e9-4b40-8f47-fc514bad703e','Johnny Blaze','No alter egos found.','Waukegan, Illinois','Marvel Spotlight #5 (August, 1972)','Marvel Comics','good','5a282b0d-3750-429c-a581-c37605a01da9');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('46ccdea3-1842-4c29-851e-70ef0725c5de','Grodd','No alter egos found.','-','Flash #106 (May, 1959)','DC Comics','bad','6e9d2c2e-7a20-4ca7-bbcf-46c4d6b168f2'),
 	 ('820bf527-79a6-4651-8bef-577046abedbf','John Hancock','No alter egos found.','-','-','Sony Pictures','good','6a17daa8-0d8a-4b7f-9840-564ed7fa00af'),
 	 ('48c1d7fd-35ec-4bc5-a55a-78f13658ae45','Patricia Walker','No alter egos found.','Centerville, CA USA','Avengers #144 (February, 1976)','Marvel Comics','good','85f800ef-1703-4ddc-8327-92cc09e0f44e'),
@@ -3804,7 +3804,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('cf1c0929-f4b8-40d0-a431-0b87a0cf095d','Kathryn Janeway','No alter egos found.','Bloomington, Indiana, Earth','-','Star Trek','good','d45890ea-b410-413c-8113-8021f548863c'),
 	 ('15344290-fb65-4797-bee0-dbf132035621','King Kong','No alter egos found.','Skull Island','King Kong (1933)','','good','1258aa31-6a27-4bd1-abfe-a2d161537607'),
 	 ('7dc9f86b-1c47-4190-9722-b35c5c2bea0f','Ben Solo','No alter egos found.','-','Star Wars: Episode VII - The Force Awakens (2015)','George Lucas','bad','9b383727-a76c-4079-ac39-7c12acf1ccae');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('e50ab839-c332-42ce-9221-a985696a7c2a','Samuel Sterns','No alter egos found.','Boise, Idaho','-','Marvel Comics','bad','045f81b9-ffd6-44a6-b15c-2450508d7c70'),
 	 ('a8471e62-b24b-4fbb-8418-e0c844b0b88e','Luna Maximoff','No alter egos found.','Attilan, Blue Area of the Moon','-','Marvel Comics','good','eada5243-be14-466e-9ebb-ff70881e45cb'),
 	 ('59250f6e-f7f4-4c96-a0aa-64635e1bc043','Robert Kirkland Langstrom','No alter egos found.','Chicago, Illinois','Detective Comics #400 (June, 1970)','DC Comics','neutral','05534447-4dc3-4691-9c6d-e404d05f8af2'),
@@ -3815,7 +3815,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('72881747-3695-4ad2-bfdb-1fac1a789392','James Arthur','No alter egos found.','Los Alamos, New Mexico','GIANT-SIZE FANTASTIC FOUR #4','Marvel Comics','good','bf5f0d98-f4b8-4eaa-8c6d-f1db2bd91289'),
 	 ('bc0fd3dd-78b1-4f0f-9028-7cabe95d3300','Kurt Wagner','No alter egos found.','Somewhere in the Bavarian Alps','GIANT-SIZE X-MEN #1','Marvel Comics','good','c4684e1d-b10c-4ec9-8681-365e6ceba88d'),
 	 ('8d2e966d-1dcb-4512-a09a-0cfd1d8e2ea8','Nicole Sanders','No alter egos found.','-','Heroes S01E01 - Genesis','NBC - Heroes','good','1d26f21d-b1e0-4c90-ab8f-86a71f337d2a');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('2dc45d0f-5bdf-47b3-990f-9be644421d74','Paul Blart','No alter egos found.','-','-','Sony Pictures','good','e93b8653-9fd3-4ef8-9209-9c24e026c66a'),
 	 ('3dd648fc-c334-4986-8dc6-f11fe0a33d58','Lorna Dane','No alter egos found.','Presumably northern California - not confirmed','X-Men #49 (October, 1968)','Marvel Comics','good','ace4377c-9a4f-4718-866e-a5df326c3f01'),
 	 ('386b451d-8af4-4683-87a8-89940c368761','Charles Victor Szasz','No alter egos found.','-','Blue Beetle (Charlton) Vol 4 #1 (June, 1967)','DC Comics','good','57b6b1af-97d6-4cda-9de0-6646281dc319'),
@@ -3826,7 +3826,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('8d848b3f-9c25-45bd-8b2b-36e7f138d57c','Kaine Parker','No alter egos found.','-','Web of Spider-Man #119 (December, 1994)','Marvel Comics','good','087f3911-9e9c-4457-b93f-f9d124387153'),
 	 ('92fedb30-dd2f-4a66-a720-1055d4bb826b','Elaine Coll','No alter egos found.','-','Spider-Man: Power of Terror limited series #2 (1995)','Marvel Comics','bad','e44e1617-35ba-423c-b544-2c7d43dc2877'),
 	 ('4b03e66e-9b3c-4c3b-8ab9-a661080843e0','Sif','No alter egos found.','-','Journey into Mystery #102 (March, 1964)','Marvel Comics','good','9616c842-adfe-458f-bf33-1f4e8fa29360');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('d9d07ec5-8446-43d4-bf6f-0f0c20bba5e5','Cindy Moon','No alter egos found.','-','Amazing Spider-Man Vol 3 #4','Marvel Comics','good','69b8da47-5531-4187-ac62-4c1fde79fa3d'),
 	 ('cb1c6ce5-73ec-4b73-8c66-13cf06d34935','May ''Mayday'' Parker','No alter egos found.','New York City, New York','What If? Vol 2 #105 (February, 1998)','Marvel Comics','good','45f938a0-0f09-45e3-8372-0352e6dbcf03'),
 	 ('025295be-861f-4101-826d-e0b2fdd2f7c1','Evan Daniels','No alter egos found.','-','"Speed & Spyke" (December 9, 2000)','Marvel Comics','good','7d717e8f-767c-415e-87fa-2aaeabf4c468'),
@@ -3837,7 +3837,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('1b2dd0b9-e38d-4814-960c-4026ffa46d53','Jackie Lukus','No alter egos found.','-','(as Jackie Lukus) Thor #392 (as Bloodaxe) Thor #449','Marvel Comics','bad','efe4d46b-9537-48c8-ba5c-35ff7527570b'),
 	 ('80d36f6e-4f0b-4327-bef5-4d201061829a','Buffy Anne Summers','No alter egos found.','-','Dark Horse Presents 1998 Annual','Dark Horse Comics','good','c04cd106-2c8f-40ef-b5f2-5f6eb3a9d600'),
 	 ('af8faf94-e766-4193-9062-72e098e0d50c','Steve Rogers','No alter egos found.','Manhattan, New York City, New York','Captain America Comics #1 (March 1941)','Marvel Comics','good','10294658-c059-4db3-845b-5d9b72dc2219');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('48c33e88-a5f4-4e27-8f14-c78b95550ac3','','No alter egos found.','-','Captain Planet and the Planeteers (TV Series)','Marvel Comics','good','a7742fcf-b403-485a-b88e-4f6414d658b1'),
 	 ('e647865a-c168-4901-a0ee-5413b10b3275','Claire Bennet','No alter egos found.','-','Heroes S01E01','NBC - Heroes','good','0a0196bd-71e7-430b-a22c-af932b85f599'),
 	 ('7bc33789-a57d-49c7-913a-df9b5bf0758e','Victor Stone','No alter egos found.','New York City, New York','DC Comics Presents #26 (October, 1980)','DC Comics','good','681a91b0-c7e1-486a-a204-e92bd7a245cd'),
@@ -3848,7 +3848,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('30ef1464-343c-49fd-83c9-4f1c88991e7b','','No alter egos found.','-','-','Marvel Comics','bad','9cb04dee-4eee-4be5-98f4-6a5f04cd491f'),
 	 ('b4e6a3f0-82c0-4410-ac8c-497031e5ce4c','Ethan Hunt','No alter egos found.','Madison, Wisconsin, United States of America','-',NULL,'good','49d36a62-5e3d-44f1-a0bb-bac878998094'),
 	 ('e8f0ff6b-4a86-4737-9bae-27483e07ca17','Ronald Raymond','No alter egos found.','-','Firestorm #1 (March, 1978)','DC Comics','good','37469feb-66e1-44d9-9682-96ca9a3dd3fa');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('966009de-5c7f-47d5-bcf8-5e84cd731a72','Joanna Cargill','No alter egos found.','-','X-Factor Vol 1 #4','Marvel Comics','bad','29c4dfd4-72c0-4bd3-a81f-9c7475f5216d'),
 	 ('a2617065-6e2f-4c94-ab07-7a8b3d514b0e','Norman Osborn','No alter egos found.','Hartford, Connecticut','Amazing Spider-Man #14 (July, 1964)','Marvel Comics','bad','6eb3c80a-582f-4f70-a465-f3d16a95d1a8'),
 	 ('07c78b20-8640-41d6-822b-84a66f7eaac5','Katherine Elizabeth Bishop','No alter egos found.','New York City, New York','Young Avengers #1 (April, 2005)','Marvel Comics','good','217cd8f8-1654-4b13-a996-4fe87105f93a'),
@@ -3859,7 +3859,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('8db41d5b-edc0-421f-9491-97b7a8737f47','Cain Marko','No alter egos found.','Berkeley, California','X-Men #12 (July, 1965)','Marvel Comics','neutral','26bb2cfc-f951-4877-b03a-5e4c59f2dfff'),
 	 ('28d49a98-1f1e-489d-9c5a-8d17eff5d349','Wallace Rudolph West','No alter egos found.','Blue Valley, Nebraska','Flash #110 (January, 1960)','DC Comics','good','23e43bdd-3358-47e8-b707-dcc9cf6e31a2'),
 	 ('c6121001-e4e9-417c-9807-7b35df6ce54f','Leonardo','No alter egos found.','-','Teenage Mutant Ninja Turtles #1','IDW Publishing','good','a4e0b300-0cf2-4aba-8dfc-e6737e2bb805');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('7b9bf469-9541-4793-a6c1-1873739f45be','Lobo','No alter egos found.','-','Omega Men # 3','DC Comics','neutral','78c2818a-ccbd-4809-86e5-4d9171d69375'),
 	 ('fc654479-ddaf-4887-98be-969cc84783df','','No alter egos found.','Vietnam','Avengers #112','Marvel Comics','good','7dff6186-d93e-444a-a5a5-20f3545e8f0d'),
 	 ('2cac6476-a041-48b2-8da3-3a980037127c','Micah Sanders','No alter egos found.','-','-','NBC - Heroes','good','a49fce98-7c81-4a81-a8fb-b66bfc1cce63'),
@@ -3870,7 +3870,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('a9b37590-d5f8-4e22-9af4-6e08bc472712','Richard Rider','No alter egos found.','Queens, NY','NOVA Vol. 1 #1 (September, 1976)','Marvel Comics','good','8851c440-c975-40b2-ab3a-b07e97b34c17'),
 	 ('b8abbdc4-bb05-4d68-ba9d-d99b3e5f31a4','Tinya Wazzo','No alter egos found.','-','Teen Titans/Legion Special #1 (2004)','DC Comics','good','99dcb6ad-5788-4030-bb83-9c5849841616'),
 	 ('ed641b58-ee8b-4762-95ae-2c107cde4ff1','Yautja','No alter egos found.','Yautja Prime','Predator (1987)','Dark Horse Comics','bad','17fe634d-8aa4-4876-924e-5e2ad880eb51');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('e95b0397-b6c3-4fcf-855f-05cec95ef441','Maxwell Jordan','No alter egos found.','-','New X-Men: Academy X #1','Marvel Comics','good','59230578-4b0a-4817-ac8a-82a9dc4af814'),
 	 ('a1d0771d-4d2f-4f46-b091-ed96af8dbc52','Jason Todd','Robin II','-','Batman #635','Robin II','neutral','e5af3625-f657-4263-9dbe-c943de31e2a5'),
 	 ('c8a3c9b9-ed17-4df1-93e6-901e584dd90b','Richard Rogers Flag','No alter egos found.','-','Brave and the Bold #25 (September 1959)','DC Comics','bad','53e115df-4ec7-4751-88a8-2591c225bd61'),
@@ -3881,7 +3881,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('eb6f9c69-d3cc-4f1b-98cb-27cc46838ca3','Jessica Drew','No alter egos found.','London, England','Marvel Spotlight #32 (February, 1977)','Marvel Comics','good','5b43d0aa-857c-4ed3-ac50-232fddab0ad6'),
 	 ('dd5a1142-bbec-4782-9eab-8ffe41079831','Koriand''r','No alter egos found.','Tamaran','DC Comics Presents #26 (October, 1980)','DC Comics','good','3a531400-5c86-497d-b613-5858d40d0c10'),
 	 ('27d8707b-4efc-41ba-a4af-d5dec104801a','Cyberdyne Systems Series X Terminator','No alter egos found.','-','-','Dark Horse Comics','bad','ebf70daf-95b7-48e0-889c-8b0151b8fe05');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('cc12082c-7b9c-47fe-85f4-21c92e55967d','Tarene','No alter egos found.','-','Thor, Volume 2, #22; (as Thor Girl) Thor, Volume 2, #33','Marvel Comics','good','66b6bf14-d18d-4fce-8507-faa8a16b6956'),
 	 ('c8ffaeb4-dd74-47a9-8533-37daae3c7be1','','No alter egos found.','Boston, Massachusetts','X-Men (Vol 1) #2','Marvel Comics','bad','25186775-7bd5-4036-a835-30a3fe2ed5f7'),
 	 ('c54fb4bc-7c9b-4f32-9c4c-fe85f53f523b','Vision','Anti-Vision, Vision II','-','Avengers Vol.1 #57, Young Avengers # 4','Anti-Vision','good','9bebc6ce-977c-4596-a4aa-831d3a264a72'),
@@ -3892,7 +3892,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('32ba8b49-221d-468d-a93d-c4a440ad6d24','Laurel Lance','No alter egos found.','-','Justice League of America (Volume 1) #75','DC Comics','good','ac2da8f1-26ea-4c64-8373-dca1e3ff183d'),
 	 ('80a578b6-8ef0-4514-8699-652947e83258','Lemuel Krug','No alter egos found.','-','X-Men (2099) #1','Marvel Comics','good','9763e385-84b4-4fcf-8125-26763a716ffe'),
 	 ('b31019e0-df4c-4b25-a6dc-284e72df3eaf','Nathaniel Adam','No alter egos found.','-','Captain Atom #1','DC Comics','good','cb841bea-4431-4fb8-b41a-d0ca7023f488');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('ccfbd2a0-30e7-46cd-93c6-584080bad9f7','Nathan Heywood','No alter egos found.','-','Justice Society of America Vol 3 #2 (March, 2007)','DC Comics','good','32cf2e45-e7b3-4cce-a1bc-d5e6011e6642'),
 	 ('77ea1778-082d-4d04-ac33-1a3451f4c402','','No alter egos found.','Dathomir','Star Wars Episode I: The Phantom Menace (1999)','George Lucas','bad','011d1bc2-083d-484f-8ce8-9b69bde2eb6e'),
 	 ('f3274b16-7954-44a2-ae92-1f93e418cd19','Wade Wilson','Evil Deadpool, Venompool','Canada','New Mutants #98 (February, 1991)','Evil Deadpool','neutral','473f7f79-fa6b-465e-91a5-b9c7b099307e'),
@@ -3903,7 +3903,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('abb08bec-9c1e-4d7e-94b1-aa26c8ba2213','Hope Summers','No alter egos found.','-','X-Men Vol 2 #205 (2008)','Marvel Comics','good','72f1f9ee-d473-4e4c-9730-364c4b3b8acd'),
 	 ('d71ae1cc-cab2-4cc8-b078-55ba4265071e','Adrianna Tomaz','No alter egos found.','-','(as Adrianna) 52 Week Three; (as Isis) 52 Week Twelve','DC Comics','good','1f46c8c0-b10a-4fd9-b57f-cb6c7b35e093'),
 	 ('b1537121-db9b-4f32-ae7d-dca283fa9336','JJ Powell','No alter egos found.','-','No Ordinary Family S01E01 (2010)','ABC Studios','good','5d721ab1-d88b-4bb4-ad19-88f6acb17b86');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('eef51e0d-8142-414b-bd76-5ca9ad4105d3','Waylon Jones','No alter egos found.','-','Batman #357 (March, 1983)','DC Comics','bad','1feeef29-3500-4dd8-bbf3-c8d7673081f3'),
 	 ('0bb65873-52d4-4271-9c37-78df8eb056bb','Loki Laufeyson','No alter egos found.','Jotunheim, Asgard','Journey into Mystery Vol. 1 #85','Marvel Comics','bad','134313ac-cc80-4f0a-9e92-7a3b0219c7d4'),
 	 ('5549eed5-6e35-4514-b51e-737ac30ddb49','J''onn J''onzz','No alter egos found.','-','Detective Comics #225 (1955)','DC Comics','good','81a4fcec-6878-4ca3-9ab1-49a1b1b8138e'),
@@ -3914,7 +3914,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('915c2dbc-dc76-48e6-91a5-5ead079d5dba','','No alter egos found.','-','-','SyFy','good','436a736f-3701-41e7-86f6-00ac89673376'),
 	 ('a75b9b0d-bbfe-4ad2-99f6-387d1b22a6ae','Richard Hunter','No alter egos found.','-','Showcase #20','DC Comics','good','00924041-97da-4b4b-8cbc-1c3ea71e6bf6'),
 	 ('ea992765-17b3-465c-9f95-01dd1710631c','Clint Barton','Goliath, Hawkeye','Waverly, Iowa','-','Goliath','good','075ea927-fd30-4e63-b147-e396d41696dd');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('0dfabd98-079e-4aaa-a41b-46be0dbfb2a2','Jennifer Walters','No alter egos found.','Los Angeles, California','She-Hulk (Vol. 1) #1','Marvel Comics','good','3600936d-f09e-46c7-91df-82abeec79fcb'),
 	 ('32482ec0-c5a8-4245-add0-a1d9357aa04c','Thaddeus Bach','No alter egos found.','-','Space Ghost (1966)','DC Comics','good','19f0a950-17c7-4969-b884-d22ac07fb5c9'),
 	 ('a9be42ef-2c00-4b5a-8b17-3dd9a0725571','Virgil Hawkins','No alter egos found.','Paris Island, Dakota City','Static #1 (June, 1993)','DC Comics','good','5aef7271-94cc-47cf-adf6-d57c9ab80998'),
@@ -3925,7 +3925,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('6eb2edcd-0cfc-461c-b302-da5c80caaa70','Katherine Rebecca Kane','No alter egos found.','-','52 #7 (June, 2006)','DC Comics','good','045a6b84-4a7f-4af1-8510-4d78e41575ad'),
 	 ('81595937-b74b-4c3b-90c7-ae7f48e2e738','','No alter egos found.','-','-','SyFy','good','98ba25ec-ae87-49e2-b5ef-1c20f250b4e4'),
 	 ('28c250d7-c5b1-4bb4-a232-56faa5ccccb0','Dinah Drake Lance','No alter egos found.','-','Flash Comics #86 (August, 1947)','DC Comics','good','06c0e2f7-8803-462e-8995-7ed9a36bb22f');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('a0cbf470-8c86-4e60-8617-63310312ec84','','No alter egos found.','-','Ghost Rider Vol 3 #2 (June, 1990)','Marvel Comics','bad','7a8b6610-a3d8-4391-bcfc-023b5405ff97'),
 	 ('03f540ff-6ec8-46f6-b3f0-340e8a991b10','Jaime Reyes','No alter egos found.','Presumed to be El Paso','Infinite Crisis #3 (2006)','DC Comics','good','459b400b-b436-4aa4-bd3c-2e09c63490cc'),
 	 ('c86e70b6-19e9-4ca6-a460-235a4153520d','Karen Beecher','No alter egos found.','-','Teen Titans #45','DC Comics','good','2f4935ae-250b-4945-aa45-6cc55659b6e8'),
@@ -3936,7 +3936,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('ea35e7b4-4a59-44b3-9a39-098831500729','Dashiell Robert Parr','No alter egos found.','-','The Incredibles (Movies, 2004)','Dark Horse Comics','good','555f9228-13e7-443c-a2ec-37cad67d819f'),
 	 ('56a4b5d3-bad0-4116-855a-0bc251a53e67','Daniel Lawrence Hawkins','No alter egos found.','-','Heroes S01E05 - Hiros','NBC - Heroes','good','08a6ac59-07bb-455e-980b-4df338a8c29a'),
 	 ('99e86151-9a71-448d-b99d-e85311616b08','Willis Stryker','No alter egos found.','-','Luke Cage, Hero for Hire#1 (1972)','Marvel Comics','bad','34dfa66d-7df9-48ff-8cde-b429420e7ee8');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('27f4867d-de84-49e5-b008-d6690ab26d5a','Ralph Dibny','No alter egos found.','-','Flash #112 (1960)','DC Comics','good','962b2fe2-b998-47c5-942c-c1bb488a8a24'),
 	 ('8b2209a6-6093-44b0-9671-76266d50bbab','Maria Callasantos','No alter egos found.','Place of birth unknown','NEW MUTANTS #99','Marvel Comics','good','94e3cd23-0c1d-437e-bfeb-96a9613566e2'),
 	 ('c2710aa3-6c88-41f9-9e70-49fc4e8b2005','Jay Garrick','No alter egos found.','Hibbardsville, Kansas','Flash Comics #1 (January 1940)','DC Comics','good','a120e788-c40c-49a5-8ff2-02c3067e28de'),
@@ -3947,7 +3947,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('9d38c6ec-42c2-4fb2-9fc4-9cf7b6f62717','Bruce Banner','No alter egos found.','Dayton, Ohio','Incredible Hulk #1 (May, 1962)','Marvel Comics','good','ec50cda0-0797-4616-9d22-abec4960c71e'),
 	 ('d23fe557-0727-4672-8c6c-ffc2860299ac','Bartholomew Allen II','Flash IV, Kid Flash II','-','Flash Vol 2 #92 (July, 1994)','Flash IV','good','4c7af5d0-2cd7-494c-930e-dd88e7bfed4f'),
 	 ('dcf1dc26-1908-4e44-b7d3-b787198350c6','Jonathan Hart','No alter egos found.','New Haven, Connecticut','Deadly Hands of Kung Fu #22 (March, 1976)','Marvel Comics','good','1dfb0c66-9650-4791-9b02-7e13719e4c94');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('df05a99e-2001-4eb1-88ca-b6d1e9e72685','Jim Powell','No alter egos found.','-','No Ordinary Family S01E01 (2010)','ABC Studios','good','ca5a8a9e-a656-4f7b-9a18-d7879c92e562'),
 	 ('82ef5095-07ba-478d-9442-7c70a398a088','John Constantine','No alter egos found.','-','Swamp Thing Vol 2 #37 (June, 1985)','DC Comics','good','319df512-171c-431c-834d-040f19c49429'),
 	 ('72c36298-3501-4a5a-bb99-fee1a2f4f1aa','','No alter egos found.','-','X-Men 2099 #1 (October, 1993)','Marvel Comics','bad','af0ccea6-0ad4-44fd-b235-0b3b84143805'),
@@ -3958,7 +3958,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('8b92c6de-1b7e-4378-a3ec-089ebec68837','Rachel Anne Summers','No alter egos found.','-','UNCANNY X-MEN #141','Marvel Comics','good','9a5fa168-9654-4504-8057-3b7227b89a71'),
 	 ('a4511b11-15bb-4e1f-86bb-855d7afe5c68','Tabitha Smith','Boom-Boom','Roanoke, Virginia','-','Boom-Boom','good','acef8f70-b7b5-416c-8a9e-3a4ae4515209'),
 	 ('6bce1d9a-0dc1-429c-aca8-9ab0d9904ad8','','No alter egos found.','-','-','IDW Publishing','good','8d3833e0-1453-4ba4-925c-df1eed7b1e91');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('c47ea4f0-05b8-422d-8b6b-216d89d6102a','Nathaniel Essex','No alter egos found.','London, England','Uncanny X-Men #221 (September, 1987)','Marvel Comics','bad','6806cafd-69ec-4b4f-a5c5-0cc51fbc2c57'),
 	 ('4c30dc9a-d52d-4d2c-945c-27a642d74eb9','Craig Hollis','No alter egos found.','-','West Coast Avengers Vol 2 #46','Marvel Comics','good','c154e8dd-9cda-4bcf-b4fa-b572cdd4cf48'),
 	 ('d0038b30-0e00-44d4-baa1-a51a366c145e','Aquaria Nautica Neptunia','No alter egos found.','Unnamed Atlantean outpost','Marvel Mystery Comics #82 (1947)','Marvel Comics','good','4d01042c-09df-4732-b54f-3936995ba10d'),
@@ -3969,7 +3969,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('8fb78f36-1e1f-45e9-8bd5-955f6250ef35','John Rambo','No alter egos found.','Bowie, Arizona','First Blood (Novel, 1972)',NULL,'good','071611e9-6024-46a7-aff8-d86b786cadf2'),
 	 ('b479d62f-91ea-424d-b487-3ab0f8074b54','Tim Drake','Robin III','Gotham City','Batman #436 (August, 1989)','Robin III','good','982eee85-ff8b-45c0-9632-c41c1fd8cc9c'),
 	 ('b7411531-b6dc-47d8-b8f9-0f7814b75e53','Chris Genovese','No alter egos found.','-','Kick-Ass #5','Icon Comics','bad','1260706b-e5e3-445d-bd2f-3161ec71fb07');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('24239342-6a96-4e11-aa60-a8ddc78d1822','Tessa','No alter egos found.','Place of birth unknown','X-MEN Vol. 1 #132','Marvel Comics','good','145980b1-6504-46f4-88e3-09dadc582082'),
 	 ('00b91cfd-d8cc-4587-b56a-7694174393eb','Walter Joseph Kovacs','No alter egos found.','-','Watchmen #1 (September, 1986)','DC Comics','good','34eefb6a-f84c-41de-bfed-dab9951234c0'),
 	 ('e1a1ff0d-fcb3-4760-818a-3965834db308','MacDonald Gargan','Venom III','-','Amazing Spider-Man #19 (1964)','Venom III','bad','e00f3d47-14a3-4580-b033-c27b9886a99a'),
@@ -3980,7 +3980,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('f716309d-f94c-40f2-8c29-b6f2aedca736','Courtney Whitmore','No alter egos found.','-','Stars and S.T.R.I.P.E. #0 (July, 1999)','DC Comics','good','0ee6f9a1-5f45-45d5-be33-7b9143dcaca1'),
 	 ('de007c00-6bd7-457a-8142-dcb57fb1812e','Cyberdyne Systems Series 1000 Terminator','No alter egos found.','-','Terminator 2: Judgment Day','Dark Horse Comics','bad','739aa498-46d9-449b-ba25-9b949935dc0f'),
 	 ('e3469b1b-d10c-4f08-8026-5a52dbb1e7ff','Angel Salvadore Bohusk','Angel Salvadore','-','New X-Men #118 (November, 2001)','Angel Salvadore','good','282163c6-af61-4e6f-b122-c36d6a4e7086');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('9f6b82d1-7df6-4c58-9efe-249a4e206ec1','Thundra','No alter egos found.','-','Fantastic Four #129 (December, 1972)','Marvel Comics','good','9bfc5476-4187-4fc2-b487-9a35f3f5f2ec'),
 	 ('311638ab-7b6b-452e-9ab1-52a288818b93','Henry Philip McCoy','No alter egos found.','Dunfee, Illinois','X-MEN Vol. 1 #1, (in furry ape form) AMAZING ADVENTURES #11, (in current feline form) NEW X-MEN Vol. 1 #114','Marvel Comics','good','0e10c48c-b91e-4ffc-b501-225eadebc965'),
 	 ('b2d5e814-5fd0-423a-a54f-9101164b7ffa','Jamie Sommers','No alter egos found.','-','-','','good','a8b63c15-0015-494b-a47c-eabcce0c4c9a'),
@@ -3991,7 +3991,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('12b16bbe-4a58-453d-a4e6-fb3c8c551f20','Leonard Snart','No alter egos found.','-','Flash Vol 4 #6 (April, 2012)','DC Comics','neutral','2f25d77d-537d-4575-be9b-a41fce5e2c26'),
 	 ('2124ccd6-9458-4440-aaf3-ee86a04ca9d4','Jonothon Evan Starsmore','No alter egos found.','United Kingdom','Generation X #1 (November, 1994)','Marvel Comics','good','64e9b508-5361-4de2-a26e-bbec5518277e'),
 	 ('0b820e60-4f75-462f-acb3-f906bb710e38','Piotr Nikolaievitch Rasputin','No alter egos found.','Ust-Ordynski Collective, near Lake Baikal, Siberia, Russia','Giant-Size X-Men #1 (May, 1975)','Marvel Comics','good','99883334-8cf8-4e65-9b42-5d298d6f8219');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('40292edf-d7d7-4c11-bc05-715270ffb90d','Scott Summers','No alter egos found.','Anchorage, Alaska','X-Men #1 (September, 1963)','Marvel Comics','good','360987f4-a69f-4b7e-b2b7-c606141a119d'),
 	 ('930aa945-80fb-4259-8719-121b81ff5bf5','Data','No alter egos found.','-','-','Star Trek','good','b6cca01a-69b1-4245-8b23-639c468cffd5'),
 	 ('d17e5f24-6cbd-4bb1-8063-0e14725bcdbc','Leonard Samson','No alter egos found.','Tulsa, Oklahoma','Incredible Hulk #141 (July, 1971)','Marvel Comics','good','979c042c-ba0a-4b80-a7ae-8e167e69c4d5'),
@@ -4002,7 +4002,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('7153be77-a2b2-4c3e-8fb8-004959dd2ed4','Gary Bell','No alter egos found.','-','-','SyFy','good','b0652c04-b1ad-419e-b75e-2ee32c6e2297'),
 	 ('b94fca56-a9b5-4b85-9566-502e05abc0d3','','No alter egos found.','-','Incredible Hulk #257 (1981)','DC Comics','bad','3cdb0763-cb87-4524-9366-f300bf7583f8'),
 	 ('a8c0a2c5-ea09-4657-9d67-22b92dc4421f','Hal Jordan','No alter egos found.','Coast City, California','Showcase #22','DC Comics','good','58f972a3-37a8-44dd-a71b-6fea54a0d88f');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('69901b0f-decf-4251-9843-760f6eef60c7','','No alter egos found.','-','Journey into Mystery #102','Marvel Comics','bad','c7000fb1-2b4c-438e-b7da-42641e2c9c4d'),
 	 ('ea427dbb-dffa-4163-a69f-5f51d82a7193','Johnny Storm','No alter egos found.','Glenville, Long Island, New York','Fantastic Four #1 (1961)','Marvel Comics','good','de8bde19-2f2c-4c8d-92b0-a8da7db89789'),
 	 ('02bbd571-055d-4356-8767-1ce5f5228284','Indiana Jones','No alter egos found.','Princeton, New Jersey','Raiders of the Lost Ark (1981)','George Lucas','good','e4c8f22b-b2b3-40c5-93c7-f36c9504619d'),
@@ -4013,7 +4013,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('7efc64d4-6ab3-4839-b58b-67ccad159ea4','Krypto the Superdog','No alter egos found.','-','Adventure Comics #210 (March, 1955)','DC Comics','good','007a18a1-79e2-46aa-8200-14f6a113bda9'),
 	 ('515d109d-ea77-4bac-b2f6-f87bb7d3d2b7','Garth Ranzz','No alter egos found.','-','Teen Titans/Legion Special #1','DC Comics','good','709552c7-1895-4407-82e3-b5d48c5bb7af'),
 	 ('8af1e0bf-4062-46d1-a1ac-bc3c80775442','Luke Cage','Power Man','Harlem, New York City','Hero for Hire #1 (1972)','Power Man','good','5f0f8238-39c9-439a-babd-f57ee89078fc');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('71e5e08e-fcbd-46f6-97c4-4430020d33f7','','No alter egos found.','Kvch (Technarchy?s home planet)','New Mutants #18 (1984)','Marvel Comics','bad','6b36118d-ef9b-491f-a92d-760ec89e468e'),
 	 ('7f743ce7-9a40-45a8-9d82-fc2ec4d5560b','John-117','No alter egos found.','Elysium City, Eridanus II','-','Microsoft','good','9cd5f168-9ef1-4d24-9284-b3e663a9594a'),
 	 ('12e6b477-e225-4105-bc38-7749bd624730','','No alter egos found.','Hell','-','Marvel Comics','bad','74cb3a12-e500-43d2-a272-687987f2d301'),
@@ -4024,7 +4024,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('b4bad1e7-32e5-4f1e-a42e-98484e1cb384','','No alter egos found.','-','Doctor Strange Vol 2 #13','Marvel Comics','neutral','f854ffd9-a76f-4648-a388-51ba43114821'),
 	 ('0f5a52dd-e034-44e6-a65b-e339fa7ed3f3','Adrian Veidt','No alter egos found.','-','Watchmen #1','DC Comics','bad','7909566f-36b9-41a9-806f-a1ca604a9dda'),
 	 ('15a8d710-01e7-408c-9cd4-18151a000a6e','Bette Sans Souci','No alter egos found.','-','Fury of Firestorm #7','DC Comics','bad','8f800a2e-6a03-4865-9540-a43d27c9c8ae');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('8b771c00-c611-4c57-a49d-f0b163c165fd','St. John Allerdyce','No alter egos found.','Sydney, Australia','-','Marvel Comics','bad','7209a485-8421-4809-a778-e05aa00589d7'),
 	 ('6f130a91-5643-4063-bca2-4f65b799ee91','','No alter egos found.','-','Teenage Mutant Ninja Turtles #1','IDW Publishing','good','3c4b1cd2-4be9-450b-a5c2-e21ef0aba35d'),
 	 ('026db347-9036-47fe-ba0f-8195d45af2cb','Johann Shmidt','No alter egos found.','An unidentified village in Germany','Captain America Comics #1 (1941), (modern) Tales of Suspense #66 (1965)','Marvel Comics','bad','4abae1f9-6f87-4632-a1e3-ee82243a50ed'),
@@ -4035,7 +4035,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('3c7a7218-0553-4784-bb69-fe932d4c7462','Herman Schultz','No alter egos found.','-','Amazing Spider-Man #46','Marvel Comics','bad','eb86baa5-19d7-44ad-b9ef-5efdfbd36f5d'),
 	 ('9270f0e4-7e27-40ed-8b25-ac943256f260','Narya','No alter egos found.','Near Resolute Bay, Northwest Territories, Canada','Uncanny X-Men #120','Marvel Comics','good','7fba7029-7bee-4695-a4d0-dc13379675e4'),
 	 ('cf9bd5cf-b275-46c0-b213-7a1f429fd153','Aztar','Aztar','-','More Fun Comics #52 (February, 1940)','Aztar','good','a87a3fd1-592e-45b4-80f5-7b940ee187b3');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('33ddcb64-c4c4-440d-92bc-de941b040c3b','Stephanie Powell','No alter egos found.','-','No Ordinary Family S01E01 (2010)','ABC Studios','good','8314c229-0576-4867-bff1-a93df2121eaa'),
 	 ('485de910-b1e4-4fa6-8b24-7dc875ff0c79','Ororo Munroe','No alter egos found.','New York, New York','Giant-Size X-Men #1 (May, 1975)','Marvel Comics','good','855179c7-8e55-4a88-bead-6cf62c952d16'),
 	 ('c303a19e-5d87-4f8a-a1ac-e664f856a0e8','Cyberdyne Systems Series 800 Terminator Model 101','No alter egos found.','-','The Terminator (1984)','Dark Horse Comics','bad','694d23ad-1c66-4e18-a4aa-4653accd3290'),
@@ -4046,7 +4046,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('f6ff7906-1827-406c-bfc3-13bbf0d7de62','','No alter egos found.','-','Flash Vol 2 #138','DC Comics','neutral','792b6117-ce56-4751-b6fb-a0092a98287b'),
 	 ('8a420830-9fee-4c7b-b37c-b094d2eb7961','Lucian','No alter egos found.','Armechadon','Thunderstrike #6 (March, 1994)','Marvel Comics','-','cb647510-6038-435a-b51c-c0f7b0ee611d'),
 	 ('b8782708-08e3-4710-9eef-899264220f1e','Tabitha Smith','Meltdown','-','Secret Wars II #5','Meltdown','good','e9ea6942-12fd-4c5d-9146-785b19f96957');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('f261328d-8e22-422e-b44b-9da1c6b7b78f','Nathan Summers','No alter egos found.','Unrevealed location in the 20th Century United States','New Mutants #86 (as Cable)','Marvel Comics','good','ab4a41ef-bdbd-4000-a549-e40f2fdd2e65'),
 	 ('eb39f108-144f-4e2e-babd-0896c2839366','Jack Brolin','No alter egos found.','-','South Park S14 E11 "Coon 2: Hindsight"','South Park','good','7541e5ef-2a15-4653-8e57-7b8fd64bcb6f'),
 	 ('fa81f794-bf47-4c48-ac07-7202140f5a53','Dmitri Anatoly Smerdyakov Kravinoff','No alter egos found.','Russia','Amazing Spider-Man #1','DC Comics','bad','8b3ad528-dfac-423f-bb44-58df6392ea66'),
@@ -4057,7 +4057,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('c7e7fd02-a185-44ca-9611-061b15c4a48a','Dormammu','No alter egos found.','Faltine Dimension','Strange Tales #126 (1964)','Marvel Comics','bad','300cf565-d4ff-47ef-9f13-582c2f83a1f8'),
 	 ('2b6713df-dc7e-4442-9e8d-9250165e860e','Wade Wilson','Deadpool, Venompool','-','Deadpool Vol 2 #44 (December, 2011)','Deadpool','bad','5f850bac-eda0-4fe6-b9bf-ea9a03d7e8e6'),
 	 ('60fcfc0c-35dd-41eb-a9c1-c416429ec9ba','Bonita Juarez','No alter egos found.','Buena Vista, New Mexico','INCREDIBLE HULK Vol. 2 #265','Marvel Comics','good','702ded2f-f1ad-4722-8faf-774ebfb45100');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('fe6c4577-425d-412e-8fba-4e3e842f80b4','Wally West','Speed Demon','Blue Valley, Nebraska','Flash #110 (January, 1960)','Speed Demon','good','21ac97b0-8f11-4a5c-8d63-41130e2a05ef'),
 	 ('90c52a51-c923-47e1-8aa4-60613fd881c7','Dru-Zod','No alter egos found.','Krypton','Action Comics #845','DC Comics','bad','a09255bb-a7e1-4c4e-8a8d-9e963ff89639'),
 	 ('be17222c-aec4-44df-a630-e3be2260e9ce','Kakarot','No alter egos found.','-','Dragon Ball #1','Shueisha','good','97b9b94d-0f03-49e3-b88e-639ccb2bcac1'),
@@ -4068,7 +4068,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('d9d07acc-feee-4689-b8b3-3ccc6c0ae943','James Bond','No alter egos found.','-','Casino Royale, 1953 novel','Titan Books','good','075f3ad0-9695-42c8-97e4-bfcae0533426'),
 	 ('2ba3b461-8075-4e72-9be6-a67ff68237e0','Jean Grey','Phoenix, White Phoenix of The Crown','-','X-Men #1 (September, 1963)','Phoenix','good','f3d9f6c2-590f-4b0c-ad75-d1b7857df5ca'),
 	 ('c9e2758f-8c91-4487-bb1e-121955e9d440','Nathaniel Richards','Iron Lad','Other Earth, 31st century','(As Rama-Tut) Fantastic Four #19 (1963); (as Kang) Avengers #8 (1964)','Iron Lad','bad','19d15d5e-38b6-4db3-8a51-0b886ba02471');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('3a2e0329-7367-4c8c-aca9-b3d7f6d38258','','No alter egos found.','Bolovax Vik','Green Lantern Corps #201 (June, 1986)','DC Comics','good','02229ff1-e10e-44b9-8b2c-8fe6c15cfc5d'),
 	 ('bf8e2be7-aa39-43ac-a3ab-9176a70e507e','Kyle Rayner','No alter egos found.','North Hollywood, Los Angeles, California','Green Lantern Vol 3 #48','DC Comics','good','97163f24-856b-433d-a608-32403e1454c9'),
 	 ('838804ff-0241-4a55-b73a-2df60a953e81','Mekt Ranzz','No alter egos found.','-','Supergirl and the Legion of Super-Heroes #25 (Feb. 2007)','DC Comics','bad','1e0c40b1-359b-45b9-9e96-077cde49ba0d'),
@@ -4079,7 +4079,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('8e277e7d-249c-4f07-b7da-4789e923fc06','Calvin Montgomery Rankin','No alter egos found.','Passiac, New Jersey','Uncanny X-Men #19','Marvel Comics','good','0fb043be-00f6-428f-af17-493abbf082a2'),
 	 ('318ecd74-f334-4b7a-a193-da6cf4896f59','George Tarleton','No alter egos found.','-','Tales of Suspense #93','Marvel Comics','bad','7590d6d4-c3bf-4787-aa2c-25253aee6b5b'),
 	 ('b914ecb7-9d86-4c1d-a21f-84b031cdd177','Sharon Ventura','She-Thing','Pullman, Washington','-','She-Thing','good','c08f939c-cf35-4051-98c6-73f5ebea38f4');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('280498d1-a2e1-4dae-a68b-f2ea348cc343','Nicholas Joseph Fury','No alter egos found.','New York City','Sgt. Fury and His Howling Commandos #1 (1963)','Marvel Comics','good','b9d4eadb-a25b-47c2-bcb1-5ebd5ae58c58'),
 	 ('17819a6b-55ab-4b5e-8833-7bdf32b9c6b1','Jean-Paul Beaubier','No alter egos found.','Montreal, Qu?bec, Canada','X-Men #120 (1979)','Marvel Comics','good','752a79c4-e29e-4bc9-9a65-bda05d8341cb'),
 	 ('a0c2a462-fc4f-4157-8d18-c49074b2c58b','','No alter egos found.','Apokalips','New Gods #1','DC Comics','bad','12f8caed-7596-4fc5-a536-83cd6663efc2'),
@@ -4090,7 +4090,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('304f478f-9f8f-419d-95d1-7a47e1bb27c4','Tim Drake','Red Robin','-','Batman #436 (August, 1989)','Red Robin','good','e0e84be2-b84c-4915-9ba8-5c076f708a64'),
 	 ('4e838f1a-e1db-4f22-af16-64d856d82a62','Walter Langkowski','No alter egos found.','Edmonton, Alberta, Canada','-','Marvel Comics','good','2e88fbb4-cffc-4ec7-80dd-17cc55603515'),
 	 ('139bf8d9-8544-4196-ba61-008f055b2b57','Benjamin Reilly','Spider-Carnage','Place of birth unknown','Amazing Spider-Man # 149 (as Spider-Clone); Web of Spider-Man # 117 (as Ben Reilly)','Spider-Carnage','good','a85df2dc-8316-4b34-972d-40f18febbf9f');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('657353ca-9a9d-4fb8-b602-cbec30cc1924','Sebastian Hiram Shaw','No alter egos found.','-','-','Marvel Comics','bad','041860fc-b8b1-4472-bbcf-ef32add05291'),
 	 ('c065fac5-62c6-45e4-a1e5-451cbdb2229b','Frances Louise Barrison','No alter egos found.','-','-','Marvel Comics','good','0a08f6e9-5004-4adf-834c-c861f661a674'),
 	 ('127bfee4-df3b-4fae-b493-3da24749c9d6','Norrin Radd','No alter egos found.','Zenn-La','Fantastic Four, Vol. 1 #48','Marvel Comics','good','d63f36c0-8848-447f-8f7b-00019a6d5252'),
@@ -4101,7 +4101,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('0538ac14-8be4-4340-9025-3d8e52ce7cb3','Vince Faraday','No alter egos found.','-','The Cape S01E01 (2011)',NULL,'good','4dab2508-9063-441a-89b4-5a5813aaa01e'),
 	 ('9d4328a3-e8c5-4735-882a-c104f0511eb4','','No alter egos found.','Created in the Beyond','Marvel Super-Heroes Secret Wars #1','Marvel Comics','good','1b0907cc-3daa-4a27-bde3-9f416afb562e'),
 	 ('d21afbb9-29de-4300-8de0-e2c5c0666165','Lucas Bishop','No alter egos found.','A mutant relocation camp in an undisclosed location on an alternate 21st Century Earth','Uncanny X-Men #282 (November, 1991)','Marvel Comics','good','35a5b93f-c8a0-481a-919c-1bac5829eb36');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('879d4aad-b1fd-433c-b69a-fb7d4e6c7862','Jefferson Pierce','No alter egos found.','-','Black Lightning #1 (April 1977)','DC Comics','good','938e5fab-78bf-4207-9fe6-dd6989991abb'),
 	 ('fe9db113-e561-45c1-9651-01f264ee3947','Roxanne Washington','No alter egos found.','-','X-Men #171 (2005)','Marvel Comics','good','a2e7d313-6d06-464b-898d-7f49e9c53061'),
 	 ('4559c92c-754c-4214-b2cd-d0654d208ca5','Clarice Ferguson','No alter egos found.','Bahamas','Uncanny X-Men #317 (October, 1994)','Marvel Comics','good','5830f118-6ba4-4a8a-823e-842e3bffeaad'),
@@ -4112,7 +4112,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('bcc88fbe-8fad-4297-9ef8-ba01f37586d9','Matt Murdock','No alter egos found.','New York City, New York','Daredevil #1 (April, 1964)','Marvel Comics','good','3ddc294d-1c15-472b-8a9b-aa787f7a1d21'),
 	 ('7ab1b572-7c46-4b58-8337-153f415b22bd','Slade Joseph Wilson','No alter egos found.','-','New Teen Titans #2 (December, 1980)','DC Comics','neutral','44f2f45f-8a11-4a08-bce5-c0d6158dbab4'),
 	 ('8d026abb-efe7-47fe-b646-0c0516cfeecb','Otto Octavius','No alter egos found.','Schenectady, New York','Amazing Spider-Man #3 (July 1963)','Marvel Comics','bad','9af89a82-ff5a-422c-be7e-4667e16f1a6a');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('8b29775a-7a4e-4bf9-b707-a82348cad424','Arthur Sampson Douglas','No alter egos found.','Burbank, California','Iron Man #55 (February, 1973)','Marvel Comics','good','34637118-e5dc-47ad-b02e-1515a8d444c3'),
 	 ('76ebf6db-28dc-423b-837c-93a72d66551a','Sam Wilson','No alter egos found.','New York, New York','Captain America #117 (September, 1969)','Marvel Comics','good','b678bf4e-ff30-485a-9e52-ab848a681372'),
 	 ('7522941a-dbc5-4f63-a215-98f6a4a0329a','Angelica Jones','No alter egos found.','Place of birth unknown','Uncanny X-Men #193 (May, 1985)','Marvel Comics','good','33ce1dbf-8054-4d44-9191-4ddeeed459da'),
@@ -4123,7 +4123,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('277f3e21-55ec-496e-a430-0c34a0b6519b','Henry Hall','No alter egos found.','-','Showcase #75 (June, 1968)','DC Comics','good','87e7e44b-0a1d-4fde-a872-5126f5969b4c'),
 	 ('63e3690e-59c5-4622-b645-4ab38901e773','Scott Washington','No alter egos found.','Bedford-Stuyvesant, Brooklyn, New York City','Venom Along Came A Spider #2 (as Hybrid)','Marvel Comics','good','79e8a6c5-5784-42ac-94d2-6822587f1ce4'),
 	 ('1972183b-bea3-4568-aea5-a57194e27049','Susan Storm Richards','No alter egos found.','Glenville, Long Island, New York','FANTASTIC FOUR #1','Marvel Comics','good','eca342ad-931e-4622-af70-25018143497e');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('ee6ddccb-a7d8-41d7-8861-2e7860906dfc','Jar Jar Binks','No alter egos found.','Naboo','-','George Lucas','good','31e25f2d-ecba-4fad-9133-c0f6ffc0060c'),
 	 ('32ea4497-bbc8-465b-8996-5d0f21ca3fa0','Jack Napier','No alter egos found.','-','Batman #1 (Spring 1940)','DC Comics','bad','a89f8384-b595-4dfb-a2bd-6bef8f16f4e4'),
 	 ('2467cd9b-e712-4ca9-a109-ed71de8f33f0','Katniss Everdeen','No alter egos found.','-','-','','good','ca9d905d-6946-4471-92b6-7e0e6c9b2dc5'),
@@ -4134,7 +4134,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('70846333-6d8c-41cc-8176-7937dc96b52d','Dr. Theodore Sallis','No alter egos found.','-','Savage Tales #1 (May, 1971)','Marvel Comics','good','a6c62dcf-b747-412e-b2f4-dac1cb9f3521'),
 	 ('99c6c482-8bb3-4ca2-861f-a4b13560688b','Christopher Bradley','No alter egos found.','-','X-Men Unlimited #8 (1995)','Marvel Comics','good','7291fe36-8a86-40df-98ca-52f2d4c81bf3'),
 	 ('cf90adbf-b998-4348-891b-299ea9908347','Metron','No alter egos found.','-','New Gods vol. 1 #1 (February-March, 1971)','DC Comics','good','8d2171ae-8b30-4558-b7e0-9aa9b49f8314');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('dc8f9b7e-664f-4486-af1c-da5a3349cb08','Victor Zsasz','No alter egos found.','-','-','DC Comics','bad','677c0fa8-eb2c-4302-b73d-38b97d5e4deb'),
 	 ('315201ac-b40f-43d8-985d-4ddb6d00bc18','Monica Dawson','No alter egos found.','-','Heroes S02E04 - The Kindness of Strangers','NBC - Heroes','good','71d864cd-4428-44ea-890f-9b8771163552'),
 	 ('dd4c6936-741d-4d17-b25c-b1c4f69c9d86','Quentin Beck','No alter egos found.','New York, New York','Amazing Spider-Man #13 (1964)','Marvel Comics','bad','2bc92306-083a-473b-b3a2-1c6df200ea2a'),
@@ -4145,7 +4145,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('42c4a89a-3955-4453-9f86-d6a0dae724c4','Pietro Django Maximoff','No alter egos found.','Wundagore Mountain, Transia (in Eastern Europe)','X-MEN Vol. 1 #4','Marvel Comics','good','810e3b0f-173d-4396-b1f1-29a3b0e275c4'),
 	 ('5c03e63d-54d4-46ed-b17e-fcbc90659ebf','Roy Harper','No alter egos found.','-','(as Speedy) More Fun Comics # 73(Nov. 1941); (as Arsenal) The New Titans # 99 (July 1993); (as Red Arrow) Justice League of America Vol. 2 # 7 (May 2007)','DC Comics','good','5f07c8f3-88ff-43fc-9f72-33bba3300161'),
 	 ('0006d7ff-28f7-4c4f-8936-4df40b3a7689','Aleksei Mikhailovich Sytsevich','No alter egos found.','-','Amazing Spider-Man #41','Marvel Comics','bad','9e9138af-e538-4e1f-a5d6-56bbaad31be6');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('3c330d59-126c-479d-b2ed-bccc80bf0b1b','Carrie Kelley','No alter egos found.','Gotham City','-','DC Comics','neutral','4e7e5852-ce1a-4f83-a371-c3ba278f4805'),
 	 ('bebce2ac-0b17-4d72-a05a-3eb1c1546b98','Kurr','No alter egos found.','-','-','Image Comics','good','9e018089-32a2-43fd-8b6e-3b06f49b9f71'),
 	 ('613dc856-fd1e-4f9d-8c6b-65df4c0d4f98','Tasmia Mallor','No alter egos found.','Talok VIII','Adventure Comics #365','DC Comics','good','07b6d189-5531-4d42-a414-f7457293f485'),
@@ -4156,7 +4156,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('f94b59c8-242c-49da-b2c7-b74fef2f01c8','Kon-El / Conner Kent','No alter egos found.','Project Cadmus cloning facility','Adventures of Superman #500 (June, 1993)','DC Comics','good','822b5b52-328f-46d4-9198-2098f499e739'),
 	 ('8569ee90-4a9f-4ab1-9633-6b895618a672','Clark Kent','Superman Prime One-Million','Krypton','ACTION COMICS #1','Superman Prime One-Million','good','ecd1b1f6-d27e-4c80-a76e-ab1e3b1a33be'),
 	 ('9dee6c62-4674-4a81-95f8-68dc55666312','Ben Grimm','No alter egos found.','New York City, New York','Fantastic Four #1 (November, 1961)','Marvel Comics','good','7f1be57c-44e9-44ee-bc70-81e00262306f');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('67641bab-b778-40de-a22f-001ba7262e6d','Barda Free','No alter egos found.','-','Mister Miracle (Volume 1) #4','DC Comics','bad','e7ab3e29-f614-4a74-a7bd-cf31c36db45f'),
 	 ('659dca5c-c24b-47b1-96e9-59660af78b07','Bizarro','No alter egos found.','-','Superboy Vol. 1 #68 (1958)','DC Comics','neutral','c117e88e-48de-4722-8aca-cf0a6f388663'),
 	 ('9e843eca-4c78-4e49-a4dd-3dce668b30e5','Tanya Sealy','No alter egos found.','Chicago, Illinois','Marvel Two-In-One #64','Marvel Comics','bad','f34d69e6-4138-43dc-bf68-612f829c6873'),
@@ -4167,7 +4167,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('de1f6c58-e67c-4b9c-a695-d9b30a322904','Barbara Minerva','No alter egos found.','-','Wonder Woman Vol2 #7 (Sept 1987)','DC Comics','bad','470c7c5e-75ce-49ef-9e9c-b6fa2c206133'),
 	 ('9ca2324f-c2f5-4935-938d-b3e5ff8e36c4','Crystallia Amaquelin','No alter egos found.','Attilan','Fantastic Four #45 (1965)','Marvel Comics','good','8ff18539-bf3b-44c5-a24e-ed2f6f9fa7b0'),
 	 ('e7532f2f-33d3-48db-9a75-b1ac5b737fe9','Uxas','No alter egos found.','-','Superman''s Pal Jimmy Olsen #134 (November 1970)','DC Comics','bad','3def392f-bafb-4d50-80a5-9f572da8e5dd');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('31200e65-9f1a-457e-a292-35e368f22d16','','No alter egos found.','-','Web of Spider-Man #86 (March, 1992)','Marvel Comics','bad','ba0016c9-175a-4b32-b4fd-cc5783e08b15'),
 	 ('a2d7c338-dba7-4a67-a053-9bcda43fd549','Stephen Strange','No alter egos found.','Philadelphia, Pennsylvania','Strange Tales #110 (July, 1963)','Marvel Comics','good','d2225f43-e05f-4d62-a388-d740e57b412f'),
 	 ('e035da13-3973-4356-8030-7287d33394d6','Ego','No alter egos found.','The Black Galaxy','THOR #132','Marvel Comics','bad','d2818f33-4c6b-4953-96f2-82ae9f791442'),
@@ -4178,7 +4178,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('a0e37274-4a28-42b6-a4f7-53c624cf7739','Greedo','No alter egos found.','Rodia','-','George Lucas','bad','743c7365-a6a7-41ca-a0aa-92a0d7922216'),
 	 ('5816476a-d36e-4cef-a3ed-bac5c576245a','Harry James Potter','No alter egos found.','-','Harry Potter and the Philosopher''s Stone','J. K. Rowling','good','7cbf3002-ab87-4a54-b418-a561ef4023bc'),
 	 ('c41ea3d8-b0ce-45aa-bb9c-a5e77ba56b04','Alexander Summers','No alter egos found.','Honolulu, Hawaii','X-MEN #58','Marvel Comics','good','8c725245-3708-4866-b824-34f3eb3a2cd9');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('6124aaff-d191-4e2a-9236-567ed41fc711','Morris Bench','No alter egos found.','Bronx, New York','Amazing Spider-Man #212 (January, 1981)','Marvel Comics','bad','91a1bb47-7f80-43e1-a3b5-cfa170c8704a'),
 	 ('e04f4f79-6e00-4d03-ad40-fc9cffc499ed','Danny Rand','No alter egos found.','-','Marvel Premiere #15 (May 1974)','Marvel Comics','good','d509479b-3883-42ba-b6bd-ec1d08f7d676'),
 	 ('77d0797b-f0c2-430e-99d9-5738e22c8e2f','Obadiah Stane','No alter egos found.','-','-','Marvel Comics','bad','cc38d1d5-e0a7-4e97-99c0-0549be2ad82e'),
@@ -4189,7 +4189,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('4fc3167a-8e97-446a-8127-b7685d1c979b','David Haller','No alter egos found.','Israel','New Mutants #25 (March, 1985)','Marvel Comics','good','5b0f9806-d5a0-4d11-aaaa-e4621dbfa8f5'),
 	 ('41daa6b0-be3f-4e5a-8e03-2bfb997cab9d','','No alter egos found.','-','Strange Tales #157','Marvel Comics','neutral','f4f40720-7b08-405b-8732-b02f158b1dcd'),
 	 ('004f0360-2cc2-4088-83c6-43a2a1366231','John Jameson','No alter egos found.','New York, New York','AMAZING SPIDER-MAN #1, (as Man-Wolf) AMAZING SPIDER-MAN #124','Marvel Comics','good','6fd6a6dc-9cca-400f-ad75-c242a802380a');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('be21e023-91dc-4a5a-9f6a-25effe3ae1e7','','No alter egos found.','Almerac','-','DC Comics','bad','bb38d06d-2112-40f3-8bc8-10491e453560'),
 	 ('b92edc7a-7567-465b-812e-81bfacea5cc0','Reed Richards','No alter egos found.','Central City, California','FANTASTIC FOUR #1','Marvel Comics','good','6bee3c46-82e0-4dad-851b-5ee62988e7ed'),
 	 ('5c0ce2c1-0e05-4361-9e8c-c043d53392aa','Karla Sofen','No alter egos found.','Van Nuys, California','Captain America Vol. 1 #192 (December, 1975)','Marvel Comics','bad','24aa8557-d67d-4134-aada-21eee87d5ee3'),
@@ -4200,7 +4200,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('fc5bd7ad-90ca-4c03-b2fe-a5f7bbcb1ca9','Elizabeth Braddock','No alter egos found.','Braddock Manor, England','Captain Britain #8 (December, 1976) / New Mutants Annual #2 (October, 1986) (US)','Marvel Comics','good','830d8086-dd51-4eff-8d5f-324a4788bfcf'),
 	 ('56a632c4-17fb-4460-8c9d-88762bb0d5d3','Edward Nigma','No alter egos found.','-','Detective Comics #140 (1948)','DC Comics','bad','fe555c2e-70f3-464a-a385-59dedcbe7227'),
 	 ('3e6a5249-6872-4265-80fc-62c2e8ad7dfe','Victor Creed','No alter egos found.','-','Iron Fist #14 (August, 1977)','Marvel Comics','bad','73d3a43e-22ff-410d-9f85-a18b8c4973f0');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('76b492dd-052c-4fd7-a057-d203ca506dba','Gaveedra Seven','No alter egos found.','Mojoworld','New Mutants #99','Marvel Comics','good','cc2f7937-6688-4f46-805c-55626d435a26'),
 	 ('9f8bfa0f-ce21-4d27-87c4-e5270d04be5a','Simoon Baz','No alter egos found.','Dearborn, Michigan','The New 52: FCBD Special Edition #1 (June, 2012)','DC Comics','good','9f3fc482-5268-4ce1-9b79-ad27bd86d533'),
 	 ('5c61b1f1-f6ad-4832-a57c-0e31c02dee26','Cyrus Gold','No alter egos found.','Gotham City','All-American Comics #61 (October, 1944)','DC Comics','bad','712be8ef-08d0-4395-8bd3-357029be8023'),
@@ -4211,7 +4211,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('295c8e14-7d9f-4c06-be34-73ed3deec2a0','Cyberdyne Systems Series 850 Terminator','No alter egos found.','-','Terminator 3: Rise of the Machines (2003)','Dark Horse Comics','bad','88b5469f-4d1a-4251-a58c-150ab77edae9'),
 	 ('d2477747-add3-4952-ade4-1a5275a0e18c','Thor Odinson','Rune King Thor','Asgard','Journey into Mystery #83 (August, 1962)','Rune King Thor','good','4af9dbd0-064d-4744-b52b-1ec9a4861209'),
 	 ('957f680e-158d-4bb9-af43-d9facaabfced','','No alter egos found.','Jotunheim','-','Marvel Comics','bad','d748c9a3-6726-45db-b72d-b935e975ee93');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('62e26351-ab43-43f1-a9b7-97694a65923b','Violet Parr','No alter egos found.','-','The Incredibles (Movies, 2004)','Dark Horse Comics','good','09b97a43-7958-4e75-bf87-343ff749695a'),
 	 ('e5647853-5ee7-49ab-aafc-f08d0dc76c67','James Proudstar','Thunderbird II','Camp Verde, Arizona','New Mutants #16 (June, 1984)','Thunderbird II','good','9616e8e3-8588-436b-a889-301ff8ff3fc9'),
 	 ('eba16f70-7668-40be-ad5b-76c48c9b0113','Damon Macready','No alter egos found.','-','Kick-Ass #4','Icon Comics','good','592fce45-d665-456d-b4c3-7aa9c22c697a'),
@@ -4222,7 +4222,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('73e6923d-91ea-4737-9ae0-414854566361','Samuel Zachery Guthrie','No alter egos found.','Cumberland County, Kentucky','Marvel Graphic Novel #4 (1982)','Marvel Comics','good','f13a4ef3-8830-487d-a2fc-dbad461d6d9d'),
 	 ('70ccbea5-7cbd-4cb7-8a5e-35805dd8a512','Frederick Christopher Freeman','No alter egos found.','-','Current incarnation: (As Freddy Freeman) The Power of Shazam #3 (May, 1995)','DC Comics','good','6b66682a-491c-4f23-b683-5bb847158ee3'),
 	 ('e1034df4-8a72-4f04-93a4-83325fa8f39f','Carlos Ray Norris','No alter egos found.','Ryan, Oklahoma, United States','-',NULL,'good','4d46e78a-9185-4582-9294-4d47bd024450');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('bc35e86d-5871-41cf-9299-14ac3c947514','Henry Henshaw','No alter egos found.','-','Adventures of Superman #466 (May, 1990)','DC Comics','bad','79ab94dc-05ed-4a9d-87b1-a978012f013f'),
 	 ('85e50302-64e1-4e8a-9454-eb516d76f31f','Anakin Skywalker','No alter egos found.','Tatooine','Star Wars: Episode IV - A New Hope (1977)','George Lucas','bad','f96a58bc-aa89-47f8-bae3-9af99b0720f2'),
 	 ('484ecf57-6122-4ede-b69d-ed5139e4f49c','','No alter egos found.','Created in Asgard','Journey into Mystery #118 (1965)','Marvel Comics','bad','2c0b4367-4cf4-4f7f-a686-eeda50191b96'),
@@ -4233,7 +4233,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('9955e602-38ea-4407-83ff-9483ef33093f','Dr. Franklin Storm','No alter egos found.','Place of birth unknown','FANTASTIC FOUR #31','Marvel Comics','good','c7f58b49-9205-4b01-8c3a-5ae07437f29b'),
 	 ('aeebeba2-8c84-4332-bc97-1d4bafed4728','Madelyne Jennifer Pryor','No alter egos found.','Created in Sinister''s Labs, Nebraska','Uncanny X-Men #168','Marvel Comics','bad','2b2ef640-cfdc-4401-8059-7e4a752ae412'),
 	 ('60f2e4bf-703e-4556-8c1f-beda69ff3590','Oliver Queen','No alter egos found.','-','More Fun Comics #73 (November 1941)','DC Comics','good','8f980fdf-927a-449f-8a42-e05005f9b82b');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('c36bf6ee-611c-4345-8d1b-6e67d02f24ea','Groot','No alter egos found.','-','Tales to Astonish #13 (November, 1960)','Marvel Comics','good','5f826be6-47e9-4f26-9093-478690bcaa49'),
 	 ('03add159-2474-4c7d-a339-e1cb469886fd','Clint Barton','Goliath, Ronin','Waverly, Iowa','Tales of Suspense #57 (September, 1964)','Goliath','good','1b583b1f-aff4-4dd7-b1b7-908df45256de'),
 	 ('40dbc2a6-1c45-4df5-832a-65da66e57492','Heracles','No alter egos found.','Thebes, Greece','-','Marvel Comics','good','56091064-485a-4141-9ac9-931d79eb932b'),
@@ -4244,7 +4244,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('de35235d-aa6c-4742-ac92-4fa083f12e68','Ulysses Klaw','No alter egos found.','Vlaardingen, Netherlands','Fantastic Four #53 (August, 1966)','Marvel Comics','bad','80ba4c0a-cd75-4ba7-bf57-8caa65b29fb2'),
 	 ('fc14af5f-9f61-485b-8f88-2abef8258c88','Alyosha Kravinoff','No alter egos found.','-','Spectacular Spider-Man #243 (1997)','Marvel Comics','bad','c817363c-4831-496d-8353-59d2eb5fba83'),
 	 ('251a5c71-c5a6-4b84-a204-eeca6aab43ee','Curtis Connors','No alter egos found.','Coral Gables, Florida','Amazing Spider-Man #6','Marvel Comics','bad','49979b7a-e7a5-4168-a33f-9ecb263410ac');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('15758bdd-e18f-4857-936c-06a1817b4794','X-51, Aaron Stack','No alter egos found.','Central City, California','First appearance unknown','Marvel Comics','good','32fe2622-47ad-4c47-87a8-ba151a567420'),
 	 ('f9db6b61-c905-49da-8090-39b2143c697d','Abner Jenkins','No alter egos found.','Baltimore, Maryland','(Beetle) Strange Tales #123 (1964); (MACH-I) Incredible Hulk #449 (1997); (MACH-II) Thunderbolts #37 (2000); (MACH-III) Thunderbolts #57 (2001); (MACH-IV) New Thunderbolts #1 (2005)','Marvel Comics','bad','a3c5682b-7f9e-4b83-a417-8101829b2fd8'),
 	 ('28ab6ed4-286e-423e-992e-a849f9e9a58a','Khan','No alter egos found.','China','Tales of Suspense #50 (February, 1964)','Marvel Comics','bad','b987b5de-bf4c-42cc-873f-1e77646b7461'),
@@ -4255,7 +4255,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('9c064473-0f64-4220-9dc4-6e4986caccbd','Jean Grey','Jean Grey, White Phoenix of The Crown','-','X-Men #1 (September, 1963)','Jean Grey','good','35d626c4-da95-4fd0-8d3d-94d62f1fdef6'),
 	 ('ca929568-953a-468d-b285-8a40d8044911','Charles Francis Xavier','No alter egos found.','New York, New York','X-Men #1 (September, 1963)','Marvel Comics','good','0c7179b2-de44-41b6-af43-f425555e1b09'),
 	 ('a224acbb-e1ab-437d-80ce-045c4c5c15c9','Eobard Thawne','No alter egos found.','-','Flash #139 (September, 1963)','DC Comics','bad','a2715487-7489-494b-a60b-5d42cd3f885c');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('86484001-414d-4fda-98b0-67de0f064718','Thaddeus E. Ross','No alter egos found.','-','Incredible Hulk #1 (May, 1962)(as General Ross), Hulk Vol 2 #1 (March, 2008) (as Red Hulk)','Marvel Comics','neutral','5fda06e4-de4e-4e18-881f-f572580a4edc'),
 	 ('24dcf0f4-7d42-4092-998a-3112f18977d6','Anna Marie','No alter egos found.','Caldecott County, Mississippi','Avengers Annual #10 (1981)','Marvel Comics','good','85ef5955-d21d-4ad4-bff1-4f27c2a75a30'),
 	 ('e3a6e7b2-bf4b-4dc8-ac80-2a5c6e573dff','Kitty Pryde','No alter egos found.','Deerfield, Illinois','X-Men #129 (January, 1980)','Marvel Comics','good','ff9fa393-3dc3-4357-a52c-9eea1a523ee9'),
@@ -4266,7 +4266,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('cfd49df5-ca60-4eb0-9387-804a8b66a4bf','John Proudstar','No alter egos found.','Camp Verde, Arizona','Giant-Size X-Men #1 (1975)','Marvel Comics','good','4d7db3d0-7396-4c01-a507-5a8ab696093d'),
 	 ('d6b88804-3034-4f0a-9093-ab18424900fc','Patrick Mulligan','No alter egos found.','New York City','Venom vs. Carnage #1 (2004)','Marvel Comics','good','97325f98-1bce-4689-b104-11ef6926c4b9'),
 	 ('4ed38781-6bdf-4eaa-97aa-21475d7c567c','Mari McCabe','No alter egos found.','Zambesi','Action Comics #521 (July, 1981)','DC Comics','good','88932725-a523-405d-8399-5d0de591e3bb');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('5511329a-2568-47d1-89e4-697ea36d73be','Frederick Foswell','No alter egos found.','-','Amazing Spider-Man # 10 (1964)','Marvel Comics','bad','1df5a34e-2d2a-4358-aad4-dda497c22bf6'),
 	 ('2cd105e4-5fa2-4d30-981e-2bc6d9f8b1ba','Natasha Romanoff','No alter egos found.','-','Tales of Suspense #52','Marvel Comics','good','540a3d4f-3517-4148-bdf8-4ca07400587a'),
 	 ('c4f7726d-9e96-4d28-971b-6e94f4af1942','Lester','No alter egos found.','-','Daredevil #131 (March, 1976)','Marvel Comics','bad','c68ef461-d188-4881-91a7-ee1868b63b4d'),
@@ -4277,7 +4277,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('419ed34b-4a55-4d41-86d3-035e92720723','Dargin Bokk','No alter egos found.','-','Darkhawk #20 (October, 1992)','Marvel Comics','bad','bfae60b3-6a27-4faa-ba20-661fbc49249b'),
 	 ('e7818eb0-d7b7-4aa8-b3f8-d2aeabc6a812','Galan','No alter egos found.','(Galan) Taa; (Galactus) the Cosmic Egg','Fantastic Four #48 (March 1966)','Marvel Comics','neutral','fc4f377b-da06-49a9-86bb-8c6edc43093d'),
 	 ('7dbca42a-a9f1-44eb-976c-dc3612071ebd','Kendra Saunders','No alter egos found.','-','JSA Secret Files #1 (August 1999)','DC Comics','good','5bf914c8-2c8b-45bc-b55e-1d70ed1ee99d');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('3870ec33-e8bb-4579-8dc3-58269df3b123','Bobby Drake','No alter egos found.','Fort Washington, Long Island, New York','X-Men #1','Marvel Comics','good','a478e33b-5902-43ac-8843-e67f98de02d5'),
 	 ('b4527e79-9bf5-48c3-ac2e-7787a3573920','Jessica Campbell Jones Cage','Power Woman','Forrest Hills, New York City','Amazing Spider-Man #4 (September, 1963)','Power Woman','good','a52084a6-e774-4a8c-8780-180e0614cdfc'),
 	 ('7514e9c3-7263-4334-a8a1-9b33919b897d','Vance Astrovik','No alter egos found.','-','Giant-Size Defenders #5 (July, 1975)','Marvel Comics','good','ea7f94b6-938b-4c35-b8a6-7c412618eb49'),
@@ -4288,7 +4288,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('f4a98531-a159-4a0f-990e-9038a75619ff','Namorita Prentiss','No alter egos found.','Atlantis Outskirts','SUB-MARINER Vol. 2 #50 (1972)','Marvel Comics','good','7b1c3c4b-2445-4222-b4c4-a26bf16e4a63'),
 	 ('7fd19dd2-83de-43df-86f2-c8366555d3f2','Barbara Gordon','Batgirl','-','Suicide Squad #23 (Jan.1989)','Batgirl','good','e9a5d2e4-73ba-427a-a246-49b2a3ee78b7'),
 	 ('c9e60d7b-fdf1-41eb-93c6-0a492c2f6772','Frank Castle','No alter egos found.','Queens, New York','AMAZING SPIDER-MAN #129','Marvel Comics','good','ef079eaa-7be3-4019-9f7e-22dde9305ef9');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('e209b884-318d-40ea-96fd-bfeef8c87ad5','Ra''s Al Ghul','No alter egos found.','Egypt','Batman #232 (June, 1971)','DC Comics','bad','3c258ffd-76f8-4640-929b-8a9c7bbdc0ef'),
 	 ('df78e3e6-704b-497a-9b87-14d389279fbf','Dick Grayson','Batman II, Nightwing','-','Detective Comics #38 (April, 1940)','Batman II','good','7fd979b4-adfa-4f95-8ac9-2147a8ed1dee'),
 	 ('3d7c00af-6ad6-4189-a078-94e214cbb477','Amahl Farouk','No alter egos found.','-','X-Men #117 (1979)','Marvel Comics','good','a35d4991-e279-4084-86d4-45b5bb3c6313'),
@@ -4299,7 +4299,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('d49caed2-e737-4abd-8cc4-8274d96d57f0','Eddie Brock','Anti-Venom, Toxin','New York, New York','(as alien costume) Secret Wars #8, (behind the scenes) Web of Spider-Man #18, (actual appearance) Amazing Spider-Man #300','Anti-Venom','bad','6eb6cc8e-c6fc-4629-ba64-2b2603d141d6'),
 	 ('30bfcedb-c6e2-426c-b097-5cda11683297','Uatu','No alter egos found.','-','Fantastic Four #13 (April, 1963)','Marvel Comics','good','9cebbb38-f76b-42e6-8ae8-8d8d566bc020'),
 	 ('f2357a6c-e458-4b0b-86d3-ca58455dc181','','No alter egos found.','-','Birds of Prey #1','DC Comics','bad','1c35da68-8e6f-4034-b5e5-6df6a800b43c');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('ff618f77-5249-4032-93f5-3d9591dfc06f','Laura Kinney','No alter egos found.','The Facility, location unrevealed','NYX #3','Marvel Comics','good','d7f27efc-fe30-4e3a-b3e3-41df731450a0'),
 	 ('89230ee4-f63b-4603-a8f6-aaaf70b1d863','Kara Zor-El','No alter egos found.','Argo City, Krypton','Superman/Batman #8 (May, 2004)','DC Comics','good','4307fa84-119e-432e-a6a0-59be5c49ab8d'),
 	 ('50d026ed-7250-4d9a-9a1a-042e905d93fb','Edward Morgen Blake','No alter egos found.','-','Watchmen #1 (September, 1986)','DC Comics','neutral','78ef21b1-79de-47ed-bb6a-6ad3f368a91b'),
@@ -4310,7 +4310,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('6dd5871c-22c0-4f0b-bc9c-b958753d43f8','Logan','No alter egos found.','Alberta, Canada','Incredible Hulk Vol. 2 #180','Marvel Comics','good','6d998e7b-078b-43d8-af80-7f76981877d2'),
 	 ('c43f8bcb-323f-490a-ab51-6bb71090bbc7','Yoda','No alter egos found.','-','Star Wars: Episode V - The Empire Strikes Back (1980)','George Lucas','good','0b9097fa-3c1e-4c53-9efa-d2a62762847e'),
 	 ('7e438cb8-d5cb-4411-8b0b-ced10714a36a','Greer Grant Nelson','No alter egos found.','Presumably Chicago Illinois USA','The Cat #1','Marvel Comics','good','58c7584a-f852-40e0-aea8-54b842853b11');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('374bccdd-4e7f-41fe-9219-3e9e8221baf2','Harvey Dent','No alter egos found.','-','-','DC Comics','bad','b0247236-d9b4-4e6c-a7cd-3e363673ae7a'),
 	 ('b9ce03b9-8953-490c-9947-92aed0fa3eb1','Wade Wilson','Deadpool, Evil Deadpool','-','What If? Iron Man: Demon in an Armor #1 (February, 2011)','Deadpool','-','243fa616-52d9-45ec-ad8f-3e024e33985d'),
 	 ('af8bd626-45ff-4629-8e27-9951b56f4aaa','James Rupert Rhodes','No alter egos found.','Philadelphia, Pennsylvania','Iron Man #118 (1979)','Marvel Comics','good','f7598083-34c3-49af-a6f0-4a8d34728e7b'),
@@ -4321,7 +4321,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('665bc386-a39a-456e-b25c-270d14fffdd0','Heather Hudson','Vindicator II','Calgary, Alberta, Canada','X-Men #139 (November, 1980)','Vindicator II','good','138a171b-bed0-4484-98ba-f3c57408752e'),
 	 ('4475d24b-c733-4ae7-9013-6e4ee4ca24e7','Emil LaSalle','No alter egos found.','-','The New Teen Titans #14 (December 1981)','DC Comics','bad','6bf2704a-932d-41bd-a7a0-1d0f36ecd428'),
 	 ('ba609c14-c30d-4099-8e83-07b5151faec8','Cassandra Elizabeth Sandsmark','No alter egos found.','-','Wonder Woman (vol. 2) #105 (January 1996)','DC Comics','good','2e05cbd8-469d-4629-94d8-347eab4f9ea5');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('6e87ee3d-5473-4fa2-898f-2e089dc2fb26','Zatanna Zatara','No alter egos found.','-','Hawkman #4','DC Comics','good','0ffe7766-d695-4878-b5c7-dfc396e331df'),
 	 ('135d38d2-1f97-4249-a06d-37c7461a42a5','Luornu Durgo','No alter egos found.','-','Teen Titans/Legion Special #1','DC Comics','good','eedb7615-3f66-4530-ab6d-f028225dca07'),
 	 ('8b4fb18c-d39a-4542-bfd3-a1b61857ef41','Angelo Fortunato','No alter egos found.','-','Marvel Knights Spider-Man #7 (2005)','Marvel Comics','bad','5d05c92f-1a27-4a27-b4bd-6b29a970b9d0'),
@@ -4332,10 +4332,10 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('d41d7c8c-2a60-4bae-92f2-86e1c1bad3dd','MacDonald Gargan','Scorpion','-','(As Gargan) Amazing Spider-Man #19 (1964); (as Scorpion) Amazing Spider-Man #20 (1965); (as Venom) Marvel Knights: Spider-Man #10 (2005)','Scorpion','bad','06e9f46b-1866-4ac9-a61f-3939b049c3af'),
 	 ('6d19ea57-17c9-439a-9301-f41170eb9d20','Hubert Carpent','No alter egos found.','Brooklyn, New York','Defenders #131 (May, 1984)','Marvel Comics','bad','97a3ed8c-db26-44f9-9cbd-9e0caef50729'),
 	 ('b1f8e7e1-b866-4ce0-9a49-9e5cedab1f4a','Bucky Barnes','No alter egos found.','-','Captain America Vol 5 #1 (January, 2005) (as Winter Soldier)','Marvel Comics','good','b87bdbe7-0196-4779-b36f-eb19ea2c2c63');
-INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superheroe_id) VALUES
+INSERT INTO public.superhero_biography (id,"fullName","alterEgos","placeOfBirth","firstAppearance",publisher,alignment,superhero_id) VALUES
 	 ('ca2341d1-6012-4e30-920f-8acb1c91bda0','Rita DeMara','No alter egos found.','-','Avengers #264','Marvel Comics','good','6b516f90-8278-4085-8eb1-5635e0186848'),
 	 ('5007ba53-65a3-449e-9631-c2a6ace14b56','Simon Williams','No alter egos found.','Paterson, New Jersey','AVENGERS #9','Marvel Comics','good','4f24dbde-50c7-42ed-829a-239a9bfe4695'),
-	 ('31244c06-3f15-4d9b-8417-44e47f623a06','Hunter Zolomon','No alter egos found.','-','Flash Secret Files #3','DC Comics','bad','6b07d79a-2c5a-4b91-94d6-42bc67635a22');INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+	 ('31244c06-3f15-4d9b-8417-44e47f623a06','Hunter Zolomon','No alter egos found.','-','Flash Secret Files #3','DC Comics','bad','6b07d79a-2c5a-4b91-94d6-42bc67635a22');INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('3357447b-79cd-459d-9be9-c78102a21e10',NULL,NULL),
 	 ('41ecd66b-9b91-439a-8496-20e1591294ac',NULL,NULL),
 	 ('dadb3b48-415d-498e-89fd-779d40b34491',NULL,NULL),
@@ -4346,7 +4346,7 @@ INSERT INTO public.superheroe_biography (id,"fullName","alterEgos","placeOfBirth
 	 ('1e582c22-1e3b-45c3-96d2-77bd269906b4','Langdon Caul',NULL),
 	 ('6716cda2-8318-462c-a6d1-8cd42681ba93','Rick Jones',NULL),
 	 ('180f9d91-8861-408e-b042-44b69f1c5c40','Lagzia',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('dd3eb09e-9fa3-4cae-9621-639461a0e382','Langdon Everett Caul',NULL),
 	 ('aa162bed-01ca-4c9c-bf97-fe511d101def','Abraham Sapien',NULL),
 	 ('b75af3e5-e29d-4c48-a9f0-7b37fbe2f315','Langdon Caul',NULL),
@@ -4357,7 +4357,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('d95793f4-5938-40cb-84be-5c279b5b3047','Lightningbolt',NULL),
 	 ('6020bdb7-edb4-49ed-82d4-f91baf4f0204','Prisoner #24957',NULL),
 	 ('30f8a5a9-4648-412c-b9c4-c9839d98f33e','-',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('9a8e2dd9-d5bf-4e01-a592-bc63143c75d5','Langdon Everett Caul',NULL),
 	 ('5327e4c2-e292-4438-9d76-9ce4b3370884','Langdon Caul',NULL),
 	 ('b7d39e38-a884-4153-9e89-1e54360470a6','Abraham Sapien',NULL),
@@ -4368,7 +4368,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('ea4640ba-c7f7-4a3e-a56b-749bbef446d0','Bob',NULL),
 	 ('4ef48b92-e8cd-4015-b063-be9b67423d7f','agent of A.I.M',NULL),
 	 ('bafd7b0e-b111-4099-a043-ef51c3f812f2','Warrior of Two Worlds',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('27b572e1-4a39-4821-9c1d-855b7efbd321','Savior of Rann',NULL),
 	 ('0eb450eb-e2ed-48bf-9817-976389f68fed','"Frankie"',NULL),
 	 ('a2f414c9-9df0-4fc9-8ae5-c28962e78acd','the A-Man',NULL),
@@ -4379,7 +4379,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('e8e8a9ca-20a4-4943-aff8-12bdf9173d37','-',NULL),
 	 ('2c57ae05-7f0e-4bcb-886f-e85dd9199fc7','Zues',NULL),
 	 ('32904ccf-d5dd-42b3-96ec-274d634a1f5b','Prototype',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('6801313e-4898-435d-a81e-0714888a2c02','Blacklight',NULL),
 	 ('1b05548f-88f0-4ca3-b17d-a61803d10d58','Professor Ivos Amazing Android',NULL),
 	 ('ae19d2e8-e893-46b7-bf0b-711c85e77610','Timazo',NULL),
@@ -4390,7 +4390,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('b40e1954-bd48-42c6-a01b-640c452dac7e','Takezo Kensei',NULL),
 	 ('f83a5934-7afd-4e13-8eaa-8596c2636d56','Richard Sanders',NULL),
 	 ('2e482b86-224a-49fd-b022-b12a7453f978','Agent R-7',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('0cc4f9fc-9e95-43da-9872-893edf35fbe8','Ravager of Worlds',NULL),
 	 ('a7014ad2-db9d-405b-962f-f857d43f421a','-',NULL),
 	 ('1aa26962-8a3b-4563-909f-7a2819d836de','Angel',NULL),
@@ -4401,7 +4401,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('a5bf2111-cb6f-4c16-9812-e85818938229','Formerly Death',NULL),
 	 ('c16ec710-7e3a-4621-b747-c92a095cbda5','Angel',NULL),
 	 ('ea0aa65c-0845-4e45-8fd7-ec58f6d80447','Avenging Angel',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('211f4b5e-5793-44d4-ac90-39d81f8cb8f2','Archangel',NULL),
 	 ('8f4e9ba3-d600-40ee-a472-23008eb6b5d7','Alfred Beagle',NULL),
 	 ('79fb224b-044e-405c-aa27-5e80d242681a','Doctor Pym',NULL),
@@ -4412,7 +4412,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('bba513d9-9651-4fdc-9d3e-829641679016','Wasp',NULL),
 	 ('743c4a90-f3bb-4137-a114-e8e214c0f150','Monitor',NULL),
 	 ('ee42fcab-9cb0-45fd-b6e1-1d6cdd161bc0','Earth''s Scientist Supreme',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('65acde20-3ce0-4292-9a80-589f9bcfeeab','Mobius',NULL),
 	 ('e1fc56bb-4a98-44c4-9ef2-7c7e77bc5f38','Maverick',NULL),
 	 ('565b4764-df99-4d58-a35f-ab791980496f','Myrmidon',NULL),
@@ -4423,7 +4423,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('03ba66f9-33f5-4914-a9d2-16d216418b72','Lethal Protector',NULL),
 	 ('9055f0fd-22a7-48c0-b0ca-0b1e10ec92f5','998th',NULL),
 	 ('18786522-9148-4411-aa37-ba6d66dc4c55','White Venom',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('3b05baf2-cc6c-4a62-82f6-3eff5464fba8','The Eternal One',NULL),
 	 ('50a6a524-6f95-4adc-9099-0f350064647f','Set',NULL),
 	 ('650dd97a-385d-496d-af4a-e3c142679ee3','the High Lord',NULL),
@@ -4434,7 +4434,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('9007107a-f226-4622-8e19-6062ec2a3017','-',NULL),
 	 ('5415496e-2b35-466d-b5bb-1d14013b607c','Water Wraith',NULL),
 	 ('0772810f-bd0d-4fea-97a6-b30160442a65','Waterbearer',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('3ce5c300-99c6-4359-b568-a4225e07b6ee','Swimmer',NULL),
 	 ('af213c3c-63a9-4049-8221-951a31df1a11','Mental Man',NULL),
 	 ('3791c3da-e609-4cee-8f96-22fd66a69360','Aquaboy',NULL),
@@ -4445,7 +4445,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('866339a2-2cce-4fab-ac47-87198310e146','War',NULL),
 	 ('22b33931-89fe-4db5-9723-90061c8e7bd2','Death',NULL),
 	 ('d614b19e-70c6-4f16-b51e-004469c567c7','-',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('af6b6052-5578-4620-b740-0d7e05ee7ade','Avenging Angel',NULL),
 	 ('6b80d23d-117d-4db8-ad07-3f3b3dc0c646','-',NULL),
 	 ('f1096e66-09da-40a8-a913-3d5bbca0581c','-',NULL),
@@ -4456,7 +4456,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('684cc5f8-18eb-49ad-b0c7-928e4b9e00b2','X-Girl',NULL),
 	 ('e36e29ac-fa25-473e-9184-81b2103b6afa','Kid',NULL),
 	 ('dd00cef3-f978-48ab-8e15-a997d59495ed','Spider-Woman',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('20ca2231-6b5c-4a4c-94be-bb2680b57696','Madame Web',NULL),
 	 ('bf6edf78-e9a6-4c18-9dd4-6aa22fbf9663','Semihazah',NULL),
 	 ('06b5d8b4-0aca-4fd4-b4dc-f51427606bae','Sister Beaubier',NULL),
@@ -4467,7 +4467,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('bfbfe283-414b-4716-82df-c97818ef68f5','Beliar',NULL),
 	 ('31c82d3e-b5c7-4adb-8f9e-5dcc979ee499','Satan',NULL),
 	 ('202cafeb-ca3c-4e00-89f8-1b61da0ef0fc','Beelzebub',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('79502859-e292-42ae-8db3-853ea020331e','Bat-Devil; Bat-Ghost',NULL),
 	 ('364e1943-5b37-4ee3-997d-a85c8aa43857','The Mighty Mite',NULL),
 	 ('2220b396-5dbc-4857-9d72-9c08d39bb08e','the World''s Smallest Hero',NULL),
@@ -4478,7 +4478,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('048bc4c4-7d32-4c02-8e1e-84f3f12972d3','Power Man',NULL),
 	 ('bb7bf667-ee02-4ffb-a5ff-70181b464d30','Smuggler',NULL),
 	 ('5f1d9648-b7b4-4ad8-9b0e-b1b95fab5f27','Goliath',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('fb8711f7-63a5-439e-b67a-ff5307cb9b8d','Intruder from Beyond',NULL),
 	 ('f115aaf0-8b44-4774-b1a6-8d660d096b4f','Edward Jantzen',NULL),
 	 ('6f5e0f47-c907-4ff6-bc18-4fe5a1266fe0','Shatterfist',NULL),
@@ -4489,7 +4489,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('0037d45c-73d7-49db-a1fb-7bfdb8628f2a','Shrinking Violet',NULL),
 	 ('dce3dae2-0949-47f6-be6f-6076f9ef9121','various mundane persona,',NULL),
 	 ('b9f5e745-43c3-4743-82a1-74eb02633a51','Insider',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('1d688806-b032-4c00-96f9-1423fa83124e','Kreature',NULL),
 	 ('f52b186b-9caa-48bc-9196-330e296a56d6','Green Jeans',NULL),
 	 ('251cc134-f88d-4acd-89d1-e91e6afedd0f','Hassan Bari',NULL),
@@ -4500,7 +4500,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('4011f5b5-8981-45dc-a9b2-651f0bd9275f','the Client',NULL),
 	 ('6b907d2f-d4c7-40a8-8b36-c55f31adba2d','Laura Matthers',NULL),
 	 ('1d2310ff-8632-460e-89b7-4010c00a3be1','Joe Silvermane',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('cb02c5ca-aed0-43f4-9121-f4025333d374','Tabby',NULL),
 	 ('8f471a98-0846-48f5-9a7b-b6aa55c7cb1c','The Fly',NULL),
 	 ('4cc2f799-f5c3-4da8-a59a-ff7737e509e8','Nathan Dayspring',NULL),
@@ -4511,7 +4511,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('6ef729df-80f4-4953-9620-f1dcf5fed7fa','Anne',NULL),
 	 ('52621e3a-8605-4005-89ef-a6d1040ef26a','B',NULL),
 	 ('2764308f-e66f-422d-bff5-140fc3b4f747','Irena Dubrovna',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('db7719f5-ed35-4a4a-bd41-3c36441d6205','Uncle Nate',NULL),
 	 ('67513189-2830-4c89-98be-3d81e61a7d7a','-',NULL),
 	 ('2d7aa3b5-671f-4db7-aa51-f9c931a75b1f','-',NULL),
@@ -4522,7 +4522,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('5e7b3cb7-0078-4b6a-9e95-a959dce6c161','Tyomni Zvesda',NULL),
 	 ('1231f195-5875-4375-a9d0-9f194589d1cb','Lord Vader',NULL),
 	 ('936cecf1-5306-4ae8-89c8-9a980bd00f2a','Demolisher',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('22c6d5f1-e386-477e-8e96-778478a5e4d2','Jack',NULL),
 	 ('d7ff09d1-f4ea-4b9d-94d2-a0b24c93379b','Superior Spider-Man',NULL),
 	 ('0f79d9dc-ca14-4c2f-9783-6647f12a7fdd','Flyx',NULL),
@@ -4533,7 +4533,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('f172b4ea-3c8f-49ad-b3b2-8510430c1d3b','The Fastest Man Alive',NULL),
 	 ('f53ffc1e-9dee-4618-b4b8-dfa2f5771c0f','Tattletale',NULL),
 	 ('66416e7f-5944-4459-8286-38b864230454','Angel',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('9e763a93-2b3d-49be-b82f-f6ddce118ad5','The Deadliest Woman In The Universe',NULL),
 	 ('ec6d1d3f-6611-45f1-bd9b-a76d2698e108','Devourer of Worlds',NULL),
 	 ('de4ee31b-b871-48fd-891d-382454352950','King of the Monsters',NULL),
@@ -4544,7 +4544,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('337f44aa-7403-4e16-935e-b2760a1ebe30','Harl',NULL),
 	 ('ea4149c5-4e93-4a64-9bb6-37ce046577a3','Extant',NULL),
 	 ('af3072a3-205a-45bd-aded-77aa93431d1e','Triwizard Champion',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('39154f63-3a5f-4ab7-99ee-a2b4bcb9e3a9','The Great Beast',NULL),
 	 ('b920e589-bb03-414c-a8a0-45b6868f13dd','Mechano',NULL),
 	 ('54244040-dc58-4fcb-aaa5-6260e9ca4380','Sicilian',NULL),
@@ -4555,7 +4555,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('0578ba9f-03dc-4b08-93db-5f3473d997ac','Locutus',NULL),
 	 ('592c1b4b-c184-44b9-932b-090cfe33ca6b','Kickass',NULL),
 	 ('5bea78ed-e4dd-4d03-8caf-cf19450018a6','Scarlet Centurion',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('c3651ee3-78c2-4cf7-8238-46ffb87720c0','The Green Lantern drill sergeant',NULL),
 	 ('96564968-7d5e-4194-9f3a-f5e429e8fe19','Ultimate Kevin',NULL),
 	 ('4265d7a4-7c74-485f-ac43-68729cccd387','Daniel Haller',NULL),
@@ -4566,7 +4566,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('0e2e27ee-7477-4cb0-951a-b5b650f66a36','The Lost Messiah',NULL),
 	 ('2d94e03f-4db2-44e3-b5e6-212407c8ded5','The Creator',NULL),
 	 ('a093e099-a435-4ea8-92b3-996d4e8c6a69','the Vagornus Koth; the Swamp Walker; Mr. Salad; Walking Mulch Heap',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('fae7730f-649b-424d-a1de-52f55a54538c','Demon',NULL),
 	 ('268d180f-f50b-4e1d-b0c0-81abb87bf5b4','Aquagirl',NULL),
 	 ('6fd0e790-65f0-4f40-9bcd-dd9b1b2c9454','Empress of the Almeracian Empire',NULL),
@@ -4577,7 +4577,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('818dd3a5-6688-4960-8eb4-ed4b067b5ec1','Robert Windsor',NULL),
 	 ('48532851-476d-472e-a133-7d8789ccc552','Nathan Milbury',NULL),
 	 ('371da11b-f894-4f39-8c69-d6d5ba67d7eb',' Kate Sorenson',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('3cf45814-2611-49ae-983f-44a8645267b1','Crescent Crusader',NULL),
 	 ('b2fca2fb-31e5-4151-907f-65758138b671','She-Thing',NULL),
 	 ('4f3a56c3-ccdd-4e23-90bf-719f6350618f','Sub-Mariner',NULL),
@@ -4588,7 +4588,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('1e0f7aed-580d-45e4-ae84-9db578eeec9c','Harbard',NULL),
 	 ('860cbaa5-6e0b-4579-ab01-5292cc5dbf70','Mall Cop',NULL),
 	 ('73fb69b5-c1dc-47b4-b7a4-8a1415af339f','-',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('8f662180-cee1-42a9-9e8a-64015eb456d8','M-2',NULL),
 	 ('ed8422b3-d306-4643-961e-705a2852a1aa','Dr. X',NULL),
 	 ('5c4f2579-8a82-4649-a1c5-13cf0a9ba962','Big Nothing',NULL),
@@ -4599,7 +4599,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('3c5d2760-8f34-4785-b16a-ac8000bc9d01','Mecha-Rhino',NULL),
 	 ('5c0be40c-3f74-4da3-9816-5dfb41a0e126','Aleksander Lukin.',NULL),
 	 ('80b8ae80-556d-47ee-b8eb-3b61ad457568','the Marksman',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('002eb76a-9bce-4ee2-9605-7d58761b3a40','Golden Archer',NULL),
 	 ('9dad8049-ebae-481f-beae-bccc934a0048','Gorthaur the Cruel',NULL),
 	 ('6ef30357-d048-4237-9557-ce87fb926560','Time Master',NULL),
@@ -4610,7 +4610,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('2556098f-25d0-4fbc-8189-c1eb6c4dce09','-',NULL),
 	 ('157d27cb-de7f-45e8-9b55-23557c3ba7fe','Lady Sif',NULL),
 	 ('2afba36d-02ec-4eda-9a3a-d9b13aa2a45c','Cat',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('53349591-16d4-4468-a596-e26a49ee45a7','Sobek the Talking Crocodile; The Unknown in Formless Time Before Time; Famine',NULL),
 	 ('7ab6c44c-cd29-40d7-a85e-84ab5979f612','Screaming Mimi',NULL),
 	 ('d59fada8-5ee9-4d1f-8c22-597ec52edad0','Green Hood',NULL),
@@ -4621,7 +4621,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('3bbe3d5f-7a3f-4ade-82b6-9a5a6627c7ed','James Corrigan',NULL),
 	 ('15bf70ca-3368-43dd-a5ec-c75b081992dc','Kory Anders',NULL),
 	 ('249827a4-f8b0-4915-bb7d-36f84094c83e','-',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('6baebc71-81d8-46ab-9b11-74fdc349863c','High Priestess Windrider',NULL),
 	 ('31f4d035-6e22-45f0-b2c7-5911946858a3','Black King',NULL),
 	 ('d42b702e-b479-4b1b-9135-313c25c67642','the Weed',NULL),
@@ -4632,7 +4632,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('a637dc0c-cc08-4c1f-83f3-088ea29f1808','Superman',NULL),
 	 ('74015711-8d12-44d3-bb57-3beb1ced5df1','the Destroyer',NULL),
 	 ('f22988ff-6167-412f-a07c-61108ae8ead8','Jake Olsen',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('74ad84dc-8a45-4cf7-af52-8c092d79de09','-',NULL),
 	 ('f297f6ee-c069-4161-8279-fcfc656a9c28','Telford Porter',NULL),
 	 ('28caae32-6915-45dc-a051-57eef097825f','Kasumi',NULL),
@@ -4643,7 +4643,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('67862d1a-6bfb-4c18-a055-7bd832a092df','Black Racer',NULL),
 	 ('bcdd112f-7980-4f0e-9484-43ba9aac2692','Patch',NULL),
 	 ('cbac6819-c559-455e-94bf-3dfcf99bd40b','Madame Natasha',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('20c5ea2c-dfa2-4789-95b5-b222ffe80674','Black Pearl',NULL),
 	 ('6e703c62-395d-4dcc-8643-e6b1d14a8345','The Pendragon',NULL),
 	 ('7ea72725-c4ee-4f53-982e-26b02f65f00e','Black Wolf',NULL),
@@ -4654,7 +4654,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('0aa7f441-c739-4658-a3b0-9d8812b0ede5','Len Snart',NULL),
 	 ('5df44f5a-d9b6-4f92-88f2-0cdad06e18b8','Shazam',NULL),
 	 ('b866ee82-01c3-4fe2-97cc-a44eb47fde90','Bullseye',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('3b000c93-93a8-485c-bed1-a5a3e8a58e89','-',NULL),
 	 ('4da7f6ef-946b-4548-b415-34d6162294c4','Mass Carnage',NULL),
 	 ('9983ea2a-67cf-4f8a-bd73-0159a50a3f8e','Professor Charles Xavier',NULL),
@@ -4665,7 +4665,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('71d62107-67ca-4bd9-a711-a4b004420f08','Scarlet Swashbuckler',NULL),
 	 ('61dfc241-34fa-4894-9689-4ea6caca9631','-',NULL),
 	 ('5d8ea36d-258a-4161-830e-7232941a1e06','Quincy McIver',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('735645a1-9792-4da7-a79c-d658da4ee448','Sith',NULL),
 	 ('0245dd59-7835-4f12-b780-9ba995fdaa17','Ali',NULL),
 	 ('f0cc1362-0d16-4076-9f6d-afb0f4d886a1','Chiyonosake ("the Wolf of the Rice Wine")',NULL),
@@ -4676,7 +4676,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('4efb12d2-e327-437b-9101-66794dea4bb0','Blackbird',NULL),
 	 ('6c840e17-44a9-44b8-aeb9-2bc1ef1086ad','-',NULL),
 	 ('bf7a3e18-9ae5-46cf-9800-138025367a71','Pajaro Del Fuego',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('9781452c-7aa5-4267-bf5c-34769cc0b49a','the Sultan of Speed',NULL),
 	 ('50080208-288c-42a9-9d6c-95fc8ebb055c','Ego-Spawn',NULL),
 	 ('1a7aa636-93ee-4961-9e11-f7f134e760f7','Cheyenne',NULL),
@@ -4687,7 +4687,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('85f4e41b-fe39-4230-b709-89a346b5e0a9','The Monster from Planet X; His Divine Majesty King Groot the 23rd',NULL),
 	 ('1f7d4596-b3cc-4593-9054-ed57810de38d','Pumpkin Pooh',NULL),
 	 ('251fc4e0-3cd9-4c56-9970-52561bf2d52e','Longbow',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('165bbf50-68ec-4b99-9d80-7a16ba8745d3','Warrior',NULL),
 	 ('437f2edc-08fd-4550-bc2f-b3ed92e997f3','Spider-Herc',NULL),
 	 ('268d7248-a484-436b-a65c-90f8ad0d2b74','Herakles',NULL),
@@ -4698,7 +4698,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('942ecf66-b8ca-4651-aebc-f82bc3ee6d2e','Ironman',NULL),
 	 ('790c4b3f-1f23-4ed2-821b-1866a2ae01a0','Knightress',NULL),
 	 ('be73fba5-e9a9-4970-881b-1b4a0a950894','Green Lantern',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('8143e91f-04f3-46f4-b6a9-06ff18fee8ea','-',NULL),
 	 ('441f7a41-f0bf-495b-98ab-3024a8b26689','Clown Prince of Crime',NULL),
 	 ('be4247ce-92b2-4969-beb6-fd53553e67db','Captain Universe',NULL),
@@ -4709,7 +4709,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('b9d3f5ca-8a0f-42e7-9b2a-2abfefb36d95','-',NULL),
 	 ('1c4dd7bb-33f4-4730-b504-0bfbfa5c07fc','Rodney',NULL),
 	 ('089f4f9b-1816-46ef-b0cc-ef38be626d84','Magistrate',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('fa9edc92-3ebb-4443-88c2-78d8aea03fcd','Lester',NULL),
 	 ('d6d63a6a-c48b-48d1-9b04-36ba3b514545','Popebo; He-Who-Devours-Your-Entrails-And-Thoroughly-Enjoys-It',NULL),
 	 ('e3a46854-f2d7-4149-b95b-9fa6a94a675f','Vanwolf',NULL),
@@ -4720,7 +4720,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('2574c9b1-fe57-48fa-b907-5dfc13e45385','Lord of Evil',NULL),
 	 ('6269cdc8-498e-400b-86e5-176c5efb1897','Nick Scratch',NULL),
 	 ('af2fcacf-5177-4fdb-a85a-5d167dae7797','Mutate #35',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('42812ea0-7caa-437b-a3ae-2992bce31bf5','Nate',NULL),
 	 ('627e6fbe-95f0-4f5e-8d02-3c83e870b23e','Jason of Spartax',NULL),
 	 ('494b9e5f-8da5-408f-b613-2a22d9632950','Steven Grant',NULL),
@@ -4731,7 +4731,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('ec12890d-dc09-4b7d-ba06-848f44f4ddf7','Magnum Force,',NULL),
 	 ('dd1a2f6e-7bff-4713-b8c7-d864e631730e','Freddy Loyd',NULL),
 	 ('d3d970f1-db99-4ced-b3ab-8e99bbd7975f','The Caped Crusader',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('c0eaa803-fc0e-44a8-91c0-b8f0bb7473cb','Human Torch',NULL),
 	 ('7d293095-4114-4fa0-914c-6500880ddd34','Kid Nova',NULL),
 	 ('8c1d7dd4-7bd4-4c88-8674-b036e54c00ee','Sir David The Great',NULL),
@@ -4742,7 +4742,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('1d95a271-094a-4d1d-8cf4-8bbdff4646d8','Nightwing',NULL),
 	 ('e34f8665-fd86-4f6c-ac35-dcfd27c1e766','-',NULL),
 	 ('dbdf25d7-258c-4cfa-b696-f87b30134e6a','Ted Bishop',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('6ff1b56a-5be1-4c7c-bca9-00a11cd3f213','Richard Rook',NULL),
 	 ('7bf723e2-97c3-4445-b970-696a78f6e4e7','Mister Zyx',NULL),
 	 ('57bc35a9-68a1-477d-b2da-3dd2122f489f','-',NULL),
@@ -4753,7 +4753,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('23bf4650-a643-45fd-b652-9f9ac3fe01ee','Dell Rusk',NULL),
 	 ('af09ec93-f35e-4d25-9a57-e0a3b69da534','E. Nigma',NULL),
 	 ('93e1d36b-6da7-481d-bd1b-6132c31763df','Red Hood',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('b5f53bc4-7333-4bcc-a925-70f348be9e76','Father Time',NULL),
 	 ('129a852a-1147-4788-a304-bbfd718b713a','Ibn al Xu''ffasch',NULL),
 	 ('d2bfe0e7-6fe7-4aab-a608-3882d97920b0','Robin',NULL),
@@ -4764,7 +4764,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('6340fc64-50fd-4d75-b33e-e6b7b340c2bc','Ananasi',NULL),
 	 ('9fc5646a-a8e0-465d-8d3d-c0f2f58267b7','-',NULL),
 	 ('02771697-955b-419a-a53b-52bb26ddcbf8','-',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('c33e4339-67aa-488a-b568-b8e632a26ed3','Dusk',NULL),
 	 ('e743e201-6fe7-4bd8-af11-66350d5fd292','Ted Ghostel',NULL),
 	 ('ac349de3-63e0-4910-ab65-f5095948205c','Little Monster',NULL),
@@ -4775,7 +4775,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('e1cb8305-d72d-4c1a-8a2a-267bac730c0d','Princess of N''Dare',NULL),
 	 ('dcf1df58-b3ee-4e4b-bfb5-2ce1f454ec24','Swampy',NULL),
 	 ('67a6771c-c504-4935-97b2-2801802b6947','the Last Son of Krypton',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('1dba2f85-cdee-411f-a5ba-8de8d868a089','The Mad Titan',NULL),
 	 ('be6df522-a2a4-4060-ba04-0158fcc40ed1','Eddie Blake',NULL),
 	 ('032f77b9-ccbe-4aa5-83d5-0b8eda917ed2','Bluebird',NULL),
@@ -4786,7 +4786,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('e41e301c-6b15-4a58-83ce-77561aefbb40','Simon Walters',NULL),
 	 ('2ca02ff4-0ee8-4180-a7ef-008c223f81c0','Magilla Gorilla',NULL),
 	 ('a83858c2-d78b-4022-89eb-cbb4e2a6e78f','Beast-Brat',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('e98468af-d781-4e54-9839-8099303b8493','Khem-Adam',NULL),
 	 ('51d3d759-ac6a-47d6-975d-2c9fd2f5d692','Goblin King',NULL),
 	 ('fe400420-0d5c-4789-b15b-5b89d63379f6','-',NULL),
@@ -4797,7 +4797,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('8e389754-c56f-4d22-93ab-cd25ce5eb5a3','Leonard Snart',NULL),
 	 ('a7bf3e01-91f0-48f8-be3b-66c7fec86af7','Punisher',NULL),
 	 ('d08029b6-5061-4a0c-8d85-314b0b48038d','Jet-Ass',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('dcb0f278-a447-4230-aa30-7d8649ea5013','Planet',NULL),
 	 ('bba1b7bb-f267-4bfc-af52-ffe552501fa1','Madame Moderne',NULL),
 	 ('61de0e13-7c81-4760-9cbe-e623c98f3032','Professor X',NULL),
@@ -4808,7 +4808,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('a027b6fc-9a53-48d0-83aa-8a0c03421ea5','Pete',NULL),
 	 ('9a815f16-cd8f-4c79-a2ab-ec5e57866b2f','Erik the Red',NULL),
 	 ('7d715334-e1df-4d8a-b905-c239614acf48','Jack Batlin',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('b6fbd045-40fa-47ae-8b78-631aca490b11','Cooper Peyton',NULL),
 	 ('4038f2b2-5abd-4a20-94c3-8ee05e2881a2','Dark God',NULL),
 	 ('caf5e114-cad0-4b74-9321-638ce7b4a940','Deathstroke the Terminator',NULL),
@@ -4819,7 +4819,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('d9024427-76ea-4533-96ad-2c8b250420b5','-',NULL),
 	 ('1f056cf8-d5ab-424d-b2aa-d4937c1c19d2','Mindless One',NULL),
 	 ('b93a554a-6562-4e46-95cc-0d1a3634b7bd','Doctor Manhattan',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('69a363be-df46-4444-9587-82cd739328f8','Don',NULL),
 	 ('b7453599-2fea-4c96-9e9c-d34cee288024','Priscilla Sutherland',NULL),
 	 ('2f79a883-a5cc-4c94-8c8f-55cc899aec26','Anita Soulfeeda',NULL),
@@ -4830,7 +4830,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('549e68fc-2f11-4420-8e03-75cac7d15d9f','Kid Flash II',NULL),
 	 ('fa149e8a-db8e-4088-880a-b5a091a382e3','formerly Robert Lord',NULL),
 	 ('a712c176-88d7-4e0f-8a85-7968b4f9bb21','Anodyne',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('bd9ed213-a89c-48ea-94d2-95d442207841','Monster Zero-One',NULL),
 	 ('d97e2634-a5cc-4528-a24f-68e45843ecd1','William Dawson',NULL),
 	 ('1762f1c7-9c4a-497c-a2a9-5b00432a3337','The Emerald Archer',NULL),
@@ -4841,7 +4841,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('433b3d19-9fed-4d86-a9ad-60c0f237a1d2','Annihilator',NULL),
 	 ('fe6cea71-31ea-4e76-89a2-576e78cf9d3b','Golly Green Giant',NULL),
 	 ('dc8ff358-e785-457b-b013-78d8b17148d7','Kid Flash II',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('f79d2179-4009-47cb-9b08-1110fcc8077e','Drake Roberts',NULL),
 	 ('14b3db53-dd6f-4b69-aa57-d3272bf02c33','Messiah Child',NULL),
 	 ('fac3aad2-9e39-4e6d-bf1a-6f072a4ef95f','Young Dragon',NULL),
@@ -4852,7 +4852,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('d21635be-2271-4a08-81b2-defa12e0fd3d','Blue Man',NULL),
 	 ('c32cdc14-5057-4905-80c5-7c277d8eaa18','Green Lantern 674.1',NULL),
 	 ('9addb49e-ed91-4aad-b7e5-b35080f30dfd','Curtis',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('cff8b2dd-34f3-401d-b7bd-55e6f40511bb','King of Skull Island',NULL),
 	 ('69f9d4fc-0201-4a4a-8d15-7c0e3bd81b1d','Ian',NULL),
 	 ('44abd290-6825-4ff5-bb39-5c7596d5a9cf','-',NULL),
@@ -4863,7 +4863,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('8120d567-a2d9-4f09-8cc9-56196c376f51','Gene Kahn',NULL),
 	 ('1e498c4d-eb4f-4b18-9466-6123238cabb8','Erik Magnus Lehnsherr',NULL),
 	 ('7621fbc5-7df9-4bdd-be3c-8829a6d964ae','Superboy',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('5ba1edbe-9a58-4c7b-8e12-cc171f9b97c0','This One (in referring to herself)',NULL),
 	 ('a44328f9-e400-49de-a20d-b38c7afb837d','Lord of the Lower Depths',NULL),
 	 ('878227c0-2311-407a-a4ab-cbe71bc5b467','Lucifer',NULL),
@@ -4874,7 +4874,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('b10263b3-faa0-4af2-b928-e307e1045524','-',NULL),
 	 ('d8239cd4-33c2-4868-b20e-425995df6ced','M.O.D.O.K.',NULL),
 	 ('7e0e4496-f6cf-4d7e-ba74-ae972139981d','Huntress',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('e4a2eae3-8eb5-4c6e-a669-50ec364e40c3','Nicholas Macabes',NULL),
 	 ('37391593-17cc-422b-9348-925eff1f90c6','"Subby"',NULL),
 	 ('e41445e4-3655-4f8d-a925-946c03e8b9db','Patch',NULL),
@@ -4885,7 +4885,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('218b0804-dea8-4e98-b194-a2d2adceeb7f','Magneto the Second',NULL),
 	 ('43e75c1e-3c47-4165-a9bc-5a4c5c48f0f3','Professor Xavier',NULL),
 	 ('bbe5eaed-36aa-4d03-bc1f-67655e67c2af','Major Bateman',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('986a17c6-ec66-4a7a-84d8-00774d904a65','Fred D''Amato',NULL),
 	 ('3cacb0bb-6727-46bd-b90a-3890a7dbef38','Adrian Zoom',NULL),
 	 ('e4baf3d5-da6c-44b8-9f99-333f0b236307','Dark Raven',NULL),
@@ -4896,7 +4896,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('9aee676c-f7da-4cd9-bc2e-f9653b5ec58a','''Purple Man''; impersonated Constrictor & Dreadknight',NULL),
 	 ('3d6124a6-a52a-4556-a010-31466840163e','Alvin Draper',NULL),
 	 ('6b03fa39-aba6-4656-be0c-f292bdd60778','Sauron the Dark',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('c2049d42-4b99-402d-8de2-db49c27838ca','Mutate 9602',NULL),
 	 ('ba1491c0-353d-4b1b-8c3f-db6a835c4ba6','Sharpshooting Space Racoon',NULL),
 	 ('a08d9f67-95a8-4917-a91a-b49fa91cb19a','Spider-Man',NULL),
@@ -4907,7 +4907,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('ddf2ec96-acc3-43d9-98a8-fc0f3af0d539','Indigo Lantern',NULL),
 	 ('5ee835f2-e92c-4f01-b39e-328a8b10a0ae','Black Marvel',NULL),
 	 ('5d1de630-96c2-4d55-8ed7-93dd693565aa','Prodigy',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('770abe73-ecf6-4008-817b-d6915a527da2','Savior',NULL),
 	 ('ac115d6d-7447-4669-aede-b15a02ffe30f','Arachne',NULL),
 	 ('cc98f093-313b-4d5b-a5a1-daefacf4fda3','Spider-Woman',NULL),
@@ -4918,7 +4918,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('c384d1e8-b321-4ab9-ad34-f9a9a0db474e','Mistress of the Elements',NULL),
 	 ('ee19878b-52a9-4a4a-8e2b-8d1dd857cde2','Flamebird',NULL),
 	 ('1d9abe1f-6bf8-4ad0-92b3-61921bd8ce64','Asgard Lass',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('54ad5f6d-f438-4dd2-80bd-a112823ea24a','Dr. Josiah Verpoorteen',NULL),
 	 ('cc05c940-6008-42d9-a13a-3f40e3b7ddab','Sigurd Jarlson',NULL),
 	 ('bb7e7c5f-ebd2-4c63-a361-fc8db0a9431d','Eddie',NULL),
@@ -4929,7 +4929,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('08105643-2a71-48a5-913f-e1e0fb3a7f0a','The Queen of the Unseen',NULL),
 	 ('fdbe229c-b37a-4e16-9da9-611bfb33a3b1','Rhodey',NULL),
 	 ('03de9655-814d-40f9-9716-dc93735e10d3','-',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('081dbc43-5c82-4c02-bd71-716cb0762609','The Tomorrow Knight',NULL),
 	 ('6b294edb-ce60-4013-9be4-14129ae1abf2','Bucky',NULL),
 	 ('3b576987-ec9e-4f49-a945-33d4b60152bf','Theo Adam',NULL),
@@ -4940,7 +4940,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('80a3b5c9-fcba-4a20-96ed-e9effd5aa4a4','Switchblade',NULL),
 	 ('1229b42e-7b9d-4235-a554-d2cc917c5b0d','Boomer',NULL),
 	 ('d4d6828f-5677-42a3-a0e1-a458651dde1a','Askani''son',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('cd2b4513-16b8-4b07-8f07-6cd217be280d','Monarch',NULL),
 	 ('27f629cc-405d-4c90-b569-6b4a6b525bbe','Jungle Man',NULL),
 	 ('19f7bbb5-087d-41b7-9ebd-e27ae8ea5e04','-',NULL),
@@ -4951,7 +4951,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('cad027d0-f561-4332-9c6f-91292aef07c5','Kay Carlton',NULL),
 	 ('c9b11ac4-3500-45fb-8666-50380777e8f4','Captain George Stacy',NULL),
 	 ('78f919d6-c56d-493c-af02-67b35f0b2bf0','Alpha-Prime of the Alpha Lanterns',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('f5037e58-303d-48a5-bcc6-361e1dcac7a7','Little Brother',NULL),
 	 ('da3f4d21-9ce1-455c-ac5d-2b1524e639a6','Amy',NULL),
 	 ('477f2dec-fe62-4ef3-8ed7-f6b0673e2907','Mutate 007',NULL),
@@ -4962,7 +4962,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('1a41077c-4d93-4a54-a284-12bdd36d9179','The Master Programmer',NULL),
 	 ('2032768b-9a70-4b39-9fdc-5c2a1effed8f','Vincent Stevens',NULL),
 	 ('9b46abdd-2fa1-46e7-a5e1-aa3ca55e92df','Jason Macendale Jr',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('dc152e55-4c9d-46bb-aaa3-378527a63423','Jessica Marie Costello',NULL),
 	 ('52f6b6ad-5961-4f7d-92d0-41bce64d6f8e','(formerly) Captain America',NULL),
 	 ('c87ca8fc-16ed-4cf2-b6cd-4a2dc585b9b0','Firemaiden',NULL),
@@ -4973,7 +4973,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('a2c46734-0c28-4ff2-88d2-63e20ca19ca1','Lady Comet',NULL),
 	 ('10bae2ee-1085-4551-882c-9053137e9d91','The Most Dangerous Woman in the Galaxy',NULL),
 	 ('b6133058-ef23-4e46-8c25-82e803f9d573','God of Destruction',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('a91cd6c8-1da4-410c-bd23-e25aef5faf4f','Ultimate Defender',NULL),
 	 ('13965ced-3f99-4205-9b3d-fba22e2accfd','King Grodd',NULL),
 	 ('447e32f6-ec97-42d9-934e-86ecb2c6beb9','custodian of the branch worlds',NULL),
@@ -4984,7 +4984,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('f4389324-a9f4-4545-900b-b106c7dc4590','The Cat',NULL),
 	 ('b9360dd6-9a9d-444f-b7f1-c00ddd1495f5','Doug Brown',NULL),
 	 ('e8d2078a-d844-4daa-92c0-aa25acbae5e3','Mister Friese',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('6428d595-faa1-44bc-b446-84e7a5de6a7f','Throat Slicer',NULL),
 	 ('facc138d-062c-406b-a1ec-c01f0380b3f3','Hogan Potts',NULL),
 	 ('ddc623b6-3f7e-4d65-87db-735c3656b07e','Commander Bond',NULL),
@@ -4995,7 +4995,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('796845ad-5fc7-4c0e-a4c0-842d94195f7f','Hallie Shimosato',NULL),
 	 ('210e47dc-53fb-4598-afe7-eab7bf3c06cf','-',NULL),
 	 ('e2f338cd-9a8b-4e5c-b8f0-1a0c3290763f','Kevin Ethan',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('8c43f69b-0d0a-49b4-9c3f-ac598cf45ca7','Wilbur',NULL),
 	 ('9e55b79c-34c8-4c4b-bd6a-dc59027aaa08','-',NULL),
 	 ('30b75a59-4ead-4021-b631-df4042923c4d','Boris',NULL),
@@ -5006,7 +5006,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('173883b4-aa57-49ba-ac40-2750de1f02e3','-',NULL),
 	 ('4b8925d3-9883-42f5-a491-7df6a4b90e35','ohn Jones; J''Onn J''Onzz (alternate spelling); Big Green Buddy; J.J.; Jolly Green Giant; Light to the Light; Manhunter; Manhunter from Mars; Son of Mars; Bronze Wraith',NULL),
 	 ('66a62438-8547-4c67-ba75-486d5fca0a82','Bright Lady',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('05fd5555-666b-4181-8462-5fd83e9d769f','the Devil',NULL),
 	 ('28fcedc0-7947-418d-ac3c-c5932c077aab','Michaelangelo',NULL),
 	 ('65681e42-1143-4448-a998-a5bc4b8a9276','Colossal Boy (mostly known as Colossal Boy',NULL),
@@ -5017,7 +5017,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('64017a8b-3360-4ab0-adf5-acb3325813dd','Namor the First',NULL),
 	 ('44e13317-b15b-4eac-bfef-69e584fe9ab4','Phoenix',NULL),
 	 ('68a6472d-4e3c-4568-aba7-282065baaa83','-',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('cf1e48df-e7cf-492e-809d-2c9f7fccadc2','Scorpio',NULL),
 	 ('aefa12bc-5854-45c0-bcb2-282114f32dae','Pixie Boots',NULL),
 	 ('75b70df5-ebcd-4a4c-b467-495bb1845a2d','Bucket-Head',NULL),
@@ -5028,7 +5028,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('463e67dc-284a-407e-a572-8461c17e6d07','Rulk',NULL),
 	 ('c09e15c5-513e-40ba-9b99-6fc656f2494f','Nightwing',NULL),
 	 ('dc6495b7-6c3d-4aad-8b00-db8fc7d37351','Teacher',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('acd566ae-66d3-45ac-9652-76cb70a409ee','Freddie Dinardo',NULL),
 	 ('aa9ea3bb-0b22-4792-bf8e-90fa407348a2','Jaybird',NULL),
 	 ('8fa572a9-6754-41d0-91b1-4d61934086b3','''Br''er Hawkeye''',NULL),
@@ -5039,7 +5039,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('4e85e40a-4a25-45ac-87c1-6c150b121b18','Flint Marko',NULL),
 	 ('12ba56b6-6377-40e5-b8d5-407d2e6d63d8','Rocky Raccoon',NULL),
 	 ('58342daa-9741-4fa3-afd7-04d67c6b8734','Benjamin Russell',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('d6f173e9-534d-47f4-b0f0-e40700167291','Bob',NULL),
 	 ('58d662f7-ded3-44b2-b203-185306bc5259','Evil One',NULL),
 	 ('2a03089f-58cb-4a00-b43e-eba4ba937087','La Garra Argentado',NULL),
@@ -5050,7 +5050,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('88b12bfd-2418-426f-8c62-2710fe2cb13d','Bag-Man',NULL),
 	 ('b6e8878b-a5ee-41eb-899a-0b28a5499563','Spider-Hulk',NULL),
 	 ('31b23e74-6e07-45cb-abf9-abf11d6a8c76','WorldBreaker',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('2b6c277a-55e8-4204-8554-dbf1282fb073','Thea Merlyn',NULL),
 	 ('0e494fab-ae6c-4336-bc01-bce651b9bfa8','Spirit of Redemption',NULL),
 	 ('bc5ec159-e95b-426a-8cef-f10b42259274','Goddess',NULL),
@@ -5061,7 +5061,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('036d30cb-02dd-4752-b830-efad35849ab0','Kara-El',NULL),
 	 ('4b764b9e-b41f-4fb2-a86e-d4b0e72eb8f7','the Designate',NULL),
 	 ('f296da7b-4a7d-45a6-acde-e876c0fc2afb','Thorita',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('e62e807e-66c7-4b8f-9182-1fe16b681eb8','Donald Blake',NULL),
 	 ('83ef9090-e591-4da5-ad4d-4215c6402878','-',NULL),
 	 ('b5e73127-d8da-4266-b58e-d247a1ca33bf','998th',NULL),
@@ -5072,7 +5072,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('a6fd668a-3699-4101-b3a6-8e6b12fe7906','Iron Man',NULL),
 	 ('97f0f217-f10a-42ef-a066-51570cede244','Pixie',NULL),
 	 ('f62c5668-bcac-46d8-b5bb-5117f6b7cdac','Hank Pym',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('766948ac-28bb-4670-b640-ec83c1ef4c78','Jim Logan',NULL),
 	 ('f5b01ff8-28b4-4a37-a58d-48dd78793e50','-',NULL),
 	 ('0598d463-1b08-4b1a-bf02-182ecdd8b633','The second Dark Knight',NULL),
@@ -5083,7 +5083,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('d137c379-fefa-47f1-934e-aa64c7d69769','Goblin Force',NULL),
 	 ('172885ea-3567-4f99-a309-775acb6e181c','Slow Lightning',NULL),
 	 ('fa64bbb2-b93a-4576-86d3-13276d5cca3a','-',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('f9d60e24-bd4f-4a9c-af06-7abe0e9e570f','Tanya Sweet',NULL),
 	 ('7e92f27d-96b5-443a-8d16-8b5797d7fca9','has impersonated Daredevil and others on occasion',NULL),
 	 ('b3841beb-1f02-411f-ad4c-2f8a629c6853','Natasha Romanoff',NULL),
@@ -5094,7 +5094,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('8f98dc1d-1640-44cf-9747-cc3d7c9f680d','Teff',NULL),
 	 ('3ef3e6b4-db5b-4ffd-a90c-d1ba32fce791','-',NULL),
 	 ('526f22f0-5b49-490d-ba75-1c1086ee5192','Gemini',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('be195ad3-7ddf-4cf6-b187-2b5681e87228','Chosen One',NULL),
 	 ('8c386ea5-f636-4434-a5fa-a9297febf4bf','Kid Kold',NULL),
 	 ('72a94e2a-b80a-4cb9-a6b4-df0ea2efabf5','Warbird',NULL),
@@ -5105,7 +5105,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('8f14d4e8-a0f9-4f53-bad4-37fbe873cef1','J. Jonah Jameson',NULL),
 	 ('40cf4a07-e5d2-4582-8628-a2103dc7ab58','General',NULL),
 	 ('b18ab2cd-fed6-45e0-b11f-7a0359c485a1','Peter Nicholas',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('e3800017-f82e-4bb8-9912-d543a230ab6f','Fearless Leader',NULL),
 	 ('b3bd7e73-9923-4ea3-ac3b-cec25470b47a','Edge-Man',NULL),
 	 ('94ae60b8-b3ac-4fdb-910a-48fb8940ecb6','Captain Universe',NULL),
@@ -5116,7 +5116,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('cc403bad-662b-4339-b31d-689d76e57d14','Tamara Winter',NULL),
 	 ('f4ca4e40-38ec-4c7d-b429-fdd839234ac3','White Queen',NULL),
 	 ('7d26b84b-f673-4dca-9375-816ea6764512','Demon',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('6890f748-4d99-4483-8e4a-abbd34be364c','He Whose Limbs Shatter Mountains and Whose Back Scrapes the Sun (translation)',NULL),
 	 ('1ef8891a-0f2e-4597-a719-aa70d00be3c4','Siegfreid the Speedster',NULL),
 	 ('4dcf44b1-eb33-4284-a4bb-492bf12522a4','Impulse',NULL),
@@ -5127,7 +5127,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('a7c2d664-8098-4afb-9108-c7c20b7a9511','Iron Patriot',NULL),
 	 ('910b0ec2-c86c-4ba1-8292-d15e2eab1df4','-',NULL),
 	 ('a87b0e40-4e21-4fb3-9be4-3a5eddef8408','Father Time',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('22542df1-0a24-4674-9ee9-8a5380f02c16','The Lion of Olympus',NULL),
 	 ('e158c465-be18-4954-9876-83f099dc70c0','Agent 74',NULL),
 	 ('dc021112-d5c0-44a5-942f-aa5899d2560b','Rory Calhoun',NULL),
@@ -5138,7 +5138,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('e73a9f6a-c854-4424-a049-916e8fd58128','the Living Weapon',NULL),
 	 ('f34bee9e-1d83-4ac5-a0d4-aafcc0ca4c77','Redd Dayspring',NULL),
 	 ('b7a839d5-7113-4484-86c8-c1e75e334757','Jewel',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('e7f22211-38c4-48be-89f2-95171027385d','Vindicator',NULL),
 	 ('e1176b1a-d2fa-4fcc-b4c8-d2e6dcab8902','Marvel Boy',NULL),
 	 ('6147c337-6a12-4b7c-b71f-c44e203d400f','Harlequin of Hate',NULL),
@@ -5149,7 +5149,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('054418de-5e87-4db7-8186-51818bfcff53','High Judge of The Multiverse',NULL),
 	 ('ba21050d-2dc0-438e-83c3-ce9ef68a6f85','Father Williams',NULL),
 	 ('27a63fda-25dc-46f8-a914-cced0a901800','Beetle',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('9a350808-9b18-40ad-a731-cf70477e042a','Mark Lucas',NULL),
 	 ('8b45cc08-0bfa-40fb-9a40-b365eda7e84c','Tem Borjigin',NULL),
 	 ('1a5e881d-9869-43f1-b4af-b1cbd7b95fa5','Blue 1',NULL),
@@ -5160,7 +5160,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('31e330e4-5ffe-4e26-baf9-14f5742e9b34','numerous others; impersonated Don Blake',NULL),
 	 ('6a5f982b-482b-4925-89c6-8d270f0c8c07','Calvin Rankin',NULL),
 	 ('3acde2cc-b50a-4792-bb60-b2752ca0ff45','Pale Man',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('8ca37802-4724-45e4-9f21-b14fd891ae58','Doctor Schimmell',NULL),
 	 ('5eeda5f8-8185-491a-8dbc-e5143a994de4','Meteorite',NULL),
 	 ('7882f445-3016-4ff3-b8f0-f507ebbf3b61','Yitzak Topol',NULL),
@@ -5171,7 +5171,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('90c4bb47-5f56-40eb-823f-f4dbe0d05afd','The Aerial Avenger',NULL),
 	 ('06f509bc-8816-46fa-898d-9ca64dff1660','Rich',NULL),
 	 ('3496f0c7-f659-4aa3-b8c8-6746c3f1aeaf','',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('9ed41b56-caf9-42bf-813f-a5a47e8b387e','Magneto',NULL),
 	 ('660e6af6-b74a-4aea-b44d-81382f2f1e0e','Jessica',NULL),
 	 ('f86ab8bc-9fab-4cde-91f6-0bf7a28390ca','Atum-Re',NULL),
@@ -5182,7 +5182,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('265c0b77-d2e0-429a-9821-e3865225b7b0','Kilgrave',NULL),
 	 ('67e415bb-6751-48cd-9c92-1128c29d1136','Gypsy Davey',NULL),
 	 ('0d03866a-735e-4795-b2d4-3e449dff4422','Speedy',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('703c4aec-641d-409e-a029-11dd931fc88d','Robin',NULL),
 	 ('b8fcf002-7a67-4b4a-88c6-927615da9dde','Ulthoon',NULL),
 	 ('6c786a62-51cf-4e37-8685-efce2f51a2aa','-',NULL),
@@ -5193,7 +5193,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('9caf320c-35ec-4feb-83f9-19c429ee2a1b','Time Lord',NULL),
 	 ('66aa89bf-0ea3-4024-a9ff-49d4ccf54f22','Anna Raven',NULL),
 	 ('364299a3-4aba-46fa-b72d-0909df69ef54','Sylvester Mann',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('31685cbc-6f45-4f23-ab81-e010af8c4a80','Ranger Rocket',NULL),
 	 ('5f364d0e-3c21-4b73-bfb1-2f96996d1b1f','Venom',NULL),
 	 ('3ead6f96-ab0a-4dcb-83bf-453a2d27fd9b','Ana Maximoff',NULL),
@@ -5204,7 +5204,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('fe6e9d6e-d56e-4152-bd57-a1883ed6e943','Sandra Deel',NULL),
 	 ('728492ff-7bca-4a1f-b77c-a554580381bc','Margie Green',NULL),
 	 ('f4c7e267-1830-4dc6-8f4c-7c2c108e4e45','Hornet',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('c6840382-b25a-497b-a0c0-687558a9b0ff','Dark Angel of San Francisco',NULL),
 	 ('dd018907-7c62-4f5c-acf2-a5824246b691','-',NULL),
 	 ('359a2db4-9f18-46c3-8d7f-8756c0ba2156','Spirit of Vengeance',NULL),
@@ -5215,7 +5215,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('036c1fd9-026a-4a4f-888c-094a87ce5f8f','Linda Lang',NULL),
 	 ('17fe3e53-c600-40e7-8999-9b312b0137c3','The Princess of Power',NULL),
 	 ('d28a77fd-fd27-4a73-a1eb-449f89c60809','Isaac Mendez',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('5629e209-5ed2-4aef-a63b-3a86a385532a','Hammer Lass',NULL),
 	 ('ad0b138a-6512-43e9-82b0-34ff4894850e','Grim Ben',NULL),
 	 ('83a15038-6bf8-4c1c-9acc-f8d2f41ea3cc','-',NULL),
@@ -5226,7 +5226,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('e6b0ece4-041f-4aa9-9326-37e63d211172','The Dark Knight of Tomorrow',NULL),
 	 ('16b11da2-704b-4495-ac89-4294037eee2d','Death',NULL),
 	 ('ab7828d6-a353-43fb-a54d-d084a8be01d9','Sprout',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('801d5871-4d41-4616-9c3e-0bc3e0dd1d30','the Strongest Woman in the World',NULL),
 	 ('e46cc95d-1173-4886-b06f-fbf82d6bd57d','Kosmos',NULL),
 	 ('7d357a7c-3543-4e8d-b31f-c3b6cd25c753','Flashback',NULL),
@@ -5237,7 +5237,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('a9bc4ad8-99d2-44f7-891b-49e1aadf19b6','Soldier X',NULL),
 	 ('c15c519f-83ee-4fb8-9529-da7b86d0e3ef','Allen Adam',NULL),
 	 ('e555140d-7adc-4ed5-a757-be6369ef9ad7','Binary',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('db5da186-58db-4e6d-a67f-7f43df805ffd','The Vampire Slayer',NULL),
 	 ('b171deb1-1b41-46a1-802c-dda80066575c','Belinda',NULL),
 	 ('a6047f5a-b2ae-49b1-b1b5-69de7a9921ec','The Cat',NULL),
@@ -5248,7 +5248,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('8196d96f-9b65-4bba-bf09-a4f9c88d7191','The Proletarian',NULL),
 	 ('bb2f8768-671f-446f-b864-50308d623793','Cyke',NULL),
 	 ('04b63273-51de-4f34-9e4a-7df0e3113b58','Apocalypse',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('616067e9-a49f-4ed4-8ca5-596aa50a8ccd','Laurent LeVasseur',NULL),
 	 ('f11b99b6-712f-401b-8b77-6e428150aedb','Red',NULL),
 	 ('e3895012-7e6b-41e9-9995-c81fcb9ddfdd','B-4',NULL),
@@ -5259,7 +5259,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('f92e2b16-2020-4ba3-8c9d-15fa0b8625e7','Spider-Doppelganger',NULL),
 	 ('80ed1187-4183-4c3a-b70c-e388de0ae174','Jon Osterman',NULL),
 	 ('feb760f3-9bfa-4aac-bca3-86dce8c1d0b8','Storm',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('e2aac478-9f4f-4aa0-981f-68417d75c845','Ronnie',NULL),
 	 ('3ef7ff47-f8ba-47be-9b71-fb1d187909bd','Kid Flash I',NULL),
 	 ('d314331b-ebfd-49b8-b18a-c1666c4b5067','Franklin Storm was erroneously believed to be the first Invincible Man',NULL),
@@ -5270,7 +5270,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('2bf4ef19-7356-4708-8cdb-5032e7c26c8b','Nephut-Sha',NULL),
 	 ('7ebc5ed5-c597-4e71-ba8c-3ec07eb46a8b','Lower-Class Sayain',NULL),
 	 ('43a9bdf3-bb73-495a-8e60-ae82224dcfa2','Gorilla Grodd',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('b7f80d32-ea2a-49b3-951f-526a2912e08e','Director Osborn',NULL),
 	 ('d2a32f09-05ed-4425-abf8-26506953d725','-',NULL),
 	 ('f7c2343c-445c-4d3a-80b3-3ae73e5e5050','-',NULL),
@@ -5281,7 +5281,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('b8c5a9b0-9ad3-4825-8ab7-f3bc0bb64ed6','Victor Tegler',NULL),
 	 ('25b15338-f5d0-420d-8e89-82ff30597829','Patsy Walker',NULL),
 	 ('3d6f245f-5085-4ccf-b42e-4d0e5eec88bf','World Destroyer',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('e30ce16b-4815-4899-864f-f17f99e11959','Professor',NULL),
 	 ('f9dab47c-bbe6-4b3d-8636-381f3c3091bd','Terror of Brooklyn',NULL),
 	 ('4e4a4e7b-3e97-477b-9c55-d48da8c8571b','Mr. Kant',NULL),
@@ -5292,7 +5292,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('00259670-144e-4843-bf39-7f7b5d97fc3e','Manglin'' John Mahoney',NULL),
 	 ('295d4aaa-ad16-4423-b696-8c517d4f7ede','Jack Napier',NULL),
 	 ('a7d2b87d-9076-4469-8a63-5c77155b2be2','Joe',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('5ff82513-e029-45a2-adbf-b7cdf05d98af','Rama-Tut',NULL),
 	 ('9f768cc5-eb1b-42a7-b4d9-d8d86df37790','Kilo Wog',NULL),
 	 ('44de65cb-8355-493b-afc3-6cf49ef36eda','Lantern',NULL),
@@ -5303,7 +5303,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('9e1accf9-27f2-45b2-8866-0dd083b20a53','-',NULL),
 	 ('8e5a45a3-6e6b-4990-b6ad-afed2ca9d38c','The Last Green Lantern',NULL),
 	 ('d15e5459-ae35-4ef4-a40e-065949c312c0','Leo',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('476c0eb2-9269-4bee-ae4c-ff95a48204fd','-',NULL),
 	 ('5445143b-e06f-49bc-85cf-140950a23b18','Loren Olsen',NULL),
 	 ('86a2aec0-65ac-44e4-8bdd-6a7a9f005280','Power Man',NULL),
@@ -5314,7 +5314,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('0a16c62e-3027-4f51-8cb0-cee84376675d','Spartan 117',NULL),
 	 ('0a3934ef-1a2a-414f-9d76-6c4157dcbb4a','Queen of Atlantis',NULL),
 	 ('b97c7894-d313-45eb-a96d-4a8b3126daa0','formerly Phoenix',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('e33daf79-a9f5-4c0c-aee0-1de62f02f9cb','Prince of Lies',NULL),
 	 ('84c25390-35a4-46da-86d2-04f5064032bb','many others',NULL),
 	 ('15fd7892-fd84-410e-8606-dcaa462f4a90','Boom-Boom',NULL),
@@ -5325,7 +5325,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('ba3d4005-6b2a-4f1e-a34e-ac05f3a121d2','Mental Organism Designed Only for Killing',NULL),
 	 ('da47adc4-ed54-455c-af84-f2a7d29128c0','Roberta Morse',NULL),
 	 ('7adf436c-5e4b-40e1-a1cf-19e6f83a027b','Renegade',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('071ec9d0-676c-4f32-9de8-64e0ebb090c8','Charlie Silus',NULL),
 	 ('05e107aa-b02e-44ab-8572-f9e257b08ec3','Orrin',NULL),
 	 ('47baa425-f6b9-4c19-8bc4-abc3c136812b','One Above All',NULL),
@@ -5336,7 +5336,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('59662029-0099-4ecd-957d-29dec4d5f4f1','Melchior',NULL),
 	 ('d1be48cc-bebf-411a-853d-c075396b1e53','Dmitri Velikoff',NULL),
 	 ('e1513866-f0dc-4d8f-a6b4-9e138194e573','Pride',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('6d0a6c37-6675-4db8-b537-f8f82c373212','Demon''s Head',NULL),
 	 ('2dd3b067-d47b-40f3-b195-9d12c84587df','Q Continuum',NULL),
 	 ('f46d5436-ec77-4418-899c-2d8a22b21475','Red Robin',NULL),
@@ -5347,7 +5347,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('8eea8928-0375-4aba-8063-4363b644e036','Box',NULL),
 	 ('bb5e723c-9784-4371-b5c1-fa3237e0c4a6','Lord of the Rings',NULL),
 	 ('eb7cd9b7-37b3-4057-9b7e-fc469390c2a5','Boppy',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('ef15ee82-caa1-483b-a372-48965806d83b','John Victor Williams',NULL),
 	 ('05046fc9-0d7f-4c59-8fb1-ae3e5c2a3d6f','Master of the Games; he also impersonated the following mind-controlled subjects (in chronological order): Alexander Flynn',NULL),
 	 ('48420709-c30b-44ae-9180-80610c573f7a','Parallax',NULL),
@@ -5358,7 +5358,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('fca8492e-5226-4106-bd4e-b2b4925abb83','High Priestess',NULL),
 	 ('a63d1045-46bc-4274-889f-8557966045fb','Sparky',NULL),
 	 ('d8d589b3-473b-4d5a-ae38-7a8c2a56f978','The Man of Steel',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('db4313cc-e4a4-4236-9394-81d89fb4cff3','Superman-Prime; Prime; Superboy; Clark Kent; Clarkie; Time Trapper',NULL),
 	 ('a685a28f-49ce-4492-8141-e83afc48d927','-',NULL),
 	 ('859441e2-3311-486b-85cf-fca0ebf2a432','The Maid of Might',NULL),
@@ -5369,7 +5369,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('172f9324-71f1-4754-9277-62bc3972496c','Larry',NULL),
 	 ('555ba289-e991-4568-890d-7693e0271e9f','Venom',NULL),
 	 ('72527c84-cc3a-4bbe-9c86-39dc02334fff','The Prince of all Saiyans',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('99627aeb-3004-462c-aac1-7f96f58d1a07','Batman Beyond',NULL),
 	 ('2a96bd50-bdfa-44df-b012-a776a15f97fd','Mutate #666',NULL),
 	 ('7604277a-a741-4428-b72d-c013df2e3c23','Ataxi',NULL),
@@ -5380,7 +5380,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('dada3339-9dde-4fb3-a64f-190845bcafce','-',NULL),
 	 ('ac21bb72-7608-4f0b-84a3-6cab65a65f85','Blackwing',NULL),
 	 ('23c6cdcc-49e9-4bfd-b3c6-1b33d586bf57','-',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('370e93b7-8f2b-41ae-a999-945ece171813','Daywalker',NULL),
 	 ('23c76775-7af2-4484-b652-aba2659566f4','Mandalore',NULL),
 	 ('454e472b-c4eb-4a76-9afb-4d76f7befa1c','Time Bomb',NULL),
@@ -5391,7 +5391,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('f9c86fe3-5eca-4374-b467-fc10f07c77f0','The Man Who Mastered Absolute Zero',NULL),
 	 ('b2de465c-6efb-4caa-86f1-ab0f09dae94d','others used during her espionage career',NULL),
 	 ('a46e2b37-f927-466b-b835-b2ee24da5731','The Chosen One',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('b0cb2fad-f62b-41dd-ba32-fcd5114d6609','Joan',NULL),
 	 ('82fce9a7-9e42-44b4-b7a0-e566d024897a','999th',NULL),
 	 ('4f1adb98-46dc-4f15-b9c1-e961b744bb9c','Claire Butler',NULL),
@@ -5402,7 +5402,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('1505768a-819d-4627-b255-54dbf355d83c','Cheryl Marks',NULL),
 	 ('6a5d3255-f9f7-479d-8771-6f17aadb89f3','One-Eye',NULL),
 	 ('d1e6a6ab-6fe8-4992-b8cc-c403155568e6','Kingpin of Crime',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('f7e4eff3-a350-4953-9557-fc39af8dac6d','Hornhead',NULL),
 	 ('e1cab94e-8890-40df-8fe2-ec4aa881d4af','The Dash',NULL),
 	 ('3f17e1c1-bd87-427e-a7b4-92627f1f19de','Ally',NULL),
@@ -5413,7 +5413,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('53e4797d-2a02-4f04-a2c0-59394070bab9','Cindy',NULL),
 	 ('bc189113-304a-4131-8083-f34fc45bd3c4','Blackwing',NULL),
 	 ('341daa2c-4d85-45e4-9f24-eab7f5f17547','The Scarlet Speedster',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('73ea0f71-3da9-41a1-945a-626fe23c051f','Franklin Benjamin',NULL),
 	 ('8d9688fa-d959-424d-a302-db03e8b94d36','Anj',NULL),
 	 ('d8126c9f-3169-456e-a9c8-c614be431de6','Dru-Zod (possible first name)',NULL),
@@ -5424,7 +5424,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('82b1c3b8-b993-4fb8-81a9-377d9774cbb2','Normie',NULL),
 	 ('6ba6e351-d081-4e59-b2c4-7db21f84e6f7','Commander Osborn',NULL),
 	 ('df5f499c-2920-4ea5-9f91-051516bb3dd6','Protector of the Universe',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('acbef200-4f07-4799-a9dc-fbc96686b30c','-',NULL),
 	 ('bd82e3be-b11d-47be-b0bd-032245fee2de','Mutant X',NULL),
 	 ('a7972b37-3277-45c6-b7bf-185e7b24feba','Goliath',NULL),
@@ -5435,7 +5435,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('70e4b135-c1b5-44a4-a302-1f0435508592','Hitgirl',NULL),
 	 ('cf5d7121-ec0b-4ed8-a8b1-cd9baa9f4205','Batgirl',NULL),
 	 ('c6e72566-2e54-4f56-aba9-6e37d1d606eb','Agony',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('bd4450e9-0129-443b-8083-6a18626bf934','Zhib-Ran',NULL),
 	 ('8ac0e783-c14b-4478-bbfb-999bfcbc48e0','Bobby Drake',NULL),
 	 ('5f7bbfb2-6c2c-42ad-a5b7-dd8d49dc74c2','Indigo-1',NULL),
@@ -5446,7 +5446,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('49d6a86e-3e77-4828-a028-6d558eb81b78','Expediter',NULL),
 	 ('ece99249-58d3-4c09-8295-c79d2b3c706d','Astounding Astrovik',NULL),
 	 ('c9ccd832-583a-49d9-a388-6a4fb1407a37','Kuurth',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('4eeebf15-f1cb-4571-95c4-22fca97e343c','Holly Tsuruta',NULL),
 	 ('7699d56d-4cf9-485d-89df-e221529516cf','Lord of the Seven Suns',NULL),
 	 ('1d8d73f7-9a97-45b1-bcea-066188f6be60','The Brain Washer',NULL),
@@ -5457,7 +5457,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('1fcb16cb-5112-4feb-8bd7-7222e6281fb7','-',NULL),
 	 ('32c1b240-a191-4bc7-8865-e0aa1a289d76','Kyle Vasquez',NULL),
 	 ('a57c20eb-cff4-43b5-a612-8b8013d670c0','Live Wire',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('bb8d4c9b-0283-4aad-bd12-502e2f6038ad','Walter Lawson',NULL),
 	 ('8cc90b40-c2f0-4c38-8869-940a1e396f41','The Main Man',NULL),
 	 ('9b2787f1-f2a8-4a12-a610-2313e3c3a88a','Matthew',NULL),
@@ -5468,7 +5468,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('1ef7ce0a-6cca-4352-a83b-a74f90024f81','Mike',NULL),
 	 ('0fe41afb-0b06-4286-ad26-e74b4fc7dafa','Boomer',NULL),
 	 ('47e22764-25a0-43a9-8a96-faec079f6482','Cal',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('f7e2e518-6837-4b3d-8f5a-e1fbf73554c0','-',NULL),
 	 ('a259c03f-8778-41fc-b53b-cf3db751c4ea','Administrator Pearson',NULL),
 	 ('d9045ca1-6b6a-402b-8f50-5dfb84c4cce8','Mr Fantastic',NULL),
@@ -5479,7 +5479,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('50f7c271-8652-4ee1-934e-03f1e9138baa','Rudolph Hines',NULL),
 	 ('e8735b74-c039-4705-9248-a0949dde78ed','Avenging Son',NULL),
 	 ('a1e92ead-4bd2-4553-9bb1-d7cac1b2e5a1','The Mystery in the Mask',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('216bdc94-c253-44e5-944c-6356856d0c0a','The Worlds Greatest Acrobat',NULL),
 	 ('1a10c9b5-acad-4618-af30-b75897feb5c4','Hard',NULL),
 	 ('ef0b06d7-3b7f-42c5-b481-87665dc1b87a','Nova Prime',NULL),
@@ -5490,7 +5490,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('219ca5d9-dbe4-4dcf-8795-6e3600821da3','Tony Knowlen Ross',NULL),
 	 ('60da2d2a-f324-4022-ab6c-b4b356133a35','-',NULL),
 	 ('bb224d63-ed48-4d0f-9826-1d5f5f463d23','General Ross',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('00b84e17-4d7f-4051-b667-86e21de20f54','Alvin Draper',NULL),
 	 ('48a2a15f-6da1-4936-be65-71c903e3c190','Arkham Knight',NULL),
 	 ('f84ac1fb-f6f3-4206-82a6-a37214bc777a','-',NULL),
@@ -5501,7 +5501,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('0b62676e-c465-46d9-a389-3eb6f22b7b41','-',NULL),
 	 ('8652557f-187a-449f-ba12-9745d14461ac','Wanda Frank',NULL),
 	 ('0e4101f8-c0bf-4629-8600-4269de4a6a41','Jacob Reisz',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('634a2033-ad1d-4a5a-9ead-b63ee6535a44','Ariel',NULL),
 	 ('0c4d3fe5-5a05-47a2-856b-af95b8ba1812','-',NULL),
 	 ('d8dbed22-556d-4c6d-b024-c01a60edc8b3','Captain Universe',NULL),
@@ -5512,7 +5512,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('3b50d798-bb5e-40a4-9c7d-dbf4967ead38','Stars',NULL),
 	 ('274da7f9-386e-4930-ab50-811e2d3b98b1','Man of Steel',NULL),
 	 ('a8c3263e-dd7b-43d2-b62f-9200dc779fc2','Weather Witch',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('906871fa-27c6-4a9e-8477-7d998de5d45f','Bobby; Black Rook',NULL),
 	 ('dc853c0b-b952-4b41-8cc8-2d363e6521eb','V',NULL),
 	 ('4e65878c-8f4a-4528-ab3d-a92e5278ff14','Le Bon Gumbo',NULL),
@@ -5523,7 +5523,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('cf02faaf-bcdd-4e5f-bacf-bc34cba910e5','Bluebelle',NULL),
 	 ('1b8ae610-a9c3-40c8-b0bb-de858b850267','Dr. McCoy',NULL),
 	 ('db6383c7-4e62-444c-b2d7-0f2178062a83','Salad-head',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('0ec29a71-db4c-4835-bdf3-6f89b5301998','The Beyond Realm',NULL),
 	 ('48e14622-61a8-48c8-be91-d1b1f6c36d44','Death Flash',NULL),
 	 ('a7f569d6-50e8-43e2-9ff5-15e0ea6aec3e','Black Leopard',NULL),
@@ -5534,7 +5534,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('5f1ceb05-cec0-4fc0-a505-db8a0aa29d29','Nancy Forrester',NULL),
 	 ('6e258407-18c3-4da5-9ee6-a53c60f8bfb2','Nathan Winters',NULL),
 	 ('266b454d-6374-46b1-9f9a-8c7e4be3b3a1','Britannic',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('a351d6de-309a-4629-aeb6-bf8993a64eae','The Big Red Cheese',NULL),
 	 ('d5faab6b-db16-4634-be7a-2f926a0364b6','Daredevil',NULL),
 	 ('647f7fc2-397e-4dfc-a2e8-2b4a0f57a2e5','pitcher',NULL),
@@ -5545,7 +5545,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('ca943a9e-18c4-4554-b9bf-d8b8bac53f89','Vivian Lewis',NULL),
 	 ('9fea059a-df98-4c16-ab2a-2ab5942c061e','Dr. Ashley Kafka',NULL),
 	 ('0e8770b7-9b2d-4862-bfd1-6f9b5f40d79f','Dr. Robert Bruce Banner',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('6cdcee35-8a9a-484b-b306-27b3fb8d8832','Omegadrome',NULL),
 	 ('a6d14e35-0f86-401f-8495-4a5986a56d81','Exquisite Elemental',NULL),
 	 ('8521df98-d691-483c-8b7f-18e415ebbeb8','Garrison Kane',NULL),
@@ -5556,7 +5556,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('5aa34efd-17cc-4fef-ab1f-0442c0a8fb5b','Batman',NULL),
 	 ('86dbf538-1bb6-4d70-af5e-15e067847637','Kimberly Schau',NULL),
 	 ('be11c71c-760c-40a3-b762-1cd7fb2a7941','Peter Parker',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('ce28c5a0-5cb7-45ea-a908-5e731ba80221','Doctor Octopus',NULL),
 	 ('6b74a055-950d-4ec3-a5b8-dd4fefc174d4','Master of the Mystic Arts',NULL),
 	 ('dd5d6c2b-97cb-47a3-b281-075f9d5491ea','-',NULL),
@@ -5567,7 +5567,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('418937de-e469-4e89-9043-1a117e2c28d1','Sam Wilson',NULL),
 	 ('c37a23d3-4420-48c1-921e-e51d35e77e30','Flamehead',NULL),
 	 ('b2774e10-6cb9-46ee-a272-8469db74a345','-',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('a5982a52-2b4e-4323-8c9e-58eaff6000a2','The Nuclear Man',NULL),
 	 ('7c5c7fe6-9692-4138-9e02-7b8f8e88768c','-',NULL),
 	 ('ea7e45c0-11b4-4137-85a6-5969af856fbf','Lyne',NULL),
@@ -5578,7 +5578,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('7c4d1936-a41d-4b03-a174-7a1abaa0753b','the Marksman',NULL),
 	 ('87fc2ca2-6aae-499d-ad45-e8bb86bbfd62','The Defender of Olympus',NULL),
 	 ('ad3e7028-36b4-4bca-902a-4d1e465ddae0','Morrie',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('ed0a4b2a-1419-4b37-8478-04a16ac43562','Hit Girl',NULL),
 	 ('a342c19f-7b6a-40ee-8a3e-05cff52f395a','Jade Jaws',NULL),
 	 ('fdce27ce-0b33-4295-bee9-bbbfeebabb2c','Lasher',NULL),
@@ -5589,7 +5589,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('87bf1981-c34f-412d-90e4-484259dcc355','Superhuman Penitentiary Prisoner 344678',NULL),
 	 ('51db8706-e29b-414a-8c46-418d2a9c8017','Mr. J',NULL),
 	 ('3aecea5d-43ec-466d-ba9c-ff74a79767fe','-',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('04ea582c-5bca-49b4-a059-4b15fc145974','Master of Men',NULL),
 	 ('e2e02dfc-3230-4a15-9564-95e780f4477c','Kevin 11,000',NULL),
 	 ('83644aa7-bcaf-4d7a-b302-c4291fe31838','An Empty Shell',NULL),
@@ -5600,7 +5600,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('3eec51c2-1e4a-4157-b242-4b248cbfe8ca','Splinter Jr.',NULL),
 	 ('c2c1fb51-fda9-4143-ab85-a4a1e39ded55','Tyfon',NULL),
 	 ('cad2a177-abc2-4183-b694-f1d84401058b','Master Frag',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('77e1d6c6-1f5b-404b-869a-7ee7336855ce','Carl Lucas',NULL),
 	 ('ae8fca97-f4cc-469e-82a6-9a6636e8626c','Hero for Hire',NULL),
 	 ('04755c24-6083-451c-a558-087d00816931','Kirk Langstrom',NULL),
@@ -5611,7 +5611,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('11fa7a4f-7179-414f-aeb8-f707866fdda0','Queen Medusa',NULL),
 	 ('b72810a0-a489-4ace-bec8-51acee0044bd','Satan',NULL),
 	 ('bc62a40d-d77d-4c55-98f1-c8f08ac20d60','the Friend',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('1095077e-3efe-4c1f-a162-ab0b78ac60e5','Meltdown',NULL),
 	 ('5333573d-5acd-4c2f-b5d7-1ab0b4ee8f37','Sinister',NULL),
 	 ('f0392a79-7637-4a47-b1ac-1d140444878c','Nosferatu',NULL),
@@ -5622,7 +5622,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('2c88a112-030c-426f-92bb-a5d4742ac0e7','Mallory Brickman',NULL),
 	 ('94a36878-618a-4582-b574-feda536f5cc0','Rex',NULL),
 	 ('05e5ca40-af45-4acd-8668-13e5b2d02fb9','-',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('649ee609-d14d-42ba-9c90-c87d0ae5d34d','-',NULL),
 	 ('9e51388f-243f-4775-8d01-25fbd619a910','Kymaera',NULL),
 	 ('fb55ee5c-6ec2-4d54-91fb-5c81a50e8b7a','Human Rocket',NULL),
@@ -5633,7 +5633,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('1a6f8660-9638-47e3-9ae7-6796cf7b92d6','Magnetrix',NULL),
 	 ('8ec1dd8c-fb5c-4ffa-8bbc-577d827c63f2','-',NULL),
 	 ('6667f5e1-6b60-4bab-8394-2679167642ff','Chaloner',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('471e3aa5-fb4b-4bd3-a6ea-820e8fed02ff','Francis Stronghold',NULL),
 	 ('49eafecb-9f87-47f0-afb0-362e5e3f769e','Betsy',NULL),
 	 ('17fa460d-6988-4a3f-a13e-1e102393e8ad','Pietro Frank',NULL),
@@ -5644,7 +5644,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('0902f279-3810-4f05-bb6b-098033e95bae','"Reddy"',NULL),
 	 ('d7973151-6d64-4d3c-84cc-af7d10e8ec47','Tod March',NULL),
 	 ('73ae3a3f-24fb-40b1-a14e-a79a16075817','Renegade',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('1f2ddfb1-db13-455d-8537-5af94c9343bb','Batman',NULL),
 	 ('bc41cd1e-94b6-4d4f-8705-d8d942c59585','Robin Hood',NULL),
 	 ('dfabe827-84cf-41b3-b33d-a6e78291eaec','Batman',NULL),
@@ -5655,7 +5655,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('2c105f11-a2e6-4ad6-9f4e-04d546a8caaa','Golden Guardian of Good',NULL),
 	 ('13ca0247-3e8f-4421-b964-f5448f682344','Cypher',NULL),
 	 ('9ce80513-9418-408a-978b-57443ddd503e','Mrs. Chambers',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('b03430e0-17c3-49a8-bbb2-c4739aa14491','-',NULL),
 	 ('828c890d-13ae-43dd-a052-f8c0f630e78d','White Lantern',NULL),
 	 ('af5cdfda-3525-49be-b58e-3b8d59794985','Hellspawn',NULL),
@@ -5666,7 +5666,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('89fd7903-669c-4d7a-b627-98c6b9d80195','Henry Johnson',NULL),
 	 ('d2f6b69d-c1e5-49f3-81fa-3c538c032837','Windrider',NULL),
 	 ('5513cbd1-e487-4352-a5d5-8d406e12ed2d','Robert DaCosta',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('2d6cac18-78a9-42dc-af75-b7e011313792','Green Man',NULL),
 	 ('74e2b923-6574-4588-b0f7-e31b58714eba','the Man of Tomorrow',NULL),
 	 ('abb33505-1c18-46c5-b55f-8e16abd6dc0b','T-1001',NULL),
@@ -5677,7 +5677,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('51cf718f-999a-4b8f-887c-1fafcd74d3e8','Bird-Boy',NULL),
 	 ('04980beb-ad2c-4348-824e-9d36d9cbd6b9','Felicity Harmon',NULL),
 	 ('0ff59e95-9b57-4c7a-abc3-6ae589c0078d','Yellow Lantern',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('bb79fa68-ef62-4abb-934b-b4488af9611d','Coal Tiger',NULL),
 	 ('71d57c0d-2cb4-4e2e-87d0-b81513e7db0c','Nancy Rushman',NULL),
 	 ('ebdc67fe-3602-4e73-add6-7e2958a0fa11','Joe Manfredi',NULL),
@@ -5688,7 +5688,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('23caa1d0-a342-4125-a995-422c52642d7f','Nathan Dayspring Summers',NULL),
 	 ('8674957b-2a6b-4908-99cb-67eceaf57a97','Captain Thunder',NULL),
 	 ('fe4f19af-826f-4ce4-b416-034a328936a7','Buff',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('62ab63ee-2bfe-4bd2-8c01-18b3be0905f1','Sam Guthrie',NULL),
 	 ('6f29ff84-98a3-4ded-8ce9-aab238c1c00b','Jono Hex',NULL),
 	 ('e1a35846-5eb4-427e-850b-67430712dfc0','Priscilla Rich',NULL),
@@ -5699,7 +5699,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('0c998ab4-c7fb-4b80-80fc-85770dc605ad','The Guardian Devil',NULL),
 	 ('091c395f-7552-4d09-a7ae-fc422b8c4caf','-',NULL),
 	 ('b48430a3-189e-4044-a67b-da65185d9659','The Fastest Kid on Earth',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('9b191506-7dbe-4834-b6a6-64951c80041b','Slade Wilson',NULL),
 	 ('badefcd9-fab7-44d0-aacc-ee5c25786739','Dazz',NULL),
 	 ('de7afbab-4100-4cf4-a836-709c2744ae2a','Corpus',NULL),
@@ -5710,7 +5710,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('adcce799-5368-42a8-b36b-421ee4f3ae95','Eater of Souls',NULL),
 	 ('20568153-e5ff-4c20-96cd-187ebc1c89a7','-',NULL),
 	 ('48a388cf-01bb-46a9-bfc1-bfcbff964631','Samantha Wu',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('096efc98-48b7-4759-8c4f-7557ff1d31dd','Hope Eldridge',NULL),
 	 ('913c2273-8c16-4906-aa88-8dc98d84d3c4','-',NULL),
 	 ('b4503d15-4be0-448b-95aa-34e1a809ee7a','Soulsinger',NULL),
@@ -5721,7 +5721,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('84e225cf-dc5f-47cb-be9f-e4a211f7a726','Red',NULL),
 	 ('ef693c2d-c0a8-44c9-aba5-4f72b9ff793c','Goku Son',NULL),
 	 ('0146d225-43b4-4973-bde5-53c9ffc9e7ce','Grodd-Son',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('d2ba9acb-9f85-4470-a826-897ef386473d','"Gobby"',NULL),
 	 ('658fa72a-72c2-42a8-8fdd-6c9604e232e0','Parallax',NULL),
 	 ('ff6f4218-4d41-432a-b99c-b767580f8c2f','Goblin Prince',NULL),
@@ -5732,7 +5732,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('a4f67ae3-29aa-443b-9c25-a2466400729c','Frozen One',NULL),
 	 ('834f721c-bb3b-4bd3-853c-e2a8539d92f1','Hub',NULL),
 	 ('d311e7fc-6302-4f2a-8065-2fe2be2e7e30','Danny Rand',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('8fb13857-27e3-470b-a046-3ca5bb832156','Marvel Girl',NULL),
 	 ('ca81b429-0152-496e-ad92-140a42d86631','-',NULL),
 	 ('d3bba8c9-f6c8-4f55-b81f-1fc4849f19b6','Wraith-Man',NULL),
@@ -5743,7 +5743,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('c77eeef0-f529-4bf9-9b0b-30861a118ff6','the Grim Hunter',NULL),
 	 ('b7abc35e-ff90-4ab8-977e-397248ad9cfb','Lucas',NULL),
 	 ('2db55d68-5d73-482f-a541-ecf8e150b289','Ana Cortes',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('c7992ba5-e59e-4c9b-98ed-368a350eae64','-',NULL),
 	 ('b12795f6-ec49-4d58-95d0-e0604b3eceb5','Lightning Boy',NULL),
 	 ('c37229e9-1b4e-47dd-b30c-4fc172ad38d5','-',NULL),
@@ -5754,7 +5754,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('547548a8-4e2c-4993-a573-48dd5e5168cb','Mister Machine.Machine Man',NULL),
 	 ('d3591b25-6dc3-487f-bb77-4be38a298cb6','Jedi',NULL),
 	 ('9badb798-561b-4bba-9548-264a3c78cb25','Sierra 117',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('dfbe0bd5-f458-4df1-9f4f-bcb35689ade0','Willow',NULL),
 	 ('c0ebd604-7e85-4a6a-8fcf-22a3ab87bfe5','-',NULL),
 	 ('211a1a7d-d5fc-48e7-8c17-c1dca747e470','-',NULL),
@@ -5765,7 +5765,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('6d2d8fdd-b272-4ac2-b4c0-13dec2a6155e','Apocalypse',NULL),
 	 ('3ca18034-8f79-47a6-b2b4-8d3483ce9013','Jake Lockley',NULL),
 	 ('488df01a-cbe0-4c4b-9f99-e09678445d9f','-',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('5ffb08f5-78b5-4b59-a272-f940b7730cff','Gerdes',NULL),
 	 ('23ac6dd0-952f-4b50-8958-e0c191a7ce05','Joe Pierre',NULL),
 	 ('46b309ab-609a-42d6-9000-0dc3fa501504','Sub-Mariner',NULL),
@@ -5776,7 +5776,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('bbf6ad7a-153d-4bee-88f8-7e8f4edd5bed','Ernie McDunnagh',NULL),
 	 ('cf0dac98-ad28-425f-a2b5-876be8622535','Redd Dayspring',NULL),
 	 ('3680cfe7-04a1-4a61-90c5-97d1cb8fa9bf','Pestilence',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('37f4085f-cca2-406d-b902-e276d3163396','Hunters',NULL),
 	 ('60d05586-c080-4161-90c3-5f16a89b5863','Prof',NULL),
 	 ('bbcfd321-9644-4f33-a91f-606939e24146','Castigo',NULL),
@@ -5787,7 +5787,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('7752874a-5a0b-4f90-b209-fd62cead5fd9','Arsenal',NULL),
 	 ('d4e6ead0-e337-4d62-b232-c82e5eafc0cf','Time Drake',NULL),
 	 ('e1043bd2-3b83-401b-9eb6-93cdc63e2bd2','Tornado Tyrant of Rann',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('637bf47f-d013-493d-b5df-c4e2051200f6','Alex O''Hirn',NULL),
 	 ('c8e011d4-85be-4d3b-8edb-9742ab202791','The Man',NULL),
 	 ('c1d9ad9a-81af-4be8-8edb-87b65f3b9302','Nightwing',NULL),
@@ -5798,7 +5798,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('b295cf3f-a969-4926-8f85-5c5030ebafa8','Miss Smith',NULL),
 	 ('5baa14bf-3038-4597-b330-67b36deb554d','-',NULL),
 	 ('a3e4c340-450e-47fa-af7d-a5f9513bb9e1','-',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('6b50ad47-f3a1-4d42-a1db-8bed2e88a730','Wanda Magnus',NULL),
 	 ('59f8eba6-35e1-4fcb-8d1e-7f2f9207372d','Scout',NULL),
 	 ('fa2c229e-d105-49dd-8f6d-5dcb99c61572','Karma',NULL),
@@ -5809,7 +5809,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('2e85893b-dcb7-43a2-97d0-ba7494b6aafa','Ricochet',NULL),
 	 ('7c98d732-0bbb-49e0-b683-5d5285f701fb','Dark Angel',NULL),
 	 ('f02289f3-3d28-46b1-ba44-5fbb32d5ad46','Star',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('6d3c14a5-e81b-4beb-9159-e26f8c39cf6a','Queen Ororo',NULL),
 	 ('c724bd79-6fbd-4d06-b88a-eb06c234e478','Big Blue',NULL),
 	 ('630ad276-89df-4f9c-8358-e94bc492d26d','-',NULL),
@@ -5820,7 +5820,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('26b5a5ad-020d-495f-8b3e-fcef6e8fa46e','Thor Lass',NULL),
 	 ('df343480-505d-45c9-8222-b491bef73317','Greer Sorenson',NULL),
 	 ('e39e082f-9726-460c-b67c-3013754ecc59','Thor',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('19e5808e-6d24-42cd-a7c2-3e01f1ee8f29','Oracle',NULL),
 	 ('bcc721e4-e82d-4a5c-9084-f1225ad122bd','Barda',NULL),
 	 ('76d4175c-705c-43ea-90b8-b7632d9d83ea','Golden Armed Boy',NULL),
@@ -5831,7 +5831,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('cb2f6ed3-dd25-4360-930b-cbce7fcaf479','Barry Allen',NULL),
 	 ('a660c11f-a9a1-4658-984c-b03c86b8290b','The Man Without Fear',NULL),
 	 ('bacd741c-fe21-4d02-a243-0b6f40e370e5','"Oktober"',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('2f73df6c-8778-4a1a-bf34-3a501195f341','-',NULL),
 	 ('1b2c1716-185a-4c6b-893c-6f7cc784487a','Lemuel Halcon',NULL),
 	 ('2530cff2-d268-4b7d-8eb8-7abfdc2cd20e','Mand''alor',NULL),
@@ -5842,7 +5842,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('5c75a9f1-3536-44e4-8334-1179bbc6a82b','Benjamin Poindexter',NULL),
 	 ('01ae7ed4-2e3f-4076-b29e-950ada11d624','The Slayer',NULL),
 	 ('e58a7c12-81b7-44a5-8baf-abdfe86e5cd5','The Buffster',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('2d23795d-a6d0-423c-929d-095530cf021c','CM3',NULL),
 	 ('b0ed02cc-87fc-498b-a14b-92f7185a7930','Elva Barr',NULL),
 	 ('6de7b469-ba46-41f2-bdae-4cd6c09e6e05','Decibel',NULL),
@@ -5853,7 +5853,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('d49b75f8-bc84-4482-a08e-b12dba8da0db','Domino',NULL),
 	 ('a3c9b91a-84c8-4c27-a80a-5bfe1c051d06','Slim',NULL),
 	 ('4bbc8144-c4d0-4a5c-9663-d5c98e0485b4','The Man Without Fear',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('3b8c65e1-0bb3-4ed5-8675-4521870bac55','Songbird',NULL),
 	 ('792d4705-cef1-4127-9f1d-4e582c04db31','Rhodes',NULL),
 	 ('c527ca99-46b6-43a6-a8c8-750660877956','The Master',NULL),
@@ -5864,7 +5864,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('52ed2a61-78c6-42b1-8910-277e95b431e3','Alvin Burgson; Molder',NULL),
 	 ('fc72a2fd-abd2-45b5-a8ea-85d557bdc850','Dreadpool',NULL),
 	 ('d988a18a-7b98-44f2-8123-69ce8e4b2b49','La Espirita',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('7a07da4b-b8fd-451f-84a8-0dac3674aeb8','Katie',NULL),
 	 ('7cb33b25-3acd-4d0e-b0a2-cc73e664c897','Cajun',NULL),
 	 ('baac0f86-312d-4b06-b03b-595b39975628','-',NULL),
@@ -5875,7 +5875,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('87f032ad-e636-4fd1-8140-311970c6ce37','Captain Universe',NULL),
 	 ('85883129-c1b9-4dda-89c4-93a68c166e51','Spectre',NULL),
 	 ('99d12a69-fbc4-4659-91c4-167ca69f563f','ruler of all the shades',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('6c1f58e8-5a7c-4535-b913-af0a81ba0944','Harleen Quinzel',NULL),
 	 ('290ec05c-da8e-4cad-b7f5-a12f3ae7d9c1','Green Lantern',NULL),
 	 ('e1f31323-0023-4f9e-872b-ae48b77b574e','Harry Cleese',NULL),
@@ -5886,7 +5886,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('f570369f-748c-4f08-8352-ac638645d4cf','Rampage',NULL),
 	 ('e8fd81ce-f868-4060-9c97-fd0dd260c6ff','-',NULL),
 	 ('0efdb3df-5804-4f83-b542-852ffbbad855','Daredevil',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('5d7cb69a-36cb-4958-b8af-9b94864e9241','Spare Parts Man',NULL),
 	 ('316cf321-53c3-4fb6-942c-ce75ff6e0afb','007',NULL),
 	 ('66a939b5-d8f3-459d-baa1-c25d69a4cfb3','Wendy the Good Little Witch',NULL),
@@ -5897,7 +5897,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('062c24f2-8966-435f-a25d-9f76d2593f8b','Blue Totem',NULL),
 	 ('194ee01e-eec4-4a74-b367-f97b8e78c74c','Dark Lantern',NULL),
 	 ('c26a8b7a-531a-4525-a017-716665f7119e','-',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('89630588-18cc-45c3-bb9e-3ce256d8db67','Kevin E. Levin',NULL),
 	 ('86cefb8a-ffa2-4b4b-9e3c-0e897c0789b1','-',NULL),
 	 ('e83e632e-1de4-4272-a4cc-2f0b24f645fa','Cyndi',NULL),
@@ -5908,7 +5908,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('1cc32954-e8d6-43b8-940e-7533d2123349','MACH-II',NULL),
 	 ('2ad2d063-d37f-4617-b61d-28002b0c76fe','Skywolf',NULL),
 	 ('0891d8e3-2adb-4b31-aad4-ad11fa459aed','General Skywalker',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('b58a77b3-7d84-4cea-aac1-c9880411780a','Zhang Tong',NULL),
 	 ('9af146c9-fdcd-4012-b32f-78b3b89e836d','White Pilgrim',NULL),
 	 ('d3d4ac6a-3446-4e47-8962-2e7d3c80014e','Aquawoman',NULL),
@@ -5919,7 +5919,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('b45852ab-063f-4f07-975c-70565d7092cc','MicahSanders500',NULL),
 	 ('b451572a-cdca-4b85-b936-666b7b89620e','Mike Milbury',NULL),
 	 ('f5a1a924-9cf1-487c-977e-4b6210f98c97','Mr Zsasz',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('5a427118-0da8-4889-a58a-bd50a1ab169f','Jason of Sparta',NULL),
 	 ('c9ce72fa-9c01-479a-9566-f9974f68fa98','Barbara Morse-Barton',NULL),
 	 ('dfdcc99d-965b-4557-9e35-14f889080647','Dr. G.W. Falton',NULL),
@@ -5930,7 +5930,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('faf8f85a-1645-46a1-8e24-f7abfab617a7','That Which Shall Survive',NULL),
 	 ('bb0a7af7-0398-4e7f-8175-0f87f6cfc2a2','Oden',NULL),
 	 ('43ac2615-9221-43bc-ad6a-527aae4b70c1','The World''s Smartest Man',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('fd99427d-a3bd-4928-8beb-b2e6f2b1a925','Polarity',NULL),
 	 ('db037479-f0aa-4b5e-a399-62afd4dbb2e6','-',NULL),
 	 ('4496faff-cfa0-4816-b562-79614aee1b7a','Eastman',NULL),
@@ -5941,7 +5941,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('5a2b66e9-77a7-4c35-a42c-8164b220afe1','The Red Mist',NULL),
 	 ('5969358f-acf1-4a62-9d8a-c00c1313787a','The Target',NULL),
 	 ('e0c0fd05-d083-4358-aaad-507385df3186','Arkham Knight',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('51ef6a32-0b3b-4259-800e-ac190ebf63b6','Louis',NULL),
 	 ('5b74d6b7-820e-41bf-9539-9028934b49cb','Damian al Ghul',NULL),
 	 ('aca055fc-6950-4a1b-9d19-22c4a997429e','Dark Lord of Mordor',NULL),
@@ -5952,7 +5952,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('1c974e37-2022-4ba0-88fb-6284e99cfffa','Gypsy Witch',NULL),
 	 ('cf29bb0a-2bde-4cf3-a684-fe9e1f4e01f4','Professor X',NULL),
 	 ('5de32d52-4eeb-4c1b-823a-96ea4d6006d4','Erika Velez',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('0aa2efca-db09-4d27-80e7-f8e9583e0623','Kitty Pryde',NULL),
 	 ('9e62f3e4-34aa-4353-ba3c-642c276f93fb','Daughter of the Volcano God,',NULL),
 	 ('7c251712-ebd0-4ada-a521-53b8ec0e33d9','Theresa Rourke',NULL),
@@ -5963,7 +5963,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('4aaa024e-7f08-449e-9e6f-dc26d3e35eeb','Princess Koriand''r',NULL),
 	 ('4b912f80-3105-43e7-b051-4975480b4aff','Goddess',NULL),
 	 ('b50e3875-58f8-44aa-8e90-0b995d4b3848','Reignfire',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('22d0038b-376f-4fb7-802b-44c0e63080ec','the Metropolis Marvel',NULL),
 	 ('06484b4c-c7a7-4369-b8b2-c89f7698ac77','The Girl of Steel',NULL),
 	 ('b4123884-8de8-493c-ad7a-f4b43b257eb4','Drew O''Grady',NULL),
@@ -5974,7 +5974,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('2d3db7ac-4331-4a59-b729-e680cc804375','Trinity Child',NULL),
 	 ('c5452c88-c23a-432d-a176-081cd4299a39','Zane Taylor',NULL),
 	 ('fca5963a-9dbe-4a12-b778-174986105af8','-',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('55948356-75ea-406d-8c60-c8e8a9f3809f','Thoreta',NULL),
 	 ('1611f2a3-2947-45b3-bec3-d276bca573b8','Vegeta-Sama',NULL),
 	 ('bd503742-9a05-4dfc-8ca1-4c7054f8ca60','Suzy Sherman',NULL),
@@ -5985,7 +5985,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('a7f024b9-df83-4bd2-8042-beb3dfd14867','ERG-1',NULL),
 	 ('96e36cff-8bc5-4670-a15a-4937ee22c4fc',' Wondy',NULL),
 	 ('eca1d33a-7e57-4a74-8324-955dd54a6c65','Death',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('459cdc2e-9d08-4c76-b3f8-6760121aac0e','Mai kethLogan',NULL),
 	 ('8f59c049-3d9f-4fde-9b44-879fce8ef870','Claire Connors',NULL),
 	 ('ced79ba0-c3db-46e6-9a20-289b812e740f','Hammer Girl',NULL),
@@ -5996,7 +5996,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('61675bb3-4fd2-4ebe-a172-d052146fb029','Bejiita no Ouji',NULL),
 	 ('68b8e028-959b-4f78-b545-876cefd2119f','Una',NULL),
 	 ('680bacc8-c69b-4560-a65b-0f57e4569189','Deadpool',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('e69f9c06-e226-4d64-9211-2d32814275af','Mark',NULL),
 	 ('d0837686-35f0-47c8-b6e2-b9a03c4988c5','(in an alternate future) the Magus',NULL),
 	 ('7053a702-133a-4555-a72b-405956c8b323','Princess Diana',NULL),
@@ -6007,7 +6007,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('95f34ee0-3a87-400c-aa07-b7e7d8170b59','-',NULL),
 	 ('01038853-386c-4e83-a54d-572eb0a0d406','Sister Edwina',NULL),
 	 ('93006ff2-0f76-49a7-a760-dfb3c2e552d3','Bejiita',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('fd23f09d-ac14-46cb-8a7e-5f048954fa9f','Apollo',NULL),
 	 ('cc9c68ac-c477-473a-bcf3-697bc745b364','Ultra-Girl',NULL),
 	 ('f902ec09-ae1c-4892-b72d-3b10e9141dc5','-',NULL),
@@ -6018,7 +6018,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('ab79a35f-f71c-427d-99ef-399603c26307','-',NULL),
 	 ('733a8fb0-d1fc-4c71-956c-3321cd1e8589','Helen Troy',NULL),
 	 ('69bcb670-5ef7-4e63-b94b-d3e14bccb004','Weapon X',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('f0c63f3a-1b6d-4084-86ec-8d13ca9e018a','Anti-Venom',NULL),
 	 ('98694d3a-940b-475e-9674-4f52b2eaa288','Vegita',NULL),
 	 ('2c114a2a-491a-407f-a1a0-02bef9b835bd','Crimson Cowl',NULL),
@@ -6029,7 +6029,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('b422c121-d7ff-4130-8ef1-0ceaa726d23c','-',NULL),
 	 ('482f5e0c-32b5-4ba2-96a1-6d9941f64e95','Laura Logan',NULL),
 	 ('f35f5415-c382-46a2-953c-877e0f0c7c6c','Wolverine',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('53f33dc6-11a7-494d-9f00-d734fc88a149','Mutate #490',NULL),
 	 ('f1e4ccfa-6545-4364-8c5d-2a57d3b5c362','Emilio Garra',NULL),
 	 ('abbad8c1-8751-473f-825f-c7d3795812b7','Captain Vegeta',NULL),
@@ -6040,7 +6040,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('4e61e050-373f-41be-8f38-847ea0756692','The Amazon Princess',NULL),
 	 ('d8aad97c-5d47-45b5-be96-3a03b26a82fb','Aurgelmir',NULL),
 	 ('7c4e15d6-814e-4e1d-9f85-67b26f71e7a9','Nate the Great',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('c7e9d765-7148-43f4-acc8-0a93a326f7f4','Mutate 9601',NULL),
 	 ('74e9ec55-f7d7-451f-b73b-100a02b77fd5','Mr. Patch',NULL),
 	 ('8a12fea8-2ff0-4082-8d1b-02be0df67231','Majin Vegeta',NULL),
@@ -6051,7 +6051,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('9aad3639-8927-4264-ad47-9d324ca6a6ea','Randall Burroughs',NULL),
 	 ('62d1614e-3ce8-4918-895e-09e8d515bbcf','Cassie Sandsmark',NULL),
 	 ('ae4fcd29-d0a6-41fb-9a16-c0a2c0319254','Bucky',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('005bc2f1-74e3-45bd-bf06-c9bb3fd30502','Experiment X',NULL),
 	 ('1d0aa433-a501-4a31-98a1-2e8220ee6c3e','Ultimate Ultron',NULL),
 	 ('40eee012-de0f-4057-946f-c1cdc24bcfcf','Iron Man',NULL),
@@ -6062,7 +6062,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('02bd75ef-3a0b-43ac-abb2-9759860c6b6d','Peter Richards',NULL),
 	 ('d263a821-a15a-4662-ab34-b2bb84a8cfb0','Invisagirl (InvisaVi)',NULL),
 	 ('0ba2398b-37fd-4d5c-94e1-a8899efaecf3','Atom''x',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('27bbedf3-23f6-47fb-bb6d-200e8f0cb433','Princess of the Amazons',NULL),
 	 ('9b975a60-b392-402a-ab9b-6f236995a6b2','Silk Sister',NULL),
 	 ('7715b718-a884-4114-8698-283fed2325cf','Talon',NULL),
@@ -6073,7 +6073,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('16ed0a77-474f-496f-9916-055a843a0137','Wondie',NULL),
 	 ('a2734bb8-c9ed-4e28-9899-7e539cb890f9','Laura Howlett',NULL),
 	 ('16ef7403-e2cf-4a06-b22c-c16b90e73f1c','Weapon Ten',NULL);
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('3e029153-5312-41cb-8109-9e44d0e7f4b0','-',NULL),
 	 ('ebee6224-930e-4cb0-a7fe-be7df9e2a1bc','Lagzia','1e9004b0-d561-4b46-83f9-6adec608fc3d'),
 	 ('3827a9fe-f387-4ea6-8574-a31a22df89b4','Bob','318051a8-a8ea-4fb1-a7fe-56a8250572b2'),
@@ -6084,7 +6084,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('37c1c2cc-b2d5-4297-b0b7-4546e1c724a8','Ravager of Worlds','fa80edc6-9536-4aca-8798-3356e5194a00'),
 	 ('06c241df-b790-44ed-9f9e-0a55106a6545','Maverick','584be343-decb-4c04-883b-7760f0155513'),
 	 ('010328fa-98a7-4a53-a66e-e41c7284b47c','Rick Jones','d8e7c19d-1b47-4f1d-8ee4-82caa21c5177');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('f17a6ff4-44e3-48c0-ae20-3b69f1c5fb88','Langdon Everett Caul','4990361c-6df0-46c7-83bd-758fedce7526'),
 	 ('c3c978a4-3c30-4198-b4c4-4e37986bfd72','Abraham Sapien','4990361c-6df0-46c7-83bd-758fedce7526'),
 	 ('959a25c0-01a9-434c-9d77-b1d28ae746fe','Langdon Caul','4990361c-6df0-46c7-83bd-758fedce7526'),
@@ -6095,7 +6095,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('4277ece8-f6e8-459d-9891-7c98978c560c','Zues','8cbff583-a8e4-4a86-948d-4c533547cf8a'),
 	 ('aa86d85e-8a0e-4dbf-875e-f473e8c696bb','Blacklight','8cbff583-a8e4-4a86-948d-4c533547cf8a'),
 	 ('69545f7e-c647-4d2a-9b06-706ce04e2a8c','Alfred Beagle','314bb52f-86e2-4c5a-9c2a-b7aebfe60c95');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('beec9238-09c3-42c0-9a87-31f619c8817e','-','41e240db-6e96-4453-8d63-a397a9aea604'),
 	 ('a5355ba5-ec79-46a2-b72a-b09b4c88a2bf','Warrior of Two Worlds','c59db1e8-7e78-48d6-a528-78b8bf3e27c3'),
 	 ('7e4cd5d1-42ff-4f9c-8dcf-622307793cb9','Savior of Rann','c59db1e8-7e78-48d6-a528-78b8bf3e27c3'),
@@ -6106,7 +6106,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('cb7ff90d-7067-4f4f-8c4f-9e4d9935a190','Lightningbolt','4cb45203-5a1c-4c91-aebd-c59b7d797762'),
 	 ('8f7c6f13-a29c-44d2-9394-395cddd5424f','Prisoner #24957','4cb45203-5a1c-4c91-aebd-c59b7d797762'),
 	 ('a4633f66-fe54-4f1f-ad1c-6b88bf71e742','-','85cffb9a-eefe-4387-9649-675088d37745');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('3c1d8544-5a40-4fb5-87c5-07a40fa732ed','Takezo Kensei','fcacbf62-a13e-404f-b13f-a572e85e9907'),
 	 ('ace54462-333e-4613-93a7-35d9f0dd9545','Richard Sanders','fcacbf62-a13e-404f-b13f-a572e85e9907'),
 	 ('3667b87d-8a87-408c-8067-608def9fd331','Formerly Death','4583d407-4a19-47c3-9ced-2fc60d8066c4'),
@@ -6117,7 +6117,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('944305b0-137d-4905-a3fa-a0dfe6b28ff0','Goliath','9fb579fd-94e2-443d-8e16-b6da78b31823'),
 	 ('b8b43a97-394f-439c-9496-a12b62b8bcee','Eddie','21efcda1-f520-4fb5-ab95-96ec2eb588be'),
 	 ('3985a793-58a5-4a20-8632-3fd3b4797dea','Avenging Angel','e3cdae94-c6e7-470b-9aa4-540d3b19a5c0');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('5e585316-864e-4774-aa95-0e1a220ef200','-','dae61e39-99c0-4894-8f9c-ac5d796bef13'),
 	 ('66334531-737b-4901-a4f0-a99d9261bb22','The Mighty Mite','dae7e1cf-a8a4-4547-8e7d-f947d8a25a51'),
 	 ('56ee997f-f0d8-4fa2-b26b-233578dc1c54','Gadreel','84bb8199-a658-4dba-8808-9821c2f87af6'),
@@ -6128,7 +6128,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('a7e81d3e-bfc5-46c2-b586-60e651b78e3c','Barda','67641bab-b778-40de-a22f-001ba7262e6d'),
 	 ('842443d5-e4b4-4050-adcc-3b0b21ff40e9','-','81595937-b74b-4c3b-90c7-ae7f48e2e738'),
 	 ('71666f3b-e877-46ae-922e-3373ee064adb','Bird-Boy','b4798676-8881-4664-b922-1460ac3a09e6');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('e28da6b6-5367-4c63-ad33-8341fa925b31','Barry Allen','f6ff7906-1827-406c-bfc3-13bbf0d7de62'),
 	 ('58b071a1-47b9-47d9-a316-5d2c5e442ac5','Gann Josin','5004d6a8-2c33-4b9a-8275-10fdeed2fc97'),
 	 ('f9e8146c-52a8-47d9-a627-f59b8132b8dc','Yellow Lantern','8291fe44-b0de-4463-a9ae-0bef9a6acf39'),
@@ -6139,7 +6139,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('214a6719-fc44-4bfc-9826-1de1031e6ef5','Jack-In-The-Box','f9f2b622-ad4c-423b-b25b-4eb9aeb22480'),
 	 ('9db0ddc4-982f-4d9c-9f7c-44e0c9c8367a','B','80d36f6e-4f0b-4327-bef5-4d201061829a'),
 	 ('1520bdf6-84fa-4d1c-a146-47d2cf37d222','-','6d1d0586-fb63-470b-829f-160936e6dec8');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('45e1084b-680e-48de-8c6d-9202f1301e94','-','b9c4dbd9-a6b5-4268-bf01-74e7f79cddca'),
 	 ('7845ea79-1976-45d8-ae72-53e211902ea3','Punisher','c4f7726d-9e96-4d28-971b-6e94f4af1942'),
 	 ('64ec657c-7341-4b6c-bd4e-b90ea8036993','Merlinson','e52b8a9c-64af-410d-b9fd-2bc7bf3e994e'),
@@ -6150,7 +6150,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('ac2771aa-b5a2-4705-8f1f-7070c62420e4','The Proletarian','0b820e60-4f75-462f-acb3-f906bb710e38'),
 	 ('a4fe93d2-362e-4999-acdd-9f5d1300c3ed','Domino','c6525d03-5f5d-4b6e-90a1-fa45dcf029c2'),
 	 ('49b51678-2b33-470c-b12c-cf4e3ad90085','Cyberion Technis','7bc33789-a57d-49c7-913a-df9b5bf0758e');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('26c4e74a-a5cf-4f5b-9a3b-61ee8a4442f1','Fearless Leader','40292edf-d7d7-4c11-bc05-715270ffb90d'),
 	 ('ded0250e-bac6-4cfd-8b3c-9bc175f4aad8','Laurent LeVasseur','bcc88fbe-8fad-4297-9ef8-ba01f37586d9'),
 	 ('16a083c5-2b51-42a7-b6a6-d9f6d8bb5975','Hornhead','bcc88fbe-8fad-4297-9ef8-ba01f37586d9'),
@@ -6161,7 +6161,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('9aa34574-8226-402a-b32d-a7219e2909de','Wade Wilson','f3274b16-7954-44a2-ae92-1f93e418cd19'),
 	 ('b7b4d9c9-82cf-4a29-a906-2f14705ce3a6','Spider-Doppelganger','bc0f1ce5-cdab-45e0-a363-a90e4ebebf1a'),
 	 ('369d8031-18f7-4514-8d22-a4b0bbc70809','Flyx','c7e7fd02-a185-44ca-9611-061b15c4a48a');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('038ac690-5801-4540-b753-4c834c7ed9a7','Mrs Incredible','7d8009dc-d7f4-403f-963f-54a4aac5f29d'),
 	 ('14df1212-1528-49ec-97d8-285a9b946e1d','Sam Wilson','76ebf6db-28dc-423b-837c-93a72d66551a'),
 	 ('c9a4b303-b4d4-4723-b20f-c616a6c1d976','Katie','5faa76a6-c44f-4ca8-af5e-552150120d93'),
@@ -6172,7 +6172,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('35665024-aa6d-4ec7-b514-b82393c2f8ce','-','419ed34b-4a55-4d41-86d3-035e92720723'),
 	 ('fda83b89-8377-4964-b06c-fe3589bd4fad','Praetor','294dbc32-1182-485f-aa2f-1882da2b8ca0'),
 	 ('cd07c80f-0a66-4e40-adba-3a6cf3329b21','-','966009de-5c7f-47d5-bcf8-5e84cd731a72');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('decfa165-028d-4a48-863a-5e1e7ab69149','Gigantis','280946bb-103f-4b8d-84a9-c5d102fad69b'),
 	 ('d29bf971-81d7-406d-a55b-66546ffcc00d','Ultimate Defender','be17222c-aec4-44df-a630-e3be2260e9ce'),
 	 ('176b0edc-2994-46bd-9d3b-397d9861cc1f','King Grodd','46ccdea3-1842-4c29-851e-70ef0725c5de'),
@@ -6183,7 +6183,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('1526508c-9422-457a-b02d-c80150c69062','Golden Archer','03add159-2474-4c7d-a339-e1cb469886fd'),
 	 ('ee5b2858-f28e-44c9-8cf3-c65a43ef39d3','Mechano','9d38c6ec-42c2-4fb2-9fc4-9cf7b6f62717'),
 	 ('a88519d3-6609-41d5-a568-f54631ffbfa5','Terror of Brooklyn','63e3690e-59c5-4622-b645-4ab38901e773');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('531a655d-938b-47e9-a8dc-86579cfd3975','Prince of Power','40dbc2a6-1c45-4df5-832a-65da66e57492'),
 	 ('5281f730-06c3-4c8e-857f-95bebba70a03','Little Girl','abb08bec-9c1e-4d7e-94b1-aa26c8ba2213'),
 	 ('70f85b1c-b3d0-4406-9b6c-67a2e5d040b4','Daredevil','e04f4f79-6e00-4d03-ad40-fc9cffc499ed'),
@@ -6194,7 +6194,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('48f4a5c8-51f0-4b7a-ace2-9debf17f65f8','The Dead Man','8eb56483-6def-4e40-ba35-287f834cb496'),
 	 ('9fabef16-b01b-48c6-af72-18ef1d18dadc','Kestrel','a5cebabf-6b0d-416d-b273-24cfb370d3a6'),
 	 ('81da8d3b-f4bd-45e7-b954-d8181abceb7b','Rama-Tut','c9e2758f-8c91-4487-bb1e-121955e9d440');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('d937804a-45a0-4e2e-9a6a-b78b220c4f9b','Osmosian','7aa97b6b-0c74-4a6f-9f70-b1bc2386ab35'),
 	 ('878adc9d-2e83-4e71-9586-8dc2c924a963','-','84d74aaf-a13e-4dd1-abb1-5fb724d2c0ca'),
 	 ('daf4d4be-c165-48e7-9eec-3c596f5fba7f','-','de35235d-aa6c-4742-ac92-4fa083f12e68'),
@@ -6205,7 +6205,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('58d3243a-6a00-4909-8300-89f863c0eb97','Loren Olsen','0bb65873-52d4-4271-9c37-78df8eb056bb'),
 	 ('fc46cc4f-8dad-4900-8c37-1b2bf6d49dd7','Mother Of Existence','2bc2a4f6-c5dd-4a13-ad30-e6a1677f9041'),
 	 ('294f9186-b738-41f3-a99b-7b5379b3580a','MACH-III','f9db6b61-c905-49da-8090-39b2143c697d');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('3ad1adc5-1b7e-49e0-a79f-5b6c4b725257','formerly Phoenix','8b92c6de-1b7e-4378-a3ec-089ebec68837'),
 	 ('bf61c375-fee6-40f7-b158-de1aa5629008','Superboy','57f87727-42f1-4251-9488-3d34040ab6da'),
 	 ('332a775b-3485-4a65-8f21-097fb646af75','many others','5549eed5-6e35-4514-b51e-737ac30ddb49'),
@@ -6216,7 +6216,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('1799fa79-8d87-41d2-9c72-3b9007d2f2ea','Edmond Atkinson','c47ea4f0-05b8-422d-8b6b-216d89d6102a'),
 	 ('24806432-0c97-43fa-93ef-8ef3a773a730','Joe Pierre','aac4ccba-2a9b-4280-a0bd-72dbb4b26b59'),
 	 ('6be63070-c1b9-403f-b50c-d0f81515684b','The Mystery in the Mask','280498d1-a2e1-4dae-a68b-f2ea348cc343');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('e3788db6-fc1e-4dd0-9e9d-642da18ebe34','The Caped Crusader','37c621a8-b2a1-45f6-8e85-2bc8f6804d04'),
 	 ('b5191d15-4a35-464e-bb93-448305259d17','Frances Hyatt','7f30e84f-afe3-4804-9b13-39321d182983'),
 	 ('844fa0d4-5ade-4083-b59b-1411a2b0adc0','Harbard','a44cd430-cced-4b9c-b34e-2d95b9d54621'),
@@ -6227,7 +6227,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('003f07b3-b497-457b-9a0c-50053559d1c0','Big Nothing','c9e60d7b-fdf1-41eb-93c6-0a492c2f6772'),
 	 ('415fb228-8152-41fd-82b3-b3b4734d1b37','Johnny Tower','c9e60d7b-fdf1-41eb-93c6-0a492c2f6772'),
 	 ('273b31eb-9128-4f4f-8fb0-fd657159d81a','Robin','a1d0771d-4d2f-4f46-b091-ed96af8dbc52');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('163bf41d-0a88-407e-afea-f57de9a9b092','-','915c2dbc-dc76-48e6-91a5-5ead079d5dba'),
 	 ('e5d1def1-5bd9-4661-afa2-ba7e817c8256','Tod March','026db347-9036-47fe-ba0f-8195d45af2cb'),
 	 ('0984351a-d22a-4c0f-9c2a-c712b3b2bfc8','Thunderbolt','86484001-414d-4fda-98b0-67de0f064718'),
@@ -6238,7 +6238,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('105b8bae-dc9c-43b4-b689-57874baa1c6a','The Eternal One','18586955-d02f-46d8-a00b-e43196771ab3'),
 	 ('ebe00ca4-fd2f-43f2-a489-9d66bb4363d5','Angel','df3e8a07-cc35-419d-aafa-aebbdebd064c'),
 	 ('5058135f-c451-4178-9820-1eee2294c2c9','Mental Man','50a9820b-8178-47bc-be28-235e41edffd6');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('c98fd1da-e045-44e8-babd-bb9ee8095d96','Dark Angel','e3cdae94-c6e7-470b-9aa4-540d3b19a5c0'),
 	 ('9ad032ec-455e-480b-a061-a23bb664252c','Warhawk','a9944ade-d58b-4dc1-a731-cdb83b8fd174'),
 	 ('1247b8b7-0f6c-445a-9eb3-246070ee8f34','Semihazah','84bb8199-a658-4dba-8808-9821c2f87af6'),
@@ -6249,7 +6249,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('a886324e-907e-4943-ba25-7237d7238127','Goblyn King','9d4328a3-e8c5-4735-882a-c104f0511eb4'),
 	 ('6b8d2d0d-625a-4c25-b5ad-832d8abe9847','the Strongest Woman in the World','67641bab-b778-40de-a22f-001ba7262e6d'),
 	 ('dfe4a930-62e7-4b94-8da8-01420347b714','Archbishop','d21afbb9-29de-4300-8de0-e2c5c0666165');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('0319dfe1-719e-4717-8cf0-17358f2d6f5f','-','e4ed82d8-ca49-41ed-a799-2b5bd91e74bb'),
 	 ('3185e809-0052-4d29-a347-1cb9dc0f40b4','Flashback','f6ff7906-1827-406c-bfc3-13bbf0d7de62'),
 	 ('059a9537-deb6-4919-951e-3c557e862542','Eobar Garrington','5004d6a8-2c33-4b9a-8275-10fdeed2fc97'),
@@ -6260,7 +6260,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('e6fe7a50-bad5-4a9f-b987-d4203c77659d','Ebon Flame','2cd105e4-5fa2-4d30-981e-2bc6d9f8b1ba'),
 	 ('e16e106c-4874-4352-954b-727d663dbcce','Gemini','f9f2b622-ad4c-423b-b25b-4eb9aeb22480'),
 	 ('83da1dad-66e9-43ec-bf0b-8058a13c7dfe','The Fly','13064042-c9cf-4fc6-8c9f-8fddf92f26b3');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('287e7624-f77a-431c-9d2c-777b299d949b','Buff','80d36f6e-4f0b-4327-bef5-4d201061829a'),
 	 ('f3261535-776f-416b-9888-9b42419766f7','The Traveller','f261328d-8e22-422e-b44b-9da1c6b7b78f'),
 	 ('daf050ec-2490-4d61-a513-6b3b54191953','Sam Guthrie','73e6923d-91ea-4737-9ae0-414854566361'),
@@ -6271,7 +6271,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('b0606f2b-6997-4129-8976-f97fc893c17a','Decibel','2124ccd6-9458-4440-aaf3-ee86a04ca9d4'),
 	 ('932c2421-8f95-4b92-b2ce-03e553bb147c','J. Jonah Jameson','fa81f794-bf47-4c48-ac07-7202140f5a53'),
 	 ('7d2e548d-9752-4e04-802e-7766c8c68bc7','Priscilla Rich','de1f6c58-e67c-4b9c-a695-d9b30a322904');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('efcbc135-1fa4-4c1c-894e-ddb74af99cfc','-','205f9e8d-3736-44ba-915a-7de135669f18'),
 	 ('f8894ffb-06ec-430b-ac83-cf5f21ea32f1','Nurse Veronica','c6525d03-5f5d-4b6e-90a1-fa45dcf029c2'),
 	 ('d3773b85-4e56-4db7-bf46-c18b43fe1775','Marguerite','c6525d03-5f5d-4b6e-90a1-fa45dcf029c2'),
@@ -6282,7 +6282,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('05d986a1-6093-41a0-90a7-7b88dce7f3b7','Deathstroke the Terminator','7ab1b572-7c46-4b58-8337-153f415b22bd'),
 	 ('1308a91d-d177-4acf-b09a-342088648200','Doctor Octopus','8d026abb-efe7-47fe-b646-0c0516cfeecb'),
 	 ('0ed5a802-a873-4e28-9062-afface33e6c4','Tamara Winter','e0a303c8-2202-43af-bc45-d1349e2523a3');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('4d63f7ac-0db7-4b58-acfd-3d07a08d297c','Hobgoblin','f3274b16-7954-44a2-ae92-1f93e418cd19'),
 	 ('c8606ca8-7887-41c4-8b91-bb82340553d2','Lord of Chaos','c7e7fd02-a185-44ca-9611-061b15c4a48a'),
 	 ('d564df0e-0dc7-46c7-82bb-e6743402001e','Erynys (evil self)','b6795d99-4d20-446e-9950-6bfcc82fc0ff'),
@@ -6293,7 +6293,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('b8c50a55-7e65-4b95-a373-dd95a1fb7ab9','Nephut-Sha','b94fca56-a9b5-4b85-9566-502e05abc0d3'),
 	 ('dfd9b2a1-192a-4f1f-aca3-0f1066571661','The Emerald Archer','60f2e4bf-703e-4556-8c1f-beda69ff3590'),
 	 ('2aac6690-6560-47e8-b539-fae15e194f0f','Director Osborn','a2617065-6e2f-4c94-ab07-7a8b3d514b0e');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('19b896e9-fa98-494c-bcec-bf84053d1e7d','Green Lantern','f1b24a6b-b48e-4a89-a18a-1e3bc140b6df'),
 	 ('16bc6a33-74a9-4efe-ae64-3cdf96b833f8','-','820bf527-79a6-4651-8bef-577046abedbf'),
 	 ('4bb59b5c-e6bc-448f-aa39-2bc70bb1c59b','Triwizard Champion','5816476a-d36e-4cef-a3ed-bac5c576245a'),
@@ -6304,7 +6304,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('b24ec29d-74fc-404f-a59e-527389482fcb','Batgirl','8f2ae4d4-b3c7-4127-a8d0-ecb5b904aa64'),
 	 ('0b90889f-3f8d-40bc-aa50-296ebd0515e3','The Defender of Olympus','40dbc2a6-1c45-4df5-832a-65da66e57492'),
 	 ('c6fc564d-e86a-488a-b46c-cab4aa56376b','Mutant Messiah','abb08bec-9c1e-4d7e-94b1-aa26c8ba2213');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('4112b5a2-9bcd-4d71-a342-43dcb22b4333','the Living Weapon','e04f4f79-6e00-4d03-ad40-fc9cffc499ed'),
 	 ('f5aead9b-6fba-4e90-8099-e94d7994cefa','Ironman','3fbad00f-234e-4fd0-ae6a-2dc20baad58e'),
 	 ('399fa622-cea8-4e9f-bea5-8496539c785b','Drake Roberts','3870ec33-e8bb-4579-8dc3-58269df3b123'),
@@ -6315,7 +6315,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('556214ea-6b20-40c2-806d-6f6d91f2954c','Guardian','a5cebabf-6b0d-416d-b273-24cfb370d3a6'),
 	 ('5103a16a-3eaa-418e-992d-f410de9a2ef9','-','cf1c0929-f4b8-40d0-a431-0b87a0cf095d'),
 	 ('7f9555be-2728-49a6-9598-f939a0c79967','Ultimate Kevin','7aa97b6b-0c74-4a6f-9f70-b1bc2386ab35');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('b2ca6b31-b6d0-4ea3-831d-8677b21f4590','Kuurth','8db41d5b-edc0-421f-9491-97b7a8737f47'),
 	 ('77ec0387-1e3a-4057-9e84-328d860614fa','King of Skull Island','15344290-fb65-4797-bee0-dbf132035621'),
 	 ('bbf12657-d4fa-4559-9415-efc709f06b14','Kid Lantern','28d49a98-1f1e-489d-9c5a-8d17eff5d349'),
@@ -6326,7 +6326,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('2d9f433b-f424-4980-b5db-7c21f08babd8','-','251a5c71-c5a6-4b84-a204-eeca6aab43ee'),
 	 ('4b7e24bb-2cc0-4779-9e21-ca6f20be6abb','General Skywalker','0faba633-6bec-471b-875b-1d4a689415c8'),
 	 ('cdf4f923-7f96-4c60-bda2-498e0a5a09d7','High Judge of The Multiverse','41daa6b0-be3f-4e5a-8e03-2bfb997cab9d');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('8ea534ea-c169-4979-813e-a647352a949e','-','4fd93006-5ff5-4650-bb09-91cb8899d868'),
 	 ('d2a1ea04-dcac-41af-9bc9-0fb63a835d80','MACH-II','f9db6b61-c905-49da-8090-39b2143c697d'),
 	 ('70e90183-9815-4674-854c-1d919786639e','Spartan 117','7f743ce7-9a40-45a8-9d82-fc2ec4d5560b'),
@@ -6337,7 +6337,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('1264ef68-7858-455f-b268-3a835fcd04a5','although he dislikes that name himself)','f7d6903a-0ef3-45a3-b6fb-937bfe4d1965'),
 	 ('6a3d2388-ae21-43d5-89b3-9ab46eb5983a','Sinister','c47ea4f0-05b8-422d-8b6b-216d89d6102a'),
 	 ('9b127261-3856-4a86-beb2-f1d7bbe71055','Administrator Pearson','c47ea4f0-05b8-422d-8b6b-216d89d6102a');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('25dfcfd0-0ae1-4514-aa50-56f6c61c3083','Steven Grant','36778e46-186e-4629-8f5c-2329542a6109'),
 	 ('41c20218-de5b-42d1-9e35-92ea66803674','Barbara Morse-Barton','202b634f-f0e3-4684-9802-fcf7e9acdf40'),
 	 ('4bbcfd90-e19b-4fba-9f78-19887ba42d21','Dr. G.W. Falton','aac4ccba-2a9b-4280-a0bd-72dbb4b26b59'),
@@ -6348,7 +6348,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('64f456a8-12d4-44b0-9109-64a65bc5a02b','-','39cad5e9-9bea-4b69-8936-8041c8d12ea1'),
 	 ('330915f7-0bb8-4ff0-aa8c-5ed41c976a94','Redd Dayspring','9c064473-0f64-4220-9dc4-6e4986caccbd'),
 	 ('febb4338-068f-4d1e-a702-08e51adb0941','-','31117791-965e-4e2c-89f5-a62a5ee8209e');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('eae375bc-9d43-476a-b3b0-cc1b3e4ca3c8','Hish','ed641b58-ee8b-4762-95ae-2c107cde4ff1'),
 	 ('891f7360-7905-46d2-9e3c-70b8f3e8f4fb','"Frankie"','0703fe99-1726-421f-bf39-c82887e3fb40'),
 	 ('a7538727-94d4-495f-9769-18a8314a0b67','Lord of the Negative Zone','ccdfd0fc-d251-4541-a072-bac5b01d53e1'),
@@ -6359,7 +6359,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('e985e24d-7593-4ee8-a30b-22c8a26faceb','Death','e3cdae94-c6e7-470b-9aa4-540d3b19a5c0'),
 	 ('9d417c48-eae7-4305-a278-74033816c601','Mars','a9944ade-d58b-4dc1-a731-cdb83b8fd174'),
 	 ('df8a0b7d-e1b0-4f96-a27c-e8ac686554e5','-','beb6e842-ee39-4882-a50a-1d87ae5e7686');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('0cc70062-8fdb-4a1f-92bd-9f839712cdd2','Shatterfist','89754056-7688-495b-a9ee-b54faf99f23d'),
 	 ('8e78fdd1-17e1-46c4-b948-a74b5c25eb1a','Mastema','84bb8199-a658-4dba-8808-9821c2f87af6'),
 	 ('37fec0e3-ae99-49a7-85ad-40ee6359044e','Kasumi','288495f8-5e7d-49a3-bc7d-a9411ec0c6f9'),
@@ -6370,7 +6370,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('e62d884d-cd24-43cf-a0b0-66907294ffd2','-','28c250d7-c5b1-4bb4-a232-56faa5ccccb0'),
 	 ('ccd86428-766c-4b68-96a1-092f258633ad','God of Death','f6ff7906-1827-406c-bfc3-13bbf0d7de62'),
 	 ('7c22cc0c-fe95-48fa-9cda-bc955cfd0395','Tanya Sweet','9e843eca-4c78-4e49-a4dd-3dce668b30e5');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('87c4dedb-b1a4-4e19-ba9d-44ad9d3831d1','Black Leopard','5e4517f9-6978-4b3e-b4c9-cc4fcdb878c4'),
 	 ('9200a146-b3ad-4af5-b6b7-ead034670667','Blackwing','6de96c4a-ca50-4648-b6b1-f0118dcef7b3'),
 	 ('36a6cc5d-4d06-4da2-91b1-b705a0660309','-','39d9b319-d350-4e79-b405-d09f647e002e'),
@@ -6381,7 +6381,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('10bfdc40-bade-47ee-82ed-779f5f6c827f','The Buffster','80d36f6e-4f0b-4327-bef5-4d201061829a'),
 	 ('945912b0-9941-43cf-847e-e0c7c95731b3','pitcher','c4f7726d-9e96-4d28-971b-6e94f4af1942'),
 	 ('29b50e0a-d5cc-423e-8949-9c1a4afbf5d3','Kid Kold','12b16bbe-4a58-453d-a4e6-fb3c8c551f20');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('baa534da-8874-467c-979a-4fa5bb1c86b8','Mass Carnage','33fd56f6-6b23-40bb-9028-e55d1be881e8'),
 	 ('4c9fccd7-afcf-442c-9703-b6d876d2f0dc','Binary','6a4c1dff-4a44-4f21-87de-4354e3360dab'),
 	 ('a4c8f9cc-17cc-4511-8342-f0adef795bfd','Rick Jones','fa81f794-bf47-4c48-ac07-7202140f5a53'),
@@ -6392,7 +6392,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('0a03809a-4f00-4262-917e-09f09eae6a6b','Herald of the Anti-Monitor','bc35e86d-5871-41cf-9299-14ac3c947514'),
 	 ('51a094bb-4cfa-4d6a-90c4-a281e50a53c2','Uncle Nathan','ccfbd2a0-30e7-46cd-93c6-584080bad9f7'),
 	 ('41efaefa-a59a-42e7-b83d-c54bc0da061a','Apocalypse','40292edf-d7d7-4c11-bc05-715270ffb90d');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('1b030b0a-9c09-44ff-8703-a4124d96a0fc','The Man Without Fear','bcc88fbe-8fad-4297-9ef8-ba01f37586d9'),
 	 ('3f8cda29-570d-48c0-9c02-c25ecba79ead','Kimberly Schau','e016fced-bd69-4c48-96a4-acf4bde568a0'),
 	 ('1b9de325-3383-4873-af91-0435049fd2bd','Nabu','050d240f-fa17-4a77-ba21-c3c70c13d83f'),
@@ -6403,7 +6403,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('9adaeba0-f8f6-4a68-b87b-cd6e8559ff94','-','8b29775a-7a4e-4bf9-b707-a82348cad424'),
 	 ('270c35a1-634e-4203-9831-9f11a4d30e91','Nova Centurion','edda848a-0e57-4d00-af30-625f0408ca82'),
 	 ('2003db29-5816-4faa-91b6-1517e158bf1a','Cheyenne','65aaeca1-a954-4024-b1ac-0b5d9ffc6322');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('3c3b4bac-d51f-4a72-bf8e-465381f056f7','The Most Dangerous Woman in the Galaxy','c2d094ae-af1e-4374-ac8e-808803b362ad'),
 	 ('3f520119-6180-44a3-ab01-18472c20ba18','Anodyne','aeebeba2-8c84-4332-bc97-1d4bafed4728'),
 	 ('6897a834-bdbe-49d7-a1a3-327071edece5','Le Diable Blanc','f57bc92f-5bf3-4812-b305-aae72a2549da'),
@@ -6414,7 +6414,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('e8d7647d-4a7a-4f21-96df-59583cec1578','The Monster from Planet X; His Divine Majesty King Groot the 23rd','c36bf6ee-611c-4345-8d1b-6e67d02f24ea'),
 	 ('df5c171f-84ae-43bf-a5ab-4d84a2f89c77','Rory Calhoun','142b4582-50fa-4e58-8309-e58e46126ba0'),
 	 ('9799c6ad-f797-4f1b-846b-0fc6931ddd53','Patricia Hellstrom','48c1d7fd-35ec-4bc5-a55a-78f13658ae45');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('07a7e3bc-e10a-4a43-a67f-77b4fab2c033','Annihilator','9d38c6ec-42c2-4fb2-9fc4-9cf7b6f62717'),
 	 ('ebbfa6b4-940f-4788-8d84-a042e138655f','Hit Girl','54441a01-6e32-461e-9926-92449160ac42'),
 	 ('37dab864-2b2b-4e45-8128-4552450e69b4','Little Momma','abb08bec-9c1e-4d7e-94b1-aa26c8ba2213'),
@@ -6425,7 +6425,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('5d85b91b-5617-4ecd-8c11-2bf7504fb30b','Marvel Girl','2ba3b461-8075-4e72-9be6-a67ff68237e0'),
 	 ('426d8d5e-1f2c-40ed-82fa-73c4546e2355','Mr. J','32ea4497-bbc8-465b-8996-5d0f21ca3fa0'),
 	 ('581668a3-b37f-47d2-ba06-ad6ad00745a2','Power Woman','b4527e79-9bf5-48c3-ac2e-7787a3573920');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('ad02fbde-9554-4163-bc83-4c19569875f9','King of Kings','c9e2758f-8c91-4487-bb1e-121955e9d440'),
 	 ('8f1aa003-b14e-49ae-9c84-3518159e4fd7','Kevin Ethan','7aa97b6b-0c74-4a6f-9f70-b1bc2386ab35'),
 	 ('1ba7243a-0fa0-4e11-9f4b-4ab4e98d15d9','Lantern','3a2e0329-7367-4c8c-aca9-b3d7f6d38258'),
@@ -6436,7 +6436,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('2699fbb7-8e8e-4700-bd57-9d43c5f5682b','Stargod','004f0360-2cc2-4088-83c6-43a2a1366231'),
 	 ('7668c0d2-b31a-44b4-b87d-195c21a7a6e0','The Creator','a7dd5b66-f116-41c9-8a45-734c29500162'),
 	 ('c19bf838-b809-4b8c-8ab7-351a2cf1943c','Celestial Madonna','fc654479-ddaf-4887-98be-969cc84783df');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('4d07ca79-91f3-464c-9c9a-1abfe5430671','Bloodwynd','5549eed5-6e35-4514-b51e-737ac30ddb49'),
 	 ('4b976e26-2ae3-4724-ac30-f52105c6be38','Lucifer','12e6b477-e225-4105-bc38-7749bd624730'),
 	 ('4e758c33-c802-4421-8270-3e2c0b879354','Aquagirl','78c65e73-0e62-4fa2-8825-1eda6bf336fe'),
@@ -6447,7 +6447,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('4c7d4d29-56cd-46a8-acd8-9e1b9675dfb0','-','4c30dc9a-d52d-4d2c-945c-27a642d74eb9'),
 	 ('6539f724-fbb7-4958-b01d-d1b4dd8f6dbf','Magnum Force,','b02bf805-89fc-4cf6-900f-950b7345d747'),
 	 ('ed777f1f-d730-4b59-9d1e-a51d1d605514','Freddy Loyd','37c621a8-b2a1-45f6-8e85-2bc8f6804d04');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('57ff6ef1-8a2f-48db-b1c9-20616ad1feeb','Nova Prime','a9b37590-d5f8-4e22-9af4-6e08bc472712'),
 	 ('79b4e197-1a48-4c2b-8a97-6dc120edf8a6','Babs; Barbie Doll; O; The Masked Maiden; the Dark Knight Damsel','7fd19dd2-83de-43df-86f2-c8366555d3f2'),
 	 ('82e7e85c-7cfb-4c75-80cb-918995e912b3','the Entity','04baec85-2764-4be2-a9dc-5335f645217c'),
@@ -6458,7 +6458,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('4aae3916-2f08-41bc-9c20-c4fe2edc7ba5','Speedy','5c03e63d-54d4-46ed-b17e-fcbc90659ebf'),
 	 ('959a3908-166c-4c06-8ea4-f5ffca30354f','Lady Mandarin','fc5bd7ad-90ca-4c03-b2fe-a5f7bbcb1ca9'),
 	 ('449bd18c-bf8a-45cc-a3ef-f36cf7dde426','Time Drake','b479d62f-91ea-424d-b487-3ab0f8074b54');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('52f3e6aa-a6c5-4a0d-a42c-dd2f2589cef1','"Reddy"','996d53f1-1ea8-49a7-ba45-2e21ca66fdb2'),
 	 ('fc0012b7-7050-48cd-9401-13c6f060dc98','Red Hood','f0536e6c-0bf7-4330-a8af-d6337874c93a'),
 	 ('38c8362e-057b-4219-8d50-fce294981165','Batman','304f478f-9f8f-419d-95d1-7a47e1bb27c4'),
@@ -6469,7 +6469,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('86353641-cbf0-4e35-97a2-a094798bcbd0','Goliath','ea992765-17b3-465c-9f95-01dd1710631c'),
 	 ('36f689df-c031-4c82-975c-8f0b6f35953d','Wanda Magnus','cb020c56-41c3-451d-8154-7deeb371ea75'),
 	 ('fdd65115-6d96-4729-9f49-fc4a8580ad4e','the A-Man','0703fe99-1726-421f-bf39-c82887e3fb40');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('58d7e11b-781e-4a73-81d3-3af571218e8e','Hourmazo','871155d0-5146-4f65-ade7-a30501d10b37'),
 	 ('335d07ef-4161-4b78-8c30-667990651fc4','Monitor','5222c579-c82a-4ae6-8411-f62676604888'),
 	 ('6b172a18-4837-4283-bd9c-8be87c98b1b4','Waterbearer','50a9820b-8178-47bc-be28-235e41edffd6'),
@@ -6480,7 +6480,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('cc2276b6-ba42-4322-bee7-94b331d5558e','Shrinking Violet','f437a244-a1ed-473f-83df-944eada4613b'),
 	 ('2f73caca-6f5f-4b16-b0c2-55bfe915a635','Atlas the Untamed','761323ec-5283-4a09-855e-dc0a2353f9b3'),
 	 ('956bd6a8-ea3c-4318-906c-de1d39e788aa','-','1819a497-f96f-4ac8-8d77-ff3efcee425a');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('56a1d4a6-ea61-4011-b9b7-1e3eb0342ebe','Kreature','311638ab-7b6b-452e-9ab1-52a288818b93'),
 	 ('a63ab69b-95de-4ba0-b952-91103e15d2db','Simon Walters','8eb44c1e-fd8f-4ff0-8fb6-95c3864dbddc'),
 	 ('3ffb80f4-d980-406b-af8e-32d1f928bab4','The One From Beyond','9d4328a3-e8c5-4735-882a-c104f0511eb4'),
@@ -6491,7 +6491,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('83642666-21b5-48cb-8289-aa155367482c','Mr. Okonkwo','5e4517f9-6978-4b3e-b4c9-cc4fcdb878c4'),
 	 ('b91224a3-44f2-4caf-b274-8e6cb625b1b1','Natasha','2cd105e4-5fa2-4d30-981e-2bc6d9f8b1ba'),
 	 ('da2155c2-47eb-4cef-8f41-22b602a2fed2','Boomer','b8782708-08e3-4710-9eef-899264220f1e');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('89137543-7a42-4e24-b741-cd694bb479fb','-','4559c92c-754c-4214-b2cd-d0654d208ca5'),
 	 ('4c7fc8a8-9966-4116-bd8f-003971bdf1ed','Joan','80d36f6e-4f0b-4327-bef5-4d201061829a'),
 	 ('b25d95cb-cfcc-4fc5-abbb-33ea32006aa8','Soldier X','f261328d-8e22-422e-b44b-9da1c6b7b78f'),
@@ -6502,7 +6502,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('22b7d3c0-06ff-4f5c-83c0-f9e292c0efb8','Citizen Cold','12b16bbe-4a58-453d-a4e6-fb3c8c551f20'),
 	 ('560d7787-7830-48b5-afae-f1dabf5a1c16','Lady Marvel','6a4c1dff-4a44-4f21-87de-4354e3360dab'),
 	 ('7deed400-192c-4c49-a0d9-67fc0ba915dc','Dr. Turner','fa81f794-bf47-4c48-ac07-7202140f5a53');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('86037a7f-2699-44f8-8cab-0098ff5c3635','General','fa81f794-bf47-4c48-ac07-7202140f5a53'),
 	 ('c9bcfba7-e365-4273-aa8d-1765b8a9629e','Bride of Urzkartaga','de1f6c58-e67c-4b9c-a695-d9b30a322904'),
 	 ('a9c2bf1e-7058-401d-98a7-336a78d89559','Debbie','c6525d03-5f5d-4b6e-90a1-fa45dcf029c2'),
@@ -6513,7 +6513,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('75336e2f-e557-49d0-a8eb-a7e06f1bbc7f','-','b69fceff-cd3e-4db4-a987-210c54e1da2b'),
 	 ('f48efbd1-46e0-4802-80f1-63f20f8e1c79','Kingpin of Hell''s Kitchen','bcc88fbe-8fad-4297-9ef8-ba01f37586d9'),
 	 ('63df7200-1f53-454c-bc17-099be9edc963','Dark God','e7532f2f-33d3-48db-9a75-b1ac5b737fe9');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('03beda27-505b-40ae-9553-ca49e2adec53','-','39057d5f-86c4-4138-ac92-c2acc849a2c2'),
 	 ('63d87fcd-45f8-4073-ad5b-2d8e1e1567fd','Dazz','e016fced-bd69-4c48-96a4-acf4bde568a0'),
 	 ('71ca20f2-8729-4dcb-99b3-3a43f2fb2e7d','Jason Macendale Jr','31200e65-9f1a-457e-a292-35e368f22d16'),
@@ -6524,7 +6524,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('7859e6d9-6cc8-4dff-a676-ff578855aadf','Peter Parker','f3274b16-7954-44a2-ae92-1f93e418cd19'),
 	 ('342747fd-61d3-4076-aa74-7b7487b6c4a4','The Spider-Man Doppelganger','bc0f1ce5-cdab-45e0-a363-a90e4ebebf1a'),
 	 ('b0bdf834-e501-450c-8fcc-5c24f9d5af23','the Great Enigma','c7e7fd02-a185-44ca-9611-061b15c4a48a');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('b0b8aab5-776b-4dcc-972d-fc339c8d91f0','Alvin Burgson; Molder','27f4867d-de84-49e5-b008-d6690ab26d5a'),
 	 ('414650cf-7759-47c4-8bc5-9b837505474c','He Whose Limbs Shatter Mountains and Whose Back Scrapes the Sun (translation)','7ea82d53-dd2a-4c88-9446-df1f1f95147e'),
 	 ('e4eb6e00-d4a8-4ef7-9542-6db4bbd590d3','Anj','7522941a-dbc5-4f63-a215-98f6a4a0329a'),
@@ -6535,7 +6535,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('0f478b57-8834-41c5-9197-a15d4259b2d3','Dru-Zod (possible first name)','90c52a51-c923-47e1-8aa4-60613fd881c7'),
 	 ('9123e1d1-86e7-4cbf-9294-40875099b15b','Majestor','294dbc32-1182-485f-aa2f-1882da2b8ca0'),
 	 ('8f1ada11-61cc-4696-8d06-385f537a571a','King of the Monsters','280946bb-103f-4b8d-84a9-c5d102fad69b');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('6999cb7f-14b8-45fa-928e-b583466720a4','-','a0e37274-4a28-42b6-a4f7-53c624cf7739'),
 	 ('e2c09edf-48bd-4a91-b884-b5ac814b5db6','Elise Archer','b543b4a0-6117-4f15-a8a7-5744e0de9ad1'),
 	 ('3943aaec-135b-437a-964e-2e12404f8a85','custodian of the branch worlds','c36bf6ee-611c-4345-8d1b-6e67d02f24ea'),
@@ -6546,7 +6546,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('b44a64f4-d59c-4536-a6fb-2e4b7adab2a9','Guardsman Number Six','63e3690e-59c5-4622-b645-4ab38901e773'),
 	 ('f0d60d3a-d49f-4240-b28f-f923f9d8d995','Spider-Herc','40dbc2a6-1c45-4df5-832a-65da66e57492'),
 	 ('b34d8250-8708-448d-a2eb-e09b937f3d41','Harry Cleese','40dbc2a6-1c45-4df5-832a-65da66e57492');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('b4fb2e09-5330-40de-a273-4a0640315694','Flash IV','d23fe557-0727-4672-8c6c-ffc2860299ac'),
 	 ('fa6db9c4-3119-4489-9600-01a2b433bfa1','Danny Rand','e04f4f79-6e00-4d03-ad40-fc9cffc499ed'),
 	 ('dd44a062-1e5a-4f9f-ad01-62c2d21f7131','Mark Milton','d4286086-8f46-48ba-a5e2-9e1e31da548a'),
@@ -6557,7 +6557,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('9fe4a1c2-8c2d-4368-8554-ce89424be1b2','Captain Universe','8db41d5b-edc0-421f-9491-97b7a8737f47'),
 	 ('9536b6ca-02d6-4973-b89c-d26c2f90f75f','"Poozer"','3a2e0329-7367-4c8c-aca9-b3d7f6d38258'),
 	 ('64e29d46-f7f9-4f47-8b8d-ecb231726cf7','The Brain Washer','1747c1b7-9b0e-4423-8bad-10f2c2a27fcf');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('ab095fff-7e47-441e-84ba-bd840bf77fd2','Manglin'' John Mahoney','7514e9c3-7263-4334-a8a1-9b33919b897d'),
 	 ('71021fa6-08d5-473e-90a7-38537c615adc','The Last Green Lantern','bf8e2be7-aa39-43ac-a3ab-9176a70e507e'),
 	 ('99e9021e-398d-4e8d-891b-ab37cc838933','-','fc14af5f-9f61-485b-8f88-2abef8258c88'),
@@ -6568,7 +6568,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('6cc07d5a-648d-4458-8dcf-38218bbba1b1','The ''Bo','7b9bf469-9541-4793-a6c1-1873739f45be'),
 	 ('c5296be5-f567-462f-b82d-a892018e39a2','Lester','0bb65873-52d4-4271-9c37-78df8eb056bb'),
 	 ('1eda80b5-85eb-4765-9e4c-963cd9f6936e','Vanwolf','004f0360-2cc2-4088-83c6-43a2a1366231');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('f14b835f-6a74-42f1-93d4-4ce78297bd2b','White Pilgrim','a7dd5b66-f116-41c9-8a45-734c29500162'),
 	 ('5f881ceb-b687-4dd0-bb5a-c4d7e63db5c0','Blue 1','7f743ce7-9a40-45a8-9d82-fc2ec4d5560b'),
 	 ('07ef681f-28c4-4371-aff9-243264c13977','Willow','fc654479-ddaf-4887-98be-969cc84783df'),
@@ -6579,7 +6579,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('fa5e9769-83f8-4b8f-aed5-efee77a1a95e','Wolverine','8e277e7d-249c-4f07-b7da-4789e923fc06'),
 	 ('26a7b28e-9d98-4ad9-8eea-096f5afca838','-','1587d4f5-c07f-4045-9c43-422042b59c5c'),
 	 ('6514f9e2-b349-45da-9c74-450d325744a7','M.O.D.O.K.','318ecd74-f334-4b7a-a193-da6cf4896f59');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('469c5357-0620-4878-93d5-602002501032','Star-Lord','4e064bd5-4fd4-478d-9eab-9b28a6f14727'),
 	 ('7d0f1e0b-2d87-42a7-a759-13c654b31f70','Old Man','aac4ccba-2a9b-4280-a0bd-72dbb4b26b59'),
 	 ('2c849a5b-9485-4bbf-9cba-5752fbfca97d','Bob Parr','445edb34-3410-4288-8e4a-05e9f311ba87'),
@@ -6590,7 +6590,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('938c7fa8-d97a-4278-9cf6-d7fbeeb0da53','Edwin Brock','21efcda1-f520-4fb5-ab95-96ec2eb588be'),
 	 ('3aab353a-9b0c-473f-88f1-671e807c9138','-','c7ff2877-d441-4b99-9cdb-beb40d902c2d'),
 	 ('d28f6a82-edba-4e26-b9b5-873eb29d5ed1','Edward Jantzen','89754056-7688-495b-a9ee-b54faf99f23d');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('fc7e5dfd-197a-4b49-a1d9-a0e424594995','Beelzebub','84bb8199-a658-4dba-8808-9821c2f87af6'),
 	 ('c5399e00-cfc8-4ebd-8ea9-852a7c418fb6','Steph','ed2ba24a-a992-4143-8ad8-1f96b34d1506'),
 	 ('84122ecb-381c-4683-919a-649adc629bd2','Death','99300ad9-e5c9-42a6-b37f-b983e0a85473'),
@@ -6601,7 +6601,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('bdbbd93b-f9a0-4577-994f-64fe45550eff','-','1b2dd0b9-e38d-4814-960c-4026ffa46d53'),
 	 ('fdbb6896-4ea9-401c-972e-7810399388fa','Nadine Roman','2cd105e4-5fa2-4d30-981e-2bc6d9f8b1ba'),
 	 ('20516044-62f3-4cf9-ad75-accd291b7fb8','Jaster Mereel','24a574bc-0842-43ad-be4a-0d72951ef2fa');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('618c6185-918e-4647-857f-1524e822b448','Tabby','b8782708-08e3-4710-9eef-899264220f1e'),
 	 ('8ba53b9a-afe5-41f8-ab51-d1ce1f0c3d8f','-','42503ea5-5e0b-4f35-9e2e-83f5cbeb0135'),
 	 ('4d31551f-232b-4bed-9596-91df37e8813a','Lemuel Halcon','80a578b6-8ef0-4514-8699-652947e83258'),
@@ -6612,7 +6612,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('55d5b02f-3f48-4615-adff-3f4d6cc9a313','Jono','2124ccd6-9458-4440-aaf3-ee86a04ca9d4'),
 	 ('8a3e2dd9-fe51-4530-a1f3-3994f2f951ee','Kay Carlton','8ec8c25c-c6d8-4d58-b833-af7d64a0881b'),
 	 ('237a683e-61f0-41eb-b88d-9fddf37e0891','Chuck','e1034df4-8a72-4f04-93a4-83325fa8f39f');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('bb024f1b-4cc8-4945-ace5-7d5e6663ffa9','Peter Nicholas','0b820e60-4f75-462f-acb3-f906bb710e38'),
 	 ('d4a5a91a-dd65-4a80-b008-13e33fb4c8e0','Quincy McIver','3fb6260e-de68-4045-84cd-f770c0af7fa0'),
 	 ('3f2ec0f1-d0dd-4e61-8184-c12e0eb60c72','Uncle Nate','ccfbd2a0-30e7-46cd-93c6-584080bad9f7'),
@@ -6623,7 +6623,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('6b97b68c-b059-4cf7-b627-c244d234758b','Slade Wilson','7ab1b572-7c46-4b58-8337-153f415b22bd'),
 	 ('dae58bed-9858-4fbd-bebd-19f1b1fdabbb','-','1deb8aba-0bdf-4765-a14f-7763d3f73a92'),
 	 ('7b6889a6-6952-4d8c-bd33-4ed33fa600a7','Venom','8d026abb-efe7-47fe-b646-0c0516cfeecb');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('d8ab398b-8a9d-49a3-ad9e-c347eefe3b1d','Dom','e0a303c8-2202-43af-bc45-d1349e2523a3'),
 	 ('6585345c-74b5-4e3a-80e5-3dff8fa9321b','Priscilla Sutherland','e0a303c8-2202-43af-bc45-d1349e2523a3'),
 	 ('b995c43e-e621-46f3-87c1-57ade09d9cea','Rhodes','f3274b16-7954-44a2-ae92-1f93e418cd19'),
@@ -6634,7 +6634,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('9e58ebf1-3cae-4ae2-8035-4e8cb7c8101c','The Ultimate Lifeform','8d53e923-750a-45a5-8882-57d89c68acae'),
 	 ('2a0b4993-c396-4a4c-a8a2-a359fea58899','Jay Garrick','c2710aa3-6c88-41f9-9e70-49fc4e8b2005'),
 	 ('e34daa2c-2fb8-44c8-bc0a-d6762740a93c','The Fastest Man Alive','fe6c4577-425d-412e-8fba-4e3e842f80b4');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('af54ad22-8154-43f0-a453-72e4a1f229a5','Ronnie','e8f0ff6b-4a86-4737-9bae-27483e07ca17'),
 	 ('1e791f52-ab16-448e-8278-bb1c675504d5','Maddie','aeebeba2-8c84-4332-bc97-1d4bafed4728'),
 	 ('a19a6458-05bd-417a-be9f-826035265121','formerly Robert Lord','f57bc92f-5bf3-4812-b305-aae72a2549da'),
@@ -6645,7 +6645,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('536ff8e2-b329-4f51-854b-85ecc26112df','Jane Wisakedjak','b543b4a0-6117-4f15-a8a7-5744e0de9ad1'),
 	 ('7d3f705a-9b12-459d-bee6-427eb7519375','Kate Bishop','07c78b20-8640-41d6-822b-84a66f7eaac5'),
 	 ('ced7d106-0d75-4aa8-864c-dd7c26df544d','Extant','277f3e21-55ec-496e-a430-0c34a0b6519b');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('965cd1a4-dabb-414c-9c84-f2091297cf18','Longbow','03add159-2474-4c7d-a339-e1cb469886fd'),
 	 ('bfc9f1c8-0d86-482b-acbf-4408d3103db1','Doug Brown','ea427dbb-dffa-4163-a69f-5f51d82a7193'),
 	 ('9e4ebb63-05ca-40dc-853c-894f86bbccc9','Riot ,Phage ','63e3690e-59c5-4622-b645-4ab38901e773'),
@@ -6656,7 +6656,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('b4d11330-0c41-4a58-bca2-2c82e4a4f120','Hallie Shimosato','c55846da-df3d-4fb1-b5d2-0bc4dff4bd29'),
 	 ('c494698e-406e-4571-a763-05b3609edbc3','Blue Totem','c9e2758f-8c91-4487-bb1e-121955e9d440'),
 	 ('63dfee0c-d033-4bfa-b18b-8f7cb9120145','Doofus','7aa97b6b-0c74-4a6f-9f70-b1bc2386ab35');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('23041dcd-a89c-4856-a582-29ef54d3b4f8','-','72c36298-3501-4a5a-bb99-fee1a2f4f1aa'),
 	 ('967a4bb1-bfc5-4a38-b8d3-3adf1f1395f7','World''s Greatest Hunter','667db608-b695-4a1c-8156-bab1c69fb963'),
 	 ('f895c938-8d30-47ff-91b4-cbbd0604103d','Ana Cortes','ff9d6664-024b-44b3-9909-6d96463ad59e'),
@@ -6667,7 +6667,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('4c6fcf55-23c3-414b-810e-30b052dac417','Sir','41daa6b0-be3f-4e5a-8e03-2bfb997cab9d'),
 	 ('af6fb88b-673e-421b-92c6-614314e47f04','Popebo; He-Who-Devours-Your-Entrails-And-Thoroughly-Enjoys-It','7b9bf469-9541-4793-a6c1-1873739f45be'),
 	 ('8e40a3e5-1a22-4658-ba21-c4b591d2165f','Father Williams','0bb65873-52d4-4271-9c37-78df8eb056bb');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('dd3d698c-f56d-4d73-9517-2f08b3e85c0d','Kirk Langstrom','59250f6e-f7f4-4c96-a0aa-64635e1bc043'),
 	 ('caf4e073-c7dd-4bb6-9fe4-68a7f8b4f2dd','Matthew','f9db6b61-c905-49da-8090-39b2143c697d'),
 	 ('5c8ed593-5443-4ef1-a7a2-ee7bb5f6fc81','Mother Askani','8b92c6de-1b7e-4378-a3ec-089ebec68837'),
@@ -6678,7 +6678,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('2d6a6400-a490-4e41-a624-15e86b807165','Mikester','6bce1d9a-0dc1-429c-aca8-9ab0d9904ad8'),
 	 ('67a8b8a4-888d-4a65-802d-b9ce41ff57f6','Mister Zero','567c06d1-6069-44e3-ab4c-c9835c67a8d0'),
 	 ('82133c02-9f2b-4359-88cb-49f7181cc2ec','Steven Shaffran','c47ea4f0-05b8-422d-8b6b-216d89d6102a');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('ec5c0e3f-2400-4b0b-94f5-6051116758e5','-','644b3e4f-b9fa-4dae-9cbb-3a94b4ea95ad'),
 	 ('1ccbbda5-73e9-4e52-985e-d02bdf583a6b','Crescent Crusader','36778e46-186e-4629-8f5c-2329542a6109'),
 	 ('a322f6b5-8b6d-4279-a217-d9320298c456','Jason of Spartax','4e064bd5-4fd4-478d-9eab-9b28a6f14727'),
@@ -6689,7 +6689,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('21e34b98-4176-4088-a9fa-10d97ff784dc','Pixie Boots','37c621a8-b2a1-45f6-8e85-2bc8f6804d04'),
 	 ('074145bf-5c17-428c-bba9-50b9258c7a4b','Hard','f4a98531-a159-4a0f-990e-9038a75619ff'),
 	 ('f6501a73-2b03-4dce-898f-3157e685ef34','Jessica','8d2e966d-1dcb-4512-a09a-0cfd1d8e2ea8');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('abef5e17-04dc-480a-aae5-07c70b896c1f','Human Rocket','a9b37590-d5f8-4e22-9af4-6e08bc472712'),
 	 ('813a5090-7888-4d16-91c6-586215b59f2f','Woden','a44cd430-cced-4b9c-b34e-2d95b9d54621'),
 	 ('f3b7d8c1-358b-407f-ad12-17dc03f17837','-','95a54ab8-f07e-43b0-a1fc-c18206fde65b'),
@@ -6700,7 +6700,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('cc78536b-3217-49e5-9395-76e5a9a163f6','Francis Stronghold','c9e60d7b-fdf1-41eb-93c6-0a492c2f6772'),
 	 ('52bdb69d-0f6d-4a67-ab0c-07036e3f219a','Teacher','026db347-9036-47fe-ba0f-8195d45af2cb'),
 	 ('17636567-437f-4807-8b26-ea8efa56d111','Tornado Man Dreaming','996d53f1-1ea8-49a7-ba45-2e21ca66fdb2');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('3cc462d9-0668-4368-9cba-698b57bc8123','-','c8a3c9b9-ed17-4df1-93e6-901e584dd90b'),
 	 ('a0ecb7cd-4d50-42d2-ae5d-f2a3154df8ee','Alvin Draper','304f478f-9f8f-419d-95d1-7a47e1bb27c4'),
 	 ('08c3b027-f580-4015-bcc2-2343e45af906','Time Lord','a75b9b0d-bbfe-4ad2-99f6-387d1b22a6ae'),
@@ -6711,7 +6711,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('52cf124e-fd3a-4917-bb57-4c99ed387625','Twilight','b10a41dd-9bf8-41c5-9d8a-4b69b521dad2'),
 	 ('af7f7f98-04af-4c2f-9a51-e4a518f9b2d2','White Venom','21efcda1-f520-4fb5-ab95-96ec2eb588be'),
 	 ('9d3c7ac8-651b-4f72-a3bf-35f23178b852','Sauru','18586955-d02f-46d8-a00b-e43196771ab3');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('fb86d78b-2146-433d-aacc-7224e83c4761','Dweller in the Depths','50a9820b-8178-47bc-be28-235e41edffd6'),
 	 ('79885481-4402-4923-b160-35d06fca14ba','Madame Web','f372ee7d-00a9-4e12-afb3-060c849354ee'),
 	 ('4c542284-310f-4442-ab89-81e1bb40cfe8','X-Girl','9b4e2115-96da-4f36-9b39-d937ff50e4df'),
@@ -6722,7 +6722,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('6a8f1bf8-e3f5-47e1-a325-b06faae9b7c6','Spoiler','ed2ba24a-a992-4143-8ad8-1f96b34d1506'),
 	 ('a3e3a99c-97fd-40eb-bc4f-cd68bf91032c','Matches Malone','5db0a345-4740-4219-ac1e-1d1967305154'),
 	 ('729fd171-8421-4941-b963-e7ed10b8ef49','Oracle','5b8879e5-b91d-4853-8b7e-fbbaa889d5bd');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('6da823cc-57ea-4bad-aef1-f88e65b5940e','Magilla Gorilla','311638ab-7b6b-452e-9ab1-52a288818b93'),
 	 ('8002e5f1-5d43-4ca2-81e5-a715028ed31b','Ataxi','9d4328a3-e8c5-4735-882a-c104f0511eb4'),
 	 ('50c6b730-9b14-4b7e-a871-2aad62521f5d','Kosmos','9d4328a3-e8c5-4735-882a-c104f0511eb4'),
@@ -6733,7 +6733,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('e4d3785d-fb29-462b-ae70-057ccb9c10b6','Black Racer','f6ff7906-1827-406c-bfc3-13bbf0d7de62'),
 	 ('e7679062-9f4f-45d2-9db0-55084b1d6487','-','879d4aad-b1fd-433c-b69a-fb7d4e6c7862'),
 	 ('b97c155c-9025-4716-b8c8-e5435f350c94','The Man Without Fear','5e4517f9-6978-4b3e-b4c9-cc4fcdb878c4');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('a4fef9d9-f0ac-410a-9460-d85d54d7fe38','-','a0cbf470-8c86-4e60-8617-63310312ec84'),
 	 ('f95367d9-9b3b-4188-b07f-f9b6f08b5f41','Pelops','8a420830-9fee-4c7b-b37c-b094d2eb7961'),
 	 ('f37e332a-7fa1-4d5e-8f41-e53d1f193fcf','-','b649a6a0-5568-4313-a165-88b36ea29455'),
@@ -6744,7 +6744,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('9a167a32-5e0e-42f7-af6f-fa71e02ece14','-','c86e70b6-19e9-4ca6-a460-235a4153520d'),
 	 ('05d90634-d615-4e79-affa-5b35bdf24d2c','Nathan Winters','f261328d-8e22-422e-b44b-9da1c6b7b78f'),
 	 ('8c3bfc57-eab7-4842-8a82-4436cc373897','Formerly Samson Guthry','73e6923d-91ea-4737-9ae0-414854566361');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('56d648a0-7300-4a1a-ad83-16f3fd060582','Jungle Man','e52b8a9c-64af-410d-b9fd-2bc7bf3e994e'),
 	 ('8ed62fda-9bac-42fb-84a5-0d894a589127','Allen Adam','b31019e0-df4c-4b25-a6dc-284e72df3eaf'),
 	 ('a74d2cc4-70b5-44a6-ab5c-8188a67f2422','Torpedo','fa81f794-bf47-4c48-ac07-7202140f5a53'),
@@ -6755,7 +6755,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('7b150b4e-4932-4e94-a744-8410575885a1','Tempus Fugit','b85f95e9-6669-43d7-91e3-5838c2d052b0'),
 	 ('4df9b332-46b8-4518-aec4-52982f8aaea3','Alpha-Prime of the Alpha Lanterns','bc35e86d-5871-41cf-9299-14ac3c947514'),
 	 ('ba9e2c98-3256-47d2-8af5-fc2fec235b3e','Lady Light','01d5442b-6d6f-4422-a907-71a1aa8c8871');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('0576a0c1-8a64-4dd8-8e66-ffd72b3a9ccd','Edge-Man','ae2b9bc7-145b-4f0b-990f-ee7b48840299'),
 	 ('50a1fa36-f937-4965-8b8b-0d9caccf161b','Cooper Peyton','bcc88fbe-8fad-4297-9ef8-ba01f37586d9'),
 	 ('1d0050c9-1a34-4b22-a7b7-bae71c03986c','The Dash','ea35e7b4-4a59-44b3-9a39-098831500729'),
@@ -6766,7 +6766,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('79551640-b80d-4cf7-b158-913ef80dbf24','-','99e86151-9a71-448d-b99d-e85311616b08'),
 	 ('8c529f51-bde1-4a49-b9c3-a0008e215abe','Storm','7cf567b5-0f11-4677-892c-7f9cf0de68be'),
 	 ('1b195aaf-4b61-4379-9cb8-b98dbc2ed611','-','8b2209a6-6093-44b0-9671-76266d50bbab');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('9cca8d73-0f65-4b69-a42a-6e0f595ad9e4','Paris Bennet','f2225e0f-93a9-411a-b4f5-537e2b4ec766'),
 	 ('115c29f0-8e4f-4821-a98d-1b00c125a5bd','Kid Flash I','fe6c4577-425d-412e-8fba-4e3e842f80b4'),
 	 ('87c1b030-0292-4613-a47c-a9c4b38f5089','Ronald Rockwell','e8f0ff6b-4a86-4737-9bae-27483e07ca17'),
@@ -6777,7 +6777,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('7dc6d438-29c3-4adb-8928-a54201d36cc4','ruler of all the shades','c36bf6ee-611c-4345-8d1b-6e67d02f24ea'),
 	 ('b66ea276-4874-4655-81cb-129f9d917550','The Cat','48c1d7fd-35ec-4bc5-a55a-78f13658ae45'),
 	 ('4146a39a-39ef-45dc-ad85-d6fd481b1234','Ronin','03add159-2474-4c7d-a339-e1cb469886fd');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('d8e17594-7a26-4698-be87-c0fb98942498','Captain Universe','9d38c6ec-42c2-4fb2-9fc4-9cf7b6f62717'),
 	 ('9145ec57-2551-4e25-93f5-b461cf05a7e2','Matchstick Johnny','ea427dbb-dffa-4163-a69f-5f51d82a7193'),
 	 ('9b2f935c-9701-4fbc-9dab-4502cf5c307a','Hayseed','720af566-c500-46f2-b1c3-de736798acd3'),
@@ -6788,7 +6788,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('616662a6-4e28-4ddc-900f-10273bc90e41','Hogan Potts','3fbad00f-234e-4fd0-ae6a-2dc20baad58e'),
 	 ('dc5c92bb-8a30-41af-afa9-4c057a56b149','Marcus Milton','d4286086-8f46-48ba-a5e2-9e1e31da548a'),
 	 ('e8de200d-4ef4-40dd-bd97-053a66fdf159','Clown Prince of Crime','32ea4497-bbc8-465b-8996-5d0f21ca3fa0');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('c96cfc8a-b7c0-4486-a0fe-f28518d85dd8','Jubes','3cc96c36-51d0-4e53-8a2b-c38e7e6195b1'),
 	 ('6c441a9e-5281-4338-a4cb-dca203b5f7a6','Victor Timely','c9e2758f-8c91-4487-bb1e-121955e9d440'),
 	 ('eb2b8223-058d-4e86-8e07-b5ecf0fc6fa9','Kevin 11,000','7aa97b6b-0c74-4a6f-9f70-b1bc2386ab35'),
@@ -6799,7 +6799,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('a265ded9-3451-4d17-83d8-6fb14a936fbe','Live Wire','515d109d-ea77-4bac-b2f6-f87bb7d3d2b7'),
 	 ('22e8238d-099c-4478-9f3e-4ee0f967d9c5','Jack Wayne','4fc3167a-8e97-446a-8127-b7685d1c979b'),
 	 ('b40f2dd5-3095-4c77-85b2-8cb6c9a6c87c','Boris','4fc3167a-8e97-446a-8127-b7685d1c979b');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('482e0411-e2dd-4cc4-be13-a309cb66009d','Carl Lucas','8af1e0bf-4062-46d1-a1ac-bc3c80775442'),
 	 ('d2cfb061-4764-44d2-bfba-549c0a1cd5ce','Mister Machine.Machine Man','15758bdd-e18f-4857-936c-06a1817b4794'),
 	 ('edc4463d-9eaf-4624-b663-f7d1ff67b959','Walter Lawson','0bb65873-52d4-4271-9c37-78df8eb056bb'),
@@ -6810,7 +6810,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('65e95235-afc6-448c-93c9-18f00151cb5e','This One (in referring to herself)','fc654479-ddaf-4887-98be-969cc84783df'),
 	 ('2cc39e12-0b1e-4ce2-88e0-6bd648cea922','Mutate #35','a4511b11-15bb-4e1f-86bb-855d7afe5c68'),
 	 ('f85f0d6f-7ef4-4318-9182-fbccae736baf','Maya','12e6b477-e225-4105-bc38-7749bd624730');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('c1c0ee50-e3f9-4e5d-8df1-68c1b2388173','Water-Woman','78c65e73-0e62-4fa2-8825-1eda6bf336fe'),
 	 ('9855773b-2ad4-479d-aa3b-c6a68458971c','Empress of the Almeracian Empire','be21e023-91dc-4a5a-9f6a-25effe3ae1e7'),
 	 ('d03fa909-176e-4cb1-b14b-381b16c0195d','Queen Medusa','e605b724-6c0d-4df4-957b-75fa6a94aa68'),
@@ -6821,7 +6821,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('083db1e9-e398-4ea4-95a0-3e5fef1d635f','Mental Organism Designed Only for Killing','318ecd74-f334-4b7a-a193-da6cf4896f59'),
 	 ('57297574-ef96-4655-94e5-e1eea8c0b6b9','Jake Lockley','36778e46-186e-4629-8f5c-2329542a6109'),
 	 ('cd3b9ca6-1ed7-4369-a3d8-20e277c362fe',' Kate Sorenson','5c0ce2c1-0e05-4361-9e8c-c043d53392aa');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('3218bed3-3a0e-4839-8ac2-a04359e1eaaf','-','72881747-3695-4ad2-bfdb-1fac1a789392'),
 	 ('5e7b72c3-6684-4f6b-9adf-d7c24e0722e6','Imperius Rex','aac4ccba-2a9b-4280-a0bd-72dbb4b26b59'),
 	 ('f42eae92-2610-47b9-bd41-d5ad6f182c36','The Human Zoo; A-Man; The Man with Animal Powers','7ca74150-24d0-4a15-9cad-d75263326976'),
@@ -6832,7 +6832,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('823f9bcc-16df-423f-b60d-3b0aa286ff70','Sister Beaubier','369b60f6-ccb0-4b3c-b11f-d0563f5615af'),
 	 ('03a5757f-e9be-4f1e-a1f0-133f192a2494','Marion Todd','ed2ba24a-a992-4143-8ad8-1f96b34d1506'),
 	 ('412a1170-87e6-4ecc-84db-35f0354e5807','Bluebelle','5b8879e5-b91d-4853-8b7e-fbbaa889d5bd');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('e3720fbd-b726-48ab-b8e8-e07fe7e62f5a','Golden Armed Boy','311638ab-7b6b-452e-9ab1-52a288818b93'),
 	 ('dcef243b-42c0-49c3-91d5-677f1d0cbc11','The Beyond Realm','9d4328a3-e8c5-4735-882a-c104f0511eb4'),
 	 ('cd06912c-f425-4522-8c17-711e1d919676','Maker','9d4328a3-e8c5-4735-882a-c104f0511eb4'),
@@ -6843,7 +6843,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('cebdd6b1-d24d-4049-9270-98c1a981ee0d','Laura Matthers','2cd105e4-5fa2-4d30-981e-2bc6d9f8b1ba'),
 	 ('7e091bb5-8f9c-42f5-b273-0ee22bbbfc44','Sava Brek Madak','24a574bc-0842-43ad-be4a-0d72951ef2fa'),
 	 ('e146c4cc-a850-4d1d-962f-22adfdbb8437','Belinda','80d36f6e-4f0b-4327-bef5-4d201061829a');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('bce2e212-873e-4c5e-8b8f-b0693d595d3d','Chosen One','f261328d-8e22-422e-b44b-9da1c6b7b78f'),
 	 ('dd1387c0-b019-4e25-97e1-7ba17cf123c8','Nomad','af8faf94-e766-4193-9062-72e098e0d50c'),
 	 ('25b3a232-e52f-46be-9371-435135c772c1','Bullseye','c4f7726d-9e96-4d28-971b-6e94f4af1942'),
@@ -6854,7 +6854,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('d921ff75-f071-433a-b6a9-15122734a7da','Dr. Ashley Kafka','fa81f794-bf47-4c48-ac07-7202140f5a53'),
 	 ('7b495cf2-d3d5-4363-b0aa-16a05d01ee38','Dr. Robert Bruce Banner','fa81f794-bf47-4c48-ac07-7202140f5a53'),
 	 ('294cddaa-18f9-426d-a3b5-e1d8d63cbb9d','Barbara Minerva','de1f6c58-e67c-4b9c-a695-d9b30a322904');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('8a9643d2-d1b1-4d97-9c07-ad17845b90b8','Claire Butler','e647865a-c168-4901-a0ee-5413b10b3275'),
 	 ('8167d99c-e301-43dc-a7db-b31ba5d9f955','Marguerite Tone','e84aac56-4f2f-4d21-8e48-15c96a98a514'),
 	 ('330c9080-c407-46c6-937f-b7d63d1bc9f7','Little Brother','0b820e60-4f75-462f-acb3-f906bb710e38'),
@@ -6865,7 +6865,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('a44ba7b5-2f7e-40f7-a488-d781a94273d2','Slym Dayspring','40292edf-d7d7-4c11-bc05-715270ffb90d'),
 	 ('91d83e59-9a42-48e7-8cd2-6622df89f722','Powell','ae2b9bc7-145b-4f0b-990f-ee7b48840299'),
 	 ('bb22ca32-32f3-44ef-bc6f-48cd722b635d','Scarlet Swashbuckler','bcc88fbe-8fad-4297-9ef8-ba01f37586d9');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('2e0c8ca8-abd7-41de-a404-4f5ca5f19e59','Captain Universe','bcc88fbe-8fad-4297-9ef8-ba01f37586d9'),
 	 ('a7996450-6e58-44b4-9ecf-9aa71e49359b','Master Of The Double-Bladed Lightsaber','77ea1778-082d-4d04-ac33-1a3451f4c402'),
 	 ('7f47a3c1-1e9c-452c-925d-7a17cfd7e5f4','Invincible Man','a5fbff90-0ff4-4150-b10b-12ae9bcd9423'),
@@ -6876,7 +6876,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('511220b4-aa5c-47b2-a36b-5d811301b8dc','Jon Osterman','d571b0a8-aa56-4bc0-93cc-f0a0e1ac9628'),
 	 ('2d8c26bc-d1ce-4d0a-92c2-f86c82bffd57','-','ea88d270-2deb-46ec-9b23-0de39df5bcdc'),
 	 ('8a99693e-e89b-4725-a0d4-977a100bb30b','Blackbird','76ebf6db-28dc-423b-837c-93a72d66551a');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('a1e4a738-b0e9-4ce4-b633-099fb2a1ffa1','-','30ef1464-343c-49fd-83c9-4f1c88991e7b'),
 	 ('2e3d8e00-cd45-4a4d-9ba6-6af38260caa8','La Espirita','60fcfc0c-35dd-41eb-a9c1-c416429ec9ba'),
 	 ('532b613b-c096-4be0-b820-27ae0f10b369','The Nuclear Man','29ff2336-128d-41bc-b53b-700f258a61dc'),
@@ -6887,7 +6887,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('edc9cb7b-74b0-445c-b0b1-bc73870bc685','The Deadliest Woman In The Universe','c2d094ae-af1e-4374-ac8e-808803b362ad'),
 	 ('b446b63f-56f5-43be-a4d9-3685f2583f79','Lyne','aeebeba2-8c84-4332-bc97-1d4bafed4728'),
 	 ('af038bdc-b89b-405b-9e8f-43a307fc655e','Cajun','f57bc92f-5bf3-4812-b305-aae72a2549da');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('b3547c73-bbb7-4c05-9acc-573ea64b9fcb','Z-Fighter','be17222c-aec4-44df-a630-e3be2260e9ce'),
 	 ('39e955c2-ce56-49c0-8222-8fa22bf86f70','Protector of the Universe','22883cac-ea71-44e2-bf7e-f2c7b6af4d49'),
 	 ('166d9790-6d9f-4d2f-94f4-bcdd23bab266','Scrier','a2617065-6e2f-4c94-ab07-7a8b3d514b0e'),
@@ -6898,7 +6898,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('0f4974d1-773e-4c29-bbca-4a7a0ffb45c3','Lasher','63e3690e-59c5-4622-b645-4ab38901e773'),
 	 ('439f5c6b-47b5-49f8-972c-aa77a7f8a65d','The Scion of Olympus','40dbc2a6-1c45-4df5-832a-65da66e57492'),
 	 ('7408d432-5f67-4f40-aec8-daa15cd60f2d','Hitgirl','54441a01-6e32-461e-9926-92449160ac42');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('183ad3d3-2a79-42a7-b6ec-aea49e665f04','Indigo-1','15fcb78c-16e9-4c05-b0d0-1861aa1dab7c'),
 	 ('da4734eb-95dc-4c89-b780-7e1ef4d9ea48','Daniel Thomas Rand','e04f4f79-6e00-4d03-ad40-fc9cffc499ed'),
 	 ('b3bb069c-cae5-4dd0-944f-7b8060912c92','Crimson Dynamo','3fbad00f-234e-4fd0-ae6a-2dc20baad58e'),
@@ -6909,7 +6909,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('10c93efe-c46b-472c-82a9-cbf3618c69eb','Joe Kerr','32ea4497-bbc8-465b-8996-5d0f21ca3fa0'),
 	 ('69b7bf5a-2b6d-48c1-83c2-877d2d128cda','Knightress','b4527e79-9bf5-48c3-ac2e-7787a3573920'),
 	 ('6884172b-7c21-404f-86b4-6d5ca8e57f7a','Vindicator','a5cebabf-6b0d-416d-b273-24cfb370d3a6');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('f21b2820-1e21-42aa-93a1-0a886147a041','Levin','7aa97b6b-0c74-4a6f-9f70-b1bc2386ab35'),
 	 ('e789c49f-5bd3-4d31-9477-900cb0da6d58','-','b1537121-db9b-4f32-ae7d-dca283fa9336'),
 	 ('42aa6cd2-2619-4537-9204-79e32bfced78','Green Lantern 674.1','3a2e0329-7367-4c8c-aca9-b3d7f6d38258'),
@@ -6920,7 +6920,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('97c775dc-5b45-4181-82a0-4e0729eb93ed','Daniel Haller','4fc3167a-8e97-446a-8127-b7685d1c979b'),
 	 ('01923c64-6221-4d3d-95b6-bd32b42aa35e','Ace of Spades','8af1e0bf-4062-46d1-a1ac-bc3c80775442'),
 	 ('5671cca9-2f1c-4f6c-9368-bf3c05cf25f4','Living Trinity','41daa6b0-be3f-4e5a-8e03-2bfb997cab9d');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('faa9d5b6-17aa-4eed-8dc7-ed1bdc2ecd63','Master Frag','7b9bf469-9541-4793-a6c1-1873739f45be'),
 	 ('f4529fe8-ce67-47a6-983e-88a4cb3447a5','Tyfon','0bb65873-52d4-4271-9c37-78df8eb056bb'),
 	 ('93b9dec3-aafe-41f4-b203-f29153f71a13','Skywolf','004f0360-2cc2-4088-83c6-43a2a1366231'),
@@ -6931,7 +6931,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('256d9dc7-2e9f-47c1-8d28-d0a3227b484c','many others','12e6b477-e225-4105-bc38-7749bd624730'),
 	 ('9d570cc0-56ca-4cdd-aa04-e1de3e3b0366','-','2e3026c4-554f-4fcd-b28e-125f360fb304'),
 	 ('58107b53-3ed2-4938-b3f1-f3024e171a21','Queen Maxima','be21e023-91dc-4a5a-9f6a-25effe3ae1e7');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('f6094aeb-5ed3-4db8-8c7f-4b9a74cf96a6','Michaelangelo','6bce1d9a-0dc1-429c-aca8-9ab0d9904ad8'),
 	 ('a5181560-2951-4504-96cc-1a61145df979','Star-Spangled Kid','cd8f6e97-4e88-4ab6-bea0-d6e4e1f94688'),
 	 ('43b86a23-1aac-4bf5-be9f-49d5fef4394d','Apocalypse','c47ea4f0-05b8-422d-8b6b-216d89d6102a'),
@@ -6942,7 +6942,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('e33d3c6a-5734-4de8-a6d2-dfc1be34051e','"Subby"','aac4ccba-2a9b-4280-a0bd-72dbb4b26b59'),
 	 ('1d90e7b3-b5f5-4b1f-aef6-44e29e79d02e','The Living Death That Walks','ccdfd0fc-d251-4541-a072-bac5b01d53e1'),
 	 ('40e40879-dee7-4443-8d21-b79c26d961b0','Humazo','871155d0-5146-4f65-ade7-a30501d10b37');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('927d0b1f-00ef-4204-a43b-2cdab239bdb0','998th','21efcda1-f520-4fb5-ab95-96ec2eb588be'),
 	 ('845a5180-5697-4170-83dc-0c79434b0e7e','Kali-Ma','18586955-d02f-46d8-a00b-e43196771ab3'),
 	 ('e09a1aa8-fa41-402b-ae46-74d395029f18','Swimmer','50a9820b-8178-47bc-be28-235e41edffd6'),
@@ -6953,7 +6953,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('e274be90-e33f-4150-b4e5-9933cf38b972','Batman Beyond','59110f09-a4ff-4862-8b0f-6f707483b055'),
 	 ('b54c9eaf-2642-4805-a6e0-682493f42dd1','-','6eb2edcd-0cfc-461c-b302-da5c80caaa70'),
 	 ('bcc47994-77a5-411a-bdb5-1ca2dad9345d','Goblin Force','9d4328a3-e8c5-4735-882a-c104f0511eb4');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('f3b60ed3-90a8-42fc-a2a6-6a8f370ca08f','Craig Logan','498066bf-5b83-4802-97d0-3eb9e752c798'),
 	 ('f51ecd7b-9213-4b17-b2ed-fb2f9072d8cc','Scourge of the Seven Seas','8291fe44-b0de-4463-a9ae-0bef9a6acf39'),
 	 ('aab86ae0-a72e-44be-9512-a9e2ed2eb330','Joe Manfredi','6de96c4a-ca50-4648-b6b1-f0118dcef7b3'),
@@ -6964,7 +6964,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('dbc7df39-b763-451c-a312-ee675731454c','Benjamin Poindexter','c4f7726d-9e96-4d28-971b-6e94f4af1942'),
 	 ('05d4a661-0a8d-49be-994f-7fb7f8d1b198','Len Snart','12b16bbe-4a58-453d-a4e6-fb3c8c551f20'),
 	 ('5d8d9a9e-2308-43d0-ae36-5a59ca6febe7','999th','33fd56f6-6b23-40bb-9028-e55d1be881e8');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('52477e2b-3d60-44c0-85db-3cb432feed71','Warbird','6a4c1dff-4a44-4f21-87de-4354e3360dab'),
 	 ('9e9d7eb7-c09a-4304-8650-c4ca4c0170e5','Cameron Scott','b31019e0-df4c-4b25-a6dc-284e72df3eaf'),
 	 ('49829214-dfb4-447b-bdd3-5f92bb8ddb77','Peter Parker','fa81f794-bf47-4c48-ac07-7202140f5a53'),
@@ -6975,7 +6975,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('0563da02-d998-4758-adc3-e9e2e91f557a','Songbird','e016fced-bd69-4c48-96a4-acf4bde568a0'),
 	 ('8a7b0339-104a-4fd1-8e30-5c1a93bdcc50','Doc Ock','8d026abb-efe7-47fe-b646-0c0516cfeecb'),
 	 ('4cb21496-eb3d-4008-ade4-171cc14ccb27','Master of the Mystic Arts','a2d7c338-dba7-4a67-a053-9bcda43fd549');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('b264c246-4e29-4862-ba3b-e5628979ad6b','Elena Vladescu','e0a303c8-2202-43af-bc45-d1349e2523a3'),
 	 ('12eb8cf6-6781-4b14-b307-ab9d38ad373d','Donnie','ad54e4e3-a0c8-4722-b389-c4c38f346484'),
 	 ('4946f210-4ebb-4327-8a6c-f76510eb41be','Thom Cruz','f3274b16-7954-44a2-ae92-1f93e418cd19'),
@@ -6986,7 +6986,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('3b5d5852-31c3-4521-8cf3-ee48ad3290f0','Angel','7522941a-dbc5-4f63-a215-98f6a4a0329a'),
 	 ('5e06be4f-8467-4a09-b94a-11cf78c96101','Psi-Lord','cead6a17-f928-4925-b371-6776b70070af'),
 	 ('a6ee0210-98d7-40ad-87cd-d50d20bb7e99','Flamehead','e8f0ff6b-4a86-4737-9bae-27483e07ca17');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('f6bedad5-0052-4484-a33c-8046a33b484e','Madelyne Pryor-Summers','aeebeba2-8c84-4332-bc97-1d4bafed4728'),
 	 ('29b638b1-787a-4c51-82fa-f428c51c663a','Legendary Godzilla','280946bb-103f-4b8d-84a9-c5d102fad69b'),
 	 ('a588b824-2495-42f6-bde3-196012659919','Hassan Kareem','b94fca56-a9b5-4b85-9566-502e05abc0d3'),
@@ -6997,7 +6997,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('02886920-a4ee-474e-8a0f-a2d8b9f28788','Pumpkin Pooh','b543b4a0-6117-4f15-a8a7-5744e0de9ad1'),
 	 ('8eba9c57-8554-49f0-a11b-a5c8449aa85f','Monarch of Planet X','c36bf6ee-611c-4345-8d1b-6e67d02f24ea'),
 	 ('a288ba58-4257-49b2-be34-2c9398941ab9','Patsy Walker','48c1d7fd-35ec-4bc5-a55a-78f13658ae45');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('66b1de50-0d24-4b4b-83b0-443b645b23d6','Goblin Prince','c41ea3d8-b0ce-45aa-bb9c-a5e77ba56b04'),
 	 ('a1309a44-1174-499e-ac19-e41d51159466','Kate Manser; Shiera Sanders','7dbca42a-a9f1-44eb-976c-dc3612071ebd'),
 	 ('ac91628a-c965-402f-899b-a3e80c9e316f','Jade Jaws','9d38c6ec-42c2-4fb2-9fc4-9cf7b6f62717'),
@@ -7008,7 +7008,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('67ae1781-a762-473d-814f-9f41fe25ba99','Kid Flash II','d23fe557-0727-4672-8c6c-ffc2860299ac'),
 	 ('78ca8774-989f-4c39-87c2-cb0f3b12f84c','Iron Knight','3fbad00f-234e-4fd0-ae6a-2dc20baad58e'),
 	 ('f601085e-eb3f-41bd-8be7-a09d1287a04d','Mr. Kant','d4286086-8f46-48ba-a5e2-9e1e31da548a');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('a317e844-5b87-43ce-8c1d-81a049d15207','Iceface','3870ec33-e8bb-4579-8dc3-58269df3b123'),
 	 ('fc07727e-1b67-445c-a84e-05f9cd350ea0','-','77d0797b-f0c2-430e-99d9-5738e22c8e2f'),
 	 ('c1e26065-c904-40b4-ad69-037cd88d8cc1','-','df05a99e-2001-4eb1-88ca-b6d1e9e72685'),
@@ -7019,7 +7019,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('76b41a28-bc6e-4238-8652-27dd88d9faf4','-','c764fba1-cfe5-4f49-b8de-11c2ffa4af36'),
 	 ('8c61893e-5be6-48e2-988e-49c6064d6db3','the 8th Wonder of the World','15344290-fb65-4797-bee0-dbf132035621'),
 	 ('cc1d4941-4e35-42f0-8511-0204776ef496','"Super Tights"','7514e9c3-7263-4334-a8a1-9b33919b897d');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('1a8ce457-8636-4135-9775-6d7367428151','Kyle Vasquez','bf8e2be7-aa39-43ac-a3ab-9176a70e507e'),
 	 ('cdee9cf1-afbc-4ef5-8276-76fff7d2d50e','Splinter Jr.','c6121001-e4e9-417c-9807-7b35df6ce54f'),
 	 ('c1af4a42-3c36-45c1-bf56-edfce91a26b9','Jemail Karami','4fc3167a-8e97-446a-8127-b7685d1c979b'),
@@ -7030,7 +7030,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('27936a83-3cb2-45f2-a8f5-2d33ca9682af','Tso Zhung; has also impersonated hundreds of others.','0bb65873-52d4-4271-9c37-78df8eb056bb'),
 	 ('d1a0c606-4b4a-4860-b7ee-b80e10dcdf2f','the Vagornus Koth; the Swamp Walker; Mr. Salad; Walking Mulch Heap','70846333-6d8c-41cc-8176-7937dc96b52d'),
 	 ('0b9d1ae6-25e1-4366-a7fc-3a7304d8da9a','MACH-I','f9db6b61-c905-49da-8090-39b2143c697d');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('4a279ab7-ec3d-4eaa-8a72-8c821398e7ac','Rachel Grey','8b92c6de-1b7e-4378-a3ec-089ebec68837'),
 	 ('ea68cce1-2ed6-4287-9fc7-3a11a8e34c4e','Boom-Boom','a4511b11-15bb-4e1f-86bb-855d7afe5c68'),
 	 ('bddb88dd-c1d8-4b87-9e1a-a3faa5edee29','the Devil','12e6b477-e225-4105-bc38-7749bd624730'),
@@ -7041,7 +7041,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('fd756ded-3373-43ac-9248-1aa25f4a377a','Robert Windsor','c47ea4f0-05b8-422d-8b6b-216d89d6102a'),
 	 ('d2ccf376-660b-4d2e-aca4-255c4d2fdc33','Nosferatu','c47ea4f0-05b8-422d-8b6b-216d89d6102a'),
 	 ('c09cd4d9-6035-4d09-82dc-855b0bc83558','-','bbb7d706-64ea-4baa-8728-027541115286');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('c9b4291f-93de-48ce-8282-3ae047f78881','Yitzak Topol','36778e46-186e-4629-8f5c-2329542a6109'),
 	 ('9f0578ff-82d1-4ac9-8f95-bb4b52c0cbbc','-','cbc37857-2234-407a-a658-ec4747226cdb'),
 	 ('2c5cb589-feb3-475b-8cce-60e614b20e34','Roberta Morse','202b634f-f0e3-4684-9802-fcf7e9acdf40'),
@@ -7052,7 +7052,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('8c11baa9-a020-47b8-a1a9-6542a9bc2a28','The Worlds Greatest Acrobat','37c621a8-b2a1-45f6-8e85-2bc8f6804d04'),
 	 ('46ae16e3-a0ce-48e9-b781-239b782203ff','Jean-Paul Martin','17819a6b-55ab-4b5e-8833-7bdf32b9c6b1'),
 	 ('05848963-0f14-4e30-9f98-05f9bb352244','Rich','a9b37590-d5f8-4e22-9af4-6e08bc472712');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('2669d87b-08be-4412-8ee8-b3a6026fb06d','All-Father,Sky-Father','a44cd430-cced-4b9c-b34e-2d95b9d54621'),
 	 ('8d8a5f4e-5e29-4e3c-a111-558081751224','Ernie McDunnagh','52fc2949-0bca-439d-b742-53aa07880da4'),
 	 ('55241745-0051-48c7-9383-56f4d45fd09a','Mall Cop','2dc45d0f-5bdf-47b3-990f-9be644421d74'),
@@ -7063,7 +7063,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('1e2a1eb9-0588-4b23-83f6-eb8bfec5374c','Angelus','b10a41dd-9bf8-41c5-9d8a-4b69b521dad2'),
 	 ('bcdc77b7-c569-474d-9c9c-aafe833f0458','Lethal Protector','21efcda1-f520-4fb5-ab95-96ec2eb588be'),
 	 ('7b1a9a70-420d-4bd6-860d-ab29ad9d5346','Huitxilopochti','18586955-d02f-46d8-a00b-e43196771ab3');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('81f6416e-6d0d-40a7-9597-176bedd67487','Spider-Woman','f372ee7d-00a9-4e12-afb3-060c849354ee'),
 	 ('70f4696b-d4f6-4549-847a-bf10b74280c4','Myrmidon','c17327bd-49e3-4c8e-915f-bdee56a34989'),
 	 ('ee9353bd-5d7c-4e9f-a539-9ef26084d6fc','the Tiny Titan','dae7e1cf-a8a4-4547-8e7d-f947d8a25a51'),
@@ -7074,7 +7074,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('651ab054-54f8-4c98-b87f-9d7bbff90caf','Tork','498066bf-5b83-4802-97d0-3eb9e752c798'),
 	 ('6d299c00-c3eb-477e-9b21-cd7938e72142','Mighty Adam','b08bad20-0d56-4aeb-b403-e4e365189739'),
 	 ('667845bf-da9f-4016-8a35-9ee3d4ff3672','Felicity Harmon','48d0d2f7-979c-42a9-a63e-99e29bbf7907');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('226d810b-259f-4dd8-9d39-3141b0ae6a45','Devil Ray','8291fe44-b0de-4463-a9ae-0bef9a6acf39'),
 	 ('04804336-e82b-440c-aec9-a468caf722da','Coal Tiger','5e4517f9-6978-4b3e-b4c9-cc4fcdb878c4'),
 	 ('8eca84f6-7f5b-467b-b40a-9541c2fab8ef','Daywalker','2f0ee22c-7572-4f6f-bf50-5def5094fac7'),
@@ -7085,7 +7085,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('dcd05a73-509e-40b2-b130-27ea8dc59271','Jet-Ass','73e6923d-91ea-4737-9ae0-414854566361'),
 	 ('60e63ec5-6144-4322-b57a-c7530f776054','King of Otherworld','e52b8a9c-64af-410d-b9fd-2bc7bf3e994e'),
 	 ('20578fc5-d911-4e49-b320-4c9d7cf9e0db','The World''s Mightiest Mortal','49ce6edc-4445-4fd1-b6df-8f647299382b');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('b31fd076-04b6-4de4-9f72-970b45c48c54','others used during her espionage career','6a4c1dff-4a44-4f21-87de-4354e3360dab'),
 	 ('b68a8ad9-66ac-447f-a58e-d697e759730f','Monarch','b31019e0-df4c-4b25-a6dc-284e72df3eaf'),
 	 ('ae1b987d-b5d7-44aa-8820-4a5ae5503b05','Dr. Henry Pym','fa81f794-bf47-4c48-ac07-7202140f5a53'),
@@ -7096,7 +7096,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('7ce2a001-3963-4a80-a393-a3fc82f2c033','Matt','bcc88fbe-8fad-4297-9ef8-ba01f37586d9'),
 	 ('c28a9844-1475-495e-a94f-8c094de93b3a','The Guardian Devil','bcc88fbe-8fad-4297-9ef8-ba01f37586d9'),
 	 ('fa324716-ab62-4e62-8b10-cfc60ff4e721','Lord Vader','85e50302-64e1-4e8a-9454-eb516d76f31f');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('f6656e8d-f142-4828-8c79-e9d413e1d7d9','The Fastest Kid on Earth','ea35e7b4-4a59-44b3-9a39-098831500729'),
 	 ('6b9afed2-8dfc-4bda-8ff0-7215e658bb49','Demolisher','ad605d63-10de-478b-833f-2de659e0661b'),
 	 ('a3e8bd07-4612-49c7-a030-699c656021f6','-','484ecf57-6122-4ede-b69d-ed5139e4f49c'),
@@ -7107,7 +7107,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('67a2fd9a-d7c6-4e2e-aed7-ec001ee637d8','Jack','f3274b16-7954-44a2-ae92-1f93e418cd19'),
 	 ('6c962961-ced8-4974-bb31-9c504058b842','Man Who Never Misses','7afd334d-c762-4b5e-adb5-f16a403de698'),
 	 ('49df5706-f79a-4205-b268-104c294b877f','Mindless One','bc0f1ce5-cdab-45e0-a363-a90e4ebebf1a');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('7bad3d2d-c20c-4d75-8817-8b934acc15ad','Cindy','c581c7b5-22ab-44d9-8f17-9aa5fc5bc56a'),
 	 ('9d4c731e-c4f4-46cd-8283-63a5b387f36b','(formerly) Captain America','76ebf6db-28dc-423b-837c-93a72d66551a'),
 	 ('faa0f312-d000-4ff2-9735-6a40a3bd6dd4','Pajaro Del Fuego','60fcfc0c-35dd-41eb-a9c1-c416429ec9ba'),
@@ -7118,7 +7118,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('eb5f12d8-e952-4a3b-b88d-1bfcac75ecb9','Monster Zero-One','280946bb-103f-4b8d-84a9-c5d102fad69b'),
 	 ('17691557-4e74-49bd-bb38-0953c165e6c7','Sayain Monkey','be17222c-aec4-44df-a630-e3be2260e9ce'),
 	 ('2a5a71a8-0d67-4cd1-8dfc-2c07feb86f8c','Gorilla Grodd','46ccdea3-1842-4c29-851e-70ef0725c5de');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('fb4e67b5-8f0d-48b3-aad0-87310b41f65b','Green Goblin','a2617065-6e2f-4c94-ab07-7a8b3d514b0e'),
 	 ('e889396f-f77b-4f5f-aebc-168919d08dc0','Commander Osborn','a2617065-6e2f-4c94-ab07-7a8b3d514b0e'),
 	 ('07282d7d-e243-431f-92b9-530d016e5335','Warrior','f1b24a6b-b48e-4a89-a18a-1e3bc140b6df'),
@@ -7129,7 +7129,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('95ff472c-d080-40eb-adc1-e0639ceb5009','Golly Green Giant','9d38c6ec-42c2-4fb2-9fc4-9cf7b6f62717'),
 	 ('a39efb98-87c1-40aa-9b20-dbbfd9a61d05','Agent 74','40dbc2a6-1c45-4df5-832a-65da66e57492'),
 	 ('5378cd62-9766-4960-a551-2cb77fd8461f','Throat Slicer','abb08bec-9c1e-4d7e-94b1-aa26c8ba2213');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('16304b4e-1c3d-4c54-8573-3c5298d8f759','Indy','02bbd571-055d-4356-8767-1ce5f5228284'),
 	 ('1021f248-2382-41f1-8270-14b3ba7c3e10','Spare Parts Man','3fbad00f-234e-4fd0-ae6a-2dc20baad58e'),
 	 ('aeb8929b-1002-4f38-9435-c15b6bb0794e','-','dcf1dc26-1908-4e44-b7d3-b787198350c6'),
@@ -7140,7 +7140,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('a0b841b4-794f-4e57-ad76-f2ae3eed1f3b','Wraith-Man','a5cebabf-6b0d-416d-b273-24cfb370d3a6'),
 	 ('3f8bab0d-0607-4b39-b90f-7a4a06edde1b','Scarlet Centurion','c9e2758f-8c91-4487-bb1e-121955e9d440'),
 	 ('53805632-33de-467a-a42f-a202b89501b8','An Empty Shell','7aa97b6b-0c74-4a6f-9f70-b1bc2386ab35');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('951ff3fd-5453-4848-bc9f-f4e884d8c2f2','Dark Lantern','3a2e0329-7367-4c8c-aca9-b3d7f6d38258'),
 	 ('04a312a0-cefa-4ca6-9f13-290c361ff5e8','Wilbur','1747c1b7-9b0e-4423-8bad-10f2c2a27fcf'),
 	 ('1e4b5af0-e19c-4080-93e6-85de63340e3b','Kraven the Hunter','667db608-b695-4a1c-8156-bab1c69fb963'),
@@ -7151,7 +7151,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('434ad105-82bd-493f-8cf5-d14969db8e54','The Lucky One','bc5b3d84-7695-40f4-bde8-dae4cf8078c1'),
 	 ('55cd5da8-d6d0-424a-8fbd-5465957887cd','Sir McHinery','15758bdd-e18f-4857-936c-06a1817b4794'),
 	 ('e9404f68-04f1-4d60-9056-de620fa31b10','Gem-Keeper','0bb65873-52d4-4271-9c37-78df8eb056bb');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('5e7e1cd0-d5d5-4dc2-a1b3-f34ebc56b6ce','Beetle','f9db6b61-c905-49da-8090-39b2143c697d'),
 	 ('501c9ead-987a-4f54-9596-dfda20aec363','Erik the RedThe Master of Magnetism','a7dd5b66-f116-41c9-8a45-734c29500162'),
 	 ('4cb5a1d3-6b56-4eaf-86ff-81c256293823','Sierra 117','7f743ce7-9a40-45a8-9d82-fc2ec4d5560b'),
@@ -7162,7 +7162,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('8b9ac426-3f48-4905-96fe-9e202cf740bd','Legion','12e6b477-e225-4105-bc38-7749bd624730'),
 	 ('94e46742-28c5-46c5-af84-3ee91796991e','MicahSanders500','2cac6476-a041-48b2-8da3-3a980037127c'),
 	 ('5c07ba02-cecd-423a-9414-1c3be6ab0aa4','Cal','8e277e7d-249c-4f07-b7da-4789e923fc06');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('f08be01f-64c5-4070-99fc-a975dfbb8151','Meteorite','5c0ce2c1-0e05-4361-9e8c-c043d53392aa'),
 	 ('82f4c5dc-fe86-4071-9aeb-9e26d1e3cc31','Mr Knife','4e064bd5-4fd4-478d-9eab-9b28a6f14727'),
 	 ('dccf82c8-8fcd-48db-b171-93567d64817e','She-Thing','b914ecb7-9d86-4c1d-a21f-84b031cdd177'),
@@ -7173,7 +7173,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('8a8c7842-2070-4767-947c-ab6a955d0ada','Caped Baldy','5c380bb2-6ef9-4755-bfc2-2ea8186750e3'),
 	 ('aabb249a-71b8-4b55-bef9-f7392cfa77de','','a9b37590-d5f8-4e22-9af4-6e08bc472712'),
 	 ('450700a9-f8a4-44e9-bb60-c767c929bec3','Oden','a44cd430-cced-4b9c-b34e-2d95b9d54621');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('2d77c186-a1a5-40a9-9c10-e80d3d083e8f','Batgirl','7fd19dd2-83de-43df-86f2-c8366555d3f2'),
 	 ('1b25bab4-96b2-4ba2-8fe7-0a2336e8367a','Hank Pym','9fb579fd-94e2-443d-8e16-b6da78b31823'),
 	 ('54dbda53-e596-4114-9eb3-dd196305f2e7','Set','18586955-d02f-46d8-a00b-e43196771ab3'),
@@ -7184,7 +7184,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('bc56a981-fbcf-48b8-aa65-b6ab3aff40a2','Robin','ed2ba24a-a992-4143-8ad8-1f96b34d1506'),
 	 ('fc74c9ec-1aa6-4c9b-a084-0b7143c97ae1','The Dark Knight of Tomorrow','59110f09-a4ff-4862-8b0f-6f707483b055'),
 	 ('391240eb-38dd-4c96-9de0-dab0d080dfe5','Hanko','311638ab-7b6b-452e-9ab1-52a288818b93');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('62d4407c-63fe-492f-b003-9a754a00f174','Beta Ray Thor','8eb44c1e-fd8f-4ff0-8fb6-95c3864dbddc'),
 	 ('e640196b-168e-4c00-a8f5-8b33b3fb74c2','Goblin Queen','9d4328a3-e8c5-4735-882a-c104f0511eb4'),
 	 ('0837e975-e7d4-4cec-8d46-c999767193e8','Green Jeans','498066bf-5b83-4802-97d0-3eb9e752c798'),
@@ -7195,7 +7195,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('e70697ec-788f-49e6-b546-6b9f3e0d0ba6','Mutate #35','b8782708-08e3-4710-9eef-899264220f1e'),
 	 ('29f1e696-d486-4986-a92b-9f0e1bbdbb85','The Chosen One','80d36f6e-4f0b-4327-bef5-4d201061829a'),
 	 ('958008ee-b339-44b1-b61c-0b60d4bb268e','Askani''son','f261328d-8e22-422e-b44b-9da1c6b7b78f');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('070c0dc6-e7a2-443a-8cda-91e04244186a','Daredevil','c4f7726d-9e96-4d28-971b-6e94f4af1942'),
 	 ('445fc07e-3136-4009-b297-226c635027e1','The Man Who Mastered Absolute Zero','12b16bbe-4a58-453d-a4e6-fb3c8c551f20'),
 	 ('9cd9d999-e863-4add-9e78-8e77393c4cd3','Shazam','49ce6edc-4445-4fd1-b6df-8f647299382b'),
@@ -7206,7 +7206,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('7db01511-a6dd-43b2-987f-adbd6739ab39','Christina Valentino','c6525d03-5f5d-4b6e-90a1-fa45dcf029c2'),
 	 ('c6085e6a-342a-4576-ab2e-cafb0d3d32c1','Bucket-Head','ae2b9bc7-145b-4f0b-990f-ee7b48840299'),
 	 ('8dc1b4f3-5500-4673-b486-2dd26912584e','Jack Batlin','bcc88fbe-8fad-4297-9ef8-ba01f37586d9');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('d91c6bc4-b6cc-47d5-93ea-58c1e3e88760','DD','bcc88fbe-8fad-4297-9ef8-ba01f37586d9'),
 	 ('43546973-963f-4189-a3c6-e246fc667caa','Ali','e016fced-bd69-4c48-96a4-acf4bde568a0'),
 	 ('398f690e-679d-4ca7-a6f8-50965dbe2ea2','Batman','7ab1b572-7c46-4b58-8337-153f415b22bd'),
@@ -7217,7 +7217,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('1e97f94b-1356-4e16-8d23-c177d40d8c3a','Firemaiden','60fcfc0c-35dd-41eb-a9c1-c416429ec9ba'),
 	 ('9f114f82-eb1e-4729-bb3a-e4b2e94e666c','The Scarlet Speedster; formerly','fe6c4577-425d-412e-8fba-4e3e842f80b4'),
 	 ('77fdb489-6b92-49cf-8726-f1bedae1b84b','Franklin Benjamin','cead6a17-f928-4925-b371-6776b70070af');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('f59f57cd-79a6-4cc3-acf6-7e09cb250ac7','Roy','e8f0ff6b-4a86-4737-9bae-27483e07ca17'),
 	 ('dea57f2d-3da4-4d07-b861-42f5f51bd1f6','Death','f57bc92f-5bf3-4812-b305-aae72a2549da'),
 	 ('1d273bdc-e195-4eb6-b551-421c10df82ae','God of Destruction','280946bb-103f-4b8d-84a9-c5d102fad69b'),
@@ -7228,7 +7228,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('58f9d4bf-120a-4349-86b5-faaee36a5459','Parallax','a8c0a2c5-ea09-4657-9d67-22b92dc4421f'),
 	 ('97c5cf60-bb44-4685-b01e-dbc840e1e934','Harl','b543b4a0-6117-4f15-a8a7-5744e0de9ad1'),
 	 ('3ea4a11a-9cf2-458d-a7ea-acf01183fc7a','Seeker','5816476a-d36e-4cef-a3ed-bac5c576245a');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('09fe57b7-e33f-4c88-9a3f-3c1116d41488','The Great Beast','8af3ece9-8c6c-43ec-a67b-567b4be14be4'),
 	 ('5af2313e-0de2-43d3-8598-9bcad3425944','the Marksman','03add159-2474-4c7d-a339-e1cb469886fd'),
 	 ('1d58944a-f0cb-4c15-a5e4-b9ccc51b5081','Mr. Fixit','9d38c6ec-42c2-4fb2-9fc4-9cf7b6f62717'),
@@ -7239,7 +7239,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('42c96273-1327-4268-9dcb-494869adb135','Hellblazer','82ef5095-07ba-478d-9442-7c70a398a088'),
 	 ('2a411e28-df72-40b0-a9b5-caa26a539a2f','Blue Man','c9e2758f-8c91-4487-bb1e-121955e9d440'),
 	 ('ee32071c-7c7f-4017-a5c1-3c06f91d30f8','-','2467cd9b-e712-4ca9-a109-ed71de8f33f0');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('efaca0bb-27af-4f3f-996d-4762c84748fb','Kevin E. Levin','7aa97b6b-0c74-4a6f-9f70-b1bc2386ab35'),
 	 ('07c60adb-b6f9-47d2-b3b0-74957cea4a24','The Green Lantern drill sergeant','3a2e0329-7367-4c8c-aca9-b3d7f6d38258'),
 	 ('f73bb84f-9ded-4510-b799-62ee1ccdfc59','Harold Howard','1747c1b7-9b0e-4423-8bad-10f2c2a27fcf'),
@@ -7250,7 +7250,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('fff545b9-8da2-487a-9f7a-31002faf0934','Hero for Hire','8af1e0bf-4062-46d1-a1ac-bc3c80775442'),
 	 ('fdd6d0e8-0bb4-4403-8792-101a3cc3dafd','-','8a0fe839-a17d-4fa2-9d90-4315e27cb9d3'),
 	 ('50792a23-464f-4b18-ba3d-0df4fcb45a0d','The Main Man','7b9bf469-9541-4793-a6c1-1873739f45be');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('2a5d0e17-c431-43c2-881e-4a883e1987e9','Willie','0bb65873-52d4-4271-9c37-78df8eb056bb'),
 	 ('425449da-11f5-4f81-b208-9e8b54f8e01c','Erik Magnus Lehnsherr','a7dd5b66-f116-41c9-8a45-734c29500162'),
 	 ('977d7e6b-558b-45ae-88bd-87be3521932c','Aly''zrn Summerset','8b92c6de-1b7e-4378-a3ec-089ebec68837'),
@@ -7261,7 +7261,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('a5bad6a8-ee6e-46ef-ad19-9f9c31dc5e1b','Gene Kahn','28ab6ed4-286e-423e-992e-a849f9e9a58a'),
 	 ('3aca5a8e-3c59-44b3-af74-be5e588ec086','Mr Zsasz','dc8f9b7e-664f-4486-af1c-da5a3349cb08'),
 	 ('05210528-ab63-42ed-b2e9-b8b7a9c289b4','Megan Morse; M''Gann M''Orzz (alternate spelling); Martian Girlhunter; Martian Manhunter (Titans Tomorrow alias)','cd8f6e97-4e88-4ab6-bea0-d6e4e1f94688');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('4ec46329-bbc0-4aa4-9749-01f5366fc40c','Mike Milbury','c47ea4f0-05b8-422d-8b6b-216d89d6102a'),
 	 ('2675c9a1-a90e-4234-8e8f-2a626eaaf752','Pale Man','c47ea4f0-05b8-422d-8b6b-216d89d6102a'),
 	 ('ae74f5be-52c6-4eea-9431-4d1b18e382aa','Lunar Legionnaire','36778e46-186e-4629-8f5c-2329542a6109'),
@@ -7272,7 +7272,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('76d0c778-3922-4adf-99a6-1ea8fbac197b','The Hero''s Hero','445edb34-3410-4288-8e4a-05e9f311ba87'),
 	 ('fd345e8d-36a0-47c8-b5d7-7c6b5669a7e1','-','a4236cce-541d-4d61-b470-731f5a1878d1'),
 	 ('4baf9673-2b54-488e-94ba-5a5158655038','-','5a03a595-6898-40da-b92c-07849e6df30d');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('95b8a409-ff37-451e-be26-c6cddf0ed339','The Boy / Teen Wonder','37c621a8-b2a1-45f6-8e85-2bc8f6804d04'),
 	 ('9dad9906-c727-4eb0-92c3-eb9d80afe7df','Gina','8d2e966d-1dcb-4512-a09a-0cfd1d8e2ea8'),
 	 ('50a933ff-734b-4636-b1bd-4981c9ab1690','Kid Nova','a9b37590-d5f8-4e22-9af4-6e08bc472712'),
@@ -7283,7 +7283,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('e801b060-cbfd-430c-838b-eb50e1e178ae','Magneto','04baec85-2764-4be2-a9dc-5335f645217c'),
 	 ('0de023f6-0f05-4f84-afb9-2c47eec0ea9b','Gypsy Davey','42c4a89a-3955-4453-9f86-d6a0dae724c4'),
 	 ('9d3a1ee1-ae6c-455f-a80e-464cf9ef49bc','Adrian Zoom','a224acbb-e1ab-437d-80ce-045c4c5c15c9');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('30391855-203a-45f1-8d16-62971f84cb21','Chaloner','c9e60d7b-fdf1-41eb-93c6-0a492c2f6772'),
 	 ('eb5f27e0-1d7b-4ddb-b2e8-3bd72a475054','Frank Rook','c9e60d7b-fdf1-41eb-93c6-0a492c2f6772'),
 	 ('92b40cf9-9af0-48c7-993b-5e6e7b690603','Lone Wolf','8fb78f36-1e1f-45e9-8bd5-955f6250ef35'),
@@ -7294,7 +7294,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('83586c4a-4367-4bd9-b23d-d5fe120519ac','Patch','280498d1-a2e1-4dae-a68b-f2ea348cc343'),
 	 ('85841912-670a-47e4-ba7b-b019276ffb84','The Target','37c621a8-b2a1-45f6-8e85-2bc8f6804d04'),
 	 ('9865141f-cb0b-4370-81f8-81b6f365f9a2','One Above All','b4bad1e7-32e5-4f1e-a42e-98484e1cb384');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('c1fda691-e1ff-4332-a8db-c15803a04883','Human Torch','7f30e84f-afe3-4804-9b13-39321d182983'),
 	 ('53409599-9e21-43a2-93a6-83ca323263eb','Quasar','a9b37590-d5f8-4e22-9af4-6e08bc472712'),
 	 ('2d599751-35b6-4575-a4a5-4f159f2729ef','King of Asgard','a44cd430-cced-4b9c-b34e-2d95b9d54621'),
@@ -7305,7 +7305,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('a9b8285e-25e7-4ba8-b848-e5266ae92520','Max','e95b0397-b6c3-4fcf-855f-05cec95ef441'),
 	 ('8ed143b1-646b-4de5-894c-d9d9b8e8b56b','Major Bateman','c9e60d7b-fdf1-41eb-93c6-0a492c2f6772'),
 	 ('18e8025c-e001-4fc3-a60d-2c9158180874','Frank Loomis','c9e60d7b-fdf1-41eb-93c6-0a492c2f6772');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('ad14a494-3c52-4c74-b438-3b13f09baf29','Dmitri Velikoff','c9e60d7b-fdf1-41eb-93c6-0a492c2f6772'),
 	 ('3b1b7782-e55a-4b0a-9e20-ab1d5d1261eb','Pride','6de923e2-3068-42a6-9087-beccefb69d61'),
 	 ('313dce8e-bae8-40b9-9851-9ac2e4ae14e3','Red Robin','a1d0771d-4d2f-4f46-b091-ed96af8dbc52'),
@@ -7316,7 +7316,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('7b99a715-1ae3-42b7-924a-544a70a2e0ff','General Ross','86484001-414d-4fda-98b0-67de0f064718'),
 	 ('cb747795-d630-4fce-a563-069432a3d25d','Nightwing','f0536e6c-0bf7-4330-a8af-d6337874c93a'),
 	 ('8de0cb83-6e84-4702-93d7-4c853bb3476e','Timothy Wayne','304f478f-9f8f-419d-95d1-7a47e1bb27c4');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('9f0072b7-a1bc-44b0-839d-39c0ba954d80','-','3c330d59-126c-479d-b2ed-bccc80bf0b1b'),
 	 ('86737e1f-3355-40e7-963d-f302b71d5825','Dr. Hunter','a75b9b0d-bbfe-4ad2-99f6-387d1b22a6ae'),
 	 ('b2c68f6f-5d1e-4731-a37a-bdcf9bfb033c','Flint Marko','f3411e45-bb16-46bf-aad6-5dbc41e7b3e3'),
@@ -7327,7 +7327,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('ee130fd6-4937-48f4-8c1c-304968ca3ff0','the Marksman','ea992765-17b3-465c-9f95-01dd1710631c'),
 	 ('933abeda-82aa-4fea-92c8-7a21fcd381a1','Louis','ea992765-17b3-465c-9f95-01dd1710631c'),
 	 ('345cb796-3ca2-40a2-85e8-4497c1dc4cc3','Void','a8d930fc-3cbe-4292-9da9-3cf66243017e');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('571d2d89-9e9e-4ab8-a721-a116465e7982','Professor X','3d7c00af-6ad6-4189-a078-94e214cbb477'),
 	 ('b608675b-3ae0-443b-b26c-539130ef23c6','The Master of Kung Fu; The Rising and Advancing of the Spirit; Chinaman (by Jack Tarr)','c8e348a9-ea9b-426b-b496-13746c64bb5b'),
 	 ('2377c61e-a306-4ca6-bdc9-4468b8718bea','Conan','d4f16010-9391-4425-97d3-715d645aede0'),
@@ -7338,7 +7338,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('adca0460-fbea-4b18-9a92-764f023c40e0','Dusk','9f78255b-35ba-4c41-a7b6-6f0b72f2aa92'),
 	 ('a7f40ce7-d9ca-4465-90c4-f00ac3bd7995','Stars','f716309d-f94c-40f2-8c29-b6f2aedca736'),
 	 ('30777e7b-58d5-48b9-a754-bcab88f9761d','High Priestess Windrider','485de910-b1e4-4fa6-8b24-7dc875ff0c79');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('de07da18-26fc-4c21-a153-8dbd8ae54d36','Black King','579e4e2c-5361-4c29-abfb-e0c2e99628c1'),
 	 ('067f0597-bbf1-4d89-860f-56fa04cea0d0','Zane Taylor','a0601271-081a-426a-939a-ec552f40a8be'),
 	 ('0d7cb479-2e88-4a0c-aefd-7e003af3351f','V','a9be42ef-2c00-4b5a-8b17-3dd9a0725571'),
@@ -7349,7 +7349,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('b06117f4-6b33-4be8-99e0-951fe0c00051','Greer Sorenson','7e438cb8-d5cb-4411-8b0b-ced10714a36a'),
 	 ('67dca949-f692-474c-a52d-e6fc8704488b','Hammer Girl','cc12082c-7b9c-47fe-85f4-21c92e55967d'),
 	 ('7819de0d-08aa-4b4a-b857-d5822355c447','Iron Man','730e7ccb-e167-4d34-86ad-13f47c8566e1');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('68aada40-493f-4100-b7da-361ec87ab88c','Telford Porter','c8ffaeb4-dd74-47a9-8533-37daae3c7be1'),
 	 ('0b751668-60e2-4ce8-8c93-423627adc981','White Venom','0126fece-f500-49bf-917d-2760427fe5fc'),
 	 ('21f16036-bcde-4124-a7e0-d03deb56d25a','-','d49caed2-e737-4abd-8cc4-8274d96d57f0'),
@@ -7360,7 +7360,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('6948828e-d980-471b-9f04-56bf37b4d612','-','c43f8bcb-323f-490a-ab51-6bb71090bbc7'),
 	 ('bfcda2c1-059d-47a0-8f3f-eba9c650fd33','Wolverine','ff618f77-5249-4032-93f5-3d9591dfc06f'),
 	 ('623e96f1-9089-4b2e-b077-47bf572165df','the Sea Beauty','d0038b30-0e00-44d4-baa1-a51a366c145e');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('42995211-9d43-4956-a65c-bfb94ccf120d','-','bc0fd3dd-78b1-4f0f-9028-7cabe95d3300'),
 	 ('11895a6f-5421-4893-9698-4c3d60f86329','The Aerial Avenger','37c621a8-b2a1-45f6-8e85-2bc8f6804d04'),
 	 ('3fca1310-875a-4dde-8ca9-e958161208b7','Kymaera','f4a98531-a159-4a0f-990e-9038a75619ff'),
@@ -7371,7 +7371,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('7632342e-b8cc-43bc-a979-63cfc0112102','Magneto the Second','3dd648fc-c334-4986-8dc6-f11fe0a33d58'),
 	 ('f9dc6239-4801-483c-a7d3-f7646a292996','Charlie Silus','04baec85-2764-4be2-a9dc-5335f645217c'),
 	 ('8497d4d8-8091-459b-a7d1-4c7a3944b442','Pietro Frank','42c4a89a-3955-4453-9f86-d6a0dae724c4');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('a796a543-ee1b-4ab8-a716-c5173e0ca725','Black Flash','a224acbb-e1ab-437d-80ce-045c4c5c15c9'),
 	 ('69512efa-5988-4285-8014-6113d684ff3d','Castigo','c9e60d7b-fdf1-41eb-93c6-0a492c2f6772'),
 	 ('7ce78eb3-7947-4c36-bb23-b69b56bfb45e','Joe Rainey','c9e60d7b-fdf1-41eb-93c6-0a492c2f6772'),
@@ -7382,7 +7382,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('a7debf44-a4c2-4805-9e08-3d38fd577bfd','The Man','026db347-9036-47fe-ba0f-8195d45af2cb'),
 	 ('f915f665-12cf-4ef4-bd93-116e7f5a9854','Tornado Tyrant of Rann','996d53f1-1ea8-49a7-ba45-2e21ca66fdb2'),
 	 ('6d2cfad2-d2f7-41ca-873a-410d0a423489','Mecha-Rhino','0006d7ff-28f7-4c4f-8936-4df40b3a7689');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('120ccde0-9204-4502-9f85-92e3c62e00f5','Arkham Knight','f0536e6c-0bf7-4330-a8af-d6337874c93a'),
 	 ('e507b375-8593-4ed5-b5d8-32072231128b','Damian al Ghul','05d157bb-38f7-43ad-85bd-c36a3613e6ab'),
 	 ('5bd63f93-aedd-4818-b871-9fc892986b76','Edward E. Nigma','56a632c4-17fb-4460-8c9d-88762bb0d5d3'),
@@ -7393,7 +7393,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('a5a7a3fd-dcbb-438f-afbe-1c50b0324ba7','Spider-Clone','139bf8d9-8544-4196-ba61-008f055b2b57'),
 	 ('19560a5e-66e5-4eef-af05-122af59bb127','Longbow','ea992765-17b3-465c-9f95-01dd1710631c'),
 	 ('1e8f5964-0aeb-45bb-b6b0-867acd04e63f','Golden Archer','ea992765-17b3-465c-9f95-01dd1710631c');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('dc23a2fd-04e0-4229-b7d9-443aad4040b4','John Victor Williams','a8d930fc-3cbe-4292-9da9-3cf66243017e'),
 	 ('0c7ea123-d4e2-4ca0-8185-766eb9580b2f','Ariel','e3a6e7b2-bf4b-4dc8-ac80-2a5c6e573dff'),
 	 ('76a7d71e-3722-4ccb-9472-56d7218142f5','Donald Pierce and probably others','3d7c00af-6ad6-4189-a078-94e214cbb477'),
@@ -7404,7 +7404,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('17af25b6-7d41-4b59-9a28-64289565752c','Ted Ghostel','32482ec0-c5a8-4245-add0-a1d9357aa04c'),
 	 ('e6d39e60-a468-432c-8437-d32af6e8a440','Entity Lambda-Zero','bb45a3dc-241b-4108-88a5-994e2aa9ad3d'),
 	 ('32d25d1b-1366-4387-accd-9a7f9d165d23','Captain Universe','9f78255b-35ba-4c41-a7b6-6f0b72f2aa92');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('b16b328e-b8ef-49ce-a147-e1abe2cb7fe9','Star','f716309d-f94c-40f2-8c29-b6f2aedca736'),
 	 ('ffaeb833-3fe0-4856-ad72-a56758ce4379','Princess of N''Dare','485de910-b1e4-4fa6-8b24-7dc875ff0c79'),
 	 ('1d77cc39-8c99-4ebe-8a6b-5d6de76ed47f','Reignfire','579e4e2c-5361-4c29-abfb-e0c2e99628c1'),
@@ -7415,7 +7415,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('82ff45e1-4c24-4031-88c6-9b810eb9106f','Eddie Blake','50d026ed-7250-4d9a-9a1a-042e905d93fb'),
 	 ('00d708fa-4fc6-4c9d-ae1a-70b34b2e5c09','-','0b27c20d-ff7e-413a-8593-577f9dc4ac60'),
 	 ('f7fad93b-52db-46ff-8b90-d975577d28e7','the Destroyer','cc12082c-7b9c-47fe-85f4-21c92e55967d');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('fc86a6f8-91b5-49e4-b8e4-37783c35fb14','Suzy Sherman','9509ab71-95c2-4839-bb7c-104f3e656b46'),
 	 ('7b4ebc89-33d6-46c4-b2d6-0fe433838a75','Ultimate Ultron','730e7ccb-e167-4d34-86ad-13f47c8566e1'),
 	 ('11114595-e6f2-4f75-8117-8651894c1fc3','Venom','0126fece-f500-49bf-917d-2760427fe5fc'),
@@ -7426,7 +7426,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('f42e3344-bd5b-4610-ac39-4c65f9ea76cc','Makita (Hebrew dub)','e60a527e-0a83-41a8-a263-f02c5fed435b'),
 	 ('5e265016-41d0-4a9b-919e-9fc2f2c0e881','Bucky','b1f8e7e1-b866-4ce0-9a49-9e5cedab1f4a'),
 	 ('03bba45f-e1f9-421f-ab8b-6d947de00379','Death','6dd5871c-22c0-4f0b-bc9c-b958753d43f8');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('cba1e833-2fe3-416c-96cd-2cf19a5b609e','Mr. Patch','6dd5871c-22c0-4f0b-bc9c-b958753d43f8'),
 	 ('5c89e6e6-083d-4873-9386-dde501e901e7','Wonder Girl','aa55a08b-0b74-4958-a005-400204f41c08'),
 	 ('6803c2a0-ee3d-4dc9-bb67-4c252f8d9b69','Laura Howlett','ff618f77-5249-4032-93f5-3d9591dfc06f'),
@@ -7437,7 +7437,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('e17a1c50-facd-4e9d-9f9f-31af9d54c07f','Charles Xavier','04baec85-2764-4be2-a9dc-5335f645217c'),
 	 ('d85b2e85-63e2-458a-8fa8-e443597933a4','Mister Zyx','a224acbb-e1ab-437d-80ce-045c4c5c15c9'),
 	 ('2fec6810-6046-4bff-97e1-0d89aa7bce2f','Fred D''Amato','c9e60d7b-fdf1-41eb-93c6-0a492c2f6772');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('bd3e1218-c6b0-4ecb-a11b-3ab795241cbf','Richard Rook','c9e60d7b-fdf1-41eb-93c6-0a492c2f6772'),
 	 ('3f272c92-edb3-4773-9b43-4f8692ebcd6a','Arsenal','5c03e63d-54d4-46ed-b17e-fcbc90659ebf'),
 	 ('e0bda431-4ced-4f73-a796-c738608429ab','Captain Britain','fc5bd7ad-90ca-4c03-b2fe-a5f7bbcb1ca9'),
@@ -7448,7 +7448,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('bd1f736c-e686-40cb-bf30-224937696c93','Box','4e838f1a-e1db-4f22-af16-64d856d82a62'),
 	 ('1436cee9-1cad-4224-a7e9-6141fee79277','The Great Eye','38d258cb-4621-41b6-879f-3a44bb4b7268'),
 	 ('a15efbf8-aaea-49d4-8e3f-9280dfb38802','Freddie Dinardo','df78e3e6-704b-497a-9b87-14d389279fbf');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('1db46b91-6046-405d-95ca-2b5ac0d832e0','Spider-Man','139bf8d9-8544-4196-ba61-008f055b2b57'),
 	 ('8b182120-8fa1-4a0f-8038-7d1b928283b8','Slasher','3e6a5249-6872-4265-80fc-62c2e8ad7dfe'),
 	 ('cb21e75c-46ee-4b6a-9f74-906e2544c21e','Venom','e1a1ff0d-fcb3-4760-818a-3965834db308'),
@@ -7459,7 +7459,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('541ed34c-e223-417d-bd4b-cc4f68d54427','Parallax','393f3064-d721-4d35-9d95-9ed6444017ac'),
 	 ('41423cd7-c013-4dff-bf7c-3ff9f18e7092','Long Hair','d4f16010-9391-4425-97d3-715d645aede0'),
 	 ('ea0cacfa-83c1-43ed-9788-2c9f019478ad','Screaming Mimi','ce822a71-c935-46d8-a77b-350b0956b079');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('b8001c72-64dc-4af6-9f8a-f5427644d197','Spirit of Redemption','cf9bd5cf-b275-46c0-b213-7a1f429fd153'),
 	 ('0026c705-9041-4990-a08b-eb74a145033a','Man of Steel','00accfd1-7d93-4919-8d10-7d1d1b9f25ae'),
 	 ('c3c8699a-b9f0-46f2-9173-3d4f39c950fb','Spider-Boy','9f78255b-35ba-4c41-a7b6-6f0b72f2aa92'),
@@ -7470,7 +7470,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('29b4207f-3d79-4c99-9bb5-bbc5145c126a','Clark Joseph Kent','8569ee90-4a9f-4ab1-9633-6b895618a672'),
 	 ('1d511ed3-4478-4d31-a17d-8fe16bc15948','the Weed','89110f21-f80c-46ff-9110-cde28b16934e'),
 	 ('6529dd1c-2b85-48d1-a759-ff1af6a0e074','The Overmaster','8a9db6c7-ec74-437d-b537-f89f9db77851');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('af718509-abcb-4090-b968-1d75525a0307','Dr. Josiah Verpoorteen','9dee6c62-4674-4a81-95f8-68dc55666312'),
 	 ('6352f970-62a5-45f8-93d3-07b6b024ce9b','the Designate','cc12082c-7b9c-47fe-85f4-21c92e55967d'),
 	 ('f5f69b7f-4d5c-45bc-a997-745f148df91a','Thor Lass','cc12082c-7b9c-47fe-85f4-21c92e55967d'),
@@ -7481,7 +7481,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('74828866-8a8d-4e80-9e21-3c2dc718025f','Rhodey','af8bd626-45ff-4629-8e27-9951b56f4aaa'),
 	 ('a706dd81-4f10-4715-aee5-9d872b052d03','-','30bfcedb-c6e2-426c-b097-5cda11683297'),
 	 ('cbc4cd05-e927-4722-bb25-15ba0e6eca24','Atom''x','867ad55f-d7c2-42e9-b6a1-eadc1b216d1b');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('f974d9dc-c393-42d3-8c47-1a83e6843503','Experiment X','6dd5871c-22c0-4f0b-bc9c-b958753d43f8'),
 	 ('010dd049-dd7f-4959-80e8-e25e2fd8cfae',' Wondy','aa55a08b-0b74-4958-a005-400204f41c08'),
 	 ('4cd7f3e7-ae88-4f12-bf63-f1a12a714b31','Nate the Great','92eaa693-e1b1-496b-a609-373eca06d2c3'),
@@ -7492,7 +7492,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('20375002-13d1-4277-b90e-d640df5f7306','Blackheath','27bf2a91-6b9e-454d-b44c-79bc5e63f982'),
 	 ('6c346ef0-a218-4610-9787-08b4f0ef58da','Vic Sage','386b451d-8af4-4683-87a8-89940c368761'),
 	 ('8ba57ef3-b058-44ee-94ad-fe9b7fe270fc','Ted Bishop','c9e60d7b-fdf1-41eb-93c6-0a492c2f6772');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('bb165705-43f7-45fc-a33a-940aa381fe28','McRook','c9e60d7b-fdf1-41eb-93c6-0a492c2f6772'),
 	 ('e2aa4e7a-3591-4161-beb0-6814fb8de707','Fra','c9e60d7b-fdf1-41eb-93c6-0a492c2f6772'),
 	 ('3ef3d05f-7270-4e25-8709-5576a8363d7a','Dark Raven','6de923e2-3068-42a6-9087-beccefb69d61'),
@@ -7503,7 +7503,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('41055a38-e871-49a6-bd69-5cc9070e1986','Wingman','f0536e6c-0bf7-4330-a8af-d6337874c93a'),
 	 ('afc1abf2-36d0-4ce1-897a-8936dfc2c3af','Mr','a75b9b0d-bbfe-4ad2-99f6-387d1b22a6ae'),
 	 ('1567457d-bf40-43e5-9ea0-07679377d9c8','Sylvester Mann','f3411e45-bb16-46bf-aad6-5dbc41e7b3e3');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('8db5d3d6-221a-40ee-91af-5b288b922d67','The Necromancer','38d258cb-4621-41b6-879f-3a44bb4b7268'),
 	 ('0b9b98eb-eb92-4b2b-bb93-c4d3140ffbf2','Ranger Rocket','631f850c-291c-4adc-bc1e-ddc07fa2ebcb'),
 	 ('eaac7e28-64bd-4667-89c4-e9df98a9127c','-','84d795db-7326-4aa6-9558-8377fca2935d'),
@@ -7514,7 +7514,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('3b46313e-1806-4e72-b252-b22144d96060','Amahl Farouk','3d7c00af-6ad6-4189-a078-94e214cbb477'),
 	 ('4db1f22a-f371-4d4e-80d9-cb776a15938f','Cypher','3d7c00af-6ad6-4189-a078-94e214cbb477'),
 	 ('30a2f201-ca73-4a60-8790-13279dbab007','Green Lantern','9f8bfa0f-ce21-4d27-87c4-e5270d04be5a');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('82ba69b2-8418-4beb-9ce8-5f40d386689d','La Garra Argentado','f9d3eacc-2f12-4fd5-9dbe-6f1e711933eb'),
 	 ('bf858d19-ecb8-4876-9fa2-3fc6ebd34d44','Hal Jordan','cf9bd5cf-b275-46c0-b213-7a1f429fd153'),
 	 ('40cbe238-67a8-413e-86f3-88393a0f0613','Dark Angel of San Francisco','eb6f9c69-d3cc-4f1b-98cb-27cc46838ca3'),
@@ -7525,7 +7525,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('bbf81882-1645-4bc1-9658-f19e24e4bdb2','Queen Ororo','485de910-b1e4-4fa6-8b24-7dc875ff0c79'),
 	 ('cebeff97-42a9-4e1c-b843-6a8197a10967','-','25417398-ee88-4343-9606-18352269eb55'),
 	 ('adcb4616-347a-46c0-8fce-c9bb206e9965','Superman','f94b59c8-242c-49da-b2c7-b74fef2f01c8');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('1dde7a42-f7c0-43ec-a3c4-83fdcd71e684','Nova','dd5a1142-bbec-4782-9eab-8ffe41079831'),
 	 ('885a398e-fa85-499b-b623-e1fa8759ab41','T-1002','de007c00-6bd7-457a-8142-dcb57fb1812e'),
 	 ('5ed4df7e-269c-450d-9456-16d83d0425c2','Flamebird','89230ee4-f63b-4603-a8f6-aaaf70b1d863'),
@@ -7536,7 +7536,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('e8993376-5158-41ce-9c02-28d95ec8c0af','Jake Olsen','d2477747-add3-4952-ade4-1a5275a0e18c'),
 	 ('cf723af4-e3f3-4b91-992c-9440d419eab2','the Supreme','cc12082c-7b9c-47fe-85f4-21c92e55967d'),
 	 ('75ba77f4-0ca9-4144-b3cf-661b02096c68','Triad','135d38d2-1f97-4249-a06d-37c7461a42a5');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('aef1d67a-9e7c-4c3c-a114-61aec7c1154b','Great Ultron','730e7ccb-e167-4d34-86ad-13f47c8566e1'),
 	 ('e82a8693-7159-4526-900c-5e873cf06bc4','"Ed"','0126fece-f500-49bf-917d-2760427fe5fc'),
 	 ('61e48ffc-a6ce-4aa0-83d9-fe42ac83d7d2','Deadpool','b9ce03b9-8953-490c-9947-92aed0fa3eb1'),
@@ -7547,7 +7547,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('89ce509a-45c1-4342-a438-e0bdd8aa85ad','Weapon Ten','6dd5871c-22c0-4f0b-bc9c-b958753d43f8'),
 	 ('26bbb47b-0fe3-4083-b7ba-d903534f2291','Mai kethLogan','6dd5871c-22c0-4f0b-bc9c-b958753d43f8'),
 	 ('7e905e06-b090-44e9-b7d0-786d38a2bbcb','Helen Troy','ba609c14-c30d-4099-8e83-07b5151faec8');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('c6097ee2-6cee-4d22-94d7-a67cc294283b','Princess of the Amazons','aa55a08b-0b74-4958-a005-400204f41c08'),
 	 ('b32634d0-d01d-482f-9365-ced7fa09973d','Sara Lance','f2357a6c-e458-4b0b-86d3-ca58455dc181'),
 	 ('f9b12394-853c-46a8-ae33-b4e3b0c27348','-','ca2341d1-6012-4e30-920f-8acb1c91bda0'),
@@ -7558,7 +7558,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('d88a183b-4086-4a98-a1ef-a37eae7f370e','Rulk','86484001-414d-4fda-98b0-67de0f064718'),
 	 ('b7424fd6-b124-4463-a039-b73f06e8dce9','Red Robin','f0536e6c-0bf7-4330-a8af-d6337874c93a'),
 	 ('0c53453b-99f2-41f4-85e0-03039044ca4b','Redbird','05d157bb-38f7-43ad-85bd-c36a3613e6ab');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('1d942bbc-0588-444c-aa30-b62837d1238e','-','24239342-6a96-4e11-aa60-a8ddc78d1822'),
 	 ('6dfecd74-aff7-427c-ac3f-3ca8cdc4e987','Wanda Langkowski','4e838f1a-e1db-4f22-af16-64d856d82a62'),
 	 ('debadc9c-145b-46dc-8948-71addf879d74','Spider-Man','e1a1ff0d-fcb3-4760-818a-3965834db308'),
@@ -7569,7 +7569,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('6f30dbdb-2686-4ca4-9fae-7d21726774e1','-','cb1c6ce5-73ec-4b73-8c66-13cf06d34935'),
 	 ('466c9e5d-d1cf-483e-bd84-1dac349d34d2','Henry Johnson','00accfd1-7d93-4919-8d10-7d1d1b9f25ae'),
 	 ('0e9c2b10-9c8b-4d34-a055-897ef9a8b54e','Spiderman','9f78255b-35ba-4c41-a7b6-6f0b72f2aa92');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('9f43d6ad-902e-4670-834e-0cd64d913486','Scarlet Spider','9f78255b-35ba-4c41-a7b6-6f0b72f2aa92'),
 	 ('b8d4b2d0-1b4a-45b0-8513-ac3d64c2e645','Goddess','485de910-b1e4-4fa6-8b24-7dc875ff0c79'),
 	 ('1df919b9-b252-43b6-b925-8b161a4796ab','High Priestess','485de910-b1e4-4fa6-8b24-7dc875ff0c79'),
@@ -7580,7 +7580,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('74db0057-fc82-4f88-8423-f95bfcbf7d88','Masterlord','8a9db6c7-ec74-437d-b537-f89f9db77851'),
 	 ('2e999b9a-2c67-43f6-a73c-4d8f7df51312','Blackbeard the Pirate','9dee6c62-4674-4a81-95f8-68dc55666312'),
 	 ('0920da63-87f8-4ab4-99c5-5eb902d52c63','-','9f6b82d1-7df6-4c58-9efe-249a4e206ec1');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('3f94cd52-eb1f-4f41-92d8-2101d73907be','Hammer Lass','cc12082c-7b9c-47fe-85f4-21c92e55967d'),
 	 ('d1f6588a-b8c6-4fa0-9b7e-d5727f23d803','Apollo','374bccdd-4e7f-41fe-9219-3e9e8221baf2'),
 	 ('e7263438-4124-4188-8089-d3a63444c8fb','Ultron Mark Twelve','730e7ccb-e167-4d34-86ad-13f47c8566e1'),
@@ -7591,7 +7591,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('785a0724-be1e-4fed-9947-9c30f086cdb8','-','4ed38781-6bdf-4eaa-97aa-21475d7c567c'),
 	 ('ab432729-bcd7-46b3-b195-065d9d2f4b4f','-','31244c06-3f15-4d9b-8417-44e47f623a06'),
 	 ('3513db09-279d-4e56-b39f-7e173cc2dd83','Kilgrave','8fa27430-abf4-4059-8b08-73fdd3ae27d8');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('a7b99500-80bb-4645-a7e0-da97ff1b9e85','Reverse Flash','a224acbb-e1ab-437d-80ce-045c4c5c15c9'),
 	 ('68879697-1678-4bf4-b267-3c337f156105','Cliff Callador','c9e60d7b-fdf1-41eb-93c6-0a492c2f6772'),
 	 ('802ec49b-16e1-4116-87bc-dd0628cacf0a','Melchior','c9e60d7b-fdf1-41eb-93c6-0a492c2f6772'),
@@ -7602,7 +7602,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('476ba15f-0998-480f-8fde-4ed39cea99e5','Alex O''Hirn','0006d7ff-28f7-4c4f-8936-4df40b3a7689'),
 	 ('ea4fee7f-8343-4434-842d-2eb1fed987db','Demon''s Head','e209b884-318d-40ea-96fd-bfeef8c87ad5'),
 	 ('16e45c6d-0818-4222-954a-e59164504bfd','Jaybird','f0536e6c-0bf7-4330-a8af-d6337874c93a');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('572f9fca-eb86-4089-94ed-ddd4e44af66f','Batman','05d157bb-38f7-43ad-85bd-c36a3613e6ab'),
 	 ('db6843ba-384d-4c8d-a5da-7028096fc069','E. Nigma','56a632c4-17fb-4460-8c9d-88762bb0d5d3'),
 	 ('c5f3f1a7-4967-4e7c-bdd5-181a8d9a6046','Hunter','a75b9b0d-bbfe-4ad2-99f6-387d1b22a6ae'),
@@ -7613,7 +7613,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('6c25dc5b-c169-4e0c-b260-d6292024500f','Superhuman Cellblock Prisoner 334556','ea992765-17b3-465c-9f95-01dd1710631c'),
 	 ('170c68f8-4d3a-4089-8950-ae9be6282ae7','the Hawkeye Kid','ea992765-17b3-465c-9f95-01dd1710631c'),
 	 ('92fb4c5d-c161-4bae-b962-9928e847f686','Golden Guardian of Good','a8d930fc-3cbe-4292-9da9-3cf66243017e');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('7098462e-3a14-41c5-bcce-ef934ae6f108','Benjamin Russell','76b492dd-052c-4fd7-a057-d203ca506dba'),
 	 ('1d4f1a72-9329-4fc9-bdee-074b35d8ba65','Kitty Pryde','e3a6e7b2-bf4b-4dc8-ac80-2a5c6e573dff'),
 	 ('068ce219-035d-4fea-8a56-b29d7c201138','Evil One','3d7c00af-6ad6-4189-a078-94e214cbb477'),
@@ -7624,7 +7624,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('b7babf73-e6d6-4818-b9e0-82890d2aaf72','Anne McKenzie-Thompson','9270f0e4-7e27-40ed-8b25-ac943256f260'),
 	 ('87aba6ff-d531-415a-ab6a-1937f5f9adfc','Daughter of the Volcano God,','f9d3eacc-2f12-4fd5-9dbe-6f1e711933eb'),
 	 ('d43ee22b-068e-4ec2-bcde-c19307631465','-','732770cb-9e8e-4a23-85ef-c3f387fa657b');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('0f860033-9bdb-46dd-8dc7-67b62e3d8494','The One','2ef3087d-49bf-4d17-a16e-8e1f9112efd5'),
 	 ('9baf11f8-7dc3-4339-a77a-1e34e1caf345','Cripus Allen','cf9bd5cf-b275-46c0-b213-7a1f429fd153'),
 	 ('b4d58814-6cc7-4615-9497-b0f9a995b946','Spider-Woman','a64c09bb-2173-42a3-bead-ee3780fa1812'),
@@ -7635,7 +7635,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('a0272862-d833-40d3-9b86-ca13e01c04cb','Ororo Komo Wakandas,White Queen','485de910-b1e4-4fa6-8b24-7dc875ff0c79'),
 	 ('f10b23ed-24d4-4ca4-9294-5dfd7d0f1db0','Princess of N''Dare','485de910-b1e4-4fa6-8b24-7dc875ff0c79'),
 	 ('6cd5e0d4-2e0b-477d-bf68-d21cb64cd263','Gabriel Sylar','a0601271-081a-426a-939a-ec552f40a8be');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('fa281e2f-c0b4-4717-93f1-cfa24cfc23e1','Trinity Child','89230ee4-f63b-4603-a8f6-aaaf70b1d863'),
 	 ('675ebe9b-9454-4693-aa27-a61dfa8f75ae','Claire Connors','89230ee4-f63b-4603-a8f6-aaaf70b1d863'),
 	 ('3fc9566f-fbfb-4e47-ac0b-5f7cc2e81afa','the Metropolis Marvel','8569ee90-4a9f-4ab1-9633-6b895618a672'),
@@ -7646,7 +7646,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('5da61fe0-5101-4a90-b2a0-34b11865d4ae','-','957f680e-158d-4bb9-af43-d9facaabfced'),
 	 ('d7fd6e00-29b3-479e-837c-c028731468bb','Vegita','e60a527e-0a83-41a8-a263-f02c5fed435b'),
 	 ('d4e9507f-3f18-46a0-be7a-438285a33c57','Randall Burroughs','867ad55f-d7c2-42e9-b6a1-eadc1b216d1b');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('58b3b99a-259f-4f79-80a2-3ba44465a21b','Agent Ten','6dd5871c-22c0-4f0b-bc9c-b958753d43f8'),
 	 ('9f4f9438-33c7-4293-be2a-0bd80859bc5e','Cassandra Sandsmark','ba609c14-c30d-4099-8e83-07b5151faec8'),
 	 ('ed6e24fd-70b2-4dca-83fd-65109d0598a3','Hank Pym','e5524468-e4b2-4a53-bcaa-0f2718ee6cb9'),
@@ -7657,7 +7657,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('bf9570b3-6680-465f-9147-d4429a6d475e','''Purple Man''; impersonated Constrictor & Dreadknight','ea992765-17b3-465c-9f95-01dd1710631c'),
 	 ('720974e2-1bf4-439f-9a27-d366b0013c0b','Scout','a8d930fc-3cbe-4292-9da9-3cf66243017e'),
 	 ('b3e025cd-77b3-4ba5-a08a-72d1aeb94d0b','Wanda Frank','cb020c56-41c3-451d-8154-7deeb371ea75');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('5352ed20-eefc-4765-aac0-0044731fedbf','Sprite','e3a6e7b2-bf4b-4dc8-ac80-2a5c6e573dff'),
 	 ('6b3a2177-5090-4d36-bfb4-f752e4d3af22','Sybil','4b03e66e-9b3c-4c3b-8ab9-a661080843e0'),
 	 ('ca4492da-f8da-480b-97ee-c276a4a73770','White Lantern','393f3064-d721-4d35-9d95-9ed6444017ac'),
@@ -7668,7 +7668,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('7946c6f3-d200-40b9-9bda-31a5a045d4eb','Porcupine','025295be-861f-4101-826d-e0b2fdd2f7c1'),
 	 ('5aa13e64-c0c3-4d29-ba8a-b60af0aeaac6','Hornet','9f78255b-35ba-4c41-a7b6-6f0b72f2aa92'),
 	 ('51a26257-3422-4a1d-942a-eb151cc6323e','Ororo Iqadi T''Challa','485de910-b1e4-4fa6-8b24-7dc875ff0c79');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('419867a9-c58c-4d92-9971-198255dc8f3f','Mistress of the Elements','485de910-b1e4-4fa6-8b24-7dc875ff0c79'),
 	 ('78555061-1698-4fd2-b7da-100c5458d512','Experiment 13; Superman; Project: Superman; Carl Krummett; Project: Lionel Luthor; The Metropolis Kid','f94b59c8-242c-49da-b2c7-b74fef2f01c8'),
 	 ('e965dbad-2d0a-4c42-a519-27c518d80b4e','Kory Anders','dd5a1142-bbec-4782-9eab-8ffe41079831'),
@@ -7679,7 +7679,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('f7a10594-0689-474d-9c2d-eadbd4338921','The Terrible Toad-King','810fa1af-b0a1-4288-9690-d2f09a5cc345'),
 	 ('259f1156-970e-4666-8883-6aac09701c66','Hammerette','cc12082c-7b9c-47fe-85f4-21c92e55967d'),
 	 ('6b32450f-caca-4bd1-a709-f15e9ab41da3','Thor','bad2641f-749d-4e88-9437-c57eeb8d002f');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('8c7c5664-09c7-4651-8c41-0db924f777f2','Mark','730e7ccb-e167-4d34-86ad-13f47c8566e1'),
 	 ('6b92c48c-03b9-4a70-8b1e-c9b7131bc794','Eddie','0126fece-f500-49bf-917d-2760427fe5fc'),
 	 ('431affd7-bde0-4baa-9c8f-d8b93fb7880c','Lethal Protector','0126fece-f500-49bf-917d-2760427fe5fc'),
@@ -7690,7 +7690,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('1667d88f-324a-4c95-96f2-b42514d47cf1','Prince Vegeta','e60a527e-0a83-41a8-a263-f02c5fed435b'),
 	 ('22d2189f-f8ef-4815-9814-6c32ae63f2e6','Captain Vegeta','e60a527e-0a83-41a8-a263-f02c5fed435b'),
 	 ('41959ff0-5687-4b12-87ff-7e1c346b7843','Jahr-Drake Nigle','867ad55f-d7c2-42e9-b6a1-eadc1b216d1b');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('f3025c64-9183-4920-a913-3bd12f0b1e04','Weapon X','6dd5871c-22c0-4f0b-bc9c-b958753d43f8'),
 	 ('95701f16-dd12-4b8b-ad20-25a026911dbf','Peter Richards','6dd5871c-22c0-4f0b-bc9c-b958753d43f8'),
 	 ('231c4246-aa4e-4551-a127-9e11acf8a379','Cassie','ba609c14-c30d-4099-8e83-07b5151faec8'),
@@ -7701,7 +7701,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('fae54fe4-7079-4e9e-9c56-c58d4480a48f','-','00b91cfd-d8cc-4587-b56a-7694174393eb'),
 	 ('0fedec6d-3b2f-43f8-95f8-97048a23dce6','Formerly Hawkeye','ea992765-17b3-465c-9f95-01dd1710631c'),
 	 ('f7344d3b-0956-43e4-a938-452b37218ae5','Ananasi','3d7c00af-6ad6-4189-a078-94e214cbb477');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('f0a20194-002e-426f-9ef3-283a9ea04c0a','-','3c7a7218-0553-4784-bb69-fe932d4c7462'),
 	 ('dd0f8d56-f78f-49df-a5b8-d8419042b95e','Little Monster','d4f16010-9391-4425-97d3-715d645aede0'),
 	 ('6d6c5ad4-77bc-4906-b335-dd8f91c89abf','Mimi Schwartz','ce822a71-c935-46d8-a77b-350b0956b079'),
@@ -7712,7 +7712,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('d47cda21-b303-4c79-87c5-74abe6f09c10','Weather Witch','485de910-b1e4-4fa6-8b24-7dc875ff0c79'),
 	 ('54bfefd9-e1d2-4d3d-b7e3-fbc760b5369c','Robert DaCosta','579e4e2c-5361-4c29-abfb-e0c2e99628c1'),
 	 ('15ab2b7f-1245-4cb5-aa02-168cb3874ae3','Drew O''Grady','a0601271-081a-426a-939a-ec552f40a8be');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('3e319104-54e8-4ba8-b2c5-5dafbc3cfc97','Sparky','a9be42ef-2c00-4b5a-8b17-3dd9a0725571'),
 	 ('831f446e-8f1b-4016-86ae-5926767ef144','Terminator','c303a19e-5d87-4f8a-a1ac-e664f856a0e8'),
 	 ('09801e26-c320-4caa-b814-97063233dd52','Teen of Tomorrow','89230ee4-f63b-4603-a8f6-aaaf70b1d863'),
@@ -7723,7 +7723,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('e91ac597-1265-4ac9-90a1-c61ec5306c43','Duo Damsel','135d38d2-1f97-4249-a06d-37c7461a42a5'),
 	 ('ba3f5756-14e3-4586-ab43-59bdbf1fff84','Crimson Cowl','730e7ccb-e167-4d34-86ad-13f47c8566e1'),
 	 ('9d129862-4ae0-4c71-a64d-c95baeaabe7a','Ho Yinsen','730e7ccb-e167-4d34-86ad-13f47c8566e1');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('80118d7f-3691-4db3-83a8-9a16c0ce0268','Sister Edwina','0126fece-f500-49bf-917d-2760427fe5fc'),
 	 ('67cbe48c-f743-469d-a13c-080bd28ea912','Scorpion','d41d7c8c-2a60-4bae-92f2-86e1c1bad3dd'),
 	 ('c30f9ebe-afb1-4511-995b-50e9a22a4f56','Majin Vegeta','e60a527e-0a83-41a8-a263-f02c5fed435b'),
@@ -7734,7 +7734,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('ff8d64dc-01c4-417a-8170-8e68c0720a48','Laura Logan','ff618f77-5249-4032-93f5-3d9591dfc06f'),
 	 ('fcf789df-1b2f-457f-a41c-19de51a38d08','Kaine','8d848b3f-9c25-45bd-8b2b-36e7f138d57c'),
 	 ('a42160a4-2e3f-4d9b-92b4-454befb4850b','Father Time','ea992765-17b3-465c-9f95-01dd1710631c');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('9fd36871-0fa0-4b82-b4c2-c8f409881126','-','92fedb30-dd2f-4a66-a720-1055d4bb826b'),
 	 ('921159b6-4ab6-403c-a5ea-d88d414428e2','Ana Maximoff','cb020c56-41c3-451d-8154-7deeb371ea75'),
 	 ('d7535513-257a-4045-8cbb-47039fe682f3','Ms Marvel','d7f9bd63-9a20-4269-92e8-a0cc642b802e'),
@@ -7745,7 +7745,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('f6ab6818-74a1-4c79-a7f4-de997f015d8c','Goddess','485de910-b1e4-4fa6-8b24-7dc875ff0c79'),
 	 ('c3e9746c-41c1-49ee-ab3a-36380e35523b','Princess Koriand''r','dd5a1142-bbec-4782-9eab-8ffe41079831'),
 	 ('40eb7ebd-5d47-4092-a946-054c94050a0b','Kara-El','89230ee4-f63b-4603-a8f6-aaaf70b1d863');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('51f82c56-1d00-4175-8475-e0310f9e17df','the Last Son of Krypton','8569ee90-4a9f-4ab1-9633-6b895618a672'),
 	 ('719d041a-cd98-4e5f-8e9e-ec8389fefe74','-','d3fec3b0-5eb1-4a81-a660-d3c08017be00'),
 	 ('27c09e26-131f-4559-a778-b2d669490318','Chins','8a9db6c7-ec74-437d-b537-f89f9db77851'),
@@ -7756,7 +7756,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('9fca3c9b-69c7-4e82-917a-22819caaea9a','Una','135d38d2-1f97-4249-a06d-37c7461a42a5'),
 	 ('5a1db0be-6f55-4c9b-8e20-50324ccb1e80','Anti-Venom','0126fece-f500-49bf-917d-2760427fe5fc'),
 	 ('db0f273d-18ca-4cce-8b0e-9c9fd344b709','-','1acb894e-4cfc-46c8-8216-28e55cf3ca7c');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('238612a4-a3dd-4d49-933c-152de49fee23','Pixie','becc8f02-2bba-4d81-8217-b78d7be0e245'),
 	 ('b54d88c7-d19f-4368-b8ac-5716cf978c6c','Bejiita','e60a527e-0a83-41a8-a263-f02c5fed435b'),
 	 ('e046c8ec-9731-4a37-ab57-c5b1cec0a97d','Super Vegeta','e60a527e-0a83-41a8-a263-f02c5fed435b'),
@@ -7767,7 +7767,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('77d58a39-aa8b-4845-a756-2ea6f18898de','Mrs. Chambers','4b03e66e-9b3c-4c3b-8ab9-a661080843e0'),
 	 ('1bf276d7-7a22-4fbd-8503-ffa8560e6d48','Green Lantern','393f3064-d721-4d35-9d95-9ed6444017ac'),
 	 ('73e01304-3f28-4c0a-888f-51434e0520fb','Savior','d4f16010-9391-4425-97d3-715d645aede0');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('392d2b93-e522-458b-a1c4-88cfc1b28291','-','127bfee4-df3b-4fae-b493-3da24749c9d6'),
 	 ('155784c6-eca7-40e5-b3e2-b197a9ab2dec','Marshland Monster','5c61b1f1-f6ad-4832-a57c-0e31c02dee26'),
 	 ('a4bc0835-6d9d-4e4b-bb4a-5c1f50d88436','Thea Merlyn','89867f76-2901-4c80-8a64-c636eb7f0e68'),
@@ -7778,7 +7778,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('9905ce7d-1177-43df-bfbf-fe87e50ad7d2','Star-Spangled Kid','f716309d-f94c-40f2-8c29-b6f2aedca736'),
 	 ('a871ece0-d5da-4e0a-8bf9-aaf2a77905eb','Windrider','485de910-b1e4-4fa6-8b24-7dc875ff0c79'),
 	 ('4254b553-7fc5-4fe0-8e2f-49c8eace2cad','T-1001','de007c00-6bd7-457a-8142-dcb57fb1812e');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('6c4b2c51-6880-49d7-b5ca-daa78cd98544','The Princess of Power','89230ee4-f63b-4603-a8f6-aaaf70b1d863'),
 	 ('9668b4da-21bb-4ea5-8299-4c978ebe65be','Swampy','89110f21-f80c-46ff-9110-cde28b16934e'),
 	 ('80637639-09a1-4074-a2fe-738f5b39b454','Grim Ben','9dee6c62-4674-4a81-95f8-68dc55666312'),
@@ -7789,7 +7789,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('8ba5fcf3-75f5-47e4-bbd8-46ad499039b0','Ultra-Girl','9509ab71-95c2-4839-bb7c-104f3e656b46'),
 	 ('ec37bf28-27f8-48f3-a16f-93994700fdf6','Ultron-5 (and hundreds of other sequential numerical designations)','730e7ccb-e167-4d34-86ad-13f47c8566e1'),
 	 ('b0a86e37-8173-4534-8000-23e6b9d6ffb6','Edwin Brock','0126fece-f500-49bf-917d-2760427fe5fc');
-INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_id) VALUES
+INSERT INTO public.superhero_biography_aliases (id,value,superhero_biography_id) VALUES
 	 ('d01efbc8-4c70-4073-af34-937fa29cc77a','Victor Shade','c54fb4bc-7c9b-4f32-9c4c-fe85f53f523b'),
 	 ('7eab5166-0781-473c-b394-3ef58ce4d1c7','-','6d19ea57-17c9-439a-9301-f41170eb9d20'),
 	 ('904ecbbf-f356-4a71-8307-b5346f088d33','Him','d5b75e50-5441-41d4-8963-09409369eb1e'),
@@ -7798,7 +7798,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('de5410ca-18d4-40e5-b01e-1e2be69916e9','Emilio Garra','6dd5871c-22c0-4f0b-bc9c-b958753d43f8'),
 	 ('dd1cdd60-76e0-45f2-830d-049b0506a908','Wonder Woman','ba609c14-c30d-4099-8e83-07b5151faec8'),
 	 ('8081b880-94c5-4a0f-9bba-333bd876e4b8','Goddess of Truth','aa55a08b-0b74-4958-a005-400204f41c08'),
-	 ('242e57c4-b137-43a3-a4e1-1a067750c606','Laura X','ff618f77-5249-4032-93f5-3d9591dfc06f');INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+	 ('242e57c4-b137-43a3-a4e1-1a067750c606','Laura X','ff618f77-5249-4032-93f5-3d9591dfc06f');INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('97d73558-e56e-4c59-838b-a7b9a7c49d53','former member of the crew of the Andromeda Starship, ally of the Abominations and Forgotten','Nadia Dornova Blonsky (wife, separated)','a653e8c6-1ab5-4c6b-8c4a-c8ac6e567e1d'),
 	 ('01584437-0d3b-4d6b-8741-fa6b28e0a53e','A.I.M., Deadpool; formerly Agency X, Hydra','Allison (ex-wife); Terry and Howie (sons)','84507000-0beb-4a66-8288-0a9c578176a1'),
 	 ('30b6721f-31d7-48ac-b607-3cdd6b6f5037','Green Lantern Corps, Black Lantern Corps','Amon Sur (son), Arin Sur (sister), Thaal Sinestro (brother-in-law), Soranik Natu (niece)','141fdfaa-3ab1-49e4-9d89-6ff65c8f8461'),
@@ -7809,7 +7809,7 @@ INSERT INTO public.superheroe_biography_aliases (id,value,superheroe_biography_i
 	 ('447bcf18-18d3-417b-83b3-63a718cedfab','Gentek, The Infected','Dana Mercer (sister)','8b68f616-1e8b-439c-92dd-2889fdd0c11c'),
 	 ('08bc6e3a-47a4-4d10-b9f9-418212bf567f','-','Alien Queen (mother)','28a75986-b424-405c-8584-a99cca4f9952'),
 	 ('569b7636-1878-4c9f-9714-16804e2dd4ff','Batman Family, Outsiders','Jarvis Pennyworth (father, deceased), Wilfred Pennyworth (older brother), Daphne Pennyworth (niece); Bruce Wayne (Batman, legal ward)','35032fd4-c930-4397-b715-62a1bad2f0e2');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('f5ddb0a1-335e-47c5-85f7-4395c3563089','Omega Men, L.E.G.I.O.N., R.E.B.E.L.S., formerly Seven Soldiers of Victory','Alanna Strange (wife); Aleea Strange (daughter); Sardath (father-in-law); Janey Strange (sister); Todd Strange (brother, deceased); Bantteir (mother-in-law); Adam Strange II (descendent)','a2767983-de29-40bd-9587-04e8bf72374f'),
 	 ('fa29c8ab-888d-4ba9-abe8-dd8c32604817','Cosmic Beings','Eternity ("Father")','2fabe5e1-deca-4744-a657-d32f841deabc'),
 	 ('f576f56a-6cca-4972-b82b-57ea828fac75','Masters of Evil, Lethal Legion; formerly Worthy, Frightful Four: former agent of Loki and They Who Wield Power','Mary MacPherran (Titania) (wife); Jerry Sledge (son); Rockwell "Rocky" Davis (Hi-Llite) (cousin)','1ec71757-352c-47a1-aaa1-1fd356b71bb3'),
@@ -7820,7 +7820,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('2fc2e59f-5366-440e-af2b-29aa1c4c2b14','Former member of Nova Corps, Heralds of Galactus','-','e0ff7776-a8a8-45e6-867d-81f1019ab07c'),
 	 ('b8a5a60d-d059-4f7e-b553-1111e6293157','Avengers Academy, Secret Avengers; formerly Mighty Avengers, Avengers (founding member), Defenders, Future Iron Man''s Team','-','708564eb-ea20-4e0e-bb08-ac4ea51938e9'),
 	 ('dc61dfbc-db8f-4dae-8aff-35c740d4c6a0','Sometime ally of Blastaar','Annihilus is a series of clonal scions','fdd048c1-c4ee-4571-b074-7eb503253338');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('86f5b4b6-06ad-4aac-b27a-a0dfbebe6e20','Formerly Animal Masters, Forgotten Heroes, Justice League of America, Justice League Europe','Ellen Frazier (wife), Cliff Baker (son), Maxine Baker (daughter), unnamed second daughter, Frank Baker, Jr. (father), Phyllis Baker (mother), unnamed sister, Frank, Sr (grandfather), Teddy (great grandfather), Sherman (great-great grandfather), Jack (great-great-great grandfather), Mary Frazier (mother-in-law), Dudley (uncle-in-law), Annie Cassidy (mother of second daughter), Lucy Cassidy (half-sister of second daughter)','ee2465ec-7916-4abc-9c9b-076c7ae1520f'),
 	 ('74607dd0-3d6d-4c4d-bbbc-fd2ba87c75d9','-','Kathy (sister), Connor (son), Twilight ("child")','49443739-1caa-4cc5-ac3f-b9305867f1e2'),
 	 ('b009cac9-fd6e-4773-8d95-a2adcf69d996','Sinestro Corps, Weaponers of Qward, Thunderers of Qward, Shadow Demons','Monitor ("brother"), The Monitors','70f4f2c6-abd3-4312-b8f5-364abd96be61'),
@@ -7831,7 +7831,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('281115ad-b550-46e6-9216-9c9ef586ca49','Justice League, Aquaman Family, Atlantean Royal Family; formerly Black Lantern Corps, Justice League International, Justice League Detroit, U.N.','Koryak (son), Arthur Curry, Jr. (son), A.J. (son), Orm Marius (half-brother), Debbie Perkins (half-sister), Drin (adopted brother), Atlanna (mother), Atlan (father), Atlena (aunt), Porm (adopted mother), Tom Curry (adopted father), Mera (wife), Hila (sister-in-law), Haumond (uncle), Kraken (uncle), Honsu (grandfather), Lorelei (grandmother), Manu (ancestor), Nala (ancestor), Fatima (ancestor), Kalunga (ancestor), Gana (ancestor), Fiona (ancestor), Regin (ancestor), Kordax (ancestor), Bazil (ancestor), Cora (ancestor), Illya (ancestor), Dardanus (ancestor), Alloroc (ancestor), Cole (ancestor), Narmea (ancestor), Orin (ancestor), Loma (ancestor), Shalako (ancestor), Thorvall (ancestor)','32c307b4-9a26-43a5-b223-bb512c0d1c01'),
 	 ('82c6ba36-e93b-42ec-849d-6837686962c4','-','-','0f8853b7-0404-4f13-8b36-477016193e4f'),
 	 ('a1c7efeb-c858-4958-a2df-2740d7bdf4c2','X-Men (founding member); X-Force; Mutantes Sans Fronti?res; Hellfire Club; formerly X-Club (founding member); Death''s champions; Secret Defenders; X-Factor/X-Terminators (founding member); Horsemen of Apocalypse; Defenders; Champions of Los Angeles (fou','Wallace Worthington (paternal ancestor, deceased), Warren Worthington Sr. (paternal grandfather, deceased), Warren Worthington Jr. (father, deceased), Kathryn Worthington (mother, deceased), Burt Worthington (paternal uncle), Mimi (maternal aunt), unnamed distant cousin','3738a8c5-8a66-4f8e-ace1-3860be5c3cf0');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('bb0d1375-1f3d-4c4c-837d-597f95ebb527','Omega Flight, formerly Commission on Superhuman Activities , Freedom Force , Avengers , Secret Defenders , Force Works , Queen?s Vengeance , West Coast Avengers, Secret Avengers (Civil War)','Rachel Carpenter (daughter), Walter Cornwall (father), Elizabeth Cornwall (mother), Larry Carpenter (ex-husband, deceased)','102b2074-192a-4041-b772-71ac702b34b1'),
 	 ('25faf3d8-b982-4117-b4da-7be5c1fa7365','-','Norrin Radd (Silver Surfer, clonal source), Clea (creator)','2e87248b-32d6-433c-9cdd-030e10a36ac1'),
 	 ('b8ff1dfc-d7d8-4c52-9640-2e9bc0626ff5','Alpha Flight, Alpha Flight (Space Program), Royal Canadian Mounted Police; formerly Weapon X, ally of the Havok''s Brotherhood, Headbangers , Children of the Vault, X-Men (interim member)','Jean-Baptiste Beaubier (father, deceased), unidentified mother (deceased), Jean-Paul Beaubier (Northstar, twin brother) Joanna Beaubier (adopted niece, deceased); Lois and Genevieve Martin (first cousins once removed/adopted parents, deceased)','124fa936-b34c-40cd-bd12-255cfa5f8062'),
@@ -7842,7 +7842,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('0d33882e-1079-489f-be69-ce14782156c5','Secret Avengers; formerly Thunderbolts (as Yelena Belova), Nick Fury, Mighty Avengers, S.H.I.E.L.D., Avengers, Champions of Los Angeles, Lady Liberators, KGB, "Marvel Knights", partner of Daredevil, Hawkeye, Boris Turgenov, Logan','Unnamed parents (presumed deceased); Alexi Shostakov (Red Guardian, estranged husband); Vindiktor (alleged brother, deceased)','540a3d4f-3517-4148-bdf8-4ca07400587a'),
 	 ('aa04db2f-e561-4b4e-acdb-25a156494f0c','Slayer Army, Scooby Gang, (formerly) The Initiative, Watchers Council','Joyce Summers (mother, deceased) ; Hank Summers (father) ; Dawn Summers (sister) ; Celia (cousin, deceased) ; Arlene (aunt)','c04cd106-2c8f-40ef-b5f2-5f6eb3a9d600'),
 	 ('3b96832d-affc-495d-8eb6-f6e2f5a1d0e2','X-Men, formerly X.S.E., Mutant Liberation Front, X-Treme X-Men, X-Corporation, X-Force, New Mutants, Hellions, Hellfire Club','Thomas Zebulon (father, deceased), Lucinda (mother), Lucas Bartholemew (uncle), Paige (Husk, sister), Joshua "Jay" (Icarus, brother, deceased), Joelle (sister), Elizabeth (sister), Melody (Aero, sister), Jebediah (brother), Lewis (brother), two other unnamed siblings, Ray Jr. (adopted brother)','f13a4ef3-8830-487d-a2fc-dbad461d6d9d');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('87b1348f-f286-4585-8d00-3c5526135297','Marvel Family, formerly Outsiders and Teen Titans.','parents, deceased, Jacob Freeman (granfather, deceased), Timothy Karnes (Sabbac, foster brother, deceased)','6b66682a-491c-4f23-b683-5bb847158ee3'),
 	 ('c0a0d78e-d91d-43fb-a7ec-0c2173758a55','Serpent Society','-','43268fde-5b57-48fa-b15b-207bc4470acd'),
 	 ('7449555e-e3cd-49cd-ba91-e7a8016ed561','-','Darth Sidious (Master)','011d1bc2-083d-484f-8ce8-9b69bde2eb6e'),
@@ -7853,7 +7853,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('61b38863-4bae-46ec-ab70-2b22b735098d','Firestorm Matrix, Justice League,formerly Black Lantern Corps, Power Company, White Lantern Corps','Edward Raymond (father); Elaine Rockwell (mother, deceased); Felicity Smoak-Raymond (stepmother); Richard Dare (grandfather)','37469feb-66e1-44d9-9682-96ca9a3dd3fa'),
 	 ('a06ef0f8-5909-44ac-8330-148c083872ef','X-Men (Team Wolverine); formerly Marauders, Horsemen of Apocalypse, Chevaliers, X-Treme X-Men, Thieves & Unified Guild''s of New Orleans, Crimson Pirates','Jean-Luc LeBeau (father), Belladonna (aka Bella Donna Boudreaux) (wife, separated)','d0134ae3-c2bf-4cc5-8f9c-1c7462c3f3b7'),
 	 ('98653696-dc34-481e-b787-bfb94168dbd0','H.A.M.M.E.R., leader of the Dark Avengers; formerly Thunderbolts, The Cabal; Former leader of the Sinister Twelve, partner of Mendell Stromm, Crime Master, employer of the Enforcers, Hellfire Club','Alton Osborn, Sr. (paternal great-grandfather, deceased);Alton Osborn, Jr. (paternal grandfather, deceased);Amberson Osborn (father, deceased);Emily Osborn (wife, deceased);Gabriel Stacy (son);Sarah Stacy (daughter);Harry Osborn (Green Goblin II, son);Liz Allan (ex-daughter-in-law);Normie Osborn (grandson);Stanley Osborn (grandson);','6eb3c80a-582f-4f70-a465-f3d16a95d1a8');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('863dac94-6f80-48bf-a2c8-eb6b9d9d7f07','Formerly The Quintets, The Joker, Poison Ivy, Secret Six','Barry Quinzel (brother), Sharon Quinzel (mother), Nick Quinzel (father), Jenny Quinzel (niece), Nicky Quinzel (nephew)','5df97173-44b1-4126-a3e9-8e562079ae27'),
 	 ('276e710a-c9e3-4fb7-85e3-26b53860c59d','Black Lantern Corps, Teen Titans, Hawk and Dove, Titans West','Don Hall (brother, deceased), Irwin Hall (father), Rae Penfield (mother), James Penfield (uncle)','87e7e44b-0a1d-4fde-a872-5126f5969b4c'),
 	 ('83c730f4-1e5b-46ad-b761-c9f942a8e3c3','Formerly God Squad, Council of Godheads, Olympia Corp., Mighty Avengers, Renegades, Secret Avengers, Avengers, Champions of Los Angeles, Defenders, Heroes for Hire, Damage Control, Olympian Gods, Argonauts, Defenders for a Day','-','56091064-485a-4141-9ac9-931d79eb932b'),
@@ -7864,7 +7864,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('74514abd-d029-48f6-bb57-ae4f9aab7e07','Formerly X-Men, Muir Island X-Men','Charles Graymalkin (paternal collateral ancestor), Marcia Graymalkin (paternal collateral ancestor), Jonas Graymalkin (paternal collateral ancestor), Brian Xavier (paternal grandfather), Sharon Xavier (paternal grandmother), Kurt Marko (paternal step-grandfather), Cain Marko (paternal step-uncle), Cassandra Nova Xavier (paternal aunt), Charles Xavier (father), Gabrielle Haller (mother), Daniel Shomron (stepfather), Xavier Family (paternal relatives), Ruth Aldine (lover/current body)','5b0f9806-d5a0-4d11-aaaa-e4621dbfa8f5'),
 	 ('489f619a-848d-458a-b8f0-68ee573668b1','formerly Thunderbolts, Masters of Evil, Sinister Syndicate, Justin Hammer''s Hit Squad, Maggia, Sinister Seven, Commission on Superhuman Activities, Defenders impersonators, Burton Canyon Police Department','-','a3c5682b-7f9e-4b83-a417-8101829b2fd8'),
 	 ('0d044f70-b9ef-45f3-a4cf-1e78f8aaec55','Superman Revenge Squad','-','acda0830-4b31-4318-9f7e-53bddb91d10c');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('f79934ad-5429-47cd-9780-d387a41b836f','-','-','677c0fa8-eb2c-4302-b73d-38b97d5e4deb'),
 	 ('84238cd1-0079-49dd-af31-71e89d089c38','-','-','e9225bae-3805-4bb7-83f2-9a3acae20801'),
 	 ('798d741d-43be-44fd-9de6-34082b7a4088','None; Former Sinister Six','Henrietta Beck (mother), Elmore Beck (father), Vincent (uncle), Maguire Beck (Jack O''Lantern) (cousin)','2bc92306-083a-473b-b3a2-1c6df200ea2a'),
@@ -7875,7 +7875,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('95c386ba-4ce3-43bd-bbe5-a8361a791b09','-','Hit-Girl (daughter)','592fce45-d665-456d-b4c3-7aa9c22c697a'),
 	 ('dabc8504-73e9-4944-8bf2-5873da9b95a7','"Clean City"; formerly Stryfe; X-Men; X.S.E. (Storm''s team); X-Treme X-Men; X.S.E. (Hecate''e''s team); The Twelve','Burnum Bishop (father, deceased), Kadee Bishop (mother, deceased), Shard (sister, deceased), unnamed grandmother, Gateway (great-grandfather), Aliyah Bishop (alternate reality daughter);','35a5b93f-c8a0-481a-919c-1bac5829eb36'),
 	 ('e3765809-a54d-48b1-8026-996dd3f78aff','Justice League of America (current), formerly Presidential Cabinet, The Outsiders (sporadically), Batman''s Brother Eye attack group','Unnamed father (deceased), Lynn Stewart (ex-wife), Joanna Pierce (niece, deceased), Anissa Pierce (Thunder, daughter), Jennifer Pierce (Lightning, daughter)','938e5fab-78bf-4207-9fe6-dd6989991abb');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('833f7584-57d4-4a43-85d0-b5162091f79c','Formerly Thunderbolts, Hammer Industries','-','55ee3fe5-b74e-4ea4-b1ee-76b6841208e1'),
 	 ('8fad1d49-a2ba-4b41-bb40-ddf823f827b8','Legion of Super-Heroes','Unnamed mother, Brainiac (ancestor)','d526c049-ae72-46f8-9417-841c08965707'),
 	 ('9dd2acf6-e52e-4288-a5e0-8a1ebb0569df','-','-','7541e5ef-2a15-4653-8e57-7b8fd64bcb6f'),
@@ -7886,7 +7886,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('701451c1-2f51-47ce-822d-b233db134d3d','Heralds of Galactus','-','9cb04dee-4eee-4be5-98f4-6a5f04cd491f'),
 	 ('63348a54-f86e-4e04-88dd-50782aa34b9d','Justice League of America, formerly Lexcorp','Alvin Rusch (father)','81f6f347-c519-47b6-88bb-61001aa41aa4'),
 	 ('9a8a4907-76d0-47c1-ab31-6435b9faef99','Acolytes, formerly Alliance of Evil; temporarily X-Men while controlled by Jean Grey, Femizons','-','29c4dfd4-72c0-4bd3-a81f-9c7475f5216d');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('4068af15-2de4-4b3f-abaa-009595c81f86','Green Lantern Corps, Justice League of America, Justice League Europe, frequently teamed with the second Flash and the original Green Arrow','Martin H. "Marty" Jordan (father, deceased), Jessica Jordan (mother, deceased), Jim Jordan (younger brother), Jack Jordan (older brother, deceased), Jan Jordan (sister-in-law, deceased), Helen Jordan (neice), Larry Jordan (Air Wave I - cousin, deceased), Hal Jordan (Air Wave II - cousin)','58f972a3-37a8-44dd-a71b-6fea54a0d88f'),
 	 ('9268b8e8-0104-4dfb-99ca-f78a186a9c3e','Formerly Alaskan-based Initiative agent, Lady Liberators, Avengers, Defenders, Legion of the Unliving','Joshua Walker (father), Dorothy Walker (mother, deceased), Sophia (maternal aunt), Bea (step-mother), Mickey Walker (brother), Robert "Buzz" Baxter (aka Mad-Dog, ex-husband), Daimon Hellstrom (aka Hellstorm, ex-husband), Percy Walker','85f800ef-1703-4ddc-8327-92cc09e0f44e'),
 	 ('2068f09c-d4d3-41dc-b033-74167bc27d39','Member of the Masters of Evil; formerly Sinister Syndicate; Frightful Four, Sinister Six, Sinister Twelve','-','91a1bb47-7f80-43e1-a3b5-cfa170c8704a'),
@@ -7897,7 +7897,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('76530f0e-0856-4664-9e4d-f855628f4d49','-','-','7f70bf5c-9a50-4572-8024-ece8027c58d2'),
 	 ('4783dc01-aab8-4ed9-8745-444982e1464a','Green Lantern Corps, New Guardians, formerly Challengers From Beyond, Sinestro Corps, Justice League of America, Blue Lantern Corps, Titans','Aaron Rayner (father), Maura Rayner (mother, deceased), Zachary Rayner (uncle, deceased), Roderick "Snowy" Rayner (grandfather, deceased), unnamed maternal great-grandfather (deceased), Kathleen (aunt), Cary Wren (descendant)','97163f24-856b-433d-a608-32403e1454c9'),
 	 ('829be01d-7466-4ee7-8c80-5c74a49170d6','-','Martha (wife, deceased), Billy (son), unnamed sister','49979b7a-e7a5-4168-a33f-9ecb263410ac');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('3b19498a-8da6-49bb-8da1-fb80cc4b0348','-','One-Above-All (creator)','f4f40720-7b08-405b-8732-b02f158b1dcd'),
 	 ('6e1bd8b8-de2e-48d3-b284-9e88e695df6b','formerly Justice Society of America, formerally United States Marine Corps','Franklin Delano Roosevelt (great-grandfather, deceased)','9e6d93f3-d1f8-4d97-a365-e2984e9a7f7e'),
 	 ('232596a8-1fde-4f5b-b6b4-5cf4f8027f0e','-','Maury Parkman (father), Janice Parkman (ex-wife)','c6129672-0c95-4f0d-8910-a37ee7a9f7dc'),
@@ -7909,7 +7909,7 @@ Nana Dawson (Great-aunt), Monica Dawson (Cousin), Damon Dawson (Cousin)','a49fce
 	 ('c044e86d-9aa6-4a33-a332-0cbd4e26eee5','-','-','99dcb6ad-5788-4030-bb83-9c5849841616'),
 	 ('63d9f08c-4e10-4266-9e37-5470af3d7c9c','Formerly L.A.W., JLA, Black Lantern Corps','-','57b6b1af-97d6-4cda-9de0-6646281dc319'),
 	 ('df02bba0-13a5-4571-8579-e323024421a5','Suicide Squad, Task Force X','Richard Flag, Sr. (father, deceased); Richard Flag III (son); Karin Grace (mother of child)','53e115df-4ec7-4751-88a8-2591c225bd61');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('e4f4b0e0-fddd-42b6-b520-50498e45201f','X-Men, formerly X-Treme Sanctions Executive, X-Treme X-Men, Brotherhood of Evil Mutants','Owen (father), Priscilla (mother), Carrie (aunt), Raven Darkh?lme (Mystique, foster mother), Kurt Wagner (Nightcrawler, foster brother), Graydon Creed (foster brother, deceased)','85ef5955-d21d-4ad4-bff1-4f27c2a75a30'),
 	 ('20b5ff4d-ce36-48b9-a111-dbf2a7b0c160','Hells Kitchen Mob; formerly Sinister Seven, allied with Silvermane','Vincent Coll (grandfather, deceased)','e44e1617-35ba-423c-b544-2c7d43dc2877'),
 	 ('3c4e428b-ccd5-4e96-a019-7a10cfc02d7f','Avengers, Mighty Avengers, Olympic Pantheon; Warhawks','Zeus (father), Hera (mother), Enyo (wife), Deimos, Phobos, Alexander (sons), Neptune, Pluto (uncles), Demeter, Hestia (aunts), Hephaestus (brother), Apollo, Dionysus, Hercules, Hermes(half-brothers), Artemis, Pallas Athena, Venus, (half-sisters)','d86a5469-a27b-4941-9b53-f0614ef927cf'),
@@ -7920,7 +7920,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('0644d937-f90c-4e70-af82-3398055ae4a2','Formerly Wild Pack, Bold Urban Commandos (Buckies), former partner of U.S.Agent, operative of the Commission on Superhuman Activities','-','8486d649-d7f5-4763-ac71-8ea344f9e293'),
 	 ('c12d35a2-4743-4fc1-bbb7-bbe43e6159cb','Justice League Of America, Batman Family','John Grayson (father, deceased), Mary Grayson (mother, deceased), Bruce Wayne / Batman (adoptive father), Damian Wayne / Robin (foster brother), Jason Todd / Red Hood (adoptive brother), Tim Drake / Red Robin (adoptive brother), Cassandra Cain / Batgirl IV (adoptive sister)','dcfb5d5e-e08e-468b-af2e-7bebb7a1d6ec'),
 	 ('512b977f-7987-4e5c-952b-42b7819ace3a','-','-','792b6117-ce56-4751-b6fb-a0092a98287b');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('48790084-e76b-426b-9e15-d2b84bd1a759','Justice Society of America','Richard Drake (father), Lawrence Lance (husband), Dinah Laurel Lance (Black Canary, daughter), Oliver Queen (Green Arrow, son-in-law)','06c0e2f7-8803-462e-8995-7ed9a36bb22f'),
 	 ('f6b111a8-2bdb-4e7e-92b7-b71b9e18cc12','Lilin; Deathwatch; Hood''s gang','Lilith (Great Grandmother)','7a8b6610-a3d8-4391-bcfc-023b5405ff97'),
 	 ('25bd162d-efdb-4804-9261-da47e6723c79','Underground Legion','Tantalus (father); Nirvana (mother); Pelops (brother, deceased)','cb647510-6038-435a-b51c-c0f7b0ee611d'),
@@ -7931,7 +7931,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('261afe28-c3e3-4e31-a5ed-53e0c501fb41','Excalibur, Morlocks, Gene Nation','-','e516de06-2ee7-4c3e-aa62-c2ac967957cc'),
 	 ('af929f06-9e5b-426a-9388-f150890927f8','Secret Avengers (Black OPS Unit Formerly,The Avengers, Secret Avengers (Civil War), New Avengers, formerly The Invaders, Secret Defenders The Redeemers; formerly partner of Bucky, Golden Girl, Rick Jones, Falcon, Demolition-Man and Nomad (Jack Monroe)','Joseph (father, deceased), Sara (mother, deceased), Ian Zola (Nomad) (adopted son)','10294658-c059-4db3-845b-5d9b72dc2219'),
 	 ('a5c8b6af-db99-48d5-9b6c-abbbd1289b21','currently Avengers, former companion to the X-Men (as Carol Danvers), former member of the Starjammers (as Binary), Former Avenger (as Ms. Marvel)','Marie Danvers (mother), Joseph Danvers, Sr. (father), Joseph Danvers, Jr. (brother), Steve Danvers (brother, deceased), Marcus Immortus (Danvers) ("son", deceased)','1aaae037-4c84-4894-95e5-c071ed36b1ab');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('3ab8d416-79a8-46d9-9482-17a15d60c7b6','Marvel Family, Justice Society of America','C.C. Batson (father, deceased), Marilyn Batson (mother, deceased), Ebenezer Batson (uncle), Mary Batson (Mary Marvel, sister)','72a18003-59d8-4603-9f8e-f8815d7b685a'),
 	 ('eab36611-6b1f-40d1-8bdf-88e25bcae199','Formerly X-Humed, X-Men, Factor Three','-','df4bc245-ff93-4b17-84d9-2d613fd410ef'),
 	 ('44e4b2a9-e0de-4478-a1ed-695405af4daa','Villainy Inc','Claudia Rich (cousin), Debi Domaine (niece)','42d88eaa-325f-4aef-8907-019619c2958a'),
@@ -7942,7 +7942,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('85ce3fa0-7e5c-47e4-9756-d9d3c8aa2617','Incredible Family (genetic member), National Supers Agency (ties), Edna Mode (receives costumes and gadgets from her), Frozone (long-time friend), Mirage (ally)','Robert Parr (Mr Incredible, father), Helen Parr (Elastigirl, mother), Violet Parr(Violet, sister), , Jack-jack (brother)','555f9228-13e7-443c-a2ec-37cad67d819f'),
 	 ('9c703084-928e-4068-8cab-cd380adfbc26','The Society, Titans; Formerly Tartarus, The Injustice League','Wade LaFarge (Ravager III, half-brother, deceased), Adeline Kane (ex-wife, deceased), Grant Wilson (Ravager I, son, deceased), Joseph Wilson (Jericho, son), Rose Wilson (Ravager IV, daughter)','44f2f45f-8a11-4a08-bce5-c0d6158dbab4'),
 	 ('9b304056-0aa6-48bc-9ff1-94f4b37cdfc0','-','Niki Sanders (wife), Micah Sanders (son), Paulette Hawkins (mother), Monica Dawson (cousin), Damon Dawson (cousin)','08a6ac59-07bb-455e-980b-4df338a8c29a');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('0ebf95da-4b33-4436-b1a4-479174fddfe8','Defenders, underground Avengers; formerly the Order, Midnight Sons; former disciple of the Ancient One','Eugene (father, deceased), Beverly (mother, deceased), Victor (Khiron, brother, apparently deceased), Donna (sister, deceased), Clea (wife, estranged), Umar (mother-in-law), Orini (father-in-law), Dormammu (uncle-in-law)','d2225f43-e05f-4d62-a388-d740e57b412f'),
 	 ('a0c47723-059c-44dc-8c9d-4c5f3055ecda','Thunderbolts (Strike Team), shares body with Agent Preston; formerly X-Force, Deadpool Corps, Agency X, S.H.I.E.L.D.; Code Red, Six Pack, One World Church, DP Inc., Weapon X, Weapon Plus, Heroes for Hire, Secret Defenders, Frightful Four, Team Deadpool, L','Thomas "Mickey" Wilson (father, deceased); Hailey Wilson (mother, deceased); Gretchen Wilson, Orksa (ex-wives); Evil Deadpool (clone); Widdle Wade (clone)','473f7f79-fa6b-465e-91a5-b9c7b099307e'),
 	 ('036ab085-68dc-43ff-87e1-e44537802dbb','Lords of the Splinter Realms, Lords of the Netherworlds; allied with Umar, Loki, Doctor Doom, Underchild, others','Sinifer (parent/genitor), Umar (sister), Clea (niece), Doctor Strange (nephew-in-law), Satannish (alleged offspring)','300cf565-d4ff-47ef-9f13-582c2f83a1f8'),
@@ -7953,7 +7953,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('e0828f65-17ca-407e-b6d8-8bcbe751ce0e','The Batman Family, formerly the Birds of Prey, Tim Drake (on-and-off boyfriend)','Arthur Brown (The Cluemaster, father), Crystal Brown (mother), unnamed daughter (given up for adoption)','c84b11ee-178b-4c4a-999c-8f499524ed75'),
 	 ('bdedda5c-58a2-4c12-a7aa-f5ec124c2718','Captain America, Pro-Registration forces','-','c9ccbf68-e039-4b4f-9e2e-f88cacf56348'),
 	 ('fd88ff83-1f07-49ec-bf62-ef576ee93d66','Secret Avengers, S.W.O.R.D.; formerly X-Men (founding member); X-Club (founding member); Initiative; 198; X-Treme X-Men; Acolytes (while mind-controlled); Queen''s Vengeance; X-Factor/X-Terminators (founding member); Rejects; Defenders, Avengers','Sadie McCoy (paternal grandmother), Norton McCoy (father), Edna McCoy (mother), Robert McCoy (paternal great-uncle), John McCoy (uncle)','0e10c48c-b91e-4ffc-b501-225eadebc965');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('b2ac97d2-fd38-4650-8a78-893f8a62b523','Alphas','-','98ba25ec-ae87-49e2-b5ef-1c20f250b4e4'),
 	 ('0655dd55-271b-4010-8cdc-cf58db497dce','New Mutants, Ani-Mate','-','9eb7560b-004f-4d90-aa69-b2e28df2fea2'),
 	 ('7c633d25-430c-468a-85c3-a61d4df5c429','None; Formerly the Black Marvel Family, Society of Villains, Injustice Society, Justice Society of America','Shiruta (wife, deceased), Gon and Hurut (sons, deceased) Theo Adam (descendant, currently in control of his body), Sarah Primm (descendant, Theo''s sister), Adrianna Tomaz (wife. deceased), Amon Tomaz (brother-in-law, deceased)','430d54f9-e698-40da-a0ae-c845cd6b847b'),
@@ -7964,7 +7964,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('ff209e96-98a4-4ef5-8d9e-bae3437ab49a','X-Peditioners, formerly X-Men, Halo City Protectorate, Oasis','-','9763e385-84b4-4fcf-8125-26763a716ffe'),
 	 ('e2fc5713-20aa-43a9-b300-72562b63286a','Teen Titans','-','5b16c264-a63b-48ba-8bdb-6dcb19fcfbe2'),
 	 ('2e12fd70-6115-49a4-81bd-ca9b56f992bf','Lex Luthor','Vril Dox II (son), Brainiac 5 (descendant)','f9808a95-990a-4e18-a5ed-2dc729f97dfe');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('49e46853-f02e-4f77-9c06-e48859b4747a','Justice League, Extreme Justice, Super Buddies, Living Assault Weapons, Monarch''s Army, United States Air Force','Angela Adam Eiling (wife, deceased), Peggy Eiling (daughter), Randy Eiling (son), Bette Sans Souci (ex-wife, divorced)','cb841bea-4431-4fb8-b41a-d0ca7023f488'),
 	 ('f0378b75-9a86-4b9d-a3cc-dccc28b5b701','X-Men; formerly New Warriors; Clan Akkaba; Weapon X; Generation X','-','64e9b508-5361-4de2-a26e-bbec5518277e'),
 	 ('b9bc9b48-e854-46b6-9577-ca74c04bc7e0','Weapon X/Weapon Plus and Six Pack (as Copycat), X-Force and New Mutants (as Domino)','Burt Carlysle (father, deceased), Dorothy Carlysle (mother)','e5e75a6f-51f3-4419-bb50-f57f5b58a3b4'),
@@ -7975,7 +7975,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('6fa7275d-d258-48a7-bd6e-1d461089cd56','Thunderbolts Army; Former leader of the Sinister Six and the Masters of Evil V; Former partner of Green Goblin','-','9af89a82-ff5a-422c-be7e-4667e16f1a6a'),
 	 ('5e9ff4ef-a971-4253-b220-e54b14d52341','X-Men; formerly X-Force; 198; X-Corporation; The Underground; X-Force; Six Pack','Beatrice (mother), Lazarus (brother), Milo Thurman (husband, deceased)','4274cfb1-8817-44d2-a9b8-fc3c7a3da504'),
 	 ('462d2e26-84b3-4bd8-b551-7d8596563c4e','-','Inapplicable','d2818f33-4c6b-4953-96f2-82ae9f791442');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('fdd59d6d-21cc-48e4-ab25-68850665bc71','Incredible Family (co-leader), National Supers Agency (ties), Edna Mode (receives costumes and gadgets from her), Frozone (long-time friend), Mirage (ally), Snug Porter (receives aircraft from him)','Robert Parr(Mr Incredible, husband), Violet Parr(Violet, daughter), Dashiell Parr (Dash, son), Jack-jack (son)','9b5555f9-eb4c-49a3-9bbf-270e71f56337'),
 	 ('0d67feda-32cb-4637-b78d-9d2079ac2c9e','Phantom Zone Criminals','Hu-Ul (father, presumably deceased)','bb2d0935-0ec9-4240-8197-9556bcaded68'),
 	 ('5ab2ccbc-9772-4fdf-9ebc-6752a46c4f80','Formerly Justice League of America, Spirit Squad','Belial (father), Raan va Daath (mother), Merlin (half Brother)','2bc7bb59-7d82-4e00-97e6-f036f1ff805d'),
@@ -7986,7 +7986,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('74897701-ec8f-4322-b982-7e0cc72eaf54','Guardians of the Galaxy ; formerly Phalanx''s Selects, Graces (Leader), Infinity Watch ; United Front ; former minion of Thanos; ally of Adam Warlock and Pip the Troll','Thanos (foster father), Thane (foster brother), Unnamed former Symbiote','be738bb5-9bc2-4e6b-b06b-af3fd7ebcd6a'),
 	 ('bcd1754a-69e5-4200-8c4f-26d9b8d48e27','-','-','743c7365-a6a7-41ca-a0aa-92a0d7922216'),
 	 ('4ca0b2f5-21e0-485a-8afb-fd87bc568bf7','-','-','099fa565-6cb6-4803-85b5-b62106fb8751');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('84409035-f624-491c-90d3-2f0405523e23','Marauders formerly, 198, Femizons','-','888bad52-d7b6-4cfa-9eb5-c22c8df120b5'),
 	 ('0e85a6f1-8775-4da7-83d5-00a20a14e769','Suicide Squad, The Secret Society of Super Villains','King Snake (father)','819bfcb7-efd1-4c68-a6ed-1e0d5e142bb2'),
 	 ('f3ab27f8-6c23-4fcf-a35a-5b191454d5b3','Was once in a merged form with the Molecule Man but is no longer merged with him.','-','1b0907cc-3daa-4a27-bde3-9f416afb562e'),
@@ -7997,7 +7997,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('0fc19140-51bd-4b0b-9ac3-ba301f45b435','The Exterminators; formerly Sinister Six, Sinister Twelve','Kravinoff Patriarch (father, deceased), mother (unnamed), Sergei Kravinoff (Kraven I, half-brother, deceased), Vladimir Kravinoff (The Grim Hunter, nephew, deceased), Alyosha Kravinoff (Kraven the Hunter, nephew), Ned Tannengarden (nephew, deceased)','8b3ad528-dfac-423f-bb44-58df6392ea66'),
 	 ('ad30bd54-94a4-48db-9b63-673761e8bc98','Cloak and Dagger, New Warriors, Marvel Knights','Smokin'' Joe (rumored grandfather)','1d187ae6-4355-4f76-9d8c-be0cc0d1266d'),
 	 ('10ba9a92-fcea-45d7-95d0-4ec7c8cc6f85','Justice League; formerly Teen Titans, Titans, Titans East, New Teen Titans','Silas Stone (father), Elinore Stone (mother), Tucker Stone (grandfather), Maude Stone (grandmother)','681a91b0-c7e1-486a-a204-e92bd7a245cd');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('657b80d1-d34e-4cb8-9b82-cbaf1bb1685c','New Gods of Apokolips(ruler), Secret Society of Supervillains','Zonuz (father), Izaya (brother), Avia (sister, deceased), Grail (daughter), Kalibak (son), Orion (son), Deathspawn (son), Scot (nephew/adopted son)','3def392f-bafb-4d50-80a5-9f572da8e5dd'),
 	 ('ee0fa61c-646d-4ee2-b19f-3478fdc1b396','Former member of the CIA, Project: Alpha-Mech, US Army, ally of Godwulf''s Redeemers','Janice (Wife, seperated), Richard (son)','35ec8ba6-1c62-469f-b024-965a52f18626'),
 	 ('9dd3c342-77ea-46e3-927e-f5695b159504','Formerly All-Star Squadron, Justice Society of America, Justice League International, Black Lantern Corps','Inza Cramer (wife), Sven Nelson (father, deceased), Celestine Babcock (mother), Kent Nelson, Jr. (son), Aaron Babcock (uncle), Kent V. Nelson (grand-nephew), Laryn Nelson (great grand-niece)','571edff4-38c0-40d5-9a06-7371bbc8c8e2'),
@@ -8008,7 +8008,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('40fafdaa-04ca-4e05-8398-f60b113c9576','-','-','bfae60b3-6a27-4faa-ba20-661fbc49249b'),
 	 ('ec1a6fb5-bfcc-4901-930c-3a6e0c3b05ce','Former ally of X-Men, partner of N''Astirh','Mister Sinister (creator), Jean Grey (Phoenix, genetic template), Scott Summers (Cyclops, husband), Nathan Christopher Summers (Cable, son), Christopher Summers (Corsair, father-in-law), Alex Summers (Havok, brother-in-law)','2b2ef640-cfdc-4401-8059-7e4a752ae412'),
 	 ('5dcbce31-7e47-4554-9556-4325037203b6','Young Allies; Formerly Great Lakes Initiative, Heavy Hitters','Richard Willis (father), Mary Willis (mother)','4a28f289-413d-44ff-baf5-b92c1aea3314');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('cee3d43b-2539-47b5-9741-addcaae7d718','-','-','4428196a-162d-4fd6-a632-534dd90eed40'),
 	 ('9993170a-9663-47db-96a9-4fe0d9e6aba5','Uncanny Avengers; formerly X-Men, Starjammers, X-Factor Investigations, Six , Brotherhood, X-Factor, Dark Descendants, Genoshan Magistrates, Defenders for a Day','Oscar Summers (adoptive paternal distant ancestor, deceased), Daniel Summers (paternal distant ancestor, deceased), Amanda Mueller (Black Womb) (paternal distant ancestor), unnamed paternal great-grandfather, deceased, Gloria Dayne (Fontanelle) (paternal distant ancestor), Philip Summers (paternal grandfather), Deborah Summers (paternal grandmother), Christopher Summers (Corsair) (father, deceased), Katherine Summers (mother, deceased), Andrew Blanding (adoptive father), Joanna Blanding (adoptive mother), Scott Summers (Cyclops) (brother), Gabriel Summers (Vulcan) (brother, deceased), Ahmet Abdol (Living Monolith) ("brother" via X-Gene transfer), Haley Blanding (adoptive sister), Todd Blanding (adoptive brother, deceased), Madelyne Pryor-Summers (Red Queen) (sister-in-law/clone of second sister-in-law, deceased), Jean Grey-Summers (Phoenix) (sister-in-law, deceased), Cal''syee Neramani (Deathbird) (sister-in-law), Nathan Summers (Cable) (nephew), Adam Neramani (X-Treme) (nephew, alleged half-brother), Aliya Dayspring (Jenskot) (niece, deceased), Hope Summers (niece, deceased), Madelyne Pryor (Earth-1298) (Marvel Woman) (alternate reality wife), Scott Summers (Earth-1298) (alternate reality son), Rachel Grey (Marvel Girl) (alternate reality niece), Rachel Summers (Mother Askani) (alternate reality niece, deceased), Nathaniel Grey (X-Man) (alternate reality nephew), Stryfe (nephew''s clone, deceased), Tyler Dayspring (Genesis) (great-nephew, deceased), Hope Summers (adoptive great-niece), Janet van Dyne (Wasp) (wife), Katie Summers (daughter)','8c725245-3708-4866-b824-34f3eb3a2cd9'),
 	 ('cf49772a-df69-448e-978f-259a79dd7f5f','-','-','66bfe04a-99a0-4d8c-99d4-d97b19f8c77f'),
@@ -8020,7 +8020,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('68df9d13-f0c7-4f6b-ba2e-859057b99021','Justice League of America, formerly; Suicide Squad, Teen Titans','Jean Loring (ex-wife, deceased), Princess Laethwen (wife, deceased), Danny Palmer (brother, deceased), David Palmer (father), Susan Palmer (mother, deceased), David Palmer (uncle)','58efc664-83c7-4250-a790-aaf1a6f36701'),
 	 ('62e27aa9-0a56-4811-a0f8-48adae544ab9','Batman Family, Batman Incorporated, Justice League, Outsiders, Wayne Enterprises, Club of Heroes, formerly White Lantern Corps, Sinestro Corps','Damian Wayne (son), Dick Grayson (adopted son), Tim Drake (adopted son), Jason Todd (adopted son), Cassandra Cain (adopted ward)
 Martha Wayne (mother, deceased), Thomas Wayne (father, deceased), Alfred Pennyworth (former guardian), Roderick Kane (grandfather, deceased), Elizabeth Kane (grandmother, deceased), Nathan Kane (uncle, deceased), Simon Hurt (ancestor), Wayne Family','d32ee045-d969-405b-baf4-4ec44d112bfb');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('bbcfc2d5-e1cc-4318-843d-a2824f89ce17','ally of the Asgardians, Thor Corps, Star Masters','-','8d09f72a-0897-4598-ba1d-9ba580e257ae'),
 	 ('8a6fa00d-d4b6-405b-bad2-d5d4194a961e','Daily Bugle, the Enforcers','Janice Foswell (daughter), unnamed wife','1df5a34e-2d2a-4358-aad4-dda497c22bf6'),
 	 ('1dbb1fc2-92f1-4a7a-b77d-b1fe57ce3182','Birds of Prey; formerly Justice League of America, Justice Society of America, Justice League Task Force, Justice League International, Team Arrow','Larry Lance (father, deceased), Dinah Drake Lance (Black Canary, mother, deceased); Oliver Queen (Green Arrow, husband); Craig Windrow (ex-husband); Sin (adoptive daughter)','ac2da8f1-26ea-4c64-8373-dca1e3ff183d'),
@@ -8031,7 +8031,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('4e35c2b8-8bc7-48bf-ac53-36d0cc0eb610','Batman Family, Outsiders; formerly Birds of Prey, Injustice League, Secret Society of Super-Villains','Brian Kyle (father, deceased), Maria Kyle (mother, deceased), Maggie Kyle (sister), Helena Kyle (daughter)','89c3ba2c-6f2b-43db-8275-e2f3da5954ba'),
 	 ('75b64e6a-6497-4885-a038-fa735fbb92c3','Clockwatchers, Justice League Antarctica, Suicide Squad, Time Foes','Beverly (sister, deceased)','35deb868-d25a-4a20-ab7b-2fe99d7d6998'),
 	 ('aa840be0-670d-40b0-8518-a5f984e0ed7e','-','Julie Hastings (girlfriend)','306932c5-a097-479b-b97e-9c447b438af2');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('92f5f1cf-7182-4fdf-9bc5-892c35c41c3d','-','Dr. Noonian Soong (creator)','b6cca01a-69b1-4245-8b23-639c468cffd5'),
 	 ('156e2097-2f71-4fff-831b-57f8e7fb8a9a','-','Leonard Skivorski (father); Ricky Myers (son);','979c042c-ba0a-4b80-a7ae-8e167e69c4d5'),
 	 ('4533cce0-a864-4a05-9258-a058b92405c5','Syndicate, formerly Bloods','-','34dfa66d-7df9-48ff-8cde-b429420e7ee8'),
@@ -8042,7 +8042,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('e33e7287-1ad1-42db-b3e7-41c9fc1a0429','-','Boka (wife, separated), Gorbzil Mammit (son), Sam Simeon (grandson)','6e9d2c2e-7a20-4ca7-bbcf-46c4d6b168f2'),
 	 ('f3934c74-ce56-440c-9670-77afd2147c95','Young Avengers, partner of Hawkeye (Clint Barton); formerly Secret Avengers','Derek Bishop (father); Eleanor Bishop (mother, deceased); Susan Bishop (sister);','217cd8f8-1654-4b13-a996-4fe87105f93a'),
 	 ('31f6d7c0-7b5a-43a7-9165-d4f59ae69658','Avengers, Thunderbolts, Avengers West Coast, Great Lakes Avengers, Shadows, Chain Gang, former partner of the Black Widow','Harold Barton (father, deceased), Edith Barton (mother, deceased), Bernard Barton (brother, deceased), Barbara Morse (wife, deceased)','1b583b1f-aff4-4dd7-b1b7-908df45256de');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('55fc448c-9712-458c-bc33-b6689327d125','X-Men, formerly Cable','Louise Spalding (mother, deceased), unknown biological father, Mrs. Spalding (maternal grandmother), Cable (adoptive father, deceased), Hope (adoptive mother, deceased), Cyclops (adoptive grandfather), Red Queen / Phoenix (adoptive grandmothers, deceased?), X-Man (adoptive uncle), Marvel Girl (adoptive aunt), Havok (adoptive granduncle), Vulcan (adoptive granduncle, deceased), Deathbird (adoptive grandaunt)','72f1f9ee-d473-4e4c-9730-364c4b3b8acd'),
 	 ('cdba904c-141c-4b77-9b1c-4bca7c7f64fc','Incredible Family (genetic member), National Supers Agency (ties), Edna Mode (receives costumes and gadgets from her), Frozone (long-time friend)','Robert Parr(Mr Incredible, father), Helen Parr (Elastigirl, mother), Violet Parr(Violet, sister), Dashiell Parr (Dash, brother)','ee26d33d-b915-42dd-9eca-4557080718cf'),
 	 ('5d5d2db7-3b82-47ea-8e7d-d48437c53f30','-','Maurice Picard (father), Yvette Picard (mother), Robert Picard (brother), Shinzon (clone)','f0432fff-8cdc-4a4c-9744-1452fc857050'),
@@ -8053,7 +8053,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('7097d53e-410f-455b-af66-cc86fa0f5a66','-','-','11018180-7ccb-4dc7-a306-f68e56d90517'),
 	 ('3deda0b0-3081-4175-84e1-4e110da08662','Formerly Nextwave, X-Force, Genoshan Mutates, New Mutants, X-Terminators, X-Factor (trainee), Fallen Angels','Martin Louis Smith (father), Mandy Smith (step-mother), Wanda Jo Bialowsky-Smith (step-mother)','acef8f70-b7b5-416c-8a9e-3a4ae4515209'),
 	 ('90a7a0d5-83de-4070-bc24-4d0bdbe162dc','Assorted Batman rogues, The Society','Nora Fries (wife, deceased, then resurrected as Lazara), Charles (Father) and Lorraine Fries (Mother)','b6531e3a-dd3a-4ad2-987a-eb3074cddf34');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('f795b532-6416-49d0-b8f0-e166f563c435','-','-','5534a18a-586a-42f4-894a-c67fb9ebdbaa'),
 	 ('9ecd85e9-3614-418d-a009-f8f3bf0de057','Incredible Family','Helen Parr (Elastigirl, wife), Violet Parr(Violet, daughter), Dashiell Parr (Dash, son), Jack-jack (son)','4face84d-eaf6-465d-897d-5aa2552cac34'),
 	 ('abfdf227-8db7-4575-9c3d-501278bd1538','-','DL Hawkins (husband), Hal Sanders (father), Micah Sanders (son), Jessica Sanders (sister,deceased), Monica Dawson (cousin-in-law), Damon Dawson (cousin-in-law), Paulette Hawkins (mother-in-law)','1d26f21d-b1e0-4c90-ab8f-86a71f337d2a'),
@@ -8064,7 +8064,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('7c204066-bd32-4554-8af5-c5633b57d812','Serpent Squad, Serpent Society, BAD Girls','-','f34d69e6-4138-43dc-bf68-612f829c6873'),
 	 ('62a0204d-e303-4226-8ede-5d8402613b3f','-','Roy "Daddy Libido" Washington (father), Angel "Sexy Mutha" Depres (mother)','a2e7d313-6d06-464b-898d-7f49e9c53061'),
 	 ('8f62261a-74bf-44a3-9366-014c495e5b0c','-','-','8aa4e1db-3420-4a0f-867f-616dbd54ca33');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('30d7ec0a-0048-4776-9774-94a174f01f8e','Maximum Carnage: (Carrion, Shriek, Demogoblin, Doppelganger)','Venom ("father"); Shriek ("wife"); Hybrid, Lasher, Phage, Riot ("brothers"); Agony, Scream ("sisters"); Carrion, Demogoblin, Doppelganger, Toxin ("sons"); Scorn ("Daughter")','415dfa8e-d07e-433a-8eaa-e6f0b30cc27f'),
 	 ('0605e8b3-1d93-40c6-8f78-dfc813c792b2','-','Adoptive parents: Sandra Bennet, Noah Bennet, Biological parents: Meredith Gordon, Nathan Petrelli, Younger adoptive brother: Lyle Bennet,  Younger half brothers: Simon Petrelli, Monty Petrelli','0a0196bd-71e7-430b-a22c-af932b85f599'),
 	 ('6219749f-dff1-43d5-b736-858cfd8ea2b8','X-Men (leader, founding member); formerly X-Force (founder); Corsairs (squad leader); The Twelve; X-Factor/X-Terminators (founding member); 198','Oscar Summers (adoptive paternal distant ancestor, deceased); Daniel Summers (paternal distant ancestor, deceased); Amanda Mueller (Black Womb) (paternal distant ancestor); unnamed great-grandfather, deceased; Gloria Dayne (Fontanelle) (paternal distant ancestor); Philip Summers (paternal grandfather); Deborah Summers (paternal grandmother); Christopher Summers (Corsair) (father, deceased); Katherine Ann Summers (mother, deceased); Jack Winters (Jack O''Diamonds) (former foster father); Alexander Summers (Havok) (brother); Gabriel Summers (Vulcan) (brother, deceased); Madelyne Pryor-Summers (Red Queen) (first wife/second wife''s clone, deceased); Jean Grey-Summers (Phoenix) (second wife, deceased); Nathan Summers (Cable) (son, deceased); Gailyn Bailey (niece, deceased); Joseph Bailey (nephew, deceased); Adam Neramani (X-Treme) (nephew, alleged half-brother); Hope Summers (adoptive granddaughter); Stryfe (son''s clone); Summers and Grey Family Tree (more relatives)','360987f4-a69f-4b7e-b2b7-c606141a119d'),
@@ -8075,7 +8075,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('c628bd91-6eea-48f0-ab86-2dc524330ee2','Alphas','-','b0652c04-b1ad-419e-b75e-2ee32c6e2297'),
 	 ('1831cc3d-b76b-449e-93ff-997e0ea88a94','Sinister Six','Seth (creator), Magog ("brother")','3cdb0763-cb87-4524-9366-f300bf7583f8'),
 	 ('13b0b388-bfef-41a4-8220-2e15d5531558','Heralds of Galactus; formerly God Squad','Galan ("father"), Galacta (daughter)','fc4f377b-da06-49a9-86bb-8c6edc43093d');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('beeb38d1-bdcb-4b17-8e64-32f56f8dd750','-','-','7cbf3002-ab87-4a54-b418-a561ef4023bc'),
 	 ('5d0ee396-d049-4b99-8bba-914191fb16e5','Batman Family, Birds of Prey, formerly Checkmate, Justice League of America, Outsiders','Giuseppe Bertinelli (great-grandfather; deceased), Alfredo Bertinelli (grandfather; deceased), Franco Bertinelli (father; deceased), Maria Panessa Bertinelli (mother; deceased), Santo Cassamento (biological father; deceased), Pino Bertinelli (brother; deceased), Freddy Caldone (cousin; deceased), Tomaso Panessa (uncle), Graziella Panessa (aunt), Monica Simonetta Panessa (cousin), Claudio Panessa (cousin; deceased)','4ee497c4-5873-43fe-8fc0-de4c4f405d08'),
 	 ('fb926758-944d-4a20-8bdf-7c40be48d77e','-','-','e4c8f22b-b2b3-40c5-93c7-f36c9504619d'),
@@ -8086,7 +8086,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('6e70cc8d-4f21-41d2-af91-f26faac1bf15','New Warriors; formerly Avengers Academy, Initiative, partner of Firestar, Avengers, Triune Understanding, Unlimited Class Wrestling Federation, Taskmaster''s Circus, Secret Avengers (Civil War)','Jerzy Astroyevicht (aka Jerry Astrovik; paternal grandfather); Katerina Astroyevicht (aka Katerina Astrovik; paternal grandmother); Arnold Astrovik (father, deceased); Norma Astrovik (mother);','ea7f94b6-938b-4c35-b8a6-7c412618eb49'),
 	 ('942942a9-db07-4a0e-a794-5f2e953d5b47','-','Donatello (brother), Michelangelo (brother), Raphael (brother)','a4e0b300-0cf2-4aba-8dfc-e6737e2bb805'),
 	 ('97a97e5b-cc60-4776-b6ac-461208069a37','Alliance to Restore the Republic, Jedi Order, Alliance of Free Planets, Bright Tree Village, New Republic, New Jedi Order','Darth Vader (father), Princes Leia (Sister), Yoda (Master), Obi-Wan Kenobi (Master)','3afb8f12-7461-4b63-86d3-a609e44ec844');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('fa22ca80-3665-46ed-bd2f-e7b022f804f3','Currently None, formerly Brotherhood of Evil Mutants I and II, X-Men, teacher of the New Mutants, Lords Cardinal of the Hellfire Club, leader of the Acolytes','Magda (wife, deceased), Anya (daughter, deceased), Pietro Maximoff (Quicksilver, son), Wanda Maximoff (Scarlet Witch, daughter), Lorna Dane (Polaris, daughter), Joseph (clone, deceased), Luna (granddaughter)','5dfbacd7-64df-4338-acb8-8362cb460449'),
 	 ('4ce5a430-602f-4a43-aea4-44d666828f41','Justice League Task Force, Extreme Justice','-','bb38d06d-2112-40f3-8bc8-10491e453560'),
 	 ('7de669eb-9d6a-46fa-bdc8-987b6ea1a37a','Legion of Super-Heroes','-','5a47d172-84a4-41e1-a689-74a2b9fd33cb'),
@@ -8097,7 +8097,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('f78f39d9-bb78-42e7-abec-ae9d40099eb2','-','-','e93b8653-9fd3-4ef8-9209-9c24e026c66a'),
 	 ('248c4c37-e868-4288-a5ad-3eb840cc40a0','Formerly Freedom Force, Brotherhood of Evil Mutants','-','7209a485-8421-4809-a778-e05aa00589d7'),
 	 ('7cc7b2fa-e4e3-498d-9de4-f54b1c4543b6','S.H.I.E.L.D.; formerly Thunderbolts, Hand, Chaste, Heroes For Hire, Code Red, partner of Daredevil and Deadpool','Hugo Kostas Natchios (father, deceased), Christina Natchios (mother, deceased), Orestez Natchios (older brother), Demetrios Natchios (Uncle), Alexia Natchios (Aunt)','c3c5fad5-7550-4585-b713-f571a465021f');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('59d4d669-d631-4b59-9f24-e2ab61cdd0e9','Secret Society of Super Villains, Suicide Squad, Apokolips','-','b73a926e-9c05-486f-803b-9627cb43b188'),
 	 ('d3411441-a1b9-49ce-8583-967aeef09762','Forgotten Villains, Sentinels of Magic, Shadowpact, Suicide Squad','-','2c93a095-5c6f-4ac1-b4fa-dbfeae307f1e'),
 	 ('2b7ac70b-64bb-42fe-b078-e7087bb58792','Galactic Council, Annihilators; formerly Imperial Guard; possibly Heralds of Galactus','Kubark (Kid Gladiator) (son), Xenith (The Strontian) (cousin)','a688013a-6369-4e62-908e-6893f76456f5'),
@@ -8108,7 +8108,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('659726fb-be5b-4bac-84c2-7852228a7a20','Stane International','Zebediah (father, deceased), unnamed mother (deceased), Ezekiel Stane (son)','cc38d1d5-e0a7-4e97-99c0-0549be2ad82e'),
 	 ('7aec7776-a533-4d59-81fc-8bd2200106b2','Black Glove, Injustice Gang, Injustice League, Joker League of Anarchy','Jeannie (wife, deceased); Unborn son (deceased); Melvin Reipan (cousin, deceased)','a89f8384-b595-4dfb-a2bd-6bef8f16f4e4'),
 	 ('2aebd1ac-4888-4dea-9f30-422f0f7fdcab','-','Mrs. Levin (mother), Devlin Levin (alternate future son), Ben Tennyson (Ben 10, best friend), Harvey Hackett (Stepfather), Gwen Tennyson(girlfriend)','96ff3e36-0872-40cf-8824-48a917ae4db1');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('5755203a-14ed-41de-92ba-951b12c4b345','Former member of the Masters of Evil, Fearsome Foursome, and Frightful Four; Former ally of Solarr, Molecule Man, and Doctor Doom','-','80ba4c0a-cd75-4ba7-bf57-8caa65b29fb2'),
 	 ('ecceb688-470b-42cf-91e2-ec6abe52529a','-','-','6bff7936-3da8-461d-8c1d-555fede1fe78'),
 	 ('381e49c2-9837-4529-af8f-5ff16148338f','198; formerly Generation X, Daydreamers, Morlocks, X-Factor (trainee)','Annalee (foster mother, deceased)','b34306be-b9f3-47c7-9be3-2832a06a8575'),
@@ -8127,7 +8127,7 @@ Jerry Sapristi (cousin);
 Tina Sapristi (cousin by marriage);
 Ernesto, Pietro, Giovanni, Maria, Rosa and Gabriella (1st cousins once removed);','b9d4eadb-a25b-47c2-bcb1-5ebd5ae58c58'),
 	 ('9a11e56c-66fd-44ce-bc13-653b90656145','-','Genos (partner)','7bb64ef5-1826-4faf-b12c-bdf689783235');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('8f1bbedf-393a-4be8-a8d8-f24f88f36e20','Darkseid','-','12f8caed-7596-4fc5-a536-83cd6663efc2'),
 	 ('58e3006a-ee7f-4817-8896-af0b6263d2b1','Birds of Prey, Batman Family, Seven Soldiers of Victory, Suicide Squad, Justice League','Roger C. Gordon (father, deceased); Thelma (mother, deceased); James Gordon (uncle/adoptive father); Barbara Eileen Gordon (aunt/adoptive mother); James Gordon Jr. (cousin)','e9a5d2e4-73ba-427a-a246-49b2a3ee78b7'),
 	 ('ab10720c-6e85-4999-a26a-f87f73b389dd','Formerly Thunderbolts (as Blackheath), Crime Wave, Defenders (Villains) , New Enforcers, former associate of the Maggia under Count Nefaria, ally of Wizard.','-','bff437dd-4ff4-49e7-8df1-4638c92d3897'),
@@ -8138,7 +8138,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('7caf0778-e93e-417b-8956-ccc89b1e91a9','-','Morris Walters (granduncle), Elaine Banner-Walters (paternal grandaunt, deceased), Brian Banner (paternal grandfather, deceased), Rebecca Banner (paternal grandmother, deceased), She-Hulk (1st cousin once removed), Hulk (father), Caiera the Oldstrong (mother, deceased), Hiro-Kala (Twin brother), Lyra (half-sister)','0ae9271c-431d-433a-94d9-c5660c606d69'),
 	 ('8096b1b7-783c-426f-85e6-edaf44be9cc5','Former agent of HYDRA','Jonathan (father, deceased), Merriem (mother, deceased)','5b43d0aa-857c-4ed3-ac50-232fddab0ad6'),
 	 ('5bd452f6-4250-46b8-a656-6fc75800b8e3','Member of the Avengers, formerly member of Outlaws, alternate Fantastic Four','Richard Parker (father, deceased), Mary Parker(mother, deceased), Benjamin Parker (uncle, deceased), May Parker (aunt), Mary Jane Watson-Parker (wife), May Parker (daughter, allegedly deceased)','aad0818f-6369-4632-9051-5a6b9c05114d');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('0e6ff907-a2f9-482f-b518-4742399f99b6','Leader of the All-New Sinister Six; formerly Exterminators, Nazi Party','-','8d160fb8-a492-4e67-aa1c-fd29ef541cd3'),
 	 ('9a20e709-38e5-45f6-a718-44f8f8210322','Avengers','Mr. Grant (father), Mrs. Grant (mother, deceased), William Nelson (husband, deceased)','58c7584a-f852-40e0-aea8-54b842853b11'),
 	 ('6273a9a3-a665-429b-8331-f529d0d5e421','Catholic Church; formerly the Rangers, provisional member of the Avengers West Coast, Queen''s Vengeance','-','702ded2f-f1ad-4722-8faf-774ebfb45100'),
@@ -8149,7 +8149,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('8dd88b7f-5082-4346-bd66-46cd4a9a3d0b','Flash Family, Teen Titans, formerly Legion of Super-Heroes, Young Justice','Don Allen (father), Meloni Thawne (mother), Barry Allen (grandfather), Iris West-Allen (grandmother), President Thawne (grandfather), Captain Boomerang (Owen Mercer) (half-brother), Allen Family','4c7af5d0-2cd7-494c-930e-dd88e7bfed4f'),
 	 ('356b8ff5-0216-4acb-8ff2-90cc0015b1f5','Avengers, Defenders for a Day','Philip (father, deceased), Marie (mother)','1dfb0c66-9650-4791-9b02-7e13719e4c94'),
 	 ('c122230a-f81a-412b-ac6b-da8fce3a696b','Formerly X-Men (founding member); Clan Rebellion, Muir Island X-Men; X-Factor/X-Terminators (founding member); Brides of Set','Rachel Summers (daughter from an alternate universe), X-Man (son from an alternate universe), Cyclops (ex-husband), Havok (former brother-in-law), Corsair (former father-in-law), Madelyne Pryor (clone), Cable (adoptive/biological son), Stryfe (cloned biological son), Genesis (grandson)','f3d9f6c2-590f-4b0c-ad75-d1b7857df5ca');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('944a210c-b565-42d6-8fe6-4e40ba604fea','-','Rico Dredd (brother), Judge Kraken (clone), Vienna (niece),','64edf372-d7a5-46ac-bc8c-906137871e2d'),
 	 ('7613263c-e291-4981-af57-8bd2d594c190','Green Lantern Corps; formerly New Guardians, Justice League International','-','02229ff1-e10e-44b9-8b2c-8fe6c15cfc5d'),
 	 ('df1af670-839c-475b-853a-0e3443ab11ec','Superman','-','007a18a1-79e2-46aa-8200-14f6a113bda9'),
@@ -8160,7 +8160,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('062de3aa-335d-4914-ba4b-f4766a8b1785','Inhumans, Fantastic Four','Kobar, La (maternal grandparents), Azur (maternal aunt), Mander (maternal uncle-by-marriage), Quelin (father), Ambur (mother), Crystal (sister), Black Bolt (husband, second cousin), Ahura (son), Karnak (cousin), Triton (cousin), Psynapse (second cousin), Maximus (brother-in-law, second cousin), Ronan the Accuser (brother-in-law), Quicksilver (ex-brother-in-law), Luna (niece)','61648ae5-958e-4717-b5fe-6c306c7a2bac'),
 	 ('1e9756ec-ab3c-4ba3-8e0a-3ca5d3f61fe7','Dark Avengers, Formerly; Thunderbolts, Femizons, Masters of Evil, Doctor Faustus, the Corporation, former partner of Blackout (Marcus Daniels)','Karl August Sofen (father), Marion Sofen (mother), unnamed maternal grandparents (only mentioned )','24aa8557-d67d-4134-aada-21eee87d5ee3'),
 	 ('11fcfbee-02a2-4e55-abc6-dd5ef98abf15','Magnum Force (leader), agent of Apocalypse; former agent of They Who Wield Power','-','f3dc3a74-9d08-4881-8a50-a8f4c6f3859c');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('04a04386-16cd-456b-947e-491fd0a8cc2b','Alphas','-','d8b682f8-9921-4e0d-845a-adcfdfac39c5'),
 	 ('2d24f79f-7270-4092-9136-a56c1cccd084','Asgardians, Council of Godheads','Buri (Tiwaz) (paternal grandfather), Bolthorn (maternal grandfather), Bor Burison (father, deceased), Bestla (mother), Mimir Burison (paternal uncle), Njord (paternal uncle), Vili, Ve, Cul (brothers), Frigga (wife), Freyr (father-in-law), Gullveig (sister-in-law), Thor (son by Jord), Vidar (son by Grid), Balder (son by Frigga), Tyr, Hermod (allegedly sons by Frigga), Angela (daughter by Frigga), Laussa (daughter by Frigga and Surtur), Loki (foster son), Hoder (nephew), Skadi (niece)','fa3bdb1f-05d9-4241-9bdc-0d9cf24cb592'),
 	 ('c23a18a7-669d-4f13-9919-86c912d8923f','Formerly The Crimebusters','Friedrich Werner Veidt (father), Ingrid Renata Veidt (mother)','7909566f-36b9-41a9-806f-a1ca604a9dda'),
@@ -8191,7 +8191,7 @@ Darius Wayne (ancestor, deceased);
 Joshua Wayne (ancestor, deceased)','b61a9dfa-a234-46b5-8d62-b6a17c18fae0'),
 	 ('838ea390-d8f6-40f1-946d-44a9aed56aad','Injustice Gang','-','3e1f9d52-7771-4369-92d0-a573ad0f8967'),
 	 ('124b79d2-f797-478a-9faa-2ec693aca5c5','Rogues; formerly Secret Society of Super-Villains, Legion of Doom','-','a8452c90-6aed-4abf-8f0d-a8a4b17e7a49');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('99bf7e6b-8190-46f5-8e67-7c9d574b092d','Fantastic Four','Susan Richards - Invisible Woman (sister), Franklin Richards (nephew), Reed Richards - Mister Fantastic (brother-in-law) Lyja (ex-wife)','de8bde19-2f2c-4c8d-92b0-a8da7db89789'),
 	 ('a73736f9-29c4-4391-8289-69060e02a6e7','Formerly X-Men, Young X-Men','-','840b00e3-5090-4123-a63e-3c2bd1b1ade2'),
 	 ('ebbc105d-7390-4507-81e2-ff3d73cd730a','-','-','31e25f2d-ecba-4fad-9133-c0f6ffc0060c'),
@@ -8202,7 +8202,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('567bead9-307c-4d6b-8e8b-77e036c02f75','X-Factor Investigations; rebel forces on his homeworld; formerly Exiles; X-Men','Arize (creator), Alison Blaire (Dazzler) (wife), Gaveedra Seven (Shatterstar) (alleged son)','527611ec-cf7f-4385-a87a-03574d6afa08'),
 	 ('d996cfc7-9747-488a-a247-e19d99936afc','-','Warlock (son, deceased)','6b36118d-ef9b-491f-a92d-760ec89e468e'),
 	 ('4bf514af-8eb2-4944-ae16-626ab809ab35','Starjammers, formerly X-Men, former servant of Elias Bogan, formerly Clan Askani (leader), Excalibur, former servant of Ahab','Scott Summers (Cyclops, alternate timeline father, deceased in own time), Jean Grey-Summers (Phoenix, alternate timeline mother, deceased in own time), Alex Summers (Havok, alternate timeline uncle), Franklin Richards (alternate future husband), Jonathan Reed Richards (Hyperstorm, alternate future son), David Richards (alternate future son)','9a5fa168-9654-4504-8057-3b7227b89a71');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('447c14d4-5ba0-4b81-a7c7-3439f8d3ddfe','Darkstars, Justice League of Aliens, Justice League Of America, Justice League Task Force, Justice League Unlimited, Martians, Outsiders','M''yrnn J''onzz (father, deceased); Sha''sheen J''onzz (mother, deceased); M''yri''ah (wife, deceased); K''hym (daughter, deceased); Ma''alefa''ak (twin brother); D''all (father-in-law, deceased); J''ahrl J''onzz (ancestor, deceased)','81a4fcec-6878-4ca3-9ab1-49a1b1b8138e'),
 	 ('36211cd5-d063-429d-bcf9-76334f90e494','Aquaman Family; formerly Red Lantern Corps','Aquaman (husband); Aquababy (son, deceased); A.J. (son); Siren (Hila, twin sister)','bf5951be-d7cd-4dc0-8b73-ca5f32e464ea'),
 	 ('830a4d00-2d93-430d-a2b2-77e040862152','Fantastic Four','Nathaniai (father), Evelyn (mother, deceased), Susan Storm - Invisible Woman (wife), Franklin (son), Johnny Storm - Human Torch (brother-inlaw), Cassandra (stepmother, deceased), Immortus (father''s descendant, see Immortus, Kang, Rama-Tut).','6bee3c46-82e0-4dad-851b-5ee62988e7ed'),
@@ -8213,7 +8213,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('ac93e507-2328-41b5-b419-86ed8969f127','Formerly Purple Children (leader and father), Villains for Hire, Hood''s gang, partner of Electro, his own band of criminals','Melanie Killgrave (ex-wife); Persuasion (Kara Killgrave) (daughter); Joe (son); Shallah (daughter); Connor (son); Jamie (son); Unnamed daughter','2fc6908e-86aa-49d3-b638-0a06d97affaf'),
 	 ('66f6c276-6d19-4ed3-8bd3-df333bc461d5','Titans, Justice League of America, formerly Outsiders, Teen Titans, Checkmate, Central Bureau of Investigations','Roy William Harper, Sr. (father, deceased); Brave Bow (adoptive father, deceased); Oliver "Ollie" Queen (Green Arrow - adoptive father); Jim Harper (Guardian- great-uncle); Lian Harper (daughter), Vandal Savage (ancestor)','5f07c8f3-88ff-43fc-9f72-33bba3300161'),
 	 ('cc54ccdc-39fe-4e31-8f84-43e409f2f9b9','Resistence','-','8abb41a8-8a3a-499b-81f7-463178dbd509');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('acea46d1-6b18-45d7-b7ee-01d957170280','-','-','4e7e5852-ce1a-4f83-a371-c3ba278f4805'),
 	 ('a52efe92-6a35-4a8e-b3cc-d2fe1904f259','-','-','c5a8e0db-ccf1-4456-b634-c516290f559d'),
 	 ('c5e0698a-b3f3-456a-86c1-cf75456984fd','Avengers; formerly founding member of Avengers West Coast and first chairman, Thunderbolts, S.H.I.E.L.D. (unofficial), Chain Gang 421-011, Shadows, Great Lakes Avengers, Cross Technological Enterprises, Defenders, Carson Carnival of Traveling Wonders, Ti','Harold Barton (father), Edith Barton (mother), Charles Bernard "Barney" Barton (brother), Barbara Morse ''Bobbi'' Barton (Mockingbird, wife), Brett Barton (ancestor), Mack Barton (ancestor); all deceased','075ea927-fd30-4e63-b147-e396d41696dd'),
@@ -8224,7 +8224,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('b8b219a3-63a4-4203-b6b6-dda4931df37d','-','-','1d4bd48e-dec3-47bd-b21b-455972f7ab30'),
 	 ('290bc612-8358-4fb9-aaad-26401746d283','-','-','95fd93a7-24a4-4a48-a0eb-841a878655d6'),
 	 ('a60c6c69-4ea4-4eee-95a7-175206d3dfef','Formerly New Warriors; Special Class','Tito Bohusk (son); Axel Bohusk (son); Kara Bohusk (daughter); three other unidentified children;','282163c6-af61-4e6f-b122-c36d6a4e7086');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('59cf83c2-9d2a-4045-b680-970e88dfa8c6','-','Deborah Watts Mason (wife, deceased), Rick Mason (aka Agent, son, deceased)','09b90928-f93b-420f-954e-c117538b9f86'),
 	 ('c3a2efb1-bdd0-49a8-b339-20a9b1af24c7','-','Liz Allen-Osborn (Wife,) Norman III (son,)Norman Osborn II - Green Goblin (father)','b202c252-7f52-48ff-9c57-611cd4878239'),
 	 ('124ae148-f9f5-4b4e-93dd-4ec5f6a2463a','New Warriors, Guardsmen, NYPD','Unnamed mother, Derek Washington (brother, deceased), Hybrid ("former symbiote", defused)','79e8a6c5-5784-42ac-94d2-6822587f1ce4'),
@@ -8235,7 +8235,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('2e0aeb65-278f-40fd-8683-9dcf07c1dcd8','Flash Family, Teen Titans, New Teen Titans','Rudolph and Mary West (parents), Ira West (grandfather), Iris Allen (aunt), Barry Allen (uncle), Linda Park West (wife), Jai and Iris West (twin children)','23e43bdd-3358-47e8-b707-dcc9cf6e31a2'),
 	 ('eeeb80a0-a248-4425-903c-7bfbec6db7b6','Secret Society of Super-Villains','-','1feeef29-3500-4dd8-bbf3-c8d7673081f3'),
 	 ('db4ec37d-b86c-4c18-9c92-b7912829d574','-','Quicksilver (Pietro Maximoff, father), Magneto (grandfather), Crystal (mother), Scarlet Witch, (aunt), Polaris (aunt)','eada5243-be14-466e-9ebb-ff70881e45cb');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('4cf103f2-5238-4e8b-acdc-b58431e4f144','Thunderbolts, Legion of Monsters, Daydreamers','Ellen Brandt (ex-wife) Job Burke (son)','a6c62dcf-b747-412e-b2f4-dac1cb9f3521'),
 	 ('753d1156-4373-49d0-a4c5-2cbe41c6b3ec','Titans East, the Agenda, Project Cadmus','Superman (genetic template via Superboy), Lex Luthor (genetic Template via Superboy), Superboy (genetic template)','b9e0bae0-54e3-49c3-8e89-417eea78b04f'),
 	 ('851d57da-3ca0-41c5-816d-777951864b14','New Gods','-','8d2171ae-8b30-4558-b7e0-9aa9b49f8314'),
@@ -8246,7 +8246,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('00912975-479b-4919-99be-f6eb835830d2','-','-','17fe634d-8aa4-4876-924e-5e2ad880eb51'),
 	 ('7b4f62b2-c64c-4251-b4b1-ae726826505a','None; Formerly Secret Avengers, Daredevil''s Unnamed Super-Hero Team, Green Berets, U.S. Marine Corps','Maria Castle (Wife, deceased), Christie Castle (Daughter, deceased), Frank Castle Junior (Son, deceased), Mario Castle (Father, deceased), Louisa Castle (Mother, deceased), Rocco Castiglione (Uncle, deceased), Esmerelda Castiglione (Aunt, deceased), Michael Castle (Brother, stillborn, deceased).','ef079eaa-7be3-4019-9f7e-22dde9305ef9'),
 	 ('8ac072c0-4396-4432-8b58-61774d415930','Teen Titans, Batman Family, Batman Inc., Wayne Enterprises; formerly Young Justice','Jack Drake (father, deceased), Janet Drake (mother, deceased), Dana Winters Drake (step-mother, status unknown), Bruce Wayne (adoptive father), Damian Wayne (adoptive brother), Dick Grayson (adoptive brother), Jason Todd (adoptive brother), Cassandra Cain (adoptive sister)','982eee85-ff8b-45c0-9632-c41c1fd8cc9c');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('5099bb08-0e8a-484d-8b61-32167329dfe8','League of Assassins','The Sensei (father), White Ghost (Dusan al Ghul) (son), Talia al Ghul (daughter), Nyssa Raatko (daughter), Robin V (Damian Wayne) (grandson)','3c258ffd-76f8-4640-929b-8a9c7bbdc0ef'),
 	 ('2eeb9ce2-859f-49cf-ac0d-31daf1ff83c8','(Formerly) Sinister Twelve, the Sinister Six, the Frightful Four, the Outlaws and the Wild Pack, reserve member of the Avengers','Mrs. Baker (mother), unidentified cousin','a732553b-7923-4dce-9264-e3002207e7ee'),
 	 ('38fef38f-c204-401e-b513-a15f6e3503b9','-','Miles Warren (creator), Peter Parker (Spider-Man, genetic template), Ben Reilly (Scarlet Spider, fellow clone, deceased), Spidercide (fellow clone, allegedly deceased), Guardian (fellow clone, deceased), Jack (fellow clone, deceased)','087f3911-9e9c-4457-b93f-f9d124387153'),
@@ -8257,7 +8257,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('2d77d2c9-6e53-4333-8b73-0e2e00abc793','Formerly Justice League of America, Supermen of America, Justice League of Amazons, Kent Family, Superman Family, Kryptonian Science Guild, Teen Titans, Legion of Super-Heroes, Outsiders','Zor-El (father), Allura In-Ze (mother), Jor-El II (uncle, deceased), Lara Lor-Van (aunt, deceased), Kal-El (Superman,Clark Kent, cousin), Lois Lane (cousin-in-law), Jonathan Kent (adopted uncle), Martha Kent (adopted aunt), Kon-El (Superboy, Conner Kent, clone cousin, deceased), Nim-El (uncle), Dondra Klu-Ta (aunt), Don-El (cousin), Jor-El I (praternal grandfather, deceased), Nimda An-Dor (paternal grandmother, deceased), Lar-Van (maternal grandfather, deceased), Lara Rok-Var (maternal grandmother, deceased), Val-El, Sul-El, Tala-El, Hatu-El, Gam-El (ancestors, deceased)','4307fa84-119e-432e-a6a0-59be5c49ab8d'),
 	 ('d1f90b91-b318-4dcf-bd9b-cc9ad5d12ecd','-','Mercedes Merced (wife), Jeanne Foucault (Finesse, alleged daughter)','9c0c9ef9-e56c-4289-9f4c-a6380c630da4'),
 	 ('cfd70303-2f69-4a30-b335-f94d0f72c792','X-Men, formerly US Marine Corp','Unidentified grandfather (deceased), Neal Proudstar (father, deceased), Maria Proudstar (mother, deceased), James Proudstar (Warpath, brother)','4d7db3d0-7396-4c01-a507-5a8ab696093d');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('830a00a2-5c4b-4f30-81bf-aede77a2b077','(former) Outer Circle of Enforcers II, Factor Three, Fallen Angels','-','25186775-7bd5-4036-a835-30a3fe2ed5f7'),
 	 ('cb6dc6c9-c8fc-48cd-9262-8a01e76ebc33','Ally of Spider-Man and Black Cat','Gina Mulligan (wife), Edward Mulligan (son), Mr. Mulligan (father), Mrs. Mulligan (mother), Carnage ("father"), Venom ("grandfather")','97325f98-1bce-4689-b104-11ef6926c4b9'),
 	 ('e2b74d74-dc7a-45b9-80c6-5b51942907a9','X-Men (Team Cyclops), Security Recon; formerly X-Force (Strike Team), X-Corporation, X-Force, New Mutants, Hellions','Thunderbird (John Proudstar, brother, deceased), Maria Proudstar (mother, deceased), Neal Proudstar (father, deceased)','9616e8e3-8588-436b-a889-301ff8ff3fc9'),
@@ -8268,7 +8268,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('b0a10631-47d9-464d-97c9-d2fe4da156b3','-','Libra (Gustav Brandt) (father), Lau Brandt (mother), Cotati possessing Jacques Duquesne (husband), Quoi (son)','7dff6186-d93e-444a-a5a5-20f3545e8f0d'),
 	 ('a4ca69d9-ba4e-426a-af22-0a08f57865f0','-','Leonardo (brother), Donatello (brother), Raphael (brother)','8d3833e0-1453-4ba4-925c-df1eed7b1e91'),
 	 ('320eb00a-b189-4827-bbf7-434738e710e9','Exterminators','Doris Raxton (mother), Liz Allan Osborn (step-sister), Harry Osborn (Green Goblin II , step-brother-in-law, deceased), Norman Osborn Jr. (Green Goblin I, step-nephew)','4e3780da-9bae-43c0-9336-9836ad799165');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('0a9d71c6-1016-4ecc-a23b-2b39607e2568','Graces, United Front, former leader of a mercenary band','-','16aea3e8-2127-48bd-b0e7-44b9d0d1099d'),
 	 ('b68fd9db-eb1b-4f3c-9996-15cfa8a2051d','-','Isis (Sister, deceased), Black Adam (Brother-in-Law)','ba9633e7-a0c6-4a99-acd6-cda15c12c963'),
 	 ('4af93699-59eb-4b80-914d-025fd9dc4b5c','The FBI; formerly the Justice League of America; the All-Star Squadron and the Freedom Fighters','Offspring (son)','98cb7eca-2124-42d5-92e9-2963560c18ce'),
@@ -8279,7 +8279,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('f176b706-99a4-49c4-bd45-40aa9b25d0fc','Omega Flight; formerly Alpha Flight, Beta Flight, Gamma Flight, Howling Commandos','Veronica Langkowsi (ex-wife), unidentified son, Lillian von Loont (Gilded Lily, great-aunt, deceased)','2e88fbb4-cffc-4ec7-80dd-17cc55603515'),
 	 ('0fb166de-245b-4d24-8491-bfc3239690ae','Liberty League, Chicago Police Department, Special Operations Strikeforce (S.O.S.)','-','9e018089-32a2-43fd-8b6e-3b06f49b9f71'),
 	 ('539531f8-ac31-4174-9c0e-03bae9ce5151','X-Men (New Charles Xavier School member), X-Men (Past) (tutor); formerly X-Men, Murder Circus (brainwashed), Lights (liaison), Paladins Squad, S.H.I.E.L.D., Gladiators, Excalibur (founding member), New Mutants, Knights of Wundagore','Kate (maternal great-grandmother), Samuel Prydeman (paternal grandfather, deceased), Chava Rosanoff (paternal great-aunt, deceased), Mr. Rosanoff (paternal great-uncle, apparently deceased), Nina (aunt), Carmen Pryde (father, deceased), Theresa Pryde (mother), Kenny (cousin)','ff9fa393-3dc3-4357-a52c-9eea1a523ee9');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('09b141e4-ca97-429d-b767-5f11061be787','Formerly, Injustice Society, Injustice League, the Society, Infinity, Inc; Injustice Unlimited, Black Lantern Corps','Unnamed wife (deceased); Karin Rykel (possible descendant, deceased); Chrissie Cavendish (possible descendant)','712be8ef-08d0-4395-8bd3-357029be8023'),
 	 ('3f40ba90-c4e7-458d-b460-5cb7a29887d8','Reserve member of the Justice League of America','Mrs. Irons (mother, deceased), Mr. Irons (father, deceased), Maternal Grandmother (deceased), maternal grandfather (deceased), Butter (grandfather), Bess (grandmother, deceased), Clay Irons (brother), Jemahl Irons (nephew), Blondell Irons (sister-in-law), Natasha Irons (Starlight, niece), Paco (nephew), Tyke (former foster nephew)','df3329cc-ad89-4222-8a00-1a4e7199e06e'),
 	 ('3a779fdb-66ee-4a9f-91b1-a49542d4fe34','-','Virginia Gray (mother)','c6f1ab4b-5d72-46cb-af09-f185f9f761cc'),
@@ -8290,7 +8290,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('b032a8ee-a193-49ea-894c-78c0e89f85a9','Infinity Watch, (as the Magus) head of Universal Church of Truth in an alternate future','-','d3d702e1-2fde-4060-9921-c8b05167423d'),
 	 ('b1cb9600-2504-432d-91bf-4699d6fa3449','Black Widow (partner), Nick Fury (employer); formerly Avengers, New Avengers, Invaders, Kid Commandos, Liberty Legion, Young Allies, Crazy S.U.E.S., Captain America (partner), Falcon (partner)','George M. Barnes (father, deceased), Winifred C. Barnes (mother, deceased), Rebecca P. Barnes Proctor (sister), Ida (aunt, presumed deceased), Mr. Proctor (brother-in-law), unidentified niece and nephew, Scott Proctor (grandnephew), Kimberly Proctor (grandniece)','b87bdbe7-0196-4779-b36f-eb19ea2c2c63'),
 	 ('266ae4e5-0b6c-40b1-a770-f51239d7b901','The Avengers, The West Coast Avengers, Secret Defenders','Maria Trovaya (first wife, deceased), Janet Van Dyne a.k.a. The Wasp (second wife, divorced), Ultron (creation, "son"), Jocasta ("first daughter-in-law"), Alkhema ("second daughter-in-law"), Vision ("grandson"), Scarlet Witch (former granddaughter-in-law), Victor Mancha ("grandson")','e1dae9c2-31ac-4347-862c-0f29845419bc');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('4a438d1e-70d6-47df-9c14-b4804b242057','None, formerly Hydra, Xavier Institute Faculty/Alpha Squadron (teacher/advisor), X-Men, Alpha Flight, Front de Lib?ration du Qu?bec/Cell Combattre','Jean-Baptiste Beaubier (father, deceased), unnamed mother (deceased), Louis Martin (adoptive father, deceased), unnamed adoptive mother (deceased), Jeanne-Marie Beaubier (Aurora, sister), Joanne Beaubier (adopted daughter, deceased)','752a79c4-e29e-4bc9-9a65-bda05d8341cb'),
 	 ('86c40b9d-90c1-492b-97cb-015371663155','-','-','96afb5cc-1876-4b54-873a-8639bd3001d3'),
 	 ('1b67656d-4fbe-4986-941a-ca9797347edd','-','Miranda Cobblepot (Aunt), Miranda (Mother, deceased), Father (deceased)','6d832a9a-3ae8-4e0a-8f22-d60c88e265a4'),
@@ -8301,7 +8301,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('e9702756-caf2-4194-95a5-e7da478f3dc0','Formerly leader of the Time Masters; former member of the Forgotten Heroes; former member of the Linear Men, Booster Gold International (BGI)','Michael Carter, (Booster Gold, father),  Unknown (mother), Jonar Carter (grandfather), Ellen Carter (grandmother, deceased), Michelle Carter (Goldstar) (aunt), Daniel Carter (21st century ancestor), Rose Levin (ancestor), Dan Hunter (cousin),','00924041-97da-4b4b-8cbc-1c3ea71e6bf6'),
 	 ('373a07a7-3bd6-46f1-8c68-cc4610d4a70a','Batman Family, Batman Incorporated, Justice League; formerly Teen Titans, Outsiders, Bludhaven Police Department, Secret Society of Super-Villains','John Grayson (father), Mary Grayson (mother), Bruce Wayne (adoptive father), Damian Wayne (adoptive brother), Jason Todd (adoptive brother), Tim Drake (adoptive brother), Cassandra Cain (adoptive sister)','7fd979b4-adfa-4f95-8ac9-2147a8ed1dee'),
 	 ('829abad8-bb40-4fd5-8b0a-5300899b19e2','None, Formerly Avengers, Avengers West Coast, Force Works, Queen''s Vengeance, Secret Defenders, Lady Liberators, Brotherhood of Evil Mutants','Pietro (Quicksilver, twin brother), Magnus (Magneto, father), Magda Lehnsherr (mother, deceased), Anya (half-sister, deceased), Lorna Dane (Polaris, half-sister), Vision (estranged husband), Django Maximoff (foster father, deceased), Marya Maximoff (foster mother, deceased), Crystal (sister-in-law), Luna (niece), Tommy & Billy (reincarnated sons), Talia Wagner (Nocturne, alternate reality daughter)','3154f4b3-5b63-4389-bc64-3d0da22e7eb8');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('f5f57bbd-dfc5-4b1e-9878-76af5c1e0af2','The Gods of Asgard','Heimdall (brother)','9616c842-adfe-458f-bf33-1f4e8fa29360'),
 	 ('a4414eb3-e4b7-4413-9176-81dab8445bff','Black Cat''s Gang, Fact Channel News; formerly Spider-Army, partner of Spider-Man, Ezekiel Sims','Albert Moon. Sr. (father, estranged), unnamed mother (estranged), Albert Moon, Jr. (brother, estranged), Spider-Man (Peter Parker, bit by same spider)','69b8da47-5531-4187-ac62-4c1fde79fa3d'),
 	 ('0fc3db32-dedf-4769-b503-3ccf49d62c81','-','-','a87a3fd1-592e-45b4-80f5-7b940ee187b3'),
@@ -8312,7 +8312,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('2cf8798d-7842-4784-8dfd-c820422b323c','Legion of Super-Heroes','-','eedb7615-3f66-4530-ab6d-f028225dca07'),
 	 ('16234db3-9635-406a-ab19-6bcb807f39dc','-','Vincente Paolo Fortunato (father), unidentified mother (deceased), Giacomo Fortunato (Jimmy-Six, brother), Anna Fortunato (sister), Mary Fortunato (sister-in-law), James Fortunato (nephew), other unidentified neices or nephews','5d05c92f-1a27-4a27-b4bd-6b29a970b9d0'),
 	 ('d00b27ea-08e0-4da3-b113-d60838c03fa4','Avengers','Vernon Van Dyne (father, deceased), unnamed mother (deceased), Henry "Hank" Pym (ex-husband)','90eba5fd-62e6-4f5b-8c1a-03a68445ef70');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('0bb8c3b2-4065-4e24-89ac-b5de0cb529dd','Justice League of America, Justice Society of America (pre-Crisis Earth-2 version); All-Star Squadron (pre-Crisis Earth-2 version)','Queen Hippolyta (mother, deceased), Donna Troy (Troia) (magically-created duplicate)','2ad18f94-e7b0-4ec1-bded-3cfb97d61818'),
 	 ('d9a36a0c-f2c8-49f0-809c-024fa398883f','Ally and companion of the Fantastic Four','Will Wingfoot (father, deceased), Chief Silent Fox (grandfather, deceased)','119f8b5d-3af7-4fdc-8f36-55ead3470b0d'),
 	 ('54bc88c5-f75e-49ab-924e-feaa9cc11038','Nova Corps formely United Front (Leader), New Warriors, Champions of Xandar, Secret Defenders, Defender for a day','Charles Rider (Father), Gloria Rider (Mother), Robbie Rider (Brother) , Ralph Rider (Uncle, deceased) , Ellen (aunt)','8851c440-c975-40b2-ab3a-b07e97b34c17'),
@@ -8323,7 +8323,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('b6c0e611-88a4-4f42-9349-7d18915b83ff','-','Johnny G (father)','1260706b-e5e3-445d-bd2f-3161ec71fb07'),
 	 ('1a9e61d1-271b-48f7-bc9e-5b4ca7459157','Excalibur, formerly X-Men, X-Treme Sanctions Executive, X-Treme X-Men, Hellfire Club','-','145980b1-6504-46f4-88e3-09dadc582082'),
 	 ('6f20dcdf-fe6a-44e9-8cf8-29fcc803f595','None; formerly New Warriors','Peter Parker (clone of), May Parker (Aunt), Ben Parker (Uncle)','a85df2dc-8316-4b34-972d-40f18febbf9f');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('130d633e-85ef-4c66-9359-8d90c5c67196','X-Force, Blood Cadre Alliance (former member)','Longshot (father), Dazzler (mother), Mojo V','cc2f7937-6688-4f46-805c-55626d435a26'),
 	 ('99eea5bb-7ad5-4966-b72b-cb0a323e2b0e','MI-5, MI-6, "Marvel Knights", Heroes For Hire, Freelance Restorations, Si-Fan, Secret Avengers','Fu Manchu, father; unnamed mother; Fah Lo Suee, (half-sister); Whispering Shadow (half-brother, deceased)','ea836b2b-03b0-44a3-83c9-7dd4e4baf958'),
 	 ('e43fff84-0dd6-476d-96c2-0b43cc2e9d8f','-','Mera (twin sister), Aquaman (brother-in-law)','a32751af-e30d-4610-b02e-4c2c2216c416'),
@@ -8334,7 +8334,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('cd6c388f-b013-49aa-a6d0-ad7d3bcc1e07','Avengers','Odin (father), Gaea (mother), Frigga (step-mother), Loki (step-brother), Vidar (half-brother), Buri (paternal great-grandfather), Bolthorn (maternal great grandfather), Bor (grandfather), Bestla (grandmother), Vili (uncle), Ve (uncle), Sigyn (former sister-in-law), Hela (alleged niece), Jormungand (alleged nephew), Fernis Wolf (alleged nephew)','4af9dbd0-064d-4744-b52b-1ec9a4861209'),
 	 ('7a444ec4-75f2-4bdb-8838-03d30457db65','Giants of Jotunheim','-','d748c9a3-6726-45db-b72d-b935e975ee93'),
 	 ('851ad0ef-8650-4727-a582-2a675d002f95','Sinister Six (formerly)','Eddie Brock: Carl Brock (father), Jamie Brock (mother), Anne Weying (She-Venom, ex wife, deceased); Venom symbiote: Carnage (bonded to Cletus Kasidy, 1st generation offspring), five forced offspring - one independant (bonded to Donna, last name unrevealed, 1st generation offspring), four forming a composite symbiote (Hybrid (bonded to Scott Washington, 1st generation offspring), Toxin (bonded to Patrick Mulligan, 2nd generation offspring)','6eb6cc8e-c6fc-4629-ba64-2b2603d141d6');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('92a07f2f-2519-40c3-a9ee-4bc3d0b715c4','The Watchers, Friend and Ally of the Fantastic Four, among other Earth heroes','Ikor (father); Aron (nephew); Qyre, Zoma (cousins)','9cebbb38-f76b-42e6-8ae8-8d8d566bc020'),
 	 ('0782a86a-28a2-43c4-94f1-6f540acbb127','Former ally of the original Masters of Evil, former member of the East Coast Avengers, current member of the West Coast Avengers','Sanford (father, deceased) Martha (mother), Eric (alias the Grim Reaper, brother, deceased), Vision II (''brother'')','4f24dbde-50c7-42ed-829a-239a9bfe4695'),
 	 ('c5a7ab52-16c5-4f2e-b55a-e814d29cf74d','Jedi Order, Jedi High Counsl, Galactic Republic','Master: N''Kata Del Gormo, Apprentices: Dooku, Cin Drallig, Ikrit, Rahm Kota, Ki-Adi-Mundi, Oppo Rancisis, Luke Skywalker','0b9097fa-3c1e-4c53-9efa-d2a62762847e'),
@@ -8345,7 +8345,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('57913e23-4963-4f44-a1f2-cc693c98338b','Frightful Four; formerly Fantastic Four, Unlimited Class Wrestling Federation, Thunderiders','Jack Ventura (father, deceased), Mrs. Ventura (mother, deceased)','01069aa4-c07a-4646-8230-ced649f95f45'),
 	 ('54c60444-e5ac-4cb6-b672-94b53cb6e418','The Secret Avengers, formerly reserve member of the Avengers','Jaime Santiago (father), Peliali (mother), Edwin Jarvis ("uncle")','8f8d1e6f-221a-4aa2-8f5b-3eae0ee0e772'),
 	 ('4359cef6-cb9a-4cbc-9875-8a035c69d137','Galactic Heroes','-','19f0a950-17c7-4969-b884-d22ac07fb5c9');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('42400a30-8f4f-4cf6-b67d-3d87f4c8c5e3','X-Men (Jean Grey School member, leader); formerly X-Force (Strike Team); Murder Circus (brainwashed), Extinction Team, Avengers[3], Fantastic Four, X.S.E., X-Treme X-Men, Tokyo Arena, The Twelve, Seven Brides of Set, Hellfire Club (Inner Circle), Morlocks','Ayesha of Balobedu (ancestor), Ashake of Egypt (ancestor), Ashake of Mero? (ancestor), unnamed ancestor, Harriet Munroe (paternal grandmother), unnamed paternal grandfather, unnamed maternal grandmother, David Munroe (father, deceased), N''Dar? Munroe (mother, deceased), Ainet (unofficial foster mother), Achmed El Gib?r (unofficial foster father), Colonel Shetani (maternal uncle), unnamed paternal aunt (deceased), David Munroe, Jr. (cousin), Munroe Family (relatives), Black Panther (T''Challa) (ex-husband, marriage annulled)','855179c7-8e55-4a88-bead-6cf62c952d16'),
 	 ('de05fb84-8600-4988-b203-028541ef346a','Generation X','Stan Thomas (father), Ida Thomas (mother), Kim Ho Twae (adopted sister)','8037c975-b0d9-4126-852c-c7f743fee63b'),
 	 ('fbe68c3f-ab0c-4a5b-803b-75aba44dd379','Lady Liberators; Empress of the Sisterhood; formerly Frightful Four, Fantastic Four, former agent of Roxxon Oil Corporation','Superia (alleged ancestor), Arkon (consort) Lyra (alternate reality daughter)','9bfc5476-4187-4fc2-b487-9a35f3f5f2ec'),
@@ -8356,7 +8356,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('7b744cf5-ca4e-42e9-be37-ea63ec4d24a9','-','Utgard-Loki, Loki, and the race of Frost Giants (descendants)','db4ef6ac-0f3f-4dd0-b13e-5be71fcbc837'),
 	 ('40f21eef-9289-48fe-9664-754d41d1e4b7','Freedom Fighters, formerly Justice League of America, Justice League Task Force, Young Justice, JSA Reserves, Forgotten Heroes, Justice League Internationa','Happy Terrill (father), Nadine Terrill (mother), Joshua Terrill (Spitfire, brother), Thomas Terrill (uncle/foster father, deceased), Hank Terrill (cousin)','f6fb32e1-f8ec-451e-9aa4-e1c2929ef1e3'),
 	 ('dfc5b11e-c29d-44b1-b7dc-0ce0501b6548','-','-','fe555c2e-70f3-464a-a385-59dedcbe7227');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('e11320f4-3751-448f-bca7-b2568697e967','Formerly Horsemen of Death, Osborn''s Avengers, Mighty Avengers, New Avengers, partner of Scout','Lindy Reynolds (wife, deceased), Mrs. Reynolds (mother)','472d5013-bf08-47b7-bb22-45cc705dec76'),
 	 ('a8c6fdf2-efd0-4a20-871c-c95ce329a865','Shadow Mob; former head of the Gladiators and the Cairo?s Thieves Quarter','-','a35d4991-e279-4084-86d4-45b5bb3c6313'),
 	 ('880ce52e-12df-42af-b895-d0cfcc99f342','-','Sira Baz (sister), Farid Amar (nephew), Nazir Amar (brother in-law)','9f3fc482-5268-4ce1-9b79-ad27bd86d533'),
@@ -8367,7 +8367,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('dde5f664-2699-4590-bc1f-3737665a6dbe','formerly (Parliament of Trees; Parliament of Stones, Parliament of Flames, Parliament of Waves, and Parliament of Vapors), The Parliament of Worlds','Larry Holland (father, deceased); Alice Holland (mother, deceased); Edward Holland (brother); Linda Holland (first wife, deceased); Abigail Holland (second wife); Tef? Holland (daughter); Gregori Arcane (father-in-law, deceased)','bc763ade-3713-4536-bed5-51b54c9d594c'),
 	 ('c195183d-7cc9-496d-858f-055f7393e354','Fantastic Four formerly Avengers West Coast, Unlimited Class Wrestling Federation, Thunderiders','Daniel (father, deceased), Elsie (mother, deceased), Daniel Jr. (brother, deceased), Jacob (''Jake,'' uncle), Alyce (aunt, deceased), Pentunia (''Penny,'' aunt, Jacob''s second wife)','7f1be57c-44e9-44ee-bc70-81e00262306f'),
 	 ('9e669091-97a1-4e41-a88f-86c3aca156fd','Ally of the Asgardians','-','66b6bf14-d18d-4fce-8507-faa8a16b6956');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('c23c4956-e409-4937-b910-fdd011964739','Formerly; temporary partner of Agent Venom, Savage Six, Sinister Six, Revengers, former partner of Vengeance, Spider-Man, Scarlet Spider. Volunteer at F.E.A.S.T.','Carl Brock (father, estranged), Janine Brock (mother, deceased), Mary Brock (sister), Ann Weying (ex-wife, deceased), Symbiotes'' relatives: Anti-Venom Symbiote (former symbiote, uncle and former brother, deceased), Venom Symbiote (former symbiote, grandfather, former brother), Agony, Phage, Riot, Lasher (uncles, former sons), Scorn (sister, former niece), Carnage (father, former son), Scream (aunt, former daughter, deceased), Hybrid (uncle, former son, deceased)','13042421-f7b4-48d9-a9e3-811973c5f36b'),
 	 ('a938a7df-5f24-40a0-b767-eb3e866f392e','Initiative; formerly: Sentinel Squad O*N*E, Office of National Emergency (O*N*E), Crew, Secret Defenders, Worldwatch, Stark Enterprises, Force Works, West Coast Avengers, U.S. Marine Corps','David Rhodes (father), Roberta Rhodes (mother), Jeanette Rhodes (sister, deceased), Josh (uncle, last name unrevealed), unnamed alleged son','f7598083-34c3-49af-a6f0-4a8d34728e7b'),
 	 ('b8c5bcc1-6aa2-4ae7-b261-889fef0aad7a','Formerly X-Men, Brotherhood of Mutants, Forge''s resistance','Scott Summers of Earth-295 (Cyclops, genetic template), Jean Grey of Earth-295 (genetic template)','88679560-aab6-4721-bd1b-eba04a829257'),
@@ -8378,7 +8378,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('14300f64-fd9b-459a-ada4-e27695d816ef','-','Jim Powell (husband), Daphne Powell (daughter), JJ Powell (son)','8314c229-0576-4867-bff1-a93df2121eaa'),
 	 ('08c8350f-ebea-4dc2-8c85-3381f6f0623a','Avengers; formerly X-Men, New Mutants, Young X-Men, X-Corporation (Los Angeles branch), MLF, X-Force, Fallen Angels, Hellfire Club, Bratpack','Emmanuel da Costa (father, deceased), Nina da Costa (mother), Reignfire (genetic copy, deceased)','b999ee34-dc8e-4095-a71b-06e26703b0f4'),
 	 ('51b97ab6-6b83-4912-afc1-e5eb0802b765','Skynet','-','739aa498-46d9-449b-ba25-9b949935dc0f');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('649bc23f-f92b-4eb7-9109-5f3b3e1f069c','Skynet','-','ebf70daf-95b7-48e0-889c-8b0151b8fe05'),
 	 ('3498a9a8-7a57-4d2b-9e5c-67e9bcafd29e','-','Duela Dent (Daughter), Gilda Dent (Wife), Poison Ivy (Fianc?e), Rachel Dawes (Girlfriend)','b0247236-d9b4-4e6c-a7cd-3e363673ae7a'),
 	 ('2fd89381-8bbb-4a81-9a0c-e682d5d56d2e','Thunderbolts; formerly (as Scorpion) Masters of Evil, "Spider-Man Revenge League"; (as Venom) Sinister Twelve','-','06e9f46b-1866-4ac9-a61f-3939b049c3af'),
@@ -8389,7 +8389,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('cad83b1b-ac1c-4317-8137-172261785514','Formerly Gathering of the Five','Jeremy Franklin (father, deceased), Bernice Franklin (mother, deceased), J. Jonah Jameson (foster father), Marla Madison (foster mother)','ad766187-b760-4be8-abbd-563755437084'),
 	 ('39909cb8-4814-44a1-9cec-035734a168de','Shadow Cabinet, Heroes, Teen Titans','Robert Hawkins (father), Jean Hawkins (mother), Sharon Hawkins (sister), Homer Hawkins (grandfather), Teshom? Hawkins (uncle, deceased),','5aef7271-94cc-47cf-adf6-d57c9ab80998'),
 	 ('d6944d3a-46b5-4af9-81e7-737d4029ff75','Zodiac (ally); formerly Infinity Watch, Defenders','A''Lars (father): Sui-San (mother, deceased; Eros (brother);Kronos (paternal Grandfather, deceased); Daina (paternal grandmother, deceased); Zuras (uncle, deceased); Thena (cousin); Gamora (foster daughter);Nebula (alleged granddaughter); Rot ("child" by Death);','619b798e-80ff-4813-a0b2-cf4078d5126c');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('a32ac160-0cc2-4c90-ab30-cb6552c450b4','Villains for Hire, Lethal Legion, Dr. Dorcas; Masters of Evil; Namor''s Deep Six; Attuma''s Deep Six; Offenders','Diane Newell (sister); Mara (wife, deceased); Walter Newell (brother-in-law);','a1b790be-c81a-4bc0-80d8-51fc1741ab7f'),
 	 ('c11c8dd2-09f9-4165-90b1-71a5008e3125','(At time of death) Avengers; (Formerly) Legion of the Unliving, Thor Corps','Marcy Masterson Steele (wife, divorced), Kevin Masterson (son)','58361c42-cd29-4a4c-8995-2f0eb9e677b0'),
 	 ('4aee861d-3510-4eb3-ac38-0146fca39f9f','Formerly Sinister Twelve, Sinister Six','Marcus (brother, possibly deceased), Malachi Toomes (nephew, deceased), Valeria Toomes (daughter), unnamed son, Ramona (daughter-in-law), unnamed grandson','d09dce18-bbba-4a60-bfed-95194c344611'),
@@ -8400,7 +8400,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('6ed992ce-eb7d-49fe-8387-ceac48924d8d','Legion of Super-Heroes','-','91adabb4-935f-4d0e-b592-1b2f63072e2c'),
 	 ('d13704bd-1fa6-4224-8378-e3c40d865924','Formerly Suicide Squad, Checkmate, Ultramarines, Birds of Prey, Justice League of America','Reverend Richard Jiwe (father, deceased), Jeanne-Mari Jiwe (mother, deceased), General Mustapha Maksai (uncle, deceased), Tantu (ancestor)','88932725-a523-405d-8399-5d0de591e3bb'),
 	 ('59ea617b-7e79-4432-b711-1ebc65f43f14','New X-Men, formerly Xavier Institute Student Body, The Facility','Sarah Kinney (surrogate mother, deceased), James Howlett (Wolverine, genetic progenitor)','d7f27efc-fe30-4e3a-b3e3-41df731450a0');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('88dfc11e-5977-42b0-a4cd-8d79a51ac357','Phalanx; formerly Sons of Yinsen, Lethal Legion, Masters of Evil','Hank Pym (Yellowjacket, creator, "father"), Janet Van Dyne (Wasp, regarded by Ultron as "mother" due to marriage to Pym), Jocasta (creation, former mate), Alkhema (creation, former mate, deactivated), Vision (creation, "son"), Victor Mancha (creation, son), Rex (creation, pet, deactivated), Robos & Bio-Synthezoids (creations of Alkhema, "grandchildren";, destroyed); Simon Williams (Wonder Man), Eric Williams (Grim Reaper) & Wanda Maximoff (Scarlet Witch), all regarded by Ultron as part of his "extended family" due to their familial connections with the Vision','999461b8-69a4-4b48-a42d-cce87bb62e54'),
 	 ('abbced48-a627-4896-923d-cd0641238ea8','Incredible Family, National Supers Agency','Robert Parr (Mr Incredible, father), Helen Parr (Elastigirl, mother), Dashiel Parr(Dash, brother), Jack-jack (brother)','09b97a43-7958-4e75-bf87-343ff749695a'),
 	 ('507de847-ffe7-4bed-8aa9-f0d24c5e6331','-','Humbert Carpenter (uncle)','97a3ed8c-db26-44f9-9cbd-9e0caef50729'),
@@ -8411,7 +8411,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('9206d149-8174-462f-958e-def7619d6688','-','-','414e8aba-904e-4ccb-9f24-387f4088185f'),
 	 ('78c375d1-ba11-43a8-86f0-32bdcf9a03b4','Teen Titans; former member of the original Doom Patrol, Titans West','Mark Logan (father, deceased), Marie Logan (mother, deceased), Steve Dayton/Mento (adoptive father), Rita Farr/Elasti-Girl (adoptive mother), Matt Logan (cousin)','8cf3466d-3f63-442e-991b-4323676bf006'),
 	 ('d42b6af5-1e92-4fea-9248-1d9dfc6172d7','Formerly Heroes for Hire','Walter Hardy (father, deceased), Lydia Hardy (mother)','1e0dd279-d940-478a-80bf-16403c89ef83');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('d53ecf3a-32d3-4091-b26c-77ae49797134','Heavy Mettle; (formerly) Masters of Evil, Skeleton Crew, Circus of Crime; (formerly) division leader of Hydra','Silvio Manfredi (Silvermane, father), Caterina Manfredi (mother, deceased)','a0eafd15-d598-45db-a4c9-2cffec18cd2c'),
 	 ('af2b83be-7bb0-4c0c-a7a0-7e0c1afeb1db','Doom Patrol, S.T.A.R. Labs, Formerly Teen Titans','Mal Duncan (husband)','2f4935ae-250b-4945-aa45-6cc55659b6e8'),
 	 ('f490b27c-5e58-40a9-933a-c41f8e98f1fc','Formerly Dark Avengers, Thunderbolts, employee of Kingpin, Purple Man, Eric Slaughter, Mysterio; formerly US Army','Kingmaker (father)','c68ef461-d188-4881-91a7-ee1868b63b4d'),
@@ -8422,7 +8422,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('c0149de2-22ed-49d5-889a-1445394c9aec','Formerly Excalibur, X-Babies (guardian), Mojoverse Rebellion, X-Men, Cat''s Laughing, Gladiators','Bella Blaire (paternal grandmother), Carter Blaire (father, deceased), Katherine Blaire-Brown (Barbara London, mother), Nicholas Brown (step-father), Lois London (half-sister), Longshot (husband)','54a5925a-550e-473e-a627-a518fb15bf26'),
 	 ('dc3466e9-35ad-4c7a-8d13-ca4eda5b6776','Future Foundation; Formerly Cabal, Knights of the Atomic Table, Acts of Vengeance Prime Movers, partner of Namor, employer of the Terrible Trio, Fantastic Four (leader)','Werner von Doom (father, deceased), Cynthia von Doom (mother, deceased); Kang the Conqueror, his counterparts, and offspring (alleged descendants), Kristoff Vernard (Doctor Doom II, adopted son), Dr Bob Doom (distant cousin), Boris (unofficially adoptive father/guardian), Valeria von Doom (daughter from alternate universe; became baby of Susan Richards and is now called Valeria Richards)','a8a02b49-4c62-4205-bafa-2fe7b7d65339'),
 	 ('18766ca8-ad8f-4849-99a9-b9f13a268354','-','-','bc627d54-e9cc-49c7-8b0c-b6466530590a');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('a0f3359c-ea6b-418f-9dd8-1dce241867fc','-','Bob Bishop (Father)','c767298a-dcee-41b6-91cc-68ca65df2b46'),
 	 ('b994e006-8a96-4215-93b8-98b76d1ab833','Affiliation "Fin Fang Four," former ally of the Mandarin, pawn of Doctor Vault, member of starship crew','Fraktur (cousin)','7348d805-2f86-446f-b82a-25287b273030'),
 	 ('91b761a5-d8ab-47ff-80ca-8e33b2f0feaa','X-Factor','-','6f9741d4-13ce-421e-88e8-2f31e1be0d0e'),
@@ -8433,7 +8433,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('ee8cd2b5-8f89-438b-b834-ad1bed92e974','X-Men, X-Corp, Generation X','Thomas Zebulon Guthrie (father,deceased),Lucinda Guthrie (mother),Samuel Zachery Guthrie (brother,Cannonball),Joshua ''Jay'' Guthrie (brother,Icarus),Joella Guthrie (sister),Elizabeth Guthrie (sister),Melody Guthrie (sister),Jeb Guthrie (brother),Lewis Guth','3a428afc-64e4-4462-b991-9c5a6bf6ccc8'),
 	 ('a4accb3f-6e29-4a29-866e-8e080a1374da','Avengers, Illuminati, Stark Resilient; formerly S.H.I.E.L.D., leader of Stark Enterprises, the Pro-Registration Superhero Unit, New Avengers, Mighty Avengers, Hellfire Club, Force Works, Avengers West Coast, United States Department of Defense.','Howard Anthony Stark (father, deceased), Maria Stark (mother, deceased), Morgan Stark (cousin), Isaac Stark (ancestor)','56d7f6d4-ceea-4d81-bc5e-8fbcaa967625'),
 	 ('a65282c5-1715-4ad5-b6da-aa48150adb27','-','Sara Cruz (sister)','5629f7e9-1d78-4313-8067-1f51fbe12fd3');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('7dfe4045-59e7-4eea-ace0-2800f33cec84','Formerly New Avengers, Daily Bugle, Alias Investigations','unnamed mother (deceased); Dave Cambell (father, deceased); Phillip Cambell (brother, deceased); unnamed adoptive mother; unnamed adoptive father; unnamed adoptive sister; Jenny (adoptive aunt); Luke Cage (husband); Danielle Cage (daughter);','a52084a6-e774-4a8c-8780-180e0614cdfc'),
 	 ('cca21082-cf65-47d4-ac01-53a3574ec16c','-','Jim Powell and Stephanie Powell (parents), Daphne Powell (sister)','5d721ab1-d88b-4bb4-ad19-88f6acb17b86'),
 	 ('d7ee23a5-8527-468e-84e9-30c3f58582ed','(formerly) The Sinister Six','Nikolai & Anna Makarova Kravinoff (parents, deceased), Dmitri Smerdyakov (Chameleon, half-brother), Vladimir Kravinoff (Grim Hunter, son, deceased), Aloysha "Al" Kravinoff (Kraven II, son), Ned Tannengarden (son, deceased)','0954b39f-979b-48c8-a6d1-1bc87a5f103d'),
@@ -8448,10 +8448,10 @@ Contessa Erica Alexandra del Portenza (wife, assumed deceased)','27924f5f-f6f2-4
 	 ('c5eefaff-c542-4c6b-953c-41769c149cb6','Hell-lords, Lords of the Splinter Realms; formerly manipulator of the Six-Fingered Hand','Blackheart (son), Mephista (daughter); presumptive relationship to other Hell-lords; quasi-paternal relationship to Mikal Drakonmegas (Hellfire) and Daimon (Hellstorm) and Satana Hellstrom; formerly engaged to unidentified demoness','74cb3a12-e500-43d2-a272-687987f2d301'),
 	 ('846a4033-cc54-45aa-9e72-8236ab6d9562','Birds of Prey','-','19648125-afc9-48d7-b7f0-9f286f1edf5b'),
 	 ('6317c81c-5a2c-4e86-9bf8-27d1a4af2a43','-','M.O.D.O.K. Superior (clone), Head Case (son), Number None (son)','7590d6d4-c3bf-4787-aa2c-25253aee6b5b');
-INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superheroe_id) VALUES
+INSERT INTO public.superhero_connections (id,groupaffiliation,relatives,superhero_id) VALUES
 	 ('ca1c9ac4-55b3-4e7b-8059-1a0db234836b','X-Factor Investigations (formerly) X-Factor, Fallen Angels, X-Corps, X-Corporation','Dr. Daniel Madrox (father, deceased), Joan Madrox (mother, deceased)','bf5f0d98-f4b8-4eaa-8c6d-f1db2bd91289'),
 	 ('671510ea-1c08-4c85-8550-cf6d21987af1','Agents of Atlas, Long-time ally of Namor; Monster Hunters, Invaders, All Winners Squad; At one time or another was partnered with FBI Agent Jimmy Woo, Sun Girl, Venus, Golden Girl, Hulk','Namor (cousin), Talan (husband, deceased), Namorita ("daughter" cloned)','4d01042c-09df-4732-b54f-3936995ba10d'),
-	 ('2d5ea015-88dc-4026-9838-e85a1562622c','Formerly Council of Three, New Warriors, Fantastic Four, Soldiers of Misfortune, Water Children','Namora (mother); Talan (father, deceased); Namor, Byrrah, Dara, Arkus (first cousins once removed); Fen (great-aunt, deceased); Thakorr (great-grandfather, deceased); Korra (great-grandmother, presumed deceased); large extended family; Betty Prentiss (legal guardian, deceased)','7b1c3c4b-2445-4222-b4c4-a26bf16e4a63');INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+	 ('2d5ea015-88dc-4026-9838-e85a1562622c','Formerly Council of Three, New Warriors, Fantastic Four, Soldiers of Misfortune, Water Children','Namora (mother); Talan (father, deceased); Namor, Byrrah, Dara, Arkus (first cousins once removed); Fen (great-aunt, deceased); Thakorr (great-grandfather, deceased); Korra (great-grandmother, presumed deceased); large extended family; Betty Prentiss (legal guardian, deceased)','7b1c3c4b-2445-4222-b4c4-a26bf16e4a63');INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('ce1c62b9-e38a-4a9a-90cc-031ac2311ac9','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/4-abomination.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/4-abomination.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/4-abomination.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/4-abomination.jpg','a653e8c6-1ab5-4c6b-8c4a-c8ac6e567e1d'),
 	 ('cd6d2c9a-7906-45c8-aacb-e4d367ee1638','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/10-agent-bob.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/10-agent-bob.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/10-agent-bob.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/10-agent-bob.jpg','84507000-0beb-4a66-8288-0a9c578176a1'),
 	 ('5b4e948a-5ef2-49c0-9bab-7b662c62f9e8','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/11-agent-zero.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/11-agent-zero.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/11-agent-zero.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/11-agent-zero.jpg','8966dac4-8773-4cba-aec5-4d453822fce6'),
@@ -8462,7 +8462,7 @@ INSERT INTO public.superheroe_connections (id,groupaffiliation,relatives,superhe
 	 ('689db7b3-c74d-46a9-b2cd-42088acc033c','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/1-a-bomb.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/1-a-bomb.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/1-a-bomb.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/1-a-bomb.jpg','9e6ee620-ea7e-4800-8f28-69d0dbb8ad5f'),
 	 ('a62a7cf9-fea1-4b74-8b69-b10037930db2','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/17-alfred-pennyworth.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/17-alfred-pennyworth.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/17-alfred-pennyworth.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/17-alfred-pennyworth.jpg','35032fd4-c930-4397-b715-62a1bad2f0e2'),
 	 ('d1c62986-5887-4b7f-b30e-b7d5a20814cf','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/5-abraxas.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/5-abraxas.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/5-abraxas.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/5-abraxas.jpg','2fabe5e1-deca-4744-a657-d32f841deabc');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('f899d89a-25d6-4dfc-8fbc-47e0537d1e68','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/6-absorbing-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/6-absorbing-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/6-absorbing-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/6-absorbing-man.jpg','1ec71757-352c-47a1-aaa1-1fd356b71bb3'),
 	 ('5a9e49c9-e13b-4883-95af-455e0d9abeb7','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/18-alien.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/18-alien.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/18-alien.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/18-alien.jpg','28a75986-b424-405c-8584-a99cca4f9952'),
 	 ('44d974c7-e478-4208-84f7-ec76bc2d8c00','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/8-adam-strange.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/8-adam-strange.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/8-adam-strange.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/8-adam-strange.jpg','a2767983-de29-40bd-9587-04e8bf72374f'),
@@ -8473,7 +8473,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('d5558d3e-9bd6-41a6-bd3b-9b1ce08dcd59','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/30-ant-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/30-ant-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/30-ant-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/30-ant-man.jpg','708564eb-ea20-4e0e-bb08-ac4ea51938e9'),
 	 ('f6238bdf-91bf-4e9b-82df-d55162c7978a','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/23-angel.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/23-angel.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/23-angel.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/23-angel.jpg','49443739-1caa-4cc5-ac3f-b9305867f1e2'),
 	 ('a22f7d2c-36d0-49fe-b7dc-17678129a76e','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/32-anti-monitor.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/32-anti-monitor.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/32-anti-monitor.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/32-anti-monitor.jpg','70f4f2c6-abd3-4312-b8f5-364abd96be61');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('ab08b940-2987-4bd8-86b4-2b961b12a907','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/25-angel-dust.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/25-angel-dust.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/25-angel-dust.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/25-angel-dust.jpg','0f8853b7-0404-4f13-8b36-477016193e4f'),
 	 ('fd7ce301-2de4-4354-a610-952e15f628ed','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/44-ariel.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/44-ariel.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/44-ariel.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/44-ariel.jpg','202865bb-a1f5-445c-894c-9f2da4630b27'),
 	 ('01db8b1e-cabf-4a8a-bd1c-4bb4298d183d','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/66-batgirl-iv.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/66-batgirl-iv.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/66-batgirl-iv.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/66-batgirl-iv.jpg','afacb2b9-2a66-41db-8f15-51fcf3f10a38'),
@@ -8484,7 +8484,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('380f19ad-b515-412c-a8ae-8afbe793c5d1','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/107-black-widow.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/107-black-widow.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/107-black-widow.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/107-black-widow.jpg','540a3d4f-3517-4148-bdf8-4ca07400587a'),
 	 ('9f74bf33-6aa1-4dcb-abef-df3c3755adb5','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/140-buffy.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/140-buffy.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/140-buffy.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/140-buffy.jpg','c04cd106-2c8f-40ef-b5f2-5f6eb3a9d600'),
 	 ('66f03474-24eb-4c73-99ca-d16b49d0d34c','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/141-bullseye.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/141-bullseye.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/141-bullseye.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/141-bullseye.jpg','c68ef461-d188-4881-91a7-ee1868b63b4d');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('65ca40f9-9edc-4a6a-b26e-670162e4e6cd','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/154-captain-hindsight.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/154-captain-hindsight.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/154-captain-hindsight.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/154-captain-hindsight.jpg','7541e5ef-2a15-4653-8e57-7b8fd64bcb6f'),
 	 ('849a5d77-ef6c-4a2a-984a-24040dd0aadb','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/171-changeling.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/171-changeling.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/171-changeling.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/171-changeling.jpg','df4bc245-ff93-4b17-84d9-2d613fd410ef'),
 	 ('bab02242-e0f2-4399-ad86-025bb2030769','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/181-clock-king.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/181-clock-king.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/181-clock-king.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/181-clock-king.jpg','35deb868-d25a-4a20-ab7b-2fe99d7d6998'),
@@ -8495,7 +8495,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('3af4d96b-b193-428d-9733-004ef8910331','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/238-elektra.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/238-elektra.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/238-elektra.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/238-elektra.jpg','c3c5fad5-7550-4585-b713-f571a465021f'),
 	 ('84de7d1f-68bb-42ec-bcaf-0466309f3692','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/20-amazo.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/20-amazo.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/20-amazo.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/20-amazo.jpg','cf35bf22-4339-4060-a47d-41ca23fd7149'),
 	 ('cd4f4985-1f4e-457c-80b8-7d96fde576de','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/39-arachne.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/39-arachne.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/39-arachne.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/39-arachne.jpg','102b2074-192a-4041-b772-71ac702b34b1');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('9a94b031-f055-479d-9875-b1f1363492ad','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/31-ant-man-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/31-ant-man-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/31-ant-man-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/31-ant-man-ii.jpg','f2dd49b9-31ab-40a5-aeeb-b6cf522139fc'),
 	 ('c6ac075c-07b4-40c5-a799-62ceaa769c70','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/70-batman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/70-batman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/70-batman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/70-batman.jpg','d32ee045-d969-405b-baf4-4ec44d112bfb'),
 	 ('4f5eb650-3e31-417d-81ee-97e7734bc132','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/75-beast.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/75-beast.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/75-beast.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/75-beast.jpg','0e10c48c-b91e-4ffc-b501-225eadebc965'),
@@ -8506,7 +8506,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('fd1ee42d-31bb-4a53-b125-8f6a619fd0af','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/121-bloodhawk.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/121-bloodhawk.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/121-bloodhawk.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/121-bloodhawk.jpg','9763e385-84b4-4fcf-8125-26763a716ffe'),
 	 ('ea5e568d-feab-47c7-afa5-2b6d3d48a9fc','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/152-captain-cold.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/152-captain-cold.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/152-captain-cold.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/152-captain-cold.jpg','2f25d77d-537d-4575-be9b-a41fce5e2c26'),
 	 ('8730dd2b-31c5-4a88-9131-b0373f9580da','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/180-cloak.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/180-cloak.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/180-cloak.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/180-cloak.jpg','1d187ae6-4355-4f76-9d8c-be0cc0d1266d');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('f6d7e60b-d885-4d12-a415-b430d57e8472','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/206-darkstar.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/206-darkstar.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/206-darkstar.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/206-darkstar.jpg','942cc87d-abc1-4aa6-ae68-c46fa19ecde0'),
 	 ('11e3a562-29cb-4a46-b1ab-dc1d3cf002a7','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/225-doctor-octopus.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/225-doctor-octopus.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/225-doctor-octopus.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/225-doctor-octopus.jpg','9af89a82-ff5a-422c-be7e-4667e16f1a6a'),
 	 ('bc60eb21-be86-4ff1-85c6-4d4a8801f8df','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/239-elle-bishop.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/239-elle-bishop.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/239-elle-bishop.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/239-elle-bishop.jpg','c767298a-dcee-41b6-91cc-68ca65df2b46'),
@@ -8517,7 +8517,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('d36065aa-0390-47ce-8f9f-314f9664de0b','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/12-air-walker.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/12-air-walker.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/12-air-walker.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/12-air-walker.jpg','e0ff7776-a8a8-45e6-867d-81f1019ab07c'),
 	 ('7690b3d3-d876-47dc-8f1c-fab1a80e25cc','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/40-archangel.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/40-archangel.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/40-archangel.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/40-archangel.jpg','3738a8c5-8a66-4f8e-ace1-3860be5c3cf0'),
 	 ('b80e591b-ec68-4e9d-9342-12d97f79dd80','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/48-atlas.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/48-atlas.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/48-atlas.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/48-atlas.jpg','bafbb32e-3511-4634-9870-628e01faa597');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('4a1617dc-cf88-4411-85cd-9c1ba2b4b58f','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/68-batgirl-vi.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/68-batgirl-vi.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/68-batgirl-vi.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/68-batgirl-vi.jpg','c84b11ee-178b-4c4a-999c-8f499524ed75'),
 	 ('c4d7bdaf-d8d1-4afe-837f-0c00838f6c75','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/61-banshee.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/61-banshee.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/61-banshee.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/61-banshee.jpg','58fb023f-9686-4c62-b357-d948d77f235d'),
 	 ('5c38faa6-f0fe-4255-9db6-505ee96b51ef','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/72-battlestar.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/72-battlestar.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/72-battlestar.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/72-battlestar.jpg','8486d649-d7f5-4763-ac71-8ea344f9e293'),
@@ -8528,7 +8528,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('49efc147-4442-43df-a855-64bcec8daeab','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/160-captain-planet.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/160-captain-planet.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/160-captain-planet.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/160-captain-planet.jpg','a7742fcf-b403-485a-b88e-4f6414d658b1'),
 	 ('a5847dbc-4666-4e7c-b02b-f88336490271','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/177-citizen-steel.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/177-citizen-steel.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/177-citizen-steel.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/177-citizen-steel.jpg','32cf2e45-e7b3-4cce-a1bc-d5e6011e6642'),
 	 ('7496c672-7e84-4776-95fb-53a80120e3a6','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/217-demogoblin.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/217-demogoblin.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/217-demogoblin.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/217-demogoblin.jpg','ba0016c9-175a-4b32-b4fd-cc5783e08b15');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('8c43c3cb-8fb8-489e-abf8-0b55abba91d6','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/232-dormammu.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/232-dormammu.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/232-dormammu.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/232-dormammu.jpg','300cf565-d4ff-47ef-9f13-582c2f83a1f8'),
 	 ('9419c403-a377-49bc-9e4e-5918954a82a8','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/249-exodus.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/249-exodus.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/249-exodus.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/249-exodus.jpg','0fdd56e8-5a68-428c-abcd-5f1145967335'),
 	 ('3d659624-3f47-4844-9662-2c0a6e04b107','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/269-franklin-richards.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/269-franklin-richards.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/269-franklin-richards.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/269-franklin-richards.jpg','ed608fff-11d1-4225-ad79-5dbf96d9dda1'),
@@ -8539,7 +8539,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('ba2c1aaf-64b9-4766-8f07-a20667cface0','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/56-aurora.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/56-aurora.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/56-aurora.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/56-aurora.jpg','124fa936-b34c-40cd-bd12-255cfa5f8062'),
 	 ('5cd26a26-1b95-4db6-8c4a-ecef7f4c39e3','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/78-ben-10.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/78-ben-10.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/78-ben-10.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/78-ben-10.jpg','414e8aba-904e-4ccb-9f24-387f4088185f'),
 	 ('c1db72e1-5445-4b9a-ba84-d4db3f284516','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/99-black-cat.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/99-black-cat.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/99-black-cat.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/99-black-cat.jpg','1e0dd279-d940-478a-80bf-16403c89ef83');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('ea72326b-3144-44f7-ad19-5ad44aa97ae4','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/111-blackwulf.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/111-blackwulf.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/111-blackwulf.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/111-blackwulf.jpg','cb647510-6038-435a-b51c-c0f7b0ee611d'),
 	 ('9e3e67d2-1449-4bc2-90b5-78158bb7708d','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/142-bumblebee.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/142-bumblebee.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/142-bumblebee.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/142-bumblebee.jpg','2f4935ae-250b-4945-aa45-6cc55659b6e8'),
 	 ('4e33e554-2bb2-4f3b-a791-301acaaf0ec8','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/151-captain-britain.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/151-captain-britain.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/151-captain-britain.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/151-captain-britain.jpg','461dc26d-bd4f-4358-b61a-4265c0d6fa47'),
@@ -8550,7 +8550,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('b91a3094-8b69-4ec3-988b-60047158d569','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/224-doctor-fate.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/224-doctor-fate.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/224-doctor-fate.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/224-doctor-fate.jpg','571edff4-38c0-40d5-9a06-7371bbc8c8e2'),
 	 ('e5ea9998-01e1-4e4f-ab3f-cc88142aceeb','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/231-doppelganger.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/231-doppelganger.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/231-doppelganger.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/231-doppelganger.jpg','4cdda92b-b768-4da8-94fa-00cb614ed6ef'),
 	 ('aca43058-37d8-41e0-b66e-f3dc0a7d1bdc','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/234-drax-the-destroyer.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/234-drax-the-destroyer.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/234-drax-the-destroyer.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/234-drax-the-destroyer.jpg','34637118-e5dc-47ad-b02e-1515a8d444c3');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('12a2de72-4a7a-4c45-9d0c-3afc40b21717','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/252-fallen-one-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/252-fallen-one-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/252-fallen-one-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/252-fallen-one-ii.jpg','9cb04dee-4eee-4be5-98f4-6a5f04cd491f'),
 	 ('6e75a37b-31ec-41f3-b08d-9840e4f33948','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/267-flash-iv.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/267-flash-iv.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/267-flash-iv.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/267-flash-iv.jpg','671a8408-7465-45e1-be7a-a11e99f56d81'),
 	 ('1a4b1cbe-b4d8-4432-894b-9da48688ac01','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/286-goblin-queen.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/286-goblin-queen.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/286-goblin-queen.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/286-goblin-queen.jpg','2b2ef640-cfdc-4401-8059-7e4a752ae412'),
@@ -8561,7 +8561,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('a78e008f-fa28-4dd6-a0da-7099a700df10','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/82-big-daddy.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/82-big-daddy.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/82-big-daddy.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/82-big-daddy.jpg','592fce45-d665-456d-b4c3-7aa9c22c697a'),
 	 ('2c5ce979-8514-4ead-8a12-a7c1c497cac8','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/102-black-knight-iii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/102-black-knight-iii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/102-black-knight-iii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/102-black-knight-iii.jpg','e1a7c6da-891b-4a43-b8d6-ce77d1e902f2'),
 	 ('73263368-b0d6-4d66-aee8-aeed7e5ebc3c','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/112-blade.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/112-blade.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/112-blade.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/112-blade.jpg','7449bc32-1dac-46f4-9378-be09a481c24d');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('3dbcc871-9b7c-4e9b-afb3-87e4281f8b78','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/137-brainiac-5.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/137-brainiac-5.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/137-brainiac-5.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/137-brainiac-5.jpg','d526c049-ae72-46f8-9417-841c08965707'),
 	 ('1f2da5f9-3097-4fcc-80e2-da18e2b54441','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/167-century.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/167-century.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/167-century.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/167-century.jpg','f0ab2845-ed45-4637-b9dc-b8384b035ca4'),
 	 ('bc6e2feb-2803-47f6-9056-e8a939596087','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/165-catwoman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/165-catwoman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/165-catwoman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/165-catwoman.jpg','89c3ba2c-6f2b-43db-8275-e2f3da5954ba'),
@@ -8572,7 +8572,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('45052f63-a6a2-4705-9dd3-44d1ceb9667a','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/214-deadshot.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/214-deadshot.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/214-deadshot.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/214-deadshot.jpg','bc627d54-e9cc-49c7-8b0c-b6466530590a'),
 	 ('c448139f-2184-41d4-b30f-806799238c20','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/237-electro.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/237-electro.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/237-electro.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/237-electro.jpg','88dbe97a-a2b9-4568-9525-bdb920bcf462'),
 	 ('7eef29c2-a125-466c-9bd3-5a7d2b8a3afb','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/230-doomsday.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/230-doomsday.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/230-doomsday.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/230-doomsday.jpg','b73a926e-9c05-486f-803b-9627cb43b188');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('633ed163-8ce6-4229-bb84-800e233592c3','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/257-firebird.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/257-firebird.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/257-firebird.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/257-firebird.jpg','702ded2f-f1ad-4722-8faf-774ebfb45100'),
 	 ('5ee69374-8dc0-4e14-b12a-d52f88621059','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/248-evilhawk.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/248-evilhawk.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/248-evilhawk.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/248-evilhawk.jpg','bfae60b3-6a27-4faa-ba20-661fbc49249b'),
 	 ('282616c6-7117-4967-8139-b2439487ec99','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/270-franklin-storm.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/270-franklin-storm.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/270-franklin-storm.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/270-franklin-storm.jpg','c7f58b49-9205-4b01-8c3a-5ae07437f29b'),
@@ -8583,7 +8583,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('dd2d8236-6617-4675-871d-523d14861b98','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/52-atom-girl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/52-atom-girl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/52-atom-girl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/52-atom-girl.jpg','0df52ce4-2b47-488f-ad5b-c90b433a5faa'),
 	 ('ba6895ce-f7df-442b-b7fb-622d72978245','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/87-bionic-woman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/87-bionic-woman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/87-bionic-woman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/87-bionic-woman.jpg','a8b63c15-0015-494b-a47c-eabcce0c4c9a'),
 	 ('a243fbee-0cb9-47fb-bb9a-45bb3257b394','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/81-big-barda.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/81-big-barda.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/81-big-barda.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/81-big-barda.jpg','e7ab3e29-f614-4a74-a7bd-cf31c36db45f');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('bc1e3c33-cdd2-4e9f-b925-c8e70b8f0a84','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/104-black-mamba.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/104-black-mamba.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/104-black-mamba.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/104-black-mamba.jpg','f34d69e6-4138-43dc-bf68-612f829c6873'),
 	 ('d77a34b5-5556-46c0-8b35-753d35980804','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/118-blizzard-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/118-blizzard-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/118-blizzard-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/118-blizzard-ii.jpg','55ee3fe5-b74e-4ea4-b1ee-76b6841208e1'),
 	 ('b0f6fb05-8d03-4010-ba00-c9c284f0a8d7','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/126-blue-beetle-iii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/126-blue-beetle-iii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/126-blue-beetle-iii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/126-blue-beetle-iii.jpg','459b400b-b436-4aa4-bd3c-2e09c63490cc'),
@@ -8594,7 +8594,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('29dab15e-b990-4079-8565-6abf5df8b8ed','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/174-cheetah-iii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/174-cheetah-iii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/174-cheetah-iii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/174-cheetah-iii.jpg','470c7c5e-75ce-49ef-9e9c-b6fa2c206133'),
 	 ('a042806e-13d2-462c-a1eb-931428a2f13f','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/185-colossus.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/185-colossus.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/185-colossus.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/185-colossus.jpg','99883334-8cf8-4e65-9b42-5d298d6f8219'),
 	 ('cbda7796-2812-4857-b4e1-46bcc5b593a2','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/198-dagger.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/198-dagger.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/198-dagger.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/198-dagger.jpg','909116d8-a2a8-48a6-bd80-eb7254bd5d8b');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('597c333d-73a5-43cc-a6c0-0a330ac639d1','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/200-daphne-powell.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/200-daphne-powell.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/200-daphne-powell.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/200-daphne-powell.jpg','d3b1ab4b-e143-4834-af17-4d65fe2cc54c'),
 	 ('23a5aede-970b-42ca-afe5-3d228226d11f','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/212-deadman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/212-deadman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/212-deadman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/212-deadman.jpg','ef591d97-a3c6-4574-8cdd-fa0f34db5648'),
 	 ('51852748-0a37-4cdd-a07b-248917ac91ee','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/235-ego.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/235-ego.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/235-ego.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/235-ego.jpg','d2818f33-4c6b-4953-96f2-82ae9f791442'),
@@ -8605,7 +8605,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('b6a8abc1-01ab-4907-a185-bd159d1b7939','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/84-bill-harken.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/84-bill-harken.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/84-bill-harken.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/84-bill-harken.jpg','98ba25ec-ae87-49e2-b5ef-1c20f250b4e4'),
 	 ('2084cf7e-6370-4805-8e97-93ce5d2fb93f','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/92-bishop.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/92-bishop.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/92-bishop.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/92-bishop.jpg','35a5b93f-c8a0-481a-919c-1bac5829eb36'),
 	 ('dfe474bb-36c4-4aec-80fb-a1484411a6df','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/96-black-bolt.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/96-black-bolt.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/96-black-bolt.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/96-black-bolt.jpg','d81acf3c-3f98-4a4d-b52d-984e322adde5');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('0ae1b728-df39-49bf-93da-2ea19af9769e','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/127-boba-fett.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/127-boba-fett.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/127-boba-fett.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/127-boba-fett.jpg','74601be3-6d6d-4d30-bbf3-d22758971560'),
 	 ('032aafc9-6712-4f8f-89bb-c5f9039c959b','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/135-box-iv.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/135-box-iv.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/135-box-iv.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/135-box-iv.jpg','c6a76eb6-7c03-4360-ac5d-3271a6d238f1'),
 	 ('5c21b9eb-7d77-41da-a02a-e52491cb7f71','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/148-cannonball.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/148-cannonball.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/148-cannonball.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/148-cannonball.jpg','f13a4ef3-8830-487d-a2fc-dbad461d6d9d'),
@@ -8616,7 +8616,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('2e505c6c-acf2-4c4b-984e-ab5eec8a9601','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/196-cyclops.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/196-cyclops.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/196-cyclops.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/196-cyclops.jpg','360987f4-a69f-4b7e-b2b7-c606141a119d'),
 	 ('45fa1b85-b6ae-400d-bec7-8bce2e36ad6a','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/207-darth-maul.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/207-darth-maul.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/207-darth-maul.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/207-darth-maul.jpg','011d1bc2-083d-484f-8ce8-9b69bde2eb6e'),
 	 ('890428ae-c33f-4d7f-9572-e4fedb38cf65','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/218-destroyer.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/218-destroyer.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/218-destroyer.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/218-destroyer.jpg','2c0b4367-4cf4-4f7f-a686-eeda50191b96');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('8530154a-8098-42d9-a3f1-3018c4dcfea7','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/236-elastigirl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/236-elastigirl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/236-elastigirl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/236-elastigirl.jpg','9b5555f9-eb4c-49a3-9bbf-270e71f56337'),
 	 ('117b83ba-d223-46a4-9933-81ba157cf827','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/241-emma-frost.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/241-emma-frost.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/241-emma-frost.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/241-emma-frost.jpg','93f7dc53-f9e3-43b1-b5ec-2eef6ec8a218'),
 	 ('8f0333a4-485a-42a4-ad23-2724711102dd','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/38-aquaman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/38-aquaman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/38-aquaman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/38-aquaman.jpg','32c307b4-9a26-43a5-b223-bb512c0d1c01'),
@@ -8627,7 +8627,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('d357da78-d9f7-4a12-820e-cf93bd0ecc35','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/93-bizarro.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/93-bizarro.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/93-bizarro.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/93-bizarro.jpg','c117e88e-48de-4722-8aca-cf0a6f388663'),
 	 ('0f2fa308-cb30-45cf-916f-f7dc74445d82','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/103-black-lightning.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/103-black-lightning.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/103-black-lightning.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/103-black-lightning.jpg','938e5fab-78bf-4207-9fe6-dd6989991abb'),
 	 ('b6ecc687-7da9-47f4-ad7c-9ea71f7d0d63','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/130-boom-boom.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/130-boom-boom.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/130-boom-boom.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/130-boom-boom.jpg','e9ea6942-12fd-4c5d-9146-785b19f96957');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('d1afef75-8036-4c23-bef1-f5d1cad065b2','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/115-blink.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/115-blink.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/115-blink.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/115-blink.jpg','5830f118-6ba4-4a8a-823e-842e3bffeaad'),
 	 ('54a9dc46-c5d6-4459-9a7e-7cadd77940f1','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/136-brainiac.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/136-brainiac.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/136-brainiac.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/136-brainiac.jpg','f9808a95-990a-4e18-a5ed-2dc729f97dfe'),
 	 ('70631552-23ce-4221-bb2c-80481d529d0f','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/162-carnage.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/162-carnage.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/162-carnage.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/162-carnage.jpg','415dfa8e-d07e-433a-8eaa-e6f0b30cc27f'),
@@ -8638,7 +8638,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('c8d3c35d-d293-4d9e-b70d-f6e32421c4ef','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/220-dl-hawkins.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/220-dl-hawkins.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/220-dl-hawkins.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/220-dl-hawkins.jpg','08a6ac59-07bb-455e-980b-4df338a8c29a'),
 	 ('dae7457d-2263-4771-b974-12d1e213ec85','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/213-deadpool.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/213-deadpool.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/213-deadpool.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/213-deadpool.jpg','473f7f79-fa6b-465e-91a5-b9c7b099307e'),
 	 ('2cc26ece-c20b-43f5-8697-3ea0ada38688','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/233-dr-manhattan.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/233-dr-manhattan.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/233-dr-manhattan.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/233-dr-manhattan.jpg','860736bd-7d96-43a5-9daf-0d26c142eebb');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('4a4e45dc-ad5b-49a4-92b2-8af92676130d','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/240-elongated-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/240-elongated-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/240-elongated-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/240-elongated-man.jpg','962b2fe2-b998-47c5-942c-c1bb488a8a24'),
 	 ('3e5623d7-161d-4c4c-a8ab-143964b6411b','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/35-apocalypse.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/35-apocalypse.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/35-apocalypse.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/35-apocalypse.jpg','5b38b987-bb4d-4d56-8b7c-e4a45cfaa6d4'),
 	 ('0d709191-af00-4ab2-bf0d-19813b67a1c2','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/53-atom-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/53-atom-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/53-atom-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/53-atom-ii.jpg','58efc664-83c7-4250-a790-aaf1a6f36701'),
@@ -8649,7 +8649,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('9b6c73b8-c2e4-4a91-9abb-1d70a44fd939','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/120-bloodaxe.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/120-bloodaxe.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/120-bloodaxe.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/120-bloodaxe.jpg','efe4d46b-9537-48c8-ba5c-35ff7527570b'),
 	 ('707f39ca-23c6-4013-8b04-e924bff5567c','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/146-callisto.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/146-callisto.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/146-callisto.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/146-callisto.jpg','e516de06-2ee7-4c3e-aa62-c2ac967957cc'),
 	 ('7671e467-5d54-40c1-ac22-4392c97a59e7','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/170-chameleon.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/170-chameleon.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/170-chameleon.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/170-chameleon.jpg','8b3ad528-dfac-423f-bb44-58df6392ea66');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('a34b8b16-55ef-4872-a712-84aa3a4f5069','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/186-copycat.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/186-copycat.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/186-copycat.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/186-copycat.jpg','e5e75a6f-51f3-4419-bb50-f57f5b58a3b4'),
 	 ('7f793142-1663-4468-a617-7dd26120e801','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/216-deathstroke.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/216-deathstroke.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/216-deathstroke.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/216-deathstroke.jpg','44f2f45f-8a11-4a08-bce5-c0d6158dbab4'),
 	 ('b974b4de-ff17-4482-8fb2-33db563e826f','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/226-doctor-strange.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/226-doctor-strange.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/226-doctor-strange.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/226-doctor-strange.jpg','d2225f43-e05f-4d62-a388-d740e57b412f'),
@@ -8660,7 +8660,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('7dd1a9e4-da05-42c7-82db-9f39e50bb24c','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/298-green-arrow.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/298-green-arrow.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/298-green-arrow.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/298-green-arrow.jpg','8f980fdf-927a-449f-8a42-e05005f9b82b'),
 	 ('6f5b2f73-427f-415a-abb5-0708bac01407','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/310-harry-potter.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/310-harry-potter.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/310-harry-potter.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/310-harry-potter.jpg','7cbf3002-ab87-4a54-b418-a561ef4023bc'),
 	 ('8207bf6e-5d6e-4a1c-8ad7-9c1d7ef2c1ee','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/312-hawk.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/312-hawk.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/312-hawk.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/312-hawk.jpg','87e7e44b-0a1d-4fde-a872-5126f5969b4c');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('3d1e8b88-f461-4185-82ed-a2413e36d32d','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/42-ardina.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/42-ardina.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/42-ardina.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/42-ardina.jpg','2e87248b-32d6-433c-9cdd-030e10a36ac1'),
 	 ('b2828b16-075f-440c-ac35-fa9f3fff0a32','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/62-bantam.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/62-bantam.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/62-bantam.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/62-bantam.jpg','c9ccbf68-e039-4b4f-9e2e-f88cacf56348'),
 	 ('7e736b2d-a386-40f7-b0de-2508ce07944b','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/80-beyonder.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/80-beyonder.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/80-beyonder.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/80-beyonder.jpg','1b0907cc-3daa-4a27-bde3-9f416afb562e'),
@@ -8671,7 +8671,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('100b007d-3fdc-41c2-b110-03c40364bad0','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/208-darth-vader.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/208-darth-vader.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/208-darth-vader.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/208-darth-vader.jpg','f96a58bc-aa89-47f8-bae3-9af99b0720f2'),
 	 ('28a48a35-09b1-4947-837d-2fd94050bd24','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/227-domino.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/227-domino.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/227-domino.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/227-domino.jpg','4274cfb1-8817-44d2-a9b8-fc3c7a3da504'),
 	 ('3c437d86-b558-4e65-acb9-9b64ffe99806','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/253-faora.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/253-faora.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/253-faora.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/253-faora.jpg','bb2d0935-0ec9-4240-8197-9556bcaded68');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('ecb498ad-f0ba-4514-bb3b-cb8e8788461b','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/265-flash-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/265-flash-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/265-flash-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/265-flash-ii.jpg','e900794f-5f09-4b3a-89db-05c999a829ef'),
 	 ('63821deb-0af3-4796-bd89-2038a4d09f6e','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/261-firestorm.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/261-firestorm.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/261-firestorm.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/261-firestorm.jpg','37469feb-66e1-44d9-9682-96ca9a3dd3fa'),
 	 ('8aa54eba-d173-4b19-856b-14de5dddc8da','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/305-guy-gardner.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/305-guy-gardner.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/305-guy-gardner.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/305-guy-gardner.jpg','8d5325e8-662d-451f-92b1-fbcc428fae57'),
@@ -8682,7 +8682,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('8ec24541-d0c8-4874-afc6-56291e2436fc','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/353-james-t.-kirk.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/353-james-t.-kirk.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/353-james-t.-kirk.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/353-james-t.-kirk.jpg','fe0cc29f-bc65-4b21-9136-ad15416c9432'),
 	 ('aa54ff2a-d938-427c-a6f5-646ed648e3e2','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/348-isis.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/348-isis.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/348-isis.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/348-isis.jpg','1f46c8c0-b10a-4fd9-b57f-cb6c7b35e093'),
 	 ('36d57ef4-d4af-43ae-a4cb-a4d55dff8929','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/247-evil-deadpool.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/247-evil-deadpool.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/247-evil-deadpool.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/247-evil-deadpool.jpg','5f850bac-eda0-4fe6-b9bf-ea9a03d7e8e6');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('92c5cff1-53b9-435a-ad61-94f1b55ae5ff','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/254-feral.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/254-feral.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/254-feral.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/254-feral.jpg','94e3cd23-0c1d-437e-bfeb-96a9613566e2'),
 	 ('8e6026ee-f4e7-4c53-a2af-2768f7e3e31c','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/266-flash-iii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/266-flash-iii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/266-flash-iii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/266-flash-iii.jpg','21ac97b0-8f11-4a5c-8d63-41130e2a05ef'),
 	 ('95fffd59-1cf7-460d-83d6-5734cd714c26','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/278-general-zod.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/278-general-zod.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/278-general-zod.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/278-general-zod.jpg','a09255bb-a7e1-4c4e-8a8d-9e963ff89639'),
@@ -8693,7 +8693,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('8dc5d81e-ecfe-4892-a344-a3bd944328ce','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/338-hyperion.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/338-hyperion.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/338-hyperion.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/338-hyperion.jpg','bb72fcde-11b2-4f17-b1fb-181089ea8403'),
 	 ('98b57523-25aa-4fce-b4eb-d5dd2b4770b2','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/365-jj-powell.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/365-jj-powell.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/365-jj-powell.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/365-jj-powell.jpg','5d721ab1-d88b-4bb4-ad19-88f6acb17b86'),
 	 ('c708e88b-df7d-43db-b7d9-edb4ef749658','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/395-kraven-the-hunter.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/395-kraven-the-hunter.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/395-kraven-the-hunter.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/395-kraven-the-hunter.jpg','0954b39f-979b-48c8-a6d1-1bc87a5f103d');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('d3459ba0-9e47-4788-b9e3-b6cb780a9378','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/409-living-brain.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/409-living-brain.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/409-living-brain.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/409-living-brain.jpg','0c26da2b-9196-450c-8405-e0d361b10b21'),
 	 ('412c6c01-63c2-447d-979e-0f7755d567d9','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/418-luke-skywalker.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/418-luke-skywalker.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/418-luke-skywalker.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/418-luke-skywalker.jpg','3afb8f12-7461-4b63-86d3-a609e44ec844'),
 	 ('54b0db98-d4d0-4475-9027-db39edf8204b','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/436-match.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/436-match.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/436-match.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/436-match.jpg','b9e0bae0-54e3-49c3-8e89-417eea78b04f'),
@@ -8704,7 +8704,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('5d43ab8c-f18a-4448-bf4f-09da6100e08e','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/498-odin.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/498-odin.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/498-odin.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/498-odin.jpg','fa3bdb1f-05d9-4241-9bdc-0d9cf24cb592'),
 	 ('9d1d5e0c-35dc-48c6-9fb6-e78546b2aa5a','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/246-etrigan.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/246-etrigan.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/246-etrigan.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/246-etrigan.jpg','2bc7bb59-7d82-4e00-97e6-f036f1ff805d'),
 	 ('d2feb0a9-4799-49e9-8169-ffa13a2829ad','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/258-firelord.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/258-firelord.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/258-firelord.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/258-firelord.jpg','083323bf-f92a-44a9-8ac8-80e209c701b6');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('1d6c5309-7914-4d37-95f3-0bb9c80ef9a0','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/260-firestorm.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/260-firestorm.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/260-firestorm.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/260-firestorm.jpg','81f6f347-c519-47b6-88bb-61001aa41aa4'),
 	 ('b8c9ee33-0dc9-4a2d-852e-4314cfd6cb42','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/275-gamora.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/275-gamora.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/275-gamora.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/275-gamora.jpg','be738bb5-9bc2-4e6b-b06b-af3fd7ebcd6a'),
 	 ('4144d742-7357-4697-9ac8-7e93f0df7f90','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/296-gravity.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/296-gravity.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/296-gravity.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/296-gravity.jpg','4a28f289-413d-44ff-baf5-b92c1aea3314'),
@@ -8715,7 +8715,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('504dae45-e155-4be8-9a89-5aa9eb6d1317','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/358-jennifer-kale.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/358-jennifer-kale.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/358-jennifer-kale.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/358-jennifer-kale.jpg','06eff019-53ed-4065-9556-75ae06354e3f'),
 	 ('5aaeaa42-73a5-438f-a4e4-d12d26822eb7','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/372-jubilee.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/372-jubilee.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/372-jubilee.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/372-jubilee.jpg','bf881468-c1de-4cd9-a812-fc76f2459635'),
 	 ('b7317248-b26b-4231-8c55-a97499717cd1','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/382-kevin-11.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/382-kevin-11.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/382-kevin-11.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/382-kevin-11.jpg','96ff3e36-0872-40cf-8824-48a917ae4db1');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('fc9d1bb9-4e31-4cb2-8dd9-459e8be80b7c','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/390-king-shark.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/390-king-shark.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/390-king-shark.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/390-king-shark.jpg','0a6e6974-6562-430f-b89d-400190d2c4ce'),
 	 ('34e3ced6-1034-4edb-a15e-592c77115d4e','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/407-lightning-lad.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/407-lightning-lad.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/407-lightning-lad.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/407-lightning-lad.jpg','709552c7-1895-4407-82e3-b5d48c5bb7af'),
 	 ('d586d77a-5f39-430b-af70-caac562e8a40','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/405-lex-luthor.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/405-lex-luthor.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/405-lex-luthor.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/405-lex-luthor.jpg','27924f5f-f6f2-4cda-bc66-4a250a676ec3'),
@@ -8726,7 +8726,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('04911148-273d-4702-a38c-4cbf1eab2370','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/259-firestar.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/259-firestar.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/259-firestar.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/259-firestar.jpg','33ce1dbf-8054-4d44-9191-4ddeeed459da'),
 	 ('9cf543b4-6b4a-4c47-9f7e-f94844bac110','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/245-ethan-hunt.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/245-ethan-hunt.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/245-ethan-hunt.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/245-ethan-hunt.jpg','49d36a62-5e3d-44f1-a0bb-bac878998094'),
 	 ('12300a84-f854-4e7b-826a-ea64afac8605','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/280-ghost-rider.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/280-ghost-rider.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/280-ghost-rider.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/280-ghost-rider.jpg','5a282b0d-3750-429c-a581-c37605a01da9');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('ce7653b4-8e9f-44f1-970b-82e498f9dd02','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/285-gladiator.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/285-gladiator.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/285-gladiator.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/285-gladiator.jpg','a688013a-6369-4e62-908e-6893f76456f5'),
 	 ('65e6b2b3-320a-4e4c-a050-6e4f11534666','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/308-hancock.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/308-hancock.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/308-hancock.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/308-hancock.jpg','6a17daa8-0d8a-4b7f-9840-564ed7fa00af'),
 	 ('c67dd063-512f-4803-a8c7-fa27b66e6186','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/303-groot.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/303-groot.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/303-groot.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/303-groot.jpg','5f826be6-47e9-4f26-9093-478690bcaa49'),
@@ -8737,7 +8737,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('202c7fb7-0313-4865-b21a-afda8bc1bb53','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/424-magog.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/424-magog.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/424-magog.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/424-magog.jpg','9e6d93f3-d1f8-4d97-a365-e2984e9a7f7e'),
 	 ('dfe8933a-c342-4417-b157-2ffc8064516a','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/442-meltdown.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/442-meltdown.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/442-meltdown.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/442-meltdown.jpg','acef8f70-b7b5-416c-8a9e-3a4ae4515209'),
 	 ('8600a935-2af2-40c7-8475-aa93e93a5b76','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/463-modok.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/463-modok.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/463-modok.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/463-modok.jpg','7590d6d4-c3bf-4787-aa2c-25253aee6b5b');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('93ee0238-b889-42a7-a006-108a861287d5','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/483-namora.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/483-namora.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/483-namora.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/483-namora.jpg','4d01042c-09df-4732-b54f-3936995ba10d'),
 	 ('f66815c5-11d3-4a97-b6e5-091e6f2365c1','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/503-one-above-all.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/503-one-above-all.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/503-one-above-all.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/503-one-above-all.jpg','f854ffd9-a76f-4648-a388-51ba43114821'),
 	 ('6a5b636c-0818-418e-a4f0-875094cde19c','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/523-polaris.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/523-polaris.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/523-polaris.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/523-polaris.jpg','ace4377c-9a4f-4718-866e-a5df326c3f01'),
@@ -8748,7 +8748,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('db120892-cda3-4930-99e2-13e1d95b166c','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/242-enchantress.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/242-enchantress.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/242-enchantress.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/242-enchantress.jpg','2c93a095-5c6f-4ac1-b4fa-dbfeae307f1e'),
 	 ('37cb03ac-6317-4f54-b6e5-fbf1937d42ba','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/284-giganta.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/284-giganta.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/284-giganta.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/284-giganta.jpg','b5f8857d-db58-4601-9fad-6a7468f0a1d2'),
 	 ('c30b08a6-379e-4ff8-8172-71b3dbf09e2a','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/271-frenzy.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/271-frenzy.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/271-frenzy.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/271-frenzy.jpg','29c4dfd4-72c0-4bd3-a81f-9c7475f5216d');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('dd3a0e17-6af5-44ff-b6d4-1ecf24bd9863','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/306-hal-jordan.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/306-hal-jordan.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/306-hal-jordan.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/306-hal-jordan.jpg','58f972a3-37a8-44dd-a71b-6fea54a0d88f'),
 	 ('4246c2f7-f769-4adc-bb5b-73dd7ee2ca1b','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/311-havok.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/311-havok.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/311-havok.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/311-havok.jpg','8c725245-3708-4866-b824-34f3eb3a2cd9'),
 	 ('3cc1482e-3503-4cb2-a8e5-9f8f72091451','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/325-hercules.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/325-hercules.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/325-hercules.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/325-hercules.jpg','56091064-485a-4141-9ac9-931d79eb932b'),
@@ -8759,7 +8759,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('e5755db6-4850-4b1a-999e-33906b1af407','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/389-king-kong.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/389-king-kong.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/389-king-kong.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/389-king-kong.jpg','1258aa31-6a27-4bd1-abfe-a2d161537607'),
 	 ('bae06d97-e8ac-46c2-a340-2b9ed1bed7aa','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/393-kool-aid-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/393-kool-aid-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/393-kool-aid-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/393-kool-aid-man.jpg','6bff7936-3da8-461d-8c1d-555fede1fe78'),
 	 ('52b2358c-4bc0-4c26-8533-ba869ce72315','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/412-lizard.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/412-lizard.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/412-lizard.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/412-lizard.jpg','49979b7a-e7a5-4168-a33f-9ecb263410ac');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('ed5adc43-c5f1-4dff-b1ad-a0f259b03baf','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/413-lobo.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/413-lobo.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/413-lobo.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/413-lobo.jpg','78c2818a-ccbd-4809-86e5-4d9171d69375'),
 	 ('ac87f5a7-40a0-4afd-af3b-1a5da47bceb1','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/433-marvel-girl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/433-marvel-girl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/433-marvel-girl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/433-marvel-girl.jpg','9a5fa168-9654-4504-8057-3b7227b89a71'),
 	 ('eb6cc7ea-e67b-4686-9a42-9e4d47efb98f','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/427-man-bat.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/427-man-bat.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/427-man-bat.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/427-man-bat.jpg','05534447-4dc3-4691-9c6d-e404d05f8af2'),
@@ -8770,7 +8770,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('774affa6-9c5f-4c53-aa9d-a07fbf3fded8','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/341-indiana-jones.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/341-indiana-jones.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/341-indiana-jones.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/341-indiana-jones.jpg','e4c8f22b-b2b3-40c5-93c7-f36c9504619d'),
 	 ('78772ff6-7c2f-4507-9622-e74fe0122a85','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/350-jack-of-hearts.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/350-jack-of-hearts.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/350-jack-of-hearts.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/350-jack-of-hearts.jpg','1dfb0c66-9650-4791-9b02-7e13719e4c94'),
 	 ('563d4600-b885-4866-a4e1-b70041abefba','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/356-jean-grey.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/356-jean-grey.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/356-jean-grey.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/356-jean-grey.jpg','f3d9f6c2-590f-4b0c-ad75-d1b7857df5ca');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('b7d3c215-fcde-4bfe-9e2b-42d758b1e985','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/361-jessica-jones.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/361-jessica-jones.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/361-jessica-jones.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/361-jessica-jones.jpg','a52084a6-e774-4a8c-8780-180e0614cdfc'),
 	 ('a2339846-6966-4bc2-9cdc-cdfd5df00181','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/375-junkpile.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/375-junkpile.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/375-junkpile.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/375-junkpile.jpg','af0ccea6-0ad4-44fd-b235-0b3b84143805'),
 	 ('a22b8126-105c-493f-a8db-c51007a764d9','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/391-kingpin.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/391-kingpin.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/391-kingpin.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/391-kingpin.jpg','74abc310-b972-4df3-9f8e-03edecfd6903'),
@@ -8781,7 +8781,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('eb88afb1-e909-4368-9df9-632ae2894fc8','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/439-maxima.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/439-maxima.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/439-maxima.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/439-maxima.jpg','bb38d06d-2112-40f3-8bc8-10491e453560'),
 	 ('bb315d87-5fe0-4528-85f2-248fe57ccf0e','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/454-misfit.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/454-misfit.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/454-misfit.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/454-misfit.jpg','19648125-afc9-48d7-b7f0-9f286f1edf5b'),
 	 ('7324bd88-13d3-409c-98b4-0573c42be6ee','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/471-moonstone.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/471-moonstone.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/471-moonstone.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/471-moonstone.jpg','24aa8557-d67d-4134-aada-21eee87d5ee3');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('ca91de8c-2321-4983-80f7-1a71a632c140','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/484-namorita.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/484-namorita.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/484-namorita.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/484-namorita.jpg','7b1c3c4b-2445-4222-b4c4-a26bf16e4a63'),
 	 ('03f42a30-866a-4685-a1a4-56e9f4392594','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/508-ozymandias.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/508-ozymandias.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/508-ozymandias.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/508-ozymandias.jpg','7909566f-36b9-41a9-806f-a1ca604a9dda'),
 	 ('3200203a-bde6-4362-9e2e-5e569f046a57','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/522-poison-ivy.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/522-poison-ivy.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/522-poison-ivy.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/522-poison-ivy.jpg','23a54df5-0206-41ff-bf6b-f06ef69d1749'),
@@ -8792,7 +8792,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('6dc302a3-5194-42fe-9f65-0c306bdd7eef','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/347-iron-monger.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/347-iron-monger.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/347-iron-monger.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/347-iron-monger.jpg','cc38d1d5-e0a7-4e97-99c0-0549be2ad82e'),
 	 ('0082b24d-975e-478b-8c34-9711b6e8ed67','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/371-jolt.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/371-jolt.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/371-jolt.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/371-jolt.jpg','7fa50afd-b36c-4589-8623-eeadcdf28f15'),
 	 ('fc99f4f3-bb12-4c25-8ae5-c6d94f0e63c9','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/379-kang.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/379-kang.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/379-kang.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/379-kang.jpg','19d15d5e-38b6-4db3-8a51-0b886ba02471');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('bfbd9a6b-7b84-41dd-8fcf-9bbd0bc7c7f2','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/392-klaw.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/392-klaw.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/392-klaw.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/392-klaw.jpg','80ba4c0a-cd75-4ba7-bf57-8caa65b29fb2'),
 	 ('e8448e13-620b-41b6-a49c-f30b63f8e4ad','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/397-kyle-rayner.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/397-kyle-rayner.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/397-kyle-rayner.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/397-kyle-rayner.jpg','97163f24-856b-433d-a608-32403e1454c9'),
 	 ('8e77ea04-29f7-414e-9b8d-9c679c4a3ecf','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/386-killer-croc.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/386-killer-croc.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/386-killer-croc.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/386-killer-croc.jpg','1feeef29-3500-4dd8-bbf3-c8d7673081f3'),
@@ -8803,7 +8803,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('8eec8c3d-6e42-4b46-9a2e-8945e1a6a66d','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/441-medusa.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/441-medusa.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/441-medusa.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/441-medusa.jpg','61648ae5-958e-4717-b5fe-6c306c7a2bac'),
 	 ('86067b60-7bd5-4f86-ae3d-be0913d10256','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/460-mister-sinister.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/460-mister-sinister.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/460-mister-sinister.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/460-mister-sinister.jpg','6806cafd-69ec-4b4f-a5c5-0cc51fbc2c57'),
 	 ('557efbfe-d8e7-4950-8342-e92b798b8300','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/467-molten-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/467-molten-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/467-molten-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/467-molten-man.jpg','4e3780da-9bae-43c0-9336-9836ad799165');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('18afd9a4-d2ba-428c-974d-793448d48cae','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/489-nick-fury.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/489-nick-fury.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/489-nick-fury.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/489-nick-fury.jpg','b9d4eadb-a25b-47c2-bcb1-5ebd5ae58c58'),
 	 ('48d528b6-faae-44a2-82d7-1580d3ad0fa0','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/490-nightcrawler.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/490-nightcrawler.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/490-nightcrawler.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/490-nightcrawler.jpg','c4684e1d-b10c-4ec9-8681-365e6ceba88d'),
 	 ('6767fc54-26de-49d3-b265-b319ce7eb824','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/506-osiris.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/506-osiris.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/506-osiris.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/506-osiris.jpg','ba9633e7-a0c6-4a99-acd6-cda15c12c963'),
@@ -8814,7 +8814,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('91da459a-0064-4268-b9c1-f913533685ee','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/367-john-constantine.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/367-john-constantine.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/367-john-constantine.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/367-john-constantine.jpg','319df512-171c-431c-834d-040f19c49429'),
 	 ('79e55eba-2753-4098-beda-486a55c1c3cc','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/374-juggernaut.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/374-juggernaut.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/374-juggernaut.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/374-juggernaut.jpg','26bb2cfc-f951-4877-b03a-5e4c59f2dfff'),
 	 ('7efe8373-79ec-4699-b95d-956591c95f19','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/384-kid-flash.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/384-kid-flash.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/384-kid-flash.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/384-kid-flash.jpg','23e43bdd-3358-47e8-b707-dcc9cf6e31a2');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('19e941fe-1500-4ddc-ba0a-c749ffa6fa56','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/400-lady-deathstrike.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/400-lady-deathstrike.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/400-lady-deathstrike.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/400-lady-deathstrike.jpg','cbee3a56-9f2c-4c9c-bef8-2e7795247f7c'),
 	 ('21845ddd-15eb-4d5e-a0c4-172ddc332cf1','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/415-longshot.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/415-longshot.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/415-longshot.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/415-longshot.jpg','527611ec-cf7f-4385-a87a-03574d6afa08'),
 	 ('72a02cd1-1968-4206-9f85-52db2852df3d','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/422-machine-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/422-machine-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/422-machine-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/422-machine-man.jpg','32fe2622-47ad-4c47-87a8-ba151a567420'),
@@ -8825,7 +8825,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('0c751a16-870d-4473-8ebd-1bb705071849','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/493-nina-theroux.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/493-nina-theroux.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/493-nina-theroux.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/493-nina-theroux.jpg','d8b682f8-9921-4e0d-845a-adcfdfac39c5'),
 	 ('893e8d51-c8ac-4b97-857c-c6b50e730b87','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/492-niki-sanders.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/492-niki-sanders.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/492-niki-sanders.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/492-niki-sanders.jpg','1d26f21d-b1e0-4c90-ab8f-86a71f337d2a'),
 	 ('93bf6939-180b-41ff-866a-71ccc84941ca','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/521-plastique.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/521-plastique.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/521-plastique.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/521-plastique.jpg','8f800a2e-6a03-4865-9540-a43d27c9c8ae');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('b3c9c8d8-94c0-4c56-a654-d731c9b5007d','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/504-onslaught.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/504-onslaught.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/504-onslaught.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/504-onslaught.jpg','ca22f29d-1cbe-4f16-9e5a-0d11695f929e'),
 	 ('22e6084b-320b-4e72-a7ec-d5833153e83c','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/542-raven.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/542-raven.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/542-raven.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/542-raven.jpg','56ce4be9-c517-4f36-a23f-da9c09bbe49e'),
 	 ('72fd57b6-84b8-4a3e-b356-18d9b31fc3ae','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/333-human-torch.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/333-human-torch.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/333-human-torch.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/333-human-torch.jpg','de8bde19-2f2c-4c8d-92b0-a8da7db89789'),
@@ -8836,7 +8836,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('7494427e-4f05-4f8f-bd71-532dc62f10db','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/421-mach-iv.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/421-mach-iv.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/421-mach-iv.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/421-mach-iv.jpg','a3c5682b-7f9e-4b83-a417-8101829b2fd8'),
 	 ('6f70bdd6-dcb4-409b-80fa-90a9ec0e520e','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/456-mister-fantastic.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/456-mister-fantastic.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/456-mister-fantastic.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/456-mister-fantastic.jpg','6bee3c46-82e0-4dad-851b-5ee62988e7ed'),
 	 ('589b98a0-7765-4fd2-b603-1da03242ce1c','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/479-mysterio.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/479-mysterio.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/479-mysterio.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/479-mysterio.jpg','2bc92306-083a-473b-b3a2-1c6df200ea2a');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('9fb05be6-1c0e-4036-b619-55945e9387c0','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/495-northstar.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/495-northstar.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/495-northstar.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/495-northstar.jpg','752a79c4-e29e-4bc9-9a65-bda05d8341cb'),
 	 ('f5904bb1-918f-4b75-919e-208259a4c8b7','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/517-phoenix.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/517-phoenix.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/517-phoenix.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/517-phoenix.jpg','35d626c4-da95-4fd0-8d3d-94d62f1fdef6'),
 	 ('ed74e5c1-c472-484b-8000-9878ea26361b','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/537-quill.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/537-quill.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/537-quill.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/537-quill.jpg','59230578-4b0a-4817-ac8a-82a9dc4af814'),
@@ -8847,7 +8847,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('57d17594-5668-4ff3-9181-30df57a4b46b','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/636-stephanie-powell.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/636-stephanie-powell.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/636-stephanie-powell.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/636-stephanie-powell.jpg','8314c229-0576-4867-bff1-a93df2121eaa'),
 	 ('6bd417a8-08d5-4bc1-9077-7ca6efaa65af','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/634-static.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/634-static.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/634-static.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/634-static.jpg','5aef7271-94cc-47cf-adf6-d57c9ab80998'),
 	 ('1cf6b49e-1701-4682-970f-76b47662cf50','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/655-thanos.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/655-thanos.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/655-thanos.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/655-thanos.jpg','619b798e-80ff-4813-a0b2-cf4078d5126c');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('37043df1-f3af-4e9a-8511-f2009e5e14f9','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/665-thundra.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/665-thundra.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/665-thundra.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/665-thundra.jpg','9bfc5476-4187-4fc2-b487-9a35f3f5f2ec'),
 	 ('cef479e5-9b7b-41ee-ae9f-8310e0831921','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/335-husk.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/335-husk.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/335-husk.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/335-husk.jpg','3a428afc-64e4-4462-b991-9c5a6bf6ccc8'),
 	 ('8771cea5-6496-4d37-b5a6-88a2453e97c2','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/345-iron-fist.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/345-iron-fist.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/345-iron-fist.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/345-iron-fist.jpg','d509479b-3883-42ba-b6bd-ec1d08f7d676'),
@@ -8858,7 +8858,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('f16411a7-b124-4313-a6ad-54d760dfde2c','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/398-kylo-ren.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/398-kylo-ren.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/398-kylo-ren.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/398-kylo-ren.jpg','9b383727-a76c-4079-ac39-7c12acf1ccae'),
 	 ('30a86d58-0b26-425f-9968-cee80a392407','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/408-lightning-lord.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/408-lightning-lord.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/408-lightning-lord.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/408-lightning-lord.jpg','1e0c40b1-359b-45b9-9e96-077cde49ba0d'),
 	 ('3b29e75c-b4b1-4f51-841a-002e642ac32f','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/402-leech.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/402-leech.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/402-leech.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/402-leech.jpg','b34306be-b9f3-47c7-9be3-2832a06a8575');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('7762204a-9193-402b-92cb-e8b37fe1b0d8','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/414-loki.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/414-loki.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/414-loki.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/414-loki.jpg','134313ac-cc80-4f0a-9e92-7a3b0219c7d4'),
 	 ('13f56d46-5da4-4212-bc4f-488324ef2965','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/438-maverick.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/438-maverick.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/438-maverick.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/438-maverick.jpg','7291fe36-8a86-40df-98ca-52f2d4c81bf3'),
 	 ('8c8bb92b-2b37-47a8-a68c-5e3cf91e345c','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/444-mera.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/444-mera.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/444-mera.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/444-mera.jpg','bf5951be-d7cd-4dc0-8b73-ca5f32e464ea'),
@@ -8869,7 +8869,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('1445508a-7921-42f9-86ff-64752457f2e7','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/487-nebula.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/487-nebula.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/487-nebula.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/487-nebula.jpg','16aea3e8-2127-48bd-b0e7-44b9d0d1099d'),
 	 ('c4dd018a-da16-484c-b853-f55a5ec055e7','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/509-parademon.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/509-parademon.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/509-parademon.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/509-parademon.jpg','12f8caed-7596-4fc5-a536-83cd6663efc2'),
 	 ('81003a8b-0523-4939-a2c7-46307dcafc8a','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/514-penguin.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/514-penguin.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/514-penguin.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/514-penguin.jpg','6d832a9a-3ae8-4e0a-8f22-d60c88e265a4');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('476bd38b-898f-48e0-adde-dfc8c34a36b8','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/380-kathryn-janeway.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/380-kathryn-janeway.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/380-kathryn-janeway.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/380-kathryn-janeway.jpg','d45890ea-b410-413c-8113-8021f548863c'),
 	 ('2941fad6-4b24-4e36-a897-283c97361e6d','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/381-katniss-everdeen.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/381-katniss-everdeen.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/381-katniss-everdeen.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/381-katniss-everdeen.jpg','ca9d905d-6946-4471-92b6-7e0e6c9b2dc5'),
 	 ('eeb26d7a-da4d-4c6e-9536-d6d9a63fd2ab','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/396-krypto.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/396-krypto.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/396-krypto.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/396-krypto.jpg','007a18a1-79e2-46aa-8200-14f6a113bda9'),
@@ -8880,7 +8880,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('dcce7cf4-fedb-4982-8b2d-149c1c8ebdad','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/445-metallo.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/445-metallo.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/445-metallo.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/445-metallo.jpg','acda0830-4b31-4318-9f7e-53bddb91d10c'),
 	 ('a1f41a63-fedf-4589-a77f-f737d95bf964','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/448-metron.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/448-metron.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/448-metron.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/448-metron.jpg','8d2171ae-8b30-4558-b7e0-9aa9b49f8314'),
 	 ('1d6f3c2e-75dd-4962-9353-cd1f0f6f9523','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/469-monica-dawson.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/469-monica-dawson.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/469-monica-dawson.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/469-monica-dawson.jpg','71d864cd-4428-44ea-890f-9b8771163552');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('d5517977-f2c8-43c3-b192-7a2adf5b1875','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/477-ms-marvel-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/477-ms-marvel-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/477-ms-marvel-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/477-ms-marvel-ii.jpg','c08f939c-cf35-4051-98c6-73f5ebea38f4'),
 	 ('876f392a-6bbc-4a5f-9d50-1d6d29fc553d','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/no-portrait.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/no-portrait.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/no-portrait.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/no-portrait.jpg','c154e8dd-9cda-4bcf-b4fa-b572cdd4cf48'),
 	 ('225064ed-9e04-4059-9e47-ca9c9c7777ca','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/502-one-punch-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/502-one-punch-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/502-one-punch-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/502-one-punch-man.jpg','7bb64ef5-1826-4faf-b12c-bdf689783235'),
@@ -8891,7 +8891,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('9389880f-a784-4194-b94a-f1cd648ced0c','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/529-psylocke.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/529-psylocke.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/529-psylocke.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/529-psylocke.jpg','830d8086-dd51-4eff-8d5f-324a4788bfcf'),
 	 ('2e3b67c7-af3a-4597-a964-afe8004fa91e','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/538-ras-al-ghul.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/538-ras-al-ghul.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/538-ras-al-ghul.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/538-ras-al-ghul.jpg','3c258ffd-76f8-4640-929b-8a9c7bbdc0ef'),
 	 ('07625aad-e668-42fd-9e19-648aca229cb7','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/440-maya-herrera.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/440-maya-herrera.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/440-maya-herrera.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/440-maya-herrera.jpg','97f44185-0ccc-408c-b9d8-5e4e6e7f6243');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('f870d877-c2e1-434c-bfab-c3c4c30310db','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/470-moon-knight.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/470-moon-knight.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/470-moon-knight.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/470-moon-knight.jpg','7f1b9607-7520-414a-b5f9-3be58e0488ab'),
 	 ('a6ac6b77-2c01-49f7-8ad4-e1762736246f','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/474-moses-magnum.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/474-moses-magnum.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/474-moses-magnum.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/474-moses-magnum.jpg','f3dc3a74-9d08-4881-8a50-a8f4c6f3859c'),
 	 ('5a39f32b-ffa5-4370-a488-96d6d3a381eb','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/496-nova.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/496-nova.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/496-nova.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/496-nova.jpg','8851c440-c975-40b2-ab3a-b07e97b34c17'),
@@ -8902,7 +8902,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('c9b776f4-4606-4e8b-a3c9-296467c0bf81','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/584-shadow-king.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/584-shadow-king.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/584-shadow-king.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/584-shadow-king.jpg','a35d4991-e279-4084-86d4-45b5bb3c6313'),
 	 ('1cb8c4d0-26b9-414b-8579-0105cd53184e','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/589-she-hulk.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/589-she-hulk.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/589-she-hulk.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/589-she-hulk.jpg','3600936d-f09e-46c7-91df-82abeec79fcb'),
 	 ('3a32df65-a05e-488b-8f34-e64c986408d2','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/627-spock.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/627-spock.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/627-spock.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/627-spock.jpg','1d4bd48e-dec3-47bd-b21b-455972f7ab30');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('b301cc9d-4c6c-48be-b45f-49df52e76f7a','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/639-stormtrooper.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/639-stormtrooper.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/639-stormtrooper.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/639-stormtrooper.jpg','95fd93a7-24a4-4a48-a0eb-841a878655d6'),
 	 ('d2ed125e-81c6-427b-8dbf-89493edcd8ed','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/643-supergirl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/643-supergirl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/643-supergirl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/643-supergirl.jpg','4307fa84-119e-432e-a6a0-59be5c49ab8d'),
 	 ('d2e1caef-2d69-4973-88ce-25d8a9a87499','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/651-t-850.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/651-t-850.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/651-t-850.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/651-t-850.jpg','88b5469f-4d1a-4251-a58c-150ab77edae9'),
@@ -8913,7 +8913,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('371d5d1b-f449-4028-9e0f-e5419862c933','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/713-wildfire.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/713-wildfire.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/713-wildfire.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/713-wildfire.jpg','91adabb4-935f-4d0e-b592-1b2f63072e2c'),
 	 ('0f22a242-f932-4af8-8bcb-4642aabcdac1','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/458-mister-knife.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/458-mister-knife.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/458-mister-knife.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/458-mister-knife.jpg','17a8994a-435f-482c-9db4-c811dba29737'),
 	 ('f88c406d-3fc8-4e50-bc73-cd1ec7920d44','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/462-mockingbird.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/462-mockingbird.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/462-mockingbird.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/462-mockingbird.jpg','5bd482f1-dee5-4732-855c-0c384031e6ce');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('5b47bef9-9ac8-4efd-ba39-bacaa5837fab','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/481-namor.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/481-namor.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/481-namor.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/481-namor.jpg','38745960-34d5-4387-affc-f0ef35b3565b'),
 	 ('488bf2e5-3d39-4cf5-a941-a025b848cc6e','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/491-nightwing.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/491-nightwing.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/491-nightwing.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/491-nightwing.jpg','5336966b-8b64-47c1-8066-023a0f7c207f'),
 	 ('7be845a1-1bfc-4f45-bb5a-97556f395240','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/497-nova.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/497-nova.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/497-nova.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/497-nova.jpg','0ef639f4-88aa-4a4f-90ed-2b6915057248'),
@@ -8924,7 +8924,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('57008793-0d57-44d9-a49a-362c25302476','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/565-robin-vi.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/565-robin-vi.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/565-robin-vi.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/565-robin-vi.jpg','4e7e5852-ce1a-4f83-a371-c3ba278f4805'),
 	 ('79cff61e-dd3d-4f7d-a825-4eaa39e687b4','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/573-sasquatch.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/573-sasquatch.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/573-sasquatch.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/573-sasquatch.jpg','2e88fbb4-cffc-4ec7-80dd-17cc55603515'),
 	 ('8bad5c3d-388b-47da-9f29-a81a9f6702bf','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/no-portrait.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/no-portrait.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/no-portrait.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/no-portrait.jpg','075ea927-fd30-4e63-b147-e396d41696dd');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('c83bff3e-0173-497b-a9f7-5b6718fd8a8f','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/594-sif.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/594-sif.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/594-sif.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/594-sif.jpg','9616c842-adfe-458f-bf33-1f4e8fa29360'),
 	 ('140a8e54-c0bd-4b50-8cb1-bdc12a5b740c','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/610-songbird.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/610-songbird.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/610-songbird.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/610-songbird.jpg','a1e68c64-32fa-4ed7-bddf-2a3e4310e2b0'),
 	 ('70fa4920-a124-4c11-a0c3-9910097e261d','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/612-spawn.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/612-spawn.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/612-spawn.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/612-spawn.jpg','ab1cde89-ea9d-4a04-9143-482fe22f4700'),
@@ -8935,7 +8935,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('a522a76c-0482-460b-911c-af5ce6e0364e','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/505-oracle.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/505-oracle.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/505-oracle.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/505-oracle.jpg','e9a5d2e4-73ba-427a-a246-49b2a3ee78b7'),
 	 ('23e6444f-76db-4a77-9374-a67d3b1b65f4','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/527-professor-x.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/527-professor-x.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/527-professor-x.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/527-professor-x.jpg','0c7179b2-de44-41b6-af43-f425555e1b09'),
 	 ('8d329480-cfc2-4d32-96b7-26d38288b309','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/540-rambo.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/540-rambo.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/540-rambo.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/540-rambo.jpg','071611e9-6024-46a7-aff8-d86b786cadf2');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('cd20c273-c401-410d-98ff-773fe3d1eaae','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/549-red-robin.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/549-red-robin.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/549-red-robin.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/549-red-robin.jpg','982eee85-ff8b-45c0-9632-c41c1fd8cc9c'),
 	 ('822b6f1a-fb09-4516-bca2-1f1799837562','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/563-robin-iii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/563-robin-iii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/563-robin-iii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/563-robin-iii.jpg','e0e84be2-b84c-4915-9ba8-5c076f708a64'),
 	 ('eedf8110-f678-4279-af95-6046cfe99291','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/559-rip-hunter.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/559-rip-hunter.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/559-rip-hunter.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/559-rip-hunter.jpg','00924041-97da-4b4b-8cbc-1c3ea71e6bf6'),
@@ -8946,7 +8946,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('f4efe773-3ec2-4f3d-bd3d-3595139f82eb','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/599-silverclaw.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/599-silverclaw.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/599-silverclaw.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/599-silverclaw.jpg','8f8d1e6f-221a-4aa2-8f5b-3eae0ee0e772'),
 	 ('11ced8e1-ec30-442d-9467-13342be352d2','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/615-speedy.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/615-speedy.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/615-speedy.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/615-speedy.jpg','3bb5f8c7-0990-47f9-8420-45c85a387575'),
 	 ('3f8d0df5-c3b6-4e9e-9572-4cbec10e6d4e','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/631-stardust.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/631-stardust.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/631-stardust.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/631-stardust.jpg','8d6e6a20-f3c0-47ae-b1a3-1a7290cc5969');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('c7c1ad5c-a23e-473f-902d-bfa42ddf408a','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/620-spider-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/620-spider-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/620-spider-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/620-spider-man.jpg','aad0818f-6369-4632-9051-5a6b9c05114d'),
 	 ('1a0408a9-80ca-4a06-924f-037b5bdf2318','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/646-swarm.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/646-swarm.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/646-swarm.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/646-swarm.jpg','8d160fb8-a492-4e67-aa1c-fd29ef541cd3'),
 	 ('06134c02-cc8d-491a-807f-b1755e718f9d','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/652-t-x.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/652-t-x.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/652-t-x.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/652-t-x.jpg','ebf70daf-95b7-48e0-889c-8b0151b8fe05'),
@@ -8957,7 +8957,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('ca91940b-45c1-40e9-9e16-5af9c600fd76','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/533-q.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/533-q.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/533-q.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/533-q.jpg','7f044b09-5fc6-49eb-868a-dd039cd8e126'),
 	 ('6c1da793-8709-4acb-a21f-48cb871de3ad','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/541-raphael.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/541-raphael.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/541-raphael.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/541-raphael.jpg','3c4b1cd2-4be9-450b-a5c2-e21ef0aba35d'),
 	 ('e9a4201c-59ca-4df1-baea-bed7230b061f','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/543-ray.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/543-ray.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/543-ray.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/543-ray.jpg','f6fb32e1-f8ec-451e-9aa4-e1c2929ef1e3');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('b30576db-95af-49f2-9c7e-a59d2388b831','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/557-rick-flag.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/557-rick-flag.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/557-rick-flag.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/557-rick-flag.jpg','53e115df-4ec7-4751-88a8-2591c225bd61'),
 	 ('ab71c91c-cf76-467f-9168-7e511a7a31ad','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/583-sentry.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/583-sentry.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/583-sentry.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/583-sentry.jpg','472d5013-bf08-47b7-bb22-45cc705dec76'),
 	 ('0eec6428-07d4-4b86-a3dc-81f15611ece3','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/600-simon-baz.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/600-simon-baz.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/600-simon-baz.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/600-simon-baz.jpg','9f3fc482-5268-4ce1-9b79-ad27bd86d533'),
@@ -8968,7 +8968,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('27e6d92e-8441-43ab-977e-5fa3b40eb90c','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/666-tiger-shark.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/666-tiger-shark.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/666-tiger-shark.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/666-tiger-shark.jpg','a1b790be-c81a-4bc0-80d8-51fc1741ab7f'),
 	 ('fb79834d-593e-4d9c-b132-f803199ac5b8','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/660-thor-girl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/660-thor-girl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/660-thor-girl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/660-thor-girl.jpg','66b6bf14-d18d-4fce-8507-faa8a16b6956'),
 	 ('80967da3-1839-4505-a5cc-cbab736064c2','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/681-utgard-loki.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/681-utgard-loki.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/681-utgard-loki.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/681-utgard-loki.jpg','d748c9a3-6726-45db-b72d-b935e975ee93');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('2a46d743-4884-479b-ac76-be8918e7946d','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/671-toxin.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/671-toxin.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/671-toxin.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/671-toxin.jpg','97325f98-1bce-4689-b104-11ef6926c4b9'),
 	 ('f9c632af-a976-4d8b-890d-b1c6064ecd5a','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/718-wonder-girl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/718-wonder-girl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/718-wonder-girl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/718-wonder-girl.jpg','2e05cbd8-469d-4629-94d8-347eab4f9ea5'),
 	 ('d361b1f3-a66d-408b-ba36-aec8fbade522','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/728-ymir.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/728-ymir.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/728-ymir.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/728-ymir.jpg','db4ef6ac-0f3f-4dd0-b13e-5be71fcbc837'),
@@ -8979,7 +8979,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('39cd665a-f9cf-451e-8d8e-7b194fe59276','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/572-sandman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/572-sandman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/572-sandman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/572-sandman.jpg','a732553b-7923-4dce-9264-e3002207e7ee'),
 	 ('caeeb162-a2cf-46cd-8182-d92ee817bc27','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/566-rocket-raccoon.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/566-rocket-raccoon.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/566-rocket-raccoon.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/566-rocket-raccoon.jpg','b11253ad-c43e-460a-a9a8-3a0161acef3c'),
 	 ('460b3e6b-cd3f-40d6-a145-0221f7e8e700','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/581-scorpion.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/581-scorpion.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/581-scorpion.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/581-scorpion.jpg','e00f3d47-14a3-4580-b033-c27b9886a99a');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('1b2ee279-9627-4574-854b-531271758469','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/580-scorpia.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/580-scorpia.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/580-scorpia.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/580-scorpia.jpg','e44e1617-35ba-423c-b544-2c7d43dc2877'),
 	 ('76385392-7878-42b5-bffe-85f777773c3e','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/590-she-thing.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/590-she-thing.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/590-she-thing.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/590-she-thing.jpg','01069aa4-c07a-4646-8230-ced649f95f45'),
 	 ('fbe231b7-2d64-48e0-a9f5-230ee3e62d0f','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/602-siren.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/602-siren.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/602-siren.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/602-siren.jpg','a32751af-e30d-4610-b02e-4c2c2216c416'),
@@ -8990,7 +8990,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('04da25b0-f89f-4ecc-8d6e-57f3d94e880d','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/668-tinkerer.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/668-tinkerer.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/668-tinkerer.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/668-tinkerer.jpg','09b90928-f93b-420f-954e-c117538b9f86'),
 	 ('a16b6ba8-5beb-49f6-82bb-9cf545fa6c04','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/678-two-face.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/678-two-face.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/678-two-face.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/678-two-face.jpg','b0247236-d9b4-4e6c-a7cd-3e363673ae7a'),
 	 ('f185f942-4530-4115-bbd5-c9ddcad3bc10','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/689-venom-iii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/689-venom-iii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/689-venom-iii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/689-venom-iii.jpg','06e9f46b-1866-4ac9-a61f-3939b049c3af');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('f4aaddbd-e099-4fb2-87bc-dbb27a4d2f1f','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/717-wolverine.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/717-wolverine.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/717-wolverine.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/717-wolverine.jpg','6d998e7b-078b-43d8-af80-7f76981877d2'),
 	 ('c348410a-7b05-40e1-be4a-58bb459a12c8','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/727-yellowjacket-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/727-yellowjacket-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/727-yellowjacket-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/727-yellowjacket-ii.jpg','6b516f90-8278-4085-8eb1-5635e0186848'),
 	 ('e8917be4-d828-482b-b08b-1ee00e46ebcf','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/545-red-arrow.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/545-red-arrow.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/545-red-arrow.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/545-red-arrow.jpg','5f07c8f3-88ff-43fc-9f72-33bba3300161'),
@@ -9001,7 +9001,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('d8b61fb5-5f7d-438c-93f1-9556a1ce3e68','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/592-shriek.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/592-shriek.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/592-shriek.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/592-shriek.jpg','0a08f6e9-5004-4adf-834c-c861f661a674'),
 	 ('e65b0051-0aa3-45e8-aafe-dd843487e480','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/598-silver-surfer.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/598-silver-surfer.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/598-silver-surfer.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/598-silver-surfer.jpg','d63f36c0-8848-447f-8f7b-00019a6d5252'),
 	 ('38187568-47bf-48f2-b75f-e4602fd5e3de','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/609-solomon-grundy.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/609-solomon-grundy.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/609-solomon-grundy.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/609-solomon-grundy.jpg','712be8ef-08d0-4395-8bd3-357029be8023');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('733b8bca-407f-4699-b4d7-edd511ae6aad','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/623-spider-woman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/623-spider-woman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/623-spider-woman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/623-spider-woman.jpg','5b43d0aa-857c-4ed3-ac50-232fddab0ad6'),
 	 ('dc802f31-be6f-4460-a652-2131917ef737','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/625-spider-woman-iii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/625-spider-woman-iii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/625-spider-woman-iii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/625-spider-woman-iii.jpg','ad766187-b760-4be8-abbd-563755437084'),
 	 ('0d7b3cdb-9445-4304-96c7-ce7d6c87677b','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/641-superboy.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/641-superboy.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/641-superboy.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/641-superboy.jpg','822b5b52-328f-46d4-9198-2098f499e739'),
@@ -9012,7 +9012,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('39f6f144-b853-4ff8-82ca-aeba3507f510','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/696-violet-parr.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/696-violet-parr.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/696-violet-parr.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/696-violet-parr.jpg','09b97a43-7958-4e75-bf87-343ff749695a'),
 	 ('13badc6c-157a-4aab-b415-b411863a21ae','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/705-warlock.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/705-warlock.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/705-warlock.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/705-warlock.jpg','d3d702e1-2fde-4060-9921-c8b05167423d'),
 	 ('562548d9-42c0-452b-9992-7c10dcde082b','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/701-vulture.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/701-vulture.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/701-vulture.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/701-vulture.jpg','d09dce18-bbba-4a60-bfed-95194c344611');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('0a87604b-cb0e-4e87-bc02-a57c853f708d','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/720-wonder-woman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/720-wonder-woman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/720-wonder-woman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/720-wonder-woman.jpg','2ad18f94-e7b0-4ec1-bded-3cfb97d61818'),
 	 ('012459c6-8400-41d3-a081-3fbd12470438','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/551-red-tornado.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/551-red-tornado.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/551-red-tornado.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/551-red-tornado.jpg','e1b5c917-b296-4936-8266-9cda153d8c43'),
 	 ('629677e8-72a6-4c5d-b097-5e0df602c374','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/550-red-skull.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/550-red-skull.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/550-red-skull.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/550-red-skull.jpg','4abae1f9-6f87-4632-a1e3-ee82243a50ed'),
@@ -9023,7 +9023,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('d94c983d-841d-4bfd-819c-e9c36e3801d0','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/604-siryn.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/604-siryn.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/604-siryn.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/604-siryn.jpg','9eb5abc5-683e-40c6-9d96-3c3cc23f9d91'),
 	 ('d4420035-f4a4-419c-8605-db5aebdd3f43','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/611-space-ghost.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/611-space-ghost.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/611-space-ghost.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/611-space-ghost.jpg','19f0a950-17c7-4969-b884-d22ac07fb5c9'),
 	 ('db59caf8-40db-46e4-bd8c-6c0bbfe3de2a','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/633-stargirl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/633-stargirl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/633-stargirl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/633-stargirl.jpg','0ee6f9a1-5f45-45d5-be33-7b9143dcaca1');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('e995d09d-c641-4d85-a24c-139b4aba7a53','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/642-superboy-prime.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/642-superboy-prime.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/642-superboy-prime.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/642-superboy-prime.jpg','218a8ca9-4274-43d9-b854-0223ee94e418'),
 	 ('a3fc70b4-a8b5-421b-b74e-f1c094819e57','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/656-the-cape.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/656-the-cape.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/656-the-cape.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/656-the-cape.jpg','4dab2508-9063-441a-89b4-5a5813aaa01e'),
 	 ('d3ae581b-4eff-4e1a-8f3d-48b64206165b','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/680-ultron.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/680-ultron.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/680-ultron.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/680-ultron.jpg','999461b8-69a4-4b48-a42d-cce87bb62e54'),
@@ -9034,7 +9034,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('ed42ffa8-2017-4154-8a03-b03c8175a366','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/570-sabretooth.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/570-sabretooth.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/570-sabretooth.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/570-sabretooth.jpg','73d3a43e-22ff-410d-9f85-a18b8c4973f0'),
 	 ('ae66cc83-8998-4264-b396-6cff6d6f44e4','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/578-scarlet-spider-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/578-scarlet-spider-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/578-scarlet-spider-ii.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/578-scarlet-spider-ii.jpg','087f3911-9e9c-4457-b93f-f9d124387153'),
 	 ('ef671ba8-8e8e-408f-8d64-ab44f67a8a3a','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/586-shadowcat.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/586-shadowcat.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/586-shadowcat.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/586-shadowcat.jpg','ff9fa393-3dc3-4357-a52c-9eea1a523ee9');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('7873420e-3887-4660-999a-603cc1688375','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/605-skaar.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/605-skaar.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/605-skaar.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/605-skaar.jpg','0ae9271c-431d-433a-94d9-c5660c606d69'),
 	 ('11390b97-3e14-44a5-9d5e-f0b7246e870c','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/613-spectre.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/613-spectre.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/613-spectre.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/613-spectre.jpg','a87a3fd1-592e-45b4-80f5-7b940ee187b3'),
 	 ('2d8b4eef-74a0-44f2-8f7a-965407524d0a','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/635-steel.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/635-steel.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/635-steel.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/635-steel.jpg','df3329cc-ad89-4222-8a00-1a4e7199e06e'),
@@ -9045,7 +9045,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('4cd04178-3497-4f0c-884c-cc7ac015fd2b','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/708-wasp.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/708-wasp.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/708-wasp.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/708-wasp.jpg','90eba5fd-62e6-4f5b-8c1a-03a68445ef70'),
 	 ('9f6654d1-b118-4f75-8692-70503606a542','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/722-wyatt-wingfoot.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/722-wyatt-wingfoot.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/722-wyatt-wingfoot.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/722-wyatt-wingfoot.jpg','119f8b5d-3af7-4fdc-8f36-55ead3470b0d'),
 	 ('3c2a0f87-08b0-4489-936d-e0708b70e3eb','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/587-shang-chi.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/587-shang-chi.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/587-shang-chi.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/587-shang-chi.jpg','ea836b2b-03b0-44a3-83c9-7dd4e4baf958');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('a498cb79-dc7c-4857-8e50-ca5ddb57b80d','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/618-spider-girl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/618-spider-girl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/618-spider-girl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/618-spider-girl.jpg','45f938a0-0f09-45e3-8372-0352e6dbcf03'),
 	 ('9675a904-022e-4d3e-b510-f2122bdc3a5a','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/647-sylar.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/647-sylar.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/647-sylar.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/647-sylar.jpg','c6f1ab4b-5d72-46cb-af09-f185f9f761cc'),
 	 ('c9caa09f-9b09-4f5b-a859-c9b87bd1356a','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/644-superman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/644-superman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/644-superman.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/644-superman.jpg','ecd1b1f6-d27e-4c80-a76e-ab1e3b1a33be'),
@@ -9056,7 +9056,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('64177898-568f-4320-8b04-bdecf2ad8983','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/702-walrus.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/702-walrus.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/702-walrus.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/702-walrus.jpg','97a3ed8c-db26-44f9-9cbd-9e0caef50729'),
 	 ('4d9df584-adad-4051-b685-55e15c92c13e','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/703-war-machine.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/703-war-machine.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/703-war-machine.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/703-war-machine.jpg','f7598083-34c3-49af-a6f0-4a8d34728e7b'),
 	 ('95b57564-1c92-4e91-abca-9b0f25f6cdc5','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/686-vegeta.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/686-vegeta.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/686-vegeta.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/686-vegeta.jpg','7ad8b5e7-5b79-462e-a84b-f5c75953bb16');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('7e92394c-3131-49f9-8503-aa3684c2e59b','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/724-x-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/724-x-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/724-x-man.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/724-x-man.jpg','88679560-aab6-4721-bd1b-eba04a829257'),
 	 ('6a864855-421c-426e-94c0-759cef677e3a','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/679-ultragirl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/679-ultragirl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/679-ultragirl.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/679-ultragirl.jpg','51b3c162-f310-4545-9b75-75efac29cebf'),
 	 ('f7925acc-d4a8-4cd0-9655-29a038b33ad2','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/672-toxin.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/672-toxin.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/672-toxin.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/672-toxin.jpg','13042421-f7b4-48d9-a9e3-811973c5f36b'),
@@ -9067,10 +9067,10 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('05defb76-1abc-4eec-8570-166dadd6c381','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/730-zatanna.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/730-zatanna.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/730-zatanna.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/730-zatanna.jpg','0ffe7766-d695-4878-b5c7-dfc396e331df'),
 	 ('9c9caa8d-79d1-43fe-835e-5a8d176118ba','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/699-vixen.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/699-vixen.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/699-vixen.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/699-vixen.jpg','88932725-a523-405d-8399-5d0de591e3bb'),
 	 ('6a24f255-1399-4ca5-8124-d6956c4820b9','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/723-x-23.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/723-x-23.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/723-x-23.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/723-x-23.jpg','d7f27efc-fe30-4e3a-b3e3-41df731450a0');
-INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
+INSERT INTO public.superhero_image (id,xs,sm,md,lg,superhero_id) VALUES
 	 ('3efdfdc1-0171-4ef8-a910-7336b1cdca47','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/726-yellowjacket.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/726-yellowjacket.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/726-yellowjacket.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/726-yellowjacket.jpg','e1dae9c2-31ac-4347-862c-0f29845419bc'),
 	 ('1242d93d-fe93-4d78-a238-0e28da154eec','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/711-white-canary.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/711-white-canary.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/711-white-canary.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/711-white-canary.jpg','1c35da68-8e6f-4034-b5e5-6df6a800b43c'),
-	 ('c3dae24c-3c32-4541-9ad7-7b5d4f2b363c','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/731-zoom.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/731-zoom.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/731-zoom.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/731-zoom.jpg','6b07d79a-2c5a-4b91-94d6-42bc67635a22');INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+	 ('c3dae24c-3c32-4541-9ad7-7b5d4f2b363c','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/xs/731-zoom.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/sm/731-zoom.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/md/731-zoom.jpg','http://adk-fe-onboarding.s3-website-us-east-1.amazonaws.com/images/lg/731-zoom.jpg','6b07d79a-2c5a-4b91-94d6-42bc67635a22');INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('cbc9c9e2-14b6-4d0a-bf3c-afb91ddb0597','10','8','13','5','5','20','84507000-0beb-4a66-8288-0a9c578176a1'),
 	 ('30387b08-0fb4-4428-a242-2d26e50a091f','63','80','53','90','62','95','a653e8c6-1ab5-4c6b-8c4a-c8ac6e567e1d'),
 	 ('39937fac-6bef-4b60-95cd-c06c4ecf904a','50','90','53','64','99','65','141fdfaa-3ab1-49e4-9d89-6ff65c8f8461'),
@@ -9081,7 +9081,7 @@ INSERT INTO public.superheroe_image (id,xs,sm,md,lg,superheroe_id) VALUES
 	 ('d1eb7d17-6bde-4da4-b611-6e7efcad66cc','50','80','42','90','100','50','8b68f616-1e8b-439c-92dd-2889fdd0c11c'),
 	 ('05367392-36e9-49b3-a602-4c78a8bca612','50','28','42','90','57','60','28a75986-b424-405c-8584-a99cca4f9952'),
 	 ('691123eb-606d-414a-937a-2041edc9633d','69','10','33','40','37','50','a2767983-de29-40bd-9587-04e8bf72374f');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('ed8e8b76-dd14-4bc1-ba07-3d367d7bafc5','63','10','17','10','7','55','35032fd4-c930-4397-b715-62a1bad2f0e2'),
 	 ('07949616-d88f-4d4a-97d9-6242034c7c45','38','80','25','100','98','64','1ec71757-352c-47a1-aaa1-1fd356b71bb3'),
 	 ('7cc20b03-2810-4c6d-83bf-3ec60b54bd51','88','63','83','100','100','55','2fabe5e1-deca-4744-a657-d32f841deabc'),
@@ -9092,7 +9092,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('b5add272-1197-40b5-8e64-88631ea86f00','38','10','28','28','56','60','dbd53964-eb31-4aac-968e-237c1ce7d39c'),
 	 ('62bdff6d-0c5f-4fd3-b32f-812ba988ad1c','56','48','47','85','73','80','ee2465ec-7916-4abc-9c9b-076c7ae1520f'),
 	 ('fcc5735a-82c8-49ca-8a97-0d9059ce9533','75','80','47','56','59','64','fdd048c1-c4ee-4571-b074-7eb503253338');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('b8a3e0f2-c8c2-4beb-8be2-eb76a4322285','100','18','23','28','32','32','708564eb-ea20-4e0e-bb08-ac4ea51938e9'),
 	 ('5d25b0ec-e5a4-47ba-a246-0e68c2154b40','75','30','58','90','100','75','49443739-1caa-4cc5-ac3f-b9305867f1e2'),
 	 ('88d30c7e-56dc-4da3-a86c-b4ecf786c3bb','88','100','50','100','100','90','70f4f2c6-abd3-4312-b8f5-364abd96be61'),
@@ -9103,7 +9103,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('a4f8fddc-5003-45b6-8d66-b03ec16c2ff3','38','55','23','42','17','30','0f8853b7-0404-4f13-8b36-477016193e4f'),
 	 ('d5d250b1-1fc4-4cd4-b52c-acd2cbc90f20','81','85','79','80','100','80','32c307b4-9a26-43a5-b223-bb512c0d1c01'),
 	 ('aba09cc1-086a-4fef-bffe-2a2fc0ba25cd','50','48','50','70','71','70','102b2074-192a-4041-b772-71ac702b34b1');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('20610b6a-22cf-41b9-a362-2d973b592b38','63','13','58','64','35','42','3738a8c5-8a66-4f8e-ace1-3860be5c3cf0'),
 	 ('783c6359-6d54-495b-8914-fad7d9bf6d4e','63','100','100','80','100','25','2e87248b-32d6-433c-9cdd-030e10a36ac1'),
 	 ('264e2c6a-80d4-43d1-b209-74d71b011ed8','75','18','17','40','53','30','f2dd49b9-31ab-40a5-aeeb-b6cf522139fc'),
@@ -9114,7 +9114,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('3f51f7e7-dd51-40ae-af55-5edc8af975f0','38','63','23','42','52','70','888bad52-d7b6-4cfa-9eb5-c22c8df120b5'),
 	 ('90ee5559-62f1-474a-ab9e-63362d5665bc','63','80','25','100','98','50','bafbb32e-3511-4634-9870-628e01faa597'),
 	 ('525cfdc2-981a-4774-86b6-df47085b36ba','88','10','33','45','40','60','58efc664-83c7-4250-a790-aaf1a6f36701');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('d411c604-fd75-4668-b34f-da32d8bc6c50','38','10','23','28','38','42','0df52ce4-2b47-488f-ad5b-c90b433a5faa'),
 	 ('0c9c0ab9-2c28-47ed-a70f-54fe2d43233e','63','10','96','60','74','56','124fa936-b34c-40cd-bd12-255cfa5f8062'),
 	 ('a44fc661-f363-47eb-99ec-a309d19abcb1','63','18','17','20','35','80','38a21387-e6fc-4837-9cd0-af07b4b778ae'),
@@ -9125,7 +9125,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('f7b5934c-e004-41a9-bf7a-0a99f1f3d0fb','81','40','29','55','63','90','a4fe4246-581b-4adb-95a2-aaeb3bacbc09'),
 	 ('5cf339e6-9837-4620-80b9-01cd47867b71','100','26','27','50','47','100','d32ee045-d969-405b-baf4-4ec44d112bfb'),
 	 ('cdbdf521-644f-49a6-8317-52804709b501','50','10','58','40','63','70','58fb023f-9686-4c62-b357-d948d77f235d');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('c40b8661-6478-4419-8ba9-4d9f0016df43','88','38','23','56','51','95','819bfcb7-efd1-4c68-a6ed-1e0d5e142bb2'),
 	 ('26f25616-629a-45a5-8cc8-bd55d29bd5ff','25','53','23','54','21','56','c9ccbf68-e039-4b4f-9e2e-f88cacf56348'),
 	 ('5028e3c2-1b5a-4c92-91e2-9402e40c45b2','81','8','29','25','27','80','045a6b84-4a7f-4af1-8510-4d78e41575ad'),
@@ -9136,7 +9136,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('a18d5650-0f00-4795-8381-b2b89cb95eb3','100','100','100','100','100','84','1b0907cc-3daa-4a27-bde3-9f416afb562e'),
 	 ('2dc645d6-8e46-462f-ae29-30b93fed4ce7','63','36','33','60','27','40','98ba25ec-ae87-49e2-b5ef-1c20f250b4e4'),
 	 ('fb9fe408-85b9-468f-8b7a-22809602552a','88','100','79','100','100','100','e7ab3e29-f614-4a74-a7bd-cf31c36db45f');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('c8223790-1f44-4749-9436-89be4435967f','88','11','33','28','36','100','dcfb5d5e-e08e-468b-af2e-7bebb7a1d6ec'),
 	 ('fbb3fffb-9aa9-4dc2-86d9-cfcbd61ea2a3','38','10','12','32','22','64','592fce45-d665-456d-b4c3-7aa9c22c697a'),
 	 ('746b1d92-be57-4c3b-afe1-591fcc5839f2','50','53','35','74','48','74','8486d649-d7f5-4763-ac71-8ea344f9e293'),
@@ -9147,7 +9147,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('d3925e0d-8f43-4f43-85ea-a9e2681337b1','38','95','100','100','100','85','c117e88e-48de-4722-8aca-cf0a6f388663'),
 	 ('2b887018-1c95-4e11-b9bf-a59be2705d01','88','100','92','100','100','56','430d54f9-e698-40da-a0ae-c845cd6b847b'),
 	 ('333e41de-090e-41ba-a5ba-639364ca57a1','75','67','100','84','100','56','d81acf3c-3f98-4a4d-b52d-984e322adde5');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('4bf64635-454a-4971-91be-5682ba9b2f7d','75','12','23','28','19','70','1df5a34e-2d2a-4358-aad4-dda497c22bf6'),
 	 ('e3cff1d9-c9f0-41ac-8ecd-007a208c4521','63','8','33','15','45','80','06c0e2f7-8803-462e-8995-7ed9a36bb22f'),
 	 ('d36e246c-4805-458b-bf56-14397222c046','44','10','100','80','100','30','792b6117-ce56-4751-b6fb-a0092a98287b'),
@@ -9158,7 +9158,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('e3209eef-6f1a-4382-ad4e-cd1bc3d08f1a','75','28','50','60','76','85','e131c731-e8db-4974-a189-39cdc7464fba'),
 	 ('3dc117a7-1eff-4430-8255-86a66e5d5467','88','16','30','60','41','100','46253f6c-6da4-4f94-b8da-6c1f1f4e14b1'),
 	 ('36933cd5-67da-48b8-b6b1-a88a7b2d6993','63','8','33','20','52','80','ac2da8f1-26ea-4c64-8373-dca1e3ff183d');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('00f4f089-7bfa-4ab4-b998-7a51d16a721c','63','32','45','80','45','65','7a8b6610-a3d8-4391-bcfc-023b5405ff97'),
 	 ('d583a6c5-64e5-4c25-ad8b-c570989e16c5','38','10','35','32','20','56','a0eafd15-d598-45db-a4c9-2cffec18cd2c'),
 	 ('5084c558-e0f7-4b37-bf1b-7b4b06a02037','50','28','8','30','69','25','cb647510-6038-435a-b51c-c0f7b0ee611d'),
@@ -9169,7 +9169,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('32107949-8932-4253-a152-943fd944c2fd','63','80','33','80','100','84','efe4d46b-9537-48c8-ba5c-35ff7527570b'),
 	 ('99e7995d-cb43-489f-83df-e08883bfdb52','75','13','33','30','36','100','540a3d4f-3517-4148-bdf8-4ca07400587a'),
 	 ('e91d3625-e488-4442-911f-af9f3a606f57','50','34','58','80','100','30','459b400b-b436-4aa4-bd3c-2e09c63490cc');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('d206ff02-f95f-41ca-a86e-475c5bb631db','63','10','38','36','68','70','74601be3-6d6d-4d30-bbf3-d22758971560'),
 	 ('8bda961f-5e0b-499d-9221-511c2b5b7712','38','10','12','42','57','64','e9ea6942-12fd-4c5d-9146-785b19f96957'),
 	 ('6925a522-d3ce-44b4-8c82-880dbbd5e99a','100','10','23','28','60','32','d526c049-ae72-46f8-9417-841c08965707'),
@@ -9180,7 +9180,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('34e0bc17-86ee-41ad-8ce7-3bd26fc55829','50','10','50','80','80','64','9763e385-84b4-4fcf-8125-26763a716ffe'),
 	 ('9e00586b-e2d1-4690-ac0c-f4279d35ed72','88','80','53','64','100','100','f0ab2845-ed45-4637-b9dc-b8384b035ca4'),
 	 ('8eb8438e-98d5-419a-afda-3105a3c90ed3','38','8','42','20','32','70','42d88eaa-325f-4aef-8907-019619c2958a');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('5900f7ac-d1bb-4e0d-b43c-04e3f476bea0','38','9','12','100','90','28','0a0196bd-71e7-430b-a22c-af932b85f599'),
 	 ('8f67159a-03e5-4651-a35c-054e2d7431db','56','10','21','25','54','60','e5e75a6f-51f3-4419-bb50-f57f5b58a3b4'),
 	 ('e33dca8f-37d1-4704-9a70-d47ad13dcfa4','38','8','35','42','79','64','942cc87d-abc1-4aa6-ae68-c46fa19ecde0'),
@@ -9191,7 +9191,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('4ae11ea0-c912-49c1-b434-b084a81d71c6','50','6','8','10','24','50','217cd8f8-1654-4b13-a996-4fe87105f93a'),
 	 ('28ae7d08-0663-41ce-8491-323e0d74d9ab','63','11','33','45','46','70','85f800ef-1703-4ddc-8327-92cc09e0f44e'),
 	 ('a385ba69-c81f-4caa-9e2e-b8c44efa4e40','56','7','29','20','27','65','66bfe04a-99a0-4d8c-99d4-d97b19f8c77f');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('1125688b-0744-4c6f-9a4d-318c9c41ccea','88','10','27','85','93','56','eca342ad-931e-4622-af70-25018143497e'),
 	 ('c5e9f868-8ef8-408e-a91d-434a98379c5e','88','13','17','35','25','90','075f3ad0-9695-42c8-97e4-bfcae0533426'),
 	 ('3825dc2e-825d-4a2a-8fe4-e696de55877a','50','88','50','90','86','40','0a6e6974-6562-430f-b89d-400190d2c4ce'),
@@ -9202,7 +9202,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('f22446d5-a185-48c2-bee1-51d3ea4d3b03','69','38','42','25','100','100','3afb8f12-7461-4b63-86d3-a609e44ec844'),
 	 ('93464a07-94d1-405b-b657-0c75e7548b07','38','6','83','14','53','14','eada5243-be14-466e-9ebb-ff70881e45cb'),
 	 ('f9840064-4374-44b7-8ad2-bc2b86a2fe21','38','10','12','42','62','64','acef8f70-b7b5-416c-8a9e-3a4ae4515209');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('eedb9f27-a0af-4be3-ba0b-785afca12d13','100','18','25','25','79','15','7590d6d4-c3bf-4787-aa2c-25253aee6b5b'),
 	 ('9c45f79c-b387-47ad-9281-1b0095f71b9f','50','80','32','80','100','100','fdf25ad5-0d77-458e-9021-87c7c46c1ce0'),
 	 ('3576ba8d-071e-4526-bdec-788198f8d823','75','11','23','28','19','76','e9a5d2e4-73ba-427a-a246-49b2a3ee78b7'),
@@ -9213,7 +9213,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('4c92e024-2ad0-4e99-add1-fdfa4f7fdbc5','56','90','42','55','100','60','9f3fc482-5268-4ce1-9b79-ad27bd86d533'),
 	 ('621fa1cc-73cc-4a7f-a5d5-2151163ac22a','9','93','13','100','92','30','712be8ef-08d0-4395-8bd3-357029be8023'),
 	 ('a7f746f7-1adb-44fb-b9d3-975961b4e5b8','75','55','63','70','66','70','011353d6-a4b0-407f-b4a5-8ada9954d4e3');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('eb8fe5bd-3993-4725-9114-cfe8e731dbf9','75','95','83','90','95','60','822b5b52-328f-46d4-9198-2098f499e739'),
 	 ('3810f317-d582-452f-a2b4-3e1fb784454f','50','80','33','85','59','70','3a531400-5c86-497d-b613-5858d40d0c10'),
 	 ('17c924f6-c032-4167-877d-64111e9b6913','94','100','100','100','100','85','218a8ca9-4274-43d9-b854-0223ee94e418'),
@@ -9224,7 +9224,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('140642e5-f63d-443b-b72e-9b4ade36a93e','56','32','35','65','60','84','b87bdbe7-0196-4779-b36f-eb19ea2c2c63'),
 	 ('b3b0d2b5-dde7-46d4-b771-14f440697632','63','7','33','15','49','90','1c35da68-8e6f-4034-b5e5-6df6a800b43c'),
 	 ('52f61146-47c9-4125-adcc-f2962c4a928f','81','10','23','28','100','56','0ffe7766-d695-4878-b5c7-dfc396e331df');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('ac610edf-bb9e-42ae-92a4-b07ccc788782','50','10','35','28','31','28','6b516f90-8278-4085-8eb1-5635e0186848'),
 	 ('c27cb07a-c8ed-4734-8a4f-407ffafbf874','63','28','25','10','47','35','2f4935ae-250b-4945-aa45-6cc55659b6e8'),
 	 ('99d16d7d-3013-46b5-993f-3053d90ef20c','38','10','8','10','19','70','5b16c264-a63b-48ba-8bdb-6dcb19fcfbe2'),
@@ -9235,7 +9235,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('92dc8eb7-1b57-446c-a01d-a9dee6f976a6','44','16','23','28','45','60','34dfa66d-7df9-48ff-8cde-b429420e7ee8'),
 	 ('d1a8ab23-08ec-4dd5-b788-09aef1e5e6d4','50','10','23','28','55','80','bc627d54-e9cc-49c7-8b0c-b6466530590a'),
 	 ('c7379128-eb08-45b5-8955-eb623102d648','69','32','50','100','100','100','5f850bac-eda0-4fe6-b9bf-ea9a03d7e8e6');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('8c7dd53c-f736-4fd5-a989-29d90d8516b9','38','13','50','28','22','64','b678bf4e-ff30-485a-9e52-ab848a681372'),
 	 ('6d8cbf06-6243-41bf-9e40-d24c517a4e36','88','48','100','60','100','60','e900794f-5f09-4b3a-89db-05c999a829ef'),
 	 ('ac34f207-86fb-49d9-8964-be4a6fddb5a3','63','10','12','28','25','48','6f9741d4-13ce-421e-88e8-2f31e1be0d0e'),
@@ -9246,7 +9246,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('96bf9850-342c-48db-abd0-6d99dfc02fe1','75','8','21','25','21','50','d45890ea-b410-413c-8113-8021f548863c'),
 	 ('b27116e6-a243-4134-a558-b8aee2abb726','25','18','8','10','9','14','6bff7936-3da8-461d-8c1d-555fede1fe78'),
 	 ('3bffa5d6-d248-4216-b028-a81e0fcfdbd3','88','80','27','84','91','80','5dfbacd7-64df-4338-acb8-8362cb460449');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('c05c3619-8af4-49b4-bac5-1db4f81511ee','63','10','12','42','60','85','7291fe36-8a86-40df-98ca-52f2d4c81bf3'),
 	 ('3c326988-458c-4d87-ba90-26f2d01ee984','88','85','35','95','100','42','74cb3a12-e500-43d2-a272-687987f2d301'),
 	 ('92cc4977-8c43-4d4d-821b-37031efef491','63','32','23','80','91','42','19648125-afc9-48d7-b7f0-9f286f1edf5b'),
@@ -9257,7 +9257,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('44177fc7-0649-40b0-a18c-0efcff6c7af2','50','7','8','10','45','35','a9e2b077-1967-41fa-a17e-2b71b266d986'),
 	 ('aad89e4d-690f-4dcf-8b6e-df6e474c3947','50','10','23','28','60','42','8f800a2e-6a03-4865-9540-a43d27c9c8ae'),
 	 ('c062ecad-9655-4ccc-9dcb-18dcd8693ee3','94','100','100','100','100','75','f1a190a9-90ca-43eb-97d5-9a891afae92c');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('0d1df993-a4e8-4741-a141-7cf480907b81','63','28','100','60','81','56','810e3b0f-173d-4396-b1f1-29a3b0e275c4'),
 	 ('7cd75e41-f31b-478c-99de-4aa8a9a6fbfa','63','8','21','10','87','35','8abb41a8-8a3a-499b-81f7-463178dbd509'),
 	 ('f71937a9-612a-4e8e-9cc5-f99e5792d164','25','10','23','14','20','56','1260706b-e5e3-445d-bd2f-3161ec71fb07'),
@@ -9268,7 +9268,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('6d64d74d-304d-46b8-b2be-ddb522003af8','56','42','42','60','68','70','5b43d0aa-857c-4ed3-ac50-232fddab0ad6'),
 	 ('d55f239c-3301-4060-8725-d9a36d5f7b75','50','48','27','42','60','28','ad766187-b760-4be8-abbd-563755437084'),
 	 ('61daa70f-a6cc-40d9-ad31-d4674cf49381','94','100','83','100','100','100','ec1b72bc-b57f-4d24-9158-4e0ed4881589');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('e0694ae7-7044-4c06-8974-05a3d07c47c4','38','10','23','32','22','64','4dab2508-9063-441a-89b4-5a5813aaa01e'),
 	 ('4fd8a726-c711-42a7-8409-16543f645aaf','38','72','47','70','26','84','9616e8e3-8588-436b-a889-301ff8ff3fc9'),
 	 ('a2bc259a-53ca-43a9-aa0e-e8711e7787c8','50','38','50','50','62','25','88932725-a523-405d-8399-5d0de591e3bb'),
@@ -9279,7 +9279,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('cdf69cdf-fc79-4ad2-bbde-51b6d0d03b5a','50','95','33','100','23','60','32cf2e45-e7b3-4cce-a1bc-d5e6011e6642'),
 	 ('3970c6cf-a082-453a-83f5-a9e2b04ef2c2','88','100','83','100','100','95','3def392f-bafb-4d50-80a5-9f572da8e5dd'),
 	 ('432e02f1-0355-4b94-a138-230318310863','69','48','33','35','100','100','f96a58bc-aa89-47f8-bae3-9af99b0720f2');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('2e85b013-0a30-4ed6-9d15-a4baf8e85b31','25','12','92','60','20','30','555f9228-13e7-443c-a2ec-37cad67d819f'),
 	 ('9185bf9f-bc2f-4b7b-bf6c-76164f182714','75','30','35','100','47','90','44f2f45f-8a11-4a08-bce5-c0d6158dbab4'),
 	 ('70e35c56-4cae-4ad2-bca1-6cab360c0997','94','48','33','40','53','65','9af89a82-ff5a-422c-be7e-4667e16f1a6a'),
@@ -9290,7 +9290,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('bb8ea781-2928-4348-bf38-a540ec21ec70','75','85','42','85','53','100','be738bb5-9bc2-4e6b-b06b-af3fd7ebcd6a'),
 	 ('4387f572-e8fd-4ddd-ad57-52ae6b329fea','75','10','23','28','65','56','2b2ef640-cfdc-4401-8059-7e4a752ae412'),
 	 ('c74d6274-33ef-4c85-bf95-612418994dd7','44','100','54','100','100','20','099fa565-6cb6-4803-85b5-b62106fb8751');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('2977e727-e75d-4dae-8ecf-875b25e41d12','81','53','33','70','100','65','6e9d2c2e-7a20-4ca7-bbcf-46c4d6b168f2'),
 	 ('b8e96531-596f-4f94-9bd9-10e920808627','81','12','35','28','39','90','8f980fdf-927a-449f-8a42-e05005f9b82b'),
 	 ('e4498fcd-9327-4fa3-bd98-be892faad46b','88','12','33','65','55','80','5df97173-44b1-4126-a3e9-8e562079ae27'),
@@ -9301,7 +9301,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('316b51a5-26b6-4583-90e0-44f547c02c30','88','10','13','35','59','30','7f70bf5c-9a50-4572-8024-ece8027c58d2'),
 	 ('42523666-b50a-4eaa-94c3-15f17e3873e5','50','10','33','70','55','30','ea7f94b6-938b-4c35-b8a6-7c412618eb49'),
 	 ('37eddcef-7bfa-457e-a069-f19d183efbeb','50','51','27','70','63','56','49979b7a-e7a5-4168-a33f-9ecb263410ac');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('cb56294f-a4d9-48a6-b6b8-a37c8e1bb5f0','94','100','54','100','100','85','78c2818a-ccbd-4809-86e5-4d9171d69375'),
 	 ('c8c52861-8b75-4193-b8a5-c808c652b16a','63','44','35','42','45','70','6fd6a6dc-9cca-400f-ad75-c242a802380a'),
 	 ('9a6ef5c5-5132-4433-bc6a-08513424e049','63','8','33','80','100','80','7dff6186-d93e-444a-a5a5-20f3545e8f0d'),
@@ -9312,7 +9312,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('093aabee-903a-4c63-a9c5-dadd1df1f806','63','85','12','95','36','56','041860fc-b8b1-4472-bbcf-ef32add05291'),
 	 ('80992b7f-645b-480d-a3b6-3efa146be2c6','63','10','67','20','79','80','07b6d189-5531-4d42-a414-f7457293f485'),
 	 ('0aef2833-79f4-4c0e-8980-537521a7dd53','63','90','67','80','100','70','9616c842-adfe-458f-bf33-1f4e8fa29360');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('5265d0c9-48d8-42dd-990e-393e98a438f2','63','12','30','50','29','100','ea836b2b-03b0-44a3-83c9-7dd4e4baf958'),
 	 ('6959dc59-419d-4467-a63c-9bd7828d79de','38','8','47','28','50','42','9eb5abc5-683e-40c6-9d96-3c3cc23f9d91'),
 	 ('f18bd7c7-2226-443b-873e-bb2544b9bfd3','94','100','100','100','100','75','4307fa84-119e-432e-a6a0-59be5c49ab8d'),
@@ -9323,7 +9323,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('ae3b44ca-b1fa-43be-a6bf-0615287d9aee','81','93','83','90','100','80','cb841bea-4431-4fb8-b41a-d0ca7023f488'),
 	 ('ecfbf88c-53ac-4256-8d00-8b6a7928cb96','50','88','75','80','100','60','a7742fcf-b403-485a-b88e-4f6414d658b1'),
 	 ('efb9f4f4-c5d6-4cd8-a2dd-6e6ed7922eaa','88','10','12','28','28','28','8b3ad528-dfac-423f-bb44-58df6392ea66');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('0dc275cf-4863-4a19-b2a6-597a4a858abd','75','13','25','35','61','100','3ddc294d-1c15-472b-8a9b-aa787f7a1d21'),
 	 ('7d9670d5-7f46-408c-81f1-009f7ce246f5','50','10','33','100','100','42','ef591d97-a3c6-4574-8cdd-fa0f34db5648'),
 	 ('ebed8a51-d756-4c14-9677-c2738ac1361c','100','32','20','100','100','84','a8a02b49-4c62-4205-bafa-2fe7b7d65339'),
@@ -9334,7 +9334,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('0e82846e-0117-4483-9639-6ce7871c77bb','50','100','100','100','77','70','a688013a-6369-4e62-908e-6893f76456f5'),
 	 ('720a8820-ed95-45cd-96bc-5d78c30c9a68','63','10','23','28','55','84','d0134ae3-c2bf-4cc5-8f9c-1c7462c3f3b7'),
 	 ('0cf7ec55-e0f8-4a8c-b83e-9855847f0e69','75','85','33','70','100','64','5f826be6-47e9-4f26-9093-478690bcaa49');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('fb2a6eed-e91d-41cb-9f22-a24db98def6e','69','10','17','30','19','30','e4c8f22b-b2b3-40c5-93c7-f36c9504619d'),
 	 ('144a864e-f8bf-4996-8516-c51c796bf6d0','38','28','17','40','73','50','840b00e3-5090-4123-a63e-3c2bd1b1ade2'),
 	 ('c1e769d6-e037-4233-811f-11a19f52a066','88','100','100','95','87','80','bb72fcde-11b2-4f17-b1fb-181089ea8403'),
@@ -9345,7 +9345,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('2bc6be3f-04b1-4bee-970b-6ad470ccb48a','63','8','12','14','57','14','a49fce98-7c81-4a81-a8fb-b66bfc1cce63'),
 	 ('ece73234-2438-4197-ab1d-5dd17795d2d1','100','28','23','28','100','95','b987b5de-bf4c-42cc-873f-1e77646b7461'),
 	 ('7f633042-766b-43ad-aa0d-2ee12a6157ee','100','10','18','70','33','64','6bee3c46-82e0-4dad-851b-5ee62988e7ed');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('f0444b50-2051-4f57-8d12-b8a27569c303','100','48','46','90','100','50','6806cafd-69ec-4b4f-a5c5-0cc51fbc2c57'),
 	 ('d2941933-4900-4647-a6ce-7a440667ef37','56','67','47','52','74','80','24aa8557-d67d-4134-aada-21eee87d5ee3'),
 	 ('02a9f77e-2648-4bb9-87f3-c9772085da8a','63','5','8','10','68','20','d8b682f8-9921-4e0d-845a-adcfdfac39c5'),
@@ -9356,7 +9356,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('f8a27e52-5a52-4967-adaa-b3d337f487e6','63','60','25','55','61','25','bff437dd-4ff4-49e7-8df1-4638c92d3897'),
 	 ('6bf652ad-c84e-4b4a-8235-4499ead7aecb','69','16','21','45','42','100','ef079eaa-7be3-4019-9f7e-22dde9305ef9'),
 	 ('eaf8fcee-8cb9-4a4d-ac35-d4408f0219cf','50','8','25','20','17','70','4e7e5852-ce1a-4f83-a371-c3ba278f4805');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('16978949-be80-405a-a4d9-486dc8636050','50','5','23','28','28','64','b11253ad-c43e-460a-a9a8-3a0161acef3c'),
 	 ('63774c7d-d4b9-4ed6-b72f-657b5b320c57','50','10','23','28','45','42','0a08f6e9-5004-4adf-834c-c861f661a674'),
 	 ('ce94f4bf-bb93-4165-af59-5749c5f6564d','81','100','42','100','40','70','3600936d-f09e-46c7-91df-82abeec79fcb'),
@@ -9367,7 +9367,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('a65992e3-3f69-4fad-9ac1-59f8ee8ff0c7','69','8','42','50','90','40','5aef7271-94cc-47cf-adf6-d57c9ab80998'),
 	 ('b305e049-5980-49cd-bacb-b9e8b7c77d76','88','95','25','100','100','55','bc763ade-3713-4536-bed5-51b54c9d594c'),
 	 ('eb93cf1b-29a7-4f48-93bf-9c478713511b','75','12','50','20','63','100','9c0c9ef9-e56c-4289-9f4c-a6380c630da4');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('2db386c1-8a16-4918-83c2-68fb4e407071','50','80','23','84','85','64','d748c9a3-6726-45db-b72d-b935e975ee93'),
 	 ('1211e9a3-4421-41b0-bb6c-c8d33e6504c0','69','57','63','100','100','100','243fa616-52d9-45ec-ad8f-3e024e33985d'),
 	 ('c9a734fa-09cb-4594-8c12-843189992bb4','56','73','70','84','82','70','97325f98-1bce-4689-b104-11ef6926c4b9'),
@@ -9378,7 +9378,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('d26de4ed-3224-49e4-90ea-d6d82dfc835b','50','80','47','56','42','99','4d46e78a-9185-4582-9294-4d47bd024450'),
 	 ('33b17fa0-acc0-47b3-90d0-31e62e364c75','50','12','12','56','48','56','08a6ac59-07bb-455e-980b-4df338a8c29a'),
 	 ('e198a3a8-16cc-41c5-9c7b-c6a9f094937a','88','95','83','100','100','80','300cf565-d4ff-47ef-9f13-582c2f83a1f8');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('17f6bcd5-a96b-4642-98ef-9353bf879bc9','88','100','42','100','100','42','860736bd-7d96-43a5-9daf-0d26c142eebb'),
 	 ('f76fe5ca-535d-487c-9f78-cb0087a22848','50','8','54','55','71','32','33ce1dbf-8054-4d44-9191-4ddeeed459da'),
 	 ('57679dec-951b-44a3-90e1-5d9f580510c5','63','81','28','28','100','70','0fdd56e8-5a68-428c-abcd-5f1145967335'),
@@ -9389,7 +9389,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('c6b9da02-a4b1-4122-8f45-46ac2ad60071','100','48','58','70','100','70','19d15d5e-38b6-4db3-8a51-0b886ba02471'),
 	 ('4cef86e9-b571-49ce-9fa1-30d71b201dba','25','7','12','14','100','40','96ff3e36-0872-40cf-8824-48a917ae4db1'),
 	 ('3a76b1d3-3fb0-4ee8-aa66-5a606632d3c1','50','38','17','90','81','30','af0ccea6-0ad4-44fd-b235-0b3b84143805');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('bfebc1bf-7c5f-4e15-9295-2b1a4a581226','81','90','53','42','100','80','02229ff1-e10e-44b9-8b2c-8fe6c15cfc5d'),
 	 ('dbae7a93-33bf-4954-9de2-f0e2e39871ff','63','38','33','100','62','60','80ba4c0a-cd75-4ba7-bf57-8caa65b29fb2'),
 	 ('d9160931-8dc1-4d19-af3d-fab29d92bbdb','9','80','100','90','82','40','007a18a1-79e2-46aa-8200-14f6a113bda9'),
@@ -9400,7 +9400,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('da19855d-9600-461d-a8c6-c2d23ef2bdb4','50','10','47','14','76','80','c4684e1d-b10c-4ec9-8681-365e6ceba88d'),
 	 ('e18822d0-5725-4497-93b2-e48b306de6ea','88','11','33','28','36','100','5336966b-8b64-47c1-8066-023a0f7c207f'),
 	 ('4d39375b-0781-4a03-9efa-c267268424f1','63','52','35','28','37','56','1d26f21d-b1e0-4c90-ab8f-86a71f337d2a');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('f5381eef-4d01-4671-b5ae-50579a9cd173','38','10','23','28','53','42','99dcb6ad-5788-4030-bb83-9c5849841616'),
 	 ('b17acd2d-6c2d-405d-986e-5a86f0624133','100','100','83','100','100','80','35d626c4-da95-4fd0-8d3d-94d62f1fdef6'),
 	 ('b88f7120-e782-4052-bbe6-48cdd9ca2bc6','75','10','12','28','30','45','6d832a9a-3ae8-4e0a-8f22-d60c88e265a4'),
@@ -9411,7 +9411,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('c7bf47e4-edcb-4670-8913-2fac5467d1fb','38','28','42','28','34','28','e44e1617-35ba-423c-b544-2c7d43dc2877'),
 	 ('1403b9ad-5eac-4561-87d1-daf8dc2f0e9d','75','60','50','90','100','95','ab1cde89-ea9d-4a04-9143-482fe22f4700'),
 	 ('c1fd1d3e-2a38-40d6-af15-5f97f0481dc2','75','10','12','28','91','56','c6f1ab4b-5d72-46cb-af09-f185f9f761cc');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('3fb9ab88-5ad2-4da2-abb4-51e6dc2f4f37','94','100','100','100','100','85','ecd1b1f6-d27e-4c80-a76e-ab1e3b1a33be'),
 	 ('040b6f7d-97b7-4882-8209-541c69fcc151','63','14','17','10','12','80','78ef21b1-79de-47ed-bb6a-6ad3f368a91b'),
 	 ('f8993bb8-1c2d-4c48-9ef4-2b9f7c4b7f1e','75','63','29','85','100','80','ebf70daf-95b7-48e0-889c-8b0151b8fe05'),
@@ -9422,7 +9422,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('4193fe39-b8b7-4114-9e04-f11b158a04b0','50','80','35','70','35','80','51b3c162-f310-4545-9b75-75efac29cebf'),
 	 ('47e9f2e8-8c42-4ce4-8ddc-35eab0b05d25','56','9','13','50','79','15','09b97a43-7958-4e75-bf87-343ff749695a'),
 	 ('d4307347-c42c-4c51-82e3-1fffc5678b49','75','57','65','84','86','84','6eb6cc8e-c6fc-4629-ba64-2b2603d141d6');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('8911e980-8243-4520-811e-4a44d095514a','38','10','23','28','85','50','6bf2704a-932d-41bd-a7a0-1d0f36ecd428'),
 	 ('6b14150b-e1d4-4578-8cff-623be9d1625e','38','16','35','42','26','42','fe41fce0-ae26-4c51-9b41-072e6cdf88df'),
 	 ('af3a0324-83d0-4a55-9939-a2f3286145fd','10','10','12','1','1','56','119f8b5d-3af7-4fdc-8f36-55ead3470b0d'),
@@ -9433,7 +9433,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('4f454e6f-5b04-4733-aa00-68d090d79c4c','38','10','8','10','56','10','d3b1ab4b-e143-4834-af17-4d65fe2cc54c'),
 	 ('2cd17a76-ebb3-4406-8ef6-cbcfc67b3e49','81','16','25','80','100','50','571edff4-38c0-40d5-9a06-7371bbc8c8e2'),
 	 ('4ee723bc-f020-40d7-a8f1-0582fc725617','63','32','33','95','52','70','9b5555f9-eb4c-49a3-9bbf-270e71f56337');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('efe15a9f-8186-4f98-afed-ce18db9531aa','63','11','30','28','59','100','c3c5fad5-7550-4585-b713-f571a465021f'),
 	 ('088f3b77-c9d1-4d3d-bde8-5195df67688c','75','10','33','90','44','40','962b2fe2-b998-47c5-942c-c1bb488a8a24'),
 	 ('4a4d7224-fba3-438f-95d7-8f25b3a90fa2','88','95','75','100','98','90','bb2d0935-0ec9-4240-8197-9556bcaded68'),
@@ -9444,7 +9444,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('4ae3aba6-7098-4c97-9a36-1ac6bf0362a6','63','11','63','70','87','42','de8bde19-2f2c-4c8d-92b0-a8da7db89789'),
 	 ('444ee0a1-94c4-4470-a8eb-f57104e5549c','63','63','58','75','100','80','79e8a6c5-5784-42ac-94d2-6822587f1ce4'),
 	 ('c711cb8d-07b6-4f7a-b108-ad0631751ea2','100','85','58','85','100','64','56d7f6d4-ceea-4d81-bc5e-8fbcaa967625');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('a1f0347e-ace1-498a-a7d2-e0cb107ad0c3','63','32','53','100','100','64','a478e33b-5902-43ac-8843-e67f98de02d5'),
 	 ('64311a97-f9b6-4138-a419-4d25318ed276','6','34','67','80','100','6','ee26d33d-b915-42dd-9eca-4557080718cf'),
 	 ('65ec5a96-6d4a-438d-a5ce-e8ccf3c9e935','10','6','33','10','21','15','31e25f2d-ecba-4fad-9133-c0f6ffc0060c'),
@@ -9455,7 +9455,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('5585d467-c149-4c98-98b6-ce5761b15902','75','53','35','56','31','28','0c26da2b-9196-450c-8405-e0d361b10b21'),
 	 ('ee1e159c-a2f7-4a23-be59-9d617d276e6a','100','100','100','100','100','30','f4f40720-7b08-405b-8732-b02f158b1dcd'),
 	 ('371fc043-3166-448c-a916-a8fee904d3a7','88','63','46','85','100','60','134313ac-cc80-4f0a-9e92-7a3b0219c7d4');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('b29a7494-9817-479b-9fd2-0297d4347922','38','18','50','70','33','30','05534447-4dc3-4691-9c6d-e404d05f8af2'),
 	 ('fcc38e45-1611-408c-8480-889774774785','100','95','92','100','100','85','81a4fcec-6878-4ca3-9ab1-49a1b1b8138e'),
 	 ('d9d76db7-5d57-428e-be84-67929ef11a81','75','90','35','56','81','75','bb38d06d-2112-40f3-8bc8-10491e453560'),
@@ -9466,7 +9466,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('0a3eb99a-9c25-4af3-8a74-0f955c44e12c','63','60','100','100','100','35','0ef639f4-88aa-4a4f-90ed-2b6915057248'),
 	 ('da742283-1267-433d-882c-9db0de38f8b3','50','10','35','99','100','56','96afb5cc-1876-4b54-873a-8639bd3001d3'),
 	 ('f584c99e-e632-4d08-80db-2657c1272526','8','11','21','50','7','5','e93b8653-9fd3-4ef8-9209-9c24e026c66a');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('c63c2f65-5abe-49a5-bc9f-44e095768967','63','73','42','50','100','45','ace4377c-9a4f-4718-866e-a5df326c3f01'),
 	 ('23fbc8d7-7b96-47bd-b819-638e3480a1c6','38','10','12','14','23','14','59230578-4b0a-4817-ac8a-82a9dc4af814'),
 	 ('3cb2d2ef-307f-4511-b063-43a804391b89','81','11','27','32','29','80','982eee85-ff8b-45c0-9632-c41c1fd8cc9c'),
@@ -9477,7 +9477,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('f93ab273-856f-4fb9-abf9-7d083b5dc0e9','63','70','54','85','66','72','9e018089-32a2-43fd-8b6e-3b06f49b9f71'),
 	 ('dd718323-07f7-423e-baf2-e92fadbca851','88','8','21','25','69','70','ff9fa393-3dc3-4357-a52c-9eea1a523ee9'),
 	 ('33122436-478b-42ea-9774-40583c99b925','50','85','27','90','69','85','0ae9271c-431d-433a-94d9-c5660c606d69');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('b4b4e0c5-a9c7-4d11-bbcf-8160b0362fa7','56','100','100','90','100','32','d63f36c0-8848-447f-8f7b-00019a6d5252'),
 	 ('319285e7-5a29-4fe1-b61d-e09055e1fca0','63','38','60','65','53','75','45f938a0-0f09-45e3-8372-0352e6dbcf03'),
 	 ('bbca9b3f-c7d0-4abf-aa20-c807eff3587e','81','82','53','90','64','64','df3329cc-ad89-4222-8a00-1a4e7199e06e'),
@@ -9488,7 +9488,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('547446e4-41c0-4075-8391-244f7ae2e945','100','72','54','95','100','70','9bebc6ce-977c-4596-a4aa-831d3a264a72'),
 	 ('2929bbf6-4e28-4054-8c78-52f950b1b02a','50','32','23','100','77','42','91adabb4-935f-4d0e-b592-1b2f63072e2c'),
 	 ('6217d55e-3c88-45b1-92b9-e4fee48aed3c','88','10','12','28','12','14','e1dae9c2-31ac-4347-862c-0f29845419bc');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('042412b6-2a8e-450e-8451-ab8ee323de70','100','95','63','90','60','75','f9808a95-990a-4e18-a5ed-2dc729f97dfe'),
 	 ('96b2d466-2744-44bc-b035-be024965b94b','84','88','71','95','100','90','1aaae037-4c84-4894-95e5-c071ed36b1ab'),
 	 ('bba90923-d1c7-4cbe-adaa-364cf4d86e3a','75','81','27','90','34','56','6b66682a-491c-4f23-b683-5bb847158ee3'),
@@ -9499,7 +9499,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('50b56ea6-da16-4765-ab32-d58e2b74b778','69','10','50','56','67','64','88dbe97a-a2b9-4568-9525-bdb920bcf462'),
 	 ('92d34e6a-809b-468d-b4a1-efae6f7e4b15','75','100','67','100','100','90','b73a926e-9c05-486f-803b-9627cb43b188'),
 	 ('222601f4-8bb6-4c7e-b348-25669697337b','38','8','40','14','100','42','702ded2f-f1ad-4722-8faf-774ebfb45100');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('918e28c4-e1f2-4592-83dc-3d836712d803','75','11','29','30','26','95','49d36a62-5e3d-44f1-a0bb-bac878998094'),
 	 ('a17766d1-4b10-4f40-97d2-756b90b23f72','63','10','100','50','68','32','a120e788-c40c-49a5-8ff2-02c3067e28de'),
 	 ('017c629a-a040-47c0-a5d2-d15ed69c9e75','50','55','25','100','100','60','5a282b0d-3750-429c-a581-c37605a01da9'),
@@ -9510,7 +9510,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('10989fff-6440-42b1-93b5-2bc990a2db2d','56','90','46','50','100','55','5629f7e9-1d78-4313-8067-1f51fbe12fd3'),
 	 ('49c32b22-695d-49c3-be29-eb077cf6cb8a','38','38','23','80','23','20','ca5a8a9e-a656-4f7b-9a18-d7879c92e562'),
 	 ('8c369e45-10ee-4e53-8579-3485a9df4e2e','56','8','21','25','24','55','ca9d905d-6946-4471-92b6-7e0e6c9b2dc5');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('a177638d-926f-4d14-a8b6-752a05bb2198','69','90','50','60','100','60','97163f24-856b-433d-a608-32403e1454c9'),
 	 ('83eb8a28-dc0f-4010-b853-0ecacf73f635','50','34','23','28','43','85','c817363c-4831-496d-8353-59d2eb5fba83'),
 	 ('cbf505d9-f026-4814-8e92-735c7e0776f6','50','100','42','30','100','75','5b0f9806-d5a0-4d11-aaaa-e4621dbfa8f5'),
@@ -9521,7 +9521,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('c0c41466-0d3b-4b40-8314-d0b1fba3f440','38','100','83','95','55','50','7bb64ef5-1826-4faf-b12c-bdf689783235'),
 	 ('b508d206-da68-48c4-bf2f-62e236118ad6','50','10','29','70','84','40','56ce4be9-c517-4f36-a23f-da9c09bbe49e'),
 	 ('23e78ce0-e9ff-4868-be0b-2089a19e244f','75','10','12','14','19','80','4abae1f9-6f87-4632-a1e3-ee82243a50ed');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('b1335b3c-2176-410b-8243-757cd7d284cf','75','12','27','100','100','75','a35d4991-e279-4084-86d4-45b5bb3c6313'),
 	 ('48d35148-7b9d-462a-89ca-9fa82fa7648c','56','62','79','60','92','60','a32751af-e30d-4610-b02e-4c2c2216c416'),
 	 ('fd54e7cd-88fb-4a58-82fe-fd754f142c19','50','12','17','60','48','30','7d717e8f-767c-415e-87fa-2aaeabf4c468'),
@@ -9532,7 +9532,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('a95d0c12-6837-4c8b-965f-1b58be9e47e8','69','100','83','100','100','100','4af9dbd0-064d-4744-b52b-1ec9a4861209'),
 	 ('bea20db5-50d8-47cb-bee2-e2f1288c3f36','75','83','70','84','100','70','66b6bf14-d18d-4fce-8507-faa8a16b6956'),
 	 ('48ea19f4-8b9b-4118-9145-bf20539dbda8','63','80','70','84','42','72','58361c42-cd29-4a4c-8995-2f0eb9e677b0');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('a11ca882-538e-4710-9a9f-119321d37328','63','73','35','90','73','56','06e9f46b-1866-4ac9-a61f-3939b049c3af'),
 	 ('62b6e049-3468-4442-80f5-61427be438d0','88','36','79','95','71','95','d3d702e1-2fde-4060-9921-c8b05167423d'),
 	 ('453f9658-f342-4724-91e7-d45bcee33615','63','32','50','100','89','100','6d998e7b-078b-43d8-af80-7f76981877d2'),
@@ -9543,7 +9543,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('bbca3c36-9d6d-436b-a871-ef4c8b9c01ce','50','10','17','20','28','20','2f25d77d-537d-4575-be9b-a41fce5e2c26'),
 	 ('2357fc77-d8eb-49a9-9782-8bf984a2219a','63','10','23','42','64','64','df4bc245-ff93-4b17-84d9-2d613fd410ef'),
 	 ('c14aa8ed-3964-43db-b2ff-f291275bfcb7','63','10','47','64','100','56','1d187ae6-4355-4f76-9d8c-be0cc0d1266d');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('2751c58e-b816-42f3-b09f-5ce295a88c7f','50','10','8','10','27','25','43268fde-5b57-48fa-b15b-207bc4470acd'),
 	 ('a54f94a6-29f3-49ae-abd0-f43bca59230b','63','10','35','42','52','70','909116d8-a2a8-48a6-bd80-eb7254bd5d8b'),
 	 ('b85303eb-48cd-4000-a87c-ecb21dd07e9f','100','10','12','84','100','60','d2225f43-e05f-4d62-a388-d740e57b412f'),
@@ -9554,7 +9554,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('ace17e1e-d496-4915-8a88-29a12a07fae5','100','100','83','100','100','50','fc4f377b-da06-49a9-86bb-8c6edc43093d'),
 	 ('6594a98d-dbdf-48c6-9162-464d490752cb','69','10','23','28','34','95','4ee497c4-5873-43fe-8fc0-de4c4f405d08'),
 	 ('171a32e9-edd3-4a23-923e-0987e6e1d620','38','13','25','80','66','50','91a1bb47-7f80-43e1-a3b5-cfa170c8704a');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('6ee470b6-cc41-40ce-a18e-39b46d79e8de','75','63','50','50','100','50','1d522da0-b88f-45fd-9243-695692a644c6'),
 	 ('cbfa48fa-b875-4d2b-a418-2f778a302bc5','75','55','33','50','95','100','d509479b-3883-42ba-b6bd-ec1d08f7d676'),
 	 ('dbb8cc4d-e0b1-4a9e-b33f-1a366dd62bc7','75','48','75','46','50','56','1f46c8c0-b10a-4fd9-b57f-cb6c7b35e093'),
@@ -9565,7 +9565,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('c74753c9-e5a0-4072-8b4a-68160c8e4d22','75','73','35','80','69','100','9cd5f168-9ef1-4d24-9284-b3e663a9594a'),
 	 ('064a9bb9-cd58-47f2-939d-096f01825ef5','75','95','83','85','100','70','b9e0bae0-54e3-49c3-8e89-417eea78b04f'),
 	 ('5e75c6c9-e763-418c-b735-1604ed96859b','56','62','79','60','92','80','bf5951be-d7cd-4dc0-8b73-ca5f32e464ea');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('c981bd32-98db-4ef6-9161-79caad3e3c31','50','10','12','14','60','14','97f44185-0ccc-408c-b9d8-5e4e6e7f6243'),
 	 ('cc40aff9-5446-44e4-8ab4-0641d82a0e2d','75','12','23','64','64','74','25c186a5-8670-48c5-8f3d-4d47de681665'),
 	 ('bdb4800d-d59c-410b-a3f1-7dd44f18fab1','75','11','23','42','25','100','b9d4eadb-a25b-47c2-bcb1-5ebd5ae58c58'),
@@ -9576,7 +9576,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('bd9da6ab-39fb-4b9b-9fe3-113fb640166e','100','10','12','14','10','14','fe555c2e-70f3-464a-a385-59dedcbe7227'),
 	 ('f7365707-0342-44cf-90aa-202c41c2a234','100','8','8','10','100','25','00924041-97da-4b4b-8cbc-1c3ea71e6bf6'),
 	 ('d5d9dd52-cabc-4d9d-9d4f-70d357e4f38f','56','48','38','90','50','100','73d3a43e-22ff-410d-9f85-a18b8c4973f0');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('a3cba722-2e6f-463e-a2b9-300736b6958a','75','100','100','84','100','40','472d5013-bf08-47b7-bb22-45cc705dec76'),
 	 ('8e009cf8-5781-40f5-abcd-61f1f96e9a00','75','48','71','70','71','65','69b8da47-5531-4187-ac62-4c1fde79fa3d'),
 	 ('3dddebd9-eb26-4c78-910e-7a3cb02d22d6','50','28','35','42','34','42','8f8d1e6f-221a-4aa2-8f5b-3eae0ee0e772'),
@@ -9587,7 +9587,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('fc01ee75-130f-4852-8f9a-00e3d3478e03','88','83','42','100','100','64','999461b8-69a4-4b48-a42d-cce87bb62e54'),
 	 ('a359de41-986e-49cf-bc62-08705e13039c','75','80','42','85','97','70','13042421-f7b4-48d9-a9e3-811973c5f36b'),
 	 ('9d3f6600-39af-4485-9b96-675fb5ea8380','63','63','53','64','58','70','138a171b-bed0-4484-98ba-f3c57408752e');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('7e0b2867-343d-4367-9698-a085bda80efd','75','22','42','25','26','30','d09dce18-bbba-4a60-bfed-95194c344611'),
 	 ('b848f97c-160e-424b-af1d-9a9108c9663e','100','80','67','89','100','56','9cebbb38-f76b-42e6-8ae8-8d8d566bc020'),
 	 ('7942735d-0f27-4e18-9111-e215bff90565','63','63','70','84','88','90','415dfa8e-d07e-433a-8eaa-e6f0b30cc27f'),
@@ -9598,7 +9598,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('466fbfb4-5a1d-486c-8dc1-79bd250a2ac5','38','80','58','80','100','40','37469feb-66e1-44d9-9682-96ca9a3dd3fa'),
 	 ('67f423bf-57c0-4499-9652-e4529048bad1','50','34','47','72','39','56','3cdb0763-cb87-4524-9366-f300bf7583f8'),
 	 ('c05516b5-a148-446b-b018-8e57226c976c','100','48','38','60','48','50','6eb3c80a-582f-4f70-a465-f3d16a95d1a8');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('4da450ee-ceb9-4a25-ac7e-f71aa9c4422c','63','100','46','100','100','45','c7000fb1-2b4c-438e-b7da-42641e2c9c4d'),
 	 ('eaa3099c-07cb-4a84-89c8-02f7c54f8232','63','53','21','95','73','75','bb93c46c-c7a4-47ee-857c-7bc3cf521b46'),
 	 ('643d3907-541d-4bac-8f4d-4d705c45f00e','75','10','35','42','74','72','06eff019-53ed-4065-9556-75ae06354e3f'),
@@ -9609,7 +9609,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('a24fd2ea-2336-498b-9ac2-6e52237b44cb','56','100','71','75','47','75','1258aa31-6a27-4bd1-abfe-a2d161537607'),
 	 ('f53d3107-d163-4d97-bd67-a161843bf32e','100','10','12','14','59','42','045f81b9-ffd6-44a6-b15c-2450508d7c70'),
 	 ('5ec1c339-8de6-4c89-8771-ec63566d7ac3','63','32','35','84','51','64','32fe2622-47ad-4c47-87a8-ba151a567420');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('e6471023-0ef8-48fe-968a-297925f5532a','63','10','12','14','59','56','c6129672-0c95-4f0d-8910-a37ee7a9f7dc'),
 	 ('3e2f0ba9-32dd-4924-a628-7dfbbc75b304','63','14','50','65','59','75','8d3833e0-1453-4ba4-925c-df1eed7b1e91'),
 	 ('87111252-a828-4546-9e16-e4c93b5b020d','88','22','33','28','18','85','677c0fa8-eb2c-4302-b73d-38b97d5e4deb'),
@@ -9620,7 +9620,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('005e9d21-3286-40db-94b5-52c12ce75c6d','100','83','67','95','100','90','fa3bdb1f-05d9-4241-9bdc-0d9cf24cb592'),
 	 ('d45a85a6-3065-49d1-9d42-6674db870509','9','28','17','50','53','25','12f8caed-7596-4fc5-a536-83cd6663efc2'),
 	 ('bd84a17a-8008-4df6-8ebf-b10a905549ef','63','30','25','85','100','90','17fe634d-8aa4-4876-924e-5e2ad880eb51');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('e31417ed-a80b-4b96-b989-bae180d6bb2b','88','100','33','100','100','55','ca22f29d-1cbe-4f16-9e5a-0d11695f929e'),
 	 ('dfdfb16c-bad7-458c-a67d-d33e7073d4e9','100','12','17','100','100','40','7f044b09-5fc6-49eb-868a-dd039cd8e126'),
 	 ('deb817de-8646-444c-bdf8-214766fad06b','50','10','92','100','100','20','f6fb32e1-f8ec-451e-9aa4-e1c2929ef1e3'),
@@ -9631,7 +9631,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('bc7817f6-60df-4f33-9eb6-d711658525df','75','10','12','28','80','80','85ef5955-d21d-4ad4-bff1-4f27c2a75a30'),
 	 ('17b4748c-b36e-40a3-9f48-53b173a46f22','75','53','60','74','46','56','a85df2dc-8316-4b34-972d-40f18febbf9f'),
 	 ('07cbe275-514d-442f-95b4-032b3dce5e59','88','55','60','40','37','56','087f3911-9e9c-4457-b93f-f9d124387153');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('a9980dab-4acd-499a-bf94-0e652e1b5f9a','75','85','53','64','100','55','f05d118a-adef-4cd3-8172-f08b09d05d12'),
 	 ('a95c8e8a-873c-483a-b481-96b468411abc','50','32','27','42','70','52','7fba7029-7bee-4695-a4d0-dc13379675e4'),
 	 ('6be4b5b7-7a0e-4122-b0af-c9252d8aba9e','75','34','33','100','100','75','739aa498-46d9-449b-ba25-9b949935dc0f'),
@@ -9642,7 +9642,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('8a202081-48cc-4246-8289-680f21b13b4f','75','53','42','85','71','64','681a91b0-c7e1-486a-a204-e92bd7a245cd'),
 	 ('d01d41cb-9d09-4730-aef3-f59771f0b21f','50','48','42','35','67','60','ba0016c9-175a-4b32-b4fd-cc5783e08b15'),
 	 ('536e5f33-6381-4888-ad00-717ebc76a7d9','50','95','58','98','85','70','2c0b4367-4cf4-4f7f-a686-eeda50191b96');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('b25e64bc-6a42-4e8b-9d44-38bb0fd27337','75','80','33','80','36','70','979c042c-ba0a-4b80-a7ae-8e167e69c4d5'),
 	 ('44d049d0-895c-4a21-aa86-f202d2fba28f','75','63','35','90','100','42','93f7dc53-f9e3-43b1-b5ec-2eef6ec8a218'),
 	 ('393feff0-54da-4534-ab50-d3792d82e00d','38','28','45','28','27','70','94e3cd23-0c1d-437e-bfeb-96a9613566e2'),
@@ -9653,7 +9653,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('920429eb-930c-4bda-bb01-daf42ac1fc59','75','55','37','50','44','26','b202c252-7f52-48ff-9c57-611cd4878239'),
 	 ('af2f7bea-1b5c-43cb-9533-293f20ceb18b','63','10','25','60','71','45','8c725245-3708-4866-b824-34f3eb3a2cd9'),
 	 ('5777cdd3-f193-4e67-aec4-1bb49e02253d','56','12','21','10','29','80','1b583b1f-aff4-4dd7-b1b7-908df45256de');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('eff9d127-a647-4a71-bed1-1e60418da931','63','63','35','78','48','64','3a428afc-64e4-4462-b991-9c5a6bf6ccc8'),
 	 ('82cd878c-aefb-40ac-8278-dd61adb5d36a','50','10','100','60','74','60','4c7af5d0-2cd7-494c-930e-dd88e7bfed4f'),
 	 ('7c52a30f-02eb-46e9-88f1-279f25db129c','63','10','12','32','93','75','72f1f9ee-d473-4e4c-9730-364c4b3b8acd'),
@@ -9664,7 +9664,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('ee63eb39-f09a-4b73-a487-729533e30251','100','53','25','65','68','70','27924f5f-f6f2-4cda-bc66-4a250a676ec3'),
 	 ('0e65dcb3-d31d-4fc6-b80b-efe3e100672e','50','48','23','64','66','72','9e6d93f3-d1f8-4d97-a365-e2984e9a7f7e'),
 	 ('1d84727b-4496-435f-88cb-b943ebc2bde5','100','100','100','100','100','100','11018180-7ccb-4dc7-a306-f68e56d90517');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('dd9e236f-839d-4dea-92ad-980bea112b76','50','32','8','100','100','40','a6c62dcf-b747-412e-b2f4-dac1cb9f3521'),
 	 ('47c0afe3-db96-4385-94b6-60fc39d33dfd','88','10','47','56','100','28','8d2171ae-8b30-4558-b7e0-9aa9b49f8314'),
 	 ('1fc12818-f516-4167-aa92-be7dfefb861e','75','34','35','70','37','56','61648ae5-958e-4717-b5fe-6c306c7a2bac'),
@@ -9675,7 +9675,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('bddacc89-0f95-4a1f-ba2f-9eae8ac92633','100','100','100','100','100','100','f854ffd9-a76f-4648-a388-51ba43114821'),
 	 ('21deb626-eabf-4db0-b32a-3e47043298d6','94','10','100','20','83','20','a2715487-7489-494b-a60b-5d42cd3f885c'),
 	 ('e7d13170-e769-4141-8769-9c2baf237e3f','63','16','25','20','23','80','5f07c8f3-88ff-43fc-9f72-33bba3300161');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('10e82159-eb74-4a10-b528-ecce02383681','75','12','23','28','35','95','e5af3625-f657-4263-9dbe-c943de31e2a5'),
 	 ('195fafde-1d9c-49fd-8b7a-4869149a04af','75','10','29','20','23','80','34eefb6a-f84c-41de-bfed-dab9951234c0'),
 	 ('dc684c46-4300-42b6-98b7-91b2ee94d80d','81','10','12','14','48','50','3e1f9d52-7771-4369-92d0-a573ad0f8967'),
@@ -9686,10 +9686,10 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('b11d8fdb-68f2-4359-8746-9f9e1d76fed5','69','20','33','50','25','70','3935cd56-5e03-4245-8a26-dde46b48a5c1'),
 	 ('bbd9125b-9e22-4389-affc-8f29c2557908','63','80','25','90','87','55','0ee6f9a1-5f45-45d5-be33-7b9143dcaca1'),
 	 ('feda212a-225b-4449-a73d-c83c6acebea1','75','80','25','90','83','75','88b5469f-4d1a-4251-a58c-150ab77edae9');
-INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durability,power,combat,superheroe_id) VALUES
+INSERT INTO public.superhero_powerstats (id,intelligence,strength,speed,durability,power,combat,superhero_id) VALUES
 	 ('cf1564b6-1bef-4cd8-9a1d-6efc577346f4','63','10','23','42','44','42','eedb7615-3f66-4530-ab6d-f028225dca07'),
 	 ('46cd67cc-75e5-4cd6-b04a-b7080c3b9823','88','10','12','14','9','28','b0247236-d9b4-4e6c-a7cd-3e363673ae7a'),
-	 ('2661c473-0ffe-49ef-aa57-3a4491502e8b','75','24','42','100','55','95','d7f27efc-fe30-4e3a-b3e3-41df731450a0');INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+	 ('2661c473-0ffe-49ef-aa57-3a4491502e8b','75','24','42','100','55','95','d7f27efc-fe30-4e3a-b3e3-41df731450a0');INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('5e90aeca-9670-43c3-9132-d44e90bb65bd','Ex-Spy','Mobile','a653e8c6-1ab5-4c6b-8c4a-c8ac6e567e1d'),
 	 ('b86a7afd-54a7-4880-8d9b-6c33430d73e3','Mercenary, janitor; former pirate, terrorist','Mobile; formerly Manhattan, Hellcarrier','84507000-0beb-4a66-8288-0a9c578176a1'),
 	 ('1634eb0b-fac1-4f67-a9dc-d249f4197319','Mercenary, former government operative, freedom fighter','-','8966dac4-8773-4cba-aec5-4d453822fce6'),
@@ -9700,7 +9700,7 @@ INSERT INTO public.superheroe_powerstats (id,intelligence,strength,speed,durabil
 	 ('2aae2779-c961-45d9-8f24-43f98cd067ca','Dimensional destroyer','-','2fabe5e1-deca-4744-a657-d32f841deabc'),
 	 ('6d548ce9-2ed3-4cfe-a468-29acd751d3bf','Professional criminal; former professional boxer','-','1ec71757-352c-47a1-aaa1-1fd356b71bb3'),
 	 ('429b1c45-630e-478f-ba40-86d6e1bc7d9f','former samurai swordsman, former British mercenary commander, former soldier in the Confederate Army','U.S.; formerly Diedenshausen, Germany; Milan, Italy; Paris, France; Japan; England; Atlanta, GA; Montreal, Canada','d47f8c30-1862-45b8-9bb3-62fb833478a7');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('95777837-687c-44c7-9939-ec70f93e9327','-','-','28a75986-b424-405c-8584-a99cca4f9952'),
 	 ('10368383-2233-43d8-87d5-6f69e1fc834d','Adventurer, archaelogist, ambassador','Rann, Alpha Centauri System','a2767983-de29-40bd-9587-04e8bf72374f'),
 	 ('b1a597af-e00f-4717-9841-1ce654e341d5','Green Lantern, former history professor','Oa','141fdfaa-3ab1-49e4-9d89-6ff65c8f8461'),
@@ -9711,7 +9711,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('2c149328-5c43-48d2-aac0-38cc1c4449d7','-','Qward, Antimatter Universe','70f4f2c6-abd3-4312-b8f5-364abd96be61'),
 	 ('d9fae295-1527-4f5f-88ed-f2304dc9d9b7','-','-','cf35bf22-4339-4060-a47d-41ca23fd7149'),
 	 ('4b083e66-18aa-4bde-a8d0-1e171e111cb2','Former starship captain, Herald of Galactus','-','e0ff7776-a8a8-45e6-867d-81f1019ab07c');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('5054c902-cf7e-4cea-9aa3-e00ba642d81c','-','-','c49ccf99-f649-4ad2-bf90-f53efd5efbe4'),
 	 ('72fd3ae1-8002-4c78-8271-2812bc879ded','-','-','dbd53964-eb31-4aac-968e-237c1ce7d39c'),
 	 ('c4203c6e-e3ea-4042-8a37-6aa30a7df7e4','Conqueror, scavenger','-','fdd048c1-c4ee-4571-b074-7eb503253338'),
@@ -9722,7 +9722,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('6d8127e5-3a92-4aed-9c06-b606e9ee6a25','Adventurer, Chairman & principal stockholder of Worthington Industries, Multi-Millionaire, Heir, former terrorist','-','3738a8c5-8a66-4f8e-ace1-3860be5c3cf0'),
 	 ('cb3fffac-c1b3-476b-b1f4-78d4631a8f51','Student; formerly Conqueror; Scientist','Celestial Ship, mobile','5b38b987-bb4d-4d56-8b7c-e4a45cfaa6d4'),
 	 ('cae778f1-3322-4aa3-bcfe-ac5ba45a67a0','-','San Diego, California','ee2465ec-7916-4abc-9c9b-076c7ae1520f');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('3fa8210b-0f32-4342-9f92-a0780f508790','Vigilante; former journalist for the Daily Globe','New York, New York','c6f4be93-08a8-41b8-b48a-d8911ef69036'),
 	 ('bf7a6fd0-2e9b-41a3-a84f-6c3efd7d10df','Adventurer, student','-','7f4f4065-ceb1-4cdf-a138-cf39ae2b4e63'),
 	 ('6689bde3-0f25-421e-b34e-c40ed6565cb5','-','Avengers Tower, formerly Olympus','d86a5469-a27b-4941-9b53-f0614ef927cf'),
@@ -9733,7 +9733,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('bdb29384-8223-4849-8fbc-44f41c5d7766','Physics Professor','Ivy Town','58efc664-83c7-4250-a790-aaf1a6f36701'),
 	 ('4e4acb7f-8ac1-473c-8c48-b64bc414cbd2','-','-','2e87248b-32d6-433c-9cdd-030e10a36ac1'),
 	 ('eb056376-4da5-44f8-9ede-c0ef7ea095a7','-','Formely; Hyssa, Metropolis','f3733b9a-59f4-4099-a135-c5539f348421');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('d2230d99-39f4-4e25-ad11-394fe4be66e6','Leader of the Neyaphem','Brimstone Dimension; formerly La Isla des Demonas, Bermuda','622ffef9-d7c7-404c-825c-c2c9dfe5f514'),
 	 ('8ef7605f-b3d7-492f-8667-34a743f1e0bb','-','21st Century Gotham City','a4fe4246-581b-4adb-95a2-aaeb3bacbc09'),
 	 ('fb0874a4-bbbb-4f83-9584-415beffac909','-','Gotham City; Bl?dhaven; Tibet; New York City','afacb2b9-2a66-41db-8f15-51fcf3f10a38'),
@@ -9744,7 +9744,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('98c034dc-2048-4d5a-b42a-ef097f41139f','-','United Planets, 31st century','0df52ce4-2b47-488f-ad5b-c90b433a5faa'),
 	 ('c503f10a-4b6a-45e0-ae94-fc3a61325f99','Former Police Officer, vigilante','-','38a21387-e6fc-4837-9cd0-af07b4b778ae'),
 	 ('8bf2fb54-ea03-439a-a32e-97c79e271fa5','-','Gotham City','045a6b84-4a7f-4af1-8510-4d78e41575ad');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('72ca4cce-a7fd-4b51-85d5-7f6d8e76c1ad','-','Gotham City, formerly Metropolis, Platinum Flats','802d1b2c-9a0d-45dc-804e-ba42cd5b20c0'),
 	 ('0d05e473-3f40-4770-8319-c7a44c3bcace','Biochemist, formerly Xavier Institute for Higher Learning science and math Instructor, mutant activist, college lecturer, researcher, professional wrestler','Xavier Institute, Salem Center, Westchester County, New York','0e10c48c-b91e-4ffc-b501-225eadebc965'),
 	 ('c890bd49-af3e-49cf-958e-6d708b1448eb','Currently founder and director of operation for X-Corps, formerly Adventurer and Headmaster at the Massachusetts Academy, in charge of Generation X, Interpol Inspector and Agent, freelance detective, professional criminal, involuntary operative for Factor','Muir Island, off the coast of Scotland. formerly Massachusetts Academy; Xavier Institute','58fb023f-9686-4c62-b357-d948d77f235d'),
@@ -9755,7 +9755,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('9e5a4691-88ff-4795-b18d-ab761573f98b','Guardian of the Korbinite race','currently New York City, formerly Asgard, formerly the fleet of Korbinite ships.','8d09f72a-0897-4598-ba1d-9ba580e257ae'),
 	 ('b27107e2-0b64-4f49-83c7-5f587be0bede','-','-','9eb7560b-004f-4d90-aa69-b2e28df2fea2'),
 	 ('334111f0-cd69-4659-9935-889f3961eb8c','-','Gotham City; formerly Bludhaven, New York City','dcfb5d5e-e08e-468b-af2e-7bebb7a1d6ec');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('7b6f12a8-90bf-4933-a001-7db0939a3c20','Former wrestler, federal operative','-','8486d649-d7f5-4763-ac71-8ea344f9e293'),
 	 ('4e5ba756-fe1b-495b-91bd-520a01523ab9','Adventurer, Struggling Actor','Prague; formerly Hollywood, California; formerly Manhattan, New York','8cf3466d-3f63-442e-991b-4323676bf006'),
 	 ('d0215425-5e0d-441c-98c5-9070f13610e4','-','-','414e8aba-904e-4ccb-9f24-387f4088185f'),
@@ -9766,7 +9766,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('73d346c8-3bad-4890-a3db-da04a5ac2a09','-','Mobile; Formerly Kahndaq; Fawcett City; New York City','430d54f9-e698-40da-a0ae-c845cd6b847b'),
 	 ('e04eaa45-5d59-42f3-a1a4-28678a639fd2','Crime Fighter, High School teacher, Former gold-medal-winning Olympic Decathlete, formerly Secretary of Education under Presidents Pete Ross and Lex Luthor.','Chicago, Illinois; Metropolis, The Hall & The JLA Watchtower','938e5fab-78bf-4207-9fe6-dd6989991abb'),
 	 ('648e1be2-86cd-488e-ac6d-31e875f15a6b','Adventurer, Intelligence agent, former ballerina','Mobile','540a3d4f-3517-4148-bdf8-4ca07400587a');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('7472993d-97ae-4227-af60-7f5eb900c796','Inventor, former soldier','Base of operations unknown','c6a76eb6-7c03-4360-ac5d-3271a6d238f1'),
 	 ('b15d952a-a2f3-43af-9308-49b7eb8480a1','-','-','f9808a95-990a-4e18-a5ed-2dc729f97dfe'),
 	 ('7ec08b13-64c2-40dc-8acf-b92bf5ff7600','Former Superhero; News Reporter','-','7541e5ef-2a15-4653-8e57-7b8fd64bcb6f'),
@@ -9777,7 +9777,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('465245fb-548f-4e44-a502-33ca5e1e6b5b','Construction worker, Firefighter','Las Vegas, NV','08a6ac59-07bb-455e-980b-4df338a8c29a'),
 	 ('23a7a1a7-2bc7-43a4-b845-928138935bc2','Criminal','-','34dfa66d-7df9-48ff-8cde-b429420e7ee8'),
 	 ('95836dc7-6d5b-463f-a298-b1de3ef762b6','Professional criminal','-','88dbe97a-a2b9-4568-9525-bdb920bcf462');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('6552057b-062c-4fa6-8e4b-a864cf812bf7','Serial killer','Phantom Zone; formerly Krypton','bb2d0935-0ec9-4240-8197-9556bcaded68'),
 	 ('1c5d7efb-01ee-4f6b-be9d-1e05086c2426','Social worker, adventurer','New Mexico','702ded2f-f1ad-4722-8faf-774ebfb45100'),
 	 ('590d397e-a36d-4c7c-b30c-52023d2a74dd','Inventor working for the U.S. government, former soldier','Arlington, Virginia','6f9741d4-13ce-421e-88e8-2f31e1be0d0e'),
@@ -9788,7 +9788,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('c5c46000-9136-4e6f-af60-3536474f5136','Adventurer; formerly student, activist','Base of operations unknown; formerly Xavier Institute, Salem Center, Westchester County, New York','3a428afc-64e4-4462-b991-9c5a6bf6ccc8'),
 	 ('61a87f5b-9085-449b-bd9d-b4c869e52ea9','Leader of the Indigo Tribe','-','1d522da0-b88f-45fd-9243-695692a644c6'),
 	 ('5dd8f5ea-3008-41b2-83ad-8633b0444dcd','-','-','72f1f9ee-d473-4e4c-9730-364c4b3b8acd');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('16b1fd1c-badb-4698-976c-f51c166432e8','Adventurer','-','7fa50afd-b36c-4589-8623-eeadcdf28f15'),
 	 ('6068aa82-2d35-43d8-adf7-315ac101261b','-','-','96ff3e36-0872-40cf-8824-48a917ae4db1'),
 	 ('1a4959cf-82e5-4b45-a84a-678c9de32ee4','-','Smallville, Kansas','007a18a1-79e2-46aa-8200-14f6a113bda9'),
@@ -9799,7 +9799,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('3e6d982f-06b3-4bf8-8712-3027e3a7afce','Professional criminal','Mobile, though he generally operates out of Metropolis','acda0830-4b31-4318-9f7e-53bddb91d10c'),
 	 ('f1d25ab3-78fd-4e44-83af-fa18ec6c12d3','Queen, Royal interpreter','Attilan','61648ae5-958e-4717-b5fe-6c306c7a2bac'),
 	 ('6205650e-4c5a-4753-951c-04126cc6da16','Geneticist, Criminal, biologist and mutant-supremacist','Many bases throughout the world including his State Home for Foundlings and the Center for Homo Superior Medical Care.','6806cafd-69ec-4b4f-a5c5-0cc51fbc2c57');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('b7dfa824-6d17-4638-a6ac-340913570c40','-','-','c154e8dd-9cda-4bcf-b4fa-b572cdd4cf48'),
 	 ('ae365787-6f2f-42b4-939e-e32379ab6104','Vigilante and detective, former police officer, former Circus Acrobat','Wayne Tower, Gotham City; formerly the Batcave; formerly Bludhaven; formerly New York City','5336966b-8b64-47c1-8066-023a0f7c207f'),
 	 ('b62cdda4-3a7f-45cd-90fc-c545f0235181','Deity, Monarch of Asgard, Asgardian God of the Sky, Wind, Wisdom, Crafts, Time, and the Dead, Warrior','City of Asgard, Asgard','fa3bdb1f-05d9-4241-9bdc-0d9cf24cb592'),
@@ -9810,7 +9810,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('76b4d2c7-a240-459e-9a27-ac84dc0f0fb0','Special Professional Criminal','Gotham City','3e1f9d52-7771-4369-92d0-a573ad0f8967'),
 	 ('4f80def9-8417-484d-9d40-2c06affc8dcd','Former partner of Carnage, Carrion (Malcolm McBride), Demogoblin and Doppelganger). Before she became Shriek, she was a rock band groupie and drug dealer.','-','0a08f6e9-5004-4adf-834c-c861f661a674'),
 	 ('25cf0e0d-73a4-413a-a7ad-9bab0348b1e1','-','formely Atlantis','a32751af-e30d-4610-b02e-4c2c2216c416');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('22b496da-e6eb-4814-afe0-8e756aec39a8','-','Kahndaq','3593cd5f-5981-4d15-acca-0974447e0ec3'),
 	 ('55312075-3b2d-484b-b2bd-22ddb29b2586','Herald of Galactus','-','8d6e6a20-f3c0-47ae-b1a3-1a7290cc5969'),
 	 ('546e6f78-d17e-4899-851b-03980269bf33','-','-','ec1b72bc-b57f-4d24-9158-4e0ed4881589'),
@@ -9821,7 +9821,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('a1499146-d8c9-4635-9c0e-bc1200706919','former secretary, researcher','Ottawa, Canada','138a171b-bed0-4484-98ba-f3c57408752e'),
 	 ('7eb0ef4d-d82e-4f1a-97b9-f812204216b7','Initiative instructor, adventurer, government agent; formerly: Sentinel Squad O*N*E combat instructor, soldier, pilot','-','f7598083-34c3-49af-a6f0-4a8d34728e7b'),
 	 ('0e1279d9-c7aa-46c3-b8b3-87ebacd21efd','Adventurer, Biochemist, former manager of Avengers Compound','Avengers Mansion, New York City, New York, (formerly)Avengers Compound, Los Angeles, California','e1dae9c2-31ac-4347-862c-0f29845419bc');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('b8592ac0-46e1-497e-9e38-6ab62554354b','Occasional adventurer','Fantastic Four headquarters, New York City, and Keewazi Reservation, Oklahoma','119f8b5d-3af7-4fdc-8f36-55ead3470b0d'),
 	 ('b4487cc7-ebb9-4305-9e37-b37bcedb4927','Reporter, professional criminal','-','1df5a34e-2d2a-4358-aad4-dda497c22bf6'),
 	 ('28f60d6f-0acb-48fb-a4ce-cc25a3a97585','-','-','e131c731-e8db-4974-a189-39cdc7464fba'),
@@ -9832,7 +9832,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('809189be-ae65-4b37-9fe5-670bb2704e2b','Dictator of Apokolips','-','3def392f-bafb-4d50-80a5-9f572da8e5dd'),
 	 ('81853684-5df3-4ae7-beea-b8e73e5c3555','Adventurer, singer, former actress, model, revolutionary','-','54a5925a-550e-473e-a627-a518fb15bf26'),
 	 ('9619e782-af66-4046-9ef5-50e8b7cda976','Psychiatrist, teacher, adventurer, former special consultant to Gamma Base','Psychiatrist, teacher, adventurer, former special consultant to Gamma Base','979c042c-ba0a-4b80-a7ae-8e167e69c4d5');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('d4e2f857-17a9-4618-be8a-95782534e191','-','-','bc627d54-e9cc-49c7-8b0c-b6466530590a'),
 	 ('4c1ae961-ad79-446e-b4f3-b4a2f9ad5a9a','-','C.I.T.T.; formerly Monster Isle and Titan','34637118-e5dc-47ad-b02e-1515a8d444c3'),
 	 ('94d70235-f7d5-406b-ac31-709dcfecba7b','Agent of the Company','-','c767298a-dcee-41b6-91cc-68ca65df2b46'),
@@ -9843,7 +9843,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('afbf8b9d-1ad7-4d48-ac6f-489bc04d3e34','Professional Criminal','Central City','a8452c90-6aed-4abf-8f0d-a8a4b17e7a49'),
 	 ('b86a945d-0944-4b8a-aa4c-5c467fd9f290','Currently Adventurer, formerly Graduate student in geophysics','Alexandria, Virginia','8c725245-3708-4866-b824-34f3eb3a2cd9'),
 	 ('c9ba2228-5a1d-42be-a65e-801b680c9e0a','-','Bedford-Stuyvesant, Brooklyn, New York City, New York','79e8a6c5-5784-42ac-94d2-6822587f1ce4');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('57f32bd7-4b19-487e-9995-342d524f3960','Member of the Fantastic Four, financial manager for Fantastic Four Inc, occasional model and actress','Pier Four, New York City','eca342ad-931e-4622-af70-25018143497e'),
 	 ('70255b62-314d-45a9-adeb-3723e9c3655b','-','Arkham Asylum, Gotham City; Ha-Hacienda','a89f8384-b595-4dfb-a2bd-6bef8f16f4e4'),
 	 ('639a057d-4d4b-45a4-89f7-c80efcf96a90','Former Spy, Government Operative, Mercenary, Soldier','-','1d509af7-ded0-4b26-8084-718bd51c6992'),
@@ -9854,7 +9854,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('d5450eff-857d-4bb0-a556-c4ebe7451a9f','God of evil; former god of mischief and madness','Asgard','134313ac-cc80-4f0a-9e92-7a3b0219c7d4'),
 	 ('f736d81b-b2f0-4143-b60d-fac17130387a','-','-','9e6d93f3-d1f8-4d97-a365-e2984e9a7f7e'),
 	 ('d12e488a-7e88-436e-ad01-93afcdbb0233','Adventurer; former master mechanic, professional criminal, mercenary','-','a3c5682b-7f9e-4b83-a417-8101829b2fd8');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('5f663f92-30cd-4b12-8c6e-9ec2011c3355','-','-','8d3833e0-1453-4ba4-925c-df1eed7b1e91'),
 	 ('3228cdd8-f5fa-4467-bd3a-a642e8ffae14','-','-','e9225bae-3805-4bb7-83f2-9a3acae20801'),
 	 ('01eac36d-14cb-4d06-87e0-015e77d19077','Adventurer; former counter-terrorist agent, private investigator, government operative, S.H.I.E.L.D. agent, biologist','New York City, New York','5bd482f1-dee5-4732-855c-0c384031e6ce'),
@@ -9865,7 +9865,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('2c319151-df44-4a14-b9d3-78d4e723ab96','Adventurer, high school student','-','56ce4be9-c517-4f36-a23f-da9c09bbe49e'),
 	 ('47d1c42d-a336-4bbd-84f0-b0439a0a462f','-','Happy Harbor, Rhode Island','e1b5c917-b296-4936-8266-9cda153d8c43'),
 	 ('4abbf9f2-f0a8-4f18-9be0-8143032c6af8','Lieutenant general in US Air Force','-','5fda06e4-de4e-4e18-881f-f572580a4edc');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('f2a6e7f0-b687-41fd-bd1b-fbecbb37ace9','Adventurer, former mechanic, waitress, terrorist','-','85ef5955-d21d-4ad4-bff1-4f27c2a75a30'),
 	 ('5b329d12-4eb6-4f0c-852a-c47e1581ab79','-','Wayne Tower, Gotham City; formerly the Batcave;  formerly Bl?dhaven;  formerly New York City','7fd979b4-adfa-4f95-8ac9-2147a8ed1dee'),
 	 ('78f2c7a6-bcfd-4b37-9ad5-313b62fc1e15','-','The Astral Plane; Formerly Cairo, Egypt.','a35d4991-e279-4084-86d4-45b5bb3c6313'),
@@ -9876,7 +9876,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('7a9e424f-30a2-43b1-b54c-a8c7afc8caeb','Assassin','-','694d23ad-1c66-4e18-a4aa-4653accd3290'),
 	 ('9e4ecc67-1356-4224-ae1a-70d1da19ab09','Ph.D. in toxicology & entomology','Formerly South Africa','8d160fb8-a492-4e67-aa1c-fd29ef541cd3'),
 	 ('30101151-4070-4d9b-ab06-1d800f4fa627','-','-','4dab2508-9063-441a-89b4-5a5813aaa01e');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('f2063215-7aec-4e98-af48-5c043ed7f384','Laboratory assistant, model, adventurer, NYC police','New York City, New York USA','58c7584a-f852-40e0-aea8-54b842853b11'),
 	 ('c76bc517-1053-4d86-a846-38f157136533','Mass murderer, scientist, would-be world conqueror, ruler of Phalanx','-','999461b8-69a4-4b48-a42d-cce87bb62e54'),
 	 ('1ba1dc1d-0260-4009-a4db-093d5ec8678d','Cab driver','-','97a3ed8c-db26-44f9-9cbd-9e0caef50729'),
@@ -9887,7 +9887,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('06986e64-33d0-4030-856c-9139fe62df32','Scientist','-','8aa4e1db-3420-4a0f-867f-616dbd54ca33'),
 	 ('e39b57af-36f3-4c8b-95bb-30f6e104329d','-','-','4d46e78a-9185-4582-9294-4d47bd024450'),
 	 ('fcd79e6f-a3d1-4c8b-883e-e1bf7240f108','(current) Adventurer, student, (former) Artist','(current) Professor Charles Xavier''s Institute for Higher Learning, Salem Center, Westchester County, New York (former) Muir Isle, Scotland,; a loft in Soho, Manhattan, Ust-Ordynski Collective, Lake Baikal, Siberia, U.S.S.R., X-Men Headquarters in Austra','99883334-8cf8-4e65-9b42-5d298d6f8219');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('1576a35e-7b36-41b3-8a23-f815d6f8411b','Occupation unknown','(before death) Paris, France (formerly) Moscow, USSR; Los Angeles, California, United States','942cc87d-abc1-4aa6-ae68-c46fa19ecde0'),
 	 ('139e333c-2788-4730-ae96-2e76993c0901','Inapplicable','Mobile','d2818f33-4c6b-4953-96f2-82ae9f791442'),
 	 ('1b26e196-6fdc-4d96-881a-d2892753c3f0','Terrorist, would-be conqueror, Former leader of the Acolytes, Crusader','Currently mobile, Formerly Avalon','0fdd56e8-5a68-428c-abcd-5f1145967335'),
@@ -9898,7 +9898,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('b0921ce4-98b0-43d3-8116-1d24e316b015','-','-','ee26d33d-b915-42dd-9eca-4557080718cf'),
 	 ('5aadd89a-6020-4175-b802-24b3112bfc19','-','-','19d15d5e-38b6-4db3-8a51-0b886ba02471'),
 	 ('c8acbc32-e0cf-4aa9-91d0-1e76caba1070','-','Skull Island','1258aa31-6a27-4bd1-abfe-a2d161537607');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('a984b228-ac8c-4080-89a0-4a9a8b5a6de0','Professional game hunter, mercenary','-','0954b39f-979b-48c8-a6d1-1bc87a5f103d'),
 	 ('35c5c484-330b-4207-9c68-9d62c20a59f2','Adventurer, Student','formerly Ruth Aldine''s mind, Utopia, San Francisco Bay, California; Westcliffe, Colorado; "No-Time"; Moira MacTaggart''s Mutant Research Center, Muir Island, off the coast of Scotland; Haifa; Paris, France','5b0f9806-d5a0-4d11-aaaa-e4621dbfa8f5'),
 	 ('f4aa133c-31f0-4cbe-a16d-d45ceb8a39f7','Mercenary; former adventurer, student','-','7291fe36-8a86-40df-98ca-52f2d4c81bf3'),
@@ -9909,7 +9909,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('0f79679f-8773-40e0-a292-aae80a409916','Terrorist, president of Magnum Munitions; former ruler of Canaan','-','f3dc3a74-9d08-4881-8a50-a8f4c6f3859c'),
 	 ('9e54b6be-d7ac-480b-80f1-d633d42adfe6','-','Shiruta, Kahndaq','ba9633e7-a0c6-4a99-acd6-cda15c12c963'),
 	 ('b4983607-227e-424b-80f5-fff8bce96c87','Government Agent','-','98cb7eca-2124-42d5-92e9-2963560c18ce');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('6ddcc71b-b7a8-432e-81db-07e85e5ac3f0','Would-be destroyer','Central Park Citadel, Astral Fortress','ca22f29d-1cbe-4f16-9e5a-0d11695f929e'),
 	 ('9d34bd34-639c-496a-a744-2e0063e1bc05','-','-','3c4b1cd2-4be9-450b-a5c2-e21ef0aba35d'),
 	 ('24bc10b3-0aa8-4d47-af76-4d1f6a2c435d','Freelance Computer Programmer and Software Designer','Philadelphia, Pennsylvania','f6fb32e1-f8ec-451e-9aa4-e1c2929ef1e3'),
@@ -9920,7 +9920,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('debbd63f-bce3-4883-9115-c623c5c863bd','-','-','1d4bd48e-dec3-47bd-b21b-455972f7ab30'),
 	 ('6d09e712-6968-4612-9ffd-6ed1f73d588b','Conqueror, worshiper of Death','Mobile, formerly Sanctuary II, Titan','619b798e-80ff-4813-a0b2-cf4078d5126c'),
 	 ('a5e78691-b320-4e47-9a05-f22b31e7c6d6','Assassin / Genesis Overseer','-','ebf70daf-95b7-48e0-889c-8b0151b8fe05');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('00a1ab22-28ff-488d-8ebc-ca9b702b8c4c','Vigilante; former journalist for the Daily Globe, government operative','New York, New York','6eb6cc8e-c6fc-4629-ba64-2b2603d141d6'),
 	 ('2eb0b74c-f13c-4507-aa11-a1ed9e3df53a','Professional criminal; formerly electronics engineer','-','d09dce18-bbba-4a60-bfed-95194c344611'),
 	 ('66372eeb-cdf5-4fd1-a946-e964b869612c','Former Model','-','88932725-a523-405d-8399-5d0de591e3bb'),
@@ -9931,7 +9931,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('b3cee3ee-2973-4e93-99bd-f29af45f7326','-','San Francisco, California','2f4935ae-250b-4945-aa45-6cc55659b6e8'),
 	 ('84f740f7-b2a8-4c4f-a804-ee58209d1c6e','-','-','d526c049-ae72-46f8-9417-841c08965707'),
 	 ('fcac33c5-a2dc-4f7c-997d-c307cc399bd7','Professional Criminal','-','2f25d77d-537d-4575-be9b-a41fce5e2c26');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('3391cdf8-cb65-4ae8-8e99-76a37410d0ab','-','-','a7742fcf-b403-485a-b88e-4f6414d658b1'),
 	 ('17dfcbd1-b92b-4537-8f8e-d073cd70edb8','Professional criminal','Serpent Citadel','43268fde-5b57-48fa-b15b-207bc4470acd'),
 	 ('9ac5d1ba-e04a-420d-8c25-4701fdba4b58','Vigilante','Holy Ghost Church, 42nd Street, New York City','909116d8-a2a8-48a6-bd80-eb7254bd5d8b'),
@@ -9942,7 +9942,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('c5e3e017-e48a-4a64-8498-1c5c84083176','Student','New Warriors Crash Pad, New York City, New York State; Avengers Mansion, New York City, New York State; and formerly Massachusetts Academy, Snow Valley, Massachusetts','33ce1dbf-8054-4d44-9191-4ddeeed459da'),
 	 ('48bb498d-5c30-4a7f-8288-11d48b29812f','University student; former food server at Bryson''s Family Treat; former mascot at Ho-Ho Charlie''s Chicken Shack; former intern at S.T.A.R. Labs','Detroit, Michigan','81f6f347-c519-47b6-88bb-61001aa41aa4'),
 	 ('f6bc0c4d-ed91-4f83-af16-3701f9caf3eb','Assassin, mercenary, adventurer','C.I.T.T.; formerly Godthab Omega, Monster Island, Sanctuary II and the pocket-dimension within the Soul Gem; Earth-7528','be738bb5-9bc2-4e6b-b06b-af3fd7ebcd6a');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('9bf52e18-e4de-4c49-9a1b-2b4792979f8c','Mercenary','Mobile; formerly Avalon in Earth orbit; Genosha; California','29c4dfd4-72c0-4bd3-a81f-9c7475f5216d'),
 	 ('1ce75683-2b8b-446e-943d-2b4d3ba6862a','-','-','6a17daa8-0d8a-4b7f-9840-564ed7fa00af'),
 	 ('4dfe0f7b-e421-4c48-8b0a-2d8e7ffbad16','-','-','bb93c46c-c7a4-47ee-857c-7bc3cf521b46'),
@@ -9953,7 +9953,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('94b1ee30-55c8-4476-90b6-b8bd7a8e9ec4','Adventurer, formerly First Lady of Kahndaq, former slave','Shiruta, Kahndaq','1f46c8c0-b10a-4fd9-b57f-cb6c7b35e093'),
 	 ('ac31bf92-2b6c-43dc-b66e-ad66c5f9a4c5','-','-','319df512-171c-431c-834d-040f19c49429'),
 	 ('accdd13b-9b10-4684-9be2-a576e7ad70cd','Student','-','5d721ab1-d88b-4bb4-ad19-88f6acb17b86');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('7dda515f-e9cc-4f3d-9710-e05f0e24f86f','Professional Criminal','Honolulu, Hawaii','0a6e6974-6562-430f-b89d-400190d2c4ce'),
 	 ('e32dc80a-cea9-4d4a-b20b-6a1719f65729','-','-','6bff7936-3da8-461d-8c1d-555fede1fe78'),
 	 ('dd4de83a-f30e-42ee-9245-9faf0d54cf27','-','-','1e0c40b1-359b-45b9-9e96-077cde49ba0d'),
@@ -9964,7 +9964,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('b4fbfeb6-2d84-4855-bdd0-878ba905b5d3','Lord of a realm of Hell','-','74cb3a12-e500-43d2-a272-687987f2d301'),
 	 ('6049f921-18e1-4482-935b-89f24e15bb67','Serial Killer','-','677c0fa8-eb2c-4302-b73d-38b97d5e4deb'),
 	 ('1fd35c36-d261-4a32-8889-ab94e8fd54b4','Wanderer, former adventurer, wrestler, stunt woman, scuba diver, motorcycle performer','-','c08f939c-cf35-4051-98c6-73f5ebea38f4');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('6cbd4562-829a-4466-8217-99c300527e9c','former Adventurer, Psychiatrist','formerly Mount Charteris; Four Freedoms Plaza','24aa8557-d67d-4134-aada-21eee87d5ee3'),
 	 ('10a9938b-3d0f-4da9-99e0-c365d416711a','Adventurer, Teacher','Xavier Institute for Higher Learning, Salem Center, Westchester County, New York (former) Muir Island, Scotland; Braddock Lighthouse','c4684e1d-b10c-4ec9-8681-365e6ceba88d'),
 	 ('23f2cbf5-4cc8-4cc9-b59a-727eeae9e4fd','-','-','7909566f-36b9-41a9-806f-a1ca604a9dda'),
@@ -9975,7 +9975,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('df44fad7-5670-446b-9eef-c85021ab0bbc','-','Gotham City','b61a9dfa-a234-46b5-8d62-b6a17c18fae0'),
 	 ('2f3f75de-ed98-4978-adec-3ab4f083873f','Adventurer; formerly witchcraft tutor, housewife, terrorist','Mobile; formerly The Works; Avengers Compound, California; Avengers Mansion, New York','3154f4b3-5b63-4389-bc64-3d0da22e7eb8'),
 	 ('e0902eda-cfd9-4bfb-a9c2-514061dd2160','Goddess, adventurer, former records officer','formerly Department H','7fba7029-7bee-4695-a4d0-dc13379675e4');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('c573653a-025b-4d71-90a9-fbb5c2de86fc','Nightclub Owner','-','3bb5f8c7-0990-47f9-8420-45c85a387575'),
 	 ('65524128-2976-4396-a3c3-67953abf8b13','-','-','ad766187-b760-4be8-abbd-563755437084'),
 	 ('1ce0c922-6c19-4884-b0ba-a20bbaaadfc6','-','-','95fd93a7-24a4-4a48-a0eb-841a878655d6'),
@@ -9986,7 +9986,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('973037b1-d6c1-4e05-b972-64090f9b5808','-','-','6bf2704a-932d-41bd-a7a0-1d0f36ecd428'),
 	 ('061a93d6-806e-4582-8e96-a218c0f5a55f','-','-','9cebbb38-f76b-42e6-8ae8-8d8d566bc020'),
 	 ('d7c6f458-3648-492d-a8cb-049699fe9b33','Cat burglar; Private investigator, founder of Cat''s Eye Investigations.','-','1e0dd279-d940-478a-80bf-16403c89ef83');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('534c74f2-8879-43df-a79e-e1fd16ab0ffd','Adventurer, scientist; former crusader','-','e1a7c6da-891b-4a43-b8d6-ce77d1e902f2'),
 	 ('90c5ad3a-d3da-42cf-8852-f47ed2bfac06','-','-','a0eafd15-d598-45db-a4c9-2cffec18cd2c'),
 	 ('c9fb6c6a-d010-41d5-ba34-ba188bdf472c','-','-','9763e385-84b4-4fcf-8125-26763a716ffe'),
@@ -9997,7 +9997,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('75b38eb0-d869-4983-892d-32862af4a16e','Leader of mutant race, adventurer, headmaster, former student, radio announcer','Xavier Institute, Salem Center, Westchester County, New York','360987f4-a69f-4b7e-b2b7-c606141a119d'),
 	 ('d4cf7134-83bb-4be2-aa93-3f0ad461b575','Student','-','d3b1ab4b-e143-4834-af17-4d65fe2cc54c'),
 	 ('f000ad76-490c-46ad-a404-8d262e6acc15','-','-','2c0b4367-4cf4-4f7f-a686-eeda50191b96');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('500d5f1e-789e-4c6c-bf72-930e0c684214','Scientist','New York City; formerly Mars','860736bd-7d96-43a5-9daf-0d26c142eebb'),
 	 ('fc35f3fa-c0d9-4945-b863-3ca620ce6df1','-','Hell','2bc7bb59-7d82-4e00-97e6-f036f1ff805d'),
 	 ('f5371492-00f0-4a5e-85bd-6b54fb7de52b','-','New York, formerly Valley of the Sleeping Dragon in China','7348d805-2f86-446f-b82a-25287b273030'),
@@ -10008,7 +10008,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('ca9b25ba-eb08-4af3-a2f8-d585aca85744','Housemaker, model, adventurer, supernatural investigator','San Francisco, CA USA','85f800ef-1703-4ddc-8327-92cc09e0f44e'),
 	 ('17b62d63-151b-401a-920e-98fb46c3a5e1','-','Formerly New York City','b202c252-7f52-48ff-9c57-611cd4878239'),
 	 ('ca309c92-e23a-4402-ba77-fef80ec4dd54','-','-','66bfe04a-99a0-4d8c-99d4-d97b19f8c77f');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('8ed07b5a-51ba-4ff2-8dc4-2595993c2351','Adventurer','Avengers Mansion','1dfb0c66-9650-4791-9b02-7e13719e4c94'),
 	 ('d914fa88-929d-486b-beca-c16f4b2c1747','Police Sketch Artist','-','ca5a8a9e-a656-4f7b-9a18-d7879c92e562'),
 	 ('09ef4120-77c5-48f1-a3ea-ae2896f199f5','-','-','bace4f82-99e8-43c7-92d7-d7b46321a818'),
@@ -10019,7 +10019,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('c47d1eb2-3aeb-4930-90d5-e0f0149fdf7e','-','Gotham City','1feeef29-3500-4dd8-bbf3-c8d7673081f3'),
 	 ('625d2931-6b81-44f0-a73e-a09ff95eb8e7','Adventurer, bar owner, bodyguard, mercenary; formerly theater owner, private investigator, various odd jobs','-','5f0f8238-39c9-439a-babd-f57ee89078fc'),
 	 ('4265ae80-eb08-447f-bf27-22d8037b17d2','-','-','f4f40720-7b08-405b-8732-b02f158b1dcd');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('a9d029e8-3768-457f-84e7-3cfd40b5d2c1','-','-','81a4fcec-6878-4ca3-9ab1-49a1b1b8138e'),
 	 ('bfd3ac25-a688-4a27-aca1-90a851a0697b','Adventurer, Queen of the Almerac Empire','Imperial Royal Palace','bb38d06d-2112-40f3-8bc8-10491e453560'),
 	 ('143336bb-748d-4f3e-921e-29ad62d6c141','Adventurer, former student, thief','-','acef8f70-b7b5-416c-8a9e-3a4ae4515209'),
@@ -10030,7 +10030,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('ac4f8c06-dbe9-41fb-9103-441307114a98','-','-','a9e2b077-1967-41fa-a17e-2b71b266d986'),
 	 ('d5b09048-7442-40ac-acdb-be72b85e12eb','-','-','17fe634d-8aa4-4876-924e-5e2ad880eb51'),
 	 ('4554b54b-c10e-4cbb-9225-d53bfc85a79c','-','Central Cityplex, 25th Century','a2715487-7489-494b-a60b-5d42cd3f885c');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('79b8ce5d-7696-4089-9cec-eda8bbb5ad20','Eco Terrorist, Businessman, Cult Leader','mobile','3c258ffd-76f8-4640-929b-8a9c7bbdc0ef'),
 	 ('8a1e21f1-25ca-4d3b-ba81-2d754bb0bc07','Adventurer, bio-physicist, government operative; former college lecturer, professional football player','-','2e88fbb4-cffc-4ec7-80dd-17cc55603515'),
 	 ('772df0f7-32b4-4d5c-8a7e-805cf0a41810','Vigilante, former garment worker','-','34eefb6a-f84c-41de-bfed-dab9951234c0'),
@@ -10041,7 +10041,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('bb828816-831c-4c58-acfe-4a02772f8669','Lawyer, Magistra of the Living Tribunal','Law offices of Goodman, Lieber, Kurtzberg, & Holliway; formerly Avengers Mansion; Baxter Building, Four Freedoms Plaza','3600936d-f09e-46c7-91df-82abeec79fcb'),
 	 ('f6155c85-9772-4755-a914-fd57a5c08025','-','New York City, New York','45f938a0-0f09-45e3-8372-0352e6dbcf03'),
 	 ('8bfdcbfc-0e0c-461d-97a3-c7fcd07c808e','Adventurer, businessman','1128 Mission Street, San Francisco, California','b999ee34-dc8e-4095-a71b-06e26703b0f4');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('a5973f70-b60b-4a32-821c-4326bb89c99c','Adventurer','Xavier Institute, Salem Center, Westchester County, New York State','855179c7-8e55-4a88-bead-6cf62c952d16'),
 	 ('637d2988-5e93-48d3-90d5-ea2954107bcf','-','-','739aa498-46d9-449b-ba25-9b949935dc0f'),
 	 ('91579041-f144-4be3-9890-c1d321e212a1','King of Asgard; formerly EMS Technician; Physician','New York, New York','4af9dbd0-064d-4744-b52b-1ec9a4861209'),
@@ -10052,7 +10052,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('0d49c830-45e6-4e47-9319-2f08f2cba299','-','Keystone City, Kansas','6b07d79a-2c5a-4b91-94d6-42bc67635a22'),
 	 ('11c96137-79fc-4a3e-9e31-db1639ae8b80','Former student','-','1b0907cc-3daa-4a27-bde3-9f416afb562e'),
 	 ('e14cb31e-e101-4c19-875f-78b0ab04cf48','Adventurer; former mercenary and professional criminal','-','55ee3fe5-b74e-4ea4-b1ee-76b6841208e1');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('f5e9785b-753a-4118-89a1-2f49ba16b4c1','Vampire hunter, former private investigator.','Mobile','7449bc32-1dac-46f4-9378-be09a481c24d'),
 	 ('61567a6a-187b-4a24-bb14-da9819586002','-','-','3585a8a0-0dd6-4c9d-9572-0abbd63deabe'),
 	 ('04f6f036-27e0-4a1c-9481-1363137f3154','Former National Aeronautics and Space Administration security Chief, former magazine editor, former freelance writer, former military intelligence officer.','Avengers Mansion','1aaae037-4c84-4894-95e5-c071ed36b1ab'),
@@ -10063,7 +10063,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('607f3bfd-95c3-4826-a73f-950e0673694c','Monarch','Castle Doom, Doomstadt, Latveria','a8a02b49-4c62-4205-bafa-2fe7b7d65339'),
 	 ('8a0b41e7-97d3-4d76-97a8-7a30ee54f119','-','-','4cdda92b-b768-4da8-94fa-00cb614ed6ef'),
 	 ('0fadcb78-86c2-47f5-be91-d0f99a6f8173','-','-','8087eb32-acc8-4c72-9707-28c365337a3f');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('f681c3f6-f835-4720-be09-c6f36891c61a','Formerly Adventurer, Terrorist','Base of operations unknown','94e3cd23-0c1d-437e-bfeb-96a9613566e2'),
 	 ('69a901c1-0609-430a-a846-8062a74ffd65','Research Scientist, part-time Director of Garrick Laboratories','Keystone City, Kansas','a120e788-c40c-49a5-8ff2-02c3067e28de'),
 	 ('2ed78acf-b17b-4a30-a914-cd7e268b0311','-','Formerly Krypton; formerly the Phantom Zone; currently Earth','a09255bb-a7e1-4c4e-8a8d-9e963ff89639'),
@@ -10074,7 +10074,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('573bbe2a-363b-4d50-9f42-d03b490704d2','Adventurer; formerly co-owner of Rand-Meachum, Inc., bodyguard, private investigator, research assistant, warrior','New York','d509479b-3883-42ba-b6bd-ec1d08f7d676'),
 	 ('da486b15-a6fb-42e6-84be-d14e674d3d21','Adventurer','Xavier Institute of Higher Learning, Westchester County, New York','f3d9f6c2-590f-4b0c-ad75-d1b7857df5ca'),
 	 ('75632e22-77aa-4191-832b-800110fd25af','Commanding officer USS Enterprise (NCC-1701-E)','-','f0432fff-8cdc-4a4c-9744-1452fc857050');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('acf40b14-74c7-4fe2-b434-38e70674f9f7','Scientist','Pittsburgh','7f70bf5c-9a50-4572-8024-ece8027c58d2'),
 	 ('bd6f09ae-9404-4dfa-9706-c63a1ea99b30','Adventurer','Mobile, formerly New Warriors and Avengers Headquarters, Camp Hammond','ea7f94b6-938b-4c35-b8a6-7c412618eb49'),
 	 ('b58459a5-8e26-42de-bd61-9d860c1b4a88','Ruler of the Technarchy','-','6b36118d-ef9b-491f-a92d-760ec89e468e'),
@@ -10085,7 +10085,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('c4572db9-750b-4269-b1c4-3090bb4c497b','-','Konohagakure','fdf25ad5-0d77-458e-9021-87c7c46c1ce0'),
 	 ('c79848d8-5783-4a38-94ef-ddd9622eb0c2','-','-','d8b682f8-9921-4e0d-845a-adcfdfac39c5'),
 	 ('7607e62c-3745-4015-8651-65600aabd53e','Superhero, also works parttime at Marvel Burger','Mobile & Xandar, also formerly New Warriors headquarters','8851c440-c975-40b2-ab3a-b07e97b34c17');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('a3a14e2a-6a8c-472f-b937-3f43b5af6bc7','-','United Planets, Bgztl','99dcb6ad-5788-4030-bb83-9c5849841616'),
 	 ('64e4c239-5f4b-45bf-94ec-68f898e65a83','(current) Adventurer, (former) Terrorist, officer of the Inhumans militia, United States government operative','Currently a castle on the Hudson River in upstate New York that is owned by the High Evolutionary; (former) Transia; Avengers Mansion, Manhattan; Avengers Compound, Palos Verdes, California; X-Factor headquarters, Washington D. C.','810e3b0f-173d-4396-b1f1-29a3b0e275c4'),
 	 ('3a859207-ad5e-4836-aeaa-a81135be5ff0','Mercenary, Vigilante','-','e5af3625-f657-4263-9dbe-c943de31e2a5'),
@@ -10096,7 +10096,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('0dc78bf6-7d00-4830-bda1-ff92ab464022','Adventurer, formerly Galactus'' Herald','mobile throughout the universe','d63f36c0-8848-447f-8f7b-00019a6d5252'),
 	 ('05057ad2-7057-4a53-9114-666dbf0c70a2','Form agent of HYDRA, former bounty hunter, private investigator, adventurer','-','5b43d0aa-857c-4ed3-ac50-232fddab0ad6'),
 	 ('52328b2f-c48d-42e6-a2e2-7daebc8167fb','Model','Formerly Titans Island, New York City; Titans Tower, San Francisco','3a531400-5c86-497d-b613-5858d40d0c10');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('02e4bc9d-e2dc-4a69-98aa-a1c4e3e4d476','Inventor and technician serving the underworld','-','09b90928-f93b-420f-954e-c117538b9f86'),
 	 ('ed7e77be-c571-4884-8ffe-31e3a3ffb63b','Former criminal','-','ae5169b5-6773-4afe-9ca3-cf21fca79136'),
 	 ('05e4d30a-9c43-4bef-ba9d-b6f1501d0492','Avenger, savior of worlds','Counter-Earth, later mobile','d3d702e1-2fde-4060-9921-c8b05167423d'),
@@ -10107,7 +10107,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('2fc381b5-72ee-4dc4-aa06-32e690028649','Architect, former vigilante','-','efe4d46b-9537-48c8-ba5c-35ff7527570b'),
 	 ('8972002f-bd18-41f9-9b2f-8a462a58e4a8','Adventurer, federal official, intelligence operative; former soldier, Hydra agent, liaison between S.H.I.E.L.D. and the Avengers, police officer, teacher, sparring partner.','New York City','10294658-c059-4db3-845b-5d9b72dc2219'),
 	 ('83a2e425-104e-4d9e-8af0-c04be51c365c','-','-','72a18003-59d8-4603-9f8e-f8815d7b685a');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('391be4e6-e87b-41f8-8593-1f4f093bd2e8','Adventurer','Utopia; formerly New Warriors HQ; Xavier Institute for Higher Learning, Salem Center, Westchester County, New York; Massachusetts Academy, Snow Valley, Massachusetts','64e9b508-5361-4de2-a26e-bbec5518277e'),
 	 ('5e78b899-077a-40d6-bd03-ca18c7764b4b','High school student, cheerleader','formerly Odessa, TX, Costa Verde, CA','0a0196bd-71e7-430b-a22c-af932b85f599'),
 	 ('6c4537ac-301e-4df3-ab4a-fdad537d260c','Scientist','-','306932c5-a097-479b-b97e-9c447b438af2'),
@@ -10118,7 +10118,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('3e58472b-b35a-4815-8971-700019f3d6eb','Destroyer','-','b73a926e-9c05-486f-803b-9627cb43b188'),
 	 ('07467e5d-c3ec-48ac-933a-f811a0b074b1','Former starship captain, former herald of Galactus','Mobile; usually in space','083323bf-f92a-44a9-8ac8-80e209c701b6'),
 	 ('5a449f89-29d8-42a0-8be6-9246c2ddfa8e','Police trainee','Los Angeles, California (previously Manchester, Alabama, briefly Denver, Colorado, then Keystone City, Kansas)','671a8408-7465-45e1-be7a-a11e99f56d81');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('15a01905-7956-4dbe-bce7-0fa198910f5f','-','Mobile; formerly Anchorage, Alaska; Reaver Base, Australian Outback, Australia; Empire State Building, New York, New York','2b2ef640-cfdc-4401-8059-7e4a752ae412'),
 	 ('0f015253-9d73-486c-a9f5-6f36dd0bb04d','Student','New York City','4a28f289-413d-44ff-baf5-b92c1aea3314'),
 	 ('57c7123e-7b06-4014-8a18-36468e7ea5a0','Student; Adventurer; Fugitive','Bishop Publishing, New York City, New York','217cd8f8-1654-4b13-a996-4fe87105f93a'),
@@ -10129,7 +10129,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('57655107-9a15-4028-9492-5eacae5ca358','Sorceress, student','-','06eff019-53ed-4065-9556-75ae06354e3f'),
 	 ('91485fc9-e520-48b3-827a-3dd2e2e2dd91','Fleet Commander','-','d45890ea-b410-413c-8113-8021f548863c'),
 	 ('7d536edb-f0d3-4b09-919f-7d1e1a8c266e','-','-','ca9d905d-6946-4471-92b6-7e0e6c9b2dc5');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('8df19dee-f41b-420c-8b88-e418e955c1f1','-','-','23e43bdd-3358-47e8-b707-dcc9cf6e31a2'),
 	 ('98ecd4db-008d-4982-b9ce-fcbe768ba760','-','-','c817363c-4831-496d-8353-59d2eb5fba83'),
 	 ('08a980aa-7741-4dd6-ac40-f487eae46536','Research biologist','Florida','49979b7a-e7a5-4168-a33f-9ecb263410ac'),
@@ -10140,7 +10140,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('25e810bf-3428-4395-9ad4-32cf30f7adec','Scientist, seeker of knowledge','Supertown, New Genesis','8d2171ae-8b30-4558-b7e0-9aa9b49f8314'),
 	 ('2a15ac19-66ea-46b0-b54b-4aa0df84e6c0','Fast food service','New Orleans, LA','71d864cd-4428-44ea-890f-9b8771163552'),
 	 ('04c6eb9d-3e8c-491a-a841-42831f6c51e2','Security guard for Osborn industries, former criminal, lab assistant','-','4e3780da-9bae-43c0-9336-9836ad799165');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('06b965a7-c48e-43ce-b9c3-72b00021376b','-','-','4face84d-eaf6-465d-897d-5aa2552cac34'),
 	 ('2791204d-b769-4a4a-af06-bf6516ba18d7','-','-','96afb5cc-1876-4b54-873a-8639bd3001d3'),
 	 ('8260a3f5-37c8-4564-bc58-e56a5da8a150','Criminal, Botanist','Gotham City','23a54df5-0206-41ff-bf6b-f06ef69d1749'),
@@ -10151,7 +10151,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('7ade52d1-0c9f-48cb-923a-daff9def1b24','U.S. government agent; former professional criminal, assassin, private detective','-','e00f3d47-14a3-4580-b033-c27b9886a99a'),
 	 ('fd641a33-9e0b-43b2-99c4-0a2f86d1682c','Professional thief, hired assassin','New York City, New York','eb86baa5-19d7-44ad-b9ef-5efdfbd36f5d'),
 	 ('6cec9874-6a66-4022-9eee-9e8aad76d0a9','University student, adventurer','Empire State University and Avengers Mansion, New York City, NY','8f8d1e6f-221a-4aa2-8f5b-3eae0ee0e772');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('13ee0118-a79a-407b-b421-6c053f02b8ab','Adventurer; Royal Prince of Spartax','C.I.T.T.; formerly Kree space; Hala, Daedalus 5','3935cd56-5e03-4245-8a26-dde46b48a5c1'),
 	 ('32ba06d2-125a-43b7-b9cf-5f2337458550','Student','Titans Tower, formerly Abandoned Gas Station of Solitude, Dakota City','5aef7271-94cc-47cf-adf6-d57c9ab80998'),
 	 ('c28073d7-7c74-4180-8424-67e57ffde169','Intern, Adventurer, Student, Crime-Fighter','Metropolis','4307fa84-119e-432e-a6a0-59be5c49ab8d'),
@@ -10162,7 +10162,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('d3ad0c30-5775-4023-b24a-e694b4cbcb16','Adventurer, Emissary to the world of Man, Protector of Paradise Island; former Goddess of Truth','-','2ad18f94-e7b0-4ec1-bded-3cfb97d61818'),
 	 ('e8afbe7f-9293-4865-94b2-87a19d2b83eb','-','-','1c35da68-8e6f-4034-b5e5-6df6a800b43c'),
 	 ('000fda23-4f81-49f8-aac3-e5403e05a7ca','King of the Inhumans','Attilan, Blue Area of the Moon','d81acf3c-3f98-4a4d-b52d-984e322adde5');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('4bae1a59-6a96-430c-b58a-4938ebe05d39','Adventurer, former student, thief','-','e9ea6942-12fd-4c5d-9146-785b19f96957'),
 	 ('2b516f8f-2350-4e42-92c5-2a51b4142282','(current) Adventurer, (former) freedom fighter, United States government agent, mercenary, combat instructor for X-Force','The Xavier Institute, Salem Center, Westchester County, New York','ab4a41ef-bdbd-4000-a549-e40f2fdd2e65'),
 	 ('16d8f304-b755-445a-81c9-189deb67bfd5','Adventurer, peacekeeper, former student, mercenary, miner','-','f13a4ef3-8830-487d-a2fc-dbad461d6d9d'),
@@ -10173,7 +10173,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('2ae898d0-aed9-408c-bcaa-efc58ea3b634','Sorcerer Supreme, retired neurosurgeon','-','d2225f43-e05f-4d62-a388-d740e57b412f'),
 	 ('5aa2e299-7bdb-4325-8167-2e505e152ca8','Former atomic-research consultant, criminal mastermind','New York City','9af89a82-ff5a-422c-be7e-4667e16f1a6a'),
 	 ('6ab477a3-3bde-48ea-ac83-4f5bdedf246a','Mercenary, Assasin','-','5f850bac-eda0-4fe6-b9bf-ea9a03d7e8e6');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('0538b2cf-78cb-42ed-853d-8c931197f859','Crimefighter, (former) freelance artist','New York, New York; formerly Avengers Mansion, New York City, New York; S.H.I.E.L.D. Helicarrier.','b678bf4e-ff30-485a-9e52-ab848a681372'),
 	 ('51bb2d66-8f11-4d34-9d5f-1b44c3bf6eda','IMF Agent, Training Officer (former), Field Agent, Field Team Leader','-','49d36a62-5e3d-44f1-a0bb-bac878998094'),
 	 ('19880512-6fc6-446e-a73c-68a16826841a','-','-','97b9b94d-0f03-49e3-b88e-639ccb2bcac1'),
@@ -10184,7 +10184,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('571c1b68-b8f9-4592-b196-8afe26b518f1','Mercenary; Former member of S.H.I.E.L.D.','-','af0ccea6-0ad4-44fd-b235-0b3b84143805'),
 	 ('7ba969ac-a5c2-44d5-8dce-cce339988b18','Green Lantern, Adventurer, Artist','Oa,formerly New York City, Los Angeles','97163f24-856b-433d-a608-32403e1454c9'),
 	 ('d8db66a5-e35f-4298-8710-d8966716ae1c','freedom fighter, stuntman rebel, adventurer','X-Factor Investigations Headquarters, New York City, New York; formerly Detroit, Michigan; mobile; Xavier''s School for Gifted Youngsters, Salem Center, Westchester County, New York; Mojoverse; Cooterman''s Creek, Australian Outback, Australia; Alcatraz I','527611ec-cf7f-4385-a87a-03574d6afa08');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('f7cc5b7b-7cb5-4f7b-83c2-0d9211e4a4fe','Adventurer','Xavier Institute of Higher Learning, Salem Center, Westchester County, New York (formerly) Braddock Lighthouse, England','9a5fa168-9654-4504-8057-3b7227b89a71'),
 	 ('ffccbd93-ff51-44be-b3f8-177e41c1c992','-','United Planets, 31st century','5a47d172-84a4-41e1-a689-74a2b9fd33cb'),
 	 ('fb250dae-51ca-4aaa-9be8-65117b60d1a5','Adventurer','Arizona; San Francisco, California; formerly the Tanami Desert, Australia','0ad6e7db-b646-4009-a70b-c73a4ce5cabc'),
@@ -10195,7 +10195,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('f831e404-7c2e-421d-992f-68dc3db81773','Professional Criminal, formerly Gardner','A submarine somewhere in the Atlantic Ocean, formerly London, United Kingdom','bff437dd-4ff4-49e7-8df1-4638c92d3897'),
 	 ('8c3c7f45-4b7a-4850-8bf2-a3e3d1eef841','Adventurer; intelligence agent; musician','The Hall & JLA Watchtower; New York City; formerly Titans Tower, Station Markovia, and Gabriel''s Horn','5f07c8f3-88ff-43fc-9f72-33bba3300161'),
 	 ('5e352a8c-c2e4-4a8d-9cd6-9fb992d69cbb','Scavenger','Jakku','8abb41a8-8a3a-499b-81f7-463178dbd509');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('c78ea76d-9a62-4fb1-b9eb-9d470366d92e','-','-','1260706b-e5e3-445d-bd2f-3161ec71fb07'),
 	 ('b985c054-2111-4025-bb9d-1826e4ffd006','-','-','fe555c2e-70f3-464a-a385-59dedcbe7227'),
 	 ('3a02e75e-ab18-4193-9e79-6029311c1460','-','The Watchtower (on top of Stark Tower, where it was formerly located before all memory of him disappeared)','472d5013-bf08-47b7-bb22-45cc705dec76'),
@@ -10206,7 +10206,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('04526ef6-26ff-40f8-984c-bf630eee2e2e','-','San Francisco; Smallville; Formerly Metropolis; Formerly Honolulu','822b5b52-328f-46d4-9198-2098f499e739'),
 	 ('13151487-864e-4889-ade7-83064686ef23','-','currently a recreation of Earth-Prime, formerly Qward, Anti-Matter Universe.','218a8ca9-4274-43d9-b854-0223ee94e418'),
 	 ('b8922032-bcfc-4efd-9fc3-8bd3951400d7','Adventurer, former Air Force test pilot','Baxter Building, New York City, New York (formerly) Four Freedoms Plaza, Pier Four;','7f1be57c-44e9-44ee-bc70-81e00262306f');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('348d01cf-6063-4437-9707-10ddc4fa95ab','Former adventurer, student, Marine','Xavier''s School for Gifted Youngsters, Salem Center, Westchester County, New York','4d7db3d0-7396-4c01-a507-5a8ab696093d'),
 	 ('77443ce5-eb44-4bf8-af36-9090f7b931c9','Professional criminal, former subversive','former) Factor Three headquarters, Europe; Beat Street Club, New York City','25186775-7bd5-4036-a835-30a3fe2ed5f7'),
 	 ('39347dee-82b9-46d8-b009-84b534c9d3cc','Vigilante; former symbiote hunter, shelter attendant, government operative, journalist for the Daily Globe','New York, New York','13042421-f7b4-48d9-a9e3-811973c5f36b'),
@@ -10217,7 +10217,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('5091507d-4524-494c-af8a-24b16064ebf6','Detective/Crime-fighter, Chairperson of the Justice League of America; former florist, judo instructor','Formerly Oracle''s clock tower in Gotham City; formerly Seattle, Washington; formerly Star City, California; formerly New York City, New York (as a member of the JSA); currently mobile','ac2da8f1-26ea-4c64-8373-dca1e3ff183d'),
 	 ('08daf8f9-57c6-47d1-bf73-0a903634216b','Freedom Fighter','-','cb647510-6038-435a-b51c-c0f7b0ee611d'),
 	 ('fd335a12-9a03-4cfb-a3aa-f6851fd59704','Assassin, professional criminal, former mercenary','Formerly Avengers Tower; Thunderbolts Mountain','c68ef461-d188-4881-91a7-ee1868b63b4d');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('e88c7de0-967d-45ae-92f1-8575cf07a626','Thief','Gotham City','89c3ba2c-6f2b-43db-8275-e2f3da5954ba'),
 	 ('b6a9f440-fdd0-4c6e-b95d-37246f12b9ad','-','-','42d88eaa-325f-4aef-8907-019619c2958a'),
 	 ('0d6edd50-0432-4a75-b908-4cd25c31abad','Mercenary; Former Soldier, Big-Game Hunter','The Labyrinth (exact location is currently unknown)','44f2f45f-8a11-4a08-bce5-c0d6158dbab4'),
@@ -10228,7 +10228,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('4ea44648-d608-4565-a49d-7eeaa338157e','Adventurer, Mechanic for the KCPD','Keystone City, Kansas','21ac97b0-8f11-4a5c-8d63-41130e2a05ef'),
 	 ('6e844b23-3d00-41d9-a8e6-be49e115e437','Former stunt motorcyclist','Mobile, Quentin Carnival','5a282b0d-3750-429c-a581-c37605a01da9'),
 	 ('572116e5-5f84-4064-a303-33543b1d64fe','Jean Grey School for Higher Learning, Salem Center, Westchester County, New York; formerly Utopia, San Francisco Bay, California; Xavier Institute, Salem Center, Westchester County, New York; New Orleans; Paris; Cairo; Illinois','(current) Xavier Institute, Salem Center, Westchester County, New York; (former) New Orleans, Louisiana; Paris, France; Cairo, Illinois;','d0134ae3-c2bf-4cc5-8f9c-1c7462c3f3b7');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('ff0b9e6d-d2c4-4940-9982-881b30bf746b','-','-','099fa565-6cb6-4803-85b5-b62106fb8751'),
 	 ('ef84df1d-7f43-4e79-a51c-b8999de0472f','-','-','4428196a-162d-4fd6-a632-534dd90eed40'),
 	 ('465fa622-4c64-4551-9f3b-7b1f50c90fc6','Adventurer','-','1b583b1f-aff4-4dd7-b1b7-908df45256de'),
@@ -10239,7 +10239,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('ade5ec1b-3328-4d06-ae56-84013a950ee5','Ninja','New York, New York','a4e0b300-0cf2-4aba-8dfc-e6737e2bb805'),
 	 ('37d2a3fa-c40a-4b89-a8dd-f791cdbd515c','Insurance Investigator','Garvin''s Garage, Queens, New York','32fe2622-47ad-4c47-87a8-ba151a567420'),
 	 ('d1de9d04-3b72-4183-92f1-48a1f36fb113','Zoologist','Gotham City','05534447-4dc3-4691-9c6d-e404d05f8af2');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('b039d029-3514-4142-90ac-708adda1850a','-','Dalten Towers, Metropolis','19648125-afc9-48d7-b7f0-9f286f1edf5b'),
 	 ('81301afa-692a-4ea4-9f8b-0306fc7fa5f5','Private investigator (formerly) Farmer, Adventurer','New York City','bf5f0d98-f4b8-4eaa-8c6d-f1db2bd91289'),
 	 ('02dfd6e6-d4d0-4616-a2bf-25b7f386ead7','-','-','16aea3e8-2127-48bd-b0e7-44b9d0d1099d'),
@@ -10250,7 +10250,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('89867c59-7af8-437c-bac6-c0ac8286eaba','Former Television Investigative Journalist','Hub City; Chicago, Gotham City, Metropolis','57b6b1af-97d6-4cda-9de0-6646281dc319'),
 	 ('c84bec7e-e161-473e-b9b1-8ad5a7d68aae','Professional Criminal','-','a732553b-7923-4dce-9264-e3002207e7ee'),
 	 ('d9e6b3c5-5f1e-4032-bdf8-8df4e506ce02','Crime-fighter','-','a85df2dc-8316-4b34-972d-40f18febbf9f');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('1e79187a-17e3-45ec-b17c-48ad2d8d53e0','-','-','9e018089-32a2-43fd-8b6e-3b06f49b9f71'),
 	 ('e75bab47-9fad-4e77-bd51-e8bd47c49c85','Prisoner, former adventurer, wrestler, stuntwoman, scuba diver, motorcycle performer','-','01069aa4-c07a-4646-8230-ced649f95f45'),
 	 ('4ad5129f-4de2-4849-82d1-00c4651563fe','Warrior','-','0ae9271c-431d-433a-94d9-c5660c606d69'),
@@ -10261,7 +10261,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('31a3d513-426b-4958-9a20-0bca86951285','Sheriff, Assassin, Mercenary; formerly Military Trainer, Combat Instructor, Head of Initiative training camp','Bagalia; A.I.M Island, Taskmaster''s Academy','9c0c9ef9-e56c-4289-9f4c-a6380c630da4'),
 	 ('7836d3e6-2aa1-40d9-8a2f-8d6bc8f74572','-','Camp Hammond; FormerlyNew York City, Formerly Asgard','66b6bf14-d18d-4fce-8507-faa8a16b6956'),
 	 ('2f40c27a-14b3-414f-8a2a-e668c9fae033','-','-','09b97a43-7958-4e75-bf87-343ff749695a');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('cc5206ed-ac6c-465b-9bac-4a352f193487','-','-','5d05c92f-1a27-4a27-b4bd-6b29a970b9d0'),
 	 ('c5649a4d-59a9-41d4-8cf7-04e67da3f456','Teacher','(current) X-Factor Investigations, New York City (former)Professor Xavier''s School of Gifted Youngsters, Salem Center, Westchester County, New York; Muir Island, Scotland; X-Factor headquarters, Embassy Row, Washington, D.C.; X-Factor Headquarters, New Yo','fe41fce0-ae26-4c51-9b41-072e6cdf88df'),
 	 ('06191666-1b50-4212-a41e-5ff0dfe94fc2','Adventurer, fashion designer, independently wealthy socialite','Avengers Mansion','90eba5fd-62e6-4f5b-8c1a-03a68445ef70'),
@@ -10272,7 +10272,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('fa2fa7c1-c2da-4d02-aca3-346043488ca9','Adventurer, Teen Titan','San Francisco','681a91b0-c7e1-486a-a204-e92bd7a245cd'),
 	 ('c35d8d5d-234f-442d-acfc-392db7f57225','Adventurer, former Professional Football Player','Battery Park, New York City, formerly Franklin County, Ohio','32cf2e45-e7b3-4cce-a1bc-d5e6011e6642'),
 	 ('bb77f371-eb26-4164-9036-8f2a56cae6b1','Demonic Redeemer','New York City','ba0016c9-175a-4b32-b4fd-cc5783e08b15');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('920f83cb-1467-4ec6-bd14-627c38d6a984','-','(current) Emma Frost operates from the Massachusetts Academy, Snow Valley, Massachusetts, (former) Hellfire Club mansion in New York City, a home in the Berkshire Mountains in Massachusetts (near the Massachusetts Academy), and places of residence in vari','93f7dc53-f9e3-43b1-b5ec-2eef6ec8a218'),
 	 ('c2f7bc83-a68d-4737-b5be-0bb3ff7ea724','Artist; Magician','-','2c93a095-5c6f-4ac1-b4fa-dbfeae307f1e'),
 	 ('01e2ab95-e03c-47cd-a2ce-32bb58f8db16','Majestor of the Shi''ar Empire; Former Praetor of the Imperial Guard; possibly former Herald of Galactus','Chandilar, Shi''ar Galaxy; mobile throughout the Shi''ar Empire and surrounding galaxies.','a688013a-6369-4e62-908e-6893f76456f5'),
@@ -10283,7 +10283,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('0eb26f7a-50a6-44d0-8ec9-a7d158719ad0','Adventurer formerly Professional criminal, mercenary, soldier','-','26bb2cfc-f951-4877-b03a-5e4c59f2dfff'),
 	 ('54ddaa8d-32d8-4f3c-bc4b-6f7ccb6f9da6','-','-','9b383727-a76c-4079-ac39-7c12acf1ccae'),
 	 ('4b6c368c-8da7-4d46-bb14-391c9a92d9b2','Robot','-','0c26da2b-9196-450c-8405-e0d361b10b21');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('9f2b690e-2c4a-4ca9-998e-12e509998098','-','-','11018180-7ccb-4dc7-a306-f68e56d90517'),
 	 ('b8132b32-b81e-4fb2-9ad6-0d858e832de9','-','-','0fb043be-00f6-428f-af17-493abbf082a2'),
 	 ('e2b564e8-4eac-4d47-9b21-61044e9e7087','Would-be conqueror, AIM leader, terrorist; former AIM agent, technician','-','7590d6d4-c3bf-4787-aa2c-25253aee6b5b'),
@@ -10294,7 +10294,7 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('0f411c96-1370-4466-a823-cf9781e6c358','Former United States Marine turned professional vigilante','Mobile, usually in New York City','ef079eaa-7be3-4019-9f7e-22dde9305ef9'),
 	 ('15e5f7b8-9bf6-4733-ac63-a56735bc2d59','-','Gotham City; Titans Tower, San Francisco','982eee85-ff8b-45c0-9632-c41c1fd8cc9c'),
 	 ('c8a7cccc-e0a7-47d9-a67f-eb29cd9f1e99','-','-','4e7e5852-ce1a-4f83-a371-c3ba278f4805');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('84a3401c-ee67-4918-b906-8c3a521f3dc8','Government Agent, Covert Ops field Commander','Belle Reve, Louisiana','53e115df-4ec7-4751-88a8-2591c225bd61'),
 	 ('9af1eaa2-ac50-4ba4-befc-bc71f6d3a345','-','-','07b6d189-5531-4d42-a414-f7457293f485'),
 	 ('8fe0765a-0003-43cb-8544-8adc4ae5c48e','Professional criminal','-','e44e1617-35ba-423c-b544-2c7d43dc2877'),
@@ -10305,29 +10305,29 @@ INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
 	 ('c30afe57-1cd9-480a-a457-6062af25facd','Freelance photographer, teacher','New York, New York','aad0818f-6369-4632-9051-5a6b9c05114d'),
 	 ('64b953f9-d879-4802-993c-e19042f2a321','Student','Massachusetts Academy','8037c975-b0d9-4126-852c-c7f743fee63b'),
 	 ('d5ce6b3c-bd87-40c5-92e7-2f956c2e8962','Former Adventurer; Government Agent','New York City','78ef21b1-79de-47ed-bb6a-6ad3f368a91b');
-INSERT INTO public.superheroe_work (id,occupation,base,superheroe_id) VALUES
+INSERT INTO public.superhero_work (id,occupation,base,superhero_id) VALUES
 	 ('46c6223f-c02c-43b3-88b6-8fb0e5d8e776','Reformed criminal; former district attorney','-','b0247236-d9b4-4e6c-a7cd-3e363673ae7a'),
 	 ('1a84b7c4-e4ba-4fe7-b589-9ed89da01c41','Government operative; former professional criminal, private eye','-','06e9f46b-1866-4ac9-a61f-3939b049c3af'),
 	 ('2f6f2a62-881a-4fbe-a569-416ab0c0b598','-','Niffleheim','db4ef6ac-0f3f-4dd0-b13e-5be71fcbc837');`);
   }
 
   public async cleanData(queryRunner: QueryRunner): Promise<void> {
-    await queryRunner.query(`TRUNCATE TABLE "superheroe_work"`);
-    await queryRunner.query(`TRUNCATE TABLE "superheroe_powerstats" CASCADE`);
-    await queryRunner.query(`TRUNCATE TABLE "superheroe_image" CASCADE`);
-    await queryRunner.query(`TRUNCATE TABLE "superheroe_connections" CASCADE`);
+    await queryRunner.query(`TRUNCATE TABLE "superhero_work"`);
+    await queryRunner.query(`TRUNCATE TABLE "superhero_powerstats" CASCADE`);
+    await queryRunner.query(`TRUNCATE TABLE "superhero_image" CASCADE`);
+    await queryRunner.query(`TRUNCATE TABLE "superhero_connections" CASCADE`);
     await queryRunner.query(
-      `TRUNCATE TABLE "superheroe_biography_aliases" CASCADE`
+      `TRUNCATE TABLE "superhero_biography_aliases" CASCADE`
     );
-    await queryRunner.query(`TRUNCATE TABLE "superheroe_biography" CASCADE`);
+    await queryRunner.query(`TRUNCATE TABLE "superhero_biography" CASCADE`);
     await queryRunner.query(
-      `TRUNCATE TABLE "superheroe_appearance_weight" CASCADE`
+      `TRUNCATE TABLE "superhero_appearance_weight" CASCADE`
     );
     await queryRunner.query(
-      `TRUNCATE TABLE "superheroe_appearance_height" CASCADE`
+      `TRUNCATE TABLE "superhero_appearance_height" CASCADE`
     );
-    await queryRunner.query(`TRUNCATE TABLE "superheroe_appearance" CASCADE`);
-    await queryRunner.query(`TRUNCATE TABLE "superheroe" CASCADE`);
+    await queryRunner.query(`TRUNCATE TABLE "superhero_appearance" CASCADE`);
+    await queryRunner.query(`TRUNCATE TABLE "superhero" CASCADE`);
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {

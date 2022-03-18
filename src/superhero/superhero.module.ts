@@ -1,8 +1,8 @@
 import { Module } from "@nestjs/common";
-import { SuperheroeController } from "./superheroe.controller";
+import { SuperheroController } from "./superhero.controller";
 import { TypeOrmModule } from "@nestjs/typeorm";
-import { SuperheroeEntity } from "./entity/superheroe/superheroe.entity";
-import { SuperheroeService } from "./superheroe.service";
+import { SuperheroEntity } from "./entity/superhero/superhero.entity";
+import { SuperheroService } from "./superhero.service";
 import { AliasesEntity } from "./entity/aliases/aliases.entity";
 import { AppearanceEntity } from "./entity/appearance/appearance.entity";
 import { BiographyEntity } from "./entity/biography/biography.entity";
@@ -15,7 +15,7 @@ import { WorkEntity } from "./entity/work/work.entity";
 @Module({
   imports: [
     TypeOrmModule.forFeature([
-      SuperheroeEntity,
+      SuperheroEntity,
       AliasesEntity,
       AppearanceEntity,
       BiographyEntity,
@@ -27,8 +27,8 @@ import { WorkEntity } from "./entity/work/work.entity";
       WorkEntity,
     ]),
   ],
-  controllers: [SuperheroeController],
-  providers: [SuperheroeService],
-  exports: [SuperheroeService, TypeOrmModule],
+  controllers: [SuperheroController],
+  providers: [SuperheroService],
+  exports: [SuperheroService, TypeOrmModule],
 })
-export class SuperheroeModule {}
+export class SuperheroModule {}

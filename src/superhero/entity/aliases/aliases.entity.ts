@@ -10,7 +10,7 @@ import {
 } from "typeorm";
 import { BiographyEntity } from "../biography/biography.entity";
 
-@Entity("superheroe_biography_aliases", { schema: "public" })
+@Entity("superhero_biography_aliases", { schema: "public" })
 export class AliasesEntity {
   @PrimaryGeneratedColumn("uuid")
   id: string;
@@ -23,6 +23,6 @@ export class AliasesEntity {
     (BiographyEntity) => BiographyEntity.aliases,
     { onDelete: "CASCADE" }
   )
-  @JoinColumn([{ name: "superheroe_biography_id", referencedColumnName: "id" }])
+  @JoinColumn([{ name: "superhero_biography_id", referencedColumnName: "id" }])
   biography: BiographyEntity;
 }
