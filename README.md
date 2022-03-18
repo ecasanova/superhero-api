@@ -62,21 +62,25 @@ You can see public API contract in http://localhost:3000/api
 
 You need add this api key value in the header of every http request
 
-```
+```bash
 apiKey: 6b9a7f25-8ce5-4781-b1e1-98c40b1b3884
 ```
 
 # Enviroment variables
 
-```
+```bash
+# nodejs service port (default: 80)
 PORT=
+# database username
 DB_USER=
+# database password
 DB_PASS=
+# database name
 DB_NAME=
+# database username host (default:localhost)
 DB_HOST=
+# postgre sql port default (default:5431)
 DB_PORT=
-DB_SYNC=
-JWT_SECRET=
 ```
 
 ## Support
