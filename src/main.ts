@@ -11,9 +11,11 @@ async function bootstrap() {
     .setTitle("ADK/p202 Superhero API")
     .setDescription("ADK/p202 Superhero API")
     .setVersion("1.0")
+    .addApiKey({ type: "apiKey", name: "apiKey", in: "header" })
     .build();
   app.use(bodyParser.json({ limit: "50mb" }));
   app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
+
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup("api", app, document);
   await app.listen(process.env.port || 3000);

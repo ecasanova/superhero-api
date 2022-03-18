@@ -54,10 +54,6 @@ $ npm run typeorm migration:run
 
 ```
 
-# Usage
-
-You can see public API contract in http://localhost:3000/api
-
 # Authentication
 
 You need add this api key value in the header of every http request
@@ -65,6 +61,12 @@ You need add this api key value in the header of every http request
 ```bash
 apiKey: 6b9a7f25-8ce5-4781-b1e1-98c40b1b3884
 ```
+
+# Usage
+
+You can see public API contract in http://localhost:3000/api
+
+_Note: remmenber include the apiKey, (click on green authorize button, and add the value in the authorization modal)_
 
 # Enviroment variables
 
@@ -79,7 +81,7 @@ DB_PASS=
 DB_NAME=
 # database username host (default:localhost)
 DB_HOST=
-# postgre sql port default (default:5431)
+# postgre sql port default (default:5432)
 DB_PORT=
 ```
 
