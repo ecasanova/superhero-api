@@ -13,9 +13,9 @@ import { ApiSecurity, ApiTags } from "@nestjs/swagger";
 import { SuperheroDto } from "./entity/superhero/superhero.dto";
 import { SuperheroService } from "./superhero.service";
 import { SuperheroSearchDto } from "./entity/superhero/search.dto";
-@ApiTags("superheros")
+@ApiTags("superhero")
 @ApiSecurity("apiKey")
-@Controller("superheros")
+@Controller("superhero")
 export class SuperheroController {
   constructor(private superheroService: SuperheroService) {}
 
@@ -39,8 +39,8 @@ export class SuperheroController {
   }
 
   @Post("create-bulk")
-  async createBulk(@Body() superheros: SuperheroDto[]): Promise<any> {
-    return await this.superheroService.createBulk(superheros);
+  async createBulk(@Body() superhero: SuperheroDto[]): Promise<any> {
+    return await this.superheroService.createBulk(superhero);
   }
 
   @Delete("delete/:id")
