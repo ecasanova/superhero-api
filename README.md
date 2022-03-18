@@ -30,19 +30,6 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
 ## Migrations
 
 ```bash
@@ -64,14 +51,14 @@ apiKey: 6b9a7f25-8ce5-4781-b1e1-98c40b1b3884
 
 # Usage
 
-You can see public API contract in http://localhost:3000/api
+You can see public API contract in [http://localhost:3000/api](http://localhost:3000/api)
 
 _Note: remmenber include the apiKey, (click on green authorize button, and add the value in the authorization modal)_
 
 # Enviroment variables
 
 ```bash
-# nodejs service port (default: 80)
+# nodejs service port (default prod env = 80 | dev env = 3000)
 PORT=
 # database username
 DB_USER=
@@ -79,9 +66,9 @@ DB_USER=
 DB_PASS=
 # database name
 DB_NAME=
-# database username host (default:localhost)
+# database hostname (default:localhost)
 DB_HOST=
-# postgre sql port default (default:5432)
+# database port (default:5432)
 DB_PORT=
 ```
 
