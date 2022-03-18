@@ -1,5 +1,4 @@
 import { ApiProperty } from "@nestjs/swagger";
-import { IsEnum } from "class-validator";
 import { MinMaxDto } from "./min-max.dto";
 
 enum Gender {

@@ -19,7 +19,7 @@ export class SuperheroService {
     private connection: Connection,
 
     @InjectRepository(SuperheroEntity)
-    private readonly superherosRepo: Repository<SuperheroEntity>,
+    private readonly superheroRepo: Repository<SuperheroEntity>,
 
     @InjectRepository(BiographyEntity)
     private readonly biographyRepo: Repository<BiographyEntity>,
@@ -50,7 +50,7 @@ export class SuperheroService {
   ) {}
 
   async getAll(page, limit, search): Promise<any> {
-    const queryBuilder = await this.superherosRepo
+    const queryBuilder = await this.superheroRepo
       .createQueryBuilder("superhero")
       .leftJoinAndSelect("superhero.powerstats", "powerstats")
       .leftJoinAndSelect("superhero.biography", "biography")
@@ -143,8 +143,8 @@ export class SuperheroService {
     };
   }
 
-  async cleanData(superheros: any[]) {
-    superheros.forEach((superhero) => {
+  async cleanData(superheroList: any[]) {
+    superheroList.forEach((superhero) => {
       if (superhero.powerstats) delete superhero.powerstats.id;
       if (superhero.images) delete superhero.images.id;
       if (superhero.biography) delete superhero.biography.id;
@@ -152,11 +152,11 @@ export class SuperheroService {
       if (superhero.work) delete superhero.work.id;
       if (superhero.connections) delete superhero.connections.id;
     });
-    return superheros;
+    return superheroList;
   }
 
   async getById(id: string): Promise<any> {
-    let superheros = this.superherosRepo.findOne(id, {
+    let superhero = this.superheroRepo.findOne(id, {
       relations: [
         "powerstats",
         "biography",
@@ -169,7 +169,7 @@ export class SuperheroService {
         "images",
       ],
     });
-    return superheros;
+    return superhero;
   }
 
   async getByName(name: string): Promise<any> {
@@ -177,7 +177,7 @@ export class SuperheroService {
   }
 
   async getSuperHero(params: any) {
-    const queryBuilder = await this.superherosRepo
+    const queryBuilder = await this.superheroRepo
       .createQueryBuilder("superhero")
       .leftJoinAndSelect("superhero.powerstats", "powerstats")
       .leftJoinAndSelect("superhero.biography", "biography")
@@ -198,8 +198,8 @@ export class SuperheroService {
     return await this.cleanData(entities);
   }
 
-  async createBulk(superheros: SuperheroDto[]): Promise<any> {
-    superheros.forEach((superhero) => {
+  async createBulk(superhero: SuperheroDto[]): Promise<any> {
+    superhero.forEach((superhero) => {
       this.createSuperhero(superhero);
     });
   }
@@ -216,7 +216,7 @@ export class SuperheroService {
       //CREATE SUPERHEROE
       const superheroEntity = new SuperheroEntity();
       superheroEntity.name = superhero.name;
-      await this.superherosRepo.insert(superheroEntity);
+      await this.superheroRepo.insert(superheroEntity);
 
       //CREATE BIOGRAPHY
       if (biography) {
@@ -322,7 +322,7 @@ export class SuperheroService {
 
   async remove(id: string): Promise<any> {
     console.log("Removing: ", id);
-    let response = await this.superherosRepo.delete({ id: id });
+    let response = await this.superheroRepo.delete({ id: id });
     return response;
   }
 }
