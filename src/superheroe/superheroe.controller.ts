@@ -9,11 +9,12 @@ import {
   Post,
   Query,
 } from "@nestjs/common";
-import { ApiTags } from "@nestjs/swagger";
+import { ApiSecurity, ApiTags } from "@nestjs/swagger";
 import { SuperheroeDto } from "./entity/superheroe/superheroe.dto";
 import { SuperheroeService } from "./superheroe.service";
 import { SuperheroeSearchDto } from "./entity/superheroe/search.dto";
 @ApiTags("superheroes")
+@ApiSecurity("apiKey")
 @Controller("superheroes")
 export class SuperheroeController {
   constructor(private superheroeService: SuperheroeService) {}
