@@ -58,7 +58,7 @@ $ npm run typeorm migration:run
 
 You can see public API contract in http://localhost:3000/api
 
-# Authenticaion
+# Authentication
 
 You need add this api key value in the header of every http request
 
