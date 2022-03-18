@@ -1,8 +1,10 @@
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-[TypeORM](https://typeorm.io/#/) ORM
-[Docker](https://www.docker.com)
+API Contract for the [Superhero Onboarding Project](https://adkgroup.atlassian.net/wiki/spaces/SUP/pages/1172734300/Superhero+Project+-+Functional+Specifications+and+Technical+Requirements+Documentation)
+
+[Nest](https://github.com/nestjs/nest) framework TypeScript documentation
+
+[TypeORM](https://typeorm.io/#/) ORM documentation
 
 ## Installation
 
@@ -25,9 +27,6 @@ $ npm run start
 
 # watch mode
 $ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
 
 ## Migrations
