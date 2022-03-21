@@ -45,8 +45,9 @@ $ npm run typeorm migration:run
 You need add this api key value in the header of every http request
 
 ```bash
-apiKey: 6b9a7f25-8ce5-4781-b1e1-98c40b1b3884
+apiKey: API_KEY_VALUE
 ```
+* Ask your manager or mentor how to get an api key *
 
 # Usage
 
