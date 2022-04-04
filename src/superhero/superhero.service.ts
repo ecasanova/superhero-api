@@ -1,4 +1,4 @@
-import { Injectable } from "@nestjs/common";
+import { Injectable, UseInterceptors } from "@nestjs/common";
 import { Connection, DeleteResult, Repository } from "typeorm";
 import { AliasesEntity } from "./entity/aliases/aliases.entity";
 import { AppearanceEntity } from "./entity/appearance/appearance.entity";
@@ -12,7 +12,17 @@ import { WorkEntity } from "./entity/work/work.entity";
 import { SuperheroEntity } from "./entity/superhero/superhero.entity";
 import { SuperheroDto } from "./entity/superhero/superhero.dto";
 import { InjectRepository } from "@nestjs/typeorm";
-
+import { createWriteStream, writeFileSync, readFileSync, existsSync } from "fs";
+const axios = require("axios");
+const imageSizes = [
+  { name: "xs", width: 120, heigth: 160 },
+  { name: "sm", width: 240, heigth: 320 },
+  { name: "md", width: 480, heigth: 640 },
+  { name: "lg", width: 680, heigth: 840 },
+];
+const resizeImg = require("resize-image-buffer");
+import * as MOCKED_RESPONSE from "./data.json";
+const { PassThrough } = require("stream");
 @Injectable()
 export class SuperheroService {
   constructor(
@@ -48,6 +58,54 @@ export class SuperheroService {
     @InjectRepository(AliasesEntity)
     private readonly AliasesEntityRepo: Repository<AliasesEntity>
   ) {}
+
+  slugify(string) {
+    return string
+      .toString()
+      .trim()
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .replace(/[^\w\-]+/g, "")
+      .replace(/\-\-+/g, "-")
+      .replace(/^-+/, "")
+      .replace(/-+$/, "");
+  }
+
+  async download(dest, size, superhero): Promise<any> {
+    /* var filename = dest.substring(dest.lastIndexOf("/") + 1); */
+    let slug = this.slugify(superhero.name);
+    let filename = superhero.id + "-" + slug + ".jpg";
+    return new Promise((resolve, reject) => {
+      try {
+        axios
+          .get(dest, { responseType: "stream" })
+          .then(async (response) => {
+            const chunks = response.data.pipe(
+              new PassThrough({ encoding: "base64" })
+            );
+            let str = "";
+            for await (let chunk of chunks) {
+              str += chunk;
+            }
+            let resize = __dirname + "/uploads/" + size.name + "/" + filename;
+
+            let image = await resizeImg(str, {
+              width: size.width,
+              heigth: size.heigth,
+            });
+            writeFileSync(resize, image);
+            resolve(true);
+          })
+          .catch((error) => {
+            console.log("Error cargando fotos de ", superhero.name);
+            reject();
+          });
+      } catch (error) {
+        console.log("Error cargando fotos de ", superhero.name);
+        reject();
+      }
+    });
+  }
 
   async getAll(page, limit, search): Promise<any> {
     const queryBuilder = await this.superheroRepo
@@ -198,8 +256,9 @@ export class SuperheroService {
     return await this.cleanData(entities);
   }
 
-  async createBulk(superhero: SuperheroDto[]): Promise<any> {
-    superhero.forEach((superhero) => {
+  async createBulk(): Promise<any> {
+    let list: SuperheroDto[] = MOCKED_RESPONSE;
+    list.forEach((superhero) => {
       this.createSuperhero(superhero);
     });
   }
@@ -296,9 +355,9 @@ export class SuperheroService {
       //CREATE IMAGE
       if (images) {
         let newImageEntity = new ImageEntity();
-        newImageEntity.xs = images.xs;
-        newImageEntity.sm = images.sm;
-        newImageEntity.md = images.md;
+        newImageEntity.xs = images.lg;
+        newImageEntity.sm = images.lg;
+        newImageEntity.md = images.lg;
         newImageEntity.lg = images.lg;
         newImageEntity.superhero = superheroEntity;
         await this.imageRepo.insert(newImageEntity);

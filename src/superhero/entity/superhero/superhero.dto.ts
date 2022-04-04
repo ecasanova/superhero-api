@@ -8,7 +8,7 @@ import { ImageEntityDto } from "../image/image.dto";
 import { WorkEntityDto } from "../work/work.dto";
 
 export class SuperheroDto {
-  id: number;
+  id: string;
 
   @ApiProperty()
   @IsNotEmpty()

@@ -39,8 +39,8 @@ export class SuperheroController {
   }
 
   @Post("create-bulk")
-  async createBulk(@Body() superhero: SuperheroDto[]): Promise<any> {
-    return await this.superheroService.createBulk(superhero);
+  async createBulk(): Promise<any> {
+    return await this.superheroService.createBulk();
   }
 
   @Delete("delete/:id")
