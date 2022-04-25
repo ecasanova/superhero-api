@@ -1,0 +1,36 @@
+{
+  "family": "superhero-api-task",
+  "executionRoleArn": "arn:aws:iam::992250665077:role/ecsTaskExecutionRole",
+  "containerDefinitions": [
+    {
+      "name": "superhero-api",
+      "image": "992250665077.dkr.ecr.us-east-1.amazonaws.com/superhero-api:latest",
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "protocol": "tcp",
+          "containerPort": 80
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "superhero-api",
+          "awslogs-region": "us-east-1",
+          "awslogs-stream-prefix": "api"
+        }
+      },
+      "environment": [
+        {
+          "name": "variable",
+          "value": "value"
+        }
+      ],
+      "essential": true
+    }
+  ],
+  "requiresCompatibilities": ["FARGATE"],
+  "networkMode": "awsvpc",
+  "cpu": "1024",
+  "memory": "2048"
+}
