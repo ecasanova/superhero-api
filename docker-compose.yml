@@ -1,10 +1,10 @@
 version: "3.1"
-
 services:
   psql-db:
+    container_name: superhero-api-db
     image: postgres:12.1-alpine
     ports:
-      - ${POSTGRES_PORT_EXTERNAL}:5432
+      - ${DB_PORT}:${DB_PORT}
     environment:
       - POSTGRES_USER=${DB_USER}
       - POSTGRES_PASSWORD=${DB_PASS}
@@ -13,9 +13,26 @@ services:
       - psql-db-data:/var/lib/postgresql/data
     networks:
       - ws-network
-
+  api:
+    container_name: superhero-api
+    image: superhero-api:latest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - ${PORT}:${PORT}
+    networks:
+      - ws-network
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    env_file:
+      - .env
+    depends_on:
+      - psql-db
+    restart: unless-stopped
 volumes:
   psql-db-data:
-
 networks:
   ws-network:
+    driver: bridge

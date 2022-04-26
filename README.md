@@ -1,12 +1,22 @@
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+API Contract for the [Superhero Onboarding Project](https://adkgroup.atlassian.net/wiki/spaces/SUP/pages/1172734300/Superhero+Project+-+Functional+Specifications+and+Technical+Requirements+Documentation)
+
+[Nest](https://github.com/nestjs/nest) framework TypeScript documentation
+
+[TypeORM](https://typeorm.io/#/) ORM documentation
 
 ## Installation
 
 ```bash
 $ npm install
+
+#env files
+cp .env.sample .env
+
+#Docker composer
 $ docker-compose up -d
+
 ```
 
 ## Running the app
@@ -17,34 +27,51 @@ $ npm run start
 
 # watch mode
 $ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
 
-## Test
+## Migrations
 
 ```bash
-# unit tests
-$ npm run test
+# create migration
+$ npm run typeorm migration:run
 
-# e2e tests
-$ npm run test:e2e
+# migration run (load initial data)
+$ npm run typeorm migration:run
 
-# test coverage
-$ npm run test:cov
+```
+
+# Authentication
+
+You need add this api key value in the header of every http request
+
+```bash
+apiKey: API_KEY_VALUE
+```
+* Ask your manager or mentor how to get an api key *
+
+# Usage
+
+You can see public API contract in [http://localhost:3000/api](http://localhost:3000/api)
+
+_Note: remmenber include the apiKey, (click on green authorize button, and add the value in the authorization modal)_
+
+# Enviroment variables
+
+```bash
+# nodejs service port (default prod env = 80 | dev env = 3000)
+PORT=
+# database username
+DB_USER=
+# database password
+DB_PASS=
+# database name
+DB_NAME=
+# database hostname (default:localhost)
+DB_HOST=
+# database port (default:5432)
+DB_PORT=
 ```
 
 ## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil My�liwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+Enrique Casanova - [enrique.casanova@projekt202.com](mailto:enrique.casanova@projekt202.com)
