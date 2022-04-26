@@ -11,7 +11,7 @@ definitions:
               AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
               AWS_DEFAULT_REGION: "us-east-1"
               CLUSTER_NAME: "superhero-api"
-              SERVICE_NAME: "superhero-api"
+              SERVICE_NAME: "superhero-api-service"
               FORCE_NEW_DEPLOYMENT: "true"
               TASK_DEFINITION: "task-definition.json"
 
