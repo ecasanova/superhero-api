@@ -1,4 +1,4 @@
-## Description
+## Description Superhero API
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
