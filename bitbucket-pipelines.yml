@@ -3,21 +3,30 @@ image: atlassian/default-image:2
 definitions:
   steps:
     - step: &push-docker-image
-        name: Push Docker image
+        name: Push Docker image to ECR
         image: atlassian/pipelines-awscli
         caches:
           - docker
         services:
           - docker
         script:
-          - export BUILD_ID=$BITBUCKET_BRANCH_$BITBUCKET_COMMIT_$BITBUCKET_BUILD_NUMBER
-          - export DOCKER_URI=$DOCKER_IMAGE_URL:latest
-          # Login to docker registry on AWS
-          - eval $(aws ecr get-login --no-include-email)
-          # Build image
-          - docker build -t $DOCKER_URI .
-          # Push image to private registry
-          - docker push $DOCKER_URI
+          # creates variables (timestamp, image name and tag)
+          - export TIMESTAMP="$(date +%Y%m%d)"
+          - export IMAGE_NAME=application
+          - export TAG="$TIMESTAMP"
+          # builds docker image from a local dockerfile
+          - docker build -t application .
+          # tags image as a way to id it by the timestamp
+          - docker tag application application:$TIMESTAMP
+          # use pipe to push the image to AWS ECR
+          - pipe: atlassian/aws-ecr-push-image:1.3.0
+            variables:
+              AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+              AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+              AWS_DEFAULT_REGION: us-east-1
+              IMAGE_NAME: application:$TIMESTAMP
+              TAGS: "$TIMESTAMP $BITBUCKET_BUILD_NUMBER"
+
     - step: &deploy-nodejs
         name: Deploy NodeJs Service
         script:
@@ -31,12 +40,6 @@ definitions:
               FORCE_NEW_DEPLOYMENT: "true"
 
 pipelines:
-  default:
-    - step:
-        name: Default Pipeline
-        script:
-          - echo "Default pipeline step"
-
   custom:
     nodejs-dev: &nodejs-dev
       - step: *push-docker-image
