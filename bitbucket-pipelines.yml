@@ -1,9 +1,31 @@
-script:
-  - pipe: atlassian/aws-ecs-deploy:1.6.1
-    variables:
-      AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
-      AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
-      AWS_DEFAULT_REGION: "us-east-1"
-      CLUSTER_NAME: "superher-api"
-      SERVICE_NAME: "superhero-api"
-      TASK_DEFINITION: "task-definition.json"
+image: atlassian/default-image:2
+
+definitions:
+  steps:
+    - step: &deploy-nodejs
+        name: Deploy NodeJs Service
+        script:
+          - pipe: atlassian/aws-ecs-deploy:1.6.1
+            variables:
+              AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+              AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+              AWS_DEFAULT_REGION: "us-east-1"
+              CLUSTER_NAME: "superhero-api"
+              SERVICE_NAME: "superhero-api"
+              FORCE_NEW_DEPLOYMENT: "true"
+
+pipelines:
+  default:
+    - step:
+        name: Default Pipeline
+        script:
+          - echo "Default pipeline step"
+
+  custom:
+    nodejs-dev: &nodejs-dev
+      - step:
+          <<: *deploy-nodejs
+          deployment: dev-deploy
+
+  branches:
+    master: *nodejs-dev
