@@ -1,4 +1,8 @@
-image: atlassian/default-image:2
+image:
+  name: <aws_account_id>.dkr.ecr.<region>.amazonaws.com/openjdk:8
+  aws:
+    access-key: $AWS_ACCESS_KEY
+    secret-key: $AWS_SECRET_KEY
 
 definitions:
   steps:
@@ -10,13 +14,12 @@ definitions:
           # build the image
           - docker build -t superhero-api .
           - docker image tag superhero-api:latest 992250665077.dkr.ecr.us-east-1.amazonaws.com/superhero-api:latest
-          # use the pipe to push the image to AWS ECR
-          - pipe: atlassian/aws-ecr-push-image:1.5.0
+          - pipe: atlassian/aws-ecr-push-image:1.2.2
             variables:
               AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
               AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
               AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
-              IMAGE_NAME: "superhero-api"
+              IMAGE_NAME: superhero-api
 
     - step: &deploy-nodejs
         name: Deploy NodeJs Service
