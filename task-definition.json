@@ -1,6 +1,6 @@
 {
   "family": "superhero-api-task",
-  "executionRoleArn": "arn:aws:iam::992250665077:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::992250665077:role/superhero-sandbox-admin",
   "containerDefinitions": [
     {
       "name": "superhero-api",
