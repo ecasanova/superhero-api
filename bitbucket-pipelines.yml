@@ -4,17 +4,16 @@ definitions:
         name: Push Docker image to ECR
         services:
           - docker
+        caches:
+          - pip
         script:
           # build the image
-          - docker build -t superhero-api .
-          - pipe: atlassian/aws-ecr-push-image:1.5.0
-            variables:
-              AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
-              AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
-              AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
-              IMAGE_NAME: "superhero-api"
-              TAGS: "latest"
-              DEBUG: "true"
+          - pip install awscli
+          - eval $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
+          - docker build -t $IMAGE_NAME .
+          - export IMAGE_ID=`docker images -q $AWS_CLUSTER_NAME`
+          - docker tag $IMAGE_ID $AWS_ECR_REPO_URL/$AWS_CLUSTER_NAME:lastest
+          - docker push $AWS_ECR_REPO_URL/$AWS_CLUSTER_NAME
     - step: &deploy-nodejs
         name: Deploy NodeJs Service
         script:
