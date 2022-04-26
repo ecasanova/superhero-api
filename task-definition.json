@@ -20,10 +20,10 @@
           "awslogs-stream-prefix": "api"
         }
       },
-      "environment": [
+      "environmentFiles": [
         {
-          "name": "variable",
-          "value": "value"
+          "value": "arn:aws:s3:::superhero-api/.env",
+          "type": "s3"
         }
       ],
       "essential": true
