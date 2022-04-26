@@ -7,7 +7,7 @@ definitions:
         script:
           # build the image
           - apt-get update && apt-get install -y awscli
-          - eval $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email | sed 's|https://||')
+          - eval $(aws ecr get-login-password --region us-east-1 --profile 992250665077 | docker login --username AWS --password-stdin 992250665077.dkr.ecr.us-east-1.amazonaws.com)
           - docker build -t superhero-api .
           - export IMAGE_ID=`docker images -q superhero-api`
           - docker tag $IMAGE_ID 992250665077.dkr.ecr.us-east-1.amazonaws.com/superhero-api:latest
