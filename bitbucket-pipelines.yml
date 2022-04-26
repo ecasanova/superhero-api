@@ -7,11 +7,13 @@ definitions:
         services:
           - docker
         script:
+          - echo Logging in to Amazon ECR...
+          - eval $(aws ecr get-login --no-include-email --region ${AWS_DEFAULT_REGION} )
           # builds docker image from a local dockerfile
-          - docker build -t superhero-api .
+          - docker build -t {$AWS_CLUSTER_NAME} .
           # tags image and push to ecr repo
-          - docker tag superhero-api:latest 992250665077.dkr.ecr.us-east-1.amazonaws.com/superhero-api:latest
-          - docker push 992250665077.dkr.ecr.us-east-1.amazonaws.com/superhero-api:latest
+          - docker tag superhero-api:latest ${AWS_IAM_ROLE_ID}.dkr.ecr.us-east-1.amazonaws.com/{$AWS_CLUSTER_NAME}:latest
+          - docker push ${AWS_IAM_ROLE_ID}.dkr.ecr.{AWS_DEFAULT_REGION}.amazonaws.com/{$AWS_CLUSTER_NAME}:latest
     - step: &deploy-nodejs
         name: Deploy NodeJs Service
         script:
@@ -19,9 +21,9 @@ definitions:
             variables:
               AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
               AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
-              AWS_DEFAULT_REGION: "us-east-1"
-              CLUSTER_NAME: "superhero-api"
-              SERVICE_NAME: "superhero-api"
+              AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+              CLUSTER_NAME: $AWS_CLUSTER_NAME
+              SERVICE_NAME: $AWS_SERVICE_NAME
               FORCE_NEW_DEPLOYMENT: "true"
 
 pipelines:
