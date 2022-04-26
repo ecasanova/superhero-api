@@ -9,20 +9,21 @@ definitions:
         script:
           # creates variables (timestamp, image name and tag)
           - export TIMESTAMP="$(date +%Y%m%d)"
-          - export IMAGE_NAME=application
+          - export IMAGE_NAME=superhero-api
           - export TAG="$TIMESTAMP"
           # builds docker image from a local dockerfile
-          - docker build -t application .
+          - docker build -t superhero-api .
           # tags image as a way to id it by the timestamp
-          - docker tag application application:$TIMESTAMP
+          - docker tag superhero-api superhero-api:$TIMESTAMP
           # use pipe to push the image to AWS ECR
           - pipe: atlassian/aws-ecr-push-image:1.5.0
             variables:
               AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
               AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
               AWS_DEFAULT_REGION: us-east-1
-              IMAGE_NAME: application:$TIMESTAMP
+              IMAGE_NAME: superhero-api:$TIMESTAMP
               TAGS: "$TIMESTAMP $BITBUCKET_BUILD_NUMBER"
+              DEBUG: "true"
 
     - step: &deploy-nodejs
         name: Deploy NodeJs Service
