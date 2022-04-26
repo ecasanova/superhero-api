@@ -8,9 +8,10 @@ definitions:
           - docker
         script:
           # build the image
-          - docker build -t $AWS_ECR_REPO_URL/superhero-api .
+          - docker build -t superhero-api .
+          - docker image tag superhero-api:latest 992250665077.dkr.ecr.us-east-1.amazonaws.com/superhero-api:latest
           # use the pipe to push the image to AWS ECR
-          - pipe: atlassian/aws-ecr-push-image:0.1.3
+          - pipe: atlassian/aws-ecr-push-image:1.5.0
             variables:
               AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
               AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
