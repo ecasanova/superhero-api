@@ -8,12 +8,12 @@ definitions:
           - docker
         script:
           - echo Logging in to Amazon ECR...
-          - eval $(aws ecr get-login --no-include-email --region ${AWS_DEFAULT_REGION} )
+          - eval $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION )
           # builds docker image from a local dockerfile
-          - docker build -t {$AWS_CLUSTER_NAME} .
+          - docker build -t $AWS_CLUSTER_NAME .
           # tags image and push to ecr repo
-          - docker tag superhero-api:latest ${AWS_IAM_ROLE_ID}.dkr.ecr.us-east-1.amazonaws.com/{$AWS_CLUSTER_NAME}:latest
-          - docker push ${AWS_IAM_ROLE_ID}.dkr.ecr.{AWS_DEFAULT_REGION}.amazonaws.com/{$AWS_CLUSTER_NAME}:latest
+          - docker tag superhero-api:latest $AWS_IAM_ROLE_ID.dkr.ecr.us-east-1.amazonaws.com/$AWS_CLUSTER_NAME:latest
+          - docker push $AWS_IAM_ROLE_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$AWS_CLUSTER_NAME:latest
     - step: &deploy-nodejs
         name: Deploy NodeJs Service
         script:
