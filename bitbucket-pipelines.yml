@@ -7,14 +7,14 @@ definitions:
         script:
           # build the image
           - docker build -t superhero-api .
-          - docker image tag superhero-api:latest 992250665077.dkr.ecr.us-east-1.amazonaws.com/superhero-api:latest
-          - pipe: atlassian/aws-ecr-push-image:1.2.2
+          - pipe: atlassian/aws-ecr-push-image:1.5.0
             variables:
               AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
               AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
               AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
               IMAGE_NAME: "superhero-api"
-
+              TAGS: "latest"
+              DEBUG: "true"
     - step: &deploy-nodejs
         name: Deploy NodeJs Service
         script:
