@@ -7,13 +7,9 @@ definitions:
         services:
           - docker
         script:
-          # creates variables (timestamp, image name and tag)
-          - export TIMESTAMP="$(date +%Y%m%d)"
-          - export IMAGE_NAME=superhero-api
-          - export TAG="$TIMESTAMP"
           # builds docker image from a local dockerfile
           - docker build -t superhero-api .
-          # tags image as a way to id it by the timestamp
+          # tags image and push to ecr repo
           - docker tag superhero-api:latest 992250665077.dkr.ecr.us-east-1.amazonaws.com/superhero-api:latest
           - docker push 992250665077.dkr.ecr.us-east-1.amazonaws.com/superhero-api:latest
     - step: &deploy-nodejs
