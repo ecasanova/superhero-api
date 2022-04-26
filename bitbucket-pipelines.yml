@@ -39,9 +39,7 @@ pipelines:
 
   custom:
     nodejs-dev: &nodejs-dev
-      - step:
-          <<: *push-docker-image
-          deployment: dev-deploy
+      - step: *push-docker-image
       - step:
           <<: *deploy-nodejs
           deployment: dev-deploy
