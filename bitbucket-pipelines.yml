@@ -28,4 +28,4 @@ pipelines:
           deployment: dev-deploy
 
   branches:
-    master: *nodejs-dev
+    dev: *nodejs-dev
