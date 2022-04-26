@@ -8,10 +8,10 @@ definitions:
           # build the image
           - apt-get update && apt-get install -y awscli
           - eval $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
-          - docker build -t $AWS_CLUSTER_NAME .
-          - export IMAGE_ID=`docker images -q $AWS_CLUSTER_NAME`
-          - docker tag $IMAGE_ID $AWS_ECR_REPO_URL/$AWS_CLUSTER_NAME:lastest
-          - docker push $AWS_ECR_REPO_URL/$AWS_CLUSTER_NAME
+          - docker build -t superhero-api .
+          - export IMAGE_ID=`docker images -q superhero-api`
+          - docker tag $IMAGE_ID $AWS_ECR_REPO_URL/$AWS_CLUSTER_NAME:latest
+          - docker push $AWS_ECR_REPO_URL/superhero-api:latest
     - step: &deploy-nodejs
         name: Deploy NodeJs Service
         script:
