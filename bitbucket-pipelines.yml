@@ -4,11 +4,9 @@ definitions:
         name: Push Docker image to ECR
         services:
           - docker
-        caches:
-          - pip
         script:
           # build the image
-          - pip install awscli
+          - apt-get update && apt-get install -y awscli
           - eval $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
           - docker build -t $AWS_CLUSTER_NAME .
           - export IMAGE_ID=`docker images -q $AWS_CLUSTER_NAME`
