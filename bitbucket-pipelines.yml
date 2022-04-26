@@ -13,6 +13,7 @@ definitions:
               CLUSTER_NAME: "superhero-api"
               SERVICE_NAME: "superhero-api"
               FORCE_NEW_DEPLOYMENT: "true"
+              TASK_DEFINITION: "task-definition.json"
 
 pipelines:
   default:
