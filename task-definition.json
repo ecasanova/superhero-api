@@ -1,6 +1,6 @@
 {
   "family": "superhero-api-task",
-  "executionRoleArn": "arn:aws:iam::992250665077:role/superhero-sandbox-admin",
+  "executionRoleArn": "arn:aws:iam::992250665077:role/superhero-sandbox-admin/enrique.casanova",
   "containerDefinitions": [
     {
       "name": "superhero-api",
