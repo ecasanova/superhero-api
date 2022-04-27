@@ -23,6 +23,7 @@ definitions:
               CLUSTER_NAME: $AWS_CLUSTER_NAME
               SERVICE_NAME: $AWS_SERVICE_NAME
               FORCE_NEW_DEPLOYMENT: "true"
+              TASK_DEFINITION: "task-definition.json"
 
 pipelines:
   custom:
