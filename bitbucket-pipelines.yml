@@ -8,14 +8,13 @@ definitions:
           - docker
         script:
           - docker build -t superhero-api .
-          - export TAG=${BITBUCKET_BUILD_NUMBER}
           - pipe: atlassian/aws-ecr-push-image:1.5.0
             variables:
               AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
               AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
               AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
-              IMAGE_NAME: "superhero-api"
-              TAGS: "${TAG} latest"
+              IMAGE_NAME: "superhero-api:latest"
+              TAGS: "${BITBUCKET_COMMIT} latest"
           - pipe: atlassian/aws-ecs-deploy:1.6.1
             variables:
               AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
@@ -25,7 +24,8 @@ definitions:
               SERVICE_NAME: $AWS_SERVICE_NAME
               FORCE_NEW_DEPLOYMENT: "true"
               TASK_DEFINITION: "task-definition.json"
-
+              DEBUG: "true"
+              WAIT: "true"
 pipelines:
   custom:
     nodejs-dev: &nodejs-dev
