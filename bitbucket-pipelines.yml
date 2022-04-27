@@ -2,6 +2,7 @@ definitions:
   steps:
     - step: &push-docker-image
         name: Push Docker image to ECR
+        deployment: dev-deploy
         services:
           - docker
         script:
@@ -14,6 +15,7 @@ definitions:
               TAGS: "latest" # Optional
     - step: &deploy-nodejs
         name: Deploy NodeJs Service
+        deployment: dev-deploy
         script:
           - pipe: atlassian/aws-ecs-deploy:1.6.1
             variables:
@@ -29,10 +31,8 @@ pipelines:
     nodejs-dev: &nodejs-dev
       - step:
           <<: *push-docker-image
-          deployment: dev-deploy
       - step:
           <<: *deploy-nodejs
-          deployment: dev-deploy
 
   branches:
     dev: *nodejs-dev
