@@ -9,6 +9,9 @@ import { AppModule } from "./app.module";
 import { TypeORMExceptionFilter } from "./utils/typeorm-exceptions.filter";
 import * as bodyParser from "body-parser";
 
+const SERVER = process.env.NODE_ENV !== "production" ? "::" : "localhost";
+const PORT = process.env.PORT || 3000;
+
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.useGlobalFilters(new TypeORMExceptionFilter());
@@ -28,7 +31,9 @@ async function bootstrap() {
   };
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup("api", app, document, customOptions);
-  await app.listen(process.env.port || 3000);
+ 
+  await app.listen(Number(PORT ), SERVER);
+ 
   console.log(`Application is running on: ${await app.getUrl()}`);
 }
 bootstrap();
