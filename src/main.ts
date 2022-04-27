@@ -27,7 +27,7 @@ async function bootstrap() {
     swaggerOptions: {
       persistAuthorization: true,
     },
-    customSiteTitle: "ADK/p202 Superhero API",
+    customSiteTitle: "ADK Superhero API",
   };
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup("api", app, document, customOptions);
