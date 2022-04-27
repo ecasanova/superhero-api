@@ -1,5 +1,6 @@
 import { NestFactory } from "@nestjs/core";
 import {
+  ApiCookieAuth,
   DocumentBuilder,
   SwaggerCustomOptions,
   SwaggerModule,
@@ -28,5 +29,6 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup("api", app, document, customOptions);
   await app.listen(process.env.port || 3000);
+  console.log(`Application is running on: ${await app.getUrl()}`);
 }
 bootstrap();
