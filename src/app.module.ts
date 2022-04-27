@@ -8,6 +8,7 @@ import { SuperheroService } from "./superhero/superhero.service";
 import { AuthModule } from "./auth/auth.module";
 import * as ormconfig from "./ormconfig";
 import { AuthMiddleware } from "./middleware/auth.middleware";
+import { HealthCheckModule } from "nest-healthcheck";
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { AuthMiddleware } from "./middleware/auth.middleware";
       ...ormconfig,
       keepConnectionAlive: true,
     }),
+    HealthCheckModule.register("TEST SERVICE"),
     SuperheroModule,
     AuthModule,
   ],
