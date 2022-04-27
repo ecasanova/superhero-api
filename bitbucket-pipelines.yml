@@ -7,6 +7,7 @@ definitions:
         services:
           - docker
         script:
+          - docker build -t superhero-api .
           - pipe: atlassian/aws-ecr-push-image:1.5.0
             variables:
               AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
