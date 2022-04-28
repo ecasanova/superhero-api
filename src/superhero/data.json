@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "name": "A-Bomb",
     "slug": "1-a-bomb",
     "powerstats": {
@@ -52,7 +52,7 @@
     }
   },
   {
-    "id": 2,
+    "id": "2",
     "name": "Abe Sapien",
     "slug": "2-abe-sapien",
     "powerstats": {
@@ -106,7 +106,7 @@
     }
   },
   {
-    "id": 3,
+    "id": "3",
     "name": "Abin Sur",
     "slug": "3-abin-sur",
     "powerstats": {
@@ -158,7 +158,7 @@
     }
   },
   {
-    "id": 4,
+    "id": "4",
     "name": "Abomination",
     "slug": "4-abomination",
     "powerstats": {
@@ -211,7 +211,7 @@
     }
   },
   {
-    "id": 5,
+    "id": "5",
     "name": "Abraxas",
     "slug": "5-abraxas",
     "powerstats": {
@@ -263,7 +263,7 @@
     }
   },
   {
-    "id": 6,
+    "id": "6",
     "name": "Absorbing Man",
     "slug": "6-absorbing-man",
     "powerstats": {
@@ -320,7 +320,7 @@
     }
   },
   {
-    "id": 7,
+    "id": "7",
     "name": "Adam Monroe",
     "slug": "7-adam-monroe",
     "powerstats": {
@@ -373,7 +373,7 @@
     }
   },
   {
-    "id": 8,
+    "id": "8",
     "name": "Adam Strange",
     "slug": "8-adam-strange",
     "powerstats": {
@@ -426,7 +426,7 @@
     }
   },
   {
-    "id": 10,
+    "id": "10",
     "name": "Agent Bob",
     "slug": "10-agent-bob",
     "powerstats": {
@@ -481,7 +481,7 @@
     }
   },
   {
-    "id": 11,
+    "id": "11",
     "name": "Agent Zero",
     "slug": "11-agent-zero",
     "powerstats": {
@@ -533,7 +533,7 @@
     }
   },
   {
-    "id": 12,
+    "id": "12",
     "name": "Air-Walker",
     "slug": "12-air-walker",
     "powerstats": {
@@ -585,7 +585,7 @@
     }
   },
   {
-    "id": 13,
+    "id": "13",
     "name": "Ajax",
     "slug": "13-ajax",
     "powerstats": {
@@ -639,7 +639,7 @@
     }
   },
   {
-    "id": 14,
+    "id": "14",
     "name": "Alan Scott",
     "slug": "14-alan-scott",
     "powerstats": {
@@ -693,7 +693,7 @@
     }
   },
   {
-    "id": 15,
+    "id": "15",
     "name": "Alex Mercer",
     "slug": "15-alex-mercer",
     "powerstats": {
@@ -747,7 +747,7 @@
     }
   },
   {
-    "id": 17,
+    "id": "17",
     "name": "Alfred Pennyworth",
     "slug": "17-alfred-pennyworth",
     "powerstats": {
@@ -799,7 +799,7 @@
     }
   },
   {
-    "id": 18,
+    "id": "18",
     "name": "Alien",
     "slug": "18-alien",
     "powerstats": {
@@ -851,7 +851,7 @@
     }
   },
   {
-    "id": 20,
+    "id": "20",
     "name": "Amazo",
     "slug": "20-amazo",
     "powerstats": {
@@ -906,7 +906,7 @@
     }
   },
   {
-    "id": 23,
+    "id": "23",
     "name": "Angel",
     "slug": "23-angel",
     "powerstats": {
@@ -959,7 +959,7 @@
     }
   },
   {
-    "id": 24,
+    "id": "24",
     "name": "Angel",
     "slug": "24-angel",
     "powerstats": {
@@ -1015,7 +1015,7 @@
     }
   },
   {
-    "id": 25,
+    "id": "25",
     "name": "Angel Dust",
     "slug": "25-angel-dust",
     "powerstats": {
@@ -1068,7 +1068,7 @@
     }
   },
   {
-    "id": 26,
+    "id": "26",
     "name": "Angel Salvadore",
     "slug": "26-angel-salvadore",
     "powerstats": {
@@ -1120,7 +1120,7 @@
     }
   },
   {
-    "id": 28,
+    "id": "28",
     "name": "Animal Man",
     "slug": "28-animal-man",
     "powerstats": {
@@ -1172,7 +1172,7 @@
     }
   },
   {
-    "id": 29,
+    "id": "29",
     "name": "Annihilus",
     "slug": "29-annihilus",
     "powerstats": {
@@ -1225,7 +1225,7 @@
     }
   },
   {
-    "id": 30,
+    "id": "30",
     "name": "Ant-Man",
     "slug": "30-ant-man",
     "powerstats": {
@@ -1283,7 +1283,7 @@
     }
   },
   {
-    "id": 31,
+    "id": "31",
     "name": "Ant-Man II",
     "slug": "31-ant-man-ii",
     "powerstats": {
@@ -1336,7 +1336,7 @@
     }
   },
   {
-    "id": 32,
+    "id": "32",
     "name": "Anti-Monitor",
     "slug": "32-anti-monitor",
     "powerstats": {
@@ -1389,7 +1389,7 @@
     }
   },
   {
-    "id": 34,
+    "id": "34",
     "name": "Anti-Venom",
     "slug": "34-anti-venom",
     "powerstats": {
@@ -1446,7 +1446,7 @@
     }
   },
   {
-    "id": 35,
+    "id": "35",
     "name": "Apocalypse",
     "slug": "35-apocalypse",
     "powerstats": {
@@ -1503,7 +1503,7 @@
     }
   },
   {
-    "id": 36,
+    "id": "36",
     "name": "Aquababy",
     "slug": "36-aquababy",
     "powerstats": {
@@ -1555,7 +1555,7 @@
     }
   },
   {
-    "id": 37,
+    "id": "37",
     "name": "Aqualad",
     "slug": "37-aqualad",
     "powerstats": {
@@ -1607,7 +1607,7 @@
     }
   },
   {
-    "id": 38,
+    "id": "38",
     "name": "Aquaman",
     "slug": "38-aquaman",
     "powerstats": {
@@ -1664,7 +1664,7 @@
     }
   },
   {
-    "id": 39,
+    "id": "39",
     "name": "Arachne",
     "slug": "39-arachne",
     "powerstats": {
@@ -1717,7 +1717,7 @@
     }
   },
   {
-    "id": 40,
+    "id": "40",
     "name": "Archangel",
     "slug": "40-archangel",
     "powerstats": {
@@ -1772,7 +1772,7 @@
     }
   },
   {
-    "id": 41,
+    "id": "41",
     "name": "Arclight",
     "slug": "41-arclight",
     "powerstats": {
@@ -1824,7 +1824,7 @@
     }
   },
   {
-    "id": 42,
+    "id": "42",
     "name": "Ardina",
     "slug": "42-ardina",
     "powerstats": {
@@ -1876,7 +1876,7 @@
     }
   },
   {
-    "id": 43,
+    "id": "43",
     "name": "Ares",
     "slug": "43-ares",
     "powerstats": {
@@ -1931,7 +1931,7 @@
     }
   },
   {
-    "id": 44,
+    "id": "44",
     "name": "Ariel",
     "slug": "44-ariel",
     "powerstats": {
@@ -1983,7 +1983,7 @@
     }
   },
   {
-    "id": 45,
+    "id": "45",
     "name": "Armor",
     "slug": "45-armor",
     "powerstats": {
@@ -2036,7 +2036,7 @@
     }
   },
   {
-    "id": 48,
+    "id": "48",
     "name": "Atlas",
     "slug": "48-atlas",
     "powerstats": {
@@ -2093,7 +2093,7 @@
     }
   },
   {
-    "id": 49,
+    "id": "49",
     "name": "Atlas",
     "slug": "49-atlas",
     "powerstats": {
@@ -2146,7 +2146,7 @@
     }
   },
   {
-    "id": 52,
+    "id": "52",
     "name": "Atom Girl",
     "slug": "52-atom-girl",
     "powerstats": {
@@ -2198,7 +2198,7 @@
     }
   },
   {
-    "id": 53,
+    "id": "53",
     "name": "Atom II",
     "slug": "53-atom-ii",
     "powerstats": {
@@ -2252,7 +2252,7 @@
     }
   },
   {
-    "id": 56,
+    "id": "56",
     "name": "Aurora",
     "slug": "56-aurora",
     "powerstats": {
@@ -2304,7 +2304,7 @@
     }
   },
   {
-    "id": 57,
+    "id": "57",
     "name": "Azazel",
     "slug": "57-azazel",
     "powerstats": {
@@ -2363,7 +2363,7 @@
     }
   },
   {
-    "id": 58,
+    "id": "58",
     "name": "Azrael",
     "slug": "58-azrael",
     "powerstats": {
@@ -2415,7 +2415,7 @@
     }
   },
   {
-    "id": 60,
+    "id": "60",
     "name": "Bane",
     "slug": "60-bane",
     "powerstats": {
@@ -2467,7 +2467,7 @@
     }
   },
   {
-    "id": 61,
+    "id": "61",
     "name": "Banshee",
     "slug": "61-banshee",
     "powerstats": {
@@ -2519,7 +2519,7 @@
     }
   },
   {
-    "id": 62,
+    "id": "62",
     "name": "Bantam",
     "slug": "62-bantam",
     "powerstats": {
@@ -2571,7 +2571,7 @@
     }
   },
   {
-    "id": 63,
+    "id": "63",
     "name": "Batgirl",
     "slug": "63-batgirl",
     "powerstats": {
@@ -2624,7 +2624,7 @@
     }
   },
   {
-    "id": 66,
+    "id": "66",
     "name": "Batgirl IV",
     "slug": "66-batgirl-iv",
     "powerstats": {
@@ -2677,7 +2677,7 @@
     }
   },
   {
-    "id": 68,
+    "id": "68",
     "name": "Batgirl VI",
     "slug": "68-batgirl-vi",
     "powerstats": {
@@ -2732,7 +2732,7 @@
     }
   },
   {
-    "id": 69,
+    "id": "69",
     "name": "Batman",
     "slug": "69-batman",
     "powerstats": {
@@ -2788,7 +2788,7 @@
     }
   },
   {
-    "id": 70,
+    "id": "70",
     "name": "Batman",
     "slug": "70-batman",
     "powerstats": {
@@ -2841,7 +2841,7 @@
     }
   },
   {
-    "id": 71,
+    "id": "71",
     "name": "Batman II",
     "slug": "71-batman-ii",
     "powerstats": {
@@ -2893,7 +2893,7 @@
     }
   },
   {
-    "id": 72,
+    "id": "72",
     "name": "Battlestar",
     "slug": "72-battlestar",
     "powerstats": {
@@ -2945,7 +2945,7 @@
     }
   },
   {
-    "id": 73,
+    "id": "73",
     "name": "Batwoman V",
     "slug": "73-batwoman-v",
     "powerstats": {
@@ -2997,7 +2997,7 @@
     }
   },
   {
-    "id": 75,
+    "id": "75",
     "name": "Beast",
     "slug": "75-beast",
     "powerstats": {
@@ -3054,7 +3054,7 @@
     }
   },
   {
-    "id": 76,
+    "id": "76",
     "name": "Beast Boy",
     "slug": "76-beast-boy",
     "powerstats": {
@@ -3112,7 +3112,7 @@
     }
   },
   {
-    "id": 78,
+    "id": "78",
     "name": "Ben 10",
     "slug": "78-ben-10",
     "powerstats": {
@@ -3164,7 +3164,7 @@
     }
   },
   {
-    "id": 79,
+    "id": "79",
     "name": "Beta Ray Bill",
     "slug": "79-beta-ray-bill",
     "powerstats": {
@@ -3217,7 +3217,7 @@
     }
   },
   {
-    "id": 80,
+    "id": "80",
     "name": "Beyonder",
     "slug": "80-beyonder",
     "powerstats": {
@@ -3279,7 +3279,7 @@
     }
   },
   {
-    "id": 81,
+    "id": "81",
     "name": "Big Barda",
     "slug": "81-big-barda",
     "powerstats": {
@@ -3332,7 +3332,7 @@
     }
   },
   {
-    "id": 82,
+    "id": "82",
     "name": "Big Daddy",
     "slug": "82-big-daddy",
     "powerstats": {
@@ -3384,7 +3384,7 @@
     }
   },
   {
-    "id": 83,
+    "id": "83",
     "name": "Big Man",
     "slug": "83-big-man",
     "powerstats": {
@@ -3436,7 +3436,7 @@
     }
   },
   {
-    "id": 84,
+    "id": "84",
     "name": "Bill Harken",
     "slug": "84-bill-harken",
     "powerstats": {
@@ -3488,7 +3488,7 @@
     }
   },
   {
-    "id": 87,
+    "id": "87",
     "name": "Bionic Woman",
     "slug": "87-bionic-woman",
     "powerstats": {
@@ -3540,7 +3540,7 @@
     }
   },
   {
-    "id": 88,
+    "id": "88",
     "name": "Bird-Brain",
     "slug": "88-bird-brain",
     "powerstats": {
@@ -3592,7 +3592,7 @@
     }
   },
   {
-    "id": 92,
+    "id": "92",
     "name": "Bishop",
     "slug": "92-bishop",
     "powerstats": {
@@ -3644,7 +3644,7 @@
     }
   },
   {
-    "id": 93,
+    "id": "93",
     "name": "Bizarro",
     "slug": "93-bizarro",
     "powerstats": {
@@ -3696,7 +3696,7 @@
     }
   },
   {
-    "id": 95,
+    "id": "95",
     "name": "Black Adam",
     "slug": "95-black-adam",
     "powerstats": {
@@ -3751,7 +3751,7 @@
     }
   },
   {
-    "id": 96,
+    "id": "96",
     "name": "Black Bolt",
     "slug": "96-black-bolt",
     "powerstats": {
@@ -3803,7 +3803,7 @@
     }
   },
   {
-    "id": 97,
+    "id": "97",
     "name": "Black Canary",
     "slug": "97-black-canary",
     "powerstats": {
@@ -3855,7 +3855,7 @@
     }
   },
   {
-    "id": 98,
+    "id": "98",
     "name": "Black Canary",
     "slug": "98-black-canary",
     "powerstats": {
@@ -3907,7 +3907,7 @@
     }
   },
   {
-    "id": 99,
+    "id": "99",
     "name": "Black Cat",
     "slug": "99-black-cat",
     "powerstats": {
@@ -3959,7 +3959,7 @@
     }
   },
   {
-    "id": 100,
+    "id": "100",
     "name": "Black Flash",
     "slug": "100-black-flash",
     "powerstats": {
@@ -4016,7 +4016,7 @@
     }
   },
   {
-    "id": 102,
+    "id": "102",
     "name": "Black Knight III",
     "slug": "102-black-knight-iii",
     "powerstats": {
@@ -4070,7 +4070,7 @@
     }
   },
   {
-    "id": 103,
+    "id": "103",
     "name": "Black Lightning",
     "slug": "103-black-lightning",
     "powerstats": {
@@ -4122,7 +4122,7 @@
     }
   },
   {
-    "id": 104,
+    "id": "104",
     "name": "Black Mamba",
     "slug": "104-black-mamba",
     "powerstats": {
@@ -4174,7 +4174,7 @@
     }
   },
   {
-    "id": 105,
+    "id": "105",
     "name": "Black Manta",
     "slug": "105-black-manta",
     "powerstats": {
@@ -4228,7 +4228,7 @@
     }
   },
   {
-    "id": 106,
+    "id": "106",
     "name": "Black Panther",
     "slug": "106-black-panther",
     "powerstats": {
@@ -4286,7 +4286,7 @@
     }
   },
   {
-    "id": 107,
+    "id": "107",
     "name": "Black Widow",
     "slug": "107-black-widow",
     "powerstats": {
@@ -4348,7 +4348,7 @@
     }
   },
   {
-    "id": 109,
+    "id": "109",
     "name": "Blackout",
     "slug": "109-blackout",
     "powerstats": {
@@ -4400,7 +4400,7 @@
     }
   },
   {
-    "id": 110,
+    "id": "110",
     "name": "Blackwing",
     "slug": "110-blackwing",
     "powerstats": {
@@ -4455,7 +4455,7 @@
     }
   },
   {
-    "id": 111,
+    "id": "111",
     "name": "Blackwulf",
     "slug": "111-blackwulf",
     "powerstats": {
@@ -4508,7 +4508,7 @@
     }
   },
   {
-    "id": 112,
+    "id": "112",
     "name": "Blade",
     "slug": "112-blade",
     "powerstats": {
@@ -4562,7 +4562,7 @@
     }
   },
   {
-    "id": 114,
+    "id": "114",
     "name": "Bling!",
     "slug": "114-bling!",
     "powerstats": {
@@ -4614,7 +4614,7 @@
     }
   },
   {
-    "id": 115,
+    "id": "115",
     "name": "Blink",
     "slug": "115-blink",
     "powerstats": {
@@ -4666,7 +4666,7 @@
     }
   },
   {
-    "id": 118,
+    "id": "118",
     "name": "Blizzard II",
     "slug": "118-blizzard-ii",
     "powerstats": {
@@ -4718,7 +4718,7 @@
     }
   },
   {
-    "id": 119,
+    "id": "119",
     "name": "Blob",
     "slug": "119-blob",
     "powerstats": {
@@ -4770,7 +4770,7 @@
     }
   },
   {
-    "id": 120,
+    "id": "120",
     "name": "Bloodaxe",
     "slug": "120-bloodaxe",
     "powerstats": {
@@ -4822,7 +4822,7 @@
     }
   },
   {
-    "id": 121,
+    "id": "121",
     "name": "Bloodhawk",
     "slug": "121-bloodhawk",
     "powerstats": {
@@ -4874,7 +4874,7 @@
     }
   },
   {
-    "id": 126,
+    "id": "126",
     "name": "Blue Beetle III",
     "slug": "126-blue-beetle-iii",
     "powerstats": {
@@ -4926,7 +4926,7 @@
     }
   },
   {
-    "id": 127,
+    "id": "127",
     "name": "Boba Fett",
     "slug": "127-boba-fett",
     "powerstats": {
@@ -4982,7 +4982,7 @@
     }
   },
   {
-    "id": 130,
+    "id": "130",
     "name": "Boom-Boom",
     "slug": "130-boom-boom",
     "powerstats": {
@@ -5040,7 +5040,7 @@
     }
   },
   {
-    "id": 135,
+    "id": "135",
     "name": "Box IV",
     "slug": "135-box-iv",
     "powerstats": {
@@ -5093,7 +5093,7 @@
     }
   },
   {
-    "id": 136,
+    "id": "136",
     "name": "Brainiac",
     "slug": "136-brainiac",
     "powerstats": {
@@ -5145,7 +5145,7 @@
     }
   },
   {
-    "id": 137,
+    "id": "137",
     "name": "Brainiac 5",
     "slug": "137-brainiac-5",
     "powerstats": {
@@ -5197,7 +5197,7 @@
     }
   },
   {
-    "id": 139,
+    "id": "139",
     "name": "Brundlefly",
     "slug": "139-brundlefly",
     "powerstats": {
@@ -5249,7 +5249,7 @@
     }
   },
   {
-    "id": 140,
+    "id": "140",
     "name": "Buffy",
     "slug": "140-buffy",
     "powerstats": {
@@ -5309,7 +5309,7 @@
     }
   },
   {
-    "id": 141,
+    "id": "141",
     "name": "Bullseye",
     "slug": "141-bullseye",
     "powerstats": {
@@ -5366,7 +5366,7 @@
     }
   },
   {
-    "id": 142,
+    "id": "142",
     "name": "Bumblebee",
     "slug": "142-bumblebee",
     "powerstats": {
@@ -5418,7 +5418,7 @@
     }
   },
   {
-    "id": 144,
+    "id": "144",
     "name": "Bushido",
     "slug": "144-bushido",
     "powerstats": {
@@ -5470,7 +5470,7 @@
     }
   },
   {
-    "id": 145,
+    "id": "145",
     "name": "Cable",
     "slug": "145-cable",
     "powerstats": {
@@ -5529,7 +5529,7 @@
     }
   },
   {
-    "id": 146,
+    "id": "146",
     "name": "Callisto",
     "slug": "146-callisto",
     "powerstats": {
@@ -5581,7 +5581,7 @@
     }
   },
   {
-    "id": 147,
+    "id": "147",
     "name": "Cameron Hicks",
     "slug": "147-cameron-hicks",
     "powerstats": {
@@ -5633,7 +5633,7 @@
     }
   },
   {
-    "id": 148,
+    "id": "148",
     "name": "Cannonball",
     "slug": "148-cannonball",
     "powerstats": {
@@ -5687,7 +5687,7 @@
     }
   },
   {
-    "id": 149,
+    "id": "149",
     "name": "Captain America",
     "slug": "149-captain-america",
     "powerstats": {
@@ -5740,7 +5740,7 @@
     }
   },
   {
-    "id": 150,
+    "id": "150",
     "name": "Captain Atom",
     "slug": "150-captain-atom",
     "powerstats": {
@@ -5794,7 +5794,7 @@
     }
   },
   {
-    "id": 151,
+    "id": "151",
     "name": "Captain Britain",
     "slug": "151-captain-britain",
     "powerstats": {
@@ -5850,7 +5850,7 @@
     }
   },
   {
-    "id": 152,
+    "id": "152",
     "name": "Captain Cold",
     "slug": "152-captain-cold",
     "powerstats": {
@@ -5907,7 +5907,7 @@
     }
   },
   {
-    "id": 154,
+    "id": "154",
     "name": "Captain Hindsight",
     "slug": "154-captain-hindsight",
     "powerstats": {
@@ -5959,7 +5959,7 @@
     }
   },
   {
-    "id": 156,
+    "id": "156",
     "name": "Captain Marvel",
     "slug": "156-captain-marvel",
     "powerstats": {
@@ -6014,7 +6014,7 @@
     }
   },
   {
-    "id": 157,
+    "id": "157",
     "name": "Captain Marvel",
     "slug": "157-captain-marvel",
     "powerstats": {
@@ -6070,7 +6070,7 @@
     }
   },
   {
-    "id": 158,
+    "id": "158",
     "name": "Captain Marvel II",
     "slug": "158-captain-marvel-ii",
     "powerstats": {
@@ -6123,7 +6123,7 @@
     }
   },
   {
-    "id": 160,
+    "id": "160",
     "name": "Captain Planet",
     "slug": "160-captain-planet",
     "powerstats": {
@@ -6177,7 +6177,7 @@
     }
   },
   {
-    "id": 162,
+    "id": "162",
     "name": "Carnage",
     "slug": "162-carnage",
     "powerstats": {
@@ -6230,7 +6230,7 @@
     }
   },
   {
-    "id": 165,
+    "id": "165",
     "name": "Catwoman",
     "slug": "165-catwoman",
     "powerstats": {
@@ -6287,7 +6287,7 @@
     }
   },
   {
-    "id": 167,
+    "id": "167",
     "name": "Century",
     "slug": "167-century",
     "powerstats": {
@@ -6339,7 +6339,7 @@
     }
   },
   {
-    "id": 169,
+    "id": "169",
     "name": "Chamber",
     "slug": "169-chamber",
     "powerstats": {
@@ -6393,7 +6393,7 @@
     }
   },
   {
-    "id": 170,
+    "id": "170",
     "name": "Chameleon",
     "slug": "170-chameleon",
     "powerstats": {
@@ -6454,7 +6454,7 @@
     }
   },
   {
-    "id": 171,
+    "id": "171",
     "name": "Changeling",
     "slug": "171-changeling",
     "powerstats": {
@@ -6507,7 +6507,7 @@
     }
   },
   {
-    "id": 172,
+    "id": "172",
     "name": "Cheetah",
     "slug": "172-cheetah",
     "powerstats": {
@@ -6560,7 +6560,7 @@
     }
   },
   {
-    "id": 174,
+    "id": "174",
     "name": "Cheetah III",
     "slug": "174-cheetah-iii",
     "powerstats": {
@@ -6616,7 +6616,7 @@
     }
   },
   {
-    "id": 176,
+    "id": "176",
     "name": "Chuck Norris",
     "slug": "176-chuck-norris",
     "powerstats": {
@@ -6668,7 +6668,7 @@
     }
   },
   {
-    "id": 177,
+    "id": "177",
     "name": "Citizen Steel",
     "slug": "177-citizen-steel",
     "powerstats": {
@@ -6722,7 +6722,7 @@
     }
   },
   {
-    "id": 178,
+    "id": "178",
     "name": "Claire Bennet",
     "slug": "178-claire-bennet",
     "powerstats": {
@@ -6775,7 +6775,7 @@
     }
   },
   {
-    "id": 180,
+    "id": "180",
     "name": "Cloak",
     "slug": "180-cloak",
     "powerstats": {
@@ -6827,7 +6827,7 @@
     }
   },
   {
-    "id": 181,
+    "id": "181",
     "name": "Clock King",
     "slug": "181-clock-king",
     "powerstats": {
@@ -6879,7 +6879,7 @@
     }
   },
   {
-    "id": 185,
+    "id": "185",
     "name": "Colossus",
     "slug": "185-colossus",
     "powerstats": {
@@ -6934,7 +6934,7 @@
     }
   },
   {
-    "id": 186,
+    "id": "186",
     "name": "Copycat",
     "slug": "186-copycat",
     "powerstats": {
@@ -6995,7 +6995,7 @@
     }
   },
   {
-    "id": 188,
+    "id": "188",
     "name": "Cottonmouth",
     "slug": "188-cottonmouth",
     "powerstats": {
@@ -7047,7 +7047,7 @@
     }
   },
   {
-    "id": 191,
+    "id": "191",
     "name": "Crystal",
     "slug": "191-crystal",
     "powerstats": {
@@ -7100,7 +7100,7 @@
     }
   },
   {
-    "id": 194,
+    "id": "194",
     "name": "Cyborg",
     "slug": "194-cyborg",
     "powerstats": {
@@ -7154,7 +7154,7 @@
     }
   },
   {
-    "id": 195,
+    "id": "195",
     "name": "Cyborg Superman",
     "slug": "195-cyborg-superman",
     "powerstats": {
@@ -7208,7 +7208,7 @@
     }
   },
   {
-    "id": 196,
+    "id": "196",
     "name": "Cyclops",
     "slug": "196-cyclops",
     "powerstats": {
@@ -7268,7 +7268,7 @@
     }
   },
   {
-    "id": 198,
+    "id": "198",
     "name": "Dagger",
     "slug": "198-dagger",
     "powerstats": {
@@ -7319,7 +7319,7 @@
     }
   },
   {
-    "id": 200,
+    "id": "200",
     "name": "Daphne Powell",
     "slug": "200-daphne-powell",
     "powerstats": {
@@ -7371,7 +7371,7 @@
     }
   },
   {
-    "id": 201,
+    "id": "201",
     "name": "Daredevil",
     "slug": "201-daredevil",
     "powerstats": {
@@ -7437,7 +7437,7 @@
     }
   },
   {
-    "id": 202,
+    "id": "202",
     "name": "Darkhawk",
     "slug": "202-darkhawk",
     "powerstats": {
@@ -7491,7 +7491,7 @@
     }
   },
   {
-    "id": 203,
+    "id": "203",
     "name": "Darkman",
     "slug": "203-darkman",
     "powerstats": {
@@ -7543,7 +7543,7 @@
     }
   },
   {
-    "id": 204,
+    "id": "204",
     "name": "Darkseid",
     "slug": "204-darkseid",
     "powerstats": {
@@ -7595,7 +7595,7 @@
     }
   },
   {
-    "id": 206,
+    "id": "206",
     "name": "Darkstar",
     "slug": "206-darkstar",
     "powerstats": {
@@ -7647,7 +7647,7 @@
     }
   },
   {
-    "id": 207,
+    "id": "207",
     "name": "Darth Maul",
     "slug": "207-darth-maul",
     "powerstats": {
@@ -7700,7 +7700,7 @@
     }
   },
   {
-    "id": 208,
+    "id": "208",
     "name": "Darth Vader",
     "slug": "208-darth-vader",
     "powerstats": {
@@ -7752,7 +7752,7 @@
     }
   },
   {
-    "id": 209,
+    "id": "209",
     "name": "Dash",
     "slug": "209-dash",
     "powerstats": {
@@ -7805,7 +7805,7 @@
     }
   },
   {
-    "id": 210,
+    "id": "210",
     "name": "Data",
     "slug": "210-data",
     "powerstats": {
@@ -7857,7 +7857,7 @@
     }
   },
   {
-    "id": 211,
+    "id": "211",
     "name": "Dazzler",
     "slug": "211-dazzler",
     "powerstats": {
@@ -7914,7 +7914,7 @@
     }
   },
   {
-    "id": 212,
+    "id": "212",
     "name": "Deadman",
     "slug": "212-deadman",
     "powerstats": {
@@ -7966,7 +7966,7 @@
     }
   },
   {
-    "id": 213,
+    "id": "213",
     "name": "Deadpool",
     "slug": "213-deadpool",
     "powerstats": {
@@ -8026,7 +8026,7 @@
     }
   },
   {
-    "id": 214,
+    "id": "214",
     "name": "Deadshot",
     "slug": "214-deadshot",
     "powerstats": {
@@ -8080,7 +8080,7 @@
     }
   },
   {
-    "id": 215,
+    "id": "215",
     "name": "Deathlok",
     "slug": "215-deathlok",
     "powerstats": {
@@ -8132,7 +8132,7 @@
     }
   },
   {
-    "id": 216,
+    "id": "216",
     "name": "Deathstroke",
     "slug": "216-deathstroke",
     "powerstats": {
@@ -8186,7 +8186,7 @@
     }
   },
   {
-    "id": 217,
+    "id": "217",
     "name": "Demogoblin",
     "slug": "217-demogoblin",
     "powerstats": {
@@ -8238,7 +8238,7 @@
     }
   },
   {
-    "id": 218,
+    "id": "218",
     "name": "Destroyer",
     "slug": "218-destroyer",
     "powerstats": {
@@ -8290,7 +8290,7 @@
     }
   },
   {
-    "id": 219,
+    "id": "219",
     "name": "Diamondback",
     "slug": "219-diamondback",
     "powerstats": {
@@ -8342,7 +8342,7 @@
     }
   },
   {
-    "id": 220,
+    "id": "220",
     "name": "DL Hawkins",
     "slug": "220-dl-hawkins",
     "powerstats": {
@@ -8394,7 +8394,7 @@
     }
   },
   {
-    "id": 221,
+    "id": "221",
     "name": "Doc Samson",
     "slug": "221-doc-samson",
     "powerstats": {
@@ -8446,7 +8446,7 @@
     }
   },
   {
-    "id": 222,
+    "id": "222",
     "name": "Doctor Doom",
     "slug": "222-doctor-doom",
     "powerstats": {
@@ -8499,7 +8499,7 @@
     }
   },
   {
-    "id": 224,
+    "id": "224",
     "name": "Doctor Fate",
     "slug": "224-doctor-fate",
     "powerstats": {
@@ -8551,7 +8551,7 @@
     }
   },
   {
-    "id": 225,
+    "id": "225",
     "name": "Doctor Octopus",
     "slug": "225-doctor-octopus",
     "powerstats": {
@@ -8610,7 +8610,7 @@
     }
   },
   {
-    "id": 226,
+    "id": "226",
     "name": "Doctor Strange",
     "slug": "226-doctor-strange",
     "powerstats": {
@@ -8666,7 +8666,7 @@
     }
   },
   {
-    "id": 227,
+    "id": "227",
     "name": "Domino",
     "slug": "227-domino",
     "powerstats": {
@@ -8727,7 +8727,7 @@
     }
   },
   {
-    "id": 228,
+    "id": "228",
     "name": "Donatello",
     "slug": "228-donatello",
     "powerstats": {
@@ -8780,7 +8780,7 @@
     }
   },
   {
-    "id": 230,
+    "id": "230",
     "name": "Doomsday",
     "slug": "230-doomsday",
     "powerstats": {
@@ -8832,7 +8832,7 @@
     }
   },
   {
-    "id": 231,
+    "id": "231",
     "name": "Doppelganger",
     "slug": "231-doppelganger",
     "powerstats": {
@@ -8886,7 +8886,7 @@
     }
   },
   {
-    "id": 232,
+    "id": "232",
     "name": "Dormammu",
     "slug": "232-dormammu",
     "powerstats": {
@@ -8943,7 +8943,7 @@
     }
   },
   {
-    "id": 233,
+    "id": "233",
     "name": "Dr Manhattan",
     "slug": "233-dr-manhattan",
     "powerstats": {
@@ -8996,7 +8996,7 @@
     }
   },
   {
-    "id": 234,
+    "id": "234",
     "name": "Drax the Destroyer",
     "slug": "234-drax-the-destroyer",
     "powerstats": {
@@ -9048,7 +9048,7 @@
     }
   },
   {
-    "id": 235,
+    "id": "235",
     "name": "Ego",
     "slug": "235-ego",
     "powerstats": {
@@ -9100,7 +9100,7 @@
     }
   },
   {
-    "id": 236,
+    "id": "236",
     "name": "Elastigirl",
     "slug": "236-elastigirl",
     "powerstats": {
@@ -9152,7 +9152,7 @@
     }
   },
   {
-    "id": 237,
+    "id": "237",
     "name": "Electro",
     "slug": "237-electro",
     "powerstats": {
@@ -9204,7 +9204,7 @@
     }
   },
   {
-    "id": 238,
+    "id": "238",
     "name": "Elektra",
     "slug": "238-elektra",
     "powerstats": {
@@ -9256,7 +9256,7 @@
     }
   },
   {
-    "id": 239,
+    "id": "239",
     "name": "Elle Bishop",
     "slug": "239-elle-bishop",
     "powerstats": {
@@ -9308,7 +9308,7 @@
     }
   },
   {
-    "id": 240,
+    "id": "240",
     "name": "Elongated Man",
     "slug": "240-elongated-man",
     "powerstats": {
@@ -9360,7 +9360,7 @@
     }
   },
   {
-    "id": 241,
+    "id": "241",
     "name": "Emma Frost",
     "slug": "241-emma-frost",
     "powerstats": {
@@ -9413,7 +9413,7 @@
     }
   },
   {
-    "id": 242,
+    "id": "242",
     "name": "Enchantress",
     "slug": "242-enchantress",
     "powerstats": {
@@ -9466,7 +9466,7 @@
     }
   },
   {
-    "id": 245,
+    "id": "245",
     "name": "Ethan Hunt",
     "slug": "245-ethan-hunt",
     "powerstats": {
@@ -9518,7 +9518,7 @@
     }
   },
   {
-    "id": 246,
+    "id": "246",
     "name": "Etrigan",
     "slug": "246-etrigan",
     "powerstats": {
@@ -9570,7 +9570,7 @@
     }
   },
   {
-    "id": 247,
+    "id": "247",
     "name": "Evil Deadpool",
     "slug": "247-evil-deadpool",
     "powerstats": {
@@ -9622,7 +9622,7 @@
     }
   },
   {
-    "id": 248,
+    "id": "248",
     "name": "Evilhawk",
     "slug": "248-evilhawk",
     "powerstats": {
@@ -9674,7 +9674,7 @@
     }
   },
   {
-    "id": 249,
+    "id": "249",
     "name": "Exodus",
     "slug": "249-exodus",
     "powerstats": {
@@ -9726,7 +9726,7 @@
     }
   },
   {
-    "id": 251,
+    "id": "251",
     "name": "Falcon",
     "slug": "251-falcon",
     "powerstats": {
@@ -9782,7 +9782,7 @@
     }
   },
   {
-    "id": 252,
+    "id": "252",
     "name": "Fallen One II",
     "slug": "252-fallen-one-ii",
     "powerstats": {
@@ -9834,7 +9834,7 @@
     }
   },
   {
-    "id": 253,
+    "id": "253",
     "name": "Faora",
     "slug": "253-faora",
     "powerstats": {
@@ -9886,7 +9886,7 @@
     }
   },
   {
-    "id": 254,
+    "id": "254",
     "name": "Feral",
     "slug": "254-feral",
     "powerstats": {
@@ -9938,7 +9938,7 @@
     }
   },
   {
-    "id": 256,
+    "id": "256",
     "name": "Fin Fang Foom",
     "slug": "256-fin-fang-foom",
     "powerstats": {
@@ -9990,7 +9990,7 @@
     }
   },
   {
-    "id": 257,
+    "id": "257",
     "name": "Firebird",
     "slug": "257-firebird",
     "powerstats": {
@@ -10044,7 +10044,7 @@
     }
   },
   {
-    "id": 258,
+    "id": "258",
     "name": "Firelord",
     "slug": "258-firelord",
     "powerstats": {
@@ -10096,7 +10096,7 @@
     }
   },
   {
-    "id": 259,
+    "id": "259",
     "name": "Firestar",
     "slug": "259-firestar",
     "powerstats": {
@@ -10150,7 +10150,7 @@
     }
   },
   {
-    "id": 260,
+    "id": "260",
     "name": "Firestorm",
     "slug": "260-firestorm",
     "powerstats": {
@@ -10202,7 +10202,7 @@
     }
   },
   {
-    "id": 261,
+    "id": "261",
     "name": "Firestorm",
     "slug": "261-firestorm",
     "powerstats": {
@@ -10257,7 +10257,7 @@
     }
   },
   {
-    "id": 263,
+    "id": "263",
     "name": "Flash",
     "slug": "263-flash",
     "powerstats": {
@@ -10310,7 +10310,7 @@
     }
   },
   {
-    "id": 265,
+    "id": "265",
     "name": "Flash II",
     "slug": "265-flash-ii",
     "powerstats": {
@@ -10365,7 +10365,7 @@
     }
   },
   {
-    "id": 266,
+    "id": "266",
     "name": "Flash III",
     "slug": "266-flash-iii",
     "powerstats": {
@@ -10419,7 +10419,7 @@
     }
   },
   {
-    "id": 267,
+    "id": "267",
     "name": "Flash IV",
     "slug": "267-flash-iv",
     "powerstats": {
@@ -10472,7 +10472,7 @@
     }
   },
   {
-    "id": 268,
+    "id": "268",
     "name": "Forge",
     "slug": "268-forge",
     "powerstats": {
@@ -10525,7 +10525,7 @@
     }
   },
   {
-    "id": 269,
+    "id": "269",
     "name": "Franklin Richards",
     "slug": "269-franklin-richards",
     "powerstats": {
@@ -10581,7 +10581,7 @@
     }
   },
   {
-    "id": 270,
+    "id": "270",
     "name": "Franklin Storm",
     "slug": "270-franklin-storm",
     "powerstats": {
@@ -10633,7 +10633,7 @@
     }
   },
   {
-    "id": 271,
+    "id": "271",
     "name": "Frenzy",
     "slug": "271-frenzy",
     "powerstats": {
@@ -10685,7 +10685,7 @@
     }
   },
   {
-    "id": 273,
+    "id": "273",
     "name": "Galactus",
     "slug": "273-galactus",
     "powerstats": {
@@ -10740,7 +10740,7 @@
     }
   },
   {
-    "id": 274,
+    "id": "274",
     "name": "Gambit",
     "slug": "274-gambit",
     "powerstats": {
@@ -10795,7 +10795,7 @@
     }
   },
   {
-    "id": 275,
+    "id": "275",
     "name": "Gamora",
     "slug": "275-gamora",
     "powerstats": {
@@ -10848,7 +10848,7 @@
     }
   },
   {
-    "id": 277,
+    "id": "277",
     "name": "Gary Bell",
     "slug": "277-gary-bell",
     "powerstats": {
@@ -10900,7 +10900,7 @@
     }
   },
   {
-    "id": 278,
+    "id": "278",
     "name": "General Zod",
     "slug": "278-general-zod",
     "powerstats": {
@@ -10952,7 +10952,7 @@
     }
   },
   {
-    "id": 280,
+    "id": "280",
     "name": "Ghost Rider",
     "slug": "280-ghost-rider",
     "powerstats": {
@@ -11004,7 +11004,7 @@
     }
   },
   {
-    "id": 284,
+    "id": "284",
     "name": "Giganta",
     "slug": "284-giganta",
     "powerstats": {
@@ -11056,7 +11056,7 @@
     }
   },
   {
-    "id": 285,
+    "id": "285",
     "name": "Gladiator",
     "slug": "285-gladiator",
     "powerstats": {
@@ -11110,7 +11110,7 @@
     }
   },
   {
-    "id": 286,
+    "id": "286",
     "name": "Goblin Queen",
     "slug": "286-goblin-queen",
     "powerstats": {
@@ -11166,7 +11166,7 @@
     }
   },
   {
-    "id": 287,
+    "id": "287",
     "name": "Godzilla",
     "slug": "287-godzilla",
     "powerstats": {
@@ -11223,7 +11223,7 @@
     }
   },
   {
-    "id": 288,
+    "id": "288",
     "name": "Gog",
     "slug": "288-gog",
     "powerstats": {
@@ -11276,7 +11276,7 @@
     }
   },
   {
-    "id": 289,
+    "id": "289",
     "name": "Goku",
     "slug": "289-goku",
     "powerstats": {
@@ -11334,7 +11334,7 @@
     }
   },
   {
-    "id": 294,
+    "id": "294",
     "name": "Gorilla Grodd",
     "slug": "294-gorilla-grodd",
     "powerstats": {
@@ -11389,7 +11389,7 @@
     }
   },
   {
-    "id": 296,
+    "id": "296",
     "name": "Gravity",
     "slug": "296-gravity",
     "powerstats": {
@@ -11441,7 +11441,7 @@
     }
   },
   {
-    "id": 297,
+    "id": "297",
     "name": "Greedo",
     "slug": "297-greedo",
     "powerstats": {
@@ -11493,7 +11493,7 @@
     }
   },
   {
-    "id": 298,
+    "id": "298",
     "name": "Green Arrow",
     "slug": "298-green-arrow",
     "powerstats": {
@@ -11546,7 +11546,7 @@
     }
   },
   {
-    "id": 299,
+    "id": "299",
     "name": "Green Goblin",
     "slug": "299-green-goblin",
     "powerstats": {
@@ -11607,7 +11607,7 @@
     }
   },
   {
-    "id": 300,
+    "id": "300",
     "name": "Green Goblin II",
     "slug": "300-green-goblin-ii",
     "powerstats": {
@@ -11659,7 +11659,7 @@
     }
   },
   {
-    "id": 303,
+    "id": "303",
     "name": "Groot",
     "slug": "303-groot",
     "powerstats": {
@@ -11715,7 +11715,7 @@
     }
   },
   {
-    "id": 305,
+    "id": "305",
     "name": "Guy Gardner",
     "slug": "305-guy-gardner",
     "powerstats": {
@@ -11769,7 +11769,7 @@
     }
   },
   {
-    "id": 306,
+    "id": "306",
     "name": "Hal Jordan",
     "slug": "306-hal-jordan",
     "powerstats": {
@@ -11823,7 +11823,7 @@
     }
   },
   {
-    "id": 307,
+    "id": "307",
     "name": "Han Solo",
     "slug": "307-han-solo",
     "powerstats": {
@@ -11875,7 +11875,7 @@
     }
   },
   {
-    "id": 308,
+    "id": "308",
     "name": "Hancock",
     "slug": "308-hancock",
     "powerstats": {
@@ -11927,7 +11927,7 @@
     }
   },
   {
-    "id": 309,
+    "id": "309",
     "name": "Harley Quinn",
     "slug": "309-harley-quinn",
     "powerstats": {
@@ -11984,7 +11984,7 @@
     }
   },
   {
-    "id": 310,
+    "id": "310",
     "name": "Harry Potter",
     "slug": "310-harry-potter",
     "powerstats": {
@@ -12040,7 +12040,7 @@
     }
   },
   {
-    "id": 311,
+    "id": "311",
     "name": "Havok",
     "slug": "311-havok",
     "powerstats": {
@@ -12093,7 +12093,7 @@
     }
   },
   {
-    "id": 312,
+    "id": "312",
     "name": "Hawk",
     "slug": "312-hawk",
     "powerstats": {
@@ -12146,7 +12146,7 @@
     }
   },
   {
-    "id": 313,
+    "id": "313",
     "name": "Hawkeye",
     "slug": "313-hawkeye",
     "powerstats": {
@@ -12203,7 +12203,7 @@
     }
   },
   {
-    "id": 314,
+    "id": "314",
     "name": "Hawkeye II",
     "slug": "314-hawkeye-ii",
     "powerstats": {
@@ -12255,7 +12255,7 @@
     }
   },
   {
-    "id": 315,
+    "id": "315",
     "name": "Hawkgirl",
     "slug": "315-hawkgirl",
     "powerstats": {
@@ -12308,7 +12308,7 @@
     }
   },
   {
-    "id": 320,
+    "id": "320",
     "name": "Heat Wave",
     "slug": "320-heat-wave",
     "powerstats": {
@@ -12360,7 +12360,7 @@
     }
   },
   {
-    "id": 321,
+    "id": "321",
     "name": "Hela",
     "slug": "321-hela",
     "powerstats": {
@@ -12412,7 +12412,7 @@
     }
   },
   {
-    "id": 322,
+    "id": "322",
     "name": "Hellboy",
     "slug": "322-hellboy",
     "powerstats": {
@@ -12465,7 +12465,7 @@
     }
   },
   {
-    "id": 323,
+    "id": "323",
     "name": "Hellcat",
     "slug": "323-hellcat",
     "powerstats": {
@@ -12519,7 +12519,7 @@
     }
   },
   {
-    "id": 325,
+    "id": "325",
     "name": "Hercules",
     "slug": "325-hercules",
     "powerstats": {
@@ -12581,7 +12581,7 @@
     }
   },
   {
-    "id": 327,
+    "id": "327",
     "name": "Hit-Girl",
     "slug": "327-hit-girl",
     "powerstats": {
@@ -12634,7 +12634,7 @@
     }
   },
   {
-    "id": 330,
+    "id": "330",
     "name": "Hope Summers",
     "slug": "330-hope-summers",
     "powerstats": {
@@ -12691,7 +12691,7 @@
     }
   },
   {
-    "id": 332,
+    "id": "332",
     "name": "Hulk",
     "slug": "332-hulk",
     "powerstats": {
@@ -12750,7 +12750,7 @@
     }
   },
   {
-    "id": 333,
+    "id": "333",
     "name": "Human Torch",
     "slug": "333-human-torch",
     "powerstats": {
@@ -12803,7 +12803,7 @@
     }
   },
   {
-    "id": 334,
+    "id": "334",
     "name": "Huntress",
     "slug": "334-huntress",
     "powerstats": {
@@ -12857,7 +12857,7 @@
     }
   },
   {
-    "id": 335,
+    "id": "335",
     "name": "Husk",
     "slug": "335-husk",
     "powerstats": {
@@ -12909,7 +12909,7 @@
     }
   },
   {
-    "id": 336,
+    "id": "336",
     "name": "Hybrid",
     "slug": "336-hybrid",
     "powerstats": {
@@ -12965,7 +12965,7 @@
     }
   },
   {
-    "id": 337,
+    "id": "337",
     "name": "Hydro-Man",
     "slug": "337-hydro-man",
     "powerstats": {
@@ -13017,7 +13017,7 @@
     }
   },
   {
-    "id": 338,
+    "id": "338",
     "name": "Hyperion",
     "slug": "338-hyperion",
     "powerstats": {
@@ -13072,7 +13072,7 @@
     }
   },
   {
-    "id": 339,
+    "id": "339",
     "name": "Iceman",
     "slug": "339-iceman",
     "powerstats": {
@@ -13129,7 +13129,7 @@
     }
   },
   {
-    "id": 340,
+    "id": "340",
     "name": "Impulse",
     "slug": "340-impulse",
     "powerstats": {
@@ -13182,7 +13182,7 @@
     }
   },
   {
-    "id": 341,
+    "id": "341",
     "name": "Indiana Jones",
     "slug": "341-indiana-jones",
     "powerstats": {
@@ -13234,7 +13234,7 @@
     }
   },
   {
-    "id": 342,
+    "id": "342",
     "name": "Indigo",
     "slug": "342-indigo",
     "powerstats": {
@@ -13286,7 +13286,7 @@
     }
   },
   {
-    "id": 343,
+    "id": "343",
     "name": "Ink",
     "slug": "343-ink",
     "powerstats": {
@@ -13338,7 +13338,7 @@
     }
   },
   {
-    "id": 344,
+    "id": "344",
     "name": "Invisible Woman",
     "slug": "344-invisible-woman",
     "powerstats": {
@@ -13390,7 +13390,7 @@
     }
   },
   {
-    "id": 345,
+    "id": "345",
     "name": "Iron Fist",
     "slug": "345-iron-fist",
     "powerstats": {
@@ -13446,7 +13446,7 @@
     }
   },
   {
-    "id": 346,
+    "id": "346",
     "name": "Iron Man",
     "slug": "346-iron-man",
     "powerstats": {
@@ -13503,7 +13503,7 @@
     }
   },
   {
-    "id": 347,
+    "id": "347",
     "name": "Iron Monger",
     "slug": "347-iron-monger",
     "powerstats": {
@@ -13555,7 +13555,7 @@
     }
   },
   {
-    "id": 348,
+    "id": "348",
     "name": "Isis",
     "slug": "348-isis",
     "powerstats": {
@@ -13607,7 +13607,7 @@
     }
   },
   {
-    "id": 350,
+    "id": "350",
     "name": "Jack of Hearts",
     "slug": "350-jack-of-hearts",
     "powerstats": {
@@ -13659,7 +13659,7 @@
     }
   },
   {
-    "id": 351,
+    "id": "351",
     "name": "Jack-Jack",
     "slug": "351-jack-jack",
     "powerstats": {
@@ -13711,7 +13711,7 @@
     }
   },
   {
-    "id": 352,
+    "id": "352",
     "name": "James Bond",
     "slug": "352-james-bond",
     "powerstats": {
@@ -13764,7 +13764,7 @@
     }
   },
   {
-    "id": 353,
+    "id": "353",
     "name": "James T. Kirk",
     "slug": "353-james-t.-kirk",
     "powerstats": {
@@ -13817,7 +13817,7 @@
     }
   },
   {
-    "id": 354,
+    "id": "354",
     "name": "Jar Jar Binks",
     "slug": "354-jar-jar-binks",
     "powerstats": {
@@ -13869,7 +13869,7 @@
     }
   },
   {
-    "id": 355,
+    "id": "355",
     "name": "Jason Bourne",
     "slug": "355-jason-bourne",
     "powerstats": {
@@ -13921,7 +13921,7 @@
     }
   },
   {
-    "id": 356,
+    "id": "356",
     "name": "Jean Grey",
     "slug": "356-jean-grey",
     "powerstats": {
@@ -13974,7 +13974,7 @@
     }
   },
   {
-    "id": 357,
+    "id": "357",
     "name": "Jean-Luc Picard",
     "slug": "357-jean-luc-picard",
     "powerstats": {
@@ -14026,7 +14026,7 @@
     }
   },
   {
-    "id": 358,
+    "id": "358",
     "name": "Jennifer Kale",
     "slug": "358-jennifer-kale",
     "powerstats": {
@@ -14078,7 +14078,7 @@
     }
   },
   {
-    "id": 360,
+    "id": "360",
     "name": "Jessica Cruz",
     "slug": "360-jessica-cruz",
     "powerstats": {
@@ -14131,7 +14131,7 @@
     }
   },
   {
-    "id": 361,
+    "id": "361",
     "name": "Jessica Jones",
     "slug": "361-jessica-jones",
     "powerstats": {
@@ -14186,7 +14186,7 @@
     }
   },
   {
-    "id": 364,
+    "id": "364",
     "name": "Jim Powell",
     "slug": "364-jim-powell",
     "powerstats": {
@@ -14238,7 +14238,7 @@
     }
   },
   {
-    "id": 365,
+    "id": "365",
     "name": "JJ Powell",
     "slug": "365-jj-powell",
     "powerstats": {
@@ -14290,7 +14290,7 @@
     }
   },
   {
-    "id": 367,
+    "id": "367",
     "name": "John Constantine",
     "slug": "367-john-constantine",
     "powerstats": {
@@ -14342,7 +14342,7 @@
     }
   },
   {
-    "id": 369,
+    "id": "369",
     "name": "John Wraith",
     "slug": "369-john-wraith",
     "powerstats": {
@@ -14398,7 +14398,7 @@
     }
   },
   {
-    "id": 370,
+    "id": "370",
     "name": "Joker",
     "slug": "370-joker",
     "powerstats": {
@@ -14455,7 +14455,7 @@
     }
   },
   {
-    "id": 371,
+    "id": "371",
     "name": "Jolt",
     "slug": "371-jolt",
     "powerstats": {
@@ -14508,7 +14508,7 @@
     }
   },
   {
-    "id": 372,
+    "id": "372",
     "name": "Jubilee",
     "slug": "372-jubilee",
     "powerstats": {
@@ -14560,7 +14560,7 @@
     }
   },
   {
-    "id": 373,
+    "id": "373",
     "name": "Judge Dredd",
     "slug": "373-judge-dredd",
     "powerstats": {
@@ -14613,7 +14613,7 @@
     }
   },
   {
-    "id": 374,
+    "id": "374",
     "name": "Juggernaut",
     "slug": "374-juggernaut",
     "powerstats": {
@@ -14666,7 +14666,7 @@
     }
   },
   {
-    "id": 375,
+    "id": "375",
     "name": "Junkpile",
     "slug": "375-junkpile",
     "powerstats": {
@@ -14718,7 +14718,7 @@
     }
   },
   {
-    "id": 376,
+    "id": "376",
     "name": "Justice",
     "slug": "376-justice",
     "powerstats": {
@@ -14774,7 +14774,7 @@
     }
   },
   {
-    "id": 379,
+    "id": "379",
     "name": "Kang",
     "slug": "379-kang",
     "powerstats": {
@@ -14833,7 +14833,7 @@
     }
   },
   {
-    "id": 380,
+    "id": "380",
     "name": "Kathryn Janeway",
     "slug": "380-kathryn-janeway",
     "powerstats": {
@@ -14885,7 +14885,7 @@
     }
   },
   {
-    "id": 381,
+    "id": "381",
     "name": "Katniss Everdeen",
     "slug": "381-katniss-everdeen",
     "powerstats": {
@@ -14937,7 +14937,7 @@
     }
   },
   {
-    "id": 382,
+    "id": "382",
     "name": "Kevin 11",
     "slug": "382-kevin-11",
     "powerstats": {
@@ -14998,7 +14998,7 @@
     }
   },
   {
-    "id": 383,
+    "id": "383",
     "name": "Kick-Ass",
     "slug": "383-kick-ass",
     "powerstats": {
@@ -15050,7 +15050,7 @@
     }
   },
   {
-    "id": 384,
+    "id": "384",
     "name": "Kid Flash",
     "slug": "384-kid-flash",
     "powerstats": {
@@ -15102,7 +15102,7 @@
     }
   },
   {
-    "id": 386,
+    "id": "386",
     "name": "Killer Croc",
     "slug": "386-killer-croc",
     "powerstats": {
@@ -15154,7 +15154,7 @@
     }
   },
   {
-    "id": 387,
+    "id": "387",
     "name": "Killer Frost",
     "slug": "387-killer-frost",
     "powerstats": {
@@ -15206,7 +15206,7 @@
     }
   },
   {
-    "id": 388,
+    "id": "388",
     "name": "Kilowog",
     "slug": "388-kilowog",
     "powerstats": {
@@ -15263,7 +15263,7 @@
     }
   },
   {
-    "id": 389,
+    "id": "389",
     "name": "King Kong",
     "slug": "389-king-kong",
     "powerstats": {
@@ -15316,7 +15316,7 @@
     }
   },
   {
-    "id": 390,
+    "id": "390",
     "name": "King Shark",
     "slug": "390-king-shark",
     "powerstats": {
@@ -15368,7 +15368,7 @@
     }
   },
   {
-    "id": 391,
+    "id": "391",
     "name": "Kingpin",
     "slug": "391-kingpin",
     "powerstats": {
@@ -15422,7 +15422,7 @@
     }
   },
   {
-    "id": 392,
+    "id": "392",
     "name": "Klaw",
     "slug": "392-klaw",
     "powerstats": {
@@ -15474,7 +15474,7 @@
     }
   },
   {
-    "id": 393,
+    "id": "393",
     "name": "Kool-Aid Man",
     "slug": "393-kool-aid-man",
     "powerstats": {
@@ -15526,7 +15526,7 @@
     }
   },
   {
-    "id": 394,
+    "id": "394",
     "name": "Kraven II",
     "slug": "394-kraven-ii",
     "powerstats": {
@@ -15578,7 +15578,7 @@
     }
   },
   {
-    "id": 395,
+    "id": "395",
     "name": "Kraven the Hunter",
     "slug": "395-kraven-the-hunter",
     "powerstats": {
@@ -15632,7 +15632,7 @@
     }
   },
   {
-    "id": 396,
+    "id": "396",
     "name": "Krypto",
     "slug": "396-krypto",
     "powerstats": {
@@ -15684,7 +15684,7 @@
     }
   },
   {
-    "id": 397,
+    "id": "397",
     "name": "Kyle Rayner",
     "slug": "397-kyle-rayner",
     "powerstats": {
@@ -15741,7 +15741,7 @@
     }
   },
   {
-    "id": 398,
+    "id": "398",
     "name": "Kylo Ren",
     "slug": "398-kylo-ren",
     "powerstats": {
@@ -15793,7 +15793,7 @@
     }
   },
   {
-    "id": 400,
+    "id": "400",
     "name": "Lady Deathstrike",
     "slug": "400-lady-deathstrike",
     "powerstats": {
@@ -15845,7 +15845,7 @@
     }
   },
   {
-    "id": 401,
+    "id": "401",
     "name": "Leader",
     "slug": "401-leader",
     "powerstats": {
@@ -15897,7 +15897,7 @@
     }
   },
   {
-    "id": 402,
+    "id": "402",
     "name": "Leech",
     "slug": "402-leech",
     "powerstats": {
@@ -15949,7 +15949,7 @@
     }
   },
   {
-    "id": 403,
+    "id": "403",
     "name": "Legion",
     "slug": "403-legion",
     "powerstats": {
@@ -16013,7 +16013,7 @@
     }
   },
   {
-    "id": 404,
+    "id": "404",
     "name": "Leonardo",
     "slug": "404-leonardo",
     "powerstats": {
@@ -16067,7 +16067,7 @@
     }
   },
   {
-    "id": 405,
+    "id": "405",
     "name": "Lex Luthor",
     "slug": "405-lex-luthor",
     "powerstats": {
@@ -16119,7 +16119,7 @@
     }
   },
   {
-    "id": 406,
+    "id": "406",
     "name": "Light Lass",
     "slug": "406-light-lass",
     "powerstats": {
@@ -16171,7 +16171,7 @@
     }
   },
   {
-    "id": 407,
+    "id": "407",
     "name": "Lightning Lad",
     "slug": "407-lightning-lad",
     "powerstats": {
@@ -16224,7 +16224,7 @@
     }
   },
   {
-    "id": 408,
+    "id": "408",
     "name": "Lightning Lord",
     "slug": "408-lightning-lord",
     "powerstats": {
@@ -16276,7 +16276,7 @@
     }
   },
   {
-    "id": 409,
+    "id": "409",
     "name": "Living Brain",
     "slug": "409-living-brain",
     "powerstats": {
@@ -16328,7 +16328,7 @@
     }
   },
   {
-    "id": 410,
+    "id": "410",
     "name": "Living Tribunal",
     "slug": "410-living-tribunal",
     "powerstats": {
@@ -16383,7 +16383,7 @@
     }
   },
   {
-    "id": 412,
+    "id": "412",
     "name": "Lizard",
     "slug": "412-lizard",
     "powerstats": {
@@ -16435,7 +16435,7 @@
     }
   },
   {
-    "id": 413,
+    "id": "413",
     "name": "Lobo",
     "slug": "413-lobo",
     "powerstats": {
@@ -16491,7 +16491,7 @@
     }
   },
   {
-    "id": 414,
+    "id": "414",
     "name": "Loki",
     "slug": "414-loki",
     "powerstats": {
@@ -16551,7 +16551,7 @@
     }
   },
   {
-    "id": 415,
+    "id": "415",
     "name": "Longshot",
     "slug": "415-longshot",
     "powerstats": {
@@ -16604,7 +16604,7 @@
     }
   },
   {
-    "id": 416,
+    "id": "416",
     "name": "Luke Cage",
     "slug": "416-luke-cage",
     "powerstats": {
@@ -16660,7 +16660,7 @@
     }
   },
   {
-    "id": 418,
+    "id": "418",
     "name": "Luke Skywalker",
     "slug": "418-luke-skywalker",
     "powerstats": {
@@ -16714,7 +16714,7 @@
     }
   },
   {
-    "id": 419,
+    "id": "419",
     "name": "Luna",
     "slug": "419-luna",
     "powerstats": {
@@ -16766,7 +16766,7 @@
     }
   },
   {
-    "id": 421,
+    "id": "421",
     "name": "Mach-IV",
     "slug": "421-mach-iv",
     "powerstats": {
@@ -16822,7 +16822,7 @@
     }
   },
   {
-    "id": 422,
+    "id": "422",
     "name": "Machine Man",
     "slug": "422-machine-man",
     "powerstats": {
@@ -16875,7 +16875,7 @@
     }
   },
   {
-    "id": 423,
+    "id": "423",
     "name": "Magneto",
     "slug": "423-magneto",
     "powerstats": {
@@ -16931,7 +16931,7 @@
     }
   },
   {
-    "id": 424,
+    "id": "424",
     "name": "Magog",
     "slug": "424-magog",
     "powerstats": {
@@ -16983,7 +16983,7 @@
     }
   },
   {
-    "id": 425,
+    "id": "425",
     "name": "Magus",
     "slug": "425-magus",
     "powerstats": {
@@ -17035,7 +17035,7 @@
     }
   },
   {
-    "id": 426,
+    "id": "426",
     "name": "Man of Miracles",
     "slug": "426-man-of-miracles",
     "powerstats": {
@@ -17087,7 +17087,7 @@
     }
   },
   {
-    "id": 427,
+    "id": "427",
     "name": "Man-Bat",
     "slug": "427-man-bat",
     "powerstats": {
@@ -17139,7 +17139,7 @@
     }
   },
   {
-    "id": 428,
+    "id": "428",
     "name": "Man-Thing",
     "slug": "428-man-thing",
     "powerstats": {
@@ -17191,7 +17191,7 @@
     }
   },
   {
-    "id": 429,
+    "id": "429",
     "name": "Man-Wolf",
     "slug": "429-man-wolf",
     "powerstats": {
@@ -17245,7 +17245,7 @@
     }
   },
   {
-    "id": 430,
+    "id": "430",
     "name": "Mandarin",
     "slug": "430-mandarin",
     "powerstats": {
@@ -17301,7 +17301,7 @@
     }
   },
   {
-    "id": 431,
+    "id": "431",
     "name": "Mantis",
     "slug": "431-mantis",
     "powerstats": {
@@ -17357,7 +17357,7 @@
     }
   },
   {
-    "id": 432,
+    "id": "432",
     "name": "Martian Manhunter",
     "slug": "432-martian-manhunter",
     "powerstats": {
@@ -17411,7 +17411,7 @@
     }
   },
   {
-    "id": 433,
+    "id": "433",
     "name": "Marvel Girl",
     "slug": "433-marvel-girl",
     "powerstats": {
@@ -17467,7 +17467,7 @@
     }
   },
   {
-    "id": 435,
+    "id": "435",
     "name": "Master Chief",
     "slug": "435-master-chief",
     "powerstats": {
@@ -17522,7 +17522,7 @@
     }
   },
   {
-    "id": 436,
+    "id": "436",
     "name": "Match",
     "slug": "436-match",
     "powerstats": {
@@ -17575,7 +17575,7 @@
     }
   },
   {
-    "id": 437,
+    "id": "437",
     "name": "Matt Parkman",
     "slug": "437-matt-parkman",
     "powerstats": {
@@ -17627,7 +17627,7 @@
     }
   },
   {
-    "id": 438,
+    "id": "438",
     "name": "Maverick",
     "slug": "438-maverick",
     "powerstats": {
@@ -17680,7 +17680,7 @@
     }
   },
   {
-    "id": 439,
+    "id": "439",
     "name": "Maxima",
     "slug": "439-maxima",
     "powerstats": {
@@ -17733,7 +17733,7 @@
     }
   },
   {
-    "id": 440,
+    "id": "440",
     "name": "Maya Herrera",
     "slug": "440-maya-herrera",
     "powerstats": {
@@ -17785,7 +17785,7 @@
     }
   },
   {
-    "id": 441,
+    "id": "441",
     "name": "Medusa",
     "slug": "441-medusa",
     "powerstats": {
@@ -17838,7 +17838,7 @@
     }
   },
   {
-    "id": 442,
+    "id": "442",
     "name": "Meltdown",
     "slug": "442-meltdown",
     "powerstats": {
@@ -17895,7 +17895,7 @@
     }
   },
   {
-    "id": 443,
+    "id": "443",
     "name": "Mephisto",
     "slug": "443-mephisto",
     "powerstats": {
@@ -17961,7 +17961,7 @@
     }
   },
   {
-    "id": 444,
+    "id": "444",
     "name": "Mera",
     "slug": "444-mera",
     "powerstats": {
@@ -18016,7 +18016,7 @@
     }
   },
   {
-    "id": 445,
+    "id": "445",
     "name": "Metallo",
     "slug": "445-metallo",
     "powerstats": {
@@ -18068,7 +18068,7 @@
     }
   },
   {
-    "id": 448,
+    "id": "448",
     "name": "Metron",
     "slug": "448-metron",
     "powerstats": {
@@ -18120,7 +18120,7 @@
     }
   },
   {
-    "id": 449,
+    "id": "449",
     "name": "Micah Sanders",
     "slug": "449-micah-sanders",
     "powerstats": {
@@ -18172,7 +18172,7 @@
     }
   },
   {
-    "id": 450,
+    "id": "450",
     "name": "Michelangelo",
     "slug": "450-michelangelo",
     "powerstats": {
@@ -18227,7 +18227,7 @@
     }
   },
   {
-    "id": 451,
+    "id": "451",
     "name": "Micro Lad",
     "slug": "451-micro-lad",
     "powerstats": {
@@ -18280,7 +18280,7 @@
     }
   },
   {
-    "id": 452,
+    "id": "452",
     "name": "Mimic",
     "slug": "452-mimic",
     "powerstats": {
@@ -18334,7 +18334,7 @@
     }
   },
   {
-    "id": 454,
+    "id": "454",
     "name": "Misfit",
     "slug": "454-misfit",
     "powerstats": {
@@ -18386,7 +18386,7 @@
     }
   },
   {
-    "id": 455,
+    "id": "455",
     "name": "Miss Martian",
     "slug": "455-miss-martian",
     "powerstats": {
@@ -18439,7 +18439,7 @@
     }
   },
   {
-    "id": 456,
+    "id": "456",
     "name": "Mister Fantastic",
     "slug": "456-mister-fantastic",
     "powerstats": {
@@ -18491,7 +18491,7 @@
     }
   },
   {
-    "id": 457,
+    "id": "457",
     "name": "Mister Freeze",
     "slug": "457-mister-freeze",
     "powerstats": {
@@ -18545,7 +18545,7 @@
     }
   },
   {
-    "id": 458,
+    "id": "458",
     "name": "Mister Knife",
     "slug": "458-mister-knife",
     "powerstats": {
@@ -18600,7 +18600,7 @@
     }
   },
   {
-    "id": 459,
+    "id": "459",
     "name": "Mister Mxyzptlk",
     "slug": "459-mister-mxyzptlk",
     "powerstats": {
@@ -18652,7 +18652,7 @@
     }
   },
   {
-    "id": 460,
+    "id": "460",
     "name": "Mister Sinister",
     "slug": "460-mister-sinister",
     "powerstats": {
@@ -18715,7 +18715,7 @@
     }
   },
   {
-    "id": 461,
+    "id": "461",
     "name": "Mister Zsasz",
     "slug": "461-mister-zsasz",
     "powerstats": {
@@ -18767,7 +18767,7 @@
     }
   },
   {
-    "id": 462,
+    "id": "462",
     "name": "Mockingbird",
     "slug": "462-mockingbird",
     "powerstats": {
@@ -18823,7 +18823,7 @@
     }
   },
   {
-    "id": 463,
+    "id": "463",
     "name": "MODOK",
     "slug": "463-modok",
     "powerstats": {
@@ -18876,7 +18876,7 @@
     }
   },
   {
-    "id": 467,
+    "id": "467",
     "name": "Molten Man",
     "slug": "467-molten-man",
     "powerstats": {
@@ -18928,7 +18928,7 @@
     }
   },
   {
-    "id": 469,
+    "id": "469",
     "name": "Monica Dawson",
     "slug": "469-monica-dawson",
     "powerstats": {
@@ -18980,7 +18980,7 @@
     }
   },
   {
-    "id": 470,
+    "id": "470",
     "name": "Moon Knight",
     "slug": "470-moon-knight",
     "powerstats": {
@@ -19037,7 +19037,7 @@
     }
   },
   {
-    "id": 471,
+    "id": "471",
     "name": "Moonstone",
     "slug": "471-moonstone",
     "powerstats": {
@@ -19090,7 +19090,7 @@
     }
   },
   {
-    "id": 472,
+    "id": "472",
     "name": "Morlun",
     "slug": "472-morlun",
     "powerstats": {
@@ -19142,7 +19142,7 @@
     }
   },
   {
-    "id": 474,
+    "id": "474",
     "name": "Moses Magnum",
     "slug": "474-moses-magnum",
     "powerstats": {
@@ -19194,7 +19194,7 @@
     }
   },
   {
-    "id": 475,
+    "id": "475",
     "name": "Mr Immortal",
     "slug": "475-mr-immortal",
     "powerstats": {
@@ -19246,7 +19246,7 @@
     }
   },
   {
-    "id": 476,
+    "id": "476",
     "name": "Mr Incredible",
     "slug": "476-mr-incredible",
     "powerstats": {
@@ -19300,7 +19300,7 @@
     }
   },
   {
-    "id": 477,
+    "id": "477",
     "name": "Ms Marvel II",
     "slug": "477-ms-marvel-ii",
     "powerstats": {
@@ -19352,7 +19352,7 @@
     }
   },
   {
-    "id": 478,
+    "id": "478",
     "name": "Multiple Man",
     "slug": "478-multiple-man",
     "powerstats": {
@@ -19404,7 +19404,7 @@
     }
   },
   {
-    "id": 479,
+    "id": "479",
     "name": "Mysterio",
     "slug": "479-mysterio",
     "powerstats": {
@@ -19459,7 +19459,7 @@
     }
   },
   {
-    "id": 480,
+    "id": "480",
     "name": "Mystique",
     "slug": "480-mystique",
     "powerstats": {
@@ -19511,7 +19511,7 @@
     }
   },
   {
-    "id": 481,
+    "id": "481",
     "name": "Namor",
     "slug": "481-namor",
     "powerstats": {
@@ -19574,7 +19574,7 @@
     }
   },
   {
-    "id": 483,
+    "id": "483",
     "name": "Namora",
     "slug": "483-namora",
     "powerstats": {
@@ -19628,7 +19628,7 @@
     }
   },
   {
-    "id": 484,
+    "id": "484",
     "name": "Namorita",
     "slug": "484-namorita",
     "powerstats": {
@@ -19681,7 +19681,7 @@
     }
   },
   {
-    "id": 485,
+    "id": "485",
     "name": "Naruto Uzumaki",
     "slug": "485-naruto-uzumaki",
     "powerstats": {
@@ -19733,7 +19733,7 @@
     }
   },
   {
-    "id": 487,
+    "id": "487",
     "name": "Nebula",
     "slug": "487-nebula",
     "powerstats": {
@@ -19785,7 +19785,7 @@
     }
   },
   {
-    "id": 488,
+    "id": "488",
     "name": "Negasonic Teenage Warhead",
     "slug": "488-negasonic-teenage-warhead",
     "powerstats": {
@@ -19837,7 +19837,7 @@
     }
   },
   {
-    "id": 489,
+    "id": "489",
     "name": "Nick Fury",
     "slug": "489-nick-fury",
     "powerstats": {
@@ -19892,7 +19892,7 @@
     }
   },
   {
-    "id": 490,
+    "id": "490",
     "name": "Nightcrawler",
     "slug": "490-nightcrawler",
     "powerstats": {
@@ -19944,7 +19944,7 @@
     }
   },
   {
-    "id": 491,
+    "id": "491",
     "name": "Nightwing",
     "slug": "491-nightwing",
     "powerstats": {
@@ -20005,7 +20005,7 @@
     }
   },
   {
-    "id": 492,
+    "id": "492",
     "name": "Niki Sanders",
     "slug": "492-niki-sanders",
     "powerstats": {
@@ -20058,7 +20058,7 @@
     }
   },
   {
-    "id": 493,
+    "id": "493",
     "name": "Nina Theroux",
     "slug": "493-nina-theroux",
     "powerstats": {
@@ -20110,7 +20110,7 @@
     }
   },
   {
-    "id": 495,
+    "id": "495",
     "name": "Northstar",
     "slug": "495-northstar",
     "powerstats": {
@@ -20162,7 +20162,7 @@
     }
   },
   {
-    "id": 496,
+    "id": "496",
     "name": "Nova",
     "slug": "496-nova",
     "powerstats": {
@@ -20220,7 +20220,7 @@
     }
   },
   {
-    "id": 497,
+    "id": "497",
     "name": "Nova",
     "slug": "497-nova",
     "powerstats": {
@@ -20273,7 +20273,7 @@
     }
   },
   {
-    "id": 498,
+    "id": "498",
     "name": "Odin",
     "slug": "498-odin",
     "powerstats": {
@@ -20332,7 +20332,7 @@
     }
   },
   {
-    "id": 499,
+    "id": "499",
     "name": "Offspring",
     "slug": "499-offspring",
     "powerstats": {
@@ -20385,7 +20385,7 @@
     }
   },
   {
-    "id": 502,
+    "id": "502",
     "name": "One Punch Man",
     "slug": "502-one-punch-man",
     "powerstats": {
@@ -20437,7 +20437,7 @@
     }
   },
   {
-    "id": 503,
+    "id": "503",
     "name": "One-Above-All",
     "slug": "503-one-above-all",
     "powerstats": {
@@ -20489,7 +20489,7 @@
     }
   },
   {
-    "id": 504,
+    "id": "504",
     "name": "Onslaught",
     "slug": "504-onslaught",
     "powerstats": {
@@ -20547,7 +20547,7 @@
     }
   },
   {
-    "id": 505,
+    "id": "505",
     "name": "Oracle",
     "slug": "505-oracle",
     "powerstats": {
@@ -20600,7 +20600,7 @@
     }
   },
   {
-    "id": 506,
+    "id": "506",
     "name": "Osiris",
     "slug": "506-osiris",
     "powerstats": {
@@ -20652,7 +20652,7 @@
     }
   },
   {
-    "id": 508,
+    "id": "508",
     "name": "Ozymandias",
     "slug": "508-ozymandias",
     "powerstats": {
@@ -20704,7 +20704,7 @@
     }
   },
   {
-    "id": 509,
+    "id": "509",
     "name": "Parademon",
     "slug": "509-parademon",
     "powerstats": {
@@ -20756,7 +20756,7 @@
     }
   },
   {
-    "id": 510,
+    "id": "510",
     "name": "Paul Blart",
     "slug": "510-paul-blart",
     "powerstats": {
@@ -20808,7 +20808,7 @@
     }
   },
   {
-    "id": 514,
+    "id": "514",
     "name": "Penguin",
     "slug": "514-penguin",
     "powerstats": {
@@ -20860,7 +20860,7 @@
     }
   },
   {
-    "id": 516,
+    "id": "516",
     "name": "Phantom Girl",
     "slug": "516-phantom-girl",
     "powerstats": {
@@ -20912,7 +20912,7 @@
     }
   },
   {
-    "id": 517,
+    "id": "517",
     "name": "Phoenix",
     "slug": "517-phoenix",
     "powerstats": {
@@ -20965,7 +20965,7 @@
     }
   },
   {
-    "id": 518,
+    "id": "518",
     "name": "Plantman",
     "slug": "518-plantman",
     "powerstats": {
@@ -21017,7 +21017,7 @@
     }
   },
   {
-    "id": 520,
+    "id": "520",
     "name": "Plastic Man",
     "slug": "520-plastic-man",
     "powerstats": {
@@ -21069,7 +21069,7 @@
     }
   },
   {
-    "id": 521,
+    "id": "521",
     "name": "Plastique",
     "slug": "521-plastique",
     "powerstats": {
@@ -21121,7 +21121,7 @@
     }
   },
   {
-    "id": 522,
+    "id": "522",
     "name": "Poison Ivy",
     "slug": "522-poison-ivy",
     "powerstats": {
@@ -21173,7 +21173,7 @@
     }
   },
   {
-    "id": 523,
+    "id": "523",
     "name": "Polaris",
     "slug": "523-polaris",
     "powerstats": {
@@ -21230,7 +21230,7 @@
     }
   },
   {
-    "id": 524,
+    "id": "524",
     "name": "Power Girl",
     "slug": "524-power-girl",
     "powerstats": {
@@ -21283,7 +21283,7 @@
     }
   },
   {
-    "id": 526,
+    "id": "526",
     "name": "Predator",
     "slug": "526-predator",
     "powerstats": {
@@ -21337,7 +21337,7 @@
     }
   },
   {
-    "id": 527,
+    "id": "527",
     "name": "Professor X",
     "slug": "527-professor-x",
     "powerstats": {
@@ -21392,7 +21392,7 @@
     }
   },
   {
-    "id": 528,
+    "id": "528",
     "name": "Professor Zoom",
     "slug": "528-professor-zoom",
     "powerstats": {
@@ -21447,7 +21447,7 @@
     }
   },
   {
-    "id": 529,
+    "id": "529",
     "name": "Psylocke",
     "slug": "529-psylocke",
     "powerstats": {
@@ -21501,7 +21501,7 @@
     }
   },
   {
-    "id": 530,
+    "id": "530",
     "name": "Punisher",
     "slug": "530-punisher",
     "powerstats": {
@@ -21572,7 +21572,7 @@
     }
   },
   {
-    "id": 531,
+    "id": "531",
     "name": "Purple Man",
     "slug": "531-purple-man",
     "powerstats": {
@@ -21624,7 +21624,7 @@
     }
   },
   {
-    "id": 532,
+    "id": "532",
     "name": "Pyro",
     "slug": "532-pyro",
     "powerstats": {
@@ -21676,7 +21676,7 @@
     }
   },
   {
-    "id": 533,
+    "id": "533",
     "name": "Q",
     "slug": "533-q",
     "powerstats": {
@@ -21728,7 +21728,7 @@
     }
   },
   {
-    "id": 535,
+    "id": "535",
     "name": "Question",
     "slug": "535-question",
     "powerstats": {
@@ -21780,7 +21780,7 @@
     }
   },
   {
-    "id": 536,
+    "id": "536",
     "name": "Quicksilver",
     "slug": "536-quicksilver",
     "powerstats": {
@@ -21834,7 +21834,7 @@
     }
   },
   {
-    "id": 537,
+    "id": "537",
     "name": "Quill",
     "slug": "537-quill",
     "powerstats": {
@@ -21886,7 +21886,7 @@
     }
   },
   {
-    "id": 538,
+    "id": "538",
     "name": "Ra's Al Ghul",
     "slug": "538-ras-al-ghul",
     "powerstats": {
@@ -21938,7 +21938,7 @@
     }
   },
   {
-    "id": 539,
+    "id": "539",
     "name": "Rachel Pirzad",
     "slug": "539-rachel-pirzad",
     "powerstats": {
@@ -21990,7 +21990,7 @@
     }
   },
   {
-    "id": 540,
+    "id": "540",
     "name": "Rambo",
     "slug": "540-rambo",
     "powerstats": {
@@ -22043,7 +22043,7 @@
     }
   },
   {
-    "id": 541,
+    "id": "541",
     "name": "Raphael",
     "slug": "541-raphael",
     "powerstats": {
@@ -22095,7 +22095,7 @@
     }
   },
   {
-    "id": 542,
+    "id": "542",
     "name": "Raven",
     "slug": "542-raven",
     "powerstats": {
@@ -22148,7 +22148,7 @@
     }
   },
   {
-    "id": 543,
+    "id": "543",
     "name": "Ray",
     "slug": "543-ray",
     "powerstats": {
@@ -22200,7 +22200,7 @@
     }
   },
   {
-    "id": 545,
+    "id": "545",
     "name": "Red Arrow",
     "slug": "545-red-arrow",
     "powerstats": {
@@ -22253,7 +22253,7 @@
     }
   },
   {
-    "id": 546,
+    "id": "546",
     "name": "Red Hood",
     "slug": "546-red-hood",
     "powerstats": {
@@ -22309,7 +22309,7 @@
     }
   },
   {
-    "id": 547,
+    "id": "547",
     "name": "Red Hulk",
     "slug": "547-red-hulk",
     "powerstats": {
@@ -22364,7 +22364,7 @@
     }
   },
   {
-    "id": 548,
+    "id": "548",
     "name": "Red Mist",
     "slug": "548-red-mist",
     "powerstats": {
@@ -22416,7 +22416,7 @@
     }
   },
   {
-    "id": 549,
+    "id": "549",
     "name": "Red Robin",
     "slug": "549-red-robin",
     "powerstats": {
@@ -22472,7 +22472,7 @@
     }
   },
   {
-    "id": 550,
+    "id": "550",
     "name": "Red Skull",
     "slug": "550-red-skull",
     "powerstats": {
@@ -22532,7 +22532,7 @@
     }
   },
   {
-    "id": 551,
+    "id": "551",
     "name": "Red Tornado",
     "slug": "551-red-tornado",
     "powerstats": {
@@ -22588,7 +22588,7 @@
     }
   },
   {
-    "id": 555,
+    "id": "555",
     "name": "Rey",
     "slug": "555-rey",
     "powerstats": {
@@ -22640,7 +22640,7 @@
     }
   },
   {
-    "id": 556,
+    "id": "556",
     "name": "Rhino",
     "slug": "556-rhino",
     "powerstats": {
@@ -22693,7 +22693,7 @@
     }
   },
   {
-    "id": 557,
+    "id": "557",
     "name": "Rick Flag",
     "slug": "557-rick-flag",
     "powerstats": {
@@ -22745,7 +22745,7 @@
     }
   },
   {
-    "id": 558,
+    "id": "558",
     "name": "Riddler",
     "slug": "558-riddler",
     "powerstats": {
@@ -22798,7 +22798,7 @@
     }
   },
   {
-    "id": 559,
+    "id": "559",
     "name": "Rip Hunter",
     "slug": "559-rip-hunter",
     "powerstats": {
@@ -22856,7 +22856,7 @@
     }
   },
   {
-    "id": 561,
+    "id": "561",
     "name": "Robin",
     "slug": "561-robin",
     "powerstats": {
@@ -22910,7 +22910,7 @@
     }
   },
   {
-    "id": 562,
+    "id": "562",
     "name": "Robin II",
     "slug": "562-robin-ii",
     "powerstats": {
@@ -22968,7 +22968,7 @@
     }
   },
   {
-    "id": 563,
+    "id": "563",
     "name": "Robin III",
     "slug": "563-robin-iii",
     "powerstats": {
@@ -23023,7 +23023,7 @@
     }
   },
   {
-    "id": 564,
+    "id": "564",
     "name": "Robin V",
     "slug": "564-robin-v",
     "powerstats": {
@@ -23078,7 +23078,7 @@
     }
   },
   {
-    "id": 565,
+    "id": "565",
     "name": "Robin VI",
     "slug": "565-robin-vi",
     "powerstats": {
@@ -23130,7 +23130,7 @@
     }
   },
   {
-    "id": 566,
+    "id": "566",
     "name": "Rocket Raccoon",
     "slug": "566-rocket-raccoon",
     "powerstats": {
@@ -23184,7 +23184,7 @@
     }
   },
   {
-    "id": 567,
+    "id": "567",
     "name": "Rogue",
     "slug": "567-rogue",
     "powerstats": {
@@ -23240,7 +23240,7 @@
     }
   },
   {
-    "id": 568,
+    "id": "568",
     "name": "Ronin",
     "slug": "568-ronin",
     "powerstats": {
@@ -23303,7 +23303,7 @@
     }
   },
   {
-    "id": 569,
+    "id": "569",
     "name": "Rorschach",
     "slug": "569-rorschach",
     "powerstats": {
@@ -23355,7 +23355,7 @@
     }
   },
   {
-    "id": 570,
+    "id": "570",
     "name": "Sabretooth",
     "slug": "570-sabretooth",
     "powerstats": {
@@ -23408,7 +23408,7 @@
     }
   },
   {
-    "id": 571,
+    "id": "571",
     "name": "Sage",
     "slug": "571-sage",
     "powerstats": {
@@ -23460,7 +23460,7 @@
     }
   },
   {
-    "id": 572,
+    "id": "572",
     "name": "Sandman",
     "slug": "572-sandman",
     "powerstats": {
@@ -23514,7 +23514,7 @@
     }
   },
   {
-    "id": 573,
+    "id": "573",
     "name": "Sasquatch",
     "slug": "573-sasquatch",
     "powerstats": {
@@ -23567,7 +23567,7 @@
     }
   },
   {
-    "id": 574,
+    "id": "574",
     "name": "Sauron",
     "slug": "574-sauron",
     "powerstats": {
@@ -23625,7 +23625,7 @@
     }
   },
   {
-    "id": 575,
+    "id": "575",
     "name": "Savage Dragon",
     "slug": "575-savage-dragon",
     "powerstats": {
@@ -23677,7 +23677,7 @@
     }
   },
   {
-    "id": 576,
+    "id": "576",
     "name": "Scarecrow",
     "slug": "576-scarecrow",
     "powerstats": {
@@ -23729,7 +23729,7 @@
     }
   },
   {
-    "id": 577,
+    "id": "577",
     "name": "Scarlet Spider",
     "slug": "577-scarlet-spider",
     "powerstats": {
@@ -23782,7 +23782,7 @@
     }
   },
   {
-    "id": 578,
+    "id": "578",
     "name": "Scarlet Spider II",
     "slug": "578-scarlet-spider-ii",
     "powerstats": {
@@ -23836,7 +23836,7 @@
     }
   },
   {
-    "id": 579,
+    "id": "579",
     "name": "Scarlet Witch",
     "slug": "579-scarlet-witch",
     "powerstats": {
@@ -23892,7 +23892,7 @@
     }
   },
   {
-    "id": 580,
+    "id": "580",
     "name": "Scorpia",
     "slug": "580-scorpia",
     "powerstats": {
@@ -23944,7 +23944,7 @@
     }
   },
   {
-    "id": 581,
+    "id": "581",
     "name": "Scorpion",
     "slug": "581-scorpion",
     "powerstats": {
@@ -23997,7 +23997,7 @@
     }
   },
   {
-    "id": 582,
+    "id": "582",
     "name": "Sebastian Shaw",
     "slug": "582-sebastian-shaw",
     "powerstats": {
@@ -24049,7 +24049,7 @@
     }
   },
   {
-    "id": 583,
+    "id": "583",
     "name": "Sentry",
     "slug": "583-sentry",
     "powerstats": {
@@ -24105,7 +24105,7 @@
     }
   },
   {
-    "id": 584,
+    "id": "584",
     "name": "Shadow King",
     "slug": "584-shadow-king",
     "powerstats": {
@@ -24165,7 +24165,7 @@
     }
   },
   {
-    "id": 585,
+    "id": "585",
     "name": "Shadow Lass",
     "slug": "585-shadow-lass",
     "powerstats": {
@@ -24217,7 +24217,7 @@
     }
   },
   {
-    "id": 586,
+    "id": "586",
     "name": "Shadowcat",
     "slug": "586-shadowcat",
     "powerstats": {
@@ -24272,7 +24272,7 @@
     }
   },
   {
-    "id": 587,
+    "id": "587",
     "name": "Shang-Chi",
     "slug": "587-shang-chi",
     "powerstats": {
@@ -24324,7 +24324,7 @@
     }
   },
   {
-    "id": 588,
+    "id": "588",
     "name": "Shatterstar",
     "slug": "588-shatterstar",
     "powerstats": {
@@ -24376,7 +24376,7 @@
     }
   },
   {
-    "id": 589,
+    "id": "589",
     "name": "She-Hulk",
     "slug": "589-she-hulk",
     "powerstats": {
@@ -24428,7 +24428,7 @@
     }
   },
   {
-    "id": 590,
+    "id": "590",
     "name": "She-Thing",
     "slug": "590-she-thing",
     "powerstats": {
@@ -24481,7 +24481,7 @@
     }
   },
   {
-    "id": 591,
+    "id": "591",
     "name": "Shocker",
     "slug": "591-shocker",
     "powerstats": {
@@ -24533,7 +24533,7 @@
     }
   },
   {
-    "id": 592,
+    "id": "592",
     "name": "Shriek",
     "slug": "592-shriek",
     "powerstats": {
@@ -24585,7 +24585,7 @@
     }
   },
   {
-    "id": 594,
+    "id": "594",
     "name": "Sif",
     "slug": "594-sif",
     "powerstats": {
@@ -24640,7 +24640,7 @@
     }
   },
   {
-    "id": 595,
+    "id": "595",
     "name": "Silk",
     "slug": "595-silk",
     "powerstats": {
@@ -24692,7 +24692,7 @@
     }
   },
   {
-    "id": 598,
+    "id": "598",
     "name": "Silver Surfer",
     "slug": "598-silver-surfer",
     "powerstats": {
@@ -24744,7 +24744,7 @@
     }
   },
   {
-    "id": 599,
+    "id": "599",
     "name": "Silverclaw",
     "slug": "599-silverclaw",
     "powerstats": {
@@ -24797,7 +24797,7 @@
     }
   },
   {
-    "id": 600,
+    "id": "600",
     "name": "Simon Baz",
     "slug": "600-simon-baz",
     "powerstats": {
@@ -24850,7 +24850,7 @@
     }
   },
   {
-    "id": 601,
+    "id": "601",
     "name": "Sinestro",
     "slug": "601-sinestro",
     "powerstats": {
@@ -24906,7 +24906,7 @@
     }
   },
   {
-    "id": 602,
+    "id": "602",
     "name": "Siren",
     "slug": "602-siren",
     "powerstats": {
@@ -24958,7 +24958,7 @@
     }
   },
   {
-    "id": 604,
+    "id": "604",
     "name": "Siryn",
     "slug": "604-siryn",
     "powerstats": {
@@ -25010,7 +25010,7 @@
     }
   },
   {
-    "id": 605,
+    "id": "605",
     "name": "Skaar",
     "slug": "605-skaar",
     "powerstats": {
@@ -25067,7 +25067,7 @@
     }
   },
   {
-    "id": 607,
+    "id": "607",
     "name": "Snowbird",
     "slug": "607-snowbird",
     "powerstats": {
@@ -25119,7 +25119,7 @@
     }
   },
   {
-    "id": 608,
+    "id": "608",
     "name": "Sobek",
     "slug": "608-sobek",
     "powerstats": {
@@ -25171,7 +25171,7 @@
     }
   },
   {
-    "id": 609,
+    "id": "609",
     "name": "Solomon Grundy",
     "slug": "609-solomon-grundy",
     "powerstats": {
@@ -25223,7 +25223,7 @@
     }
   },
   {
-    "id": 610,
+    "id": "610",
     "name": "Songbird",
     "slug": "610-songbird",
     "powerstats": {
@@ -25277,7 +25277,7 @@
     }
   },
   {
-    "id": 611,
+    "id": "611",
     "name": "Space Ghost",
     "slug": "611-space-ghost",
     "powerstats": {
@@ -25330,7 +25330,7 @@
     }
   },
   {
-    "id": 612,
+    "id": "612",
     "name": "Spawn",
     "slug": "612-spawn",
     "powerstats": {
@@ -25383,7 +25383,7 @@
     }
   },
   {
-    "id": 613,
+    "id": "613",
     "name": "Spectre",
     "slug": "613-spectre",
     "powerstats": {
@@ -25441,7 +25441,7 @@
     }
   },
   {
-    "id": 615,
+    "id": "615",
     "name": "Speedy",
     "slug": "615-speedy",
     "powerstats": {
@@ -25495,7 +25495,7 @@
     }
   },
   {
-    "id": 618,
+    "id": "618",
     "name": "Spider-Girl",
     "slug": "618-spider-girl",
     "powerstats": {
@@ -25547,7 +25547,7 @@
     }
   },
   {
-    "id": 619,
+    "id": "619",
     "name": "Spider-Gwen",
     "slug": "619-spider-gwen",
     "powerstats": {
@@ -25599,7 +25599,7 @@
     }
   },
   {
-    "id": 620,
+    "id": "620",
     "name": "Spider-Man",
     "slug": "620-spider-man",
     "powerstats": {
@@ -25665,7 +25665,7 @@
     }
   },
   {
-    "id": 623,
+    "id": "623",
     "name": "Spider-Woman",
     "slug": "623-spider-woman",
     "powerstats": {
@@ -25720,7 +25720,7 @@
     }
   },
   {
-    "id": 625,
+    "id": "625",
     "name": "Spider-Woman III",
     "slug": "625-spider-woman-iii",
     "powerstats": {
@@ -25772,7 +25772,7 @@
     }
   },
   {
-    "id": 627,
+    "id": "627",
     "name": "Spock",
     "slug": "627-spock",
     "powerstats": {
@@ -25824,7 +25824,7 @@
     }
   },
   {
-    "id": 628,
+    "id": "628",
     "name": "Spyke",
     "slug": "628-spyke",
     "powerstats": {
@@ -25877,7 +25877,7 @@
     }
   },
   {
-    "id": 630,
+    "id": "630",
     "name": "Star-Lord",
     "slug": "630-star-lord",
     "powerstats": {
@@ -25929,7 +25929,7 @@
     }
   },
   {
-    "id": 631,
+    "id": "631",
     "name": "Stardust",
     "slug": "631-stardust",
     "powerstats": {
@@ -25981,7 +25981,7 @@
     }
   },
   {
-    "id": 632,
+    "id": "632",
     "name": "Starfire",
     "slug": "632-starfire",
     "powerstats": {
@@ -26035,7 +26035,7 @@
     }
   },
   {
-    "id": 633,
+    "id": "633",
     "name": "Stargirl",
     "slug": "633-stargirl",
     "powerstats": {
@@ -26089,7 +26089,7 @@
     }
   },
   {
-    "id": 634,
+    "id": "634",
     "name": "Static",
     "slug": "634-static",
     "powerstats": {
@@ -26144,7 +26144,7 @@
     }
   },
   {
-    "id": 635,
+    "id": "635",
     "name": "Steel",
     "slug": "635-steel",
     "powerstats": {
@@ -26197,7 +26197,7 @@
     }
   },
   {
-    "id": 636,
+    "id": "636",
     "name": "Stephanie Powell",
     "slug": "636-stephanie-powell",
     "powerstats": {
@@ -26249,7 +26249,7 @@
     }
   },
   {
-    "id": 637,
+    "id": "637",
     "name": "Steppenwolf",
     "slug": "637-steppenwolf",
     "powerstats": {
@@ -26301,7 +26301,7 @@
     }
   },
   {
-    "id": 638,
+    "id": "638",
     "name": "Storm",
     "slug": "638-storm",
     "powerstats": {
@@ -26365,7 +26365,7 @@
     }
   },
   {
-    "id": 639,
+    "id": "639",
     "name": "Stormtrooper",
     "slug": "639-stormtrooper",
     "powerstats": {
@@ -26417,7 +26417,7 @@
     }
   },
   {
-    "id": 640,
+    "id": "640",
     "name": "Sunspot",
     "slug": "640-sunspot",
     "powerstats": {
@@ -26472,7 +26472,7 @@
     }
   },
   {
-    "id": 641,
+    "id": "641",
     "name": "Superboy",
     "slug": "641-superboy",
     "powerstats": {
@@ -26525,7 +26525,7 @@
     }
   },
   {
-    "id": 642,
+    "id": "642",
     "name": "Superboy-Prime",
     "slug": "642-superboy-prime",
     "powerstats": {
@@ -26577,7 +26577,7 @@
     }
   },
   {
-    "id": 643,
+    "id": "643",
     "name": "Supergirl",
     "slug": "643-supergirl",
     "powerstats": {
@@ -26640,7 +26640,7 @@
     }
   },
   {
-    "id": 644,
+    "id": "644",
     "name": "Superman",
     "slug": "644-superman",
     "powerstats": {
@@ -26698,7 +26698,7 @@
     }
   },
   {
-    "id": 645,
+    "id": "645",
     "name": "Swamp Thing",
     "slug": "645-swamp-thing",
     "powerstats": {
@@ -26754,7 +26754,7 @@
     }
   },
   {
-    "id": 646,
+    "id": "646",
     "name": "Swarm",
     "slug": "646-swarm",
     "powerstats": {
@@ -26806,7 +26806,7 @@
     }
   },
   {
-    "id": 647,
+    "id": "647",
     "name": "Sylar",
     "slug": "647-sylar",
     "powerstats": {
@@ -26862,7 +26862,7 @@
     }
   },
   {
-    "id": 648,
+    "id": "648",
     "name": "Synch",
     "slug": "648-synch",
     "powerstats": {
@@ -26914,7 +26914,7 @@
     }
   },
   {
-    "id": 649,
+    "id": "649",
     "name": "T-1000",
     "slug": "649-t-1000",
     "powerstats": {
@@ -26967,7 +26967,7 @@
     }
   },
   {
-    "id": 650,
+    "id": "650",
     "name": "T-800",
     "slug": "650-t-800",
     "powerstats": {
@@ -27019,7 +27019,7 @@
     }
   },
   {
-    "id": 651,
+    "id": "651",
     "name": "T-850",
     "slug": "651-t-850",
     "powerstats": {
@@ -27071,7 +27071,7 @@
     }
   },
   {
-    "id": 652,
+    "id": "652",
     "name": "T-X",
     "slug": "652-t-x",
     "powerstats": {
@@ -27123,7 +27123,7 @@
     }
   },
   {
-    "id": 653,
+    "id": "653",
     "name": "Taskmaster",
     "slug": "653-taskmaster",
     "powerstats": {
@@ -27175,7 +27175,7 @@
     }
   },
   {
-    "id": 654,
+    "id": "654",
     "name": "Tempest",
     "slug": "654-tempest",
     "powerstats": {
@@ -27227,7 +27227,7 @@
     }
   },
   {
-    "id": 655,
+    "id": "655",
     "name": "Thanos",
     "slug": "655-thanos",
     "powerstats": {
@@ -27282,7 +27282,7 @@
     }
   },
   {
-    "id": 656,
+    "id": "656",
     "name": "The Cape",
     "slug": "656-the-cape",
     "powerstats": {
@@ -27334,7 +27334,7 @@
     }
   },
   {
-    "id": 657,
+    "id": "657",
     "name": "The Comedian",
     "slug": "657-the-comedian",
     "powerstats": {
@@ -27386,7 +27386,7 @@
     }
   },
   {
-    "id": 658,
+    "id": "658",
     "name": "Thing",
     "slug": "658-thing",
     "powerstats": {
@@ -27440,7 +27440,7 @@
     }
   },
   {
-    "id": 659,
+    "id": "659",
     "name": "Thor",
     "slug": "659-thor",
     "powerstats": {
@@ -27495,7 +27495,7 @@
     }
   },
   {
-    "id": 660,
+    "id": "660",
     "name": "Thor Girl",
     "slug": "660-thor-girl",
     "powerstats": {
@@ -27558,7 +27558,7 @@
     }
   },
   {
-    "id": 661,
+    "id": "661",
     "name": "Thunderbird",
     "slug": "661-thunderbird",
     "powerstats": {
@@ -27610,7 +27610,7 @@
     }
   },
   {
-    "id": 664,
+    "id": "664",
     "name": "Thunderstrike",
     "slug": "664-thunderstrike",
     "powerstats": {
@@ -27662,7 +27662,7 @@
     }
   },
   {
-    "id": 665,
+    "id": "665",
     "name": "Thundra",
     "slug": "665-thundra",
     "powerstats": {
@@ -27714,7 +27714,7 @@
     }
   },
   {
-    "id": 666,
+    "id": "666",
     "name": "Tiger Shark",
     "slug": "666-tiger-shark",
     "powerstats": {
@@ -27766,7 +27766,7 @@
     }
   },
   {
-    "id": 667,
+    "id": "667",
     "name": "Tigra",
     "slug": "667-tigra",
     "powerstats": {
@@ -27819,7 +27819,7 @@
     }
   },
   {
-    "id": 668,
+    "id": "668",
     "name": "Tinkerer",
     "slug": "668-tinkerer",
     "powerstats": {
@@ -27871,7 +27871,7 @@
     }
   },
   {
-    "id": 670,
+    "id": "670",
     "name": "Toad",
     "slug": "670-toad",
     "powerstats": {
@@ -27923,7 +27923,7 @@
     }
   },
   {
-    "id": 671,
+    "id": "671",
     "name": "Toxin",
     "slug": "671-toxin",
     "powerstats": {
@@ -27975,7 +27975,7 @@
     }
   },
   {
-    "id": 672,
+    "id": "672",
     "name": "Toxin",
     "slug": "672-toxin",
     "powerstats": {
@@ -28035,7 +28035,7 @@
     }
   },
   {
-    "id": 676,
+    "id": "676",
     "name": "Triplicate Girl",
     "slug": "676-triplicate-girl",
     "powerstats": {
@@ -28089,7 +28089,7 @@
     }
   },
   {
-    "id": 677,
+    "id": "677",
     "name": "Triton",
     "slug": "677-triton",
     "powerstats": {
@@ -28141,7 +28141,7 @@
     }
   },
   {
-    "id": 678,
+    "id": "678",
     "name": "Two-Face",
     "slug": "678-two-face",
     "powerstats": {
@@ -28193,7 +28193,7 @@
     }
   },
   {
-    "id": 679,
+    "id": "679",
     "name": "Ultragirl",
     "slug": "679-ultragirl",
     "powerstats": {
@@ -28246,7 +28246,7 @@
     }
   },
   {
-    "id": 680,
+    "id": "680",
     "name": "Ultron",
     "slug": "680-ultron",
     "powerstats": {
@@ -28307,7 +28307,7 @@
     }
   },
   {
-    "id": 681,
+    "id": "681",
     "name": "Utgard-Loki",
     "slug": "681-utgard-loki",
     "powerstats": {
@@ -28359,7 +28359,7 @@
     }
   },
   {
-    "id": 685,
+    "id": "685",
     "name": "Vanisher",
     "slug": "685-vanisher",
     "powerstats": {
@@ -28411,7 +28411,7 @@
     }
   },
   {
-    "id": 686,
+    "id": "686",
     "name": "Vegeta",
     "slug": "686-vegeta",
     "powerstats": {
@@ -28475,7 +28475,7 @@
     }
   },
   {
-    "id": 687,
+    "id": "687",
     "name": "Venom",
     "slug": "687-venom",
     "powerstats": {
@@ -28527,7 +28527,7 @@
     }
   },
   {
-    "id": 688,
+    "id": "688",
     "name": "Venom II",
     "slug": "688-venom-ii",
     "powerstats": {
@@ -28579,7 +28579,7 @@
     }
   },
   {
-    "id": 689,
+    "id": "689",
     "name": "Venom III",
     "slug": "689-venom-iii",
     "powerstats": {
@@ -28631,7 +28631,7 @@
     }
   },
   {
-    "id": 690,
+    "id": "690",
     "name": "Venompool",
     "slug": "690-venompool",
     "powerstats": {
@@ -28683,7 +28683,7 @@
     }
   },
   {
-    "id": 692,
+    "id": "692",
     "name": "Vibe",
     "slug": "692-vibe",
     "powerstats": {
@@ -28735,7 +28735,7 @@
     }
   },
   {
-    "id": 693,
+    "id": "693",
     "name": "Vindicator",
     "slug": "693-vindicator",
     "powerstats": {
@@ -28787,7 +28787,7 @@
     }
   },
   {
-    "id": 696,
+    "id": "696",
     "name": "Violet Parr",
     "slug": "696-violet-parr",
     "powerstats": {
@@ -28841,7 +28841,7 @@
     }
   },
   {
-    "id": 697,
+    "id": "697",
     "name": "Vision",
     "slug": "697-vision",
     "powerstats": {
@@ -28893,7 +28893,7 @@
     }
   },
   {
-    "id": 699,
+    "id": "699",
     "name": "Vixen",
     "slug": "699-vixen",
     "powerstats": {
@@ -28945,7 +28945,7 @@
     }
   },
   {
-    "id": 701,
+    "id": "701",
     "name": "Vulture",
     "slug": "701-vulture",
     "powerstats": {
@@ -28997,7 +28997,7 @@
     }
   },
   {
-    "id": 702,
+    "id": "702",
     "name": "Walrus",
     "slug": "702-walrus",
     "powerstats": {
@@ -29049,7 +29049,7 @@
     }
   },
   {
-    "id": 703,
+    "id": "703",
     "name": "War Machine",
     "slug": "703-war-machine",
     "powerstats": {
@@ -29103,7 +29103,7 @@
     }
   },
   {
-    "id": 705,
+    "id": "705",
     "name": "Warlock",
     "slug": "705-warlock",
     "powerstats": {
@@ -29156,7 +29156,7 @@
     }
   },
   {
-    "id": 706,
+    "id": "706",
     "name": "Warp",
     "slug": "706-warp",
     "powerstats": {
@@ -29208,7 +29208,7 @@
     }
   },
   {
-    "id": 707,
+    "id": "707",
     "name": "Warpath",
     "slug": "707-warpath",
     "powerstats": {
@@ -29260,7 +29260,7 @@
     }
   },
   {
-    "id": 708,
+    "id": "708",
     "name": "Wasp",
     "slug": "708-wasp",
     "powerstats": {
@@ -29312,7 +29312,7 @@
     }
   },
   {
-    "id": 709,
+    "id": "709",
     "name": "Watcher",
     "slug": "709-watcher",
     "powerstats": {
@@ -29364,7 +29364,7 @@
     }
   },
   {
-    "id": 711,
+    "id": "711",
     "name": "White Canary",
     "slug": "711-white-canary",
     "powerstats": {
@@ -29417,7 +29417,7 @@
     }
   },
   {
-    "id": 713,
+    "id": "713",
     "name": "Wildfire",
     "slug": "713-wildfire",
     "powerstats": {
@@ -29472,7 +29472,7 @@
     }
   },
   {
-    "id": 714,
+    "id": "714",
     "name": "Winter Soldier",
     "slug": "714-winter-soldier",
     "powerstats": {
@@ -29525,7 +29525,7 @@
     }
   },
   {
-    "id": 716,
+    "id": "716",
     "name": "Wolfsbane",
     "slug": "716-wolfsbane",
     "powerstats": {
@@ -29578,7 +29578,7 @@
     }
   },
   {
-    "id": 717,
+    "id": "717",
     "name": "Wolverine",
     "slug": "717-wolverine",
     "powerstats": {
@@ -29641,7 +29641,7 @@
     }
   },
   {
-    "id": 718,
+    "id": "718",
     "name": "Wonder Girl",
     "slug": "718-wonder-girl",
     "powerstats": {
@@ -29697,7 +29697,7 @@
     }
   },
   {
-    "id": 719,
+    "id": "719",
     "name": "Wonder Man",
     "slug": "719-wonder-man",
     "powerstats": {
@@ -29750,7 +29750,7 @@
     }
   },
   {
-    "id": 720,
+    "id": "720",
     "name": "Wonder Woman",
     "slug": "720-wonder-woman",
     "powerstats": {
@@ -29807,7 +29807,7 @@
     }
   },
   {
-    "id": 722,
+    "id": "722",
     "name": "Wyatt Wingfoot",
     "slug": "722-wyatt-wingfoot",
     "powerstats": {
@@ -29859,7 +29859,7 @@
     }
   },
   {
-    "id": 723,
+    "id": "723",
     "name": "X-23",
     "slug": "723-x-23",
     "powerstats": {
@@ -29916,7 +29916,7 @@
     }
   },
   {
-    "id": 724,
+    "id": "724",
     "name": "X-Man",
     "slug": "724-x-man",
     "powerstats": {
@@ -29968,7 +29968,7 @@
     }
   },
   {
-    "id": 726,
+    "id": "726",
     "name": "Yellowjacket",
     "slug": "726-yellowjacket",
     "powerstats": {
@@ -30020,7 +30020,7 @@
     }
   },
   {
-    "id": 727,
+    "id": "727",
     "name": "Yellowjacket II",
     "slug": "727-yellowjacket-ii",
     "powerstats": {
@@ -30072,7 +30072,7 @@
     }
   },
   {
-    "id": 728,
+    "id": "728",
     "name": "Ymir",
     "slug": "728-ymir",
     "powerstats": {
@@ -30124,7 +30124,7 @@
     }
   },
   {
-    "id": 729,
+    "id": "729",
     "name": "Yoda",
     "slug": "729-yoda",
     "powerstats": {
@@ -30176,7 +30176,7 @@
     }
   },
   {
-    "id": 730,
+    "id": "730",
     "name": "Zatanna",
     "slug": "730-zatanna",
     "powerstats": {
@@ -30228,7 +30228,7 @@
     }
   },
   {
-    "id": 731,
+    "id": "731",
     "name": "Zoom",
     "slug": "731-zoom",
     "powerstats": {

@@ -2,20 +2,20 @@ import { ApiProperty } from "@nestjs/swagger";
 
 export class PowerstatsEntityDto {
   @ApiProperty()
-  intelligence: string;
+  intelligence: number;
 
   @ApiProperty()
-  strength: string;
+  strength: number;
 
   @ApiProperty()
-  speed: string;
+  speed: number;
 
   @ApiProperty()
-  durability: string;
+  durability: number;
 
   @ApiProperty()
-  power: string;
+  power: number;
 
   @ApiProperty()
-  combat: string;
+  combat: number;
 }

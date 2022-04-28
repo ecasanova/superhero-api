@@ -13,23 +13,23 @@ export class PowerstatsEntity {
   @PrimaryGeneratedColumn("uuid")
   id: string;
 
-  @Column("text", { name: "intelligence", nullable: true })
-  intelligence: string | null;
+  @Column("number", { name: "intelligence", nullable: true })
+  intelligence: number | null;
 
-  @Column("text", { name: "strength", nullable: true })
-  strength: string | null;
+  @Column("number", { name: "strength", nullable: true })
+  strength: number | null;
 
-  @Column("text", { name: "speed", nullable: true })
-  speed: string | null;
+  @Column("number", { name: "speed", nullable: true })
+  speed: number | null;
 
-  @Column("text", { name: "durability", nullable: true })
-  durability: string | null;
+  @Column("number", { name: "durability", nullable: true })
+  durability: number | null;
 
-  @Column("text", { name: "power", nullable: true })
-  power: string | null;
+  @Column("number", { name: "power", nullable: true })
+  power: number | null;
 
-  @Column("text", { name: "combat", nullable: true })
-  combat: string | null;
+  @Column("number", { name: "combat", nullable: true })
+  combat: number | null;
 
   @ManyToOne(() => SuperheroEntity, (superhero) => superhero.powerstats, {
     onDelete: "CASCADE",
