@@ -18,7 +18,7 @@ async function bootstrap() {
   const options = new DocumentBuilder()
     .setTitle("ADK Superhero API")
     .setDescription("ADK Superhero API")
-    .setVersion("1.0")
+    .setVersion("1.1")
     .addApiKey({ type: "apiKey", name: "apiKey", in: "header" }, "apiKey")
     .build();
   app.use(bodyParser.json({ limit: "50mb" }));
