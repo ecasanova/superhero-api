@@ -264,7 +264,7 @@ export class SuperheroService {
   }
 
   async create(superhero: SuperheroDto): Promise<any> {
-    this.createSuperhero(superhero);
+    return this.createSuperhero(superhero);
   }
 
   async createSuperhero(superhero: SuperheroDto): Promise<any> {
@@ -375,6 +375,7 @@ export class SuperheroService {
       console.log("Saving: ", superhero.name);
       return { superhero };
     } catch (err) {
+      console.log("Error: ", err);
       return { err };
     }
   }
