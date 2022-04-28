@@ -34,7 +34,11 @@ async function bootstrap() {
 
   await app.listen(Number(PORT), SERVER);
 
+  console.log(`------------------------------------------------------`);
   console.log(`Application is running on: ${await app.getUrl()}`);
+  console.log(`Enviroment: ${process.env.NODE_ENV}`);
+  console.log(`Database: ${process.env.DB_HOST}`);
+  console.log(`------------------------------------------------------`);
 }
 
 bootstrap();
