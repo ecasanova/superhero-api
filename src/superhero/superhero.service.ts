@@ -355,9 +355,9 @@ export class SuperheroService {
       //CREATE IMAGE
       if (images) {
         let newImageEntity = new ImageEntity();
-        newImageEntity.xs = images.lg;
-        newImageEntity.sm = images.lg;
-        newImageEntity.md = images.lg;
+        newImageEntity.xs = images.xs;
+        newImageEntity.sm = images.sm;
+        newImageEntity.md = images.md;
         newImageEntity.lg = images.lg;
         newImageEntity.superhero = superheroEntity;
         await this.imageRepo.insert(newImageEntity);

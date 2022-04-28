@@ -10,7 +10,7 @@ const config: any = {
   database: process.env.DB_NAME,
   entities: [__dirname + "/**/*.entity.ts"],
   synchronize: true,
-  migrationsRun: true,
+  migrationsRun: false,
   autoLoadEntities: true,
   logging: false,
   migrations: [__dirname + "/migrations/**/*.ts"],
