@@ -40,7 +40,8 @@ export class SuperheroController {
 
   @Post("create-bulk")
   async createBulk(): Promise<any> {
-    return await this.superheroService.createBulk();
+    return { message: "This is disabled" };
+    //return await this.superheroService.createBulk();
   }
 
   @Delete("delete/:id")
