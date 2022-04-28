@@ -13,22 +13,22 @@ export class PowerstatsEntity {
   @PrimaryGeneratedColumn("uuid")
   id: string;
 
-  @Column("number", { name: "intelligence", nullable: true })
+  @Column("integer", { name: "intelligence", nullable: true })
   intelligence: number | null;
 
-  @Column("number", { name: "strength", nullable: true })
+  @Column("integer", { name: "strength", nullable: true })
   strength: number | null;
 
-  @Column("number", { name: "speed", nullable: true })
+  @Column("integer", { name: "speed", nullable: true })
   speed: number | null;
 
-  @Column("number", { name: "durability", nullable: true })
+  @Column("integer", { name: "durability", nullable: true })
   durability: number | null;
 
-  @Column("number", { name: "power", nullable: true })
+  @Column("integer", { name: "power", nullable: true })
   power: number | null;
 
-  @Column("number", { name: "combat", nullable: true })
+  @Column("integer", { name: "combat", nullable: true })
   combat: number | null;
 
   @ManyToOne(() => SuperheroEntity, (superhero) => superhero.powerstats, {
