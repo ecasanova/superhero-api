@@ -25,7 +25,7 @@ pipelines:
     nodejs-dev: &nodejs-dev
       - step:
           <<: *deploy-nodejs
-          deployment: dev-deploy
+          deployment: dev
 
   branches:
     dev: *nodejs-dev
