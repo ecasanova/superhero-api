@@ -27,7 +27,20 @@ async function bootstrap() {
   };
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup("api", app, document, customOptions);
-  app.enableCors();
+  app.enableCors({
+    origin: [
+      "http://localhost:3000",
+      "http://example.com",
+      "http://www.example.com",
+      "http://app.example.com",
+      "https://example.com",
+      "https://www.example.com",
+      "https://app.example.com",
+      "*",
+    ],
+    methods: ["GET", "POST", "DELETE"],
+    credentials: true,
+  });
   await app.listen(process.env.port || 3000);
 }
 bootstrap();
