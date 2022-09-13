@@ -31,7 +31,11 @@ async function bootstrap() {
   };
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup("api", app, document, customOptions);
-
+  app.enableCors({
+    origin: "*",
+    methods: "GET, PUT, POST, DELETE",
+    allowedHeaders: "Content-Type, Authorization, apiKey",
+  });
   await app.listen(Number(PORT), SERVER);
 
   console.log(`------------------------------------------------------`);
@@ -39,12 +43,6 @@ async function bootstrap() {
   console.log(`Enviroment: ${process.env.NODE_ENV}`);
   console.log(`Database: ${process.env.DB_HOST}`);
   console.log(`------------------------------------------------------`);
-  app.enableCors({
-    origin: "*",
-    methods: "GET, PUT, POST, DELETE",
-    allowedHeaders: "Content-Type, Authorization, apiKey",
-  });
-  await app.listen(process.env.port || 3000);
 }
 
 bootstrap();
