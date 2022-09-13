@@ -40,18 +40,8 @@ async function bootstrap() {
   console.log(`Database: ${process.env.DB_HOST}`);
   console.log(`------------------------------------------------------`);
   app.enableCors({
-    origin: [
-      "http://localhost:3000",
-      "http://example.com",
-      "http://www.example.com",
-      "http://app.example.com",
-      "https://example.com",
-      "https://www.example.com",
-      "https://app.example.com",
-      "*",
-    ],
-    methods: ["GET", "POST", "DELETE", "PUT"],
-    credentials: true,
+    origin: "*",
+    methods: "GET, PUT, POST, DELETE",
     allowedHeaders: "Content-Type, Authorization, apiKey",
   });
   await app.listen(process.env.port || 3000);
