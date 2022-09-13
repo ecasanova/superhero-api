@@ -50,8 +50,9 @@ async function bootstrap() {
       "https://app.example.com",
       "*",
     ],
-    methods: ["GET", "POST", "DELETE"],
+    methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
+    allowedHeaders: "Content-Type, Authorization, apiKey",
   });
   await app.listen(process.env.port || 3000);
 }
