@@ -253,6 +253,12 @@ export class SuperheroService {
       queryBuilder.where("superhero.id = :id", { id: params.id }).getOne();
     }
 
+    if (params.slug) {
+      queryBuilder
+        .where("superhero.slug = :slug", { slug: params.slug })
+        .getOne();
+    }
+
     if (params.name) {
       queryBuilder.where("superhero.name = :name", { name: params.name });
     }
