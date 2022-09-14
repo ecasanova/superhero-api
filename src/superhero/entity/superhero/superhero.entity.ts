@@ -21,6 +21,9 @@ export class SuperheroEntity {
   @Column("text", { name: "name", nullable: true })
   name: string | null;
 
+  @Column("text", { name: "slug", nullable: true })
+  slug: string | null;
+
   @OneToOne(
     () => AppearanceEntity,
     (AppearanceEntity) => AppearanceEntity.superhero,

@@ -15,6 +15,10 @@ export class SuperheroDto {
   name: string;
 
   @ApiProperty()
+  @IsNotEmpty()
+  slug: string;
+
+  @ApiProperty()
   powerstats: PowerstatsEntityDto;
 
   @ApiProperty()

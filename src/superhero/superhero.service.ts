@@ -234,6 +234,10 @@ export class SuperheroService {
     return await this.getSuperHero({ name: name });
   }
 
+  async getBySlug(slug: string): Promise<any> {
+    return await this.getSuperHero({ slug: slug });
+  }
+
   async getSuperHero(params: any) {
     const queryBuilder = await this.superheroRepo
       .createQueryBuilder("superhero")
@@ -275,6 +279,7 @@ export class SuperheroService {
       //CREATE SUPERHEROE
       const superheroEntity = new SuperheroEntity();
       superheroEntity.name = superhero.name;
+      superheroEntity.slug = this.slugify(superhero.slug);
       await this.superheroRepo.insert(superheroEntity);
 
       //CREATE BIOGRAPHY

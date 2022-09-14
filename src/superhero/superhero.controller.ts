@@ -33,6 +33,11 @@ export class SuperheroController {
     return await this.superheroService.getById(id);
   }
 
+  @Get("get/:slug")
+  async getBySlug(@Param("slug") slug: string): Promise<any> {
+    return await this.superheroService.getBySlug(slug);
+  }
+
   @Post("create")
   async create(@Body() superhero: SuperheroDto): Promise<any> {
     return await this.superheroService.create(superhero);
