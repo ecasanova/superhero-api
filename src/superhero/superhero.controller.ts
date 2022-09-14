@@ -28,12 +28,12 @@ export class SuperheroController {
     return await this.superheroService.getAll(page, limit, search);
   }
 
-  @Get("get/:id")
+  @Get("getById/:id")
   async getById(@Param("id") id: string): Promise<any> {
     return await this.superheroService.getById(id);
   }
 
-  @Get("get/:slug")
+  @Get("getBySlug/:slug")
   async getBySlug(@Param("slug") slug: string): Promise<any> {
     return await this.superheroService.getBySlug(slug);
   }
