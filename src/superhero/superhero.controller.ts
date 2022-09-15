@@ -35,7 +35,26 @@ export class SuperheroController {
 
   @Get("getBySlug/:slug")
   async getBySlug(@Param("slug") slug: string): Promise<any> {
-    return await this.superheroService.getBySlug(slug);
+    let superhero = await this.superheroService.getBySlug(slug);
+    if (superhero.powerstats) delete superhero.powerstats.id;
+    if (superhero.images) delete superhero.images.id;
+    if (superhero.biography) delete superhero.biography.id;
+    if (superhero.appearance) delete superhero.appearance.id;
+    if (superhero.work) delete superhero.work.id;
+    if (superhero.connections) delete superhero.connections.id;
+    if (superhero.biography.aliases)
+      superhero.biography.aliases.forEach(function (v) {
+        delete v.id;
+      });
+    if (superhero.appearance.height)
+      superhero.appearance.height.forEach(function (v) {
+        delete v.id;
+      });
+    if (superhero.appearance.weight)
+      superhero.appearance.weight.forEach(function (v) {
+        delete v.id;
+      });
+    return superhero;
   }
 
   @Post("create")

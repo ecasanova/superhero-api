@@ -178,12 +178,12 @@ export class SuperheroService {
     }
 
     if (search.gender) {
-      queryBuilder.where("appearance.gender = :gender", {
+      queryBuilder.andWhere("appearance.gender = :gender", {
         gender: `${search.gender}`,
       });
     }
     if (search.alignment) {
-      queryBuilder.where("biography.alignment = :alignment", {
+      queryBuilder.andWhere("biography.alignment = :alignment", {
         alignment: `${search.alignment}`,
       });
     }
@@ -239,31 +239,38 @@ export class SuperheroService {
   }
 
   async getSuperHero(params: any) {
-    const queryBuilder = await this.superheroRepo
-      .createQueryBuilder("superhero")
-      .leftJoinAndSelect("superhero.powerstats", "powerstats")
-      .leftJoinAndSelect("superhero.biography", "biography")
-      .leftJoinAndSelect("superhero.appearance", "appearance")
-      .leftJoinAndSelect("superhero.work", "work")
-      .leftJoinAndSelect("superhero.connections", "connections")
-      .leftJoinAndSelect("superhero.images", "images")
-      .orderBy("superhero.name", "ASC");
-
+    let relations = [
+      "powerstats",
+      "biography",
+      "biography.aliases",
+      "appearance",
+      "appearance.height",
+      "appearance.weight",
+      "work",
+      "connections",
+      "images",
+    ];
+    let superhero = {};
     if (params.id) {
-      queryBuilder.where("superhero.id = :id", { id: params.id }).getOne();
+      superhero = await this.superheroRepo.findOne(params.id, {
+        relations: relations,
+      });
+    } else if (params.slug) {
+      superhero = await this.superheroRepo.findOne(
+        { slug: params.slug },
+        {
+          relations: relations,
+        }
+      );
+    } else if (params.name) {
+      superhero = await this.superheroRepo.findOne(
+        { name: params.name },
+        {
+          relations: relations,
+        }
+      );
     }
-
-    if (params.slug) {
-      queryBuilder
-        .where("superhero.slug = :slug", { slug: params.slug })
-        .getOne();
-    }
-
-    if (params.name) {
-      queryBuilder.where("superhero.name = :name", { name: params.name });
-    }
-    const { entities } = await queryBuilder.getRawAndEntities();
-    return await this.cleanData(entities);
+    return superhero;
   }
 
   async createBulk(): Promise<any> {
