@@ -168,18 +168,17 @@ export class SuperheroService {
       });
     }
 
-    if (search.gender) {
+    if (search.gender && search.gender != "") {
       queryBuilder.andWhere("appearance.gender = :gender", {
         gender: `${search.gender}`,
       });
     }
-    if (search.alignment) {
+    if (search.alignment && search.alignment != "") {
       queryBuilder.andWhere("biography.alignment = :alignment", {
         alignment: `${search.alignment}`,
       });
     }
-
-    if (search.keyword) {
+    if (search.keyword && search.keyword != "") {
       queryBuilder.andWhere("superhero.name like :name", {
         name: `%${search.keyword}%`,
       });
