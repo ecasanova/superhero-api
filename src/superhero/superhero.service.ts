@@ -120,51 +120,51 @@ export class SuperheroService {
     queryBuilder.where("1=1");
 
     if (search.intelligence) {
-      queryBuilder.andWhere("powerstats.intelligence >= :min", {
-        min: `${search.intelligence.min}`,
+      queryBuilder.andWhere("powerstats.intelligence >= :min_intelligence", {
+        min_intelligence: `${search.intelligence.min}`,
       });
-      queryBuilder.andWhere("powerstats.intelligence <= :max", {
-        max: `${search.intelligence.max}`,
+      queryBuilder.andWhere("powerstats.intelligence <= :max_intelligence", {
+        max_intelligence: `${search.intelligence.max}`,
       });
     }
     if (search.strength) {
-      queryBuilder.andWhere("powerstats.strength >= :min", {
-        min: `${search.strength.min}`,
+      queryBuilder.andWhere("powerstats.strength >= :min_strength", {
+        min_strength: `${search.strength.min}`,
       });
-      queryBuilder.andWhere("powerstats.strength <= :max", {
-        max: `${search.strength.max}`,
+      queryBuilder.andWhere("powerstats.strength <= :max_strength", {
+        max_strength: `${search.strength.max}`,
       });
     }
     if (search.speed) {
-      queryBuilder.andWhere("powerstats.speed >= :min", {
-        min: `${search.speed.min}`,
+      queryBuilder.andWhere("powerstats.speed >= :min_speed", {
+        min_speed: `${search.speed.min}`,
       });
-      queryBuilder.andWhere("powerstats.speed <= :max", {
-        max: `${search.speed.max}`,
+      queryBuilder.andWhere("powerstats.speed <= :max_speed", {
+        max_speed: `${search.speed.max}`,
       });
     }
     if (search.durability) {
-      queryBuilder.andWhere("powerstats.durability >= :min", {
-        min: `${search.durability.min}`,
+      queryBuilder.andWhere("powerstats.durability >= :min_durability", {
+        min_durability: `${search.durability.min}`,
       });
-      queryBuilder.andWhere("powerstats.durability <= :max", {
-        max: `${search.durability.max}`,
+      queryBuilder.andWhere("powerstats.durability <= :max_durability", {
+        max_durability: `${search.durability.max}`,
       });
     }
     if (search.power) {
-      queryBuilder.andWhere("powerstats.power >= :min", {
-        min: `${search.power.min}`,
+      queryBuilder.andWhere("powerstats.power >= :min_power", {
+        min_power: `${search.power.min}`,
       });
-      queryBuilder.andWhere("powerstats.power <= :max", {
-        max: `${search.power.max}`,
+      queryBuilder.andWhere("powerstats.power <= :max_power", {
+        max_power: `${search.power.max}`,
       });
     }
     if (search.combat) {
-      queryBuilder.andWhere("powerstats.combat >= :min", {
-        min: `${search.combat.min}`,
+      queryBuilder.andWhere("powerstats.combat >= :min_combat", {
+        min_combat: `${search.combat.min}`,
       });
-      queryBuilder.andWhere("powerstats.combat <= :max", {
-        max: `${search.combat.max}`,
+      queryBuilder.andWhere("powerstats.combat <= :max_combat", {
+        max_combat: `${search.combat.max}`,
       });
     }
 
@@ -184,6 +184,7 @@ export class SuperheroService {
       });
     }
 
+    queryBuilder.orderBy("superhero.name", "ASC");
     queryBuilder.skip(page).take(limit);
 
     const itemCount = await queryBuilder.getCount();
