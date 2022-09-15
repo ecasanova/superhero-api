@@ -182,12 +182,6 @@ export class SuperheroService {
       queryBuilder.andWhere("superhero.name like :name", {
         name: `%${search.keyword}%`,
       });
-      queryBuilder.orWhere("biography.fullName like :name", {
-        name: `%${search.keyword}%`,
-      });
-      queryBuilder.orWhere("work.occupation like :name", {
-        name: `%${search.keyword}%`,
-      });
     }
 
     queryBuilder.skip(page).take(limit);
