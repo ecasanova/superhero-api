@@ -110,23 +110,14 @@ export class SuperheroService {
   async getAll(page, limit, search): Promise<any> {
     const queryBuilder = await this.superheroRepo
       .createQueryBuilder("superhero")
+      .leftJoinAndSelect("superhero.appearance", "appearance")
       .leftJoinAndSelect("superhero.powerstats", "powerstats")
       .leftJoinAndSelect("superhero.biography", "biography")
       .leftJoinAndSelect("superhero.images", "images")
       .leftJoinAndSelect("superhero.work", "work")
       .orderBy("superhero.name", "ASC");
 
-    if (search.keyword) {
-      queryBuilder.where("superhero.name like :name", {
-        name: `%${search.keyword}%`,
-      });
-      queryBuilder.orWhere("biography.fullName like :name", {
-        name: `%${search.keyword}%`,
-      });
-      queryBuilder.orWhere("work.occupation like :name", {
-        name: `%${search.keyword}%`,
-      });
-    }
+    queryBuilder.where("1=1");
 
     if (search.intelligence) {
       queryBuilder.andWhere("powerstats.intelligence >= :intelligence", {
@@ -185,6 +176,18 @@ export class SuperheroService {
     if (search.alignment) {
       queryBuilder.andWhere("biography.alignment = :alignment", {
         alignment: `${search.alignment}`,
+      });
+    }
+
+    if (search.keyword) {
+      queryBuilder.andWhere("superhero.name like :name", {
+        name: `%${search.keyword}%`,
+      });
+      queryBuilder.orWhere("biography.fullName like :name", {
+        name: `%${search.keyword}%`,
+      });
+      queryBuilder.orWhere("work.occupation like :name", {
+        name: `%${search.keyword}%`,
       });
     }
 
