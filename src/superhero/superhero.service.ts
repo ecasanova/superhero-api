@@ -185,7 +185,7 @@ export class SuperheroService {
     }
 
     queryBuilder.orderBy("superhero.name", "ASC");
-    queryBuilder.skip(page).take(limit);
+    queryBuilder.skip(page * limit).take(limit);
 
     const itemCount = await queryBuilder.getCount();
     const { entities } = await queryBuilder.getRawAndEntities();
