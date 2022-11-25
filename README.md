@@ -1,6 +1,6 @@
 ## Description Superhero API
 
-API Contract for the [Superhero Onboarding Project](https://adkgroup.atlassian.net/wiki/spaces/SUP/pages/1172734300/Superhero+Project+-+Functional+Specifications+and+Technical+Requirements+Documentation)
+API Contract for the [Superhero Project](https://superhero-web.vercel.app)
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript documentation
 
@@ -47,7 +47,6 @@ You need add this api key value in the header of every http request
 ```bash
 apiKey: API_KEY_VALUE
 ```
-* Ask your manager or mentor how to get an api key *
 
 # Usage
 
@@ -74,4 +73,4 @@ DB_PORT=
 
 ## Support
 
-Enrique Casanova - [enrique.casanova@projekt202.com](mailto:enrique.casanova@projekt202.com)
+Enrique Casanova - [ecasanova@webfactorystudio.co](mailto:ecasanova@webfactorystudio.co)
