@@ -9,7 +9,7 @@ import { AppModule } from "./app.module";
 import { TypeORMExceptionFilter } from "./utils/typeorm-exceptions.filter";
 import * as bodyParser from "body-parser";
 
-const SERVER = process.env.API_HOST || '0.0.0.0';
+const SERVER = process.env.API_HOST || "0.0.0.0";
 const PORT = process.env.PORT || 3000;
 
 async function bootstrap() {
@@ -19,7 +19,6 @@ async function bootstrap() {
     .setTitle("Superhero API")
     .setDescription("Superhero API")
     .setVersion("1.1")
-    .addApiKey({ type: "apiKey", name: "apiKey", in: "header" }, "apiKey")
     .build();
   app.use(bodyParser.json({ limit: "50mb" }));
   app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
