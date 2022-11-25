@@ -23,7 +23,6 @@
     "typeorm:migrate": "npm run typeorm migration:generate -- -n",
     "typeorm:generate": "npm run typeorm migration:create -- -n",
     "typeorm:run": "npm run typeorm migration:run",
-    "poststart": "npm run typeorm migration:run"
   },
   "dependencies": {
     "@nestjs/common": "^8.0.0",
