@@ -1,8 +1,8 @@
 {
-  "name": "adk-nest-kit",
+  "name": "superhero-api",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "Enrique Casanova",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
@@ -19,10 +19,13 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js --config ./src/ormconfig.ts",
-    "typeorm:migrate": "npm run typeorm migration:generate -- -n",
-    "typeorm:generate": "npm run typeorm migration:create -- -n",
-    "typeorm:run": "npm run typeorm migration:run"
+    "typeorm": "ts-node ./node_modules/typeorm/cli",
+    "typeorm:run-migrations": "npm run typeorm migration:run -- -d ./src/ormconfig.ts",
+    "typeorm:generate-migration": "npm run typeorm -- -d ./src/ormconfig.ts migration:generate ./src/migrations/migration",
+    "typeorm:create-migration": "npm run typeorm -- migration:create ./src/migrations/migration",
+    "typeorm:revert-migration": "npm run typeorm -- -d ./src/ormconfig.ts migration:revert",
+    "poststart": "npm run typeorm:run-migrations",
+    "loadrecipes": "npm run typeorm:run-migrations"
   },
   "dependencies": {
     "@nestjs/common": "^8.0.0",
