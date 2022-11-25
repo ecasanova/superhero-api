@@ -169,7 +169,8 @@ export class SuperheroService {
   }
 
   async getById(id: string): Promise<any> {
-    let superhero = this.superheroRepo.findOne(id, {
+    let superhero = this.superheroRepo.findOne({
+      where: { id },
       relations: [
         "powerstats",
         "biography",
@@ -207,23 +208,20 @@ export class SuperheroService {
     ];
     let superhero = {};
     if (params.id) {
-      superhero = await this.superheroRepo.findOne(params.id, {
+      superhero = await this.superheroRepo.findOne({
+        where: { id: params.id },
         relations: relations,
       });
     } else if (params.slug) {
-      superhero = await this.superheroRepo.findOne(
-        { slug: params.slug },
-        {
-          relations: relations,
-        }
-      );
+      superhero = await this.superheroRepo.findOne({
+        where: { slug: params.slug },
+        relations: relations,
+      });
     } else if (params.name) {
-      superhero = await this.superheroRepo.findOne(
-        { name: params.name },
-        {
-          relations: relations,
-        }
-      );
+      superhero = await this.superheroRepo.findOne({
+        where: { name: params.name },
+        relations: relations,
+      });
     }
     return superhero;
   }
