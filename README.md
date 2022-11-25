@@ -71,6 +71,11 @@ DB_HOST=
 DB_PORT=
 ```
 
+## Deployed in Render
+
+You can find this project deployed in render [https://superhero-api.onrender.com](https://superhero-api.onrender.com)
+
+
 ## Support
 
 Enrique Casanova - [ecasanova@webfactorystudio.co](mailto:ecasanova@webfactorystudio.co)
