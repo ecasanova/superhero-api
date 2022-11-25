@@ -9,7 +9,7 @@ import { AppModule } from "./app.module";
 import { TypeORMExceptionFilter } from "./utils/typeorm-exceptions.filter";
 import * as bodyParser from "body-parser";
 
-const SERVER = process.env.NODE_ENV == "production" ? "::" : "localhost";
+const SERVER = process.env.API_HOST || '0.0.0.0';
 const PORT = process.env.PORT || 3000;
 
 async function bootstrap() {
