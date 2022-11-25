@@ -4,7 +4,7 @@ API Contract for the [Superhero Project](https://superhero-web.vercel.app)
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript documentation
 
-[TypeORM](https://typeorm.io/#/) ORM documentation
+[TypeORM](https://typeorm.io/#/) documentation
 
 
 ## Running the app
