@@ -14,13 +14,7 @@ import { SuperheroDto } from "./entity/superhero/superhero.dto";
 import { InjectRepository } from "@nestjs/typeorm";
 import { createWriteStream, writeFileSync, readFileSync, existsSync } from "fs";
 const axios = require("axios");
-const imageSizes = [
-  { name: "xs", width: 120, heigth: 160 },
-  { name: "sm", width: 240, heigth: 320 },
-  { name: "md", width: 480, heigth: 640 },
-  { name: "lg", width: 680, heigth: 840 },
-];
-const resizeImg = require("resize-image-buffer");
+
 import * as MOCKED_RESPONSE from "./data.json";
 const { PassThrough } = require("stream");
 @Injectable()
@@ -69,42 +63,6 @@ export class SuperheroService {
       .replace(/\-\-+/g, "-")
       .replace(/^-+/, "")
       .replace(/-+$/, "");
-  }
-
-  async download(dest, size, superhero): Promise<any> {
-    /* var filename = dest.substring(dest.lastIndexOf("/") + 1); */
-    let slug = this.slugify(superhero.name);
-    let filename = superhero.id + "-" + slug + ".jpg";
-    return new Promise((resolve, reject) => {
-      try {
-        axios
-          .get(dest, { responseType: "stream" })
-          .then(async (response) => {
-            const chunks = response.data.pipe(
-              new PassThrough({ encoding: "base64" })
-            );
-            let str = "";
-            for await (let chunk of chunks) {
-              str += chunk;
-            }
-            let resize = __dirname + "/uploads/" + size.name + "/" + filename;
-
-            let image = await resizeImg(str, {
-              width: size.width,
-              heigth: size.heigth,
-            });
-            writeFileSync(resize, image);
-            resolve(true);
-          })
-          .catch((error) => {
-            console.log("Error cargando fotos de ", superhero.name);
-            reject();
-          });
-      } catch (error) {
-        console.log("Error cargando fotos de ", superhero.name);
-        reject();
-      }
-    });
   }
 
   async getAll(page, limit, search): Promise<any> {
