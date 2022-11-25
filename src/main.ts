@@ -16,8 +16,8 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.useGlobalFilters(new TypeORMExceptionFilter());
   const options = new DocumentBuilder()
-    .setTitle("ADK Superhero API")
-    .setDescription("ADK Superhero API")
+    .setTitle("Superhero API")
+    .setDescription("Superhero API")
     .setVersion("1.1")
     .addApiKey({ type: "apiKey", name: "apiKey", in: "header" }, "apiKey")
     .build();
