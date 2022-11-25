@@ -6,7 +6,6 @@ API Contract for the [Superhero Project](https://superhero-web.vercel.app)
 
 [TypeORM](https://typeorm.io/#/) ORM documentation
 
-````
 
 ## Running the app
 
