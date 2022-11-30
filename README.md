@@ -1,4 +1,4 @@
-## Description Superhero API
+# Superhero API
 
 API Contract for the [Superhero Project](https://superhero-web.vercel.app)
 
@@ -25,9 +25,13 @@ $ npm run typeorm migration:run
 
 ```
 
-# Usage
+## Usage
 
 You can see public API contract in [http://localhost:3000/api](http://localhost:3000/api)
+
+## Data 
+
+Get all SuperHeroes and Villians data from all universes under a single API. https://www.superheroapi.com/
 
 
 ## Deployed in Render
